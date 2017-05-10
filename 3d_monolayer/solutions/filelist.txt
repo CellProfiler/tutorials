@@ -1,0 +1,3 @@
+C:\Users\karhohs\Documents\GitHub\tutorials\3d_monolayer\images\3d_monolayer_xy1_ch0.tif
+C:\Users\karhohs\Documents\GitHub\tutorials\3d_monolayer\images\3d_monolayer_xy1_ch1.tif
+C:\Users\karhohs\Documents\GitHub\tutorials\3d_monolayer\images\3d_monolayer_xy1_ch2.tif
