@@ -35,7 +35,7 @@
 Before attempting to segement the cells in the images, conditioning the images with filters and various image processing methods will improve the results.
 
 1. Add a RescaleIntensity module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects.
- <p align="center"><img src="docs/images/rescale_5.png" alt="rescale5" width=" 300"/><img src="docs/images/rescale_6.png" alt="rescale5" width=" 300"/><img src="docs/images/rescale_7.png" alt="rescale5" width=" 300"/></p>
+    <p align="center"><img src="docs/images/rescale_5.png" alt="rescale5" width=" 300"/><img src="docs/images/rescale_6.png" alt="rescale5" width=" 300"/><img src="docs/images/rescale_7.png" alt="rescale5" width=" 300"/></p>
 1. Add a Resize module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation.
 <p align="center"><img src="docs/images/resize_8.png" alt="rescale5"/></p>
 1. Add a MedianFilter module. A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter will preserve boundaries better than other smoothing filters such as the Gaussian filter.
