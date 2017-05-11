@@ -17,7 +17,7 @@ Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:4|show_w
     Extraction method count:2
     Metadata extraction method:Extract from file/folder names
     Metadata source:File name
-    Regular expression:cho(?P<chonum>\\\\d+)_Probabilities_(?P<probnum>\\\\d)\\\\.tif$
+    Regular expression:cho(?P<chonum>\\\\d+)_Probabilities_(?P<probnum>\\\\d)\\\\.
     Regular expression:(?P<Date>\x5B0-9\x5D{4}_\x5B0-9\x5D{2}_\x5B0-9\x5D{2})$
     Extract metadata from:All images
     Select the filtering criteria:and (file does contain "")
@@ -26,7 +26,7 @@ Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:4|show_w
     Use case insensitive matching?:No
     Metadata extraction method:Extract from file/folder names
     Metadata source:File name
-    Regular expression:ccho(?P<chonum>\\\\d+)\\\\.png$
+    Regular expression:cho(?P<chonum>\\\\d+)\\\\.png$
     Regular expression:(?P<Date>\x5B0-9\x5D{4}_\x5B0-9\x5D{2}_\x5B0-9\x5D{2})$
     Extract metadata from:All images
     Select the filtering criteria:and (file does contain "")
