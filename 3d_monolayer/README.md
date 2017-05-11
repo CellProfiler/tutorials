@@ -34,7 +34,7 @@
 
 Before attempting to segement the cells in the images, conditioning the images with filters and various image processing methods will improve the results.
 
-1. Add a RescaleIntensity module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects.
+1. Add a **RescaleIntensity** module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects. A RescaleIntensity module is needed for each channel, so there should be three of them.
     <p align="center"><img src="docs/images/rescale_5.png" alt="rescale5" width="400"/><img src="docs/images/rescale_6.png" alt="rescale5" width="400"/><img src="docs/images/rescale_7.png" alt="rescale5" width="400"/></p>
 1. Add a Resize module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation.
     <p align="center"><img src="docs/images/resize_8.png" alt="rescale5" width="600"/></p>
@@ -88,7 +88,7 @@ Now we will combine the information from the membrane channel with what we ident
 <p align="center"><img src="docs/images/imagemath_22.png" alt="rescale5"/></p>
   1. Add another ImageMath module and subtract the NOT-monolayer image from the cytoplasm image. The result is the image that will be used to define the boundaries of the cells.
 <p align="center"><img src="docs/images/imagemath_23.png" alt="rescale5"/></p>
-  1. Add a Watershed module. The input is the result of the previous ImageMath module. Change the *Generate from* option to *Markers*. The Markers will be the seed image created by the Erosion module. Finally, set the Mask to the same image and the Input. This will help preserve the cell boundaries.
+   1. Add a Watershed module. The input is the result of the previous ImageMath module. Change the *Generate from* option to *Markers*. The Markers will be the seed image created by the Erosion module. Finally, set the Mask to the same image and the Input. This will help preserve the cell boundaries.
 <p align="center"><img src="docs/images/watershed_24.png" alt="rescale5"/></p>
 
 # Creating visuals
