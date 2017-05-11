@@ -1,5 +1,7 @@
 # CellProfiler Tutorial: 3d monolayer
+
 # Organizing and importing images
+
 ## A note on running CellProfiler
 
 * Currently, 3d functionality is only available when running CellProfiler from source. Follow the instructions on the [CellProfiler GitHub wiki](https://github.com/CellProfiler/CellProfiler/wiki)
@@ -25,8 +27,11 @@
 1. Add three images to NamesAndTypes and give them "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
 
 # Find objects: nuclei and cells
+
 ## Segmenting nuclei
+
 ## Image pre-processing
+
 Before attempting to segement the cells in the images, conditioning the images with filters and various image processing methods will improve the results.
 
   1. Add a RescaleIntensity module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects.
@@ -35,7 +40,9 @@ Before attempting to segement the cells in the images, conditioning the images w
 <p align="center"><img src="docs/images/resize_8.png" alt="rescale5"/></p>
   1. Add a MedianFilter module. A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter will preserve boundaries better than other smoothing filters such as the Gaussian filter.
 <p align="center"><img src="docs/images/medianfilter_9.png" alt="rescale5"/></p>
+
 ## Segmentation
+
   1. Add an ApplyThreshold module. This will separate the foreground (nuclei) from the background.
 <p align="center"><img src="docs/images/applythreshold_10.png" alt="rescale5"/></p>
   1. Add a Remove holes module. This module implements an algorithm that will remove small holes within the nucleus. Any remaining holes will contribute to over-segmentation of the nuclei. Choose a size of 100.
@@ -44,14 +51,20 @@ Before attempting to segement the cells in the images, conditioning the images w
 <p align="center"><img src="docs/images/watershed_12.png" alt="rescale5"/></p>
   1. Add a ResizeObjects module to return the segmented nuclei to the size of the original image.
 <p align="center"><img src="docs/images/resizeobjects_13.png" alt="rescale5"/></p>
+
 ## Segmenting the cells
+
 The membrane presents more of a challenge, because unlike the nuclei, the membrane signal is not concentrated or well separated. However, the location of the nuclei can be used to help identify regions with cells.
+
 ## Transform nuclei into markers
+
   1. Add a ConvertObjectsToImageModule and convert the output from the Watershed module.
 <p align="center"><img src="docs/images/convertobjectstoimages_14.png" alt="rescale5"/></p>
   1. Shrink the nuclei to make them more seed-like by adding an Erosion module. Use the ball structuring element with a size of 3. The output of this module will be referred to as the seed image.
 <p align="center"><img src="docs/images/erosion_15.png" alt="rescale5"/></p>
+
 ## Transform the membrane channel
+
 The Watershed module finds objects that have high signal. In the case of the cells that will be identified as objects, the cytoplasm should have high signal. However, this is not the case in the membrane channel. Therefore, we will invert the membrane channel to achieve this effect.
   1. Add an ApplyThreshold module and an ImageMath module. First, threshold the rescaled membrane image. Then, within the ImageMath module choose the Invert operation and invert the tresholded membrane.
 <p align="center"><img src="docs/images/applythreshold_16.png" alt="rescale5"/></p>
