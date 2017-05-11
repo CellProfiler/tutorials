@@ -58,9 +58,9 @@ The membrane presents more of a challenge, because unlike the nuclei, the membra
 
 ## Transform nuclei into markers
 
-1. Add a ConvertObjectsToImageModule and convert the output from the Watershed module.
+  1. Add a ConvertObjectsToImageModule and convert the output from the Watershed module.
   <p align="center"><img src="docs/images/convertobjectstoimages_14.png" alt="rescale5"/></p>
-1. Shrink the nuclei to make them more seed-like by adding an Erosion module. Use the ball structuring element with a size of 3. The output of this module will be referred to as the seed image.
+  1. Shrink the nuclei to make them more seed-like by adding an Erosion module. Use the ball structuring element with a size of 3. The output of this module will be referred to as the seed image.
   <p align="center"><img src="docs/images/erosion_15.png" alt="rescale5"/></p>
 
 ## Transform the membrane channel
