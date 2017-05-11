@@ -6,6 +6,7 @@
 
 * Currently, 3d functionality is only available when running CellProfiler from source. Follow the instructions on the [CellProfiler GitHub wiki](https://github.com/CellProfiler/CellProfiler/wiki)
 * In the future (Q3 2017) the easiest thing to do will be to download the nightly or release with CellProfiler 3D functionality from the [CellProfiler website](http://www.cellprofiler.org/downloads). The release of CellProfiler 3.0 will coincide with the availability of pre-built binaries.
+* Unless otherwise stated in the tutorial, keep the default settings of a module when a module is added to the CellProfiler pipeline.
 
 ## Z-stacks as TIFFs
 
@@ -26,78 +27,78 @@
   * The actual units do not matter, rather their relative proportion. The numbers are unitless and therefore the decimal place does not matter.
 1. Add three images to NamesAndTypes and give them "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
 
-# Find objects: nuclei and cells
+# Find objects: nuclei
 
-## Segmenting nuclei
-
-## Image pre-processing
+## Image preparation
 
 Before attempting to segement the cells in the images, conditioning the images with filters and various image processing methods will improve the results.
 
 1. Add a **RescaleIntensity** module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects. A RescaleIntensity module is needed for each channel, so there should be three of them.
     <p align="center"><img src="docs/images/rescale_5.png" alt="rescale5" width="400"/><img src="docs/images/rescale_6.png" alt="rescale5" width="400"/><img src="docs/images/rescale_7.png" alt="rescale5" width="400"/></p>
-1. Add a **Resize** module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation.
+1. Add a **Resize** module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation. Choose a value of *0.5*.
     <p align="center"><img src="docs/images/resize_8.png" alt="rescale5" width="600"/></p>
-1. Add a **MedianFilter** module. A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter will preserve boundaries better than other smoothing filters such as the Gaussian filter.
+1. Add a **MedianFilter** module. A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter will preserve boundaries better than other smoothing filters such as the Gaussian filter. Choose a filter size of *5*. This number was chosen empirically: it is smaller than the diameter of a typical nucleus; it is small enough that nuclei aren't merged together, yet large enough to suppress over-segmentation of the nuclei.
     <p align="center"><img src="docs/images/medianfilter_9.png" alt="rescale5" width="600"/></p>
 
 ## Segmentation
 
 1. Add an **ApplyThreshold** module. This will separate the foreground (nuclei) from the background.
     <p align="center"><img src="docs/images/applythreshold_10.png" alt="rescale5 "width="600"/></p>
-1. Add a **Remove holes** module. This module implements an algorithm that will remove small holes within the nucleus. Any remaining holes will contribute to over-segmentation of the nuclei. Choose a size of 100.
+1. Add a **Remove holes** module. This module implements an algorithm that will remove small holes within the nucleus. Any remaining holes will contribute to over-segmentation of the nuclei. Choose a size of *100*.
     <p align="center"><img src="docs/images/removeholes_11.png" alt="rescale5" width="600"/></p>
-1. Add a **Watershed** module. This module implements the watershed algorithm, which will segment the nuclei. For more information on the watershed algorithm refer to the wikipedia page, https://en.wikipedia.org/wiki/Watershed_(image_processing)
+1. Add a **Watershed** module. This module implements the watershed algorithm, which will segment the nuclei. For more information on the watershed algorithm refer to this helpful [MATLAB blog post](https://www.mathworks.com/company/newsletters/articles/the-watershed-transform-strategies-for-image-segmentation.html).
     <p align="center"><img src="docs/images/watershed_12.png" alt="rescale5" width="600"/></p>
-1. Add a **ResizeObjects** module to return the segmented nuclei to the size of the original image.
+1. Add a **ResizeObjects** module to return the segmented nuclei to the size of the original image. Since the original image was scaled down by *0.5*, it must be scaled up by *2*. The output of this module is the nuclei we are seeking, so name these objects accordingly, e.g. *Nuclei*.
     <p align="center"><img src="docs/images/resizeobjects_13.png" alt="rescale5" width="600"/></p>
 
-## Segmenting the cells
+# Find objects: cells
 
-The membrane presents more of a challenge, because unlike the nuclei, the membrane signal is not concentrated or well separated. However, the location of the nuclei can be used to help identify regions with cells.
+Now that we've segmented the nuclei we want to segment the cytoplasm for each nuclei whose boundaries are defined by the membrane channel. The membrane channel presents more of a challenge, because unlike the nuclei, the membrane signal is variable and the boundaries are connected together in a sort of mesh. This challenge is mitigated by the fact that the location of the nuclei can be used to help identify regions with cells.
 
 ## Transform nuclei into markers
 
 1. Add a **ConvertObjectsToImage** module and convert the output from the Watershed module.
     <p align="center"><img src="docs/images/convertobjectstoimages_14.png" alt="rescale5" width="600"/></p>
-1. Shrink the nuclei to make them more seed-like by adding an **Erosion** module. Use the ball structuring element with a size of 3. The output of this module will be referred to as the seed image.
-  <p align="center"><img src="docs/images/erosion_15.png" alt="rescale5" width="600"/></p>
+1. Shrink the nuclei to make them more seed-like by adding an **Erosion** module. Use the *ball* structuring element with a size of *3*. The output of this module will be referred to as *Seeds*.
+    <p align="center"><img src="docs/images/erosion_15.png" alt="rescale5" width="600"/></p>
 
-## Transform the membrane channel
+## Transform the membrane channel into cytoplasm signal
 
-The Watershed module finds objects that have high signal. In the case of the cells that will be identified as objects, the cytoplasm should have high signal. However, this is not the case in the membrane channel. Therefore, we will invert the membrane channel to achieve this effect.
+The Watershed module finds objects that have bright signal, so the cytoplasm that will define the cell volume should have bright signal. However, this is not the case in the membrane channel; it must be transformed into an image where the cytoplasm is bright and the boundaries between the cells are dark. Therefore, we will invert the membrane channel to achieve this effect.
+
 1. Add an **ApplyThreshold** module  Threshold the rescaled membrane image.
     <p align="center"><img src="docs/images/applythreshold_16.png" alt="rescale5" width="600"/></p>
-1. Add an **ImageMath** module. Within the ImageMath module choose the Invert operation and invert the tresholded membrane.
+1. Add an **ImageMath** module. Within the ImageMath module choose the *Invert* operation, and invert the tresholded membrane.
     <p align="center"><img src="docs/images/imagemath_17.png" alt="rescale5" width="600"/></p>
-1. Add a **Remove holes** module, again. Choose a size of 100. This result will be referred to as the cytoplasm image, because it contains high signal where cytoplasm exists.
+1. Add a **Remove holes** module, again. Choose a size of *100*. This result will be referred to as the *Inverted Membrane*.
     <p align="center"><img src="docs/images/removeholes_18.png" alt="rescale5" width="600"/></p>
 
-There is a problem with the thresholded membrane channel or cytoplasm image. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the monolayer.
+Wait! We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.
 
-1. Add another ImageMath module. Add all of the rescaled images together.
+1. Add another **ImageMath** module. Add all of the rescaled images together. This image will be referred to as the *Monolayer*
     <p align="center"><img src="docs/images/imagemath_19.png" alt="rescale5" width="600"/></p>
-1. Add a GuassianFilter module. Choose a size of 30 to blend the signal together. The result should look like a cloud of signal where the monolayer resides.
+1. Add a **GuassianFilter** module. Choose a size of *30* to blend the signal together. The result should look like a cloud of signal where the monolayer resides.
     <p align="center"><img src="docs/images/gaussianfilter_20.png" alt="rescale5" width="600"/></p>
-1. Add an ApplyThreshold module and threshold the smoothened monolayer image. This will define what is and is not monolayer. See that the space above and below the monolayer is entirely black.
+1. Add an **ApplyThreshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
     <p align="center"><img src="docs/images/applythreshold_21.png" alt="rescale5" width="600"/></p>
 
-Now we will combine the information from the membrane channel with what we identified about the monolayer through the summed-channel image. We will do this by subtracting the NOT-monolayer region from the image that defines the cytoplasm of the cells.
+Now we will combine the information from the membrane channel with what we identified as the monolayer. We will do this by subtracting the NOT-monolayer region, i.e. the background above and below the monolayer, from the image that defines the cytoplasm of the cells.
 
-1. Add an ImageMath module and invert the thresholded monolayer. This will create a NOT-monolayer image.
+1. Add an **ImageMath** module and invert the thresholded monolayer. This image will be referred to as the *background*.
     <p align="center"><img src="docs/images/imagemath_22.png" alt="rescale5" width="600"/></p>
-1. Add another ImageMath module and subtract the NOT-monolayer image from the cytoplasm image. The result is the image that will be used to define the boundaries of the cells.
+1. Add another **ImageMath** module and subtract the background image from the inverted membrane image which was created earlier in the pipeline, the output of the second *Remove holes* module. The result of the image subtraction will be referred to as the *Cytoplasm*.
     <p align="center"><img src="docs/images/imagemath_23.png" alt="rescale5" width="600"/></p>
-1. Add a Watershed module. The input is the result of the previous ImageMath module. Change the _Generate from_ option to _Markers_. The Markers will be the seed image created by the Erosion module. Finally, set the Mask to the same image and tShe Input. This will help preserve the cell boundaries.
+1. Add a **Watershed** module. The input is the result of the previous ImageMath module or the *Cytoplasm*. Change the *Generate from* option to *Markers*. The Markers will be the *Seeds* image, which is the output of the Erosion module. Finally, set the Mask to also be the *Cytoplasm*. This will help preserve the cell boundaries.
     <p align="center"><img src="docs/images/watershed_24.png" alt="rescale5" width="600"/></p>
 
 # Creating visuals
-Congratulations! The nuclei and cells have been segmented in this monolayer. Visuals that reveal the segmentation can be created within CellProfiler to validate and assess the performance of the pipeline.
 
-1. Add a OverlayObjects module to the pipeline. The input will be the rescaled DNA image. Choose the Objects to be the nuclei.
+Congratulations! The nuclei and cells have been segmented in this monolayer. Visuals that reveal the details of the segmentation can be also be created within CellProfiler. The following steps will produce an image where the nuclei are pseudo-colored according to the segmentation and look like jelly beans.
+
+1. Add a **OverlayObjects** module to the pipeline. The input will be the rescaled DNA image. Choose the *Nuclei* as the objects.
     <p align="center"><img src="docs/images/overlayobjects_29.png" alt="rescale5" width="600"/></p>
-S1. Add a Save module. Save the output from the previous module.
+1. Add a *SaveImages* module. Save the output from the previous module.
 
-After running this pipeline and output image will be created. Use FIJI to inspect the this image.
+After running these last two modules an output image will be created and saved to the output directory. Use FIJI to inspect the this image.
 
 Thank you for completing the 3d monolayer tutorial!
