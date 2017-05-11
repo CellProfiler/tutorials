@@ -1,6 +1,6 @@
 # CellProfiler Tutorial: 3d monolayer
 
-# Organizing and importing images
+# I. Organizing and importing images
 
 ## A note on running CellProfiler
 
@@ -27,7 +27,7 @@
   * The actual units do not matter, rather their relative proportion. The numbers are unitless and therefore the decimal place does not matter.
 1. Add three images to NamesAndTypes and give them "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
 
-# Find objects: nuclei
+# II. Find objects: nuclei
 
 ## Image preparation
 
@@ -51,7 +51,7 @@ Before attempting to segement the cells in the images, conditioning the images w
 1. Add a **ResizeObjects** module to return the segmented nuclei to the size of the original image. Since the original image was scaled down by *0.5*, it must be scaled up by *2*. The output of this module is the nuclei we are seeking, so name these objects accordingly, e.g. *Nuclei*.
     <p align="center"><img src="docs/images/resizeobjects_13.png" alt="rescale5" width="600"/></p>
 
-# Find objects: cells
+# III. Find objects: cells
 
 Now that we've segmented the nuclei we want to segment the cytoplasm for each nuclei whose boundaries are defined by the membrane channel. The membrane channel presents more of a challenge, because unlike the nuclei, the membrane signal is variable and the boundaries are connected together in a sort of mesh. This challenge is mitigated by the fact that the location of the nuclei can be used to help identify regions with cells.
 
@@ -73,7 +73,7 @@ The Watershed module finds objects that have bright signal, so the cytoplasm tha
 1. Add a **Remove holes** module, again. Choose a size of *100*. This result will be referred to as the *Inverted Membrane*.
     <p align="center"><img src="docs/images/removeholes_18.png" alt="rescale5" width="600"/></p>
 
-Wait! We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.
+    Wait! We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.
 
 1. Add another **ImageMath** module. Add all of the rescaled images together. This image will be referred to as the *Monolayer*
     <p align="center"><img src="docs/images/imagemath_19.png" alt="rescale5" width="600"/></p>
@@ -82,7 +82,7 @@ Wait! We cannot use the inverted membrane image as the cytoplasm just yet. The s
 1. Add an **ApplyThreshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
     <p align="center"><img src="docs/images/applythreshold_21.png" alt="rescale5" width="600"/></p>
 
-Now we will combine the information from the membrane channel with what we identified as the monolayer. We will do this by subtracting the NOT-monolayer region, i.e. the background above and below the monolayer, from the image that defines the cytoplasm of the cells.
+    Now we will combine the information from the membrane channel with what we identified as the monolayer. We will do this by subtracting the NOT-monolayer region, i.e. the background above and below the monolayer, from the image that defines the cytoplasm of the cells.
 
 1. Add an **ImageMath** module and invert the thresholded monolayer. This image will be referred to as the *background*.
     <p align="center"><img src="docs/images/imagemath_22.png" alt="rescale5" width="600"/></p>
@@ -91,7 +91,7 @@ Now we will combine the information from the membrane channel with what we ident
 1. Add a **Watershed** module. The input is the result of the previous ImageMath module or the *Cytoplasm*. Change the *Generate from* option to *Markers*. The Markers will be the *Seeds* image, which is the output of the Erosion module. Finally, set the Mask to also be the *Cytoplasm*. This will help preserve the cell boundaries.
     <p align="center"><img src="docs/images/watershed_24.png" alt="rescale5" width="600"/></p>
 
-# Creating visuals
+# IV. Creating visuals
 
 Congratulations! The nuclei and cells have been segmented in this monolayer. Visuals that reveal the details of the segmentation can be also be created within CellProfiler. The following steps will produce an image where the nuclei are pseudo-colored according to the segmentation and look like jelly beans.
 
