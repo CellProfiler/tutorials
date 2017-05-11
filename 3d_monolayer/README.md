@@ -36,20 +36,20 @@ Before attempting to segement the cells in the images, conditioning the images w
 
 1. Add a **RescaleIntensity** module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects. A RescaleIntensity module is needed for each channel, so there should be three of them.
     <p align="center"><img src="docs/images/rescale_5.png" alt="rescale5" width="400"/><img src="docs/images/rescale_6.png" alt="rescale5" width="400"/><img src="docs/images/rescale_7.png" alt="rescale5" width="400"/></p>
-1. Add a Resize module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation.
+1. Add a **Resize** module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation.
     <p align="center"><img src="docs/images/resize_8.png" alt="rescale5" width="600"/></p>
-1. Add a MedianFilter module. A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter will preserve boundaries better than other smoothing filters such as the Gaussian filter.
+1. Add a **MedianFilter** module. A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter will preserve boundaries better than other smoothing filters such as the Gaussian filter.
     <p align="center"><img src="docs/images/medianfilter_9.png" alt="rescale5" width="600"/></p>
 
 ## Segmentation
 
-1. Add an ApplyThreshold module. This will separate the foreground (nuclei) from the background.
+1. Add an **ApplyThreshold** module. This will separate the foreground (nuclei) from the background.
     <p align="center"><img src="docs/images/applythreshold_10.png" alt="rescale5 "width="600"/></p>
-1. Add a Remove holes module. This module implements an algorithm that will remove small holes within the nucleus. Any remaining holes will contribute to over-segmentation of the nuclei. Choose a size of 100.
+1. Add a **Remove holes** module. This module implements an algorithm that will remove small holes within the nucleus. Any remaining holes will contribute to over-segmentation of the nuclei. Choose a size of 100.
     <p align="center"><img src="docs/images/removeholes_11.png" alt="rescale5" width="600"/></p>
-1. Add a Watershed module. This module implements the watershed algorithm, which will segment the nuclei. For more information on the watershed algorithm refer to the wikipedia page, https://en.wikipedia.org/wiki/Watershed_(image_processing)
+1. Add a **Watershed** module. This module implements the watershed algorithm, which will segment the nuclei. For more information on the watershed algorithm refer to the wikipedia page, https://en.wikipedia.org/wiki/Watershed_(image_processing)
     <p align="center"><img src="docs/images/watershed_12.png" alt="rescale5" width="600"/></p>
-1. Add a ResizeObjects module to return the segmented nuclei to the size of the original image.
+1. Add a **ResizeObjects** module to return the segmented nuclei to the size of the original image.
     <p align="center"><img src="docs/images/resizeobjects_13.png" alt="rescale5" width="600"/></p>
 
 ## Segmenting the cells
@@ -58,19 +58,19 @@ The membrane presents more of a challenge, because unlike the nuclei, the membra
 
 ## Transform nuclei into markers
 
-1. Add a ConvertObjectsToImageModule and convert the output from the Watershed module.
+1. Add a **ConvertObjectsToImage** module and convert the output from the Watershed module.
     <p align="center"><img src="docs/images/convertobjectstoimages_14.png" alt="rescale5" width="600"/></p>
-1. Shrink the nuclei to make them more seed-like by adding an Erosion module. Use the ball structuring element with a size of 3. The output of this module will be referred to as the seed image.
+1. Shrink the nuclei to make them more seed-like by adding an **Erosion** module. Use the ball structuring element with a size of 3. The output of this module will be referred to as the seed image.
   <p align="center"><img src="docs/images/erosion_15.png" alt="rescale5" width="600"/></p>
 
 ## Transform the membrane channel
 
 The Watershed module finds objects that have high signal. In the case of the cells that will be identified as objects, the cytoplasm should have high signal. However, this is not the case in the membrane channel. Therefore, we will invert the membrane channel to achieve this effect.
-1. Add an ApplyThreshold module and an ImageMath module. First, threshold the rescaled membrane image. Then, within the ImageMath module choose the Invert operation and invert the tresholded membrane.
+1. Add an **ApplyThreshold** module  Threshold the rescaled membrane image.
     <p align="center"><img src="docs/images/applythreshold_16.png" alt="rescale5" width="600"/></p>
+1. Add an **ImageMath** module. Within the ImageMath module choose the Invert operation and invert the tresholded membrane.
     <p align="center"><img src="docs/images/imagemath_17.png" alt="rescale5" width="600"/></p>
-
-1. Add a Remove holes module, again. Choose a size of 100. This result will be referred to as the cytoplasm image, because it contains high signal where cytoplasm exists.
+1. Add a **Remove holes** module, again. Choose a size of 100. This result will be referred to as the cytoplasm image, because it contains high signal where cytoplasm exists.
     <p align="center"><img src="docs/images/removeholes_18.png" alt="rescale5" width="600"/></p>
 
 There is a problem with the thresholded membrane channel or cytoplasm image. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the monolayer.
