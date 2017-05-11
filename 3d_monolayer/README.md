@@ -42,7 +42,7 @@ Before attempting to segement the cells in the images, conditioning the images w
 <p align="center"><img src="docs/images/removeholes_11.png" alt="rescale5"/></p>
   1. Add a Watershed module. This module implements the watershed algorithm, which will segment the nuclei. For more information on the watershed algorithm refer to the wikipedia page, https://en.wikipedia.org/wiki/Watershed_(image_processing)
 <p align="center"><img src="docs/images/watershed_12.png" alt="rescale5"/></p>
-  1. Add a Resize module to return the segmented nuclei to the size of the original image.
+  1. Add a ResizeObjects module to return the segmented nuclei to the size of the original image.
 <p align="center"><img src="docs/images/resizeobjects_13.png" alt="rescale5"/></p>
 ## Segmenting the cells
 The membrane presents more of a challenge, because unlike the nuclei, the membrane signal is not concentrated or well separated. However, the location of the nuclei can be used to help identify regions with cells.
