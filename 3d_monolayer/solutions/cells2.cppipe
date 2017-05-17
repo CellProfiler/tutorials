@@ -320,17 +320,7 @@ ConvertObjectsToImage:[module_num:25|svn_version:\'Unknown\'|variable_revision_n
     Select the color format:uint16
     Select the colormap:Default
 
-Save:[module_num:26|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder sub-folder\x7Clabels
-    Image:CellImage
-    Color depth:16
-
-Save:[module_num:27|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder sub-folder\x7Clabels
-    Image:NucleiImage
-    Color depth:16
-
-OverlayOutlines:[module_num:28|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+OverlayOutlines:[module_num:26|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Display outlines on a blank image?:No
     Select image on which to display outlines:RescaleIntensityDNA
     Name the output image:NucleiOutlines
@@ -340,45 +330,25 @@ OverlayOutlines:[module_num:28|svn_version:\'Unknown\'|variable_revision_number:
     Select outline color:Red
     Select objects to display:Nuclei
 
-Save:[module_num:29|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder sub-folder\x7Coutlines
-    Image:NucleiOutlines
-    Color depth:16
-
-OverlayObjects:[module_num:30|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+OverlayObjects:[module_num:27|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:RescaleIntensityDNA
     Output:NucleiOverlay
     Objects:Nuclei
     Opacity:0.1
 
-Save:[module_num:31|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder sub-folder\x7Coverlays
-    Image:NucleiOverlay
-    Color depth:16
-
-OverlayObjects:[module_num:32|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+OverlayObjects:[module_num:28|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:RescaleIntensityMemb
     Output:NucleiMembOverlay
     Objects:Nuclei
     Opacity:0.1
 
-Save:[module_num:33|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder sub-folder\x7Coverlays
-    Image:NucleiMembOverlay
-    Color depth:16
-
-OverlayObjects:[module_num:34|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+OverlayObjects:[module_num:29|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:RescaleIntensityMemb
     Output:CellsOverlay
     Objects:Cells
     Opacity:0.1
 
-Save:[module_num:35|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder sub-folder\x7Coverlays
-    Image:CellsOverlay
-    Color depth:16
-
-CropObjects:[module_num:36|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+CropObjects:[module_num:30|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Objects:Nuclei
     Directory:Default Output Folder sub-folder\x7Cobject_crops
 
@@ -389,12 +359,12 @@ MeasureObjectIntensity:[module_num:37|svn_version:\'Unknown\'|variable_revision_
     Select objects to measure:Nuclei
     Select objects to measure:Cells
 
-MeasureObjectSizeShape:[module_num:38|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectSizeShape:[module_num:31|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select objects to measure:Nuclei
     Select objects to measure:Cells
     Calculate the Zernike features?:No
 
-ExportToSpreadsheet:[module_num:39|svn_version:\'Unknown\'|variable_revision_number:11|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+ExportToSpreadsheet:[module_num:32|svn_version:\'Unknown\'|variable_revision_number:11|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:Comma (",")
     Add image metadata columns to your object data file?:Yes
     Limit output to a size that is allowed in Excel?:No
