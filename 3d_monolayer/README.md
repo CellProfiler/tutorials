@@ -77,7 +77,7 @@ The Watershed module finds objects that have bright signal, so the cytoplasm tha
 
 1. Add another **ImageMath** module. Add all of the rescaled images together. This image will be referred to as the *Monolayer*
     <p align="center"><img src="../docs/3d_monolayer/images/imagemath_19.png" alt="rescale5" width="600"/></p>
-1. Add a **GuassianFilter** module. Choose a size of *30* to blend the signal together. The result should look like a cloud of signal where the monolayer resides.
+1. Add a **Closing** module. Choose a size of *17* to blend the signal together. The result should look like a cloud of signal where the monolayer resides.
     <p align="center"><img src="../docs/3d_monolayer/images/gaussianfilter_20.png" alt="rescale5" width="600"/></p>
 1. Add an **ApplyThreshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
     <p align="center"><img src="../docs/3d_monolayer/images/applythreshold_21.png" alt="rescale5" width="600"/></p>
