@@ -7,8 +7,9 @@ addons:
   directories: $HOME/.cache/pip
 dist: trusty
 env:
-  - LC_ALL="en_US.UTF-8" CP_MYSQL_TEST_HOST="127.0.0.1" CP_MYSQL_TEST_USER="root" CP_MYSQL_TEST_PASSWORD=""
-  - DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+  global:
+    - LC_ALL="en_US.UTF-8" CP_MYSQL_TEST_HOST="127.0.0.1" CP_MYSQL_TEST_USER="root" CP_MYSQL_TEST_PASSWORD=""
+    - DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 install:
   - pip install --upgrade pip
   - pip install --upgrade cython
