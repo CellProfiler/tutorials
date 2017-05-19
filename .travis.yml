@@ -26,8 +26,5 @@ notifications:
     secure: TkDoDwLYouHg8YeUm0JaB4YD1LEbji3cs7FIQAedZKL7ELAKVwC4zKuJdS9Ri5mKvkD6FsLxUKiZWR7lCRRc8xZlJtD3jleKa+WMsQHYenAgJgtaaf2pE3AHN42g8StujCImynFDCEEu3lKd3EI9/sLuwe7gmwZjQ6hGugBYBShWUzhQzfwB3D3PBcrztCeL7RvUjJt/h4KCr0sU328927tvqVxkRUPZsJbPUwcVYCImdjnv9Uf5pTIp+PFkyxV5x16evKylX3GnN0GXLF//zR47e2h+DRdhX9WiMnM9pof7O3xZSbXorw3vdxV51IAocILqR2pB3yMxpkI4PmSziMNJCtl+4I5xpKSb7X7K4qpm8ztCez9QtTEOLg5DgvrC+okoS7M8JpxOFuvv4PfyXLvKOHzd74l82XN0q4d7ezVuT04HP/wTl83KfbtKOlRvlBy2SkfFsCzaLyZECvf02Gf7jS4OniIP47wUz3L8U9w6x23y5K8cUMQhVzOO8mNw4bSQgtd2Kn2ZqEmWY+WdO79jjfTbWRrennBtFdNt3LvCol0IkcXNDt3DFMsqG823bjgQuDs2lU5mAQe4RHbmVxlKd/pqVIlztyDhard6apyUa779r+XJVDVlw+xYZQKK1Ere754QPQ2ScRDyv2oOnpdHc3b8SUVHVzhi3daIShA=
 python: 2.7
 script:
-  - export DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-  - echo $DIR
-  - mkdir $DIR/AdvancedSegmentation/output
-  - cellprofiler -c -r -p $DIR/AdvancedSegmentation/BBBC022_Analysis_Final.cppipe -i $DIR/AdvancedSegmentation/images -o $DIR/AdvancedSegmentation/output
+  - make test
 sudo: false
