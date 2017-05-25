@@ -2,7 +2,7 @@ CellProfiler Pipeline: http://www.cellprofiler.org
 Version:3
 DateRevision:300
 GitHash:
-ModuleCount:33
+ModuleCount:38
 HasImagePlaneDetails:False
 
 Images:[module_num:1|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
@@ -36,8 +36,8 @@ NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:7|s
     Single images count:0
     Maximum intensity:255.0
     Process as 3D:Yes
-    x:0.065
-    y:0.065
+    x:0.26
+    y:0.26
     z:0.29
     Select the rule criteria:and (metadata does ChannelNumber "2")
     Name to assign these images:DNA
@@ -69,7 +69,7 @@ Groups:[module_num:4|svn_version:\'Unknown\'|variable_revision_number:2|show_win
     grouping metadata count:1
     Metadata category:None
 
-RescaleIntensity:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:3|show_window:True|notes:\x5B\'We rescale the intensity, which normalizes the data. Variation in intensity due to variation in sample prep and image acquisition will be minimized and the pipeline performance will be more consistent. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+RescaleIntensity:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:3|show_window:True|notes:\x5B\'We rescale the intensity, which normalizes the data. Variation in intensity due to variation in sample prep and image acquisition will be minimized and the pipeline performance will be more consistent. Also, when visuals are created the intensity will fill a larger fraction of the dynamic range.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:DNA
     Output:RescaleIntensityDNA
     Rescaling method:Stretch each image to use the full intensity range
@@ -123,13 +123,13 @@ Resize:[module_num:8|svn_version:\'Unknown\'|variable_revision_number:4|show_win
     Select the image with the desired dimensions:None
     Additional image count:0
 
-GaussianFilter:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\'The signal is low. There is a lot of noise in the regions around the nuclei. A gaussian filter will reduce the noise and increase the separation between the foreground and background. The sigma chosen is small relative to the nuclei. This is a balance between removeing noise and preserving the boundary between images.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+MedianFilter:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:ResizeDNA
-    Output:GuassianFilter
-    Sigma:2
+    Output:MedianFilter
+    Window:5
 
 ApplyThreshold:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Input:GuassianFilter
+    Input:MedianFilter
     Output:ApplyThreshold
     Threshold strategy:Global
     Thresholding method:Otsu
@@ -151,7 +151,7 @@ ApplyThreshold:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:1
 Remove holes:[module_num:11|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:ApplyThreshold
     Output:RemoveHoles
-    Size:100
+    Size:20
 
 Watershed:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:RemoveHoles
@@ -161,24 +161,7 @@ Watershed:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:1|show
     Mask:Leave blank
     Connectivity:8
 
-Resize:[module_num:13|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Input:ApplyThreshold
-    Output:ResizeAT
-    Resizing method:Resize by a fraction or multiple of the original size
-    Resizing factor:2
-    Width of the final image:100
-    Height of the final image:100
-    Interpolation method:Nearest Neighbor
-    Method to specify the dimensions:Manual
-    Select the image with the desired dimensions:None
-    Additional image count:0
-
-Erosion:[module_num:14|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Input:ResizeAT
-    Output:Erosion
-    Structuring element:ball,4
-
-ResizeObjects:[module_num:15|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
+ResizeObjects:[module_num:13|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:Watershed
     Object:Nuclei
     Method:Factor
@@ -186,22 +169,67 @@ ResizeObjects:[module_num:15|svn_version:\'Unknown\'|variable_revision_number:1|
     Width:100
     Height:100
 
-ExpandOrShrinkObjects:[module_num:16|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+ConvertObjectsToImage:[module_num:14|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:Nuclei
-    Name the output objects:ShrunkenNuclei
-    Select the operation:Shrink objects to a point
-    Number of pixels by which to expand or shrink:1
-    Fill holes in objects so that all objects shrink to a single point?:Yes
-    Retain the outlines of the identified objects?:No
-    Name the outline image:ShrunkenNucleiOutlines
+    Name the output image:NucleiImage
+    Select the color format:uint16
+    Select the colormap:Default
 
-ImageMath:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+Erosion:[module_num:15|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:NucleiImage
+    Output:Erosion
+    Structuring element:disk,5
+
+ApplyThreshold:[module_num:16|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:RescaleIntensityMemb
+    Output:MembThreshold
+    Threshold strategy:Global
+    Thresholding method:Minimum cross entropy
+    Threshold smoothing scale:0.0
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.000001
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Otsu
+
+ImageMath:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
+    Operation:Invert
+    Raise the power of the result by:1.0
+    Multiply the result by:1.0
+    Add to result:0.0
+    Set values less than 0 equal to 0?:Yes
+    Set values greater than 1 equal to 1?:Yes
+    Ignore the image masks?:No
+    Name the output image:MembInvert
+    Image or measurement?:Image
+    Select the first image:MembThreshold
+    Multiply the first image by:1.0
+    Measurement:
+    Image or measurement?:Image
+    Select the second image:
+    Multiply the second image by:1.0
+    Measurement:
+
+Remove holes:[module_num:18|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:MembInvert
+    Output:MembInvertRemoveHoles
+    Size:20
+
+ImageMath:[module_num:19|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Operation:Add
     Raise the power of the result by:1.0
     Multiply the result by:1.0
     Add to result:0.0
     Set values less than 0 equal to 0?:Yes
-    Set values greater than 1 equal to 1?:No
+    Set values greater than 1 equal to 1?:Yes
     Ignore the image masks?:No
     Name the output image:ImageAfterMath
     Image or measurement?:Image
@@ -217,52 +245,38 @@ ImageMath:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:4|show
     Multiply the third image by:1.0
     Measurement:
 
-Closing:[module_num:18|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+Resize:[module_num:20|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Input:ImageAfterMath
-    Output:Closing
-    Structuring element:disk,20
+    Output:ResizeImageAfterMath
+    Resizing method:Resize by a fraction or multiple of the original size
+    Resizing factor:0.25
+    Width of the final image:100
+    Height of the final image:100
+    Interpolation method:Nearest Neighbor
+    Method to specify the dimensions:Manual
+    Select the image with the desired dimensions:None
+    Additional image count:0
 
-ApplyThreshold:[module_num:19|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Input:Closing
-    Output:ApplyThresholdMemb
-    Threshold strategy:Global
-    Thresholding method:Otsu
-    Threshold smoothing scale:0.0
-    Threshold correction factor:1.0
-    Lower and upper bounds on threshold:0.0,1.0
-    Manual threshold:0.0
-    Select the measurement to threshold with:None
-    Two-class or three-class thresholding?:Two classes
-    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
-    Size of adaptive window:50
-    Lower outlier fraction:0.05
-    Upper outlier fraction:0.05
-    Averaging method:Mean
-    Variance method:Standard deviation
-    # of deviations:2.0
-    Thresholding method:Otsu
+Closing:[module_num:21|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:ResizeImageAfterMath
+    Output:ImageAfterMathClosing
+    Structuring element:disk,17
 
-ImageMath:[module_num:20|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Operation:Invert
-    Raise the power of the result by:1.0
-    Multiply the result by:1.0
-    Add to result:0.0
-    Set values less than 0 equal to 0?:Yes
-    Set values greater than 1 equal to 1?:Yes
-    Ignore the image masks?:No
-    Name the output image:InvertMemb
-    Image or measurement?:Image
-    Select the first image:RescaleIntensityMemb
-    Multiply the first image by:1.0
-    Measurement:
-    Image or measurement?:Image
-    Select the second image:
-    Multiply the second image by:1.0
-    Measurement:
+Resize:[module_num:22|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:ImageAfterMathClosing
+    Output:ResizeIAMC
+    Resizing method:Resize by a fraction or multiple of the original size
+    Resizing factor:4
+    Width of the final image:100
+    Height of the final image:100
+    Interpolation method:Nearest Neighbor
+    Method to specify the dimensions:Manual
+    Select the image with the desired dimensions:None
+    Additional image count:0
 
-ApplyThreshold:[module_num:21|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Input:InvertMemb
-    Output:ApplyThresholdMemb2
+ApplyThreshold:[module_num:23|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:ResizeIAMC
+    Output:MonolayerMask
     Threshold strategy:Global
     Thresholding method:Minimum cross entropy
     Threshold smoothing scale:0.0
@@ -280,88 +294,181 @@ ApplyThreshold:[module_num:21|svn_version:\'Unknown\'|variable_revision_number:1
     # of deviations:2.0
     Thresholding method:Otsu
 
-Watershed:[module_num:22|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Input:ApplyThresholdMemb2
+ImageMath:[module_num:24|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:Invert
+    Raise the power of the result by:1.0
+    Multiply the result by:1.0
+    Add to result:0.0
+    Set values less than 0 equal to 0?:Yes
+    Set values greater than 1 equal to 1?:Yes
+    Ignore the image masks?:No
+    Name the output image:MonolayerInvert
+    Image or measurement?:Image
+    Select the first image:MonolayerMask
+    Multiply the first image by:1.0
+    Measurement:
+    Image or measurement?:Image
+    Select the second image:MonolayerMask
+    Multiply the second image by:1.0
+    Measurement:
+
+ImageMath:[module_num:25|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:Subtract
+    Raise the power of the result by:1.0
+    Multiply the result by:1.0
+    Add to result:0.0
+    Set values less than 0 equal to 0?:Yes
+    Set values greater than 1 equal to 1?:Yes
+    Ignore the image masks?:No
+    Name the output image:MembFinal
+    Image or measurement?:Image
+    Select the first image:MembInvertRemoveHoles
+    Multiply the first image by:1.0
+    Measurement:
+    Image or measurement?:Image
+    Select the second image:MonolayerInvert
+    Multiply the second image by:1.0
+    Measurement:
+
+Watershed:[module_num:26|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:MembFinal
     Object:Cells
-    Generate from:Distance
+    Generate from:Markers
     Markers:Erosion
-    Mask:ApplyThresholdMemb
+    Mask:MembFinal
     Connectivity:8
 
-Save:[module_num:23|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder\x7C
-    Image:ImageAfterMath
-    Color depth:16
-
-ConvertObjectsToImage:[module_num:24|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+ConvertObjectsToImage:[module_num:27|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:Cells
     Name the output image:CellImage
-    Select the color format:Color
+    Select the color format:uint16
     Select the colormap:Default
 
-Save:[module_num:25|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
-    Directory:Default Output Folder\x7C
-    Image:CellImage
-    Color depth:16
+SaveImages:[module_num:28|svn_version:\'Unknown\'|variable_revision_number:12|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:CellImage
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:DNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_cell-labels
+    Saved file format:tiff
+    Output file location:Default Output Folder\x7C
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...\x7C
 
-OverlayOutlines:[module_num:26|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:29|svn_version:\'Unknown\'|variable_revision_number:12|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:NucleiImage
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:DNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_nuclei-labels
+    Saved file format:tiff
+    Output file location:Default Output Folder\x7C
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...\x7C
+
+OverlayOutlines:[module_num:30|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
     Display outlines on a blank image?:No
-    Select image on which to display outlines:DNA
-    Name the output image:NucleiOverlay
+    Select image on which to display outlines:RescaleIntensityDNA
+    Name the output image:NucleiOutlines
     Outline display mode:Color
     Select method to determine brightness of outlines:Max of image
     How to outline:Thick
     Select outline color:Red
     Select objects to display:Nuclei
 
-Save:[module_num:27|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder\x7C
-    Image:NucleiOverlay
-    Color depth:16
+SaveImages:[module_num:31|svn_version:\'Unknown\'|variable_revision_number:12|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:NucleiOutlines
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:DNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_nuclei-outlines
+    Saved file format:tiff
+    Output file location:Default Output Folder\x7C
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...\x7C
 
-MeasureObjectIntensity:[module_num:28|svn_version:\'Unknown\'|variable_revision_number:3|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Hidden:1
+OverlayObjects:[module_num:32|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:RescaleIntensityDNA
+    Output:NucleiOverlay
+    Objects:Nuclei
+    Opacity:0.1
+
+SaveImages:[module_num:33|svn_version:\'Unknown\'|variable_revision_number:12|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:NucleiOverlay
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:DNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_nuclei-overlay
+    Saved file format:tiff
+    Output file location:Default Output Folder\x7C
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...\x7C
+
+OverlayObjects:[module_num:34|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Input:RescaleIntensityMemb
+    Output:CellsOverlay
+    Objects:Cells
+    Opacity:0.1
+
+SaveImages:[module_num:35|svn_version:\'Unknown\'|variable_revision_number:12|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:CellsOverlay
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:DNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_cells-overlay
+    Saved file format:tiff
+    Output file location:Default Output Folder\x7C
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...\x7C
+
+MeasureObjectIntensity:[module_num:36|svn_version:\'Unknown\'|variable_revision_number:3|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Hidden:2
     Select an image to measure:DNA
+    Select an image to measure:mito
     Select objects to measure:Nuclei
+    Select objects to measure:Cells
 
-MeasureObjectSizeShape:[module_num:29|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectSizeShape:[module_num:37|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select objects to measure:Nuclei
+    Select objects to measure:Cells
     Calculate the Zernike features?:No
 
-FilterObjects:[module_num:30|svn_version:\'Unknown\'|variable_revision_number:8|show_window:True|notes:\x5B\'A minimum value of 20000 was chosen based upon a histogram of the unfiltered data for Nuclei Area created by this pipeline.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Input:Nuclei
-    Object:FilteredNuclei
-    Select the filtering mode:Measurements
-    Select the filtering method:Limits
-    Select the objects that contain the filtered objects:None
-    Rules file location:Elsewhere...\x7C
-    Rules file name:rules.txt
-    Class number:1
-    Measurement count:1
-    Additional object count:0
-    Assign overlapping child to:Both parents
-    Select the measurement to filter by:AreaShape_Area
-    Filter using a minimum measurement value?:Yes
-    Minimum value:20000
-    Filter using a maximum measurement value?:No
-    Maximum value:1.0
-
-OverlayOutlines:[module_num:31|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Display outlines on a blank image?:No
-    Select image on which to display outlines:DNA
-    Name the output image:FilteredNucleiOverlay
-    Outline display mode:Color
-    Select method to determine brightness of outlines:Max of image
-    How to outline:Thick
-    Select outline color:Red
-    Select objects to display:FilteredNuclei
-
-Save:[module_num:32|svn_version:\'Unknown\'|variable_revision_number:1|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Directory:Default Output Folder\x7C
-    Image:FilteredNucleiOverlay
-    Color depth:16
-
-ExportToSpreadsheet:[module_num:33|svn_version:\'Unknown\'|variable_revision_number:11|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+ExportToSpreadsheet:[module_num:38|svn_version:\'Unknown\'|variable_revision_number:11|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:Comma (",")
     Add image metadata columns to your object data file?:Yes
     Limit output to a size that is allowed in Excel?:No
