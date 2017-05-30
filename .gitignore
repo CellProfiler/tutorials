@@ -89,3 +89,6 @@ ENV/
 .ropeproject
 
 output/
+
+# CellProfiler
+*.cpproj
