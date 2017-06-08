@@ -231,7 +231,7 @@ and adjust them as needed.
     default), which works well if the image is high-contrast.
 
   <img src="TutorialImages/Fig2.png">
-  ------------------------------------------------------------------------------------------------------------------------------------
+
 Figure 2: Example module display window for *IdentifyPrimaryObjects*.
 
 3)  **Confirming by eye that the settings you chose do allow for
@@ -279,7 +279,7 @@ drawing a box to zoom in on.
     identification. The result may look like Figure 3.
 
   <img src="TutorialImages/Fig3.png">
-  ---------------------------------------------------------------------------------------------------------------------------------------------------
+
   Figure 3: A zoomed-in view of the display window for *IdentifyPrimaryObjects*
 
 4)  **Improve identification of primary objects **
@@ -378,7 +378,6 @@ nuclei, you can now find the entire cell using
         the primary object boundaries.
 
   <img src="TutorialImages/Fig4.png">
-  ----------------------------------------------------------------------------------------------------------------------------------------
   Figure 4: Example module display window for *IdentifySecondaryObjects*.
 
 In contrast to the DNA stain in *IdentifyPrimaryObjects*, the middle
@@ -432,7 +431,6 @@ objects, effectively identifying the cytoplasm.
     results of tertiary object identification (Fig. 5).
 
   <img src="TutorialImages/Fig5.png">
-  ------------------------------------------------------------------------------------------------------------
   Figure 5: Example module display window for *IdentifyTertiaryObjects*.
 
 7)  **
@@ -780,7 +778,6 @@ visualization tools available is the plate layout format.
         Wortmannin, increasing from left to right.
 
   <img src="TutorialImages/Fig6.png">
-  ------------------------------------------------------------------------------------------------------------------------------------------
   Figure 6: The *Plate Viewer* visualization tool illustrating the drug dosages applied to the plate.
 
 -   Select “*Image\_Count\_Nuclei”* from the *Measurement* drop-down to
@@ -930,7 +927,7 @@ more data before you can decide whether it’s accurate enough to score
 the whole experiment.
 
   <img src="TutorialImages/Fig8A.png" width=250><img src="TutorialImages/Fig8B.png" width=250>
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
   Figure 8: Examples of confusion matrices from a poorly-trained (left) and well-trained (right) classifier. The cells in the classifier on the left were assigned to bins of the training set at random, making it very difficult to come up with good rules to separate the classes; nearly 50% of each class is predicted incorrectly. The cells in the classifier on the right have been assigned to the correct bins, allowing the classifier to find rules that accurately predict which class the cells belong to. While the cells in this simple example were able to be predicted perfectly, that is rare in real data.
 
 5)  **Refining the training set by sorting more “unclassified” cells
@@ -1071,8 +1068,7 @@ enrichment score.
     for the top-scoring well.
 
   <img src="TutorialImages/Fig9.png">
-  --------------------------------------------------------------------
-  Figure 9: Hit table showing the cell counts and enrichment scores.
+Figure 9: Hit table showing the cell counts and enrichment scores.
 
 7)  **Saving the scores to the measurement database for visualization**
 
