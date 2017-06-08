@@ -21,22 +21,25 @@ drugs that have the same effect as Wortmannin on FOXO1A subcellular
 localization (and hence may be possible treatments for osteosarcoma
 patients), but possess fewer side effects than the known drugs.
 
+<p align="center"> 
 
   <img src="TutorialImages/Fig1A.png" width=250> <img src="TutorialImages/Fig1B.png" width=250>
 
 
+
   Figure 1: Examples of FOXO1A-GFP localization. Left: Cytoplasmic localization in untreated cells. Right: Nuclear localization in Wortmannin treated cells. GFP: Green, DNA: red.
 
+</p>
 
 
-**Goals of this exercise: **
+**Goals of this exercise:**
 
 In this exercise, we aim to: (1) determine this lowest possible dose
 necessary to observe this effect, and (2) to optimize the analysis of
 images in which FOXO1A is cytoplasmic versus nuclear, in order to
 separate positive controls and negative controls as best as possible.
 
-**Materials necessary for this exercise: **
+**Materials necessary for this exercise:**
 
 The images you will be analyzing were taken from cells growing in a
 standard 96-well plate, but you will work with a subset of only 26 of
@@ -49,7 +52,7 @@ drug. In addition to these images, a text file called
 information about where on the 96-well plate the wells were located, and
 how the cells were treated.
 
-***Methods to be used in this exercise:***
+**Methods to be used in this exercise:**
 
 In this exercise, you will use CellProfiler and CellProfiler Analyst to
 identify and delineate (or “segment”) each nucleus and cell body, and
@@ -230,9 +233,12 @@ and adjust them as needed.
     available thresholding methods. Select “Otsu” (which is the
     default), which works well if the image is high-contrast.
 
+<p align="center">
   <img src="TutorialImages/Fig2.png">
 
 Figure 2: Example module display window for *IdentifyPrimaryObjects*.
+
+</p>
 
 3)  **Confirming by eye that the settings you chose do allow for
     identification of separate cells and nuclei**
@@ -278,11 +284,15 @@ drawing a box to zoom in on.
 -   Zoom in the image in order to see the quality of the nuclei
     identification. The result may look like Figure 3.
 
+
+<p align="center">
   <img src="TutorialImages/Fig3.png">
 
   Figure 3: A zoomed-in view of the display window for *IdentifyPrimaryObjects*
+  
+</p>
 
-4)  **Improve identification of primary objects **
+4)  **Improve identification of primary objects**
 
 In this instance, in Figure 3, you can see that the outlines capture too
 much of the background around the nuclei. This means that the default
@@ -377,8 +387,14 @@ nuclei, you can now find the entire cell using
         secondary object boundaries and the green outlines indicate
         the primary object boundaries.
 
+
+<p align="center">
+
   <img src="TutorialImages/Fig4.png">
+  
   Figure 4: Example module display window for *IdentifySecondaryObjects*.
+
+</p>
 
 In contrast to the DNA stain in *IdentifyPrimaryObjects*, the middle
 intensity levels associated with the dim cells are assigned as
@@ -430,11 +446,16 @@ objects, effectively identifying the cytoplasm.
 -   Click the “Step” button to execute the module, and preview the
     results of tertiary object identification (Fig. 5).
 
+
+<p align="center">
+
   <img src="TutorialImages/Fig5.png">
+  
   Figure 5: Example module display window for *IdentifyTertiaryObjects*.
 
-7)  **
-    Measuring the cells’ characteristics (i.e. the “object
+</p>
+
+7)  **Measuring the cells’ characteristics (i.e. the “object
     features”)**
 
 Now that the objects have been identified using settings that have been
@@ -777,8 +798,14 @@ visualization tools available is the plate layout format.
     -   Row E, columns 2-11: Nine doses of 2-fold dilutions of
         Wortmannin, increasing from left to right.
 
+
+<p align="center">
+
   <img src="TutorialImages/Fig6.png">
+  
   Figure 6: The *Plate Viewer* visualization tool illustrating the drug dosages applied to the plate.
+
+</p>
 
 -   Select “*Image\_Count\_Nuclei”* from the *Measurement* drop-down to
     show the nuclei count for each image.
@@ -844,14 +871,19 @@ outside the nucleus (“negatives”) by sorting examples of each into bins.
         classification.
 
 
+<p align="center">
+
   <img src="TutorialImages/Fig7a.png">
 
-  |<img src="TutorialImages/Fig7b.png" width=50> <img src="TutorialImages/Fig7c.png" width=50> <img src="TutorialImages/Fig7d.png" width=50> <img src="TutorialImages/Fig7e.png" width=50>|   <img src="TutorialImages/Fig7f.png" width=50> <img src="TutorialImages/Fig7g.png" width=50> <img src="TutorialImages/Fig7h.png" width=50> <img src="TutorialImages/Fig7i.png" width=50>|
- |--|--|
+</p>
+
+
+  <img src="TutorialImages/Fig7b.png" width=50> <img src="TutorialImages/Fig7c.png" width=50> <img src="TutorialImages/Fig7d.png" width=50> <img src="TutorialImages/Fig7e.png" width=50>|   <img src="TutorialImages/Fig7f.png" width=50> <img src="TutorialImages/Fig7g.png" width=50> <img src="TutorialImages/Fig7h.png" width=50> <img src="TutorialImages/Fig7i.png" width=50>
+ |:--:|:--:|
 |**Examples of postive cells**   | **Examples of negative cells**|
 
 
-  Figure 7: *Top:* The *Classifier* interface showing 5 positive and 5 negative cells. Thirty unclassified cells remain and are ready for sorting. *Bottom:* Examples of positive cells (left) and negative cells (right).
+ Figure 7: *Top:* The *Classifier* interface showing 5 positive and 5 negative cells. Thirty unclassified cells remain and are ready for sorting. *Bottom:* Examples of positive cells (left) and negative cells (right).
 
 
 -   Now “drag & drop” whichever cells you consider clearly negative
@@ -926,12 +958,16 @@ correlation matrix- you need to see how your classifier will perform on
 more data before you can decide whether it’s accurate enough to score
 the whole experiment.
 
+<p align="center">
+
   <img src="TutorialImages/Fig8A.png" width=250><img src="TutorialImages/Fig8B.png" width=250>
 
   Figure 8: Examples of confusion matrices from a poorly-trained (left) and well-trained (right) classifier. The cells in the classifier on the left were assigned to bins of the training set at random, making it very difficult to come up with good rules to separate the classes; nearly 50% of each class is predicted incorrectly. The cells in the classifier on the right have been assigned to the correct bins, allowing the classifier to find rules that accurately predict which class the cells belong to. While the cells in this simple example were able to be predicted perfectly, that is rare in real data.
 
+</p>
+
 5)  **Refining the training set by sorting more “unclassified” cells
-    into the “positive” and “negative” bins **
+    into the “positive” and “negative” bins**
 
 At this point, it is important to keep in mind that the CPA Classifier
 tool will pick whichever measurement is most significant in making its
@@ -1067,8 +1103,13 @@ enrichment score.
     first column (“ImageNumber”) to display the corresponding image
     for the top-scoring well.
 
+<p align="center">
+
   <img src="TutorialImages/Fig9.png">
+  
 Figure 9: Hit table showing the cell counts and enrichment scores.
+
+</p>
 
 7)  **Saving the scores to the measurement database for visualization**
 
@@ -1109,7 +1150,7 @@ using CPA’s tools.
     classifier?
 
 8)  **Plotting the scoring results, to estimate the lowest dose
-    necessary to induce FOX1O-GFP translocation **
+    necessary to induce FOX1O-GFP translocation**
 
 You can use additional data tools in CPA to visualize your data in other
 ways. In this case, we will use a scatter plot to plot a dose-response
