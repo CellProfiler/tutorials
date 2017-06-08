@@ -21,15 +21,11 @@ drugs that have the same effect as Wortmannin on FOXO1A subcellular
 localization (and hence may be possible treatments for osteosarcoma
 patients), but possess fewer side effects than the known drugs.
 
-<p align="center"> 
-
-  <img src="TutorialImages/Fig1A.png" width=250> <img src="TutorialImages/Fig1B.png" width=250>
-
+<p align="center"><img src="TutorialImages/Fig1A.png" width=250><img src="TutorialImages/Fig1B.png" width=250></p>
 
 
   Figure 1: Examples of FOXO1A-GFP localization. Left: Cytoplasmic localization in untreated cells. Right: Nuclear localization in Wortmannin treated cells. GFP: Green, DNA: red.
 
-</p>
 
 
 **Goals of this exercise:**
@@ -958,9 +954,7 @@ correlation matrix- you need to see how your classifier will perform on
 more data before you can decide whether it’s accurate enough to score
 the whole experiment.
 
-<p align="center">
-
-  <img src="TutorialImages/Fig8A.png" width=250><img src="TutorialImages/Fig8B.png" width=250>
+<p align="center"><img src="TutorialImages/Fig8A.png" width=250><img src="TutorialImages/Fig8B.png" width=250>
 
   Figure 8: Examples of confusion matrices from a poorly-trained (left) and well-trained (right) classifier. The cells in the classifier on the left were assigned to bins of the training set at random, making it very difficult to come up with good rules to separate the classes; nearly 50% of each class is predicted incorrectly. The cells in the classifier on the right have been assigned to the correct bins, allowing the classifier to find rules that accurately predict which class the cells belong to. While the cells in this simple example were able to be predicted perfectly, that is rare in real data.
 
