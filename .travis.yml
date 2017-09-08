@@ -5,6 +5,8 @@ addons:
       - python-pip
   apt: true
   directories: $HOME/.cache/pip
+after_script:
+  - make clean
 dist: trusty
 env:
   - LC_ALL="en_US.UTF-8"
