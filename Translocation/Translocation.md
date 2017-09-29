@@ -248,7 +248,7 @@ objects into a single object.
 
 The results of *IdentifyPrimaryObjects* are displayed in four panels in the display window, as shown in Fig. 2:
 
--   Upper left: The raw image, titled as “Original image” plus the image
+-   Upper left: The raw image, titled as “Input image, cycle #” plus the image
    number
 
 -   Upper right: A colored image of the identified and labeled objects,
@@ -300,7 +300,7 @@ quickly preview the results.
 -   We can figure out why the thresholding method is overly lenient by
     looking closer at the original image.
 
-    -   Right-click on the “Original image” panel in the
+    -   Right-click on the “Input image, cycle #” panel in the
         IdentifyPrimaryObjects display window and select “Image
         Contrast” and then “Log normalized.” This log-transforms the
         image intensity such that the contrast between low pixel
@@ -1105,6 +1105,10 @@ Figure 9: Hit table showing the cell counts and enrichment scores.
 
 </p>
 
+You can also save your training set and/or classifer model for future reference or 
+to make changes later; do so by going to *File &gt; Save Training Set* or 
+*File &gt; Save Classifier Model*
+
 7)  **Saving the scores to the measurement database for visualization**
 
 Now that we have successfully scored our experiment, we will save the
@@ -1135,13 +1139,11 @@ using CPA’s tools.
     list in order to view the enrichment scores in the plate layout.
 
 -   Refer to the previous Plate Viewer display of
-    *“Image\_Metadata\_Dose*” from section 2A. In the space below,
-    record your answers to the following questions: (1) How well does
-    the layout of the “*pEnriched\_positive*” values match the layout
-    of the (i) positive and negative control wells and (ii) the
-    9-point dose wells of “*Image\_Metadata\_Dose*”? (2) What does
-    this correspondence (or lack thereof) tell you about the
-    classifier?
+    *“Image\_Metadata\_Dose*” from section 2A. Consider the following 
+    questions: (1) How well does the layout of the “*pEnriched\_positive*” 
+    values match the layout of the (i) positive and negative control wells 
+    and (ii) the 9-point dose wells of “*Image\_Metadata\_Dose*”? (2) What 
+    does this correspondence (or lack thereof) tell you about the classifier?
 
 8)  **Plotting the scoring results, to estimate the lowest dose
     necessary to induce FOX1O-GFP translocation**
@@ -1161,7 +1163,11 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
 -   From the “y-axis” row, select “*HitTable*” and
     “*pEnriched\_positive*” from the drop-down-lists.
 
--   Click the “Update chart” button to see the scatter plot.
+-   Click the “Update chart” button to see the scatter plot. 
+    NOTE: due to a bug in CPA, if you have plot the graph
+    once in “*linear*” scale mode and then try to switch to “*log*”
+    scale an error will be thrown.  If you want to look at both,
+    open two separate scatter plots.
 
 -   In the space below, record your questions to the following
     questions: (1) What is the enrichment score
