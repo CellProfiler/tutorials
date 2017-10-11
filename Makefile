@@ -3,6 +3,7 @@
 clean:
 		rm -rf 3d_monolayer/output
 		rm -rf AdvancedSegmentation/output
+		rm -rf PixelBasedClassification/output
 		rm -rf Translocation/output
 
 test:
@@ -15,6 +16,11 @@ test:
 		    -i AdvancedSegmentation/images                                       \
 		    -o AdvancedSegmentation/output                                       \
 		    -d AdvancedSegmentation/output/done
+
+		cellprofiler -c -r -p PixelBasedClassification/pixel_based_classification_cho.cppipe \
+		    -i PixelBasedClassification/images                                       \
+		    -o PixelBasedClassification/output                                       \
+		    -d PixelBasedClassification/output/done
 
 		cellprofiler -c -r -p Translocation/Translocation_final.cppipe \
 		    -i Translocation/images                                    \
