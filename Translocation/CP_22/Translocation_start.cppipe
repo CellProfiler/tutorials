@@ -1,7 +1,7 @@
 CellProfiler Pipeline: http://www.cellprofiler.org
 Version:3
-DateRevision:300
-GitHash:
+DateRevision:20160503183100
+GitHash:ac0529e
 ModuleCount:5
 HasImagePlaneDetails:False
 
@@ -17,15 +17,15 @@ Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:4|show_w
     Extraction method count:1
     Metadata extraction method:Extract from file/folder names
     Metadata source:File name
-    Regular expression to extract from file name:^(?P<Plate>.*)_(?P<Well>\x5BA-P\x5D\x5B0-9\x5D{2})_s(?P<Site>\x5B0-9\x5D)_w(?P<ChannelNumber>\x5B0-9\x5D)
-    Regular expression to extract from folder name:(?P<Date>\x5B0-9\x5D{4}_\x5B0-9\x5D{2}_\x5B0-9\x5D{2})$
+    Regular expression:^(?P<Plate>.*)_(?P<Well>\x5BA-P\x5D\x5B0-9\x5D{2})_s(?P<Site>\x5B0-9\x5D)_w(?P<ChannelNumber>\x5B0-9\x5D)
+    Regular expression:(?P<Date>\x5B0-9\x5D{4}_\x5B0-9\x5D{2}_\x5B0-9\x5D{2})$
     Extract metadata from:All images
     Select the filtering criteria:and (file does contain "")
     Metadata file location:
     Match file and image metadata:\x5B\x5D
     Use case insensitive matching?:No
 
-NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:6|show_window:False|notes:\x5B\'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Assign a name to:Images matching rules
     Select the image type:Grayscale image
     Name to assign these images:DNA
@@ -35,21 +35,21 @@ NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:8|s
     Assignments count:2
     Single images count:0
     Maximum intensity:255.0
-    Process as 3D?:No
-    Relative pixel spacing in X:1.0
-    Relative pixel spacing in Y:1.0
-    Relative pixel spacing in Z:1.0
     Select the rule criteria:and (file does contain "w2")
     Name to assign these images:rawDNA
     Name to assign these objects:Cell
     Select the image type:Grayscale image
     Set intensity range from:Image metadata
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
     Maximum intensity:255.0
     Select the rule criteria:and (file does contain "w1")
     Name to assign these images:rawGFP
     Name to assign these objects:Nucleus
     Select the image type:Grayscale image
     Set intensity range from:Image metadata
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
     Maximum intensity:255.0
 
 Groups:[module_num:4|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'The Groups module (optional) allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, separate time-lapse movies, 3D stacks, etc.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
@@ -57,37 +57,49 @@ Groups:[module_num:4|svn_version:\'Unknown\'|variable_revision_number:2|show_win
     grouping metadata count:1
     Metadata category:None
 
-IdentifyPrimaryObjects:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:13|show_window:True|notes:\x5B\'IdentifyPrimaryObjects takes an input image and identifies biological objects of interest, for example nuclei from a DNA-stained image, or colonies on an agar plate.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+IdentifyPrimaryObjects:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\'IdentifyPrimaryObjects takes an input image and identifies biological objects of interest, for example nuclei from a DNA-stained image, or colonies on an agar plate.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
     Select the input image:rawDNA
     Name the primary objects to be identified:Nuclei
     Typical diameter of objects, in pixel units (Min,Max):50,60
     Discard objects outside the diameter range?:Yes
+    Try to merge too small objects with nearby larger objects?:No
     Discard objects touching the border of the image?:Yes
     Method to distinguish clumped objects:Intensity
     Method to draw dividing lines between clumped objects:Intensity
     Size of smoothing filter:10
     Suppress local maxima that are closer than this minimum allowed distance:7
     Speed up by using lower-resolution image to find local maxima?:Yes
+    Name the outline image:PrimaryOutlines
     Fill holes in identified objects?:After both thresholding and declumping
     Automatically calculate size of smoothing filter for declumping?:Yes
     Automatically calculate minimum allowed distance between local maxima?:Yes
+    Retain outlines of the identified objects?:No
+    Automatically calculate the threshold using the Otsu method?:Yes
+    Enter Laplacian of Gaussian threshold:0.5
+    Automatically calculate the size of objects for the Laplacian of Gaussian filter?:Yes
+    Enter LoG filter diameter:5
     Handling of objects if excessive number of objects identified:Continue
     Maximum number of objects:500
-    Use advanced settings?:Yes
-    Threshold setting version:9
+    Threshold setting version:1
     Threshold strategy:Global
-    Thresholding method:RobustBackground
-    Threshold smoothing scale:1.3488
-    Threshold correction factor:4.0
+    Thresholding method:Background
+    Select the smoothing method for thresholding:Automatic
+    Threshold smoothing scale:1
+    Threshold correction factor:2
     Lower and upper bounds on threshold:0,1.0
+    Approximate fraction of image covered by objects?:0.01
     Manual threshold:0.0
     Select the measurement to threshold with:None
+    Select binary image:None
+    Masking objects:From image
     Two-class or three-class thresholding?:Three classes
+    Minimize the weighted variance or the entropy?:Weighted variance
     Assign pixels in the middle intensity class to the foreground or the background?:Background
+    Method to calculate adaptive window size:Image size
     Size of adaptive window:10
-    Lower outlier fraction:0.02
-    Upper outlier fraction:0.02
-    Averaging method:Mode
+    Use default parameters?:Default
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
     Variance method:Standard deviation
-    # of deviations:0
-    Thresholding method:Default
+    # of deviations:2.0
