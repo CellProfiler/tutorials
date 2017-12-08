@@ -77,7 +77,7 @@ a similar introductory exercise.
 
 -  Drag and drop the ‘BBBC022_Analysis_Start.cppipe’ file into the
    ‘Analysis modules’ box. 7 modules should pop up, and almost all of
-   them will show errors. This is the expected behavior.
+   them will show errors. **This is the expected behavior.**
 
 -  Drag and drop the ‘BBBC022_20585_AE’ folder into the ‘File list’ box.
    It should automatically populate. Notice that illumination correction
@@ -85,6 +85,9 @@ a similar introductory exercise.
    set.
 
 2) **Import metadata from the CSV**
+
+So that we can explore what cells treated with different drugs look like later
+in the exercise, we must add this information into CellProfiler from the CSV.
 
 -  In the ‘BBBC022_Exercises’ folder there will be a CSV called
    ‘20585_AE.csv’ detailing drug treatment info for each image.
@@ -119,6 +122,11 @@ a similar introductory exercise.
    the Metadata window.
 
 3) **Examine the channel mappings in NamesAndTypes (optional)**
+
+The channel mapping here is a bit more complicated than anything we've worked with
+before- we have a single set of illumination correction images that map to each
+and every well and site.  We can use the metadata we extracted in the last module
+to make that association possible.
 
 -  Two different ways of mapping images to channel names are
    demonstrated here. There are several others, and often you could
@@ -160,6 +168,11 @@ a similar introductory exercise.
 4) **Examine the output of the CorrectIlluminationApply module
    (optional)**
 
+Since microscope objectives don't typically have a completely uniform illumination
+pattern, applying an illumination correction function can help make segmentation
+better and measurements more even by compensating for this.  Pay close attention
+to the top of the field of view to see the greatest effect.
+
 -  Enter test mode and hit ‘Step’ to run the CorrectIlluminationApply
    module.
 
@@ -182,6 +195,8 @@ a similar introductory exercise.
    *Figure 4: Application of the illumination correction functions.*
 
 5) **IdentifyPrimaryObjects- Nuclei**
+
+Next we'll take a first pass at identifying nuclei and cells in our initial image.
 
 -  **After** the CorrectIlluminationApply module but **before** any
    others, add an IdentifyPrimaryObjects module (from the ‘Object
@@ -217,6 +232,13 @@ a similar introductory exercise.
 
 7) **Test the robustness of your segmentation parameters across multiple
    compounds**
+
+It's (relatively!) easy to come up with a good set of segmentation parameters for
+a single image or a set of similar images; this data set however contains
+images from cells treated with many different classes of drugs, many of which
+have very different phenotypes. It's valuable to learn how to create a set
+of parameters that can segment cells that display a variety of morphologies
+since you may come across a similar problem in your own experiments!
 
 -  Go to Test->Choose Image Set to bring up a list of the images in your
    experiment.
@@ -286,13 +308,11 @@ a similar introductory exercise.
       object as a seed to grow around, but only segmenting based off the
       intensity in our ‘SytoNuclei’ image.
 
-      -  You should check the nucleolar segmentation in the Syto channel
-         in the WorkspaceViewer to assure yourself that the segmentation
-         not only matches the speckle-enhanced ‘SytoNuclei’ image, but
-         also looks accurate on the unprocessed image as well.
-
--  Now that you’ve seen an example of how to segment an organelle, you
-   will do so for Mitochondria in the following steps
+      -  If you like, you can add an "OverlayOutlines" module at this point to
+         overlay the identified nucleoli on the original Syto image to assure
+         yourself that the segmentation not only matches the speckle-enhanced
+         ‘SytoNuclei’ image, but also looks accurate on the unprocessed image as
+         well.  This is not necessary but can be a nice "sanity check".
 
 .. figure:: ./TutorialImages/Fig6.png
    :align: center
@@ -303,6 +323,9 @@ a similar introductory exercise.
 
 10) **Mask the Mito image by the Cytoplasm object**
 
+Now that you’ve seen an example of how to segment an organelle, you
+will do so for Mitochondria in the following steps.
+
 -  **After** the IdentifyPrimaryObjects module for Nucleoli but
    **before** the RelateObjects modules, add a MaskImage module (from
    the Image Processing module category).
@@ -312,6 +335,10 @@ a similar introductory exercise.
 -  As you saw above with the Nucleoli example, mask the image via
    Objects, and use the Cytoplasm objects to create the mask.
 
+   -  You may even experiment with doing a similar EnhanceOrSuppressFeatures step
+      before the masking as was used for the Nucleoli; you may get greater
+      signal-to-noise, but possibly at the expense of "fragmenting" the
+      Mitochondria objects in the later identification steps.
 
 .. figure:: ./TutorialImages/Fig7.png
    :align: center
@@ -327,6 +354,10 @@ a similar introductory exercise.
 
 -  You should consider using a wide range of pixel sizes here; 2-20 is a
    reasonable first place to start.
+
+   -  If you did use EnhanceOrSuppressFeatures in the previous step, using
+      OverlayOutlines to compare the outlines with the original image is
+      a good idea once again.
 
 13) **Add measurement modules to your pipeline**
 
