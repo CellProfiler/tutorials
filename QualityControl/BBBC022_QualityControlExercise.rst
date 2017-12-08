@@ -45,6 +45,10 @@ exercise.
 
 1) **Start the provided QC pipeline on the BBBC022 dataset**
 
+In order to do quality control, we need to first measure the images in many ways.
+This will allow us to do machine learning to use the measurements to identify the
+good images from the bad.
+
 -  Start CellProfiler by double-clicking the desktop icon |Inline1|
 
 -  Drag and drop the ‘BBBC022_QC.cppipe’ file into the ‘Analysis
@@ -151,6 +155,19 @@ exercise.
 3) **Open the CellProfiler Analyst workspace and determine reasonable
    parameter cutoffs (~20 minutes)**
 
+In the first step of the quality control pipeline, we'll look at graphs of how
+various measurements are distributed in the population.  This allows us to get
+a sense of what the "normal" values are for each parameter.  We'll set gates
+around the "abnormal" values for later usage.  You can feel free to graph and
+examine additional parameters as well if you are interested in exploring the
+dataset.
+
+First-pass identification of the abnormal images is important since they are
+hopefully going to be rare in our overall dataset.  By identifying as many
+abnormal images as possible in this and the next step, we'll hopefully have
+a large and robust enough training set that we can train a good classifier
+in later steps.
+
 -  Once your pipeline has finished, close CellProfiler and start
    CellProfiler Analyst by double-clicking the icon |Inline4|.
 
@@ -199,6 +216,11 @@ exercise.
 
 4) **Create filters based on the cutoffs you’ve determined (~10
    minutes)**
+
+Now that we've created gates around our poor quality images, we need to convert
+them into filters so that we can access them in the Classifier tool.  This
+process will be unnecessary in later versions of CellProfiler Analyst, but knowing
+how to manipulate the properties file is a worthwhile skill.
 
 -  When you feel like you’ve examined enough graphs, it’s time to create
    filters based on the gates you’ve determined contain bad images.
@@ -293,6 +315,13 @@ exercise.
 5) **Create classifier rules to distinguish good from bad images (~30
    minutes)**
 
+Creating gates based on the 12 measurements we graphed has helped us identify
+some low quality images so far, but we are not utilizing the rest of our
+measurements and we can't be certain we've found them all.  By creating a machine
+learning classifier we can find features that correlate well with bad images in
+our experiment and increase our likelihood of identifying additional
+low quality images.
+
 -  Open the Classifier tool (|Inline5|, 2\ :sup:`nd` on left).
 
 -  Fetch 50 random images from ‘experiment’, then 25 each from ‘Blurry’
@@ -329,6 +358,11 @@ exercise.
    CellProfiler Analyst.
 
 6) **Add quality control steps to your analysis pipeline(~15 minutes)**
+
+If you have time, you can add the list of rules you identified in your machine
+learning classifier to the CellProfiler pipeline that corresponds to this data
+set.  This can be valuable to do in processing your own large datasets, especially
+if time or computational power is at a premium.
 
 -  Reopen CellProfiler, then open the BBBC022_Analysis pipeline
    (provided or from an earlier tutorial).
