@@ -191,7 +191,9 @@ nucleus, in each cell in each image we are analyzing.
 
 -  Click on the |Inline03| button located on the bottom left of the interface. A
    window titled “Add modules” will appear so you can add your first
-   Analysis module to the new pipeline.
+   Analysis module to the new pipeline. (NOTE: you can skip this bullet point
+   and the next one if using the provided "Translocation_start.cppipe" pipeline
+   as it already contains an IdentifyPrimaryObjects module).
 
 -  Click on *Object Processing* and then select the module
    *IdentifyPrimaryObjects*; this module identifies objects in an image
@@ -263,7 +265,7 @@ the display window, as shown in Fig. 2:
    image, titled with the object name. Green outlines around an object
    indicate that the object has passed the selection criteria in the
    module. Yellow outlines indicate that the object touches the image
-   edge, and has therefore been excluded. Red outlines indicate objects
+   edge, and has therefore been excluded. Pink outlines indicate objects
    that do not pass a size criterion, and have therefore been excluded.
 
 -  Lower right: A table of module setting values and statistics
@@ -304,6 +306,10 @@ low. We can correct this with a change in the thresholding method used.
 Since we are in Test Mode, we can easily adjust the module settings and
 quickly preview the results.
 
+-  Objects outlined in pink are outside the "Typical diameter" pixel range
+   specified in the pipeline. Use the "Tools->Measure length" tool to determine
+   if the size range specified is correct given the size of your objects.
+
 -  We can figure out why the thresholding method is overly lenient by
    looking closer at the original image.
 
@@ -334,6 +340,8 @@ gradations into account in order to improve the nuclei detection.
 
 -  Click the “Step” button again to see the result from your new
    settings.
+
+-  Adjust the "Threshold correction factor" to 1.
 
 This thresholding approach takes the medium-intensity pixels and assigns
 them as background pixels, leaving only the highest intensity pixels as
@@ -380,9 +388,9 @@ nuclei, you can now find the entire cell using
       the distance from the nearest primary object, and the local
       intensity in the GFP image.
 
-   -  Note that the red and green outlines do not have the same meaning
+   -  Note that the pink and green outlines do not have the same meaning
       as in the *IdentifyPrimaryObjects* display window. In
-      *IdentifySecondaryObjects*, the red outlines indicate the
+      *IdentifySecondaryObjects*, the pink outlines indicate the
       secondary object boundaries and the green outlines indicate the
       primary object boundaries.
 
