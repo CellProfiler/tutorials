@@ -290,7 +290,7 @@ drawing a box to zoom in on.
 -  Zoom in the image in order to see the quality of the nuclei
    identification. The result may look like Figure 3.
 
-.. figure:: ./TutorialImages/Fig2.png
+.. figure:: ./TutorialImages/Fig3.png
    :align: center
    :width: 500
 
@@ -495,7 +495,7 @@ protein is not translocated, the intensity correlation within the
 nucleus between the two images would be expected to be negative, whereas
 upon translocation, the correlation would be positive.
 
--  Click on the |Inline03| button and add the module *MeasureCorrelation* located
+-  Click on the |Inline03| button and add the module *MeasureColocalization* located
    under the module category *“Measurement”.* Add it to the pipeline by
    clicking the “+ Add to Pipeline” button.
 
@@ -601,15 +601,13 @@ and simply view them one at a time.
 
 -  The “Outline display mode” dropdown menu should be left at “Color”.
 
--  “Width of outlines” can be left at the 1 {pixel} default.
-
--  Set “Load outlines from an image or objects?” to “Objects”.
-
--  “Select outline color” can be left as red or set to some other
-   contrasting color.
+-  “How to outline” can be left at the default (Inner).
 
 -  For “Select objects to display” select “Nuclei” from the dropdown
    menu.
+
+-  “Select outline color” can be left as red or set to some other
+   contrasting color.
 
 -  Click the “Add another outline” button, then repeat the previous 3
    steps for “Cells”; you should select a different color for the
