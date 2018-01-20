@@ -214,7 +214,36 @@ in later steps.
    different/smaller subset or delete it altogether by using the Gate
    Inspector (‘gate’-> ‘MANAGE GATES’).
 
-4) **Create filters based on the cutoffs you’ve determined (~10
+4) **Optional- use the PlateViewer tool to check for other features to gate on
+   (~10 minutes)**
+
+If you want to see if you can find additional features that might distinguish good
+images from bad images, feel free to explore the feature set more thoroughly.
+
+- The PlateViewer tool and either choose a few ImageQuality measurements at random
+  or just use the arrow keys to scroll up and down through the measurements.
+
+  -  A good candidate measurement will be relatively constant within most of the wells
+     but have a small number of outliers (Fig 2).
+
+  -  Once you have a good candidate, double click on an outlier well to open the images
+     from that well.  If one or both seem very aberrant, you may wish to look at this
+     measurement further.
+
+.. figure:: ./TutorialImages/Fig2.png
+     :align: center
+     :width: 600
+
+   *Figure 2: Using the PlateViewer tool to find features that may be good markers
+   of poor quality images.*
+
+- Once you have a measurement you'd like to gate based on, open that Histogram
+  or the Scatter Plot tools and graph all the cells based on that (if you're using
+  the Scatter Plot tool, you may wish to graph your chosen feature on the Y-axis vs
+  ImageNumber on the X-axis as in the Workspace plots, but feel free to play around).
+  If you find a gate that seems logical to make, proceed as in Step 3.
+
+5) **Create filters based on the cutoffs you’ve determined (~10
    minutes)**
 
 Now that we've created gates around our poor quality images, we need to convert
@@ -306,13 +335,13 @@ how to manipulate the properties file is a worthwhile skill.
       -  Create a filter named Saturated containing the important
          cutoffs from the saturation gates
 
-.. figure:: ./TutorialImages/Fig2.png
+.. figure:: ./TutorialImages/Fig3.png
    :align: center
    :width: 600
 
-   *Figure 2: Creating filters inside CPA*
+   *Figure 3: Creating filters inside CPA*
 
-5) **Create classifier rules to distinguish good from bad images (~30
+6) **Create classifier rules to distinguish good from bad images (~30
    minutes)**
 
 Creating gates based on the 12 measurements we graphed has helped us identify
@@ -357,7 +386,7 @@ low quality images.
 -  Save your training set for future reference if desired, then close
    CellProfiler Analyst.
 
-6) **Add quality control steps to your analysis pipeline(~15 minutes)**
+7) **Add quality control steps to your analysis pipeline(~15 minutes)**
 
 If you have time, you can add the list of rules you identified in your machine
 learning classifier to the CellProfiler pipeline that corresponds to this data
