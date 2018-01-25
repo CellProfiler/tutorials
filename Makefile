@@ -3,6 +3,7 @@
 clean:
 		rm -rf 3d_monolayer/output
 		rm -rf AdvancedSegmentation/output
+		rm -rf QualityControl/output
 		rm -rf PixelBasedClassification/output
 		rm -rf Translocation/output
 
