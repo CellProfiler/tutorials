@@ -103,7 +103,7 @@ def find_groups(metadata_df, group_order_list):
     """
     Find the group *keys* that define a collection of image sets. Groups are created from an ordered series of metadata variables that is defined in a CellProfiler pipeline.
     
-    * group_order_list: The names of the metadata variables in a list, ordered in the way to group image sets.
+    * group_order_list: The names of the metadata variables in a nested list, ordered in the way to group image sets.
     * metadata_df: a pandas dataframe where columns are metadata variables and rows are the metadata values for each image.
     """
     metadata_gb = metadata_df.groupby(by=group_order_list)
@@ -111,6 +111,9 @@ def find_groups(metadata_df, group_order_list):
     groups_list = metadata_gb.indices.keys()
         
     groups_list.sort()
+
+    if len(group_order_list) == 1:
+        groups_list = [[metadata] for metadata in groups_list]
 
     return groups_list
 
