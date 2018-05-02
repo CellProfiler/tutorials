@@ -44,9 +44,9 @@ curl -O "https://raw.githubusercontent.com/CellProfiler/tutorials/master/Worksta
 ```
 
 ```bash
-GROUPSFILE="${OUTPUT}/groups.txt"
+GROUPSMETADATA="${OUTPUT}/groups_metadata.txt"
 
-python cp_group_option_metadata_maker.py ${FILELIST} ${GROUPSFILE} ${PIPELINE}
+python cp_group_option_metadata_maker.py ${FILELIST} ${OUTPUT} ${PIPELINE}
 ```
 
 Create the batch file.

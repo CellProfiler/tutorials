@@ -21,24 +21,49 @@ def command(filelist, outpath, pipeline):
     * outpath: The path where the CellProfiler group information will be output.
     * pipeline: The path to a `*.cppipe` file.
     """
-    groups_filename = os.path.join(outpath,"groups_metadata.txt")
+    groups_metadata_filename = os.path.join(outpath,"groups_metadata.txt")
+
     try:
-        with open(groups_filename, "w") as f:
+        with open(groups_metadata_filename, "w") as f:
             f.write("groups_metadata.txt file access test.")
+
     except Exception as inst:
+        print("cannot create output file {}".format(groups_metadata_filename))
+        print("")
         print(type(inst))
         print(inst.args)
         print(inst)
-        print("cannot create output file {}".format(groups_filename))
+        print("")
+        raise
+
+    groups_output_filename = os.path.join(outpath,"groups_output.txt")
+
+    try:
+        with open(groups_output_filename, "w") as f:
+            f.write("groups_metadata.txt file access test.")
+
+    except Exception as inst:
+        print("cannot create output file {}".format(groups_output_filename))
+        print("")
+        print(type(inst))
+        print(inst.args)
+        print(inst)
+        print("")
         raise
 
     image_list = [line.rstrip('\n') for line in filelist]
 
     pipeline_list = [line.rstrip('\n') for line in pipeline]
 
-    cp_group_option_metadata_maker(image_list, pipeline_list, groups_filename)
+    groups_list, group_order_list = cp_group_option_metadata_maker(image_list, pipeline_list, groups_metadata_filename)
 
-    click.echo(groups_filename)
+    save_groups_options_for_command_line_batching(groups_metadata_filename, groups_list, group_order_list)
+
+    save_groups_output_paths_for_command_line_batching(groups_output_filename, groups_list, group_order_list)
+
+    click.echo(groups_metadata_filename)
+
+    click.echo(groups_output_filename)
 
 
 def find_group_order(pipeline):
@@ -153,6 +178,25 @@ def save_groups_options_for_command_line_batching(filename, groups_list, group_o
     return groups_text
 
 
+def save_groups_output_paths_for_command_line_batching(filename, groups_list, group_order_list):
+    """
+    Save a text file where each line contains an option value to process a group of image sets from the command line using the `-g` option. This text file can be used to batch process images from the command line with CellProfiler.
+    
+    * filename: the name of the output file.
+    * groups_list: A list of tuples. Each tuple is a key to a group of image sets.
+    * group_order_list: The names of the metadata variables in a list, ordered in the way to group image sets.
+    """
+    with open(filename, 'w') as f:
+        for group in groups_list:            
+            group_option_string = "_".join(group)
+            
+            f.write("{}\n".format(group_option_string))
+
+    groups_text = read_text_file(filename)
+
+    return groups_text
+
+
 def cp_group_option_metadata_maker(file_list, pipeline, groups_filename):
     """Create a text file that contains CellProfiler metadata that groups image sets together.
     """
@@ -172,9 +216,7 @@ def cp_group_option_metadata_maker(file_list, pipeline, groups_filename):
 
     groups_list = find_groups(metadata_df, group_order_list)
 
-    groups_text = save_groups_options_for_command_line_batching(groups_filename, groups_list, group_order_list)
-
-    return groups_text
+    return groups_list, group_order_list
 
 
 def decode_cellprofiler_pipeline_regular_expression_pattern_string(cp_re_string):
