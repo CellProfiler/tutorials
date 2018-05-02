@@ -1,3 +1,5 @@
+# Workstation tutorial
+## Download BBBC018 images and pipeline
 Download the images from https://data.broadinstitute.org/bbbc/BBBC018/
 
 ```bash
@@ -46,10 +48,14 @@ curl -O "https://raw.githubusercontent.com/CellProfiler/tutorials/master/Worksta
 ```bash
 GROUPSMETADATA="${OUTPUT}/groups_metadata.txt"
 
+GROUPSOUTPUT="${OUTPUT}/groups_output.txt"
+
 python cp_group_option_metadata_maker.py ${FILELIST} ${OUTPUT} ${PIPELINE}
 ```
 
+## Running CellProfiler
 Create the batch file.
+
 ```bash
 cellprofiler -c -r -o "${OUTPUT}" -p "${PIPELINE}" --file-list="${FILELIST}"
 
@@ -59,7 +65,39 @@ BATCHFILE="${OUTPUT}/Batch_data.h5"
 Use parallel to run CellProfiler in parallel.
 
 ```bash
+paste -d '\t' "${GROUPSMETADATA}" "${GROUPSOUTPUT}" > cp_parallel.txt
+
 PROCESS_NUMBER=2
 
-parallel -j ${PROCESS_NUMBER} cellprofiler -c -r -g {} -o "${OUTPUT}" -p "${BATCHFILE}" :::: "${GROUPSFILE}"
+parallel -j ${PROCESS_NUMBER} --colsep "\t" cellprofiler -c -r -g {1} -o "${OUTPUT}/"{2} -p "${BATCHFILE}" :::: cp_parallel.txt
+
+#parallel -j ${PROCESS_NUMBER} cellprofiler -c -r -g {1} -o "${OUTPUT}/"{2} -p "${BATCHFILE}" :::: "${GROUPSMETADATA}" ::::+ "${GROUPSOUTPUT}"
+```
+### Running CellProfiler without using a batch file
+A pipeline can also be run without using a batch file or the *CreateBatchFiles* module.
+
+```bash
+curl -O "https://raw.githubusercontent.com/CellProfiler/tutorials/master/Workstation/bbbc018.cppipe"
+```
+
+```bash
+PROCESS_NUMBER=2
+
+parallel -j ${PROCESS_NUMBER} --colsep "\t" cellprofiler -c -r -g {1} -o "${OUTPUT}/"{2} -p "${PIPELINE}"  --file-list="${FILELIST}" :::: cp_parallel.txt
+```
+
+## Consolidating distributed output
+For each group of images processed by CellProfiler a set of output CSV files is created. To access all the CellProfiler output data at once the CSV files will be combined into a sqlite database file with cytominer-database.
+
+Create the **ingest_config.ini** file.
+
+```
+[filenames]
+image = bbbc018_Image.csv
+experiment = bbbc018_Experiment.csv
+```
+Run cytominer-database
+
+```bash
+cytominer-database ingest "${OUTPUT}" sqlite:///bbbc018.sqlite -c ingest_config.ini --no-munge
 ```
