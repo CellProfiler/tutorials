@@ -51,9 +51,9 @@ def command(filelist, outpath, pipeline):
         print("")
         raise
 
-    image_list = [line.rstrip('\n') for line in filelist]
+    image_list = [line.rstrip() for line in filelist]
 
-    pipeline_list = [line.rstrip('\n') for line in pipeline]
+    pipeline_list = [line.rstrip() for line in pipeline]
 
     groups_list, group_order_list = cp_group_option_metadata_maker(image_list, pipeline_list, groups_metadata_filename)
 
@@ -339,7 +339,7 @@ def read_text_file(path_to_file):
     * path_to_file: the path to a text file.
     """
     with open(path_to_file) as f:
-        lines = [line.rstrip('\n') for line in f]
+        lines = [line.rstrip() for line in f]
         
     return lines
 
