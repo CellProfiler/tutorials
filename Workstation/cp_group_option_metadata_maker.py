@@ -12,21 +12,33 @@ import pandas
 
 @click.command()
 @click.argument("filelist", type=click.File(mode="r"))
-@click.argument("groupsfile", type=click.Path())
+@click.argument("outpath", type=click.Path(exists=True))
 @click.argument("pipeline", type=click.File(mode="r"))
-def command(filelist, groupsfile, pipeline):
+def command(filelist, outpath, pipeline):
     """A program that creates a text file for batching processing images with CellProfiler by parsing a `*.cppipe` file. The output text file is saved in the same directory as the pipeline file.
     
     * filelist: The path to a text file. Each line of the text file is the full path to an image.
+    * outpath: The path where the CellProfiler group information will be output.
     * pipeline: The path to a `*.cppipe` file.
     """
+    groups_filename = os.path.join(outpath,"groups_metadata.txt")
+    try:
+        with open(groups_filename, "w") as f:
+            f.write("groups_metadata.txt file access test.")
+    except Exception as inst:
+        print(type(inst))
+        print(inst.args)
+        print(inst)
+        print("cannot create output file {}".format(groups_filename))
+        raise
+
     image_list = [line.rstrip('\n') for line in filelist]
 
     pipeline_list = [line.rstrip('\n') for line in pipeline]
 
-    cp_group_option_metadata_maker(image_list, pipeline_list, groupsfile)
+    cp_group_option_metadata_maker(image_list, pipeline_list, groups_filename)
 
-    click.echo(groupsfile)
+    click.echo(groups_filename)
 
 
 def find_group_order(pipeline):

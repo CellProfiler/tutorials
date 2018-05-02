@@ -49,10 +49,17 @@ GROUPSFILE="${OUTPUT}/groups.txt"
 python cp_group_option_metadata_maker.py ${FILELIST} ${GROUPSFILE} ${PIPELINE}
 ```
 
+Create the batch file.
+```bash
+cellprofiler -c -r -o "${OUTPUT}" -p "${PIPELINE}" --file-list="${FILELIST}"
+
+BATCHFILE="${OUTPUT}/Batch_data.h5"
+```
+
 Use parallel to run CellProfiler in parallel.
 
 ```bash
 PROCESS_NUMBER=2
 
-parallel -j ${PROCESS_NUMBER} cellprofiler -c -r -g {} -o "${OUTPUT}" -p "${PIPELINE}" --file-list="${FILELIST}" :::: "${GROUPSFILE}"
+parallel -j ${PROCESS_NUMBER} cellprofiler -c -r -g {} -o "${OUTPUT}" -p "${BATCHFILE}" :::: "${GROUPSFILE}"
 ```
