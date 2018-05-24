@@ -91,6 +91,10 @@ For each group of images processed by CellProfiler a set of output CSV files is 
 
 Create the **ingest_config.ini** file.
 
+```bash
+nano ingest_config.ini
+```
+
 ```
 [filenames]
 image = bbbc018_Image.csv
