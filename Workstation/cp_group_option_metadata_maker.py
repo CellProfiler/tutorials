@@ -200,17 +200,19 @@ def save_groups_output_paths_for_command_line_batching(filename, groups_list, gr
 def cp_group_option_metadata_maker(file_list, pipeline, groups_filename):
     """Create a text file that contains CellProfiler metadata that groups image sets together.
     """
-    assert is_extract_metadata(pipeline), "The pipeline is not configured to extract metadata. Please update the pipeline if this is incorrect."
+    try:
+        if not is_extract_metadata(pipeline):
+            raise ValueError("The pipeline is not configured to extract metadata. Please update the pipeline if this is incorrect.")
 
-    number_of_methods = count_extraction_methods(pipeline)
+        if not is_image_set_grouped(pipeline):
+            raise ValueError("The pipeline is not configured to group any image sets. Please update the pipeline if this is incorrect.")
 
-    assert number_of_methods > 0, "The pipeline is configured to extract metadata, but there are zero methods configured."
-
+    except ValueError, e:
+        exit(str(e))
+        
     filename_df = create_pandas_dataframe_with_filename_metadata(pipeline, file_list)
 
     metadata_df = filename_df
-
-    assert is_image_set_grouped(pipeline), "The pipeline is not configured to group any image sets. Please update the pipeline if this is incorrect."
 
     group_order_list = find_group_order(pipeline)
 
@@ -276,6 +278,35 @@ def parse_metadata_from_filenames(pipeline, metadata_filename_linenumber, filena
     return metadata_list_of_dict
 
 
+def parse_metadata_from_foldernames(pipeline, metadata_foldername_linenumber, filename_list):
+    """
+    Parse out the metadata for filenames as defined within a `*.cppipe` file by the Metadata module.
+    
+    * pipeline: a list where each item is a line from a CellProfiler `*.cppipe` file.
+    * metadata_foldername_linenumber: the line number that has the text `'    Metadata source:File name'` found in a pipeline file.
+    * filename_list: a list of the names of images. They should be stripped of path information.
+    """
+    metadata_list_of_dict = [None]*len(filename_list)
+    
+    pipe_re_text = pipeline[metadata_foldername_linenumber + 2]
+    
+    re_out_pattern_string = re.match(r"\s*Regular expression to extract from folder name:(.*)", pipe_re_text)
+    
+    pipe_re_text = decode_cellprofiler_pipeline_regular_expression_pattern_string(re_out_pattern_string.group(1))
+    
+    for ind, filename in enumerate(filename_list):
+        re_out_metadata = re.match(pipe_re_text, filename)
+        
+        if re_out_metadata:
+            re_out_dict = re_out_metadata.groupdict()
+            
+            metadata_list_of_dict[ind] = re_out_dict
+        else:
+            metadata_list_of_dict[ind] = {"filename":filename}
+
+    return metadata_list_of_dict    
+
+
 def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
     """
     Parse the pipeline and return a pandas dataframe with the metadata for each file in a list.
@@ -283,24 +314,62 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
     * pipeline: a list where each item is a line from a CellProfiler `*.cppipe` file.
     * file_list: a list of the names of images. The list can have full path information or just filenames.
     """
-    metadata_filename_ind_list = find_linenumbers_for_filename_metadata(pipeline)
+    try:
+        number_of_methods = count_extraction_methods(pipeline)
+
+        if number_of_methods == 0:
+            raise ValueError("The pipeline is configured to extract metadata, but there are zero methods configured.")
+
+        metadata_filename_ind_list = find_linenumbers_for_filename_metadata(pipeline)
     
-    assert metadata_filename_ind_list, "There is no metadata for filenames."
+        if metadata_filename_ind_list in None:
+            raise ValueError("There is no metadata for filenames. Please define a rule within the pipeline for extracting metadata from a filename.")
     
+    except ValueError, e:
+        exit(str(e))
+    
+    metadata_foldername_ind_list = find_linenumbers_for_foldername_metadata(pipeline)
+
     filename_list = get_filenames_from_list_of_paths(file_list)
 
-    if len(metadata_filename_ind_list)==1:
+    if (len(metadata_filename_ind_list) == 1) and (len(metadata_foldername_ind_list) == 0):
         metadata_list_of_dict = parse_metadata_from_filenames(pipeline, metadata_filename_ind_list[0], filename_list)
 
         metadata_final_df = pandas.DataFrame.from_dict(metadata_list_of_dict)
         
         metadata_final_df = metadata_final_df.assign(filename=filename_list)
+
+    elif (len(metadata_filename_ind_list) == 1) and (len(metadata_foldername_ind_list) == 1):
+        metadata_list_of_dict = parse_metadata_from_filenames(pipeline, metadata_filename_ind_list[0], filename_list)
+
+        metadata_df_filename = pandas.DataFrame.from_dict(metadata_list_of_dict)
         
+        metadata_df_filename = metadata_df_filename.assign(filename=filename_list)
+
+        metadata_list_of_dict_foldername = parse_metadata_from_foldernames(pipeline, metadata_foldername_ind_list[0], filename_list)
+
+        metadata_df_foldername = pandas.DataFrame.from_dict(metadata_list_of_dict_foldername)
+        
+        metadata_df_foldername = metadata_df_foldername.assign(filename=filename_list)
+
+        list_of_all_metadata_from_filenames = [metadata_df_filename, metadata_df_foldername]
+
+        metadata_final_df = reduce(lambda left,right: pandas.merge(left,right,on='filename'), list_of_all_metadata_from_filenames)
+
     else:
         list_of_all_metadata_from_filenames = []
     
         for ind in metadata_filename_ind_list:
             metadata_list_of_dict = parse_metadata_from_filenames(pipeline, ind, filename_list)
+
+            metadata_df = pandas.DataFrame.from_dict(metadata_list_of_dict)
+            
+            metadata_df = metadata_df.assign(filename=filename_list)
+
+            list_of_all_metadata_from_filenames.append(metadata_df)
+
+        for ind in metadata_foldername_ind_list:
+            metadata_list_of_dict = parse_metadata_from_foldernames(pipeline, ind, filename_list)
 
             metadata_df = pandas.DataFrame.from_dict(metadata_list_of_dict)
             
@@ -355,6 +424,22 @@ def find_linenumbers_for_filename_metadata(pipeline):
 
     for ind, line in enumerate(pipeline):
         if re.match(r'^\s*Metadata source:File name', line) is not None:
+            metadata_filename_linenumber_list.append(ind)
+            
+    return metadata_filename_linenumber_list
+
+
+def find_linenumbers_for_foldername_metadata(pipeline):
+    """
+    Find the linenumbers that contain the folder metadata info within the Metadata module in a CellProfiler pipeline.
+    
+    * pipeline: a list where each item is a line from a CellProfiler `*.cppipe` file.
+    """
+
+    metadata_filename_linenumber_list = []
+
+    for ind, line in enumerate(pipeline):
+        if re.match(r'^\s*Metadata source:Folder name', line) is not None:
             metadata_filename_linenumber_list.append(ind)
             
     return metadata_filename_linenumber_list
