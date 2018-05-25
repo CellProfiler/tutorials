@@ -322,7 +322,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
 
         metadata_filename_ind_list = find_linenumbers_for_filename_metadata(pipeline)
     
-        if metadata_filename_ind_list in None:
+        if metadata_filename_ind_list is None:
             raise ValueError("There is no metadata for filenames. Please define a rule within the pipeline for extracting metadata from a filename.")
     
     except ValueError, e:
