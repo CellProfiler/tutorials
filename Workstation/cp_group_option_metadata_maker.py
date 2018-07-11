@@ -15,7 +15,7 @@ import pandas
 @click.argument("outpath", type=click.Path(exists=True))
 @click.argument("pipeline", type=click.File(mode="r"))
 def command(filelist, outpath, pipeline):
-    """A program that creates a text file for batching processing images with CellProfiler by parsing a `*.cppipe` file. The output text file is saved in the same directory as the pipeline file.
+    """A program that creates a text file for batching processing images with CellProfiler by parsing a `*.cppipe` file. The output text file is saved in the same directory as the pipeline file. The metadata type should be "Text" for all fields in the Metadata module.
     
     * filelist: The path to a text file. Each line of the text file is the full path to an image.
     * outpath: The path where the CellProfiler group information will be output.
