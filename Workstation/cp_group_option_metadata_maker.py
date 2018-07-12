@@ -242,9 +242,11 @@ def get_filenames_from_list_of_paths(path_list):
     
     filename_list = map(list, zip(*filename_list))
     
+    foldername_list = filename_list[0]
+
     filename_list = filename_list[1]
 
-    return filename_list
+    return filename_list, foldername_list
 
 
 def parse_metadata_from_filenames(pipeline, metadata_filename_linenumber, filename_list):
@@ -278,15 +280,15 @@ def parse_metadata_from_filenames(pipeline, metadata_filename_linenumber, filena
     return metadata_list_of_dict
 
 
-def parse_metadata_from_foldernames(pipeline, metadata_foldername_linenumber, filename_list):
+def parse_metadata_from_foldernames(pipeline, metadata_foldername_linenumber, foldername_list):
     """
-    Parse out the metadata for filenames as defined within a `*.cppipe` file by the Metadata module.
+    Parse out the metadata for foldernames as defined within a `*.cppipe` file by the Metadata module.
     
     * pipeline: a list where each item is a line from a CellProfiler `*.cppipe` file.
     * metadata_foldername_linenumber: the line number that has the text `'    Metadata source:File name'` found in a pipeline file.
-    * filename_list: a list of the names of images. They should be stripped of path information.
+    * foldername_list: a list of the foldernames of images. They should be stripped of path information.
     """
-    metadata_list_of_dict = [None]*len(filename_list)
+    metadata_list_of_dict = [None]*len(foldername_list)
     
     pipe_re_text = pipeline[metadata_foldername_linenumber + 2]
     
@@ -294,15 +296,15 @@ def parse_metadata_from_foldernames(pipeline, metadata_foldername_linenumber, fi
     
     pipe_re_text = decode_cellprofiler_pipeline_regular_expression_pattern_string(re_out_pattern_string.group(1))
     
-    for ind, filename in enumerate(filename_list):
-        re_out_metadata = re.match(pipe_re_text, filename)
+    for ind, foldername in enumerate(foldername_list):
+        re_out_metadata = re.match(pipe_re_text, foldername)
         
         if re_out_metadata:
             re_out_dict = re_out_metadata.groupdict()
             
             metadata_list_of_dict[ind] = re_out_dict
         else:
-            metadata_list_of_dict[ind] = {"filename":filename}
+            metadata_list_of_dict[ind] = {"foldername":foldername}
 
     return metadata_list_of_dict    
 
@@ -330,7 +332,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
     
     metadata_foldername_ind_list = find_linenumbers_for_foldername_metadata(pipeline)
 
-    filename_list = get_filenames_from_list_of_paths(file_list)
+    filename_list, foldername_list = get_filenames_from_list_of_paths(file_list)
 
     if (len(metadata_filename_ind_list) == 1) and (len(metadata_foldername_ind_list) == 0):
         metadata_list_of_dict = parse_metadata_from_filenames(pipeline, metadata_filename_ind_list[0], filename_list)
@@ -346,7 +348,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
         
         metadata_df_filename = metadata_df_filename.assign(filename=filename_list)
 
-        metadata_list_of_dict_foldername = parse_metadata_from_foldernames(pipeline, metadata_foldername_ind_list[0], filename_list)
+        metadata_list_of_dict_foldername = parse_metadata_from_foldernames(pipeline, metadata_foldername_ind_list[0], foldername_list)
 
         metadata_df_foldername = pandas.DataFrame.from_dict(metadata_list_of_dict_foldername)
         
@@ -369,7 +371,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
             list_of_all_metadata_from_filenames.append(metadata_df)
 
         for ind in metadata_foldername_ind_list:
-            metadata_list_of_dict = parse_metadata_from_foldernames(pipeline, ind, filename_list)
+            metadata_list_of_dict = parse_metadata_from_foldernames(pipeline, ind, foldername_list)
 
             metadata_df = pandas.DataFrame.from_dict(metadata_list_of_dict)
             
