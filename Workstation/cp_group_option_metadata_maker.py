@@ -53,9 +53,13 @@ def command(filelist, outpath, pipeline):
 
     image_list = [line.rstrip() for line in filelist]
 
+    click.echo("Processing {} images.".format(len(image_list)))
+
     pipeline_list = [line.rstrip() for line in pipeline]
 
     groups_list, group_order_list = cp_group_option_metadata_maker(image_list, pipeline_list, groups_metadata_filename)
+
+    click.echo("Organizing {} groups.".format(len(groups_list)))
 
     save_groups_options_for_command_line_batching(groups_metadata_filename, groups_list, group_order_list)
 
@@ -145,7 +149,7 @@ def find_groups(metadata_df, group_order_list):
     """
     metadata_gb = metadata_df.groupby(by=group_order_list)
     
-    groups_list = metadata_gb.indices.keys()
+    groups_list = list(metadata_gb.indices.keys())
         
     groups_list.sort()
 
@@ -207,9 +211,9 @@ def cp_group_option_metadata_maker(file_list, pipeline, groups_filename):
         if not is_image_set_grouped(pipeline):
             raise ValueError("The pipeline is not configured to group any image sets. Please update the pipeline if this is incorrect.")
 
-    except ValueError, e:
+    except (ValueError, IOError) as e:
         exit(str(e))
-        
+
     filename_df = create_pandas_dataframe_with_filename_metadata(pipeline, file_list)
 
     metadata_df = filename_df
@@ -227,7 +231,11 @@ def decode_cellprofiler_pipeline_regular_expression_pattern_string(cp_re_string)
     
     * cp_re_string: the regular expression pattern found in the Metadata module of a CellProfiler pipeline `*.cppipe` file.
     """
-    cp_re_string = cp_re_string.decode('string_escape').decode('string_escape')
+    #cp_re_string = cp_re_string.decode('string_escape').decode('string_escape')
+
+    cp_re_string = bytes(cp_re_string, "utf-8").decode("unicode_escape")
+
+    cp_re_string = re.sub(r'\\\\', r'\\', cp_re_string)
     
     return cp_re_string
 
@@ -240,7 +248,7 @@ def get_filenames_from_list_of_paths(path_list):
     """
     filename_list = [os.path.split(item) for item in path_list]
     
-    filename_list = map(list, zip(*filename_list))
+    filename_list = list(map(list, zip(*filename_list)))
     
     foldername_list = filename_list[0]
 
@@ -264,10 +272,10 @@ def parse_metadata_from_filenames(pipeline, metadata_filename_linenumber, filena
     re_out_pattern_string = re.match(r"\s*Regular expression to extract from file name:(.*)", pipe_re_text)
     
     pipe_re_text = decode_cellprofiler_pipeline_regular_expression_pattern_string(re_out_pattern_string.group(1))
-    
+
     for ind, filename in enumerate(filename_list):
         re_out_metadata = re.match(pipe_re_text, filename)
-        
+
         if re_out_metadata:
             re_out_dict = re_out_metadata.groupdict()
             
@@ -296,16 +304,18 @@ def parse_metadata_from_foldernames(pipeline, metadata_foldername_linenumber, fo
     
     pipe_re_text = decode_cellprofiler_pipeline_regular_expression_pattern_string(re_out_pattern_string.group(1))
     
+    print(pipe_re_text)
+
     for ind, foldername in enumerate(foldername_list):
         re_out_metadata = re.match(pipe_re_text, foldername)
-        
+
         if re_out_metadata:
             re_out_dict = re_out_metadata.groupdict()
             
             metadata_list_of_dict[ind] = re_out_dict
         else:
             metadata_list_of_dict[ind] = {"foldername":foldername}
-
+    print(metadata_list_of_dict)
     return metadata_list_of_dict    
 
 
@@ -327,7 +337,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
         if metadata_filename_ind_list is None:
             raise ValueError("There is no metadata for filenames. Please define a rule within the pipeline for extracting metadata from a filename.")
     
-    except ValueError, e:
+    except (ValueError, IOError) as e:
         exit(str(e))
     
     metadata_foldername_ind_list = find_linenumbers_for_foldername_metadata(pipeline)
@@ -356,7 +366,13 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
 
         list_of_all_metadata_from_filenames = [metadata_df_filename, metadata_df_foldername]
 
-        metadata_final_df = reduce(lambda left,right: pandas.merge(left,right,on='filename'), list_of_all_metadata_from_filenames)
+        for ind, metadata in enumerate(list_of_all_metadata_from_filenames):
+            if ind == 0:
+                metadata_final_df = pandas.DataFrame(metadata)
+
+            metadata_final_df = pandas.concat([metadata_final_df, metadata], axis=1, sort=False)
+
+        #metadata_final_df = reduce(lambda left,right: pandas.merge(left,right,on='filename'), list_of_all_metadata_from_filenames)
 
     else:
         list_of_all_metadata_from_filenames = []
@@ -365,7 +381,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
             metadata_list_of_dict = parse_metadata_from_filenames(pipeline, ind, filename_list)
 
             metadata_df = pandas.DataFrame.from_dict(metadata_list_of_dict)
-            
+
             metadata_df = metadata_df.assign(filename=filename_list)
 
             list_of_all_metadata_from_filenames.append(metadata_df)
@@ -374,13 +390,21 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
             metadata_list_of_dict = parse_metadata_from_foldernames(pipeline, ind, foldername_list)
 
             metadata_df = pandas.DataFrame.from_dict(metadata_list_of_dict)
-            
+
             metadata_df = metadata_df.assign(filename=filename_list)
 
             list_of_all_metadata_from_filenames.append(metadata_df)
 
-        metadata_final_df = reduce(lambda left,right: pandas.merge(left,right,on='filename'), list_of_all_metadata_from_filenames)
-    
+        for ind, metadata in enumerate(list_of_all_metadata_from_filenames):
+            if ind == 0:
+                metadata_final_df = pandas.DataFrame(metadata)
+
+            metadata_final_df = pandas.concat([metadata_final_df, metadata], axis=1, sort=False)
+            #metadata_final_df2 = metadata_final_df.merge(metadata, on='filename')
+
+        #metadata_final_df = reduce(lambda left,right: pandas.merge(left,right,on='filename'), list_of_all_metadata_from_filenames)
+    metadata_final_df = metadata_final_df.loc[:,~metadata_final_df.columns.duplicated()]
+
     return metadata_final_df
 
 
