@@ -233,7 +233,7 @@ def decode_cellprofiler_pipeline_regular_expression_pattern_string(cp_re_string)
     """
     #cp_re_string = cp_re_string.decode('string_escape').decode('string_escape')
 
-    cp_re_string = bytes(cp_re_string, "utf-8").decode("unicode_escape")
+    cp_re_string = bytes(cp_re_string.encode('utf-8')).decode("unicode_escape")
 
     cp_re_string = re.sub(r'\\\\', r'\\', cp_re_string)
     
@@ -304,8 +304,6 @@ def parse_metadata_from_foldernames(pipeline, metadata_foldername_linenumber, fo
     
     pipe_re_text = decode_cellprofiler_pipeline_regular_expression_pattern_string(re_out_pattern_string.group(1))
     
-    print(pipe_re_text)
-
     for ind, foldername in enumerate(foldername_list):
         re_out_metadata = re.match(pipe_re_text, foldername)
 
@@ -315,7 +313,7 @@ def parse_metadata_from_foldernames(pipeline, metadata_foldername_linenumber, fo
             metadata_list_of_dict[ind] = re_out_dict
         else:
             metadata_list_of_dict[ind] = {"foldername":foldername}
-    print(metadata_list_of_dict)
+
     return metadata_list_of_dict    
 
 
@@ -370,7 +368,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
             if ind == 0:
                 metadata_final_df = pandas.DataFrame(metadata)
 
-            metadata_final_df = pandas.concat([metadata_final_df, metadata], axis=1, sort=False)
+            metadata_final_df = pandas.concat([metadata_final_df, metadata], axis=1)
 
         #metadata_final_df = reduce(lambda left,right: pandas.merge(left,right,on='filename'), list_of_all_metadata_from_filenames)
 
@@ -399,7 +397,7 @@ def create_pandas_dataframe_with_filename_metadata(pipeline, file_list):
             if ind == 0:
                 metadata_final_df = pandas.DataFrame(metadata)
 
-            metadata_final_df = pandas.concat([metadata_final_df, metadata], axis=1, sort=False)
+            metadata_final_df = pandas.concat([metadata_final_df, metadata], axis=1)
             #metadata_final_df2 = metadata_final_df.merge(metadata, on='filename')
 
         #metadata_final_df = reduce(lambda left,right: pandas.merge(left,right,on='filename'), list_of_all_metadata_from_filenames)
