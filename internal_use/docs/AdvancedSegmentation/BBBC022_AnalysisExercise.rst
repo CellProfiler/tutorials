@@ -92,7 +92,7 @@ Provided with this exercise is a CSV called ‘20585_AE.csv’ detailing drug tr
 info for each image.
 
 -  In the ‘Metadata’ module, three metadata extraction methods should already be
-   present:
+   present and fully configured:
 
    -  The first pulls Well, Site, and Channel metadata from all of the
       image files except for the illumination correction functions
@@ -102,23 +102,28 @@ info for each image.
    -  The third pulls Plate metadata from the illumination correction
       functions
 
--  Add a fourth metadata extraction step by hitting ‘Add another
-   extraction method’
+-  The fourth metadata extraction step requires you to tell CellProfiler the
+   location of the CSV file.  It is looking for it in CellProfiler's Default
+   Input Folder, which we must therefore configure.
 
-   -  Select ‘Import from file’ as the metadata source
+   -  Select the ‘View output settings’ button in the bottom left corner of the 
+      screen.
 
-   -  Select the ‘20585_AE.csv’ file located in the exercise folder
+   -  Set the ‘Default Input Folder’ to the location of ‘20585_AE.csv’ within the 
+      exercise folder
 
-   -  Under ‘Match file and image’:
+-  Return to the ‘Metadata’ module and press ‘Update’. You should now see a number of 
+   columns in the Metadata window.
 
-      -  Match Image_Metadata_PlateID to Plate
+   -  If you like, examine the CSV and how the ‘Match file and image’ settings are
+      configured:
 
-      -  Match Image_Metadata_CPD_WELL_POSITION to Well
+      -  Image_Metadata_PlateID (from the spreadsheet) is matched to Plate (extracted
+         from the folder name by the second extraction step)
 
-      -  Match Image_Metadata_Site to Site
+      -  Image_Metadata_CPD_WELL_POSITION (from the spreadsheet) is matched to Well
+      	 (extracted from the file name by the first extraction step)
 
--  Click ‘Update’. You should now see a number of additional columns in
-   the Metadata window.
 
 3) **Examine the channel mappings in NamesAndTypes (optional)**
 
