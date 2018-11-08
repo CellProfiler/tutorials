@@ -110,11 +110,11 @@ Exercise I: Using the CellProfiler software to identify features and obtain meas
 
 -  Click on the *Metadata* module, which is the second module in the
    Input module panel; this module allows you to provide information
-   about the drug dosages and location on the plate. Select “Yes” for
-   “Extract metadata?” to reveal the relevant settings below.
+   about the drug dosages and location on the plate. 
 
--  Click the drop-down box next to “Metadata extraction method” and
-   select “Extract from folder/file names”.
+-  The first extraction set up for you in the *Metadata* module extracts
+   information about the plate, well, site, and channel of each image by
+   parsing the file name.
 
 -  Click the magnifying glass icon |Inline02| to the right of the text box
    labeled “Regular expression”.
@@ -129,35 +129,33 @@ Exercise I: Using the CellProfiler software to identify features and obtain meas
    -  Once finished, click the “Submit” button to use this expression in
       the *Metadata* module.
 
--  Click the “Update” button below the divider to display a table
-   showing each image from the *Images* module along with the
-   ChannelNumber and Well metadata values extracted from the file names.
-
--  Click the “Add another extraction method” button to add another group
-   of settings to gather additional metadata. Click the drop-down box
-   next to “Metadata extraction method” and select “Import from file”.
-
--  Next to the text box labeled “Metadata file location” setting, click
-   the folder button to select the
-   “Translocation\_doses\_and\_controls.csv” file located in the
-   “TranslocationData” folder.
+-  The second metadata extraction step requires you to tell CellProfiler the
+   location of a CSV file.  It is looking for it in CellProfiler's Default
+   Input Folder, which we must therefore configure.
 
    -  This is the file describing the image names, locations in the
       96-well plate, and doses.
 
-   -  Select “Well” from both drop-downs under “CSV Metadata” and “Image
-      Metadata”. This indicates that the well metadata values from the
-      CSV are to be matched to the well metadata values obtained from
-      the filename.
+   -  Select the ‘View output settings’ button in the bottom left corner of the 
+      screen.
+
+   -  Set the ‘Default Input Folder’ to the location of the 
+      Translocation\_doses\_and\_controls.csv” file located in the “TranslocationData” 
+      folder within the exercise folder
+
+-  Return to the ‘Metadata’ module and press ‘Update’. You should now see a number of 
+   columns in the Metadata window.
+
+   -  If you examine the metadata matching, you can see that  “Well” 
+      is selected from both drop-downs under “CSV Metadata” and “Image
+      Metadata”. This indicates that the information stored in the CSVs
+      "Well" column should be matched to the well metadata values obtained 
+      from the filename in the first extraction step.
 
 -  Next to the setting labeled “Metadata data type”, select “Choose for
    each” from the drop-down. For the “Dose” metadata, select “Float” as
    the data type. Leave the remaining metadata at the default “Text”
-   values.
-
--  Click the “Update” button again to update the table. The treatment
-   dosage and the positive/negative controls labels will be added to the
-   information already in the table.
+   values. 
 
 -  Click on the *NamesAndTypes* module, which is the third module in the
    Input module panel; this module allows you to assign a meaningful
