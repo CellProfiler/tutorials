@@ -3,6 +3,8 @@ CellProfiler Tutorial: pixel-based classification
 
 By Kyle Karhohs, PhD
 
+(A version of this document containing animated GIFs in maintained online on our `GitHub`_)
+
 Introducing Ilastik
 ===================
 
@@ -82,7 +84,7 @@ Annotation with 2 Labels
 
 2. Start a *Pixel Classification* project.
 
-3. Load several BBBC030 images by drag-and-drop into the **Input Data** window.
+3. Load at least several BBBC030 images by drag-and-drop into the **Input Data** window.
 
    Now explore the image within the ilastik gui. Here are some shortcuts
    that may prove useful are:
@@ -154,9 +156,9 @@ When satisfied with the results, export the probability maps.
 1. Open the **Prediction Export** window.
 2. Click the **Choose Export Settings** window.
 3. Change **Transpose to Axis Order** to ``cyx``.
-4. Change **Format** to ``tiff sequence``.
-5. Close the export settings dialog box and click the **Export All**
-   button.
+4. Change **Format** to ``tiff sequence`` (as opposed to the option that is just ``tiff``).
+5. Close the export settings dialog box and click the **Export All** button.
+6. If you did not initially load all the images into ilastik and wish to create predictions for them all now, go to the **Batch Processing** window, select the remaining unpredicted images and hit **Process all files**.  This will take a couple of minutes on most computers.
 
 
 III. Segmenting probabilities with CellProfiler
@@ -169,10 +171,11 @@ treated as if they were the result of a “stain” for the cells.
 
 1. Open CellProfiler.
 2. Load the *pixel_based_classification.cpppipe* pipeline file.
-3. Add the exported probability maps to the **Images** module.
-4. Run the pipeline and review the segmentation.
+3. Add the exported probability maps AND their matching original imags to the **Images** module.
+4. In the **NamesAndTypes** module, if your first ilastik class was for CHO cells, set the rule criteria for the 'cho' image to ``Metadata->Does->Have probnum matching->0``; if you created your background class first and the cell class second, change the final digit to 1.  
+5. Run the pipeline and review the segmentation.  How robustly did it perform on different images?
 
-We have transformed the patterns and texture of intensity in the
+We have now transformed the patterns and texture of intensity in the
 DIC image into an image where the intensity reflects the likelihood that
 a given pixel belongs to a cell. The image below demonstrates how the
 IdentifyPrimaryObjects module successfully segments all the CHO cells.
@@ -183,7 +186,7 @@ IdentifyPrimaryObjects module successfully segments all the CHO cells.
 
 
 
-
+.. _GitHub: https://github.com/CellProfiler/tutorials/blob/update_pixels/internal_use/docs/PixelClassification/PixelClassification.rst
 .. _over-fitting: https://en.wikipedia.org/wiki/Overfitting
 .. _IdentifyPrimaryObjects: http://d1zymp9ayga15t.cloudfront.net/CPmanual/IdentifyPrimaryObjects.html
 .. _classical image processing techiques: http://a.co/dYfHezt
