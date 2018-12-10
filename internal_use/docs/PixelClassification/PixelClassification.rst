@@ -98,6 +98,8 @@ Annotation with 2 Labels
    Begin by labeling pixels for two classes: a background class and a
    CHO cell class.
 
+3. Open the **Feature Selction** window and add all features.
+
 4. Open the **Training** window.
 
 5. Click the **+** button of the Training window to add a label. Add two
@@ -186,7 +188,7 @@ IdentifyPrimaryObjects module successfully segments all the CHO cells.
 
 
 
-.. _GitHub: https://github.com/CellProfiler/tutorials/blob/update_pixels/internal_use/docs/PixelClassification/PixelClassification.rst
+.. _GitHub: https://github.com/CellProfiler/tutorials/blob/master/internal_use/docs/PixelClassification/PixelClassification.rst
 .. _over-fitting: https://en.wikipedia.org/wiki/Overfitting
 .. _IdentifyPrimaryObjects: http://d1zymp9ayga15t.cloudfront.net/CPmanual/IdentifyPrimaryObjects.html
 .. _classical image processing techiques: http://a.co/dYfHezt
