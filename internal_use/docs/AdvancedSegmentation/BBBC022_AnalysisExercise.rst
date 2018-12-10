@@ -277,6 +277,11 @@ since you may come across a similar problem in your own experiments!
       you find yourself consistently ending up with images that look
       similar you can try adding images from the following list of
       wells- B18, C7, D6, D19, D22, E3
+   -  Some hints on what to play with:
+      -  In both IdentifyPrimaryObjects and IdentifySecondaryObjects adjusting the threshold limits can be a good thing for when wells are empty, confluent, or have bright debris in them
+      -  In both IdentifyPrimaryObjects and IdentifySecondaryObjects adjusting the threshold method may lead to better (or worse!) results.
+      -  In IdentifyPrimaryObjects, adjusting the declumping settings (make sure to turn 'Use advanced settings?' on) will probably be necessary for a robust segmentation
+      -  In IdentifySecondaryObjects, you will want to test the effects of using the various methods for identifying secondary objects (Propagation, Watershed-Image, Distance-N, etc) and, if using Propagation, the regularization factor.
 
 8) **IdentifyTertiaryObjects- Cytoplasm**
 
@@ -285,8 +290,7 @@ since you may come across a similar problem in your own experiments!
    module.
 
 -  Create an object called Cytoplasm using the Cell and Nuclei objects
-   you’ve created; ‘Shrink smaller object prior to subtraction?’ and
-   ‘Retain outlines of tertiary objects?’ should both be set to ‘No’.
+   you’ve created; ‘Shrink smaller object prior to subtraction?’ should both set to ‘No’.
 
 9) **Examine the steps used to segment the Nucleoli**
 
