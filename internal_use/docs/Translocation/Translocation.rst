@@ -97,7 +97,7 @@ Exercise I: Using the CellProfiler software to identify features and obtain meas
 
 -  Scroll to the bottom of the File list and note that in addition to
    the image files, there is a file called
-   “Tranlocation\_doses\_and\_controls.csv”. We only want image files to
+   “Translocation\_doses\_and\_controls.csv”. We only want image files to
    be analyzed in CellProfiler so this file needs to be removed from
    consideration.
 
@@ -110,7 +110,7 @@ Exercise I: Using the CellProfiler software to identify features and obtain meas
 
 -  Click on the *Metadata* module, which is the second module in the
    Input module panel; this module allows you to provide information
-   about the drug dosages and location on the plate. 
+   about the drug dosages and location on the plate.
 
 -  The first extraction set up for you in the *Metadata* module extracts
    information about the plate, well, site, and channel of each image by
@@ -136,78 +136,36 @@ Exercise I: Using the CellProfiler software to identify features and obtain meas
    -  This is the file describing the image names, locations in the
       96-well plate, and doses.
 
-   -  Select the ‘View output settings’ button in the bottom left corner of the 
-      screen.
+   -  Click the file selection box next to "Metadata file name" line and navigate
+      to the location of the TranslocationData folder on your computer, then
+      select the **Translocation_doses_and_controls.csv** file within.
 
-   -  Set the ‘Default Input Folder’ to the location of the 
-      Translocation\_doses\_and\_controls.csv” file located in the “TranslocationData” 
-      folder within the exercise folder
-
--  Return to the ‘Metadata’ module and press ‘Update’. You should now see a number of 
+-  Return to the ‘Metadata’ module and press ‘Update’. You should now see a number of
    columns in the Metadata window.
 
-   -  If you examine the metadata matching, you can see that  “Well” 
+   -  If you examine the metadata matching, you can see that  “Well”
       is selected from both drop-downs under “CSV Metadata” and “Image
       Metadata”. This indicates that the information stored in the CSVs
-      "Well" column should be matched to the well metadata values obtained 
+      "Well" column should be matched to the well metadata values obtained
       from the filename in the first extraction step.
 
--  Next to the setting labeled “Metadata data type”, select “Choose for
-   each” from the drop-down. For the “Dose” metadata, select “Float” as
+-  Next to the setting labeled “Metadata data type”, make sure “Choose for
+   each” is selected from the drop-down. For the “Dose” metadata, select “Float” as
    the data type. Leave the remaining metadata at the default “Text”
-   values. 
+   values.
 
 -  Click on the *NamesAndTypes* module, which is the third module in the
    Input module panel; this module allows you to assign a meaningful
    name to each image by which other modules will refer to it.
 
--  For the “Assign a name to” setting, select “Images matching rules”
-   from the drop-down list to identify the GFP images.
-
-   -  From the new settings that appear underneath, enter “w1” in the
-      text box to the right of the [File][Does][Contain] drop-downs.
-
-   -  For the “Name to assign these images” setting, enter “rawGFP” as a
-      descriptive name for future reference in later steps.
-
--  Click the “Add another image” button to identify the DNA images.
-
-   -  From the new settings that appear underneath, enter “w2” in the
-      text box to the right of the [File][Does][Contain] drop-downs.
-
-   -  For the “Name to assign these images” setting, enter “rawDNA” as a
-      descriptive name for future reference in later steps.
+-  Note how the images are assigned to channels: images containing "w1" in their file name
+   are assigned to the name "rawGFP", while those with "w2" are assigned "rawDNA".
 
 -  Click the “Update” button below the divider to display a table that
    shows each channel pair matched up for the 26 wells in the assay.
 
 2) **Identifying the nuclei as the “primary objects” that you will
    analyze**
-
-We want to find the primary object of interest, in this case the cell
-nucleus, in each cell in each image we are analyzing.
-
--  Click on the |Inline03| button located on the bottom left of the interface. A
-   window titled “Add modules” will appear so you can add your first
-   Analysis module to the new pipeline. (NOTE: you can skip this bullet point
-   and the next one if using the provided "Translocation_start.cppipe" pipeline
-   as it already contains an IdentifyPrimaryObjects module).
-
--  Click on *Object Processing* and then select the module
-   *IdentifyPrimaryObjects*; this module identifies objects in an image
-   by detecting the foreground and then separating touching regions.
-   Click the “+ Add to Pipeline” button and then close the “Add modules”
-   window.
-
-   -  Please note that the “Add modules” window may obscure the pipeline
-      panel and prevent you from seeing the module just added. If this
-      is the case, the “Add modules” window can be moved to a different
-      area of the screen with the mouse.
-
--  For the “Select the input image” setting, chose “rawDNA” from the
-   drop-down list. For the “Name the primary objects to be identified”
-   setting, enter “Nuclei” as a descriptive name, which we will refer to
-   them as, in later steps.
 
 Now that the module inputs and outputs are set up, in your module, the
 remaining settings need to be adjusted to best detect the nuclei. The
@@ -225,21 +183,11 @@ and adjust them as needed.
    stepping through the *IdentifyPrimaryObjects* module, a module
    display window will appear similar to that shown in Figure 2 below.
 
--  In *IdentifyPrimaryObjects*, click the drop-down box next to
-   “Threshold strategy” and select “Global.” Then, click the drop-down
-   next to “Thresholding method” to see a list of the available
-   thresholding methods. Select “Otsu” (which is the default), which
-   works well if the image is high-contrast.
-
 .. figure:: ./TutorialImages/Fig2.png
    :align: center
    :width: 500
 
    *Figure 2: Example module display window for IdentifyPrimaryObjects .*
-
-
-3) **Confirming by eye that the settings you chose do allow for
-   identification of separate cells and nuclei**
 
 For the *IdentifyPrimaryObjects* module, the goal is to have the
 outlines match the actual nuclei boundaries as well as possible, as well
@@ -295,7 +243,7 @@ drawing a box to zoom in on.
    *Figure 3: A zoomed-in view of the display window for IdentifyPrimaryObjects*
 
 
-4) **Improve identification of primary objects**
+3) **Improve identification of primary objects**
 
 In this instance, in Figure 3, you can see that the outlines capture too
 much of the background around the nuclei. This means that the default
@@ -346,7 +294,7 @@ them as background pixels, leaving only the highest intensity pixels as
 background. The identified outlines should now better match the actual
 nuclei boundaries.
 
-5) **Identifying the cell body as a “secondary object” that you will
+4) **Identifying the cell body as a “secondary object” that you will
    analyze**
 
 Now that you have confirmed, by eye, that the settings we provided you
@@ -417,7 +365,7 @@ of pixels without regard to the underlying fluorescence.
 
 -  Click the “Step” button to see the result from your new settings.
 
-6) **Identifying the cytoplasm as a “tertiary object”**
+5) **Identifying the cytoplasm as a “tertiary object”**
 
 Once we have identified the nucleus and the cell body, these two objects
 can be used to define the cell cytoplasm as the region outside the
@@ -452,7 +400,7 @@ objects, effectively identifying the cytoplasm.
 
    *Figure 5: Example module display window for IdentifyTertiaryObjects*.
 
-7) **Measuring the cells’ characteristics (i.e. the “object features”)**
+6) **Measuring the cells’ characteristics (i.e. the “object features”)**
 
 Now that the objects have been identified using settings that have been
 optimized for the phenotypes of interest, the next step is to make
@@ -547,7 +495,7 @@ measurements.
    -  Select “MeanIntensity” from the “Measurement” drop-down list. Then
       select “rawGFP” from the “Image” drop-down that appears.
 
-8) **Creating an image with your cell and nuclear outlines on it
+7) **Creating an image with your cell and nuclear outlines on it
    (optional)**
 
 It’s often nice to create an image showing the segmentation of your
@@ -639,7 +587,7 @@ subfolders based on the extracted metadata if you like.
 
 -  All the other settings may be left at their default values.
 
-9) **Exporting the measurements to a database**
+8) **Exporting the measurements to a database**
 
 Since we will be using the data visualization and machine learning tools
 in CellProfiler Analyst, the measurements will need to be saved to a
@@ -678,7 +626,7 @@ Analyst to access them.
    Command-click (Mac). Leave the rest of the settings at the default
    values.
 
-10) **Using the optimized pipeline to automatically analyze all images
+9) **Using the optimized pipeline to automatically analyze all images
     generated by the screening experiment**
 
 At this point, the settings you have entered were chosen for you because
