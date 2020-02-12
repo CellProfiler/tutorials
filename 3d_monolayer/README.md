@@ -51,7 +51,7 @@ Now that we've segmented the nuclei we want to segment the cytoplasm for each nu
 
 ## Transform nuclei into markers
 
-1. Add a **ConvertObjectsToImage** module and convert the output from the Watershed module.
+1. Add a **ConvertObjectsToImage** module and convert the output from the Watershed module using the *uint16* color format.
     <p align="center"><img src="docs/images/convertobjectstoimages_14.png" alt="rescale5" width="600"/></p>
 1. Shrink the nuclei to make them more seed-like by adding an **Erosion** module. Use the *disk* structuring element with a size of *5*. The output of this module will be referred to as *Erosion*.
     <p align="center"><img src="docs/images/erosion_15.png" alt="rescale5" width="600"/></p>
@@ -60,9 +60,9 @@ Now that we've segmented the nuclei we want to segment the cytoplasm for each nu
 
 The Watershed module finds objects that have bright signal, so the cytoplasm that will define the cell volume should have bright signal. However, this is not the case in the membrane channel; it must be transformed into an image where the cytoplasm is bright and the boundaries between the cells are dark. Therefore, we will invert the membrane channel to achieve this effect.
 
-1. Add an **Threshold** module  Threshold the rescaled membrane image.
+1. Add a **Threshold** module and threshold the rescaled membrane image.
     <p align="center"><img src="docs/images/applythreshold_16.png" alt="rescale5" width="600"/></p>
-1. Add an **ImageMath** module. Within the ImageMath module choose the *Invert* operation, and invert the tresholded membrane.
+1. Add an **ImageMath** module. Within the ImageMath module choose the *Invert* operation, and invert the thresholded membrane.
     <p align="center"><img src="docs/images/imagemath_17.png" alt="rescale5" width="600"/></p>
 1. Add a **RemoveHoles** module, again. Choose a size of *20*. This result will be referred to as the *Inverted Membrane*.
     <p align="center"><img src="docs/images/removeholes_18.png" alt="rescale5" width="600"/></p>
@@ -73,7 +73,7 @@ The Watershed module finds objects that have bright signal, so the cytoplasm tha
     <p align="center"><img src="docs/images/imagemath_19.png" alt="rescale5" width="600"/></p>
 1. Add a **Closing** module. Choose a size of *17* to blend the signal together. The result should look like a cloud of signal where the monolayer resides.
     <p align="center"><img src="docs/images/gaussianfilter_20.png" alt="rescale5" width="600"/></p>
-1. Add an **ApplyThreshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
+1. Add a **Threshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
     <p align="center"><img src="docs/images/applythreshold_21.png" alt="rescale5" width="600"/></p>
 
     Now we will combine the information from the membrane channel with what we identified as the monolayer. We will do this by subtracting the NOT-monolayer region, i.e. the background above and below the monolayer, from the image that defines the cytoplasm of the cells.
