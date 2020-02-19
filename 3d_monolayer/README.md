@@ -14,12 +14,15 @@
 1. Highlight the Metadata module.
 1. Enter the following regular expression `^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])`. This regular expression will parse the filenames and organize the data.
 1. Highlight the NamesAndTypes module.
+1. Assign a name to 'Images matching rules'.
 1. Choose “Process as 3D”
 1. Populate the fields for voxel size.
-  * Fiji > Image > Show Info… (Ctrl + I)
-  * Search for something like “Voxel size” or record this metadata when collecting own images
-  * The actual units do not matter, rather their relative proportion. The numbers are unitless and therefore the decimal place does not matter.
-1. Add three images to NamesAndTypes and give them "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
+   * Fiji > Image > Show Info… (Ctrl + I)
+   * Search for something like “Voxel size” or record this metadata when collecting own images
+   * The actual units do not matter, rather their relative proportion. The numbers are unitless and therefore the decimal place does not matter.
+1. Create 'rule criteria' to identify an image by it's color/channel. For example, using the Metadata you just extracted - `Metadata -> Does -> Have ChannelNumber matching -> 0` would match the first image.
+1. Give the images "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
+1. Add images with rulesets for the other channels in the experiment.
 
 # Find objects: nuclei
 
