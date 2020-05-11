@@ -2,12 +2,6 @@
 
 # Organizing and importing images
 
-## A note on running CellProfiler
-
-* Currently, 3d functionality is only available when running CellProfiler from source. Follow the instructions on the [CellProfiler GitHub wiki](https://github.com/CellProfiler/CellProfiler/wiki)
-* In the future (Q3 2017) the easiest thing to do will be to download the nightly or release with CellProfiler 3D functionality from the [CellProfiler website](http://www.cellprofiler.org/downloads). The release of CellProfiler 3.0 will coincide with the availability of pre-built binaries.
-* Unless otherwise stated in the tutorial, keep the default settings of a module when a module is added to the CellProfiler pipeline.
-
 ## Z-stacks as TIFFs
 
 * CellProfiler 3D currently only works with TIFF files. TIFF files can be rather complicated, having hyper-stack structures with all channels and z-planes in a single file. The acceptable CellProfiler format for storing z-stacks is to have a separate TIFF file for each channel.
@@ -20,12 +14,15 @@
 1. Highlight the Metadata module.
 1. Enter the following regular expression `^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])`. This regular expression will parse the filenames and organize the data.
 1. Highlight the NamesAndTypes module.
+1. Assign a name to 'Images matching rules'.
 1. Choose “Process as 3D”
 1. Populate the fields for voxel size.
-  * Fiji > Image > Show Info… (Ctrl + I)
-  * Search for something like “Voxel size” or record this metadata when collecting own images
-  * The actual units do not matter, rather their relative proportion. The numbers are unitless and therefore the decimal place does not matter.
-1. Add three images to NamesAndTypes and give them "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
+   * Fiji > Image > Show Info… (Ctrl + I)
+   * Search for something like “Voxel size” or record this metadata when collecting own images
+   * The actual units do not matter, rather their relative proportion. The numbers are unitless and therefore the decimal place does not matter.
+1. Create 'rule criteria' to identify an image by it's color/channel. For example, using the Metadata you just extracted - `Metadata -> Does -> Have ChannelNumber matching -> 0` would match the first image.
+1. Give the images "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
+1. Add images with rulesets for the other channels in the experiment.
 
 # Find objects: nuclei
 
@@ -33,7 +30,7 @@
 
 Before attempting to segement the cells in the images, conditioning the images with filters and various image processing methods will improve the results.
 
-1. Add a **RescaleIntensity** module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects. A RescaleIntensity module is needed for each channel, so there should be three of them.
+1. Add a **RescaleIntensity** module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects in cases where those are significant. A RescaleIntensity module is needed for each channel, so there should be three of them.
     <p align="center"><img src="docs/images/rescale_5.png" alt="rescale5" width="400"/><img src="docs/images/rescale_6.png" alt="rescale5" width="400"/><img src="docs/images/rescale_7.png" alt="rescale5" width="400"/></p>
 1. Add a **Resize** module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation. Choose a value of *0.5*.
     <p align="center"><img src="docs/images/resize_8.png" alt="rescale5" width="600"/></p>
@@ -42,9 +39,9 @@ Before attempting to segement the cells in the images, conditioning the images w
 
 ## Segmentation
 
-1. Add an **ApplyThreshold** module. This will separate the foreground (nuclei) from the background.
+1. Add an **Threshold** module. This will separate the foreground (nuclei) from the background.
     <p align="center"><img src="docs/images/applythreshold_10.png" alt="rescale5 "width="600"/></p>
-1. Add a **Remove holes** module. This module implements an algorithm that will remove small holes within the nucleus. Any remaining holes will contribute to over-segmentation of the nuclei. Choose a size of *100*.
+1. Add a **RemoveHoles** module. This module implements an algorithm that will remove small holes within the nucleus. Any remaining holes will contribute to over-segmentation of the nuclei. Choose a size of *20*.
     <p align="center"><img src="docs/images/removeholes_11.png" alt="rescale5" width="600"/></p>
 1. Add a **Watershed** module. This module implements the watershed algorithm, which will segment the nuclei. For more information on the watershed algorithm refer to this helpful [MATLAB blog post](https://www.mathworks.com/company/newsletters/articles/the-watershed-transform-strategies-for-image-segmentation.html).
     <p align="center"><img src="docs/images/watershed_12.png" alt="rescale5" width="600"/></p>
@@ -57,29 +54,29 @@ Now that we've segmented the nuclei we want to segment the cytoplasm for each nu
 
 ## Transform nuclei into markers
 
-1. Add a **ConvertObjectsToImage** module and convert the output from the Watershed module.
+1. Add a **ConvertObjectsToImage** module and convert the output from the Watershed module using the *uint16* color format.
     <p align="center"><img src="docs/images/convertobjectstoimages_14.png" alt="rescale5" width="600"/></p>
-1. Shrink the nuclei to make them more seed-like by adding an **Erosion** module. Use the *ball* structuring element with a size of *3*. The output of this module will be referred to as *Seeds*.
+1. Shrink the nuclei to make them more seed-like by adding an **Erosion** module. Use the *disk* structuring element with a size of *5*. The output of this module will be referred to as *Erosion*.
     <p align="center"><img src="docs/images/erosion_15.png" alt="rescale5" width="600"/></p>
 
 ## Transform the membrane channel into cytoplasm signal
 
 The Watershed module finds objects that have bright signal, so the cytoplasm that will define the cell volume should have bright signal. However, this is not the case in the membrane channel; it must be transformed into an image where the cytoplasm is bright and the boundaries between the cells are dark. Therefore, we will invert the membrane channel to achieve this effect.
 
-1. Add an **ApplyThreshold** module  Threshold the rescaled membrane image.
+1. Add a **Threshold** module and threshold the rescaled membrane image.
     <p align="center"><img src="docs/images/applythreshold_16.png" alt="rescale5" width="600"/></p>
-1. Add an **ImageMath** module. Within the ImageMath module choose the *Invert* operation, and invert the tresholded membrane.
+1. Add an **ImageMath** module. Within the ImageMath module choose the *Invert* operation, and invert the thresholded membrane.
     <p align="center"><img src="docs/images/imagemath_17.png" alt="rescale5" width="600"/></p>
-1. Add a **Remove holes** module, again. Choose a size of *100*. This result will be referred to as the *Inverted Membrane*.
+1. Add a **RemoveHoles** module, again. Choose a size of *20*. This result will be referred to as the *Inverted Membrane*.
     <p align="center"><img src="docs/images/removeholes_18.png" alt="rescale5" width="600"/></p>
 
-    Wait! We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.
+    We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.
 
 1. Add another **ImageMath** module. Add all of the rescaled images together. This image will be referred to as the *Monolayer*
     <p align="center"><img src="docs/images/imagemath_19.png" alt="rescale5" width="600"/></p>
 1. Add a **Closing** module. Choose a size of *17* to blend the signal together. The result should look like a cloud of signal where the monolayer resides.
     <p align="center"><img src="docs/images/gaussianfilter_20.png" alt="rescale5" width="600"/></p>
-1. Add an **ApplyThreshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
+1. Add a **Threshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
     <p align="center"><img src="docs/images/applythreshold_21.png" alt="rescale5" width="600"/></p>
 
     Now we will combine the information from the membrane channel with what we identified as the monolayer. We will do this by subtracting the NOT-monolayer region, i.e. the background above and below the monolayer, from the image that defines the cytoplasm of the cells.
