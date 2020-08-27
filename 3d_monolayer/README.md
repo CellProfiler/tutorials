@@ -14,13 +14,13 @@
 1. Highlight the Metadata module.
 1. Enter the following regular expression `^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])`. This regular expression will parse the filenames and organize the data.
 1. Highlight the NamesAndTypes module.
-1. Assign a name to 'Images matching rules'.
+1. Assign a name to "Images matching rules".
 1. Choose “Process as 3D”
-1. Populate the fields for voxel size.
+1. Populate the fields for "Relative Pixel Spacing".
    * Fiji > Image > Show Info… (Ctrl + I)
    * Search for something like “Voxel size” or record this metadata when collecting own images
    * The actual units do not matter, rather their relative proportion. The numbers are unitless and therefore the decimal place does not matter.
-1. Create 'rule criteria' to identify an image by it's color/channel. For example, using the Metadata you just extracted - `Metadata -> Does -> Have ChannelNumber matching -> 0` would match the first image.
+1. Create "rule criteria" to identify an image by its color/channel. For example, using the Metadata you just extracted - `Metadata -> Does -> Have ChannelNumber matching -> 0` would match the first image.
 1. Give the images "variable names" that describe the contents in the image. For example, use the name *dna* or *dapi* to describe an image stained with DAPI.
 1. Add images with rulesets for the other channels in the experiment.
 
@@ -28,11 +28,11 @@
 
 ## Image preparation
 
-Before attempting to segement the cells in the images, conditioning the images with filters and various image processing methods will improve the results.
+Before attempting to segment the cells in the images, conditioning the images with filters and various image processing methods will improve the results.
 
 1. Add a **RescaleIntensity** module for each channel. It is a good practice to rescale images when processing them in CellProfiler. This standardizes the input in a way that makes processing images more reproducible and suppresses experimental variation and batch effects in cases where those are significant. A RescaleIntensity module is needed for each channel, so there should be three of them.
     <p align="center"><img src="docs/images/rescale_5.png" alt="rescale5" width="400"/><img src="docs/images/rescale_6.png" alt="rescale5" width="400"/><img src="docs/images/rescale_7.png" alt="rescale5" width="400"/></p>
-1. Add a **Resize** module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smoothen an image to remove noise. If the objects of interest are relatively large compared to the pixel size, then segmentation results will be minimally affected the final segmentation. Choose a value of *0.5*.
+1. Add a **Resize** module. Processing 3D images requires much more computation time than 2D images. Often, downsampling an image can yield large performance gains and at the same time smooth an image to remove noise. Final segmentation results will be minimally affected by downsampling if the objects of interest are relatively large compared to the pixel size. Choose a value of *0.5*.
     <p align="center"><img src="docs/images/resize_8.png" alt="rescale5" width="600"/></p>
 1. Add a **MedianFilter** module. A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter will preserve boundaries better than other smoothing filters such as the Gaussian filter. Choose a filter size of *5*. This number was chosen empirically: it is smaller than the diameter of a typical nucleus; it is small enough that nuclei aren't merged together, yet large enough to suppress over-segmentation of the nuclei.
     <p align="center"><img src="docs/images/medianfilter_9.png" alt="rescale5" width="600"/></p>
@@ -76,7 +76,7 @@ The Watershed module finds objects that have bright signal, so the cytoplasm tha
     <p align="center"><img src="docs/images/imagemath_19.png" alt="rescale5" width="600"/></p>
 1. Add a **Closing** module. Choose a size of *17* to blend the signal together. The result should look like a cloud of signal where the monolayer resides.
     <p align="center"><img src="docs/images/gaussianfilter_20.png" alt="rescale5" width="600"/></p>
-1. Add a **Threshold** module and threshold the smoothened monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
+1. Add a **Threshold** module and threshold the smoothed monolayer image. This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.
     <p align="center"><img src="docs/images/applythreshold_21.png" alt="rescale5" width="600"/></p>
 
     Now we will combine the information from the membrane channel with what we identified as the monolayer. We will do this by subtracting the NOT-monolayer region, i.e. the background above and below the monolayer, from the image that defines the cytoplasm of the cells.
