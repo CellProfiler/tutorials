@@ -192,7 +192,7 @@ and adjust them as needed.
 For the *IdentifyPrimaryObjects* module, the goal is to have the
 outlines match the actual nuclei boundaries as well as possible, as well
 as separating touching objects accurately. Said another way, you do not
-want the program to split a single object (in this case, a single cell)
+want the program to split a single object (in this case, a single nucleus)
 into multiple objects, and you do not want the program to merge multiple
 objects into a single object.
 
