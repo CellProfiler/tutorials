@@ -1132,8 +1132,9 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
    “Download” links on
    `https://cellprofiler.org/ <https://cellprofiler.org/>`__ and `https://cellprofileranalyst.org/ <https://cellprofileranalyst.org/>`__, and install
    according to the instructions from the download page. This webpage
-   also provides tutorials, example pipelines and a forum where you can
-   find answers questions you may have and get help.
+   also provides tutorials and example pipelines.
+
+-  Visit the Scientific Community Image Forum at https://forum.image.sc/ to  find answers to common questions and ask for help if needed.
 
 -  Download sample images and the text file of experimental parameters
    used in this exercise from
