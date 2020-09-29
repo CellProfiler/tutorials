@@ -74,6 +74,8 @@ you will use CellProfiler Analyst to visualize your data, and use its
 machine learning tool to train the computer to distinguish between
 treated and untreated cells.
 
+
+
 Exercise I: Using the CellProfiler software to identify features and obtain measurements from cellular images.
 --------------------------------------------------------------------------------------------------------------
 
@@ -1135,6 +1137,8 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
    also provides tutorials and example pipelines.
 
 -  Visit the Scientific Community Image Forum at https://forum.image.sc/ to  find answers to common questions and ask for help if needed.
+
+- Video tutorials that may be helpful are available on the Center for Open Bioimage Analysis YouTube channel: https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q/.
 
 -  Download sample images and the text file of experimental parameters
    used in this exercise from
