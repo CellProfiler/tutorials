@@ -1138,7 +1138,7 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
 
 -  Download sample images and the text file of experimental parameters
    used in this exercise from
-   https://github.com/CellProfiler/tutorials/tree/master/Translocation/.
+   http://cellprofiler.org/linked_files/TranslocationActivity/TranslocationData.zip/.
    (The images were kindly provided through the Broad Bioimage Benchmark
    Collection at http://www.broadinstitute.org/bbbc/BBBC013/)
 
