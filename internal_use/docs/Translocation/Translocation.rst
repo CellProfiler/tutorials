@@ -1143,13 +1143,16 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
    according to the instructions from the download page. This webpage
    also provides tutorials and example pipelines.
 
--  Visit the Scientific Community Image Forum at https://forum.image.sc/ to  find answers to common questions and ask for help if needed.
+-  Visit the Scientific Community Image Forum at https://forum.image.sc/ to find
+   answers to common questions and ask for help if needed.
 
-- Video tutorials that may be helpful are available on the Center for Open Bioimage Analysis YouTube channel: https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q/.
+-  Video tutorials that may be helpful are available on the Center for Open
+   Bioimage Analysis YouTube channel:
+   https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q/.
 
 -  Download sample images and the text file of experimental parameters
    used in this exercise from
-   http://cellprofiler.org/linked_files/TranslocationActivity/TranslocationData.zip/.
+   https://cellprofiler-examples.s3.amazonaws.com/TranslocationData.zip/.
    (The images were kindly provided through the Broad Bioimage Benchmark
    Collection at http://www.broadinstitute.org/bbbc/BBBC013/)
 
