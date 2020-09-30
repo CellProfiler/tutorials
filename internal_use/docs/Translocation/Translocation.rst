@@ -272,9 +272,16 @@ quickly preview the results.
 Most thresholding methods assume that there are two intensity
 distributions present in the image, one of which is categorized as
 foreground and the other as background; the objective is then to find a
-single value that separates them. There are different methods to calculate this intensity threshold automatically. In order to learn more about these methods, click on the question mark icon to the right of the "Thresholding method" to open the CellProfiler help.
+single value that separates them. There are different methods to calculate this
+intensity threshold automatically. In order to learn more about these methods,
+click on the question mark icon to the right of the "Thresholding method" to
+open the CellProfiler help.
 
-You'll note that the Translocation_start pipeline uses the Robust Background method initially. This method can be helpful if the majority of the image is background. In this example, however, the nuclei cover a large percentage of the image and Robust Background method is not the optimal choice. We recommend selecting the Otsu method instead.
+You'll note that the Translocation_start pipeline uses the Robust background
+method initially. This method can be helpful if the majority of the image is
+background. In this example, however, the nuclei cover a large percentage of
+the image and Robust Background method is not the optimal choice. We recommend
+selecting the Otsu method instead.
 
 Now, examine your original image again. In this image, there appear to be
 instead three classes of staining intensity: the nuclei (high
