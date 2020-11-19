@@ -2,7 +2,7 @@ CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
 DateRevision:405
 GitHash:
-ModuleCount:37
+ModuleCount:35
 HasImagePlaneDetails:False
 
 Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
@@ -344,26 +344,7 @@ OverlayObjects:[module_num:29|svn_version:'Unknown'|variable_revision_number:1|s
     Objects:Nuclei
     Opacity:0.0001
 
-SaveImages:[module_num:30|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['Save the overlayed nuclei image. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select the type of image to save:Image
-    Select the image to save:NucleiOverlay
-    Select method for constructing file names:From image filename
-    Select image name for file prefix:DNA
-    Enter single file name:OrigBlue
-    Number of digits:4
-    Append a suffix to the image file name?:Yes
-    Text to append to the image name:_nuclei-overlay
-    Saved file format:tiff
-    Output file location:Default Output Folder|
-    Image bit depth:16-bit integer
-    Overwrite existing files without warning?:Yes
-    When to save:Every cycle
-    Record the file and path information to the saved image?:No
-    Create subfolders in the output folder?:No
-    Base image folder:Elsewhere...|
-    How to save the series:T (Time)
-
-RescaleIntensity:[module_num:31|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['Rescale the membrane image, which will help with easy visualization once it’s saved.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RescaleIntensity:[module_num:30|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['Rescale the membrane image, which will help with easy visualization once it’s saved.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
     Select the input image:memb
     Name the output image:RescaledMemb
     Rescaling method:Stretch each image to use the full intensity range
@@ -377,38 +358,19 @@ RescaleIntensity:[module_num:31|svn_version:'Unknown'|variable_revision_number:3
     Divisor value:1.0
     Divisor measurement:None
 
-OverlayObjects:[module_num:32|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Overlay the cells onto the rescaled membrane image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+OverlayObjects:[module_num:31|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Overlay the cells onto the rescaled membrane image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Input:RescaledMemb
     Name the output image:CellsOverlay
     Objects:Cells
     Opacity:0.1
 
-SaveImages:[module_num:33|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['Save the overlayed cell image. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select the type of image to save:Image
-    Select the image to save:CellsOverlay
-    Select method for constructing file names:From image filename
-    Select image name for file prefix:DNA
-    Enter single file name:OrigBlue
-    Number of digits:4
-    Append a suffix to the image file name?:Yes
-    Text to append to the image name:_cells-overlay
-    Saved file format:tiff
-    Output file location:Default Output Folder|
-    Image bit depth:16-bit integer
-    Overwrite existing files without warning?:Yes
-    When to save:Every cycle
-    Record the file and path information to the saved image?:No
-    Create subfolders in the output folder?:No
-    Base image folder:Elsewhere...|
-    How to save the series:T (Time)
-
-ConvertObjectsToImage:[module_num:34|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Convert the nuclei objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ConvertObjectsToImage:[module_num:32|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Convert the nuclei objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:Nuclei
     Name the output image:NucleiImage
     Select the color format:uint16
     Select the colormap:Default
 
-SaveImages:[module_num:35|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['Save the nuclei image mask. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:33|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:Image
     Select the image to save:NucleiImage
     Select method for constructing file names:From image filename
@@ -427,13 +389,13 @@ SaveImages:[module_num:35|svn_version:'Unknown'|variable_revision_number:15|show
     Base image folder:Elsewhere...|
     How to save the series:T (Time)
 
-ConvertObjectsToImage:[module_num:36|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Convert the cells objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ConvertObjectsToImage:[module_num:34|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Convert the cells objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:Cells
     Name the output image:CellImage
     Select the color format:uint16
     Select the colormap:Default
 
-SaveImages:[module_num:37|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['Save the cells image mask. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:35|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['Save the cells image mask. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:Image
     Select the image to save:CellImage
     Select method for constructing file names:From image filename

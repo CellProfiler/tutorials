@@ -149,7 +149,7 @@ Now that the nuclei and cells have been segmented in this monolayer, measurement
 
 Congratulations! The nuclei and cells have been segmented and measured in this monolayer. Visuals that reveal the details of the segmentation can be also be created within CellProfiler. The following steps will walk through two different options to visualize your CellProfiler segmentations.
 
-1. The **OverlayObjects** module will overlay the objects as colored masks on the image. We recommend overlaying onto rescaled images, which will be easier to visualize outside of CellProfiler. For example, you can choose the *Nuclei* as the objects and the *RescaledDNA* as your image. Add a **SaveImages** module to save this image. You can repeat these steps to save the cells objects overlaid on a rescaled image of the membrane.
+1. The **OverlayObjects** module will overlay the objects as colored masks on the image. We recommend overlaying onto rescaled images, which will be easier to visualize outside of CellProfiler. For example, you can choose the *Nuclei* as the objects and the *RescaledDNA* as your image. These are useful for visualization, but unfortunately cannot be saved.
 
     <p align="center"><img src="docs/images/overlay_29.png" alt="rescale5" width="600"/></p>
 
