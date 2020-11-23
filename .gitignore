@@ -92,3 +92,6 @@ output/
 
 # CellProfiler
 *.cpproj
+
+# MacFiles
+*.DS_Store
