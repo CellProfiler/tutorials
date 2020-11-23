@@ -74,6 +74,8 @@ you will use CellProfiler Analyst to visualize your data, and use its
 machine learning tool to train the computer to distinguish between
 treated and untreated cells.
 
+
+
 Exercise I: Using the CellProfiler software to identify features and obtain measurements from cellular images.
 --------------------------------------------------------------------------------------------------------------
 
@@ -192,7 +194,7 @@ and adjust them as needed.
 For the *IdentifyPrimaryObjects* module, the goal is to have the
 outlines match the actual nuclei boundaries as well as possible, as well
 as separating touching objects accurately. Said another way, you do not
-want the program to split a single object (in this case, a single cell)
+want the program to split a single object (in this case, a single nucleus)
 into multiple objects, and you do not want the program to merge multiple
 objects into a single object.
 
@@ -270,7 +272,18 @@ quickly preview the results.
 Most thresholding methods assume that there are two intensity
 distributions present in the image, one of which is categorized as
 foreground and the other as background; the objective is then to find a
-single value that separates them. In this case, there appear to be
+single value that separates them. There are different methods to calculate this
+intensity threshold automatically. In order to learn more about these methods,
+click on the question mark icon to the right of the "Thresholding method" to
+open the CellProfiler help.
+
+You'll note that the Translocation_start pipeline uses the Robust background
+method initially. This method can be helpful if the majority of the image is
+background. In this example, however, the nuclei cover a large percentage of
+the image and Robust Background method is not the optimal choice. We recommend
+selecting the Otsu method instead.
+
+Now, examine your original image again. In this image, there appear to be
 instead three classes of staining intensity: the nuclei (high
 intensity), the actual background (low intensity), and the non-specific
 staining outside the nuclei but within the cell body (medium intensity).
@@ -278,7 +291,7 @@ An alternative thresholding method would need to take these intensity
 gradations into account in order to improve the nuclei detection.
 
 -  Click the *IdentifyPrimaryObjects* setting labeled “Two-class or
-   three-class thresholding?” and change it from “Two classes” to “Three
+   three-class thresholding?” and select “Three
    classes.”
 
 -  Change the setting “Assign pixels…” that subsequently appears
@@ -1124,16 +1137,22 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
 
 ***To learn more about CellProfiler, please see our website:***
 
--  Download both CellProfiler and CellProfiler Analyst from the
+-  Download CellProfiler and CellProfiler Analyst from the
    “Download” links on
-   `www.cellprofiler.org <http://www.cellprofiler.org>`__, and install
+   `https://cellprofiler.org/ <https://cellprofiler.org/>`__ and `https://cellprofileranalyst.org/ <https://cellprofileranalyst.org/>`__, and install
    according to the instructions from the download page. This webpage
-   also provides tutorials, example pipelines and a forum where you can
-   find answers questions you may have and get help.
+   also provides tutorials and example pipelines.
+
+-  Visit the Scientific Community Image Forum at https://forum.image.sc/ to find
+   answers to common questions and ask for help if needed.
+
+-  Video tutorials that may be helpful are available on the Center for Open
+   Bioimage Analysis YouTube channel:
+   https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q/.
 
 -  Download sample images and the text file of experimental parameters
    used in this exercise from
-   http://cellprofiler.org/linked_files/TranslocationActivity/TranslocationData.zip.
+   https://cellprofiler-examples.s3.amazonaws.com/TranslocationData.zip/.
    (The images were kindly provided through the Broad Bioimage Benchmark
    Collection at http://www.broadinstitute.org/bbbc/BBBC013/)
 
