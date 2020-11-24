@@ -255,19 +255,21 @@ Since we are in Test Mode, we can easily adjust the module settings and
 quickly preview the results.
 
 -  Objects outlined in pink are outside the "Typical diameter" pixel range
-   specified in the pipeline. Use the "Tools->Measure length" tool to determine
-   if the size range specified is correct given the size of your objects.
+   specified in the pipeline. Use the "Measure Length" tool |Inline13| from
+   the top toolbar to determine if the size range specified is correct given
+   the size of your objects.
 
 -  We can figure out why the thresholding method is overly lenient by
    looking closer at the original image.
 
    -  Right-click on the “Input image, cycle #” panel in the
-      IdentifyPrimaryObjects display window and select “Image Contrast”
-      and then “Log normalized.” This log-transforms the image intensity
-      such that the contrast between low pixel intensities is enhanced
-      and that between high pixel intensities is reduced.
-
-   -  Do the same for the “Nuclei outlines” image in the display window.
+      IdentifyPrimaryObjects display window and select “Adjust Contrast”
+      and then choose “Log normalized” from the drop-down list. You can adjust
+      "Normalization Factor" and "Maximum Brightness", and select "Apply to all"
+      to apply the setting to all panels in the display window.
+      "Normalization Factor", log-transform the image intensity such that
+      the contrast between low pixel intensities is enhanced and that between
+      high pixel intensities is reduced.
 
 Most thresholding methods assume that there are two intensity
 distributions present in the image, one of which is categorized as
@@ -284,9 +286,9 @@ the image and Robust Background method is not the optimal choice. We recommend
 selecting the Otsu method instead.
 
 Now, examine your original image again. In this image, there appear to be
-instead three classes of staining intensity: the nuclei (high
-intensity), the actual background (low intensity), and the non-specific
-staining outside the nuclei but within the cell body (medium intensity).
+instead three classes of staining intensity: the bright nuclei (high
+intensity), not very bright nuclei (medium intensity), and the actual background
+(low intensity).
 An alternative thresholding method would need to take these intensity
 gradations into account in order to improve the nuclei detection.
 
@@ -294,16 +296,13 @@ gradations into account in order to improve the nuclei detection.
    three-class thresholding?” and select “Three
    classes.”
 
--  Change the setting “Assign pixels…” that subsequently appears
-   underneath from “Foreground” to “Background.”
-
 -  Click the “Step” button again to see the result from your new
    settings.
 
 -  Adjust the "Threshold correction factor" to 1.
 
 This thresholding approach takes the medium-intensity pixels and assigns
-them as background pixels, leaving only the highest intensity pixels as
+them as foreground pixels, leaving only the lowest intensity pixels as
 background. The identified outlines should now better match the actual
 nuclei boundaries.
 
@@ -317,7 +316,7 @@ nuclei, you can now find the entire cell using
 
 -  Click on the |Inline03| button and add the module *IdentifySecondaryObjects*,
    which is located under the module category *“Object Processing”.* Add
-   it to the pipeline by clicking the “+ Add to Pipeline” button.
+   it to the pipeline by clicking the |Inline12| button.
 
 -  For the “Select the input image” module setting, select “rawGFP” from
    the drop-down list.
@@ -389,7 +388,7 @@ objects, effectively identifying the cytoplasm.
 
 -  Click on the |Inline03| button and add the module *IdentifyTertiaryObjects*
    located under the module category *“Object Processing”.* Add it to
-   the pipeline by clicking the “+ Add to Pipeline” button.
+   the pipeline by clicking the |Inline12| button.
 
 -  In this module, for the “Select the larger identified objects” module
    setting, select “Cells” from the drop-down list.
@@ -437,15 +436,12 @@ images showing the subcellular location of the FOXO1A-GFP fluorescence.
 
 -  Click on the |Inline03| button and add the module *MeasureObjectIntensity*
    located under the module category *“Measurement”.* Add it to the
-   pipeline by clicking the “+ Add to Pipeline” button.
+   pipeline by clicking the |Inline12| button.
 
--  In this module, select “rawGFP” from the drop-down list, which is
-   next to the “Select an image to measure” setting.
+-  In this module, select “rawGFP” in the "Select images to measure" box, by
+   checking the box next to it.
 
--  Choose “Nuclei” from the drop-down list next to the “Select objects
-   to measure” setting. Press the “Add another object button” and select
-   “Cytoplasm” (from the drop-down list of the new “Select objects to
-   measure” setting that appears when you do this).
+-  Select “Nuclei” and "Cytoplasm" from the "Select objects to measure" box.
 
 **Measurement of the correlation of GFP in nuclei to DNA in nuclei:**
 Another potentially useful measure is the correlation within the objects
@@ -454,16 +450,20 @@ protein is not translocated, the intensity correlation within the
 nucleus between the two images would be expected to be negative, whereas
 upon translocation, the correlation would be positive.
 
--  Click on the |Inline03| button and add the module *MeasureColocalization* located
-   under the module category *“Measurement”.* Add it to the pipeline by
-   clicking the “+ Add to Pipeline” button.
+-  Click on the |Inline03| button and add the module *MeasureColocalization*
+   located under the module category *“Measurement”.* Add it to the pipeline by
+   clicking the |Inline12| button.
 
--  In this module, select “rawGFP” and “rawDNA” from the drop-down lists
-   next to the two “Select an image to measure” settings.
+-  In this module, select “rawGFP” and “rawDNA” from the "Select images to measure"
+   box. Leave the "Set threshold as percentage of maximum intensity for the images"
+   to the default value of 15.0.
 
 -  For the “Select where to measure correlation” setting, select “Within
-   objects” and then select “Nuclei” from the “Select an object to
-   measure” setting.
+   objects” and then select “Nuclei” and "Cytoplasm" from the “Select objects to
+   measure” box.
+
+-  For "Method for Costes thresholding", choose *"Faster"* from the drop-down
+   list to reduce analysis time.
 
 **Measurement of the ratio of GFP in cytoplasm to GFP in nuclei:** Since
 we are interested in the transportation of GFP from the cytoplasm to the
@@ -474,7 +474,7 @@ measurements.
 
 -  Click on the |Inline03| button and add the module *CalculateMath* located under
    the *“Data Tools”* module category\ *.* Add it to the pipeline by
-   clicking the “+ Add to Pipeline” button.
+   clicking the |Inline12| button.
 
 -  For the “Name the output measurement,” enter the “IntensityRatio” as
    a descriptive name.
@@ -521,7 +521,7 @@ have questions about an unusual result.
 
 -  Click on the |Inline03| button and add the module *GrayToColor* located under
    the *“Image Processing”* module category\ *.* Add it to the pipeline
-   by clicking the “+ Add to Pipeline” button.
+   by clicking the |Inline12| button.
 
 -  For the “Select a color scheme”, leave the setting at “RGB”.
 
@@ -548,7 +548,7 @@ and simply view them one at a time.
 
 -  Click on the |Inline03| button and add the module *OverlayOutlines* located
    under the *“Image Processing”* module category\ *.* Add it to the
-   pipeline by clicking the “+ Add to Pipeline” button.
+   pipeline by clicking the |Inline12| button.
 
 -  “Display outlines on a blank image” should be set to “No”.
 
@@ -580,7 +580,7 @@ subfolders based on the extracted metadata if you like.
 
 -  Click on the |Inline03| button and add the module *SaveImages* located under the
    *“File processing”* module category\ *.* Add it to the pipeline by
-   clicking the “+ Add to Pipeline” button.
+   clicking the |Inline12| button.
 
 -  For “Select the type of image to save”, select “Image”.
 
@@ -609,7 +609,7 @@ Analyst to access them.
 
 -  Click on the |Inline03| button and add the module *ExportToDatabase* located
    under the module category *“File Processing”.* Add it to the pipeline
-   by clicking the “+ Add to Pipeline” button.
+   by clicking the |Inline12| button.
 
    -  Note that while in Test mode, the *ExportToDatabase* module will
       have a yellow warning sign in the pipeline panel and yellow-
@@ -1174,3 +1174,5 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
 .. |Inline09| image:: ./TutorialImages/Inline09.png
 .. |Inline10| image:: ./TutorialImages/Inline10.png
 .. |Inline11| image:: ./TutorialImages/Inline11.png
+.. |Inline12| image:: ./TutorialImages/Inline12.png
+.. |Inline13| image:: ./TutorialImages/Inline13.png
