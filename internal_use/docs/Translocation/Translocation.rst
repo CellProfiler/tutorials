@@ -235,12 +235,12 @@ display, by clicking and dragging.
 The 5th icon lets you change the view by zooming, by dragging and
 drawing a box to zoom in on.
 
--  Zoom in the image in order to see the quality of the nuclei
-   identification. The result may look like Figure 3.
+Zoom in the image in order to see the quality of the nuclei identification.
+The result may look like Figure 3.
 
 .. figure:: ./TutorialImages/Fig3.png
    :align: center
-   :width: 500
+   :width: 450
 
    *Figure 3: A zoomed-in view of the display window for IdentifyPrimaryObjects*
 
@@ -351,10 +351,10 @@ nuclei, you can now find the entire cell using
       *IdentifySecondaryObjects*, the pink outlines indicate the
       secondary object boundaries and the green outlines indicate the
       primary object boundaries.
-
 .. figure:: ./TutorialImages/Fig4.png
    :align: center
    :width: 500
+   :height: 500
 
    *Figure 4: Example module display window for IdentifySecondaryObjects*.
 
@@ -405,10 +405,9 @@ objects, effectively identifying the cytoplasm.
 
 -  Click the “Step” button to execute the module, and preview the
    results of tertiary object identification (Fig. 5).
-
 .. figure:: ./TutorialImages/Fig5.png
    :align: center
-   :width: 500
+   :width: 425
 
    *Figure 5: Example module display window for IdentifyTertiaryObjects*.
 
@@ -732,7 +731,7 @@ visualization tools available is the plate layout format.
 
 .. figure:: ./TutorialImages/Fig6.png
    :align: center
-   :width: 600
+   :width: 500
 
    *Figure 6: The Plate Viewer visualization tool illustrating the drug dosages applied to the plate.*
 
