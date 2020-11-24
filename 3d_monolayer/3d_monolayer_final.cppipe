@@ -1,16 +1,16 @@
 CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
-DateRevision:405
+DateRevision:407
 GitHash:
 ModuleCount:35
 HasImagePlaneDetails:False
 
-Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     :
     Filter images?:Images only
     Select the rule criteria:and (extension does isimage) (directory doesnot containregexp "[\\\\\\\\/]\\\\.")
 
-Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:['The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:True|notes:['The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Extract metadata?:Yes
     Metadata data type:Text
     Metadata types:{}
@@ -27,7 +27,7 @@ Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_win
     Metadata file name:
     Does cached metadata exist?:No
 
-NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:['The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:True|notes:['The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Assign a name to:Images matching rules
     Select the image type:Grayscale image
     Name to assign these images:DNA
@@ -60,12 +60,12 @@ NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|sho
     Set intensity range from:Image metadata
     Maximum intensity:255.0
 
-Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:['The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Do you want to group your images?:No
     grouping metadata count:1
     Metadata category:None
 
-RescaleIntensity:[module_num:5|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['Rescaling the DNA image proportionally stretches the intensity values to the full intensity range, from 0 to 1. In this case, we find that rescaling improves the thresholding and subsequent segmentation of nuclei. ', '', 'Be careful when using rescaled images in your pipeline not to perform measurements on the rescaled images! ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RescaleIntensity:[module_num:5|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['Rescaling the DNA image proportionally stretches the intensity values to the full intensity range, from 0 to 1. In this case, we find that rescaling improves the thresholding and subsequent segmentation of nuclei. ', '', 'Be careful when using rescaled images in your pipeline not to perform measurements on the rescaled images! ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:DNA
     Name the output image:RescaledDNA
     Rescaling method:Stretch each image to use the full intensity range
@@ -79,7 +79,7 @@ RescaleIntensity:[module_num:5|svn_version:'Unknown'|variable_revision_number:3|
     Divisor value:1.0
     Divisor measurement:None
 
-Resize:[module_num:6|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['Downsampling the image will increase the processing speed. This is a good option when the objects of interest are large enough, like the nuclei in this monolayer, and retain their shape shrunken.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Resize:[module_num:6|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:['Downsampling the image will increase the processing speed. This is a good option when the objects of interest are large enough, like the nuclei in this monolayer, and retain their shape shrunken.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:RescaledDNA
     Name the output image:ResizeDNA
     Resizing method:Resize by a fraction or multiple of the original size
@@ -91,12 +91,12 @@ Resize:[module_num:6|svn_version:'Unknown'|variable_revision_number:4|show_windo
     Select the image with the desired dimensions:None
     Additional image count:0
 
-MedianFilter:[module_num:7|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter preserves boundaries better than other smoothing filters such as the Gaussian filter.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+MedianFilter:[module_num:7|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['A median filter will homogenize the signal within the nucleus and reduce noise in the background. DNA is not uniformly distributed throughout the nucleus, which can lead to holes forming in the downstream object identification. A median filter preserves boundaries better than other smoothing filters such as the Gaussian filter.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:ResizeDNA
     Name the output image:MedianFilter
     Window:5
 
-Threshold:[module_num:8|svn_version:'Unknown'|variable_revision_number:11|show_window:False|notes:['The Threshold module identifies a pixel intensity value to separate the foreground (nuclei) from the background. Empirically, we’ve found that a two-class Otsu threshold works well for this data. We encourage you to try other thresholding methods to compare the outputs.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Threshold:[module_num:8|svn_version:'Unknown'|variable_revision_number:12|show_window:True|notes:['The Threshold module identifies a pixel intensity value to separate the foreground (nuclei) from the background. Empirically, we’ve found that a two-class Otsu threshold works well for this data. We encourage you to try other thresholding methods to compare the outputs.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:MedianFilter
     Name the output image:ApplyThreshold
     Threshold strategy:Global
@@ -107,6 +107,7 @@ Threshold:[module_num:8|svn_version:'Unknown'|variable_revision_number:11|show_w
     Manual threshold:0.0
     Select the measurement to threshold with:None
     Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
     Assign pixels in the middle intensity class to the foreground or the background?:Foreground
     Size of adaptive window:50
     Lower outlier fraction:0.05
@@ -116,12 +117,12 @@ Threshold:[module_num:8|svn_version:'Unknown'|variable_revision_number:11|show_w
     # of deviations:2.0
     Thresholding method:Otsu
 
-RemoveHoles:[module_num:9|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['The RemoveHoles module implements an algorithm that will remove small holes within the nucleus. We remove small holes because holes can contribute to over-segmentation of the nuclei.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RemoveHoles:[module_num:9|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['The RemoveHoles module implements an algorithm that will remove small holes within the nucleus. We remove small holes because holes can contribute to over-segmentation of the nuclei.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:ApplyThreshold
     Name the output image:RemoveHoles
     Size of holes to fill:20.0
 
-Watershed:[module_num:10|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The watershed module implements the watershed algorithm to segment the nuclei. Downsampling reduces processing time and decreases noise. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Watershed:[module_num:10|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:['The watershed module implements the watershed algorithm to segment the nuclei. Downsampling reduces processing time and decreases noise. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:RemoveHoles
     Name the output object:Watershed
     Generate from:Distance
@@ -133,7 +134,7 @@ Watershed:[module_num:10|svn_version:'Unknown'|variable_revision_number:2|show_w
     Downsample:2
     Separate watershed labels:No
 
-ResizeObjects:[module_num:11|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ResizeObjects:[module_num:11|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input object:Watershed
     Name the output object:Nuclei
     Method:Factor
@@ -142,14 +143,14 @@ ResizeObjects:[module_num:11|svn_version:'Unknown'|variable_revision_number:2|sh
     Height:100
     Select the image with the desired dimensions:None
 
-ErodeObjects:[module_num:12|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['The Erode Objects module shrinks the nuclei to make them more seed-like. We prevent object removal in order to avoid losing any nuclei. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ErodeObjects:[module_num:12|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['The Erode Objects module shrinks the nuclei to make them more seed-like. We prevent object removal in order to avoid losing any nuclei. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input object:Watershed
     Name the output object:ErodedWatershed
     Structuring element:ball,5
     Prevent object removal:Yes
     Relabel resulting objects:No
 
-ResizeObjects:[module_num:13|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The ResizeObjects module resizes the eroded nuclei to restore them to the original size. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ResizeObjects:[module_num:13|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:['The ResizeObjects module resizes the eroded nuclei to restore them to the original size. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input object:ErodedWatershed
     Name the output object:ErodedResizedNucleiObjects
     Method:Factor
@@ -158,13 +159,13 @@ ResizeObjects:[module_num:13|svn_version:'Unknown'|variable_revision_number:2|sh
     Height:100
     Select the image with the desired dimensions:None
 
-ConvertObjectsToImage:[module_num:14|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['The seed-like nuclei objects created by ErodeObjects and resized by ResizeObjects are now converted into an image using ConvertObjectsToImage. This step is necessary because the Watershed module can only accept images as input for the markers. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ConvertObjectsToImage:[module_num:14|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['The seed-like nuclei objects created by ErodeObjects and resized by ResizeObjects are now converted into an image using ConvertObjectsToImage. This step is necessary because the Watershed module can only accept images as input for the markers. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:ErodedResizedNucleiObjects
     Name the output image:NucleiSeeds
     Select the color format:uint16
     Select the colormap:Default
 
-Threshold:[module_num:15|svn_version:'Unknown'|variable_revision_number:11|show_window:False|notes:['The Watershed module finds objects that have bright signal, so the cytoplasm that will define the cell volume should have bright signal. However, this is not the case in the membrane channel; it must be transformed into an image where the cytoplasm is bright and the boundaries between the cells are dark. Therefore, we will invert the membrane channel to achieve this effect.', '', 'This module thresholds the rescaled membrane image. We find that the Otsu three-class method with middle intensity pixels assigned to the foreground works well, but feel free to try others.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Threshold:[module_num:15|svn_version:'Unknown'|variable_revision_number:12|show_window:True|notes:['The Watershed module finds objects that have bright signal, so the cytoplasm that will define the cell volume should have bright signal. However, this is not the case in the membrane channel; it must be transformed into an image where the cytoplasm is bright and the boundaries between the cells are dark. Therefore, we will invert the membrane channel to achieve this effect.', '', 'This module thresholds the rescaled membrane image. We find that the Otsu three-class method with middle intensity pixels assigned to the foreground works well, but feel free to try others.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:memb
     Name the output image:MembThreshold
     Threshold strategy:Global
@@ -175,6 +176,7 @@ Threshold:[module_num:15|svn_version:'Unknown'|variable_revision_number:11|show_
     Manual threshold:0.000001
     Select the measurement to threshold with:None
     Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
     Assign pixels in the middle intensity class to the foreground or the background?:Foreground
     Size of adaptive window:50
     Lower outlier fraction:0.05
@@ -184,7 +186,7 @@ Threshold:[module_num:15|svn_version:'Unknown'|variable_revision_number:11|show_
     # of deviations:2.0
     Thresholding method:Otsu
 
-ImageMath:[module_num:16|svn_version:'Unknown'|variable_revision_number:5|show_window:False|notes:['We invert the thresholded membrane in order to create a binary image where the pixels inside of cells are bright (1) and the pixels surrounding cells are black (0). ', '', 'We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ImageMath:[module_num:16|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['We invert the thresholded membrane in order to create a binary image where the pixels inside of cells are bright (1) and the pixels surrounding cells are black (0). ', '', 'We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Operation:Invert
     Raise the power of the result by:1.0
     Multiply the result by:1.0
@@ -203,12 +205,12 @@ ImageMath:[module_num:16|svn_version:'Unknown'|variable_revision_number:5|show_w
     Multiply the second image by:1.0
     Measurement:
 
-RemoveHoles:[module_num:17|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['The RemoveHoles module removes the small holes in the segmentation of the cell interior. This helps to prevent the cells from being split during the Watershed segmentation.', '', 'We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RemoveHoles:[module_num:17|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['The RemoveHoles module removes the small holes in the segmentation of the cell interior. This helps to prevent the cells from being split during the Watershed segmentation.', '', 'We cannot use the inverted membrane image as the cytoplasm just yet. The space above and the below the monolayer is also of high signal. The Watershed module cannot distinguish that this is not cytoplasm, so it will have to be removed. To do this we will take advantage of the signal across all channels to define the boundaries of the monolayer.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:MembInvert
     Name the output image:MembInvertRemoveHoles
     Size of holes to fill:20
 
-ImageMath:[module_num:18|svn_version:'Unknown'|variable_revision_number:5|show_window:False|notes:['This ImageMath module adds the original images together. This creates a composite image that will be used to define where cells are present and the background above and below the cells. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ImageMath:[module_num:18|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['This ImageMath module adds the original images together. This creates a composite image that will be used to define where cells are present and the background above and below the cells. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Operation:Add
     Raise the power of the result by:1.0
     Multiply the result by:1.0
@@ -231,7 +233,7 @@ ImageMath:[module_num:18|svn_version:'Unknown'|variable_revision_number:5|show_w
     Multiply the third image by:1.0
     Measurement:
 
-Resize:[module_num:19|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['Use the resizing module to downsample the monolayer image. Downsampling the image makes processing faster and decreases noise. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Resize:[module_num:19|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:['Use the resizing module to downsample the monolayer image. Downsampling the image makes processing faster and decreases noise. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:Monolayer
     Name the output image:ResizedMonolayer
     Resizing method:Resize by a fraction or multiple of the original size
@@ -243,12 +245,12 @@ Resize:[module_num:19|svn_version:'Unknown'|variable_revision_number:4|show_wind
     Select the image with the desired dimensions:None
     Additional image count:0
 
-Closing:[module_num:20|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['The closing module is used here to blend the signal in the monolayer together. The result should look like a cloud of signal where the monolayer resides.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Closing:[module_num:20|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['The closing module is used here to blend the signal in the monolayer together. The result should look like a cloud of signal where the monolayer resides.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:ResizedMonolayer
     Name the output image:ClosedMonolayer
     Structuring element:disk,17
 
-Resize:[module_num:21|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['The resize module is used to resize the closed monolayer back to the original size. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Resize:[module_num:21|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:['The resize module is used to resize the closed monolayer back to the original size. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:ClosedMonolayer
     Name the output image:ResizedClosedMonolayer
     Resizing method:Resize by a fraction or multiple of the original size
@@ -260,7 +262,7 @@ Resize:[module_num:21|svn_version:'Unknown'|variable_revision_number:4|show_wind
     Select the image with the desired dimensions:None
     Additional image count:0
 
-Threshold:[module_num:22|svn_version:'Unknown'|variable_revision_number:11|show_window:False|notes:['The threshold module is used here to create a binary image where the pixels inside of cells are bright (1) and the pixels surrounding cells are black (0). This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Threshold:[module_num:22|svn_version:'Unknown'|variable_revision_number:12|show_window:True|notes:['The threshold module is used here to create a binary image where the pixels inside of cells are bright (1) and the pixels surrounding cells are black (0). This will define what is and is not monolayer. Note that the space above and below the monolayer is primarily black.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:ResizedClosedMonolayer
     Name the output image:MonolayerMask
     Threshold strategy:Global
@@ -271,6 +273,7 @@ Threshold:[module_num:22|svn_version:'Unknown'|variable_revision_number:11|show_
     Manual threshold:0.0
     Select the measurement to threshold with:None
     Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
     Assign pixels in the middle intensity class to the foreground or the background?:Foreground
     Size of adaptive window:50
     Lower outlier fraction:0.05
@@ -280,7 +283,7 @@ Threshold:[module_num:22|svn_version:'Unknown'|variable_revision_number:11|show_
     # of deviations:2.0
     Thresholding method:Otsu
 
-MaskImage:[module_num:23|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['The MaskImage module is used to apply the MonolayerMask generated in the previous threshold module to the thresholded membrane image. This generates a binary image where the center of the cells is bright (1) and the outside of the cells is black (0).']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+MaskImage:[module_num:23|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['The MaskImage module is used to apply the MonolayerMask generated in the previous threshold module to the thresholded membrane image. This generates a binary image where the center of the cells is bright (1) and the outside of the cells is black (0).']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:MembInvertRemoveHoles
     Name the output image:MembMasked
     Use objects or an image as a mask?:Image
@@ -288,12 +291,12 @@ MaskImage:[module_num:23|svn_version:'Unknown'|variable_revision_number:3|show_w
     Select image for mask:MonolayerMask
     Invert the mask?:No
 
-ErodeImage:[module_num:24|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['The ErodeImage module here erodes the membrane image generated in the previous step. Eroding using a ball of size 1 improves the separation between individual cells in the Watershed segmentation (the next step).   ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ErodeImage:[module_num:24|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['The ErodeImage module here erodes the membrane image generated in the previous step. Eroding using a ball of size 1 improves the separation between individual cells in the Watershed segmentation (the next step).   ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:MembMasked
     Name the output image:MembFinal
     Structuring element:Ball,1
 
-Watershed:[module_num:25|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The watershed module implements the watershed algorithm to segment the cells. The nuclei are used as seeds (Markers) after they are eroded to make them more seed-like and converted into an image. We use a mask to help preserve the cell boundaries. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Watershed:[module_num:25|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:['The watershed module implements the watershed algorithm to segment the cells. The nuclei are used as seeds (Markers) after they are eroded to make them more seed-like and converted into an image. We use a mask to help preserve the cell boundaries. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:MembFinal
     Name the output object:Cells
     Generate from:Markers
@@ -305,16 +308,16 @@ Watershed:[module_num:25|svn_version:'Unknown'|variable_revision_number:2|show_w
     Downsample:1
     Separate watershed labels:No
 
-MeasureObjectIntensity:[module_num:26|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['Make intensity measurements on the original images (not rescaled images!) for your objects of interest. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectIntensity:[module_num:26|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:['Make intensity measurements on the original images (not rescaled images!) for your objects of interest. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select images to measure:DNA, mito
     Select objects to measure:Nuclei, Cells
 
-MeasureObjectSizeShape:[module_num:27|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['Make size and shape measurements on the original images for your objects of interest. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectSizeShape:[module_num:27|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['Make size and shape measurements on the original images for your objects of interest. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select object sets to measure:Nuclei, Cells
     Calculate the Zernike features?:No
     Calculate the advanced features?:No
 
-ExportToSpreadsheet:[module_num:28|svn_version:'Unknown'|variable_revision_number:13|show_window:False|notes:['Export measurements to a spreadsheet. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ExportToSpreadsheet:[module_num:28|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:['Export measurements to a spreadsheet. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:Comma (",")
     Add image metadata columns to your object data file?:Yes
     Add image file and folder names to your object data file?:No
@@ -338,13 +341,13 @@ ExportToSpreadsheet:[module_num:28|svn_version:'Unknown'|variable_revision_numbe
     File name:DATA.csv
     Use the object name for the file name?:Yes
 
-OverlayObjects:[module_num:29|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Overlay the nuclei onto the rescaled DNA image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+OverlayObjects:[module_num:29|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Overlay the nuclei onto the rescaled DNA image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Input:DNA
     Name the output image:NucleiOverlay
     Objects:Nuclei
     Opacity:0.0001
 
-RescaleIntensity:[module_num:30|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['Rescale the membrane image, which will help with easy visualization once it’s saved.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
+RescaleIntensity:[module_num:30|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['Rescale the membrane image, which will help with easy visualization once it’s saved.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
     Select the input image:memb
     Name the output image:RescaledMemb
     Rescaling method:Stretch each image to use the full intensity range
@@ -358,19 +361,19 @@ RescaleIntensity:[module_num:30|svn_version:'Unknown'|variable_revision_number:3
     Divisor value:1.0
     Divisor measurement:None
 
-OverlayObjects:[module_num:31|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Overlay the cells onto the rescaled membrane image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+OverlayObjects:[module_num:31|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Overlay the cells onto the rescaled membrane image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Input:RescaledMemb
     Name the output image:CellsOverlay
     Objects:Cells
     Opacity:0.1
 
-ConvertObjectsToImage:[module_num:32|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Convert the nuclei objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ConvertObjectsToImage:[module_num:32|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Convert the nuclei objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:Nuclei
     Name the output image:NucleiImage
     Select the color format:uint16
     Select the colormap:Default
 
-SaveImages:[module_num:33|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:33|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:Image
     Select the image to save:NucleiImage
     Select method for constructing file names:From image filename
@@ -389,13 +392,13 @@ SaveImages:[module_num:33|svn_version:'Unknown'|variable_revision_number:15|show
     Base image folder:Elsewhere...|
     How to save the series:T (Time)
 
-ConvertObjectsToImage:[module_num:34|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Convert the cells objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+ConvertObjectsToImage:[module_num:34|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Convert the cells objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:Cells
     Name the output image:CellImage
     Select the color format:uint16
     Select the colormap:Default
 
-SaveImages:[module_num:35|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['Save the cells image mask. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:35|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:['Save the cells image mask. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:Image
     Select the image to save:CellImage
     Select method for constructing file names:From image filename
