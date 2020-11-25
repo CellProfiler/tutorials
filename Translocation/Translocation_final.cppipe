@@ -1,288 +1,298 @@
 CellProfiler Pipeline: http://www.cellprofiler.org
-Version:4
-DateRevision:315
+Version:5
+DateRevision:407
 GitHash:
 ModuleCount:14
 HasImagePlaneDetails:False
 
-Images:[module_num:1|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your analysis.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    :\xff\xfe
-    Filter images?:\xff\xfeI\x00m\x00a\x00g\x00e\x00s\x00 \x00o\x00n\x00l\x00y\x00
-    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00e\x00x\x00t\x00e\x00n\x00s\x00i\x00o\x00n\x00 \x00d\x00o\x00e\x00s\x00 \x00i\x00s\x00i\x00m\x00a\x00g\x00e\x00)\x00 \x00(\x00d\x00i\x00r\x00e\x00c\x00t\x00o\x00r\x00y\x00 \x00d\x00o\x00e\x00s\x00n\x00o\x00t\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00r\x00e\x00g\x00e\x00x\x00p\x00 \x00"\x00\x5B\x00\\\x00\\\x00\\\x00\\\x00/\x00\x5D\x00\\\x00\\\x00.\x00"\x00)\x00
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your analysis.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    :
+    Filter images?:Images only
+    Select the rule criteria:and (extension does isimage) (directory doesnot containregexp "[\\\\/]\\.")
 
-Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'The Metadata module (optional) allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be extracted from the image\\xe2\\x80\\x99s file name and/or location, or from an external file.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Extract metadata?:\xff\xfeY\x00e\x00s\x00
-    Metadata data type:\xff\xfeC\x00h\x00o\x00o\x00s\x00e\x00 \x00f\x00o\x00r\x00 \x00e\x00a\x00c\x00h\x00
-    Metadata types:\xff\xfe{\x00"\x00P\x00l\x00a\x00t\x00e\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00,\x00 \x00"\x00F\x00i\x00l\x00e\x00L\x00o\x00c\x00a\x00t\x00i\x00o\x00n\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00,\x00 \x00"\x00S\x00e\x00r\x00i\x00e\x00s\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00,\x00 \x00"\x00F\x00r\x00a\x00m\x00e\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00,\x00 \x00"\x00W\x00e\x00l\x00l\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00,\x00 \x00"\x00S\x00i\x00t\x00e\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00,\x00 \x00"\x00D\x00o\x00s\x00e\x00"\x00\x3A\x00 \x00"\x00f\x00l\x00o\x00a\x00t\x00"\x00,\x00 \x00"\x00C\x00h\x00a\x00n\x00n\x00e\x00l\x00N\x00u\x00m\x00b\x00e\x00r\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00,\x00 \x00"\x00P\x00o\x00s\x00N\x00e\x00g\x00C\x00t\x00r\x00l\x00s\x00"\x00\x3A\x00 \x00"\x00t\x00e\x00x\x00t\x00"\x00}\x00
-    Extraction method count:\xff\xfe2\x00
-    Metadata extraction method:\xff\xfeE\x00x\x00t\x00r\x00a\x00c\x00t\x00 \x00f\x00r\x00o\x00m\x00 \x00f\x00i\x00l\x00e\x00/\x00f\x00o\x00l\x00d\x00e\x00r\x00 \x00n\x00a\x00m\x00e\x00s\x00
-    Metadata source:\xff\xfeF\x00i\x00l\x00e\x00 \x00n\x00a\x00m\x00e\x00
-    Regular expression to extract from file name:\xff\xfe^\x00(\x00?\x00P\x00<\x00P\x00l\x00a\x00t\x00e\x00>\x00.\x00*\x00)\x00_\x00(\x00?\x00P\x00<\x00W\x00e\x00l\x00l\x00>\x00\x5B\x00A\x00-\x00P\x00\x5D\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00)\x00_\x00s\x00(\x00?\x00P\x00<\x00S\x00i\x00t\x00e\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00)\x00_\x00w\x00(\x00?\x00P\x00<\x00C\x00h\x00a\x00n\x00n\x00e\x00l\x00N\x00u\x00m\x00b\x00e\x00r\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00)\x00
-    Regular expression to extract from folder name:\xff\xfe(\x00?\x00P\x00<\x00D\x00a\x00t\x00e\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x004\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00)\x00$\x00
-    Extract metadata from:\xff\xfeA\x00l\x00l\x00 \x00i\x00m\x00a\x00g\x00e\x00s\x00
-    Select the filtering criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00"\x00)\x00
-    Metadata file location:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
-    Match file and image metadata:\xff\xfe\x5B\x00\x5D\x00
-    Use case insensitive matching?:\xff\xfeN\x00o\x00
-    Metadata file name:\xff\xfe
-    Metadata extraction method:\xff\xfeI\x00m\x00p\x00o\x00r\x00t\x00 \x00f\x00r\x00o\x00m\x00 \x00f\x00i\x00l\x00e\x00
-    Metadata source:\xff\xfeF\x00i\x00l\x00e\x00 \x00n\x00a\x00m\x00e\x00
-    Regular expression to extract from file name:\xff\xfe^\x00(\x00?\x00P\x00<\x00P\x00l\x00a\x00t\x00e\x00>\x00.\x00*\x00)\x00_\x00(\x00?\x00P\x00<\x00W\x00e\x00l\x00l\x00>\x00\x5B\x00A\x00-\x00P\x00\x5D\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00)\x00_\x00s\x00(\x00?\x00P\x00<\x00S\x00i\x00t\x00e\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00)\x00_\x00w\x00(\x00?\x00P\x00<\x00C\x00h\x00a\x00n\x00n\x00e\x00l\x00N\x00u\x00m\x00b\x00e\x00r\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00)\x00
-    Regular expression to extract from folder name:\xff\xfe(\x00?\x00P\x00<\x00D\x00a\x00t\x00e\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x004\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00)\x00$\x00
-    Extract metadata from:\xff\xfeA\x00l\x00l\x00 \x00i\x00m\x00a\x00g\x00e\x00s\x00
-    Select the filtering criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00"\x00)\x00
-    Metadata file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00I\x00n\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00
-    Match file and image metadata:\xff\xfe\x5B\x00{\x00\'\x00I\x00m\x00a\x00g\x00e\x00 \x00M\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00\'\x00\x3A\x00 \x00u\x00\'\x00W\x00e\x00l\x00l\x00\'\x00,\x00 \x00\'\x00C\x00S\x00V\x00 \x00M\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00\'\x00\x3A\x00 \x00u\x00\'\x00W\x00e\x00l\x00l\x00\'\x00}\x00\x5D\x00
-    Use case insensitive matching?:\xff\xfeN\x00o\x00
-    Metadata file name:\xff\xfeT\x00r\x00a\x00n\x00s\x00l\x00o\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00d\x00o\x00s\x00e\x00s\x00_\x00a\x00n\x00d\x00_\x00c\x00o\x00n\x00t\x00r\x00o\x00l\x00s\x00.\x00c\x00s\x00v\x00
+Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:['The Metadata module (optional) allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be extracted from the imageâx80x99s file name and/or location, or from an external file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:Yes
+    Metadata data type:Choose for each
+    Metadata types:{"Plate": "text", "FileLocation": "text", "Series": "text", "Frame": "text", "Well": "text", "Site": "text", "Dose": "float", "ChannelNumber": "text", "PosNegCtrls": "text"}
+    Extraction method count:2
+    Metadata extraction method:Extract from file/folder names
+    Metadata source:File name
+    Regular expression to extract from file name:^(?P<Plate>.*)_(?P<Well>[A-P][0-9]{2})_s(?P<Site>[0-9])_w(?P<ChannelNumber>[0-9])
+    Regular expression to extract from folder name:(?P<Date>[0-9]{4}_[0-9]{2}_[0-9]{2})$
+    Extract metadata from:All images
+    Select the filtering criteria:and (file does contain "")
+    Metadata file location:Elsewhere...|
+    Match file and image metadata:[]
+    Use case insensitive matching?:No
+    Metadata file name:
+    Does cached metadata exist?:No
+    Metadata extraction method:Import from file
+    Metadata source:File name
+    Regular expression to extract from file name:^(?P<Plate>.*)_(?P<Well>[A-P][0-9]{2})_s(?P<Site>[0-9])_w(?P<ChannelNumber>[0-9])
+    Regular expression to extract from folder name:(?P<Date>[0-9]{4}_[0-9]{2}_[0-9]{2})$
+    Extract metadata from:All images
+    Select the filtering criteria:and (file does contain "")
+    Metadata file location:Default Input Folder|Downloads/TranslocationData
+    Match file and image metadata:[{'Image Metadata': u'Well', 'CSV Metadata': u'Well'}]
+    Use case insensitive matching?:No
+    Metadata file name:Translocation_doses_and_controls.csv
+    Does cached metadata exist?:No
 
-NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Assign a name to:\xff\xfeI\x00m\x00a\x00g\x00e\x00s\x00 \x00m\x00a\x00t\x00c\x00h\x00i\x00n\x00g\x00 \x00r\x00u\x00l\x00e\x00s\x00
-    Select the image type:\xff\xfeG\x00r\x00a\x00y\x00s\x00c\x00a\x00l\x00e\x00 \x00i\x00m\x00a\x00g\x00e\x00
-    Name to assign these images:\xff\xfeD\x00N\x00A\x00
-    Match metadata:\xff\xfe\x5B\x00\x5D\x00
-    Image set matching method:\xff\xfeO\x00r\x00d\x00e\x00r\x00
-    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
-    Assignments count:\xff\xfe2\x00
-    Single images count:\xff\xfe0\x00
-    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
-    Process as 3D?:\xff\xfeN\x00o\x00
-    Relative pixel spacing in X:\xff\xfe1\x00.\x000\x00
-    Relative pixel spacing in Y:\xff\xfe1\x00.\x000\x00
-    Relative pixel spacing in Z:\xff\xfe1\x00.\x000\x00
-    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00w\x002\x00"\x00)\x00
-    Name to assign these images:\xff\xfer\x00a\x00w\x00D\x00N\x00A\x00
-    Name to assign these objects:\xff\xfeC\x00e\x00l\x00l\x00
-    Select the image type:\xff\xfeG\x00r\x00a\x00y\x00s\x00c\x00a\x00l\x00e\x00 \x00i\x00m\x00a\x00g\x00e\x00
-    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
-    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
-    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00w\x001\x00"\x00)\x00
-    Name to assign these images:\xff\xfer\x00a\x00w\x00G\x00F\x00P\x00
-    Name to assign these objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00u\x00s\x00
-    Select the image type:\xff\xfeG\x00r\x00a\x00y\x00s\x00c\x00a\x00l\x00e\x00 \x00i\x00m\x00a\x00g\x00e\x00
-    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
-    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
+NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:['The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:Images matching rules
+    Select the image type:Grayscale image
+    Name to assign these images:DNA
+    Match metadata:[]
+    Image set matching method:Order
+    Set intensity range from:Image metadata
+    Assignments count:2
+    Single images count:0
+    Maximum intensity:255.0
+    Process as 3D?:No
+    Relative pixel spacing in X:1.0
+    Relative pixel spacing in Y:1.0
+    Relative pixel spacing in Z:1.0
+    Select the rule criteria:and (file does contain "w2")
+    Name to assign these images:rawDNA
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain "w1")
+    Name to assign these images:rawGFP
+    Name to assign these objects:Nucleus
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
 
-Groups:[module_num:4|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'The Groups module (optional) allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, separate time-lapse movies, 3D stacks, etc.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Do you want to group your images?:\xff\xfeN\x00o\x00
-    grouping metadata count:\xff\xfe1\x00
-    Metadata category:\xff\xfeN\x00o\x00n\x00e\x00
+Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The Groups module (optional) allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, separate time-lapse movies, 3D stacks, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:No
+    grouping metadata count:1
+    Metadata category:None
 
-IdentifyPrimaryObjects:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'IdentifyPrimaryObjects takes an input image and identifies biological objects of interest, for example nuclei from a DNA-stained image, or colonies on an agar plate.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Select the input image:\xff\xfer\x00a\x00w\x00D\x00N\x00A\x00
-    Name the primary objects to be identified:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
-    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x00,\x004\x000\x00
-    Discard objects outside the diameter range?:\xff\xfeY\x00e\x00s\x00
-    Discard objects touching the border of the image?:\xff\xfeY\x00e\x00s\x00
-    Method to distinguish clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
-    Method to draw dividing lines between clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
-    Size of smoothing filter:\xff\xfe1\x000\x00
-    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00
-    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
-    Fill holes in identified objects?:\xff\xfeA\x00f\x00t\x00e\x00r\x00 \x00b\x00o\x00t\x00h\x00 \x00t\x00h\x00r\x00e\x00s\x00h\x00o\x00l\x00d\x00i\x00n\x00g\x00 \x00a\x00n\x00d\x00 \x00d\x00e\x00c\x00l\x00u\x00m\x00p\x00i\x00n\x00g\x00
-    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
-    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
-    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
-    Maximum number of objects:\xff\xfe5\x000\x000\x00
-    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
-    Threshold setting version:\xff\xfe9\x00
-    Threshold strategy:\xff\xfeA\x00d\x00a\x00p\x00t\x00i\x00v\x00e\x00
-    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
-    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
-    Threshold correction factor:\xff\xfe1\x00.\x005\x00
-    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x005\x00,\x001\x00.\x000\x00
-    Manual threshold:\xff\xfe0\x00.\x000\x00
-    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
-    Two-class or three-class thresholding?:\xff\xfeT\x00h\x00r\x00e\x00e\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
-    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeB\x00a\x00c\x00k\x00g\x00r\x00o\x00u\x00n\x00d\x00
-    Size of adaptive window:\xff\xfe6\x004\x00
-    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
-    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
-    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
-    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
-    # of deviations:\xff\xfe2\x00
-    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_number:14|show_window:False|notes:['IdentifyPrimaryObjects takes an input image and identifies biological objects of interest, for example nuclei from a DNA-stained image, or colonies on an agar plate.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:rawDNA
+    Name the primary objects to be identified:Nuclei
+    Typical diameter of objects, in pixel units (Min,Max):10,40
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:6.7
+    Suppress local maxima that are closer than this minimum allowed distance:6.7
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Display accepted local maxima?:No
+    Select maxima color:Blue
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:64
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:1
+    Thresholding method:Otsu
 
-IdentifySecondaryObjects:[module_num:6|svn_version:\'Unknown\'|variable_revision_number:10|show_window:False|notes:\x5B"IdentifySecondaryObjects takes previously-identified primary objects and identifies a new set of objects based on them (e.g., cell edges are often the secondary objects that are identified based on nuclei as primary objects). The new objects are called secondary objects because they depend on primary objects for their identity. The extent of secondary objects can be determined as a fixed distance from the edge of primary objects, or based on an input image  where the secondary objects\' edges are visible (e.g. a whole cell stain reveals cell edges)."\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Select the input objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
-    Name the objects to be identified:\xff\xfeC\x00e\x00l\x00l\x00s\x00
-    Select the method to identify the secondary objects:\xff\xfeP\x00r\x00o\x00p\x00a\x00g\x00a\x00t\x00i\x00o\x00n\x00
-    Select the input image:\xff\xfer\x00a\x00w\x00G\x00F\x00P\x00
-    Number of pixels by which to expand the primary objects:\xff\xfe1\x000\x00
-    Regularization factor:\xff\xfe0\x00.\x000\x005\x00
-    Discard secondary objects touching the border of the image?:\xff\xfeN\x00o\x00
-    Discard the associated primary objects?:\xff\xfeN\x00o\x00
-    Name the new primary objects:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00N\x00u\x00c\x00l\x00e\x00i\x00
-    Fill holes in identified objects?:\xff\xfeY\x00e\x00s\x00
-    Threshold setting version:\xff\xfe9\x00
-    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
-    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
-    Threshold smoothing scale:\xff\xfe0\x00
-    Threshold correction factor:\xff\xfe1\x00
-    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
-    Manual threshold:\xff\xfe0\x00.\x000\x00
-    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
-    Two-class or three-class thresholding?:\xff\xfeT\x00h\x00r\x00e\x00e\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
-    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
-    Size of adaptive window:\xff\xfe1\x000\x00
-    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
-    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
-    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
-    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
-    # of deviations:\xff\xfe2\x00
-    Thresholding method:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+IdentifySecondaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:10|show_window:False|notes:['IdentifySecondaryObjects takes previously-identified primary objects and identifies a new set of objects based on them (e.g., cell edges are often the secondary objects that are identified based on nuclei as primary objects). The new objects are called secondary objects because they depend on primary objects for their identity. The extent of secondary objects can be determined as a fixed distance from the edge of primary objects, or based on an input image  where the secondary objects’ edges are visible (e.g. a whole cell stain reveals cell edges).']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:Nuclei
+    Name the objects to be identified:Cells
+    Select the method to identify the secondary objects:Distance - N
+    Select the input image:rawGFP
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Minimum Cross-Entropy
+    Threshold smoothing scale:0.0
+    Threshold correction factor:0.1
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:10
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2
+    Thresholding method:Default
 
-IdentifyTertiaryObjects:[module_num:7|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'IdentifyTertiaryObjects subtracts the regions associated with one set of objects (e.g. nuclei) from regions associated with a set of objects that contains them (e.g. cells, thus producing cytoplasm regions as tertiary objects). \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Select the larger identified objects:\xff\xfeC\x00e\x00l\x00l\x00s\x00
-    Select the smaller identified objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
-    Name the tertiary objects to be identified:\xff\xfeC\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
-    Shrink smaller object prior to subtraction?:\xff\xfeY\x00e\x00s\x00
+IdentifyTertiaryObjects:[module_num:7|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['IdentifyTertiaryObjects subtracts the regions associated with one set of objects (e.g. nuclei) from regions associated with a set of objects that contains them (e.g. cells, thus producing cytoplasm regions as tertiary objects). ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the larger identified objects:Cells
+    Select the smaller identified objects:Nuclei
+    Name the tertiary objects to be identified:Cytoplasm
+    Shrink smaller object prior to subtraction?:Yes
 
-MeasureObjectIntensity:[module_num:8|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'MeasureObjectIntensity will measure multiple intensity-related metrics for whichever objects and channels you specify.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Hidden:\xff\xfe1\x00
-    Select an image to measure:\xff\xfer\x00a\x00w\x00G\x00F\x00P\x00
-    Select objects to measure:\xff\xfeC\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
-    Select objects to measure:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
+MeasureObjectIntensity:[module_num:8|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['MeasureObjectIntensity will measure multiple intensity-related metrics for whichever objects and channels you specify.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:rawGFP
+    Select objects to measure:Cytoplasm, Nuclei
 
-MeasureColocalization:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'MeasureCorrelation will measure correlation metrics for whichever objects and channels you specify.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Hidden:\xff\xfe2\x00
-    Hidden:\xff\xfe2\x00
-    Select an image to measure:\xff\xfer\x00a\x00w\x00G\x00F\x00P\x00
-    Select an image to measure:\xff\xfer\x00a\x00w\x00D\x00N\x00A\x00
-    Set threshold as percentage of maximum intensity for the images:\xff\xfe1\x005\x00.\x000\x00
-    Select where to measure correlation:\xff\xfeW\x00i\x00t\x00h\x00i\x00n\x00 \x00o\x00b\x00j\x00e\x00c\x00t\x00s\x00
-    Select an object to measure:\xff\xfeC\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
-    Select an object to measure:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
+MeasureColocalization:[module_num:9|svn_version:'Unknown'|variable_revision_number:5|show_window:False|notes:['MeasureCorrelation will measure correlation metrics for whichever objects and channels you specify.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:rawDNA, rawGFP
+    Set threshold as percentage of maximum intensity for the images:15.0
+    Select where to measure correlation:Within objects
+    Select objects to measure:Nuclei, Cytoplasm
+    Run all metrics?:Accurate
+    Calculate correlation and slope metrics?:Yes
+    Calculate the Manders coefficients?:Yes
+    Calculate the Rank Weighted Colocalization coefficients?:Yes
+    Calculate the Overlap coefficients?:Yes
+    Calculate the Manders coefficients using Costes auto threshold?:Yes
+    Method for Costes thresholding:Faster
 
-CalculateMath:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'CalculateMath allows you to carry out mathematical operations on measurements made earlier in the pipeline.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Name the output measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00R\x00a\x00t\x00i\x00o\x00
-    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
-    Select the numerator measurement type:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00
-    Select the numerator objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
-    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00M\x00e\x00a\x00n\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00r\x00a\x00w\x00G\x00F\x00P\x00
-    Multiply the above operand by:\xff\xfe1\x00
-    Raise the power of above operand by:\xff\xfe1\x00
-    Select the denominator measurement type:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00
-    Select the denominator objects:\xff\xfeC\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
-    Select the denominator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00M\x00e\x00a\x00n\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00r\x00a\x00w\x00G\x00F\x00P\x00
-    Multiply the above operand by:\xff\xfe1\x00
-    Raise the power of above operand by:\xff\xfe1\x00
-    Take log10 of result?:\xff\xfeN\x00o\x00
-    Multiply the result by:\xff\xfe1\x00
-    Raise the power of result by:\xff\xfe1\x00
-    Add to the result:\xff\xfe0\x00
-    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
-    Enter the lower bound:\xff\xfe0\x00
-    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
-    Enter the upper bound:\xff\xfe1\x00
+CalculateMath:[module_num:10|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['CalculateMath allows you to carry out mathematical operations on measurements made earlier in the pipeline.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:IntensityRatio
+    Operation:Divide
+    Select the numerator measurement type:Object
+    Select the numerator objects:Nuclei
+    Select the numerator measurement:Intensity_MeanIntensity_rawGFP
+    Multiply the above operand by:1
+    Raise the power of above operand by:1
+    Select the denominator measurement type:Object
+    Select the denominator objects:Cytoplasm
+    Select the denominator measurement:Intensity_MeanIntensity_rawGFP
+    Multiply the above operand by:1
+    Raise the power of above operand by:1
+    Take log10 of result?:No
+    Multiply the result by:1
+    Raise the power of result by:1
+    Add to the result:0
+    How should the output value be rounded?:Not rounded
+    Enter how many decimal places the value should be rounded to:0
+    Constrain the result to a lower bound?:No
+    Enter the lower bound:0
+    Constrain the result to an upper bound?:No
+    Enter the upper bound:1
 
-GrayToColor:[module_num:11|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Select a color scheme:\xff\xfeR\x00G\x00B\x00
-    Select the image to be colored red:\xff\xfeL\x00e\x00a\x00v\x00e\x00 \x00t\x00h\x00i\x00s\x00 \x00b\x00l\x00a\x00c\x00k\x00
-    Select the image to be colored green:\xff\xfer\x00a\x00w\x00G\x00F\x00P\x00
-    Select the image to be colored blue:\xff\xfer\x00a\x00w\x00D\x00N\x00A\x00
-    Name the output image:\xff\xfeG\x00F\x00P\x00a\x00n\x00d\x00D\x00N\x00A\x00
-    Relative weight for the red image:\xff\xfe1\x00.\x000\x00
-    Relative weight for the green image:\xff\xfe1\x00.\x000\x00
-    Relative weight for the blue image:\xff\xfe1\x00.\x000\x00
-    Select the image to be colored cyan:\xff\xfeL\x00e\x00a\x00v\x00e\x00 \x00t\x00h\x00i\x00s\x00 \x00b\x00l\x00a\x00c\x00k\x00
-    Select the image to be colored magenta:\xff\xfeL\x00e\x00a\x00v\x00e\x00 \x00t\x00h\x00i\x00s\x00 \x00b\x00l\x00a\x00c\x00k\x00
-    Select the image to be colored yellow:\xff\xfeL\x00e\x00a\x00v\x00e\x00 \x00t\x00h\x00i\x00s\x00 \x00b\x00l\x00a\x00c\x00k\x00
-    Select the image that determines brightness:\xff\xfeL\x00e\x00a\x00v\x00e\x00 \x00t\x00h\x00i\x00s\x00 \x00b\x00l\x00a\x00c\x00k\x00
-    Relative weight for the cyan image:\xff\xfe1\x00.\x000\x00
-    Relative weight for the magenta image:\xff\xfe1\x00.\x000\x00
-    Relative weight for the yellow image:\xff\xfe1\x00.\x000\x00
-    Relative weight for the brightness image:\xff\xfe1\x00.\x000\x00
-    Hidden:\xff\xfe1\x00
-    Image name:\xff\xfeN\x00o\x00n\x00e\x00
-    Color:\xff\xfe#\x00f\x00f\x000\x000\x000\x000\x00
-    Weight:\xff\xfe1\x00.\x000\x00
+GrayToColor:[module_num:11|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select a color scheme:RGB
+    Rescale intensity:No
+    Select the image to be colored red:Leave this black
+    Select the image to be colored green:rawGFP
+    Select the image to be colored blue:rawDNA
+    Name the output image:GFPandDNA
+    Relative weight for the red image:1.0
+    Relative weight for the green image:1.0
+    Relative weight for the blue image:1.0
+    Select the image to be colored cyan:Leave this black
+    Select the image to be colored magenta:Leave this black
+    Select the image to be colored yellow:Leave this black
+    Select the image that determines brightness:Leave this black
+    Relative weight for the cyan image:1.0
+    Relative weight for the magenta image:1.0
+    Relative weight for the yellow image:1.0
+    Relative weight for the brightness image:1.0
+    Hidden:1
+    Image name:None
+    Color:#ff0000
+    Weight:1.0
 
-OverlayOutlines:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Display outlines on a blank image?:\xff\xfeN\x00o\x00
-    Select image on which to display outlines:\xff\xfeG\x00F\x00P\x00a\x00n\x00d\x00D\x00N\x00A\x00
-    Name the output image:\xff\xfeC\x00e\x00l\x00l\x00A\x00n\x00d\x00N\x00u\x00c\x00l\x00e\x00i\x00O\x00v\x00e\x00r\x00l\x00a\x00y\x00
-    Outline display mode:\xff\xfeC\x00o\x00l\x00o\x00r\x00
-    Select method to determine brightness of outlines:\xff\xfeM\x00a\x00x\x00 \x00o\x00f\x00 \x00i\x00m\x00a\x00g\x00e\x00
-    How to outline:\xff\xfeI\x00n\x00n\x00e\x00r\x00
-    Select outline color:\xff\xfeR\x00e\x00d\x00
-    Select objects to display:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
+OverlayOutlines:[module_num:12|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Display outlines on a blank image?:No
+    Select image on which to display outlines:GFPandDNA
+    Name the output image:CellAndNucleiOverlay
+    Outline display mode:Color
+    Select method to determine brightness of outlines:Max of image
+    How to outline:Inner
+    Select outline color:#21FFFF
+    Select objects to display:Nuclei
 
-SaveImages:[module_num:13|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Select the type of image to save:\xff\xfeI\x00m\x00a\x00g\x00e\x00
-    Select the image to save:\xff\xfeC\x00e\x00l\x00l\x00A\x00n\x00d\x00N\x00u\x00c\x00l\x00e\x00i\x00O\x00v\x00e\x00r\x00l\x00a\x00y\x00
-    Select method for constructing file names:\xff\xfeF\x00r\x00o\x00m\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x00f\x00i\x00l\x00e\x00n\x00a\x00m\x00e\x00
-    Select image name for file prefix:\xff\xfer\x00a\x00w\x00G\x00F\x00P\x00
-    Enter single file name:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
-    Number of digits:\xff\xfe4\x00
-    Append a suffix to the image file name?:\xff\xfeY\x00e\x00s\x00
-    Text to append to the image name:\xff\xfe_\x00O\x00v\x00e\x00r\x00l\x00a\x00y\x00
-    Saved file format:\xff\xfet\x00i\x00f\x00f\x00
-    Output file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00O\x00u\x00t\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00
-    Image bit depth:\xff\xfe8\x00-\x00b\x00i\x00t\x00 \x00i\x00n\x00t\x00e\x00g\x00e\x00r\x00
-    Overwrite existing files without warning?:\xff\xfeN\x00o\x00
-    When to save:\xff\xfeE\x00v\x00e\x00r\x00y\x00 \x00c\x00y\x00c\x00l\x00e\x00
-    Record the file and path information to the saved image?:\xff\xfeN\x00o\x00
-    Create subfolders in the output folder?:\xff\xfeN\x00o\x00
-    Base image folder:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+SaveImages:[module_num:13|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:CellAndNucleiOverlay
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:rawGFP
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_Overlay
+    Saved file format:tiff
+    Output file location:Default Output Folder|
+    Image bit depth:8-bit integer
+    Overwrite existing files without warning?:No
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
 
-ExportToDatabase:[module_num:14|svn_version:\'Unknown\'|variable_revision_number:27|show_window:False|notes:\x5B\'ExportToDatabase exports data directly to a database, or in database readable format, including an imported file with column names and a CellProfiler Analyst properties file, if desired. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
-    Database type:\xff\xfeS\x00Q\x00L\x00i\x00t\x00e\x00
-    Database name:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00D\x00B\x00
-    Add a prefix to table names?:\xff\xfeN\x00o\x00
-    Table prefix:\xff\xfeE\x00x\x00p\x00t\x00_\x00
-    SQL file prefix:\xff\xfeS\x00Q\x00L\x00_\x00
-    Output file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00O\x00u\x00t\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00
-    Create a CellProfiler Analyst properties file?:\xff\xfeY\x00e\x00s\x00
-    Database host:\xff\xfe
-    Username:\xff\xfe
-    Password:\xff\xfe
-    Name the SQLite database file:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00D\x00B\x00.\x00d\x00b\x00
-    Calculate the per-image mean values of object measurements?:\xff\xfeY\x00e\x00s\x00
-    Calculate the per-image median values of object measurements?:\xff\xfeN\x00o\x00
-    Calculate the per-image standard deviation values of object measurements?:\xff\xfeN\x00o\x00
-    Calculate the per-well mean values of object measurements?:\xff\xfeN\x00o\x00
-    Calculate the per-well median values of object measurements?:\xff\xfeN\x00o\x00
-    Calculate the per-well standard deviation values of object measurements?:\xff\xfeN\x00o\x00
-    Export measurements for all objects to the database?:\xff\xfeA\x00l\x00l\x00
-    Select the objects:\xff\xfe
-    Maximum # of characters in a column name:\xff\xfe6\x004\x00
-    Create one table per object, a single object table or a single object view?:\xff\xfeS\x00i\x00n\x00g\x00l\x00e\x00 \x00o\x00b\x00j\x00e\x00c\x00t\x00 \x00t\x00a\x00b\x00l\x00e\x00
-    Enter an image url prepend if you plan to access your files via http:\xff\xfe
-    Write image thumbnails directly to the database?:\xff\xfeY\x00e\x00s\x00
-    Select the images for which you want to save thumbnails:\xff\xfer\x00a\x00w\x00D\x00N\x00A\x00,\x00r\x00a\x00w\x00G\x00F\x00P\x00
-    Auto-scale thumbnail pixel intensities?:\xff\xfeY\x00e\x00s\x00
-    Select the plate type:\xff\xfe9\x006\x00
-    Select the plate metadata:\xff\xfeP\x00l\x00a\x00t\x00e\x00
-    Select the well metadata:\xff\xfeW\x00e\x00l\x00l\x00
-    Include information for all images, using default values?:\xff\xfeY\x00e\x00s\x00
-    Properties image group count:\xff\xfe1\x00
-    Properties group field count:\xff\xfe1\x00
-    Properties filter field count:\xff\xfe0\x00
-    Workspace measurement count:\xff\xfe1\x00
-    Experiment name:\xff\xfeM\x00y\x00E\x00x\x00p\x00t\x00
-    Which objects should be used for locations?:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
-    Enter a phenotype class table name if using the Classifier tool in CellProfiler Analyst:\xff\xfe
-    Export object relationships?:\xff\xfeN\x00o\x00
-    Overwrite without warning?:\xff\xfeD\x00a\x00t\x00a\x00 \x00o\x00n\x00l\x00y\x00
-    Access CellProfiler Analyst images via URL?:\xff\xfeY\x00e\x00s\x00
-    Select the classification type:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00
-    Select an image to include:\xff\xfeN\x00o\x00n\x00e\x00
-    Use the image name for the display?:\xff\xfeY\x00e\x00s\x00
-    Image name:\xff\xfeC\x00h\x00a\x00n\x00n\x00e\x00l\x001\x00
-    Channel color:\xff\xfer\x00e\x00d\x00
-    Do you want to add group fields?:\xff\xfeN\x00o\x00
-    Enter the name of the group:\xff\xfe
-    Enter the per-image columns which define the group, separated by commas:\xff\xfeI\x00m\x00a\x00g\x00e\x00N\x00u\x00m\x00b\x00e\x00r\x00,\x00 \x00I\x00m\x00a\x00g\x00e\x00_\x00M\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00_\x00P\x00l\x00a\x00t\x00e\x00,\x00 \x00I\x00m\x00a\x00g\x00e\x00_\x00M\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00_\x00W\x00e\x00l\x00l\x00
-    Do you want to add filter fields?:\xff\xfeN\x00o\x00
-    Automatically create a filter for each plate?:\xff\xfeN\x00o\x00
-    Create a CellProfiler Analyst workspace file?:\xff\xfeN\x00o\x00
-    Select the measurement display tool:\xff\xfeS\x00c\x00a\x00t\x00t\x00e\x00r\x00P\x00l\x00o\x00t\x00
-    Type of measurement to plot on the X-axis:\xff\xfeI\x00m\x00a\x00g\x00e\x00
-    Enter the object name:\xff\xfeI\x00m\x00a\x00g\x00e\x00
-    Select the X-axis measurement:\xff\xfe
-    Select the X-axis index:\xff\xfeI\x00m\x00a\x00g\x00e\x00N\x00u\x00m\x00b\x00e\x00r\x00
-    Type of measurement to plot on the Y-axis:\xff\xfeI\x00m\x00a\x00g\x00e\x00
-    Enter the object name:\xff\xfeI\x00m\x00a\x00g\x00e\x00
-    Select the Y-axis measurement:\xff\xfe
-    Select the Y-axis index:\xff\xfeI\x00m\x00a\x00g\x00e\x00N\x00u\x00m\x00b\x00e\x00r\x00
+ExportToDatabase:[module_num:14|svn_version:'Unknown'|variable_revision_number:28|show_window:False|notes:['ExportToDatabase exports data directly to a database, or in database readable format, including an imported file with column names and a CellProfiler Analyst properties file, if desired. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Database type:SQLite
+    Database name:DefaultDB
+    Add a prefix to table names?:No
+    Table prefix:Expt_
+    Output file location:Default Output Folder|
+    Create a CellProfiler Analyst properties file?:Yes
+    Database host:
+    Username:
+    Password:
+    Name the SQLite database file:DefaultDB.db
+    Calculate the per-image mean values of object measurements?:Yes
+    Calculate the per-image median values of object measurements?:No
+    Calculate the per-image standard deviation values of object measurements?:No
+    Calculate the per-well mean values of object measurements?:No
+    Calculate the per-well median values of object measurements?:No
+    Calculate the per-well standard deviation values of object measurements?:No
+    Export measurements for all objects to the database?:All
+    Select the objects:
+    Maximum # of characters in a column name:64
+    Create one table per object, a single object table or a single object view?:Single object table
+    Enter an image url prepend if you plan to access your files via http:
+    Write image thumbnails directly to the database?:Yes
+    Select the images for which you want to save thumbnails:rawDNA,rawGFP
+    Auto-scale thumbnail pixel intensities?:Yes
+    Select the plate type:96
+    Select the plate metadata:Plate
+    Select the well metadata:Well
+    Include information for all images, using default values?:Yes
+    Properties image group count:1
+    Properties group field count:1
+    Properties filter field count:0
+    Workspace measurement count:1
+    Experiment name:MyExpt
+    Which objects should be used for locations?:Nuclei
+    Enter a phenotype class table name if using the Classifier tool in CellProfiler Analyst:
+    Export object relationships?:No
+    Overwrite without warning?:Data only
+    Access CellProfiler Analyst images via URL?:No
+    Select the classification type:Object
+    Select an image to include:None
+    Use the image name for the display?:Yes
+    Image name:Channel1
+    Channel color:red
+    Do you want to add group fields?:No
+    Enter the name of the group:
+    Enter the per-image columns which define the group, separated by commas:ImageNumber, Image_Metadata_Plate, Image_Metadata_Well
+    Do you want to add filter fields?:No
+    Automatically create a filter for each plate?:No
+    Create a CellProfiler Analyst workspace file?:No
+    Select the measurement display tool:ScatterPlot
+    Type of measurement to plot on the X-axis:Image
+    Enter the object name:Image
+    Select the X-axis measurement:
+    Select the X-axis index:ImageNumber
+    Type of measurement to plot on the Y-axis:Image
+    Enter the object name:Image
+    Select the Y-axis measurement:
+    Select the Y-axis index:ImageNumber

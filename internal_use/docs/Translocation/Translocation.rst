@@ -74,6 +74,8 @@ you will use CellProfiler Analyst to visualize your data, and use its
 machine learning tool to train the computer to distinguish between
 treated and untreated cells.
 
+
+
 Exercise I: Using the CellProfiler software to identify features and obtain measurements from cellular images.
 --------------------------------------------------------------------------------------------------------------
 
@@ -192,7 +194,7 @@ and adjust them as needed.
 For the *IdentifyPrimaryObjects* module, the goal is to have the
 outlines match the actual nuclei boundaries as well as possible, as well
 as separating touching objects accurately. Said another way, you do not
-want the program to split a single object (in this case, a single cell)
+want the program to split a single object (in this case, a single nucleus)
 into multiple objects, and you do not want the program to merge multiple
 objects into a single object.
 
@@ -233,12 +235,12 @@ display, by clicking and dragging.
 The 5th icon lets you change the view by zooming, by dragging and
 drawing a box to zoom in on.
 
--  Zoom in the image in order to see the quality of the nuclei
-   identification. The result may look like Figure 3.
+Zoom in the image in order to see the quality of the nuclei identification.
+The result may look like Figure 3.
 
 .. figure:: ./TutorialImages/Fig3.png
    :align: center
-   :width: 500
+   :width: 450
 
    *Figure 3: A zoomed-in view of the display window for IdentifyPrimaryObjects*
 
@@ -253,36 +255,46 @@ Since we are in Test Mode, we can easily adjust the module settings and
 quickly preview the results.
 
 -  Objects outlined in pink are outside the "Typical diameter" pixel range
-   specified in the pipeline. Use the "Tools->Measure length" tool to determine
-   if the size range specified is correct given the size of your objects.
+   specified in the pipeline. Use the "Measure Length" tool |Inline13| from
+   the top toolbar to determine if the size range specified is correct given
+   the size of your objects.
 
 -  We can figure out why the thresholding method is overly lenient by
    looking closer at the original image.
 
    -  Right-click on the “Input image, cycle #” panel in the
-      IdentifyPrimaryObjects display window and select “Image Contrast”
-      and then “Log normalized.” This log-transforms the image intensity
-      such that the contrast between low pixel intensities is enhanced
-      and that between high pixel intensities is reduced.
-
-   -  Do the same for the “Nuclei outlines” image in the display window.
+      IdentifyPrimaryObjects display window and select “Adjust Contrast”
+      and then choose “Log normalized” from the drop-down list. You can adjust
+      "Normalization Factor" and "Maximum Brightness", and select "Apply to all"
+      to apply the setting to all panels in the display window.
+      "Normalization Factor", log-transform the image intensity such that
+      the contrast between low pixel intensities is enhanced and that between
+      high pixel intensities is reduced.
 
 Most thresholding methods assume that there are two intensity
 distributions present in the image, one of which is categorized as
 foreground and the other as background; the objective is then to find a
-single value that separates them. In this case, there appear to be
-instead three classes of staining intensity: the nuclei (high
-intensity), the actual background (low intensity), and the non-specific
-staining outside the nuclei but within the cell body (medium intensity).
+single value that separates them. There are different methods to calculate this
+intensity threshold automatically. In order to learn more about these methods,
+click on the question mark icon to the right of the "Thresholding method" to
+open the CellProfiler help.
+
+You'll note that the Translocation_start pipeline uses the Robust background
+method initially. This method can be helpful if the majority of the image is
+background. In this example, however, the nuclei cover a large percentage of
+the image and Robust Background method is not the optimal choice. We recommend
+selecting the Otsu method instead.
+
+Now, examine your original image again. In this image, there appear to be
+instead three classes of staining intensity: the bright nuclei (high
+intensity), not very bright nuclei (medium intensity), and the actual background
+(low intensity).
 An alternative thresholding method would need to take these intensity
 gradations into account in order to improve the nuclei detection.
 
 -  Click the *IdentifyPrimaryObjects* setting labeled “Two-class or
-   three-class thresholding?” and change it from “Two classes” to “Three
+   three-class thresholding?” and select “Three
    classes.”
-
--  Change the setting “Assign pixels…” that subsequently appears
-   underneath from “Foreground” to “Background.”
 
 -  Click the “Step” button again to see the result from your new
    settings.
@@ -290,7 +302,7 @@ gradations into account in order to improve the nuclei detection.
 -  Adjust the "Threshold correction factor" to 1.
 
 This thresholding approach takes the medium-intensity pixels and assigns
-them as background pixels, leaving only the highest intensity pixels as
+them as foreground pixels, leaving only the lowest intensity pixels as
 background. The identified outlines should now better match the actual
 nuclei boundaries.
 
@@ -304,7 +316,7 @@ nuclei, you can now find the entire cell using
 
 -  Click on the |Inline03| button and add the module *IdentifySecondaryObjects*,
    which is located under the module category *“Object Processing”.* Add
-   it to the pipeline by clicking the “+ Add to Pipeline” button.
+   it to the pipeline by clicking the |Inline12| button.
 
 -  For the “Select the input image” module setting, select “rawGFP” from
    the drop-down list.
@@ -339,10 +351,10 @@ nuclei, you can now find the entire cell using
       *IdentifySecondaryObjects*, the pink outlines indicate the
       secondary object boundaries and the green outlines indicate the
       primary object boundaries.
-
 .. figure:: ./TutorialImages/Fig4.png
    :align: center
    :width: 500
+   :height: 500
 
    *Figure 4: Example module display window for IdentifySecondaryObjects*.
 
@@ -376,7 +388,7 @@ objects, effectively identifying the cytoplasm.
 
 -  Click on the |Inline03| button and add the module *IdentifyTertiaryObjects*
    located under the module category *“Object Processing”.* Add it to
-   the pipeline by clicking the “+ Add to Pipeline” button.
+   the pipeline by clicking the |Inline12| button.
 
 -  In this module, for the “Select the larger identified objects” module
    setting, select “Cells” from the drop-down list.
@@ -393,10 +405,9 @@ objects, effectively identifying the cytoplasm.
 
 -  Click the “Step” button to execute the module, and preview the
    results of tertiary object identification (Fig. 5).
-
 .. figure:: ./TutorialImages/Fig5.png
    :align: center
-   :width: 500
+   :width: 425
 
    *Figure 5: Example module display window for IdentifyTertiaryObjects*.
 
@@ -424,15 +435,12 @@ images showing the subcellular location of the FOXO1A-GFP fluorescence.
 
 -  Click on the |Inline03| button and add the module *MeasureObjectIntensity*
    located under the module category *“Measurement”.* Add it to the
-   pipeline by clicking the “+ Add to Pipeline” button.
+   pipeline by clicking the |Inline12| button.
 
--  In this module, select “rawGFP” from the drop-down list, which is
-   next to the “Select an image to measure” setting.
+-  In this module, select “rawGFP” in the "Select images to measure" box, by
+   checking the box next to it.
 
--  Choose “Nuclei” from the drop-down list next to the “Select objects
-   to measure” setting. Press the “Add another object button” and select
-   “Cytoplasm” (from the drop-down list of the new “Select objects to
-   measure” setting that appears when you do this).
+-  Select “Nuclei” and "Cytoplasm" from the "Select objects to measure" box.
 
 **Measurement of the correlation of GFP in nuclei to DNA in nuclei:**
 Another potentially useful measure is the correlation within the objects
@@ -441,16 +449,20 @@ protein is not translocated, the intensity correlation within the
 nucleus between the two images would be expected to be negative, whereas
 upon translocation, the correlation would be positive.
 
--  Click on the |Inline03| button and add the module *MeasureColocalization* located
-   under the module category *“Measurement”.* Add it to the pipeline by
-   clicking the “+ Add to Pipeline” button.
+-  Click on the |Inline03| button and add the module *MeasureColocalization*
+   located under the module category *“Measurement”.* Add it to the pipeline by
+   clicking the |Inline12| button.
 
--  In this module, select “rawGFP” and “rawDNA” from the drop-down lists
-   next to the two “Select an image to measure” settings.
+-  In this module, select “rawGFP” and “rawDNA” from the "Select images to measure"
+   box. Leave the "Set threshold as percentage of maximum intensity for the images"
+   to the default value of 15.0.
 
 -  For the “Select where to measure correlation” setting, select “Within
-   objects” and then select “Nuclei” from the “Select an object to
-   measure” setting.
+   objects” and then select “Nuclei” and "Cytoplasm" from the “Select objects to
+   measure” box.
+
+-  For "Method for Costes thresholding", choose *"Faster"* from the drop-down
+   list to reduce analysis time.
 
 **Measurement of the ratio of GFP in cytoplasm to GFP in nuclei:** Since
 we are interested in the transportation of GFP from the cytoplasm to the
@@ -461,7 +473,7 @@ measurements.
 
 -  Click on the |Inline03| button and add the module *CalculateMath* located under
    the *“Data Tools”* module category\ *.* Add it to the pipeline by
-   clicking the “+ Add to Pipeline” button.
+   clicking the |Inline12| button.
 
 -  For the “Name the output measurement,” enter the “IntensityRatio” as
    a descriptive name.
@@ -508,7 +520,7 @@ have questions about an unusual result.
 
 -  Click on the |Inline03| button and add the module *GrayToColor* located under
    the *“Image Processing”* module category\ *.* Add it to the pipeline
-   by clicking the “+ Add to Pipeline” button.
+   by clicking the |Inline12| button.
 
 -  For the “Select a color scheme”, leave the setting at “RGB”.
 
@@ -535,7 +547,7 @@ and simply view them one at a time.
 
 -  Click on the |Inline03| button and add the module *OverlayOutlines* located
    under the *“Image Processing”* module category\ *.* Add it to the
-   pipeline by clicking the “+ Add to Pipeline” button.
+   pipeline by clicking the |Inline12| button.
 
 -  “Display outlines on a blank image” should be set to “No”.
 
@@ -567,7 +579,7 @@ subfolders based on the extracted metadata if you like.
 
 -  Click on the |Inline03| button and add the module *SaveImages* located under the
    *“File processing”* module category\ *.* Add it to the pipeline by
-   clicking the “+ Add to Pipeline” button.
+   clicking the |Inline12| button.
 
 -  For “Select the type of image to save”, select “Image”.
 
@@ -596,7 +608,7 @@ Analyst to access them.
 
 -  Click on the |Inline03| button and add the module *ExportToDatabase* located
    under the module category *“File Processing”.* Add it to the pipeline
-   by clicking the “+ Add to Pipeline” button.
+   by clicking the |Inline12| button.
 
    -  Note that while in Test mode, the *ExportToDatabase* module will
       have a yellow warning sign in the pipeline panel and yellow-
@@ -719,7 +731,7 @@ visualization tools available is the plate layout format.
 
 .. figure:: ./TutorialImages/Fig6.png
    :align: center
-   :width: 600
+   :width: 500
 
    *Figure 6: The Plate Viewer visualization tool illustrating the drug dosages applied to the plate.*
 
@@ -1124,16 +1136,22 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
 
 ***To learn more about CellProfiler, please see our website:***
 
--  Download both CellProfiler and CellProfiler Analyst from the
+-  Download CellProfiler and CellProfiler Analyst from the
    “Download” links on
-   `www.cellprofiler.org <http://www.cellprofiler.org>`__, and install
+   `https://cellprofiler.org/ <https://cellprofiler.org/>`__ and `https://cellprofileranalyst.org/ <https://cellprofileranalyst.org/>`__, and install
    according to the instructions from the download page. This webpage
-   also provides tutorials, example pipelines and a forum where you can
-   find answers questions you may have and get help.
+   also provides tutorials and example pipelines.
+
+-  Visit the Scientific Community Image Forum at https://forum.image.sc/ to find
+   answers to common questions and ask for help if needed.
+
+-  Video tutorials that may be helpful are available on the Center for Open
+   Bioimage Analysis YouTube channel:
+   https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q/.
 
 -  Download sample images and the text file of experimental parameters
    used in this exercise from
-   http://cellprofiler.org/linked_files/TranslocationActivity/TranslocationData.zip.
+   https://cellprofiler-examples.s3.amazonaws.com/TranslocationData.zip/.
    (The images were kindly provided through the Broad Bioimage Benchmark
    Collection at http://www.broadinstitute.org/bbbc/BBBC013/)
 
@@ -1155,3 +1173,5 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
 .. |Inline09| image:: ./TutorialImages/Inline09.png
 .. |Inline10| image:: ./TutorialImages/Inline10.png
 .. |Inline11| image:: ./TutorialImages/Inline11.png
+.. |Inline12| image:: ./TutorialImages/Inline12.png
+.. |Inline13| image:: ./TutorialImages/Inline13.png
