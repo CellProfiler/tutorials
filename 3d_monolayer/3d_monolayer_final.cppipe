@@ -38,8 +38,8 @@ NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|sho
     Single images count:0
     Maximum intensity:255.0
     Process as 3D?:Yes
-    Relative pixel spacing in X:0.26
-    Relative pixel spacing in Y:0.26
+    Relative pixel spacing in X:0.065
+    Relative pixel spacing in Y:0.065
     Relative pixel spacing in Z:0.29
     Select the rule criteria:and (metadata does ChannelNumber "2")
     Name to assign these images:DNA
@@ -317,7 +317,83 @@ MeasureObjectSizeShape:[module_num:27|svn_version:'Unknown'|variable_revision_nu
     Calculate the Zernike features?:No
     Calculate the advanced features?:No
 
-ExportToSpreadsheet:[module_num:28|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:['Export measurements to a spreadsheet. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+OverlayObjects:[module_num:28|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Overlay the nuclei onto the rescaled DNA image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Input:DNA
+    Name the output image:NucleiOverlay
+    Objects:Nuclei
+    Opacity:0.0001
+
+RescaleIntensity:[module_num:29|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['Rescale the membrane image, which will help with easy visualization once it’s saved.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
+    Select the input image:memb
+    Name the output image:RescaledMemb
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+OverlayObjects:[module_num:30|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Overlay the cells onto the rescaled membrane image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Input:RescaledMemb
+    Name the output image:CellsOverlay
+    Objects:Cells
+    Opacity:0.1
+
+ConvertObjectsToImage:[module_num:31|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Convert the nuclei objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:Nuclei
+    Name the output image:NucleiImage
+    Select the color format:uint16
+    Select the colormap:Default
+
+SaveImages:[module_num:32|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:NucleiImage
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:DNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_nuclei-labels
+    Saved file format:tiff
+    Output file location:Default Output Folder|
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+
+ConvertObjectsToImage:[module_num:33|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Convert the cells objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:Cells
+    Name the output image:CellImage
+    Select the color format:uint16
+    Select the colormap:Default
+
+SaveImages:[module_num:34|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:['Save the cells image mask. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:CellImage
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:DNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_cell-labels
+    Saved file format:tiff
+    Output file location:Default Output Folder|
+    Image bit depth:16-bit integer
+    Overwrite existing files without warning?:Yes
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+
+ExportToSpreadsheet:[module_num:35|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:['Export measurements to a spreadsheet. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:Comma (",")
     Add image metadata columns to your object data file?:Yes
     Add image file and folder names to your object data file?:No
@@ -340,79 +416,3 @@ ExportToSpreadsheet:[module_num:28|svn_version:'Unknown'|variable_revision_numbe
     Combine these object measurements with those of the previous object?:No
     File name:DATA.csv
     Use the object name for the file name?:Yes
-
-OverlayObjects:[module_num:29|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Overlay the nuclei onto the rescaled DNA image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Input:DNA
-    Name the output image:NucleiOverlay
-    Objects:Nuclei
-    Opacity:0.0001
-
-RescaleIntensity:[module_num:30|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['Rescale the membrane image, which will help with easy visualization once it’s saved.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
-    Select the input image:memb
-    Name the output image:RescaledMemb
-    Rescaling method:Stretch each image to use the full intensity range
-    Method to calculate the minimum intensity:Custom
-    Method to calculate the maximum intensity:Custom
-    Lower intensity limit for the input image:0.0
-    Upper intensity limit for the input image:1.0
-    Intensity range for the input image:0.0,1.0
-    Intensity range for the output image:0.0,1.0
-    Select image to match in maximum intensity:None
-    Divisor value:1.0
-    Divisor measurement:None
-
-OverlayObjects:[module_num:31|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Overlay the cells onto the rescaled membrane image for visualization. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Input:RescaledMemb
-    Name the output image:CellsOverlay
-    Objects:Cells
-    Opacity:0.1
-
-ConvertObjectsToImage:[module_num:32|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Convert the nuclei objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select the input objects:Nuclei
-    Name the output image:NucleiImage
-    Select the color format:uint16
-    Select the colormap:Default
-
-SaveImages:[module_num:33|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select the type of image to save:Image
-    Select the image to save:NucleiImage
-    Select method for constructing file names:From image filename
-    Select image name for file prefix:DNA
-    Enter single file name:OrigBlue
-    Number of digits:4
-    Append a suffix to the image file name?:Yes
-    Text to append to the image name:_nuclei-labels
-    Saved file format:tiff
-    Output file location:Default Output Folder|
-    Image bit depth:16-bit integer
-    Overwrite existing files without warning?:Yes
-    When to save:Every cycle
-    Record the file and path information to the saved image?:No
-    Create subfolders in the output folder?:No
-    Base image folder:Elsewhere...|
-    How to save the series:T (Time)
-
-ConvertObjectsToImage:[module_num:34|svn_version:'Unknown'|variable_revision_number:1|show_window:True|notes:['Convert the cells objects to an image that can be saved. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select the input objects:Cells
-    Name the output image:CellImage
-    Select the color format:uint16
-    Select the colormap:Default
-
-SaveImages:[module_num:35|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:['Save the cells image mask. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
-    Select the type of image to save:Image
-    Select the image to save:CellImage
-    Select method for constructing file names:From image filename
-    Select image name for file prefix:DNA
-    Enter single file name:OrigBlue
-    Number of digits:4
-    Append a suffix to the image file name?:Yes
-    Text to append to the image name:_cell-labels
-    Saved file format:tiff
-    Output file location:Default Output Folder|
-    Image bit depth:16-bit integer
-    Overwrite existing files without warning?:Yes
-    When to save:Every cycle
-    Record the file and path information to the saved image?:No
-    Create subfolders in the output folder?:No
-    Base image folder:Elsewhere...|
-    How to save the series:T (Time)
