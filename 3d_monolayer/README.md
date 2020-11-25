@@ -145,10 +145,7 @@ Now that the nuclei and cells have been segmented in this monolayer, measurement
 
     <p align="center"><img src="docs/images/measureintensity_26.png" alt="rescale5" width="600"/></p>
 
-1. Save the ouput of your measurements using **ExportToSpreadsheet** or **ExportToDatabase**.
-
 # Creating visuals
-
 Congratulations! The nuclei and cells have been segmented and measured in this monolayer. Visuals that reveal the details of the segmentation can be also be created within CellProfiler. The following steps will walk through two different options to visualize your CellProfiler segmentations.
 
 1. The **OverlayObjects** module will overlay the objects as colored masks on the image. We recommend overlaying onto rescaled images, which will be easier to visualize outside of CellProfiler. For example, you can choose the *Nuclei* as the objects and the *RescaledDNA* as your image. These are useful for visualization, but unfortunately cannot be saved.
@@ -158,8 +155,12 @@ Congratulations! The nuclei and cells have been segmented and measured in this m
 1. You can also convert the objects to images using the **ConvertObjectsToImage** module and then save the output using **SaveImages**. This option will allow you to visualize the segmentations directly in Fiji.
 
     <p align="center"><img src="docs/images/convertobjectstoimage_36.png" alt="rescale5" width="600"/></p>
+    After running these last two modules an output image will be created and saved to the output directory. Use Fiji to inspect the this image.
 
+# Export measurements
+1. Save the output of the measurements modules using **ExportToSpreadsheet** or **ExportToDatabase**.
 
-After running these last two modules an output image will be created and saved to the output directory. Use Fiji to inspect the this image.
+It's good practice to place all export modules at the end of your pipeline. CellProfiler
+automatically calculates execution times for each module that was run before the export module. By placing your export modules at the end of your pipeline, you will have access to module execution times for each module in your pipeline.
 
 Thank you for completing the 3d monolayer tutorial!
