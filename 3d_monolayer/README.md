@@ -6,7 +6,7 @@
 
 * This tutorial features images of human induced pluripotent stem cells from the Allen Institute of Cell Science. More details are available at the following link: [https://bbbc.broadinstitute.org/BBBC034](https://bbbc.broadinstitute.org/BBBC034).  
 * CellProfiler 3D currently only works with TIFF files. TIFF files can be rather complicated, having hyper-stack structures with all channels and z-planes in a single file. The acceptable CellProfiler format for storing z-stacks is to have a separate TIFF file for each channel.
-* CellProfiler can be used to convert from other file formats to individual TIFF files for each channel.
+* CellProfiler can be used to convert from other file formats to individual TIFF files for each channel using the **SaveImages** module.
 * Note that this tutorial is an advanced tutorial. We recommend completing the Translocation tutorial in order to learn principles of image thresholding and segmentation prior to starting this tutorial.
 * Helpful video tutorials are available on the Center for Open Bioimage Analysis YouTube page at [https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q](https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q).
 
