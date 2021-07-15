@@ -101,14 +101,14 @@ Exercise I: Using the CellProfiler software to identify features and obtain meas
    the image files, there is a file called
    “Translocation\_doses\_and\_controls.csv”. We only want image files to
    be analyzed in CellProfiler so this file needs to be removed from
-   consideration.
+   consideration. To do this, follow the next step.
 
 -  Under the Module settings panel (below the File list), you will see a
    control for specifying which files should be used from the above
-   list. Click on the “Update file list” button to filter out the
-   non-image files using the default settings. You will see that the CSV
-   file is then grayed-out in the list, indicating that it will not be
-   used.
+   list. Select "Images only" from the Filter Images dropdown menu. 
+   Click on the “Apply filters to the file list” button to filter out the
+   non-image files. You will see that the CSV file is then grayed-out in
+   the list, indicating that it will not be used.
 
 -  Click on the *Metadata* module, which is the second module in the
    Input module panel; this module allows you to provide information
@@ -697,6 +697,9 @@ have extracted from the cells.
       data obtained from all 26 images, and pointers to the location of
       those images on your hard drive.
 
+   -  If you move the database file, you'll need to edit the properties file
+      to point to the new database location.
+
 1) **Visualizing the measurements in a 96-well plate layout view**
 
 CPA has several tools available for displaying the data for exploration.
@@ -704,7 +707,7 @@ If your data came from a multi-well plate, such as the 96-well plate for
 this particular translocation assay, then one of the most useful data
 visualization tools available is the plate layout format.
 
--  Click on the Plate Viewer icon in the CPA menu (|Inline09|, 3rd from the left).
+-  Click on the Plate Viewer icon in the main CPA window (|Inline09|, 3rd from the left).
    This selection brings up a 96-well formatted display of the plate
    from which your images originated. The colored squares represent
    wells for which measurement data is present; crossed-out wells
@@ -779,12 +782,12 @@ In this case, we will “train” the classifier to recognize cells in which
 FOXO1A-GFP is located exclusively in the nucleus (“positives”) versus
 outside the nucleus (“negatives”) by sorting examples of each into bins.
 
--  Select the *Classifier* icon in the CPA menu (|Inline10|, 2nd on left). The
+-  Select the *Classifier* icon in the main CPA window (|Inline10|, 2nd on left). The
    Classifier interface will appear, similar to that shown in the top of
    Fig. 7.
 
 -  Click on the “Fetch!” button, which instructs CPA to display pictures
-   of a default number (i.e. 20) of randomly selected cells from this
+   of a specified number (i.e. 20) of randomly selected cells from this
    experiment. You will see the middle “unclassified” panel start to be
    populated with thumbnail images of these randomly selected cells.
 
@@ -796,6 +799,10 @@ outside the nucleus (“negatives”) by sorting examples of each into bins.
    -  A small dot is displayed in the center of each thumbnail image as
       your mouse hovers over it. The cell that falls under this dot is
       the cell to “drag & drop” which will be used for classification.
+
+   -  You can also select cells in the unclassified bin using the arrow
+      keys and assign them to bins with the number keys. E.g. Pressing
+      '1' would send any selected cells to the first bin ('positive' here).
 
 .. figure:: ./TutorialImages/Fig7a.png
          :align: center
@@ -870,10 +877,15 @@ phenotypes.
    -  The closer to the top of the list a measurement appears, the more
       significant it is in distinguishing the phenotypes.
 
+   -  Note that this rule display is only available with the
+      'FastGentleBoosting' classifier type. Other classifier types will
+      list the most important features used by the model (if
+      supported by the classifier type).
+
 -  Questions to consider: (1) What is the top-most measurement that
    shows up in your classification rules? (2) Is the top-most
    measurement one that you would expect to be the most significant one
-   to use, in distinguishing the phenotypes?
+   to use in distinguishing the phenotypes?
 
 4) **Reviewing the accuracy of the classification with the confusion
    matrix**
@@ -897,7 +909,7 @@ classifier will be on your whole data set, simply a measure of *how well
 the classifier performs on your hand-picked examples*. As your data is
 likely more complicated than just the few cells you’ve chosen to train
 on, you shouldn’t stop at this point even if you have a perfect
-correlation matrix- you need to see how your classifier will perform on
+correlation matrix - you need to see how your classifier will perform on
 more data before you can decide whether it’s accurate enough to score
 the whole experiment.
 
@@ -973,9 +985,9 @@ image, and use it to correct misclassifications.
 -  The cells will be color-coded according to their classification based
    on the current rules.
 
-   -  On Windows computers, to see each color means, click the “Show
-      controls >>” button at the bottom to reveal the colored class
-      list.
+   -  Click the “Show controls >>” button at the bottom to reveal the
+      total counts of each class on the image. On Windows computers this
+      will also show which color corresponds to which class.
 
    -  On Macs, select “View” from the image menu, and then select “View
       cell classes as numbers.” Then, to see what each number means,
@@ -1090,7 +1102,7 @@ using CPA’s tools.
    -  On the second row, choose “\ *Image\_Metadata\_Well*\ ” on the
       left to match “\ *Image\_Metadata\_Well*\ ” on the right.
 
--  Open a new Plate Viewer tool from the CPA menu. On the Plate Viewer,
+-  Open a new Plate Viewer tool from the main CPA window. On the Plate Viewer,
    select “\ *pEnriched\_positive”* from the *Measurement* drop-down
    list in order to view the enrichment scores in the plate layout.
 
@@ -1110,7 +1122,7 @@ ways. In this case, we will use a scatter plot to plot a dose-response
 curve. This will allow us to see how the ratio of positive cells (i.e.
 cells with GFP in the nucleus) increases with Wortmannin dose.
 
--  Click the Scatter Plot icon in the CPA menu |Inline11|, 4th from left).
+-  Click the Scatter Plot icon in the main CPA window |Inline11|, 4th from left).
 
 -  From the “x-axis” row, select “\ *Per\_image*\ ” and
    “\ *Image\_Metadata\_Dose*\ ” from the drop-down lists. Choose
@@ -1131,6 +1143,23 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
    dose, so estimate the average enrichment score) (2) What is the
    lowest dose that produces an enrichment score similar to that of the
    maximum dose?
+
+9) **Exporting your classifier for use in a CellProfiler pipeline**
+
+Head back to the Classifier tool. The *File-->Save Classifier Model* menu
+option can be used to export a .model file which stores the trained
+classifier for use in other software.
+
+-  Within CellProfiler 4+, the *ClassifyObjects* and *FilterObjects* modules
+   can load these model files and use them to assign objects to classes
+   during the pipeline itself. This allows you to classify new data sets
+   without needing to train in CellProfiler Analyst again.
+
+-  Note that to use model files in CellProfiler, the pipeline needs to produce
+   the same measurements that were present in your CPA database during
+   training. These measurements must be captured before the module which will
+   use your model.
+
 
 --------------
 
