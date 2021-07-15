@@ -1144,6 +1144,23 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
    lowest dose that produces an enrichment score similar to that of the
    maximum dose?
 
+9) **Exporting your classifier for use in a CellProfiler pipeline**
+
+Head back to the Classifier tool. The *File-->Save Classifier Model* menu
+option can be used to export a .model file which stores the trained
+classifier for use in other software.
+
+-  Within CellProfiler 4+, the *ClassifyObjects* and *FilterObjects* modules
+   can load these model files and use them to assign objects to classes
+   during the pipeline itself. This allows you to classify new data sets
+   without needing to train in CellProfiler Analyst again.
+
+-  Note that to use model files in CellProfiler, the pipeline needs to produce
+   the same measurements that were present in your CPA database during
+   training. These measurements must be captured before the module which will
+   use your model.
+
+
 --------------
 
 ***To learn more about CellProfiler, please see our website:***
