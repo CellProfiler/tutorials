@@ -101,14 +101,14 @@ Exercise I: Using the CellProfiler software to identify features and obtain meas
    the image files, there is a file called
    “Translocation\_doses\_and\_controls.csv”. We only want image files to
    be analyzed in CellProfiler so this file needs to be removed from
-   consideration.
+   consideration. To do this, follow the next step.
 
 -  Under the Module settings panel (below the File list), you will see a
    control for specifying which files should be used from the above
-   list. Click on the “Update file list” button to filter out the
-   non-image files using the default settings. You will see that the CSV
-   file is then grayed-out in the list, indicating that it will not be
-   used.
+   list. Select "Images only" from the Filter Images dropdown menu. 
+   Click on the “Apply filters to the file list” button to filter out the
+   non-image files. You will see that the CSV file is then grayed-out in
+   the list, indicating that it will not be used.
 
 -  Click on the *Metadata* module, which is the second module in the
    Input module panel; this module allows you to provide information
