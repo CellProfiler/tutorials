@@ -276,7 +276,7 @@ since you may come across a similar problem in your own experiments!
    -  You’re encouraged to explore the compound list on your own, but if
       you find yourself consistently ending up with images that look
       similar you can try adding images from the following list of
-      wells- B18, C7, D6, D19, D22, E3
+      wells- A08, A12, B12, B18, C7, D6, D19, D22, E3
    -  Some hints on what to play with:
       -  In both IdentifyPrimaryObjects and IdentifySecondaryObjects adjusting the threshold limits can be a good thing for when wells are empty, confluent, or have bright debris in them
       -  In both IdentifyPrimaryObjects and IdentifySecondaryObjects adjusting the threshold method may lead to better (or worse!) results.
