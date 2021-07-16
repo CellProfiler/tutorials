@@ -1,6 +1,6 @@
 CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
-DateRevision:405
+DateRevision:407
 GitHash:
 ModuleCount:11
 HasImagePlaneDetails:False
@@ -54,8 +54,8 @@ Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_win
     Regular expression to extract from folder name:(?P<Date>[0-9]{4}_[0-9]{2}_[0-9]{2})$
     Extract metadata from:All images
     Select the filtering criteria:and (file does contain "")
-    Metadata file location:Elsewhere...|/Users/pryder/Documents/tutorials/AdvancedSegmentation
-    Match file and image metadata:[{'Image Metadata': u'Plate', 'CSV Metadata': u'Image_Metadata_PlateID'}, {'Image Metadata': u'Well', 'CSV Metadata': u'Image_Metadata_CPD_WELL_POSITION'}]
+    Metadata file location:Default Input Folder|/Users/pryder/Documents/tutorials/AdvancedSegmentation
+    Match file and image metadata:[{'Image Metadata': 'Plate', 'CSV Metadata': 'Image_Metadata_PlateID'}, {'Image Metadata': 'Well', 'CSV Metadata': 'Image_Metadata_CPD_WELL_POSITION'}]
     Use case insensitive matching?:No
     Metadata file name:20585_AE.csv
     Does cached metadata exist?:No
@@ -205,7 +205,7 @@ IdentifyPrimaryObjects:[module_num:8|svn_version:'Unknown'|variable_revision_num
     Display accepted local maxima?:No
     Select maxima color:Blue
     Use advanced settings?:Yes
-    Threshold setting version:11
+    Threshold setting version:12
     Threshold strategy:Global
     Thresholding method:Otsu
     Threshold smoothing scale:1.3488
@@ -214,6 +214,7 @@ IdentifyPrimaryObjects:[module_num:8|svn_version:'Unknown'|variable_revision_num
     Manual threshold:0.0
     Select the measurement to threshold with:None
     Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
     Assign pixels in the middle intensity class to the foreground or the background?:Background
     Size of adaptive window:10
     Lower outlier fraction:0.05
@@ -235,6 +236,8 @@ RelateObjects:[module_num:9|svn_version:'Unknown'|variable_revision_number:5|sho
     Parent name:None
     Parent name:None
     Parent name:None
+    Parent name:None
+    Parent name:None
 
 RelateObjects:[module_num:10|svn_version:'Unknown'|variable_revision_number:5|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Parent objects:Cells
@@ -244,6 +247,8 @@ RelateObjects:[module_num:10|svn_version:'Unknown'|variable_revision_number:5|sh
     Calculate distances to other parents?:No
     Do you want to save the children with parents as a new object set?:Yes
     Name the output object:RelateObjects
+    Parent name:None
+    Parent name:None
     Parent name:None
     Parent name:None
     Parent name:None
