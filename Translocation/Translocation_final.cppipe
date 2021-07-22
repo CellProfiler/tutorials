@@ -1,6 +1,6 @@
 CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
-DateRevision:407
+DateRevision:420
 GitHash:
 ModuleCount:14
 HasImagePlaneDetails:False
@@ -218,7 +218,7 @@ OverlayOutlines:[module_num:12|svn_version:'Unknown'|variable_revision_number:4|
     Select outline color:#21FFFF
     Select objects to display:Nuclei
 
-SaveImages:[module_num:13|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:13|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:Image
     Select the image to save:CellAndNucleiOverlay
     Select method for constructing file names:From image filename
@@ -236,6 +236,7 @@ SaveImages:[module_num:13|svn_version:'Unknown'|variable_revision_number:15|show
     Create subfolders in the output folder?:No
     Base image folder:Elsewhere...|
     How to save the series:T (Time)
+    Save with lossless compression?:No
 
 ExportToDatabase:[module_num:14|svn_version:'Unknown'|variable_revision_number:28|show_window:False|notes:['ExportToDatabase exports data directly to a database, or in database readable format, including an imported file with column names and a CellProfiler Analyst properties file, if desired. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Database type:SQLite
