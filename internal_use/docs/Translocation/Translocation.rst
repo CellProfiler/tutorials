@@ -765,10 +765,10 @@ visualization tools available is the plate layout format.
 
 -  Lastly, you will view the thumbnail montages by right-clicking on a
    well and selecting “Show thumbnail montage” from the resulting
-   pop-up. Click anywhere outside of the thumbnail to dismiss it from
-   view. (Note that, if there had been multiple snapshots of multiple
-   fields of view for each well in the plate, then the montage would be
-   shown as a tiled display.)
+   pop-up. Move the thumbnail by dragging the bar on top of the image. 
+   Click on the thumbnail image to dismiss it from view. (Note that, if 
+   there had been multiple snapshots of multiple fields of view for each 
+   well in the plate, then the montage would be shown as a tiled display.)
 
 -  Do not close the Plate Viewer tool, as you will be referring to it
    later in the exercise.
