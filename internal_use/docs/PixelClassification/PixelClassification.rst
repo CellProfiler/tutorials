@@ -158,7 +158,7 @@ When satisfied with the results, export the probability maps.
 1. Open the **Prediction Export** window.
 2. Click the **Choose Export Settings** window.
 3. Change **Transpose to Axis Order** to ``cyx``.
-4. Change **Format** to ``tiff sequence`` (as opposed to the option that is just ``tiff``).
+4. Change **Format** to ``tiff``.
 5. Close the export settings dialog box and click the **Export All** button.
 6. If you did not initially load all the images into ilastik and wish to create predictions for them all now, go to the **Batch Processing** window, select the remaining unpredicted images and hit **Process all files**.  This will take a couple of minutes on most computers.
 
@@ -173,8 +173,8 @@ treated as if they were the result of a “stain” for the cells.
 
 1. Open CellProfiler.
 2. Load the *pixel_based_classification.cpppipe* pipeline file.
-3. Add the exported probability maps AND their matching original imags to the **Images** module.
-4. In the **NamesAndTypes** module, if your first ilastik class was for CHO cells, set the rule criteria for the 'cho' image to ``Metadata->Does->Have probnum matching->0``; if you created your background class first and the cell class second, change the final digit to 1.  
+3. Add the exported probability images AND their matching original images to the **Images** module.
+4. In the **NamesAndTypes** module, setup the *.png files as phase and the *.tiff files was cho.  
 5. Run the pipeline and review the segmentation.  How robustly did it perform on different images?
 
 We have now transformed the patterns and texture of intensity in the
