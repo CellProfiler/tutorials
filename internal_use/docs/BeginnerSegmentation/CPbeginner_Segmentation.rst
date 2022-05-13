@@ -13,9 +13,7 @@ Benchmark Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__.
 They are ﬁelds of U2OS cells imaged in ﬁve channels (Cell Painting
 assay; see Gustafsdottir et al., 2013)
 
-|image1|\
-
-     *Figure 1: Images and channels from a Cell Painting assay.*
+|image1|\ *Figure 1: Images and channels from a Cell Painting assay.*
 
 **Goals of this exercise:**
 
@@ -63,9 +61,7 @@ loaded and organized in CellProfiler.
 -  Notice that if the ‘Filter images?’ is set to ‘Images only’ the ‘.npy’
    files appeared grey out.
 
-|image3|\
-
-    *Figure 2: The Images module, grey out files will not be available for
+|image3|\ *Figure 2: The Images module, grey out files will not be available for
     downstream modules*
 
 -  ** 🔴 TO DO**: Change the filter to a custom filter to **include** the ‘.npy’ files.
@@ -442,70 +438,69 @@ nucleus).
 
 -  Explore the spreadsheets created for each object.
 
-.. |image1| image:: ./TutorialImages/Fig1.png
+.. |image1| figure:: ./TutorialImages/Fig1.png
    :align: center
    :width: 6in
    :height: 3in
 .. |image2| image:: ./TutorialImages/icon.png
-   :align: center
    :width: 0.26065in
    :height: 0.26065in
-.. |image3| image:: ./TutorialImages/Fig2.png
+.. |image3| figure:: ./TutorialImages/Fig2.png
    :align: center
    :width: 7in
    :height: 2.74931in
-.. |image4| image:: ./TutorialImages/Fig3.png
+.. |image4| figure:: ./TutorialImages/Fig3.png
    :align: center
-   :width: 7in
    :height: 3.65799in
-.. |image5| image:: ./TutorialImages/Fig4.png
+.. |image5| figure:: ./TutorialImages/Fig4.png
    :align: center
    :width: 5in
    :height: 1.13542in
-.. |image6| image:: ./TutorialImages/Fig5.png
+.. |image6| figure:: ./TutorialImages/Fig5.png
    :align: center
    :width: 5in
    :height: 0.98403in
-.. |image7| image:: ./TutorialImages/Fig6.png
+.. |image7| figure:: ./TutorialImages/Fig6.png
    :align: center
    :width: 7.5in
    :height: 0.60764in
-.. |image8| image:: ./TutorialImages/Fig7.png
+.. |image8| figure:: ./TutorialImages/Fig7.png
    :align: center
    :width: 5.5in
    :height: 7.68103in
-.. |image9| image:: ./TutorialImages/Fig8.png
+.. |image9| figure:: ./TutorialImages/Fig8.png
    :align: center
    :width: 2.18264in
    :height: 3in
-.. |image10| image:: ./TutorialImages/Fig9.png
+.. |image10| figure:: ./TutorialImages/Fig9.png
    :align: center
    :width: 3.72986in
    :height: 3in
-.. |image11| image:: ./TutorialImages/Fig10.png
+.. |image11| figure:: ./TutorialImages/Fig10.png
+   :align: center
    :width: 3.78403in
    :height: 3in
-.. |image12| image:: ./TutorialImages/Fig11.png
+.. |image12| figure:: ./TutorialImages/Fig11.png
    :align: center
    :width: 4.72292in
    :height: 1.5in
-.. |image13| image:: ./TutorialImages/Fig12.png
+.. |image13| figure:: ./TutorialImages/Fig12.png
    :align: center
    :width: 1.81944in
    :height: 0.5in
-.. |image14| image:: ./TutorialImages/Fig13.png
+.. |image14| figure:: ./TutorialImages/Fig13.png
    :align: center
    :width: 4.39444in
    :height: 2.5in
-.. |image15| image:: ./TutorialImages/Fig14.png
+.. |image15| figure:: ./TutorialImages/Fig14.png
    :align: center
    :width: 4.31319in
    :height: 2.5in
-.. |image16| image:: ./TutorialImages/Fig15.png
+.. |image16| figure:: ./TutorialImages/Fig15.png
    :align: center
    :width: 4.66111in
    :height: 2.5in
-.. |image17| image:: ./TutorialImages/Fig16.png
+.. |image17| figure:: ./TutorialImages/Fig16.png
    :align: center
    :width: 2.63542in
    :height: 2.5in
