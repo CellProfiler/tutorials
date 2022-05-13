@@ -445,62 +445,50 @@ nucleus).
 .. |image2| image:: ./TutorialImages/icon.png
    :width: 0.26065in
    :height: 0.26065in
-.. |image3| figure:: ./TutorialImages/Fig2.png
+.. |image3| image:: ./TutorialImages/Fig2.png
    :align: center
    :width: 7in
    :height: 2.74931in
-.. |image4| figure:: ./TutorialImages/Fig3.png
+.. |image4| image:: ./TutorialImages/Fig3.png
    :align: center
    :height: 3.65799in
-.. |image5| figure:: ./TutorialImages/Fig4.png
+.. |image5| image:: ./TutorialImages/Fig4.png
    :align: center
    :width: 5in
    :height: 1.13542in
-.. |image6| figure:: ./TutorialImages/Fig5.png
-   :align: center
+.. |image6| image:: ./TutorialImages/Fig5.png
    :width: 5in
    :height: 0.98403in
-.. |image7| figure:: ./TutorialImages/Fig6.png
-   :align: center
+.. |image7| image:: ./TutorialImages/Fig6.png
    :width: 7.5in
    :height: 0.60764in
-.. |image8| figure:: ./TutorialImages/Fig7.png
-   :align: center
+.. |image8| image:: ./TutorialImages/Fig7.png
    :width: 5.5in
    :height: 7.68103in
-.. |image9| figure:: ./TutorialImages/Fig8.png
-   :align: center
+.. |image9| image:: ./TutorialImages/Fig8.png
    :width: 2.18264in
    :height: 3in
-.. |image10| figure:: ./TutorialImages/Fig9.png
-   :align: center
+.. |image10| image:: ./TutorialImages/Fig9.png
    :width: 3.72986in
    :height: 3in
-.. |image11| figure:: ./TutorialImages/Fig10.png
-   :align: center
+.. |image11| image:: ./TutorialImages/Fig10.png
    :width: 3.78403in
    :height: 3in
-.. |image12| figure:: ./TutorialImages/Fig11.png
-   :align: center
+.. |image12| image:: ./TutorialImages/Fig11.png
    :width: 4.72292in
    :height: 1.5in
-.. |image13| figure:: ./TutorialImages/Fig12.png
-   :align: center
+.. |image13| image:: ./TutorialImages/Fig12.png
    :width: 1.81944in
    :height: 0.5in
-.. |image14| figure:: ./TutorialImages/Fig13.png
-   :align: center
+.. |image14| image:: ./TutorialImages/Fig13.png
    :width: 4.39444in
    :height: 2.5in
-.. |image15| figure:: ./TutorialImages/Fig14.png
-   :align: center
+.. |image15| image:: ./TutorialImages/Fig14.png
    :width: 4.31319in
    :height: 2.5in
-.. |image16| figure:: ./TutorialImages/Fig15.png
-   :align: center
+.. |image16| image:: ./TutorialImages/Fig15.png
    :width: 4.66111in
    :height: 2.5in
-.. |image17| figure:: ./TutorialImages/Fig16.png
-   :align: center
+.. |image17| image:: ./TutorialImages/Fig16.png
    :width: 2.63542in
    :height: 2.5in
