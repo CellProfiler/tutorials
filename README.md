@@ -7,7 +7,14 @@ CellProfiler tutorial pipelines and images
 
 | Description | Image |
 |---|---|
-|A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst.  This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br> <img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <br><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> |<img src="assets/img/translocation.gif" alt="example segmentation" width="100%">
+|A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst.  This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br> <img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <br><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> |<img src="assets/img/translocation.gif" alt="example segmentation">
+
+## Translocation
+
+<img src="assets/img/translocation.gif" alt="example segmentation" align="right" width="150">
+
+A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst. This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br> <img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <br><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+
 
 
 ## Beginner Segmentation
