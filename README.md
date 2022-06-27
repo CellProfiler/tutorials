@@ -3,7 +3,7 @@
 # Our tutorials
 CellProfiler tutorial pipelines and images
 
-## 3d_monolayer
+## 3D segmentation of cell monolayer
 
 | Description | Image |
 |---|---|
