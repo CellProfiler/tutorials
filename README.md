@@ -1,4 +1,4 @@
-[![pages-build-deployment](https://github.com/CellProfiler/tutorials/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CellProfiler/tutorials/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/CellProfiler/tutorials/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/CellProfiler/tutorials/actions/workflows/pages/pages-build-deployment)
 
 # Our tutorials
 CellProfiler tutorial pipelines and images
