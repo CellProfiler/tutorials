@@ -1,9 +1,15 @@
+[![pages-build-deployment](https://github.com/CellProfiler/tutorials/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CellProfiler/tutorials/actions/workflows/pages/pages-build-deployment)
+
 # Our tutorials
 CellProfiler tutorial pipelines and images
 
 ## 3d_monolayer
 
-A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.  This tutorial is currently in development.
+| Description | Image |
+|---|---|
+| A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.  This tutorial is currently in development.<br> <a href=""><img src="assets/img/download-button.gif" alt="Download button" width="100px"> <\a> |<img src="assets/img/3d_monolayer.gif" alt="example segmentation" width="100%">
+
+
 
 ## Imaging flow cytometry
 A tutorial for high-content analysis of imaging flow cytometry (IFC) data with CellProfiler and machine learning can be found here:
