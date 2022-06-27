@@ -3,15 +3,25 @@
 # Our tutorials
 CellProfiler tutorial pipelines and images
 
+## Translocation
+
+| Description | Image |
+|---|---|
+|A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst.  This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br> <img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <br><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> |<img src="assets/img/translocation.gif" alt="example segmentation" width="100%">
+
 ## 3D segmentation of cell monolayer
 
 | Description | Image |
 |---|---|
-| A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.<br> <a href=""><img src="assets/img/download-button.png" alt="Download button" width="20%"> </a> |<img src="assets/img/3d_monolayer.gif" alt="example segmentation" width="100%">
-
+| A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.<br> <a href=""><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> |<img src="assets/img/3d_monolayer.gif" alt="example segmentation" width="100%">
 
 
 ## Imaging flow cytometry
+
+| Description | Image |
+|---|---|
+| A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.<br> <a href=""><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> |<img src="assets/img/3d_monolayer.gif" alt="example segmentation" width="100%">
+
 A tutorial for high-content analysis of imaging flow cytometry (IFC) data with CellProfiler and machine learning can be found here:
 https://github.com/holgerhennig/machine-learning-IFC
 
@@ -29,9 +39,7 @@ A tutorial describing how to use ilastik in combination with CellProfiler to seg
 
 A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform quality control on large scale screens.
 
-## Translocation
 
-A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst.  This is our standard tutorial for those new to image analysis in general or CellProfiler in particular.
 
 
 -----
