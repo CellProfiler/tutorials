@@ -1,0 +1,46 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Your css rules goes after this */
+a {
+  color: #006DB6;
+}
+body {
+  background-color: #f3f3f3;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* overall table settings */
+
+table {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    vertical-align: top;
+    text-align: left;
+}
+
+/* settings for the table header */
+
+table th {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    vertical-align: top;
+    text-align: left;
+    visibility: collapse;   
+}
+
+/* settings for the table data (i.e., rows below the header) */
+
+table td {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    vertical-align: top;
+    text-align: left;
+}
