@@ -7,7 +7,7 @@ CellProfiler tutorial pipelines and images
 
 | Description | Image |
 |---|---|
-| A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.  This tutorial is currently in development.<br> <a href=""><img src="assets/img/download-button.gif" alt="Download button" width="100px"> <\a> |<img src="assets/img/3d_monolayer.gif" alt="example segmentation" width="100%">
+| A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.<br> <a href=""><img src="assets/img/download-button.png" alt="Download button" width="20%"> </a> |<img src="assets/img/3d_monolayer.gif" alt="example segmentation" width="100%">
 
 
 
