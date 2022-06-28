@@ -6,44 +6,61 @@ CellProfiler tutorials are exercises we've guided groups of users through to hel
 
 <img src="assets/img/translocation.gif" alt="example segmentation" align="right" width="150">
 
-A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst. This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br> <img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <br><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst. This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br>
+
+<img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
 
 
 ## Beginner Segmentation
 
 <img src="assets/img/beginnersegmentation_smooth.gif" alt="example segmentation" align="right" width="150">
 
-A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for larger “parent” objects (nucleus, cell, and cytoplasm) and show you ways to pull out smaller features in your image by segmenting organelles within the nuclei. You will also be shown how to use RelateObjects so that you can relate the average counts, distances, and measurements of the smaller “child” organelles to their larger “parent” objects. <br> <img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <br> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/BeginnerSegmentation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a>
+A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for larger “parent” objects (nucleus, cell, and cytoplasm) and show you ways to pull out smaller features in your image by segmenting organelles within the nuclei. You will also be shown how to use RelateObjects so that you can relate the average counts, distances, and measurements of the smaller “child” organelles to their larger “parent” objects. <br> 
+
+<img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/BeginnerSegmentation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a>
 
 ## Advanced Segmentation
 
 <img src="assets/img/advancedsegmentation.gif" alt="example segmentation" align="right" width="150">
 
-This exercise will guide you through setting segmentation parameters that will be robust across your sample. Additionally, it will show you some ways to pull out smaller features in your image by segmenting organelles within the cells and nuclei. You will learn how to use RelateObjects module to obtain average counts, distances, and measurements of the smaller organelles inside their larger parent objects. <br> <img src="assets/img/advanced-badge.png" alt="advanced" width="120px"> <br> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/AdvancedSegmentation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+This exercise will guide you through setting segmentation parameters that will be robust across your sample. Additionally, it will show you some ways to pull out smaller features in your image by segmenting organelles within the cells and nuclei. You will learn how to use RelateObjects module to obtain average counts, distances, and measurements of the smaller organelles inside their larger parent objects. <br> 
+
+<img src="assets/img/advanced-badge.png" alt="advanced" width="120px">  <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/AdvancedSegmentation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
 
 ## 3D segmentation of cell monolayer
 
 <img src="assets/img/3d_monolayer.gif" alt="example segmentation" align="right" width="150">
 
-A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d.<br> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3d_monolayer"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d using the Watershed module.<br> 
+
+<a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3d_monolayer"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+<br><br>
 
 ## Pixel-based Classification
 
 <img src="assets/img/ilastik.gif" alt="example segmentation" align="right" width="150">
 
-A tutorial describing how to use ilastik in combination with CellProfiler to segment cells imaged only in phase contrast without any added fluorescence. <br> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/PixelBasedClassification"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+A tutorial describing how to use ilastik in combination with CellProfiler to segment cells imaged only in phase contrast without any added fluorescence. <br> 
+
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/PixelBasedClassification"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+<br><br>
 
 ## Quality Control
 
 <img src="assets/img/qualitycontrol.gif" alt="example segmentation" align="right" width="150">
 
-A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform quality control on large scale screens. <br> <img src="assets/img/advanced-badge.png" alt="advanced" width="120px"> <br> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform quality control on large scale screens. <br> 
+
+<img src="assets/img/advanced-badge.png" alt="advanced" width="120px"> <br> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+<br><br>
 
 ## Annotation
 
 <img src="assets/img/annotation.gif" alt="example segmentation" align="right" width="150">
 
-A tutorial to outlines a method for annotating image data using CellProfiler together with another open source software, GIMP. This method is best for annotating or labeling objects to define their boundaries, exactly, as opposed to annotating an image with bounding boxes or centroids. <br> <img src="assets/img/advanced-badge.png" alt="advanced" width="120px"> <br> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+A tutorial to outlines a method for annotating image data using CellProfiler together with another open source software, GIMP. This method is best for annotating or labeling objects to define their boundaries, exactly, as opposed to annotating an image with bounding boxes or centroids. <br> 
+
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
 
 -----
 # Tutorials for older versions of CellProfiler
