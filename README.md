@@ -4,7 +4,7 @@ CellProfiler tutorials are exercises we've guided groups of users through to hel
 
 ## Translocation
 
-<img src="assets/img/translocation.gif" alt="example segmentation" align="right" width="150">
+<img class="imggif" src="assets/img/translocation.gif" alt="example segmentation" align="right" width="150">
 
 A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst. This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br>
 
@@ -13,7 +13,7 @@ A tutorial showing how to segment cells in CellProfiler and then classify them b
 
 ## Beginner Segmentation
 
-<img src="assets/img/beginnersegmentation_smooth.gif" alt="example segmentation" align="right" width="150">
+<img class="imggif" src="assets/img/beginnersegmentation_smooth.gif" alt="example segmentation" align="right" width="150">
 
 A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for larger “parent” objects (nucleus, cell, and cytoplasm) and show you ways to pull out smaller features in your image by segmenting organelles within the nuclei. You will also be shown how to use RelateObjects so that you can relate the average counts, distances, and measurements of the smaller “child” organelles to their larger “parent” objects. <br> 
 
@@ -21,7 +21,7 @@ A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for l
 
 ## Advanced Segmentation
 
-<img src="assets/img/advancedsegmentation.gif" alt="example segmentation" align="right" width="150">
+<img class="imggif" src="assets/img/advancedsegmentation.gif" alt="example segmentation" align="right" width="150">
 
 This exercise will guide you through setting segmentation parameters that will be robust across your sample. Additionally, it will show you some ways to pull out smaller features in your image by segmenting organelles within the cells and nuclei. You will learn how to use RelateObjects module to obtain average counts, distances, and measurements of the smaller organelles inside their larger parent objects. <br> 
 
@@ -29,7 +29,7 @@ This exercise will guide you through setting segmentation parameters that will b
 
 ## 3D segmentation of cell monolayer
 
-<img src="assets/img/3d_monolayer.gif" alt="example segmentation" align="right" width="150">
+<img class="imggif" src="assets/img/3d_monolayer.gif" alt="example segmentation" align="right" width="150">
 
 A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d using the Watershed module.<br> 
 
@@ -38,7 +38,7 @@ A tutorial that describes building a pipeline to segment the nuclei and cell bou
 
 ## Pixel-based Classification
 
-<img src="assets/img/ilastik.gif" alt="example segmentation" align="right" width="150">
+<img class="imggif" src="assets/img/ilastik.gif" alt="example segmentation" align="right" width="150">
 
 A tutorial describing how to use ilastik in combination with CellProfiler to segment cells imaged only in phase contrast without any added fluorescence. <br> 
 
@@ -47,7 +47,7 @@ A tutorial describing how to use ilastik in combination with CellProfiler to seg
 
 ## Quality Control
 
-<img src="assets/img/qualitycontrol.gif" alt="example segmentation" align="right" width="150">
+<img class="imggif" src="assets/img/qualitycontrol.gif" alt="example segmentation" align="right" width="150">
 
 A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform quality control on large scale screens. <br> 
 
@@ -56,7 +56,7 @@ A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform 
 
 ## Annotation
 
-<img src="assets/img/annotation.gif" alt="example segmentation" align="right" width="150">
+<img class="imggif" src="assets/img/annotation.gif" alt="example segmentation" align="right" width="150">
 
 A tutorial to outlines a method for annotating image data using CellProfiler together with another open source software, GIMP. This method is best for annotating or labeling objects to define their boundaries, exactly, as opposed to annotating an image with bounding boxes or centroids. <br> 
 
