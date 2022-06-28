@@ -8,7 +8,7 @@ CellProfiler tutorials are exercises we've guided groups of users through to hel
 
 A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst. This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br>
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="120px"> <a href="https://www.youtube.com/watch?v=LOD2yqBLXXk&t=4s"><img src="assets/img/video-badge.png" alt="video link" width="120px"> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
 
 
 ## Beginner Segmentation
@@ -51,7 +51,7 @@ A tutorial describing how to use ilastik in combination with CellProfiler to seg
 
 A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform quality control on large scale screens. <br> 
 
-<img src="assets/img/advanced-badge.png" alt="advanced" width="120px"> <br> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+<img src="assets/img/advanced-badge.png" alt="advanced" width="120px"> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"> <img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
 <br><br>
 
 ## Annotation
@@ -60,7 +60,7 @@ A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform 
 
 A tutorial to outlines a method for annotating image data using CellProfiler together with another open source software, GIMP. This method is best for annotating or labeling objects to define their boundaries, exactly, as opposed to annotating an image with bounding boxes or centroids. <br> 
 
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
+<a href="https://carpenter-singh-lab.broadinstitute.org/blog/annotating-images-with-cellprofiler-and-gimp"><img src="assets/img/blog-badge.png" alt="blog link" width=120px> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="120px"> </a> 
 
 -----
 # Tutorials for older versions of CellProfiler
