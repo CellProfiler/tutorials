@@ -2,3 +2,4 @@ theme: jekyll-theme-minimal
 title: Tutorials
 logo: /assets/img/logo.png
 description: A collection of tutorials for CellProfiler
+markdown: kramdown
