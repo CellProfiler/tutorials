@@ -60,7 +60,7 @@ A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform 
 
 A tutorial to outlines a method for annotating image data using CellProfiler together with another open source software, GIMP. This method is best for annotating or labeling objects to define their boundaries, exactly, as opposed to annotating an image with bounding boxes or centroids. <br> 
 
-<a href="https://carpenter-singh-lab.broadinstitute.org/blog/annotating-images-with-cellprofiler-and-gimp"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/QualityControl"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<a href="https://carpenter-singh-lab.broadinstitute.org/blog/annotating-images-with-cellprofiler-and-gimp"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Annotation"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 
 -----
 # Tutorials for older versions of CellProfiler
