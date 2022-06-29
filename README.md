@@ -2,6 +2,9 @@
 
 CellProfiler tutorials are exercises we've guided groups of users through to help them better understand how to use CellProfiler. Please also check out our examples repo, which includes additional pipelines and materials for using CellProfiler with specific samples and imaging applications.
 
+* TOC
+{:toc}
+
 ## Translocation
 
 <img class="imggif" src="assets/img/translocation.gif" alt="example segmentation" align="right" width="150">
