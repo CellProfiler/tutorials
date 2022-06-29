@@ -17,7 +17,7 @@ A tutorial showing how to segment cells in CellProfiler and then classify them b
 
 A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for larger “parent” objects (nucleus, cell, and cytoplasm) and show you ways to pull out smaller features in your image by segmenting organelles within the nuclei. You will also be shown how to use RelateObjects so that you can relate the average counts, distances, and measurements of the smaller “child” organelles to their larger “parent” objects. <br> 
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/BeginnerSegmentation"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a>
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/BeginnerSegmentation"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
 
 ## Advanced Segmentation
 
