@@ -22,27 +22,8 @@ table {
     text-align: left;
 }
 
-/* settings for the table header */
-
-table th {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    vertical-align: top;
-    text-align: left;
-    visibility: collapse;   
-}
-
-/* settings for the table data (i.e., rows below the header) */
-
-table td {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    vertical-align: top;
-    text-align: left;
+h2 {
+  margin-top: 16px;
 }
 
 /* image padding */
