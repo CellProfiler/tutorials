@@ -72,7 +72,7 @@ A tutorial to outlines a method for annotating image data using CellProfiler tog
 A tutorial to introduce you to four modules in CellProfiler; Images, Metadata, NamesAndTypes, and Groups (collectively known as the Input modules). 
 These modules are crucial for any CellProfiler pipeline because they define how images are loaded and organized in CellProfiler for downstream analysis.
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=Z_pUWuOV06Q"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/InputModulesTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> <a href="https://https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=Z_pUWuOV06Q"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/InputModulesTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> <a href="https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> 
 
 -----
 # Tutorials for older versions of CellProfiler
