@@ -438,8 +438,7 @@ nucleus).
 
 -  Explore the spreadsheets created for each object.
 
-.. |image1| figure:: ./TutorialImages/Fig1.png
-   :align: center
+.. |image1| image:: ./TutorialImages/Fig1.png
    :width: 6in
    :height: 3in
 .. |image2| image:: ./TutorialImages/icon.png

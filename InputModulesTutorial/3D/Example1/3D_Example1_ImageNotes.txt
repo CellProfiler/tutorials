@@ -1,0 +1,24 @@
+The images used in this example are from the JUMP project
+(2019_07_11_JUMP-CP-pilots Pilot Data, 2020_11_16_Scope1_PE Perkin Elmer Scope 1, 3 plane non confocal bin 1, plate: CP Broad Phenix NC BIN1 P1__2020-10-08T14_34_56-Measurement 1/).
+
+s3 URL: s3://jump-cellpainting/projects/2019_07_11_JUMP-CP-pilots/2020_11_16_Scope1_PE/images/NC_BIN1_3Planes/CP Broad Phenix NC BIN1 P1__2020-10-08T14_34_56-Measurement 1/Images/
+
+The original image names are:
+merged-stack-1.tif:
+r01c21f03p03-ch2sk1fk1fl1.tiff
+r01c21f03p01-ch1sk1fk1fl1.tiff
+r01c21f03p01-ch2sk1fk1fl1.tiff
+r01c21f03p02-ch1sk1fk1fl1.tiff
+r01c21f03p02-ch2sk1fk1fl1.tiff
+r01c21f03p03-ch1sk1fk1fl1.tiff
+
+
+merged-stack-2.tif:
+r01c23f01p01-ch1sk1fk1fl1.tiff
+r01c23f01p03-ch2sk1fk1fl1.tiff
+r01c23f01p03-ch1sk1fk1fl1.tiff
+r01c23f01p02-ch2sk1fk1fl1.tiff
+r01c23f01p02-ch1sk1fk1fl1.tiff
+r01c23f01p01-ch2sk1fk1fl1.tiff
+
+The channels were merged into a single stack for each channel using Fiji's Images to Stack and then combined into one file with Merge Channels.
