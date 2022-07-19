@@ -65,7 +65,7 @@ A tutorial to outlines a method for annotating image data using CellProfiler tog
 
 <a href="https://carpenter-singh-lab.broadinstitute.org/blog/annotating-images-with-cellprofiler-and-gimp"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Annotation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 
-##Input Modules
+## Input Modules
 
 <img class="imggif" src="assets/img/inputmodules.gif" alt="example segmentation" align="right" width="150">
 
