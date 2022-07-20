@@ -98,7 +98,7 @@ A tutorial that describes building a pipeline to segment spots (FISH staining) o
 
 A tutorial that describes how to use the UnmixColors module.<br> 
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/UnmixTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/UnmixTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 -----
