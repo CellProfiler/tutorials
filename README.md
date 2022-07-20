@@ -74,6 +74,33 @@ These modules are crucial for any CellProfiler pipeline because they define how 
 
 <img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=Z_pUWuOV06Q"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/InputModulesTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> <a href="https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> 
 
+## 3D Noise Nuclei segmentation
+
+<img class="imggif" src="assets/img/3DNuclei.gif" alt="example segmentation" align="right" width="150">
+
+A tutorial that describes building a pipeline to segment the nuclei boundaries in noise 3d images using the ReduceNoise and IdentifyPrimaryObjects modules.<br> 
+
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DNoiseNuclei" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<br><br>
+
+## 3D FISH in C. elegans segmentation
+
+<img class="imggif" src="assets/img/3Dfish.gif" alt="example segmentation" align="right" width="150">
+
+A tutorial that describes building a pipeline to segment spots (FISH staining) on C. elegans worms in noise 3d images using background subtraction and Watershed module.<br> 
+
+<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DFISHinCelegans" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<br><br>
+
+## UnmixColors Tutorial
+
+<img class="imggif" src="assets/img/UnmixColors.gif" alt="example segmentation" align="right" width="150">
+
+A tutorial that describes how to use the UnmixColors module.<br> 
+
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/UnmixTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<br><br>
+
 -----
 # Tutorials for older versions of CellProfiler
 
