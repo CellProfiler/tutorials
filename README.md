@@ -11,7 +11,7 @@ CellProfiler tutorials are exercises we've guided groups of users through to hel
 
 A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst. This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br>
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=LOD2yqBLXXk&t=4s"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=LOD2yqBLXXk&t=4s"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 
 
 ## Beginner Segmentation
@@ -80,7 +80,7 @@ These modules are crucial for any CellProfiler pipeline because they define how 
 
 A tutorial that describes building a pipeline to segment the nuclei boundaries in noise 3d images using the ReduceNoise and IdentifyPrimaryObjects modules.<br> 
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DNoiseNuclei" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DNoiseNuclei" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## 3D FISH in C. elegans segmentation
@@ -89,7 +89,7 @@ A tutorial that describes building a pipeline to segment the nuclei boundaries i
 
 A tutorial that describes building a pipeline to segment spots (FISH staining) on C. elegans worms in noise 3d images using background subtraction and Watershed module.<br> 
 
-<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DFISHinCelegans" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DFISHinCelegans" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## UnmixColors Tutorial
@@ -98,7 +98,7 @@ A tutorial that describes building a pipeline to segment spots (FISH staining) o
 
 A tutorial that describes how to use the UnmixColors module.<br> 
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/UnmixTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/UnmixTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 -----
