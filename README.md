@@ -89,7 +89,7 @@ A tutorial that describes building a pipeline to segment the nuclei boundaries i
 
 A tutorial that describes building a pipeline to segment spots (FISH staining) on C. elegans worms in noise 3d images using background subtraction and Watershed module.<br> 
 
-<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DFISHinCelegans/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://github.com/CellProfiler/tutorials/raw/master/3DFISHinCelegans/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## UnmixColors Tutorial
