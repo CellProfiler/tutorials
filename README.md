@@ -11,7 +11,7 @@ CellProfiler tutorials are exercises we've guided groups of users through to hel
 
 A tutorial showing how to segment cells in CellProfiler and then classify them by phenotype in CellProfiler Analyst. This is our standard tutorial for those new to image analysis in general or CellProfiler in particular. <br>
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=LOD2yqBLXXk&t=4s"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=LOD2yqBLXXk&t=4s"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 
 
 ## Beginner Segmentation
@@ -20,7 +20,7 @@ A tutorial showing how to segment cells in CellProfiler and then classify them b
 
 A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for larger “parent” objects (nucleus, cell, and cytoplasm) and show you ways to pull out smaller features in your image by segmenting organelles within the nuclei. You will also be shown how to use RelateObjects so that you can relate the average counts, distances, and measurements of the smaller “child” organelles to their larger “parent” objects. <br> 
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/BeginnerSegmentation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/BeginnerSegmentation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
 
 ## Advanced Segmentation
 
@@ -28,7 +28,7 @@ A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for l
 
 This exercise will guide you through setting segmentation parameters that will be robust across your sample. Additionally, it will show you some ways to pull out smaller features in your image by segmenting organelles within the cells and nuclei. You will learn how to use RelateObjects module to obtain average counts, distances, and measurements of the smaller organelles inside their larger parent objects. <br> 
 
-<img src="assets/img/advanced-badge.png" alt="advanced" width="140px">  <a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/AdvancedSegmentation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/advanced-badge.png" alt="advanced" width="140px">  <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/AdvancedSegmentation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 
 ## 3D segmentation of cell monolayer
 
@@ -36,7 +36,7 @@ This exercise will guide you through setting segmentation parameters that will b
 
 A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d using the Watershed module.<br> 
 
-<a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3d_monolayer" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3d_monolayer" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## Pixel-based Classification
@@ -63,7 +63,7 @@ A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform 
 
 A tutorial to outlines a method for annotating image data using CellProfiler together with another open source software, GIMP. This method is best for annotating or labeling objects to define their boundaries, exactly, as opposed to annotating an image with bounding boxes or centroids. <br> 
 
-<a href="https://carpenter-singh-lab.broadinstitute.org/blog/annotating-images-with-cellprofiler-and-gimp"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Annotation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<a href="https://carpenter-singh-lab.broadinstitute.org/blog/annotating-images-with-cellprofiler-and-gimp"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> <a href="<a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Annotation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 
 ## Input Modules
 
@@ -80,7 +80,7 @@ These modules are crucial for any CellProfiler pipeline because they define how 
 
 A tutorial that describes building a pipeline to segment the nuclei boundaries in noise 3d images using the ReduceNoise and IdentifyPrimaryObjects modules.<br> 
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DNoiseNuclei" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DNoiseNuclei" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## 3D FISH in C. elegans segmentation
@@ -89,7 +89,7 @@ A tutorial that describes building a pipeline to segment the nuclei boundaries i
 
 A tutorial that describes building a pipeline to segment spots (FISH staining) on C. elegans worms in noise 3d images using background subtraction and Watershed module.<br> 
 
-<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DFISHinCelegans" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/3DFISHinCelegans" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## UnmixColors Tutorial
@@ -98,7 +98,7 @@ A tutorial that describes building a pipeline to segment spots (FISH staining) o
 
 A tutorial that describes how to use the UnmixColors module.<br> 
 
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://minhaskamal.downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/UnmixTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://downgit.github.io/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/UnmixTutorial" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 -----
