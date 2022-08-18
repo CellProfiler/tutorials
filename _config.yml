@@ -1,5 +1,17 @@
-theme: jekyll-theme-minimal
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 title: Tutorials
 logo: /assets/img/logo.png
 description: A collection of tutorials for CellProfiler
 markdown: kramdown
+favicon: true
+
+platforms:
+  - name: YouTube Playlist
+    icon: <i class="fa-brands fa-youtube"></i>
+    link: https://www.youtube.com/playlist?list=PLXSm9cHbSZBBy7JkChB32_e3lURUcT3RL
+  - name: Best practices NIH chapter
+    icon: <i class="fa-solid fa-book-open"></i>
+    link: http://www.ncbi.nlm.nih.gov/books/NBK100913/
+  - name: Advanced Assay Development Guidelines
+    icon: <i class="fa-solid fa-book-open"></i>
+    link: https://www.ncbi.nlm.nih.gov/books/NBK126174/
