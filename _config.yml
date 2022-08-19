@@ -1,13 +1,10 @@
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 title: Tutorials
 logo: /assets/img/logo.png
-description: A collection of tutorials for CellProfiler
+description: A collection of tutorials for CellProfiler \n Other resources listed below.
 markdown: kramdown
 
 platforms:
-  - name: Other Resources:
-    icon: 
-    link: 
   - name: YouTube Playlist
     icon: <i class="fa-brands fa-youtube"></i>
     link: https://www.youtube.com/playlist?list=PLXSm9cHbSZBBy7JkChB32_e3lURUcT3RL
