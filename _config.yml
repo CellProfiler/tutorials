@@ -1,7 +1,7 @@
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 title: Tutorials
 logo: /assets/img/logo.png
-description: A collection of tutorials for CellProfiler. Other resources linked in the sidebar below.
+description: A collection of tutorials for CellProfiler. Other resources linked below.
 markdown: kramdown
 favicon: true
 
