@@ -1,4 +1,4 @@
-# Our tutorials
+## Introduction to tutorials
 
 CellProfiler tutorials are exercises we've guided groups of users through to help them better understand how to use CellProfiler. Please also check out our [examples page](https://cellprofiler.org/examples), which includes additional pipelines and materials for using CellProfiler with specific samples and imaging applications.
 
