@@ -4,6 +4,7 @@ logo: /assets/img/logo.png
 description: A collection of tutorials for CellProfiler. Other resources linked below.
 markdown: kramdown
 favicon: true
+color-scheme: light
 
 platforms:
   - name: YouTube Playlist
