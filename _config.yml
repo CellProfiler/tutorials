@@ -18,7 +18,7 @@ platforms:
     link: https://www.ncbi.nlm.nih.gov/books/NBK126174/
 
 exclude:
-- "*/"
+- "*/**"
 
 include: 
 - _config.yml
