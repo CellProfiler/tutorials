@@ -21,4 +21,6 @@ exclude:
 - "*/"
 
 include: 
+- _config.yml
+- README.md
 - assets/
