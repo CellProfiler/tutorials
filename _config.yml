@@ -19,8 +19,6 @@ platforms:
 
 exclude:
 - "*/**"
-
-include: 
-- _config.yml
-- README.md
-- assets/img/**/*.gif
+- "!/assets"
+- "!_config.yml"
+- "!README.md"
