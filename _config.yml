@@ -21,7 +21,7 @@ exclude:
 - "*/**"
 
 include: 
-- assets/
+- "assets/**"
 - 3DFISHinCelegans/Archive.zip
 - 3DNoiseNuclei/Archive.zip
 - 3d_monolayer/Archive.zip
