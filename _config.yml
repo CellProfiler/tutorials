@@ -23,4 +23,4 @@ exclude:
 include: 
 - _config.yml
 - README.md
-- assets/**
+- assets/img/**/*.gif
