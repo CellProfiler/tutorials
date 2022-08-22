@@ -18,14 +18,24 @@ platforms:
     link: https://www.ncbi.nlm.nih.gov/books/NBK126174/
 
 exclude:
-- **
+- 3DFISHinCelegans/
+- 3DNoiseNuclei/
+- 3d_monolayer/
+- AdvancedSegmentation/
+- Annotation/
+- BeginnerSegmentation/
+- CP22Tutorials/
+- ImagingFlowCytometry/
+- InputModulesTutorial/
+- PixelBasedClassification/
+- Plugins_runCellpose_runStarDist/
+- QualityControl/
+- Translocation/
+- UnmixTutorial/
+- Workstation/
+- internal_use/
 
 include: 
-- _config.yml
-- README.md
-- favicon.ico
-- CNAME
-- assets/
 - 3DFISHinCelegans/Archive.zip
 - 3DNoiseNuclei/Archive.zip
 - 3d_monolayer/Archive.zip
