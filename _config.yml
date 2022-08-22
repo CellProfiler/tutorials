@@ -18,7 +18,19 @@ platforms:
     link: https://www.ncbi.nlm.nih.gov/books/NBK126174/
 
 exclude:
-- "*/**"
-
-include:
-- "/assets/**"
+- 3DFISHinCelegans/
+- 3DNoiseNuclei/
+- 3d_monolayer/
+- AdvancedSegmentation/
+- Annotation/
+- BeginnerSegmentation/
+- CP22Tutorials/
+- ImagingFlowCytometry/
+- InputModulesTutorial/
+- PixelBasedClassification/
+- Plugins_runCellpose_runStarDist/
+- QualityControl/
+- Translocation/
+- UnmixTutorial/
+- Workstation/
+- internal_use/
