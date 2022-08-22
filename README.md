@@ -102,6 +102,33 @@ A tutorial that describes how to use the UnmixColors module.<br>
 <br><br>
 
 -----
+# Other video tutorials
+
+See more video tutorials on the Center for Open Bioimage Analysis (COBA) [YouTube account](broad.io/COBAWorkshops)
+
+-----
+# Tutorials for image-based profiling
+
+## Introduction to morphological profiling
+
+<img class="imggif" src="assets/img/Morpheus.gif" alt="example graphs" align="right" width="150">
+
+A tutorial that introduces the concepts behind image-based profiling (aka morphological profiling), which allows you to extract additional and potentially unforseen biological insights from your image data<br> 
+
+<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"><a href="https://youtu.be/0nkYDeekhtQ"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="broad.io/MorpheusTutorialZipped" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a>
+<br><br>
+
+## Normalization
+
+<img class="imggif" src="assets/img/Normalize.gif" alt="figures" align="right" width="150">
+
+A blog post on normalizing Cell Painting data for use in image-based profiling.<br>
+
+<a href="https://carpenter-singh-lab.broadinstitute.org/blog/how-normalize-cell-painting-data"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a> 
+<br><br>
+
+
+-----
 # Tutorials for older versions of CellProfiler
 
 ## ImagingFlowCytometry
