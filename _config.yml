@@ -18,9 +18,13 @@ platforms:
     link: https://www.ncbi.nlm.nih.gov/books/NBK126174/
 
 exclude:
-- **/
+- **
 
 include: 
+- _config.yml
+- README.md
+- favicon.ico
+- CNAME
 - assets/
 - 3DFISHinCelegans/Archive.zip
 - 3DNoiseNuclei/Archive.zip
