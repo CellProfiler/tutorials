@@ -19,6 +19,6 @@ platforms:
 
 exclude:
 - "*/**"
-- "!/assets"
-- "!_config.yml"
-- "!README.md"
+
+include:
+- "assets*"
