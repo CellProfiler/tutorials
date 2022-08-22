@@ -115,7 +115,7 @@ See more video tutorials on the Center for Open Bioimage Analysis (COBA) [YouTub
 
 A tutorial that introduces the concepts behind image-based profiling (aka morphological profiling), which allows you to extract additional and potentially unforseen biological insights from your image data<br> 
 
-<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"><a href="https://youtu.be/0nkYDeekhtQ"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="broad.io/MorpheusTutorialZipped" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a>
+<img src="assets/img/advanced-badge.png" alt="advanced" width="140px"><a href="https://youtu.be/0nkYDeekhtQ"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://broad.io/MorpheusTutorialZipped" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a>
 <br><br>
 
 ## Normalization
