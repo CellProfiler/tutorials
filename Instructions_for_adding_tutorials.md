@@ -4,7 +4,7 @@
     1. Add the files to a folder with a descriptive name (no spaces)
     2. Zip the folder (on mac, right click > Compress...)
     3. Add the .zip file to google drive in the `Outreach` > `Workshops_Webinars_Tutorials` folder on the shared g drive
-    4. Create a short link to these materials using https://broad.io/admin/golinks/add and include in the tutorial instructions that the images are available at that link. 
+    4. Make sure the folder is public and copy the link to share the folder to use for the download link later.
 
 2. Make a PR adding the folder of materials to the tutorial repo. In addition to the materials, please also 
     1) write a short description of the tutorial to add to the readme and
@@ -24,7 +24,7 @@ A tutorial showing how to segment cells in CellProfiler and then classify them b
 ```
 Copy and adjust as needed. Here's a breakdown of what each line is and what you change: 
 1. The title of the tutorial is after `##`
-2. The gif. Change the name to whatever you saved the gif as in the assets/img folder
+2. The gif. Change the filename to whatever you saved the gif as in the assets/img folder
 3. The description of the tutorial (just paste in your description here instead) No special formatting
 4. Badges and buttons separated by spaces. For badges, you can copy and paste from a previous tutorial, but they're just a piece of HTML pointing to an image and sometimes a link. For instance, here is the badge for a video link: 
 
@@ -36,12 +36,10 @@ Copy and adjust as needed. Here's a breakdown of what each line is and what you 
    `<img src="assets/img/beginner-badge.png" alt="beginner" width="140px">`
    Since this is just an image, you can just copy and paste that HTML into the readme.
 
-   For the download link, use [DownGit](https://downgit.github.io/#/home) or just alter the download link in the translocation example:
+   For the download link, previously we used [DownGit](https://downgit.github.io/#/home), but since this does not always work, please replace `MY_LINK` in the example below with either the location of the Archive.zip file of all the materials together (if your tutorial was small) or the google drive link you saved earlier:
 
-   `<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CellProfiler/tutorials/tree/master/Translocation" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> `
-  
-   To change the download link, just sub in your folder name instead of `Translocation`.
-   
+   `<a href="MY_LINK" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> `
+     
    Here's a table of all the badges and buttons we currently have: 
    
 | Badge/Button    | Description                                                            | Image / Example                                                                                                                                                                                                                    | Example HTML                                                                                                                                                                                                                         |
