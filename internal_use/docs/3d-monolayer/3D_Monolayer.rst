@@ -35,7 +35,7 @@ Importing data in CellProfiler
 4.  Enter the following regular expression
     ``^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])``.
     This regular expression will parse the filenames and organize the
-    data.
+    data. We suggest you copy this expression so accidental spelling errors or extra spaces don't affect the metadata extraction.
 5.  Highlight the NamesAndTypes module.
 6.  Assign a name to “Images matching rules”.
 7.  Choose “Process as 3D”
