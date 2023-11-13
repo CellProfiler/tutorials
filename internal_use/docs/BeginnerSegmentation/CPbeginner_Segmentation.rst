@@ -13,7 +13,9 @@ Benchmark Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__.
 They are ﬁelds of U2OS cells imaged in ﬁve channels (Cell Painting
 assay; see Gustafsdottir et al., 2013)
 
-|image1|\ *Figure 1: Images and channels from a Cell Painting assay.*
+|image1|
+
+*Figure 1: Images and channels from a Cell Painting assay.*
 
 **Goals of this exercise:**
 
@@ -38,7 +40,7 @@ you must figure out a solution are marked with 🔴 *TO DO.*
 
 **1. Load starting pipeline (2 min)**
 
--  Start CellProﬁler by double-clicking the desktop icon: |image2|\
+-  Start CellProﬁler by double-clicking the desktop icon: |image2|
 
 -  Drag and drop the ‘segmentation_start.cppipe’ ﬁle into the ‘Analysis modules’ pane on the left.
 
@@ -61,7 +63,9 @@ loaded and organized in CellProfiler.
 -  Notice that if the ‘Filter images?’ is set to ‘Images only’ the ‘.npy’
    files appeared grey out.
 
-|image3|\ *Figure 2: The Images module, grey out files will not be available for
+|image3|
+
+*Figure 2: The Images module, grey out files will not be available for
     downstream modules*
 
 -  ** 🔴 TO DO**: Change the filter to a custom filter to **include** the ‘.npy’ files.
@@ -84,7 +88,9 @@ loaded and organized in CellProfiler.
    should now see several columns, look through them you should have 5
    different channel numbers, 1 plate, 2 sites and 5 different wells.
 
-|image4|\ *Figure 3: The Metadata module, columns in table correspond to metadata
+|image4|
+
+*Figure 3: The Metadata module, columns in table correspond to metadata
 categories*
 
 -  In the ‘NamesAndTypes’ module, we assign names to the images and
@@ -104,12 +110,16 @@ categories*
    -  The ‘.tif’ image ﬁles are assigned a name by the Metadata
       extracted in the previous module (speciﬁcally ChannelNumber)
 
-|image5|\ *Figure 4: Image mapping using extracted metadata*
+|image5|
+
+*Figure 4: Image mapping using extracted metadata*
 
 -  The ‘.npy’ illumination correction functions are assigned a name
    based on a unique string in the filename (such as ‘IllumER’)
 
-|image6|\ *Figure 5: Image mapping using filename*
+|image6|
+
+*Figure 5: Image mapping using filename*
 
 -  As there is only one set of illumination correction functions for
    each entire plate, the image sets cannot simply be constructed by
@@ -123,7 +133,9 @@ categories*
    -  Each illumination correction function is set to ‘Plate → (None) →
       (None)’
 
-|image7|\ *Figure 6: Image set matching using extracted metadata*
+|image7|
+
+*Figure 6: Image set matching using extracted metadata*
 
 -  For this exercise the ‘Groups’ module is not needed so it is set to
    ‘No’, this module can be useful when you have more than one plate, or
@@ -160,7 +172,9 @@ effect of correction.
    your own experiments should therefore be illumination corrected
    independently.
 
-|image8|\ *Figure 7: Application of the illumination correction function*
+|image8|
+
+*Figure 7: Application of the illumination correction function*
 
 **4. IdentifyPrimaryObjects – Nuclei (10min)**
 
@@ -176,7 +190,9 @@ initial image.
    -  Tip: You can also use the search bar at the top of the ‘Add
       modules’ window to search all modules by name.
 
-|image9|\ *Figure 8: The Add modules window, modules are divided in
+|image9|
+
+*Figure 8: The Add modules window, modules are divided in
 categories based on their function*
 
 -  Create objects called Nuclei by segmenting on the Hoechst channel.
@@ -196,7 +212,9 @@ categories based on their function*
    can use to adjust your segmentation settings, like the median
    diameter, and the threshold.
 
-|image10|\ *Figure 9: The IdentifyPrimaryObjects module output, you can
+|image10|
+
+*Figure 9: The IdentifyPrimaryObjects module output, you can
 use the information in this window to modify your segmentation
 parameters*
 
@@ -221,7 +239,7 @@ parameters*
       identiﬁcation should be good but doesn’t need to be perfect before
       you move on.
 
-5. **IdentifySecondaryObjects – Cells (5min)**
+1. **IdentifySecondaryObjects – Cells (5min)**
 
 -  After the IdentifyPrimaryObjects, add an IdentifySecondaryObjects
    module.
@@ -235,7 +253,9 @@ parameters*
 -  For this module the outline colors correspond to the
    object seed (green-nuclei) and the segmented objects (pink-cell)
 
-|image11|\ *Figure 10: The IdentifySecondaryObjects module output*
+|image11|
+
+*Figure 10: The IdentifySecondaryObjects module output*
 
 -  **🔴 TO DO**: Improve cell segmentation
 
@@ -267,7 +287,9 @@ parameters that can segment cells on all the images on an experiment.
       -  Tip: you can also use the Test menu to choose a random image
          set
 
-|image12|\ *Figure 11: A section of the ‘Choose Image Set’ menu.*
+|image12|
+
+*Figure 11: A section of the ‘Choose Image Set’ menu.*
 
 -  Then run that image in test mode for your ﬁrst 3 modules (through
    your IdentifySecondaryObjects step).
@@ -278,7 +300,9 @@ parameters that can segment cells on all the images on an experiment.
       IdentifySecondaryObjects and hit ‘Run’, this will run all modules
       before the pause.
 
-|image13|\ *Figure 12: A section of the ‘Analysis modules’ pane.*
+|image13|
+
+*Figure 12: A section of the ‘Analysis modules’ pane.*
 
 -  Examine the output – did your nuclear and cellular segmentation hold
    up compared to the ﬁrst images you looked at?
@@ -333,7 +357,9 @@ in segmentation.
 
    -  See below for an example of results to aim for:
 
-|image14|\ *Figure 13. The EnhanceOrSuppress module output, enhancing
+|image14|
+
+*Figure 13. The EnhanceOrSuppress module output, enhancing
 the Syto image allows you to isolate nucleoli against the nucleoplasmic
 background signal.*
 
@@ -355,7 +381,9 @@ background signal.*
 
    -  See below for an example of results to aim for:
 
-|image15|\ *Figure 14. The MaskImage module output, the contrast was adjusted to
+|image15|
+
+*Figure 14. The MaskImage module output, the contrast was adjusted to
 show that the intensity of the pixels outside the nuclei are now set to
 0.*
 
@@ -388,7 +416,9 @@ show that the intensity of the pixels outside the nuclei are now set to
    -  Tip: you can use a similar strategy to segment mitochondria using
       the ‘Mito’ channel
 
-|image16|\ *Figure 15. The OverlayOutlines module output, all detected
+|image16|
+
+*Figure 15. The OverlayOutlines module output, all detected
 nucleoli are within the nuclei.*
 
 **9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**
@@ -416,7 +446,9 @@ nucleoli are within the nuclei.*
 -  **🔴 TO DO:** Add a RelateObjects module and configure it to relate
    ‘Nucleoli’ to ‘Nuclei’.
 
-|image17|\ *Figure 16: The RelateObject module output.*
+|image17|
+
+*Figure 16: The RelateObject module output.*
 
 Relating the objects allows you to create per-parent means (e.g., for
 this cell, what is the average size of an individual mitochondrion) and
@@ -439,8 +471,9 @@ nucleus).
 -  Explore the spreadsheets created for each object.
 
 .. |image1| image:: ./TutorialImages/Fig1.png
-   :width: 6in
-   :height: 3in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image2| image:: ./TutorialImages/icon.png
    :width: 0.26065in
    :height: 0.26065in
@@ -449,45 +482,57 @@ nucleus).
    :width: 7in
    :height: 2.74931in
 .. |image4| image:: ./TutorialImages/Fig3.png
+   :width: 1000
+   :scale: 70 %
    :align: center
-   :height: 3.65799in
 .. |image5| image:: ./TutorialImages/Fig4.png
+   :width: 1000
+   :scale: 70 %
    :align: center
-   :width: 5in
-   :height: 1.13542in
 .. |image6| image:: ./TutorialImages/Fig5.png
-   :width: 5in
-   :height: 0.98403in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image7| image:: ./TutorialImages/Fig6.png
    :width: 7.5in
    :height: 0.60764in
 .. |image8| image:: ./TutorialImages/Fig7.png
-   :width: 5.5in
-   :height: 7.68103in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image9| image:: ./TutorialImages/Fig8.png
-   :width: 2.18264in
-   :height: 3in
+   :width: 1000
+   :scale: 40 %
+   :align: middle
 .. |image10| image:: ./TutorialImages/Fig9.png
-   :width: 3.72986in
-   :height: 3in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image11| image:: ./TutorialImages/Fig10.png
-   :width: 3.78403in
-   :height: 3in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image12| image:: ./TutorialImages/Fig11.png
-   :width: 4.72292in
-   :height: 1.5in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image13| image:: ./TutorialImages/Fig12.png
-   :width: 1.81944in
-   :height: 0.5in
+   :width: 1000
+   :scale: 40 %
+   :align: center
 .. |image14| image:: ./TutorialImages/Fig13.png
-   :width: 4.39444in
-   :height: 2.5in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image15| image:: ./TutorialImages/Fig14.png
-   :width: 4.31319in
-   :height: 2.5in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image16| image:: ./TutorialImages/Fig15.png
-   :width: 4.66111in
-   :height: 2.5in
+   :width: 1000
+   :scale: 70 %
+   :align: center
 .. |image17| image:: ./TutorialImages/Fig16.png
-   :width: 2.63542in
-   :height: 2.5in
+   :width: 1000
+   :scale: 70 %
+   :align: center
