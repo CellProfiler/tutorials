@@ -21,7 +21,7 @@ Z-stacks as TIFFs
 -  Note that this tutorial is an advanced tutorial. We recommend
    completing the Translocation tutorial in order to learn principles of
    image thresholding and segmentation prior to starting this tutorial.
--  Appropiately naming the output(s) of each CellProfiler module is important in order to avoid confusion,especially in large and complex pipelines. Throughout this toturial we will suggest names for each of the outputs, but feel free to use your own.
+-  Appropiately naming the output(s) of each CellProfiler module is important in order to avoid confusion,especially in large and complex pipelines. Throughout this tutorial we will suggest names for each of the outputs, but feel free to use your own.
 -  This tutorial will guide you through the creation of a complete analysis pipeline. If you wish, you can also find a final version of a similar pipeline in the *3d_monolayer_final.cppipe* file, which should be in the same folder as this tutorial. To load the pipeline, simply drag the file to the left panel on the CellProfiler window.
 -  Helpful video tutorials are available on the Center for Open Bioimage
    Analysis YouTube page at
