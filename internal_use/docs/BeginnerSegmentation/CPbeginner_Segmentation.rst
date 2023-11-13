@@ -205,7 +205,7 @@ parameters*
 
 -  **🔴 TO DO**: Improve your segmentation of nuclei:
 
-   -  Select ‘Yes’ for the ‘Use advance settings?’ option, then change
+   -  Select ‘Yes’ for the ‘Use advanced settings?’ option, then change
       some of the parameters:
 
       -  Adjust the threshold method, may lead to better (or worse!)
