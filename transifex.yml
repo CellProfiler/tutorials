@@ -1,0 +1,10 @@
+git:
+  filters:
+  - filter_type: dir
+    file_format: rst
+    source_file_extension: rst
+    source_language: en
+    source_file_dir: tutorials/internal_use/docs
+    translation_files_expression: 'tutorials/internal_use/docs_<lang>'
+    ignore_files:
+    - instructions.md
