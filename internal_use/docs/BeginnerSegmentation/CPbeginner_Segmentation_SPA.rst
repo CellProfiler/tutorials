@@ -13,7 +13,8 @@ Benchmark Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__.
 Se tratan de campos de células U2OS con cinco canales (ensayo de Cell 
 Painting; ver Gustafsdottir et al., 2013)
 
-|image1|\ *Figura 1: Imágenes y canales de un ensayo de Cell Painting.*
+|image1|\ 
+*Figura 1: Imágenes y canales de un ensayo de Cell Painting.*
 
 **Objetivos de este ejercicio:**
 

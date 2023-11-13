@@ -1,0 +1,441 @@
+<p>Segmentación y análisis de organelas:
+==================================== Un ejercicio de computadora usando
+CellProfiler ===================================== Beth Cimini, Barbara
+Diaz-Rohrer y Rebecca Senft
+------------------------------------------------------Broad Institute
+-------------------<strong>Sobre las imágenes de este
+ejercicio:</strong></p>
+<p>Las imágenes en este experimento provienen de la <a
+href="https://data.broadinstitute.org/bbbc/BBBC022/">Broad Bioimage
+Benchmark Collection</a>. Se tratan de campos de células U2OS con cinco
+canales (ensayo de Cell Painting; ver Gustafsdottir et al., 2013)</p>
+<p><img src="./TutorialImages/Fig1.png" style="width:6in;height:3in"
+alt="image1" /> <em>Figura 1: Imágenes y canales de un ensayo de Cell
+Painting.</em></p>
+<p><strong>Objetivos de este ejercicio:</strong></p>
+<p>Este ejercicio te permitirá practicar la búsqueda de parámetros de
+segmentación para segmentación para objetos "padres" más grandes
+(núcleo, célula y citoplasma) y te mostrará cómo extraer características
+más pequeñas de tu imagen segmentando organelas dentro de las células y
+los núcleos. También te mostrará cómo utilizar el módulo
+<em>RelateObjects</em> para que puedas relacionar los recuentos medios,
+las distancias y las medidas de las organelas "hijas" más pequeñas con
+sus objetos "padres" más grandes (es decir, la célula y el núcleo).</p>
+<p><strong>Materiales necesarios para este ejercicio:</strong></p>
+<dl>
+<dt>Las imágenes están contenidas en la carpeta <strong>images</strong>;
+estas 50 imágenes</dt>
+<dd>
+<p>(10 imágenes en 5 canales) representan 5 pocillos tratados de un
+experimento de una placa de 384 pocillos.</p>
+</dd>
+</dl>
+<p>**Instrucciones del ejercicio</p>
+<p>Lee los pasos siguientes y sigue las instrucciones que se indican.
+Los pasos en los que debe encontrar una solución están marcados con
+<strong>🔴 PARA HACER.</strong></p>
+<p><strong>1. Cargar el pipeline de inicio (2 min)</strong>.</p>
+<ul>
+<li>Inicia CellProﬁler haciendo doble clic en el icono del escritorio:
+<img src="./TutorialImages/icon.png"
+style="width:0.26065in;height:0.26065in" alt="image2" />|</li>
+</ul>
+<p>- Arrastra y suelta el archivo 'segmentation_start.cppipe' en el
+panel 'Analysis modules' de la izquierda.</p>
+<ul>
+<li>Aparecerán 2 módulos.</li>
+</ul>
+<p><strong>2. Configurar los módulos de entrada (10min)</strong></p>
+<p>Los cuatro módulos de entrada (Images, Metadata, NamesAndTypes y
+Groups) son cruciales para cualquier pipeline de CellProfiler porque
+definen cómo las imágenes se cargan y organizan en CellProfiler.</p>
+<p>- Haz clic en el módulo 'Images' en la esquina superior izquierda de
+la ventana de CellProfiler.</p>
+<p>- Arrastra y suelta la carpeta 'images' en el panel 'Drag and drop
+files here'. Debería poblarse automáticamente. Observa que las imágenes
+de corrección de iluminación (con extensión '.npy') están incluidas en
+este conjunto de datos.</p>
+<p>- Observa que si la opción 'Filter images?' está configurado en
+'Images only', los archivos '.npy' aparecen en gris.</p>
+<p><img src="./TutorialImages/Fig2.png" class="align-center"
+style="width:7in;height:2.74931in" alt="image3" /><em>Figura 2: El
+módulo de Imágenes, los archivos en gris no estarán disponibles para los
+módulos posteriores</em></p>
+<p>- <strong>🔴 PARA HACER</strong>: Personaliza el filtro para
+<strong>incluir</strong> los archivos '.npy'.</p>
+<p>- En el módulo 'Metadata', ya deberían estar presentes y configurados
+tres métodos de extracción de metadatos:</p>
+<blockquote>
+<p>- El primero extrae metadatos de Pocillo, Sitio y Canal de todos los
+archivos de imagen, excepto de las imágenes de corrección de iluminación
+('.npy').</p>
+<ul>
+<li>El segundo extrae metadatos de Placa de la carpeta de imágenes.</li>
+</ul>
+<p>- El tercero extrae metadatos de Placa de las funciones de corrección
+de iluminación.</p>
+</blockquote>
+<p>- Haz clic en la lupa al final del cuadro de expresión regular para
+cada método de extracción para ver cómo funciona.</p>
+<p>- Regresa al módulo 'Metadata' y presiona 'Update'. Ahora deberías
+ver varias columnas, revísalas para asegurarte de que tengas 5 números
+de canal diferentes, 1 placa, 2 sitios y 5 pocillos diferentes.</p>
+<p><img src="./TutorialImages/Fig3.png" class="align-center"
+style="height:3.65799in" alt="image4" /><em>Figura 3: El módulo de
+Metadatos, las columnas en la tabla corresponden a categorías de
+metadatos</em></p>
+<p>- En el módulo 'NamesAndTypes', asignamos nombres a las imágenes y
+configuramos conjuntos de imágenes (es decir, todos los diferentes
+canales para un campo). El mapeo de canales aquí es un poco complicado:
+tenemos un conjunto único de imágenes de corrección de iluminación (un
+archivo '.npy' por canal) que se asigna a cada pocillo y sitio.
+Utilizaremos los metadatos que extrajimos en el módulo anterior para
+hacer posible esa asociación.</p>
+<p>- El módulo 'NamesAndTypes ya está completamente configurado, pero
+desplázate y revisa la configuración para ver las dos formas diferentes
+de mapear imágenes a nombres de canal que se demuestran aquí. (Hay
+varias otras formas de crear mapeos correctos, pero estos pueden servir
+como un ejemplo útil para consultar en tu propio trabajo).</p>
+<p>- Los archivos de imagen '.tif' se asignan un nombre mediante los
+Metadatos extraídos en el módulo anterior (específicamente
+ChannelNumber)</p>
+<p><img src="./TutorialImages/Fig4.png" class="align-center"
+style="width:5in;height:1.13542in" alt="image5" /><em>Figura 4: Mapeo de
+imágenes usando los metadatos extraídos</em></p>
+<p>- Las funciones de corrección de iluminación '.npy' se asignan un
+nombre basado en una cadena única en el nombre del archivo (como
+'IllumER')</p>
+<p><img src="./TutorialImages/Fig5.png"
+style="width:5in;height:0.98403in" alt="image6" /><em>Figura 5: Mapeo de
+imágenes usando el nombre del archivo</em></p>
+<p>- Dado que solo hay un conjunto de funciones de corrección de
+iluminación para toda la placa, los conjuntos de imágenes no pueden
+construirse simplemente utilizando 'Image set matching' como
+'Order'.</p>
+<p>- Desplázate hasta la parte inferior de 'NamesAndTypes' para ver cómo
+se construyen los conjuntos de imágenes. 'Image Set Matching' está
+configurado en 'Metadata'.</p>
+<blockquote>
+<ul>
+<li>Cada canal de imagen se configura como 'Placa → Pocillo →
+Sitio'.</li>
+</ul>
+<p>- Cada función de corrección de iluminación se configura como 'Placa
+→ (None) → (None)'</p>
+</blockquote>
+<p><img src="./TutorialImages/Fig6.png"
+style="width:7.5in;height:0.60764in" alt="image7" /><em>Figura 6:
+Coincidencia de conjunto de imágenes usando metadatos extraídos</em></p>
+<p>- Para este ejercicio, el módulo 'Groups' no es necesario, por lo que
+se configura como 'No'. Este módulo puede ser útil cuando tienes más de
+una placa o películas diferentes.</p>
+<p>- Para obtener más información y ejemplos sobre cómo configurar los
+módulos de entrada, hemos creado un blog y un tutorial en video que se
+pueden acceder aquí (en inglés): <a
+href="https://carpenter-singh-lab.broadinstitute.org/blog/input-mod">https://carpenter-singh-lab.broadinstitute.org/blog/input-mod</a></p>
+<p><strong>3. Examina la salida del módulo CorrectIlluminationApply. (2
+min)</strong></p>
+<p>Dado que los objetivos de los microscopios no suelen tener un patrón
+de iluminación completamente uniforme, aplicar una función de corrección
+de iluminación puede ayudar a mejorar nuestra segmentación y mediciones
+al compensar esto. Presta atención a la parte superior del campo de
+visión para ver el mayor efecto de la corrección.</p>
+<p>- Ingresa al modo de prueba haciendo clic en el botón "Start Test
+Mode" en la esquina inferior izquierda de la ventana y presiona "Step"
+para ejecutar el módulo <em>CorrectIlluminationApply</em>.</p>
+<p>- Examina brevemente la salida del módulo
+<em>CorrectIlluminationApply</em>; podrás ver que las funciones de
+corrección de iluminación muestran una iluminación desigual en todo el
+campo de visión.</p>
+<p>- Estas funciones se crearon promediando y suavizando las 3456
+imágenes de esta placa, por lo que las áreas tenues en la función de
+corrección de iluminación son áreas del campo de visión que son
+consistentemente más tenues en lamyoría de esas imágenes.</p>
+<p>- También ten en cuenta que, aunque las funciones de corrección de
+iluminación para cada canal son similares, no son idénticas; por lo
+tanto, cada canal en tus propios experimentos debe corregirse
+independientemente.</p>
+<p><img src="./TutorialImages/Fig7.png"
+style="width:5.5in;height:7.68103in" alt="image8" /><em>Figura 7:
+Aplicación de la función de correción de iluminación</em></p>
+<p><strong>4. Identificar objetos primarios - Núcleos (10
+min)</strong></p>
+<p>A continuación, haremos un primer intento de identificar núcleos y
+células en nuestra imagen inicial.</p>
+<p>- Después del módulo <em>CorrectIlluminationApply</em>, agrega un
+módulo <em>IdentifyPrimaryObjects</em> (de la categoría "Image
+Processing"). Hazlo haciendo clic en el signo "+" en la esquina inferior
+izquierda de la ventana de CellProfiler, lo que abrirá una pequeña
+ventana llamada "Add modules".</p>
+<blockquote>
+<p>- <em>Consejo:</em> También puedes usar la barra de búsqueda en la
+parte superior de la ventana "Add modules" para buscar todos los módulos
+por nombre.</p>
+</blockquote>
+<p><img src="./TutorialImages/Fig8.png"
+style="width:2.18264in;height:3in" alt="image9" /><em>Figura 8: La
+ventana "Add modules", los módulos se dividen en categorías basados en
+su función</em></p>
+<ul>
+<li><p>Crea objetos llamados "Nuclei" segmentando en el canal
+"Hoechst":</p>
+<blockquote>
+<p>- Selecciona la imagen "Hoechst" como tu imagen de entrada desde el
+menú desplegable.</p>
+<ul>
+<li>Cambia el nombre de los objetos de salida a "Nuclei".</li>
+</ul>
+</blockquote></li>
+<li><p>Presiona "Step" para ejecutar el módulo. ¿Cómo se ve tu
+segmentación?</p></li>
+</ul>
+<p>- En el panel de visualización de contornos (esquina inferior
+izquierda) puedes ver tres colores diferentes; el verde es para objetos
+aceptados, el naranja para objetos que tocan el borde y el magenta para
+objetos fuera del rango de diámetro.</p>
+<p>- En el panel de tabla (esquina inferior derecha) hay información
+útil que puedes usar para ajustar tus configuraciones de segmentación,
+como el mediana del diámetro y el umbral.</p>
+<p><img src="./TutorialImages/Fig9.png"
+style="width:3.72986in;height:3in" alt="image10" /><em>Figura 9: La
+salida del módulo IdentifyPrimaryObjects, puedes usar la información en
+esta ventana para modificar tus parámetros de segmentación.</em></p>
+<p>- Usa la lupa en la parte superior de la ventana para hacer zoom en
+un área que se segmentó mal.</p>
+<ul>
+<li><p><strong>🔴 PARA HACER:</strong> Mejora tu segmentación de
+núcleos:</p>
+<blockquote>
+<p>- Selecciona "Yes" para la opción "Use advanced settings?", luego
+cambia algunos de los parámetros:</p>
+<blockquote>
+<p>- Ajusta el método de umbralización (Thresholding method). Esto puede
+dar mejores (o peores!) resultados.</p>
+<p>- Ajusta la configuración de desagrupamiento ("Method to distinguish
+clumped objects").</p>
+</blockquote>
+<p>- Presiona "Step" para volver a ejecutar y ver cómo los cambios
+afectan la segmentación.</p>
+<p>- Ajusta los parámetros de segmentación hasta que sientas que estás
+listo para pasar a identificar las células alrededor de los núcleos; la
+identificación debe ser buena, pero no necesita ser <em>perfecta</em>
+antes de avanzar.</p>
+</blockquote></li>
+</ul>
+<p><strong>5. Identificar objetos secundarios - Células (5
+min)</strong></p>
+<p>- Después de <em>IdentifyPrimaryObjects</em>, agrega un módulo
+<em>IdentifySecondaryObjects</em>.</p>
+<p>- Crea un objeto llamado "Células" que se basa en los objetos
+primarios "Núcleos" que acabas de crear; selecciona la imagen "Ph_golgi"
+como tu imagen de entrada, núcleos como objetos de entrada y cambia el
+nombre a "Células".</p>
+<ul>
+<li>Presiona "Step" para ejecutar el módulo. ¿Cómo se ve tu
+segmentación?</li>
+</ul>
+<p>- Para este módulo, los colores de contorno corresponden a la semilla
+del objeto (verde-núcleos) y los objetos segmentados (rosa-célula).</p>
+<p><img src="./TutorialImages/Fig10.png"
+style="width:3.78403in;height:3in" alt="image11" /><em>Figura 10: La
+salida del módulo IdentifySecondaryObjects</em></p>
+<ul>
+<li><p><strong>🔴 PARA HACER:</strong> Mejora la segmentación
+celular</p>
+<blockquote>
+<p>- Examina la segmentación y ajusta los parámetros de segmentación
+hasta que sientas que estás listo para probarlos en otra imagen; no
+necesitan ser perfectos.</p>
+<ul>
+<li>Ajusta el método de umbralización (Thresholding method).</li>
+</ul>
+<p>- Prueba los efectos de usar los diversos métodos para identificar
+objetos secundarios (Propagation, Watershed-Image, Distance-N, etc.) y ,
+si usas Propagation, el factor de regularización.</p>
+</blockquote></li>
+</ul>
+<p><strong>6. Prueba la robustez de tus parámetros de segmentación en
+varias imágenes (5 min)</strong></p>
+<p>Es (relativamente) fácil encontrar un buen conjunto de parámetros de
+segmentación para una sola imagen, sin embargo, nuestro objetivo es
+crear un conjunto de parámetros que pueda segmentar células en todas las
+imágenes de un experimento.</p>
+<p>- Para probar los parámetros, hay dos opciones para cambiar la imagen
+en la que estás trabajando en el modo de prueba.</p>
+<blockquote>
+<ul>
+<li>Haz clic en "Next Image Set" en la esquina inferior izquierda,
+o</li>
+</ul>
+<p>- Ve a "Test" en la barra de menú superior → "Choose Image Set" para
+mostrar una lista de las imágenes en tu experimento, selecciona la
+imagen que deseas probar y presiona el botón "OK".</p>
+<blockquote>
+<p>- Consejo: también puedes usar el menú de prueba para elegir un
+conjunto de imágenes al azar ("Coose Random Iage Set").</p>
+</blockquote>
+</blockquote>
+<p><img src="./TutorialImages/Fig11.png"
+style="width:4.72292in;height:1.5in" alt="image12" /><em>Figura 11: Una
+sección del menu ‘Choose Image Set’</em></p>
+<p>- Luego, ejecuta esa imagen en modo de prueba para tus primeros 3
+módulos (hasta tu paso de <em>IdentifySecondaryObjects</em>).</p>
+<blockquote>
+<ul>
+<li>Puedes hacerlo haciendo clic en el botón de paso, o</li>
+</ul>
+<p>- Puedes agregar un botón de pausa en el módulo después de
+<em>IdentifySecondaryObjects</em> y presionar "Run", esto ejecutará
+todos los módulos antes de la pausa.</p>
+</blockquote>
+<p><img src="./TutorialImages/Fig12.png"
+style="width:1.81944in;height:0.5in" alt="image13" /><em>Figura 12: Una
+sección del panel de módulos de análisis</em></p>
+<p>- Examina la salida: ¿se mantuvo tu segmentación nuclear y celular en
+comparación con las primeras imágenes que observaste?</p>
+<p>- <strong>🔴 PARA HACER:</strong> Ajusta los parámetros para obtener
+resultados comparables a los de la primera imagen. Una vez que tu
+segmentación sea buena, pruébala en otra imagen.</p>
+<p><strong>7. Identificar objetos terciarios - Citoplasma
+(2min)</strong></p>
+<p>- Después del módulo <em>IdentifySecondaryObjects</em>, agregar un
+módulo <em>IdentifyTertiaryObjects</em>.</p>
+<p>- Crear un objeto llamado Citoplasma utilizando los objetos Célula y
+Núcleo que has creado.</p>
+<p>- Seleccionar los objetos identificados más grandes y más pequeños
+del menú desplegable.</p>
+<ul>
+<li>Cambiar el nombre de los objetos a identificar.</li>
+</ul>
+<p>- La opción "Reducir el tamaño del objeto más pequeño antes de la
+sustracción" ("Shrink smaller object prior to subtraction?") debe estar
+configurada en "No".</p>
+<p><strong>8. Examinar los pasos utilizados para segmentar los Nucleolos
+(15min)</strong></p>
+<p>Hasta ahora, hemos utilizado imágenes no transformadas para la
+detección de objetos, pero no todos los objetos pueden ser segmentados a
+partir de imágenes en bruto. CellProfiler contiene una variedad de
+módulos de procesamiento de imágenes que pueden ayudar en la
+segmentación. Para este ejercicio, utilizaremos dos de estos módulos,
+pero hay otros que puedes explorar.</p>
+<p>Los siguientes 3 módulos tienen que ver con la creación de los
+objetos Nucleolos. Observa la salida de cada uno para ver cómo la imagen
+se transforma para ayudar en la segmentación.</p>
+<p>- Después del módulo <em>IdentifyTertiaryObjects</em>, agregar un
+módulo <em>EnhanceOrSuppressFeatures</em>.</p>
+<p>- <em>EnhanceOrSuppressFeatures</em> es un módulo que ayuda a mejorar
+partes de una imagen, en este caso, objetos puntuales o "manchas"
+(Speckles). Como estamos buscando nucleolos, aplicamos esto a la imagen
+del canal de ARN ("Syto") y llamamos la salida "ARN_filtrado".</p>
+<blockquote>
+<p><strong>🔴 PARA HACER: Mejorar las spots de los
+nucleolos</strong></p>
+<ul>
+<li>Cambiar la imagen de entrada del menú desplegable a "Syto".</li>
+<li>Cambiar el nombre de la imagen de salida a "ARN_filtrado".</li>
+</ul>
+<p>- Cambiar el "Feature Size" para ver cómo afecta la salida y
+encontrar un valor que funcione bien.</p>
+<p>- Ver a continuación un ejemplo de los resultados a los que se debe
+apuntar:</p>
+</blockquote>
+<p><em>Figura 13. La salida del módulo EnhanceOrSuppressFeatures,
+mejorando la imagen de Syto te permite aislar los nucleolos contra la
+señal nucleoplásmica de fondo.</em></p>
+<p>- Después del módulo <em>EnhanceOrSuppressFeatures</em>, agregar un
+módulo <em>MaskImage</em>.</p>
+<p>- <em>MaskImage</em> te permite crear una versión de la imagen
+"ARN_filtrado" llamada "SytoNuclei" donde todos los píxeles excepto los
+que especifiques se establecen en una intensidad de 0. En este caso,
+establecemos en 0 cualquier píxel que no esté dentro de un núcleo. Al
+hacer esto, podemos disminuir la probabilidad de detectar puntos de ARN
+citoplasmático.</p>
+<blockquote>
+<p><strong>🔴 PARA HACER: Enmascarar la imagen de ARN para mostrar solo
+los 'Núcleos'</strong></p>
+<ul>
+<li>Cambiar la imagen de entrada del menú desplegable a
+"ARN_filtrado".</li>
+<li>Cambiar el nombre de la imagen de salida a "SytoNuclei".</li>
+<li>Usar los objetos 'Núcleos' como máscara.</li>
+</ul>
+<p>- Ver a continuación un ejemplo de los resultados a los que se debe
+apuntar:</p>
+</blockquote>
+<p><em>Figura 14. La salida del módulo MaskImage, el contraste se ajustó
+para mostrar que la intensidad de los píxeles fuera de los núcleos ahora
+se establece en 0.</em></p>
+<p>- <em>IdentifyPrimaryObjects</em> se utiliza para encontrar los
+Nucleolos. Esta es una segmentación de objetos primarios porque no
+estamos utilizando otro objeto como semilla (es decir, punto de inicio)
+y solo estamos segmentando en función de la intensidad en nuestra imagen
+'SytoNuclei'.</p>
+<blockquote>
+<p><strong>🔴 PARA HACER: Segmentar los nucleolos</strong></p>
+<ul>
+<li>Cambiar la imagen de entrada del menú desplegable a
+"SytoNuclei".</li>
+<li>Cambiar el nombre de los objetos a "Nucleolos".</li>
+</ul>
+<p>- Ajustar los parámetros de segmentación hasta que estés satisfecho
+con los resultados de la segmentación.</p>
+<p><strong>🔴 PARA HACER</strong>: Agregar un módulo
+<em>OverlayOutlines</em> en este punto para superponer los nucleolos
+identificados en la imagen original de "Syto" para asegurarte de que la
+segmentación no solo coincida con la imagen 'SytoNuclei' mejorada con
+manchas, sino que también se vea precisa en la imagen sin procesar. Esto
+no es estrictamente necesario, pero puede ser un buen punto de
+control.</p>
+<p>- Objetivo: mostrar contornos de tus nucleolos y tus núcleos en la
+imagen sin procesar de 'Syto'.</p>
+<p>- Aquí tienes un ejemplo de cómo podría verse (rojo = núcleos, verde
+= nucleolos):</p>
+<p>- Consejo: puedes usar una estrategia similar para segmentar las
+mitocondrias utilizando el canal 'Mito'</p>
+</blockquote>
+<p><em>Figura 15. La salida del módulo OverlayOutlines, todos los
+nucleolos detectados están dentro de los núcleos.</em></p>
+<p><strong>9. 🔴 POR HACER: Agregar módulos de medición a tu pipeline
+(10min)</strong></p>
+<p>- Después de la segmentación de los nucleolos, agregar tantos módulos
+de medición de objetos como desees, hemos agregado un
+<em>MeasureObjectIntensity</em>.</p>
+<p>- Algunos módulos sugeridos para agregar:
+<em>MeasureObjectSizeShape</em>, <em>MeasureObjectIntensity</em>,
+<em>MeasureGranularity</em> y <em>MeasureObjectNeighbors</em>.</p>
+<p>- ¿Qué objetos crees que serían valiosos para medir con cada uno de
+estos módulos? ¿En qué canales medirías tus objetos? Para un experimento
+típico de Cell Painting, agregarías tantas mediciones como sea posible,
+pero eso no es necesario aquí; sin embargo, asegúrate de que cada objeto
+reciba al menos algunas mediciones. Nota: Si bien
+<em>MeasureCorrelation</em>, <em>MeasureTexture</em> y
+<em>MeasureObjectIntensityDistribution</em> pueden producir datos
+valiosos para generar el perfil morfológico de la imagen, pueden ser
+intensivos en el uso de memoria y/o lentos, por lo que no deben
+agregarse a este ejemplo en pos del tiempo de ejecución del
+pipeline.</p>
+<p><strong>10. Relacionar objetos (5min)</strong></p>
+<p>- <strong>🔴 PARA HACER:</strong> Agregar un módulo
+<em>RelateObject</em> y configurarlo para relacionar 'Nucleolos' con
+'Núcleos'.</p>
+<p><em>Figura 16: La salida del módulo RelateObject.</em></p>
+<p>Relacionar los objetos te permite crear promedios por padre (por
+ejemplo, para esta célula, ¿cuál es el tamaño promedio de una
+mitocondria individual?) y calcular distancias desde los objetos
+secundarios al borde y/o al centro del objeto "padre" (por ejemplo, ¿qué
+tan lejos está cada nucleolo del centro del núcleo?).</p>
+<p><strong>11. Ejecutar el pipeline (opcional)</strong></p>
+<ul>
+<li>Si tienes tiempo, agrega un módulo Exportar a hoja de cálculo al
+final.</li>
+<li>Salir del modo de prueba (Exit Test Mode).</li>
+<li>Haz clic en el botón 'Output Settings' en la esquina inferior
+izquierda.</li>
+</ul>
+<p>- Cambia la carpeta de salida predeterminada al directorio donde
+desees guardar los archivos de salida.</p>
+<ul>
+<li>Haz clic en el botón 'Analyze Images' en la esquina inferior
+izquierda.</li>
+<li>Explora las hojas de cálculo creadas para cada objeto.</li>
+</ul>
