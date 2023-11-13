@@ -95,3 +95,6 @@ output/
 
 # MacFiles
 *.DS_Store
+
+# VS code files
+.vscode/
