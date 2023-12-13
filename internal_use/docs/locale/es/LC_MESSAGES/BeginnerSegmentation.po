@@ -22,24 +22,24 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:2
 msgid "Segmentation and organelle analysis:"
-msgstr ""
+msgstr "Segmentación y análisis de organelas:"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:4
 msgid "A computer exercise using CellProﬁler"
-msgstr ""
+msgstr "Un ejercicio de computadora usando CellProfiler"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:6
 msgid "Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft"
-msgstr ""
+msgstr "Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:8
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:11
 msgid "Broad Institute"
-msgstr ""
+msgstr "Broad Institute"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:9
 msgid "**Background information:**"
-msgstr ""
+msgstr "**Sobre las imágenes de este ejercicio:**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:11
 msgid ""
