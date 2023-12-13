@@ -4,7 +4,5 @@ git:
     file_format: rst
     source_file_extension: rst
     source_language: en
-    source_file_dir: tutorials/internal_use/docs
-    translation_files_expression: 'tutorials/internal_use/docs_<lang>'
-    ignore_files:
-    - instructions.md
+    source_file_dir: tutorials/internal_use/docs/source
+    translation_files_expression: 'tutorials/internal_use/docs/locales/<lang>'
