@@ -4,5 +4,5 @@ git:
     file_format: PO
     source_file_extension: pot
     source_language: en
-    source_file_dir: tutorials/internal_use/docs/source
-    translation_files_expression: 'tutorials/internal_use/docs/locale/<lang>/LC_MESSAGES'
+    source_file_dir: tutorials/internal_use/docs/_build/gettext
+    translation_files_expression: tutorials/internal_use/docs/locale/<lang>/LC_MESSAGES
