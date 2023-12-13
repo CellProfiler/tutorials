@@ -1,8 +1,8 @@
 git:
   filters:
   - filter_type: dir
-    file_format: rst
-    source_file_extension: rst
+    file_format: PO
+    source_file_extension: pot
     source_language: en
     source_file_dir: tutorials/internal_use/docs/source
     translation_files_expression: 'tutorials/internal_use/docs/locale/<lang>/LC_MESSAGES'
