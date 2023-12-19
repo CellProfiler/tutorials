@@ -30,7 +30,7 @@ msgstr "Un ejercicio de computadora usando CellProfiler"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:6
 msgid "Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft"
-msgstr "Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft"
+msgstr "Beth Cimini, Barbara Diaz-Rohrer y Rebecca Senft"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:8
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:11
@@ -47,20 +47,23 @@ msgid ""
 "Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. They are "
 "ﬁelds of U2OS cells imaged in ﬁve channels (Cell Painting assay; see "
 "Gustafsdottir et al., 2013)"
-msgstr ""
+msgstr "Las imágenes en este experimento provienen de la `Broad Bioimage
+"Benchmark Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__."
+"Se tratan de campos de células U2OS con cinco canales (ensayo de Cell "
+"Painting; ver Gustafsdottir et al., 2013)"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:16
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:20
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:18
 msgid "*Figure 1: Images and channels from a Cell Painting assay.*"
-msgstr ""
+msgstr "*Figura 1: Imágenes y canales de un ensayo de Cell Painting.*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:20
 msgid "**Goals of this exercise:**"
-msgstr ""
+msgstr "**Objetivos de este ejercicio:**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:22
 msgid ""
@@ -72,10 +75,18 @@ msgid ""
 "measurements of the smaller “child” organelles to their larger “parent” "
 "objects (i.e., cell and nucleus)."
 msgstr ""
+"Este ejercicio te permitirá practicar la búsqueda de parámetros de "
+"segmentación para segmentación para objetos “padres“ más grandes (núcleo, "
+"célula y citoplasma) y te mostrará cómo extraer características más "
+"pequeñas de tu imagen segmentando organelas dentro de las células y los "
+"núcleos. También te mostrará cómo utilizar el módulo *RelateObjects* para "
+"que puedas relacionar los recuentos medios, las distancias y las medidas "
+"de las organelas “padres“ más pequeñas con sus objetos “padres“ más grandes "
+"(es decir, la célula y el núcleo)."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:30
 msgid "**Materials necessary for this exercise:**"
-msgstr ""
+msgstr "**Materiales necesarios para este ejercicio:**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:32
 msgid ""
@@ -86,25 +97,27 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:36
 msgid "**Exercise instructions:**"
-msgstr ""
+msgstr "**Instrucciones del ejercicio**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:38
 msgid ""
 "Read through the steps below and follow instructions where stated. Steps "
 "where you must figure out a solution are marked with 🔴 *TO DO.*"
 msgstr ""
+"Lee los pasos siguientes y sigue las instrucciones que se indican. Los "
+"pasos en los que debe encontrar una solución están marcados con **🔴 PARA HACER.**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:41
 msgid "**1. Load starting pipeline (2 min)**"
-msgstr ""
+msgstr "**1. Cargar el pipeline de inicio (2 min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:43
 msgid "Start CellProﬁler by double-clicking the desktop icon: |image2|"
-msgstr ""
+msgstr "- Inicia CellProﬁler haciendo doble clic en el icono del escritorio: |image2|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:477
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:352
-msgid "image2"
+msgid "|image2|"
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:45
@@ -112,14 +125,15 @@ msgid ""
 "Drag and drop the ‘segmentation_start.cppipe’ ﬁle into the ‘Analysis "
 "modules’ pane on the left."
 msgstr ""
+"- Arrastra y suelta el archivo 'segmentation_start.cppipe' en el panel 'Analysis modules' de la izquierda."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:47
 msgid "2 modules should pop up."
-msgstr ""
+msgstr "- Aparecerán 2 módulos."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:49
 msgid "**2. Set up the input modules (10min)**"
-msgstr ""
+msgstr "**2. Configurar los módulos de entrada (10min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:51
 msgid ""
@@ -127,12 +141,14 @@ msgid ""
 "crucial for any CellProfiler pipeline because they define how images are "
 "loaded and organized in CellProfiler."
 msgstr ""
+"Los cuatro módulos de entrada (*Images, Metadata, NamesAndTypes y Groups*) son cruciales para cualquier pipeline de CellProfiler porque definen cómo las imágenes se cargan y organizan en CellProfiler."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:55
 msgid ""
 "Click on the ‘Images’ module in the top left corner of the CellProfiler "
 "window."
 msgstr ""
+"- Haz clic en el módulo *'Images'* en la esquina superior izquierda de la ventana de CellProfiler."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:58
 msgid ""
@@ -141,21 +157,23 @@ msgid ""
 "correction images (with a ﬁle extension of ‘.npy’) are included in this "
 "data set."
 msgstr ""
+"- Arrastra y suelta la carpeta 'images' en el panel 'Drag and drop files here'. Debería poblarse automáticamente. Observa que las imágenes de corrección de iluminación (con extensión '.npy') están incluidas en este conjunto de datos."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:63
 msgid ""
 "Notice that if the ‘Filter images?’ is set to ‘Images only’ the ‘.npy’ "
 "files appeared grey out."
 msgstr ""
+"- Observa que si la opción 'Filter images?' está configurado en 'Images only', los archivos '.npy' aparecen en gris."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:66
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:65
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:69
 msgid "*Figure 2: The Images module, grey out files will not be available for"
-msgstr ""
+msgstr "*Figura 2: El módulo de Imágenes, los archivos en gris no estarán disponibles para los módulos posteriores*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:69
 msgid "downstream modules*"
@@ -166,32 +184,36 @@ msgid ""
 "** 🔴 TO DO**: Change the filter to a custom filter to **include** the "
 "‘.npy’ files."
 msgstr ""
+"**🔴 PARA HACER**: Personaliza el filtro para **incluir** los archivos '.npy'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:73
 msgid ""
 "In the ‘Metadata’ module three metadata extraction methods should already"
 " be present and conﬁgured:"
 msgstr ""
+"- En el módulo 'Metadata', ya deberían estar presentes y configurados tres métodos de extracción de metadatos:"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:76
 msgid ""
 "The ﬁrst pulls Well, Site, and Channel metadata from all the image ﬁles "
 "except for the illumination correction functions."
 msgstr ""
+"   - El primero extrae metadatos de Pocillo, Sitio y Canal de todos los archivos de imagen, excepto de las imágenes de corrección de iluminación ('.npy')."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:79
 msgid "The second pulls Plate metadata from the image folder."
-msgstr ""
+msgstr "   - El segundo extrae metadatos de Placa de la carpeta de imágenes."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:81
 msgid "The third pulls Plate metadata from the illumination correction functions."
-msgstr ""
+msgstr "   - El tercero extrae metadatos de Placa de las funciones de corrección de iluminación."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:84
 msgid ""
 "Click on the magnifying glass at the end of the regular expression box "
 "for each extraction method to see how it works."
 msgstr ""
+"- Haz clic en la lupa al final del cuadro de expresión regular para cada método de extracción para ver cómo funciona."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:87
 msgid ""
@@ -199,17 +221,19 @@ msgid ""
 "several columns, look through them you should have 5 different channel "
 "numbers, 1 plate, 2 sites and 5 different wells."
 msgstr ""
+"- Regresa al módulo 'Metadata' y presiona 'Update'. Ahora deberías ver varias columnas, revísalas para asegurarte de que tengas 5 números de canal diferentes, 1 placa, 2 sitios y 5 pocillos diferentes."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:91
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:83
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:93
 msgid ""
 "*Figure 3: The Metadata module, columns in table correspond to metadata "
 "categories*"
 msgstr ""
+"*Figura 3: El módulo de Metadatos, las columnas en la tabla corresponden a categorías de metadatos*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:96
 msgid ""
@@ -220,6 +244,7 @@ msgid ""
 "map to each and every well and site. We will use the metadata we "
 "extracted in the previous module to make that association possible."
 msgstr ""
+"- En el módulo 'NamesAndTypes', asignamos nombres a las imágenes y configuramos conjuntos de imágenes (es decir, todos los diferentes canales para un campo). El mapeo de canales aquí es un poco complicado: tenemos un conjunto único de imágenes de corrección de iluminación (un archivo '.npy' por canal) que se asigna a cada pocillo y sitio. Utilizaremos los metadatos que extrajimos en el módulo anterior para hacer posible esa asociación."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:104
 msgid ""
@@ -229,36 +254,39 @@ msgid ""
 "other ways to create correct mappings, but these may serve as a helpful "
 "example to refer to in your own work)."
 msgstr ""
+"- El módulo 'NamesAndTypes ya está completamente configurado, pero desplázate y revisa la configuración para ver las dos formas diferentes de mapear imágenes a nombres de canal que se demuestran aquí. (Hay varias otras formas de crear mapeos correctos, pero estos pueden servir como un ejemplo útil para consultar en tu propio trabajo)."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:110
 msgid ""
 "The ‘.tif’ image ﬁles are assigned a name by the Metadata extracted in "
 "the previous module (speciﬁcally ChannelNumber)"
 msgstr ""
+"- Los archivos de imagen '.tif' se asignan un nombre mediante los Metadatos extraídos en el módulo anterior (específicamente ChannelNumber)"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:113
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:93
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:115
 msgid "*Figure 4: Image mapping using extracted metadata*"
-msgstr ""
+msgstr "*Figura 4: Mapeo de imágenes usando los metadatos extraídos*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:117
 msgid ""
 "The ‘.npy’ illumination correction functions are assigned a name based on"
 " a unique string in the filename (such as ‘IllumER’)"
 msgstr ""
+"- Las funciones de corrección de iluminación '.npy' se asignan un nombre basado en una cadena única en el nombre del archivo (como 'IllumER')"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:120
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:99
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:122
 msgid "*Figure 5: Image mapping using filename*"
-msgstr ""
+msgstr "*Figura 5: Mapeo de imágenes usando el nombre del archivo*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:124
 msgid ""
@@ -266,25 +294,27 @@ msgid ""
 "entire plate, the image sets cannot simply be constructed by using ‘Image"
 " set matching’ as ‘Order’."
 msgstr ""
+"- Dado que solo hay un conjunto de funciones de corrección de iluminación para toda la placa, los conjuntos de imágenes no pueden construirse simplemente utilizando 'Image set matching' como 'Order'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:128
 msgid ""
 "Scroll to the bottom of the ‘NamesAndTypes’ to see how the image sets are"
 " constructed ‘Image set matching’ is set to ‘Metadata’"
 msgstr ""
+"- Desplázate hasta la parte inferior de 'NamesAndTypes' para ver cómo se construyen los conjuntos de imágenes. 'Image Set Matching' está configurado en 'Metadata'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:131
 msgid "Each image channel is set to ‘Plate → Well → Site’."
-msgstr ""
+msgstr "   - Cada canal de imagen se configura como 'Placa → Pocillo → Sitio'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:133
 msgid "Each illumination correction function is set to ‘Plate → (None) → (None)’"
-msgstr ""
+msgstr "   - Cada función de corrección de iluminación se configura como 'Placa → (None) → (None)'"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:136
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:111
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:496
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:371
@@ -293,7 +323,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:138
 msgid "*Figure 6: Image set matching using extracted metadata*"
-msgstr ""
+msgstr "*Figura 6: Coincidencia de conjunto de imágenes usando metadatos extraídos*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:140
 msgid ""
@@ -301,6 +331,7 @@ msgid ""
 " this module can be useful when you have more than one plate, or "
 "different movies."
 msgstr ""
+"- Para este ejercicio, el módulo 'Groups' no es necesario, por lo que se configura como 'No'. Este módulo puede ser útil cuando tienes más de una placa o películas diferentes."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:144
 msgid ""
@@ -309,10 +340,11 @@ msgid ""
 "https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-"
 "tutorial."
 msgstr ""
+"- Para obtener más información y ejemplos sobre cómo configurar los módulos de entrada, hemos creado un blog y un tutorial en video que se pueden acceder aquí (en inglés): https://carpenter-singh-lab.broadinstitute.org/blog/input-mod"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:149
 msgid "**3. Examine the output of the CorrectIlluminationApply module. (2min)**"
-msgstr ""
+msgstr "**3. Examina la salida del módulo CorrectIlluminationApply. (2 min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:151
 msgid ""
@@ -322,6 +354,7 @@ msgid ""
 "Pay close attention to the top of the ﬁeld of view to see the greatest "
 "effect of correction."
 msgstr ""
+"Dado que los objetivos de los microscopios no suelen tener un patrón de iluminación completamente uniforme, aplicar una función de corrección de iluminación puede ayudar a mejorar nuestra segmentación y mediciones al compensar esto. Presta atención a la parte superior del campo de visión para ver el mayor efecto de la corrección."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:157
 msgid ""
@@ -329,6 +362,7 @@ msgid ""
 " left corner of the window and hit ‘Step’ to run the "
 "CorrectIlluminationApply module."
 msgstr ""
+"- Ingresa al modo de prueba haciendo clic en el botón 'Start Test Mode' en la esquina inferior izquierda de la ventana y presiona 'Step' para ejecutar el módulo *CorrectIlluminationApply*."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:161
 msgid ""
@@ -336,6 +370,7 @@ msgid ""
 "see that the illumination correction functions show uneven illumination "
 "across the ﬁeld of view."
 msgstr ""
+"- Examina brevemente la salida del módulo *CorrectIlluminationApply*; podrás ver que las funciones de corrección de iluminación muestran una iluminación desigual en todo el campo de visión."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:165
 msgid ""
@@ -344,6 +379,7 @@ msgid ""
 " areas of the field of view that are consistently dimmer across many "
 "images."
 msgstr ""
+"- Estas funciones se crearon promediando y suavizando las 3456 imágenes de esta placa, por lo que las áreas tenues en la función de corrección de iluminación son áreas del campo de visión que son consistentemente más tenues en lamyoría de esas imágenes."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:170
 msgid ""
@@ -351,25 +387,27 @@ msgid ""
 "channel are similar, they aren’t identical; each channel in your own "
 "experiments should therefore be illumination corrected independently."
 msgstr ""
+"- También ten en cuenta que, aunque las funciones de corrección de iluminación para cada canal son similares, no son idénticas; por lo tanto, cada canal en tus propios experimentos debe corregirse independientemente."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:175
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:132
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:177
 msgid "*Figure 7: Application of the illumination correction function*"
-msgstr ""
+msgstr "*Figura 7: Aplicación de la función de correción de iluminación*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:179
 msgid "**4. IdentifyPrimaryObjects – Nuclei (10min)**"
-msgstr ""
+msgstr "**4. Identificar objetos primarios - Núcleos (10 min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:181
 msgid ""
 "Next, we’ll take a ﬁrst pass at identifying nuclei and cells in our "
 "initial image."
 msgstr ""
+"A continuación, haremos un primer intento de identificar núcleos y células en nuestra imagen inicial."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:184
 msgid ""
@@ -378,17 +416,19 @@ msgid ""
 "clicking on the ‘+’ sign in the bottom left corner of the CellProfiler "
 "window, which will pop up a small window called ‘Add modules.’."
 msgstr ""
+"- Después del módulo *CorrectIlluminationApply*, agrega un módulo *IdentifyPrimaryObjects* (de la categoría 'Image Processing'). Hazlo haciendo clic en el signo '+' en la esquina inferior izquierda de la ventana de CellProfiler, lo que abrirá una pequeña ventana llamada 'Add modules'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:190
 msgid ""
 "Tip: You can also use the search bar at the top of the ‘Add modules’ "
 "window to search all modules by name."
 msgstr ""
+"   - *Consejo:* También puedes usar la barra de búsqueda en la parte superior de la ventana 'Add modules' para buscar todos los módulos por nombre."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:193
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:145
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:503
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:378
@@ -400,23 +440,24 @@ msgid ""
 "*Figure 8: The Add modules window, modules are divided in categories "
 "based on their function*"
 msgstr ""
+"*Figura 8: La ventana 'Add modules', los módulos se dividen en categorías basados en su función*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:198
 msgid "Create objects called Nuclei by segmenting on the Hoechst channel."
-msgstr ""
+msgstr "- Crea objetos llamados 'Nuclei' segmentando en el canal 'Hoechst':"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:200
 msgid "Select ‘Hoechst’ image as your input image from the drop-down menu."
-msgstr ""
+msgstr "   - Selecciona la imagen 'Hoechst' como tu imagen de entrada desde el menú desplegable."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:203
 msgid "Change the name of the output objects to ‘Nuclei’."
-msgstr ""
+msgstr "   - Cambia el nombre de los objetos de salida a 'Nuclei'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:205
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:251
 msgid "Hit’ Step’ to run the module. How does your segmentation look?"
-msgstr ""
+msgstr "- Presiona 'Step' para ejecutar el módulo. ¿Cómo se ve tu segmentación?"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:207
 msgid ""
@@ -424,52 +465,57 @@ msgid ""
 "colors; green is for accepted objects, orange for objects touching the "
 "border, and pink for objects outside the diameter range."
 msgstr ""
+"- En el panel de visualización de contornos (esquina inferior izquierda) puedes ver tres colores diferentes; el verde es para objetos aceptados, el naranja para objetos que tocan el borde y el magenta para objetos fuera del rango de diámetro."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:211
 msgid ""
 "On the table pane (bottom right) there is useful information that you can"
 " use to adjust your segmentation settings, like the median diameter, and "
 "the threshold."
-msgstr ""
+msgstr "- En el panel de tabla (esquina inferior derecha) hay información útil que puedes usar para ajustar tus configuraciones de segmentación, como el mediana del diámetro y el umbral."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:215
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:161
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:217
 msgid ""
 "*Figure 9: The IdentifyPrimaryObjects module output, you can use the "
 "information in this window to modify your segmentation parameters*"
 msgstr ""
+"*Figura 9: La salida del módulo IdentifyPrimaryObjects, puedes usar la información en esta ventana para modificar tus parámetros de segmentación.*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:221
 msgid ""
 "Use the magnifying glass at the top of the window to zoom in on an area "
 "that was segmented poorly."
 msgstr ""
+"- Usa la lupa en la parte superior de la ventana para hacer zoom en un área que se segmentó mal."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:224
 msgid "**🔴 TO DO**: Improve your segmentation of nuclei:"
-msgstr ""
+msgstr "**🔴 PARA HACER: Mejora tu segmentación de núcleos:**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:226
 msgid ""
 "Select ‘Yes’ for the ‘Use advanced settings?’ option, then change some of"
 " the parameters:"
 msgstr ""
+"   - Selecciona 'Yes' para la opción 'Use advanced settings?', luego cambia algunos de los parámetros:"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:229
 msgid "Adjust the threshold method, may lead to better (or worse!) results."
 msgstr ""
+"      - Ajusta el método de umbralización ('Thresholding method'). Esto puede dar mejores (o peores!) resultados."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:232
 msgid "Adjust the declumping settings."
-msgstr ""
+msgstr "      - Ajusta la configuración de desagrupamiento ('Method to distinguish clumped objects')."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:234
 msgid "Hit ‘Step’ to rerun and see how the changes affect the segmentation."
-msgstr ""
+msgstr "   - Presiona 'Step' para volver a ejecutar y ver cómo los cambios afectan la segmentación."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:237
 msgid ""
@@ -477,14 +523,15 @@ msgid ""
 " to identifying the cells around the nuclei; the identiﬁcation should be "
 "good but doesn’t need to be perfect before you move on."
 msgstr ""
+"   - Ajusta los parámetros de segmentación hasta que sientas que estás listo para pasar a identificar las células alrededor de los núcleos; la identificación debe ser buena, pero no necesita ser *perfecta* antes de avanzar."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:242
 msgid "**IdentifySecondaryObjects – Cells (5min)**"
-msgstr ""
+msgstr "**5. Identificar objetos secundarios - Células (5 min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:244
 msgid "After the IdentifyPrimaryObjects, add an IdentifySecondaryObjects module."
-msgstr ""
+msgstr "- Después de *IdentifyPrimaryObjects*, agrega un módulo *IdentifySecondaryObjects*."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:247
 msgid ""
@@ -492,25 +539,28 @@ msgid ""
 "objects that you just created; select the Ph_golgi image for your input "
 "image, nuclei for input objects and change the name to ‘Cells’."
 msgstr ""
+"- Crea un objeto llamado 'Células' que se basa en los objetos primarios 'Núcleos' que acabas de crear; selecciona la imagen 'Ph_golgi' como tu imagen de entrada, núcleos como objetos de entrada y cambia el nombre a 'Células'."
+"- Presiona 'Step' para ejecutar el módulo. ¿Cómo se ve tu segmentación?"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:253
 msgid ""
 "For this module the outline colors correspond to the object seed (green-"
 "nuclei) and the segmented objects (pink-cell)"
 msgstr ""
+"- Para este módulo, los colores de contorno corresponden a la semilla del objeto (verde-núcleos) y los objetos segmentados (rosa-célula)."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:256
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:190
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:258
 msgid "*Figure 10: The IdentifySecondaryObjects module output*"
-msgstr ""
+msgstr "*Figura 10: La salida del módulo IdentifySecondaryObjects*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:260
 msgid "**🔴 TO DO**: Improve cell segmentation"
-msgstr ""
+msgstr "**🔴 PARA HACER:** Mejora la segmentación celular"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:262
 msgid ""
@@ -518,10 +568,11 @@ msgid ""
 " feel you’re ready to test them on another image; they don’t need to be "
 "perfect."
 msgstr ""
+"   - Examina la segmentación y ajusta los parámetros de segmentación hasta que sientas que estás listo para probarlos en otra imagen; no necesitan ser perfectos."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:266
 msgid "Adjust the threshold method."
-msgstr ""
+msgstr "   - Ajusta el método de umbralización ('Thresholding method')."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:268
 msgid ""
@@ -529,12 +580,14 @@ msgid ""
 "objects (Propagation, Watershed-Image, Distance-N, etc) and, if using "
 "Propagation, the regularization factor."
 msgstr ""
+"   - Prueba los efectos de usar los diversos métodos para identificar objetos secundarios ('Propagation', 'Watershed-Image', 'Distance-N', etc.) y, si usas Propagation, el factor de regularización."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:272
 msgid ""
 "**6. Test the robustness of your segmentation parameters across images "
 "(5min)**"
 msgstr ""
+"**6. Prueba la robustez de tus parámetros de segmentación en varias imágenes (5 min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:274
 msgid ""
@@ -542,105 +595,114 @@ msgid ""
 "parameters for a single image however we aim to create a set of "
 "parameters that can segment cells on all the images on an experiment."
 msgstr ""
+"Es (relativamente) fácil encontrar un buen conjunto de parámetros de segmentación para una sola imagen, sin embargo, nuestro objetivo es crear un conjunto de parámetros que pueda segmentar células en todas las imágenes de un experimento."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:278
 msgid ""
 "To test the parameters, there are two options to change the image you are"
 " working on in Test Mode"
 msgstr ""
+"- Para probar los parámetros, hay dos opciones para cambiar la imagen en la que estás trabajando en el modo de prueba."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:281
 msgid "Click on the ‘Next Image Set’ at the bottom left corner, or"
-msgstr ""
+msgstr "   - Haz clic en 'Next Image Set' en la esquina inferior izquierda, o"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:283
 msgid ""
 "Go to ‘Test’ on the top menu bar → Choose Image Set to bring up a list of"
 " the images in your experiment, select the image you want to test, and "
 "press the ‘OK’ button."
-msgstr ""
+msgstr "   - Ve a 'Test' en la barra de menú superior → 'Choose Image Set' para mostrar una lista de las imágenes en tu experimento, selecciona la imagen que deseas probar y presiona el botón 'OK'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:287
 msgid "Tip: you can also use the Test menu to choose a random image set"
-msgstr ""
+msgstr "      - **Consejo**: también puedes usar el menú de prueba para elegir un conjunto de imágenes al azar ('Coose Random Iage Set')."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:290
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:215
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:292
 msgid "*Figure 11: A section of the ‘Choose Image Set’ menu.*"
-msgstr ""
+msgstr "*Figura 11: Una sección del menu 'Choose Image Set'*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:294
 msgid ""
 "Then run that image in test mode for your ﬁrst 3 modules (through your "
 "IdentifySecondaryObjects step)."
 msgstr ""
+"- Luego, ejecuta esa imagen en modo de prueba para tus primeros 3 módulos (hasta tu paso de *IdentifySecondaryObjects*)."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:297
 msgid "You can do it by clicking the step button, or"
-msgstr ""
+msgstr "   - Puedes hacerlo haciendo clic en el botón de paso, o"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:299
 msgid ""
 "You can add a pause button on the module after IdentifySecondaryObjects "
 "and hit ‘Run’, this will run all modules before the pause."
 msgstr ""
+"   - Puedes agregar un botón de pausa en el módulo después de *IdentifySecondaryObjects* y presionar 'Run', esto ejecutará todos los módulos antes de la pausa."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:303
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:225
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:305
 msgid "*Figure 12: A section of the ‘Analysis modules’ pane.*"
-msgstr ""
+msgstr "*Figura 12: Una sección del panel de módulos de análisis*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:307
 msgid ""
 "Examine the output – did your nuclear and cellular segmentation hold up "
 "compared to the ﬁrst images you looked at?"
 msgstr ""
+"- Examina la salida: ¿se mantuvo tu segmentación nuclear y celular en comparación con las primeras imágenes que observaste?"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:310
 msgid ""
 "**🔴 TO DO**: Adjust the parameters to get comparable results to the first"
 " image. Once your segmentation is good, try it on another image."
 msgstr ""
+"**🔴 PARA HACER: Ajusta los parámetros para obtener resultados comparables a los de la primera imagen. Una vez que tu segmentación sea buena, pruébala en otra imagen.**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:313
 msgid "**7. IdentifyTertiaryObjects- Cytoplasm (2min)**"
-msgstr ""
+msgstr "**7. Identificar objetos terciarios - Citoplasma (2min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:315
 msgid ""
 "After the IdentifySecondaryObjects module, add an IdentifyTertiaryObjects"
 " module."
 msgstr ""
+"- Después del módulo *IdentifySecondaryObjects*, agregar un módulo *IdentifyTertiaryObjects*."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:318
 msgid ""
 "Create an object called Cytoplasm using the Cell and Nuclei objects "
 "you’ve created."
 msgstr ""
+"- Crear un objeto llamado Citoplasma utilizando los objetos Célula y Núcleo que has creado."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:321
 msgid "Select the larger and smaller identified objects from the drop-down menu."
 msgstr ""
+"- Seleccionar los objetos identificados más grandes y más pequeños del menú desplegable."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:324
 msgid "Change the name of the objects to be identified."
-msgstr ""
+msgstr "- Cambiar el nombre de los objetos a identificar."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:326
 msgid "‘Shrink smaller object prior to subtraction?’ should both set to ‘No’."
-msgstr ""
+msgstr "- La opción 'Reducir el tamaño del objeto más pequeño antes de la sustracción' ('Shrink smaller object prior to subtraction?') debe estar configurada en 'No'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:329
 msgid "**8. Examine the steps used to segment the Nucleoli (15min)**"
-msgstr ""
+msgstr "**8. Examinar los pasos utilizados para segmentar los Nucleolos (15min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:331
 msgid ""
@@ -650,6 +712,7 @@ msgid ""
 "exercise, we will use two such modules, but there are other ones you can "
 "explore."
 msgstr ""
+"Hasta ahora, hemos utilizado imágenes no transformadas para la detección de objetos, pero no todos los objetos pueden ser segmentados a partir de imágenes en bruto. CellProfiler contiene una variedad de módulos de procesamiento de imágenes que pueden ayudar en la segmentación. Para este ejercicio, utilizaremos dos de estos módulos, pero hay otros que puedes explorar."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:337
 msgid ""
@@ -657,12 +720,14 @@ msgid ""
 "Look at the output from each to see how the image is transformed to aid "
 "in segmentation."
 msgstr ""
+"Los siguientes 3 módulos tienen que ver con la creación de los objetos Nucleolos. Observa la salida de cada uno para ver cómo la imagen se transforma para ayudar en la segmentación."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:341
 msgid ""
 "After the IdentifyTertiaryObjects module, add an "
 "EnhanceOrSuppressFeatures module."
 msgstr ""
+"- Después del módulo *IdentifyTertiaryObjects*, agregar un módulo *EnhanceOrSuppressFeatures*."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:344
 msgid ""
@@ -671,34 +736,36 @@ msgid ""
 "for nucleoli, we apply this to the RNA channel (Syto) image and call the "
 "output ‘FilteredRNA’."
 msgstr ""
+"- *EnhanceOrSuppressFeatures* es un módulo que ayuda a mejorar partes de una imagen, en este caso, objetos puntuales o 'manchas' (Speckles). Como estamos buscando nucleolos, aplicamos esto a la imagen del canal de ARN ('Syto') y llamamos la salida 'ARN_filtrado'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:349
 msgid "**🔴 TO DO: Enhance nucleoli spots**"
-msgstr ""
+msgstr "**🔴 PARA HACER: Mejorar las spots de los nucleolos**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:351
 msgid "Change the input image from the drop-down menu to ‘Syto’"
-msgstr ""
+msgstr "   - Cambiar la imagen de entrada del menú desplegable a 'Syto'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:353
 msgid "Change the name of the output image to ‘FilteredRNA’"
-msgstr ""
+msgstr "   - Cambiar el nombre de la imagen de salida a 'ARN_filtrado'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:355
 msgid ""
 "Change the feature size to see how this affects the output and find a "
 "value that works well."
 msgstr ""
+"   - Cambiar el 'Feature Size' para ver cómo afecta la salida y encontrar un valor que funcione bien."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:358
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:382
 msgid "See below for an example of results to aim for:"
-msgstr ""
+msgstr "   - Ver a continuación un ejemplo de los resultados a los que se debe apuntar:"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:360
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:267
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:362
 msgid ""
@@ -706,10 +773,11 @@ msgid ""
 " allows you to isolate nucleoli against the nucleoplasmic background "
 "signal.*"
 msgstr ""
+"*Figura 13. La salida del módulo EnhanceOrSuppressFeatures, mejorando la imagen de Syto te permite aislar los nucleolos contra la señal nucleoplásmica de fondo.*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:366
 msgid "After the EnhanceOrSuppressFeatures module, add an MaskImage module."
-msgstr ""
+msgstr "- Después del módulo *EnhanceOrSuppressFeatures*, agregar un módulo *MaskImage*."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:368
 msgid ""
@@ -719,27 +787,30 @@ msgid ""
 "a nucleus. By doing this, we can decrease the likelihood of detecting "
 "cytoplasmic RNA dots."
 msgstr ""
+"- *MaskImage* te permite crear una versión de la imagen 'ARN_filtrado' llamada 'SytoNuclei' donde todos los píxeles excepto los que especifiques se establecen en una intensidad de 0. En este caso, establecemos en 0 cualquier píxel que no esté dentro de un núcleo. Al hacer esto, podemos disminuir la probabilidad de detectar puntos de ARN citoplasmático."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:374
 msgid "**🔴 TO DO: Mask the RNA image to show only the ‘Nuclei’**"
-msgstr ""
+msgstr "   **🔴 PARA HACER: Enmascarar la imagen de ARN para mostrar solo los 'Núcleos'**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:376
 msgid "Change the input image from the drop-down menu to ‘FilteredRNA’"
-msgstr ""
+msgstr "   - Cambiar la imagen de entrada del menú desplegable a 'ARN_filtrado'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:378
 msgid "Change the name of the output image to ‘SytoNuclei’"
-msgstr ""
+msgstr "   - Cambiar el nombre de la imagen de salida a 'SytoNuclei'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:380
 msgid "Use the objects ‘Nuclei’ as the mask."
-msgstr ""
+msgstr "   - Usar los objetos 'Núcleos' como máscara."
+"   - Ver a continuación un ejemplo de los resultados a los que se debe apuntar:"
+
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:384
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:285
 msgid "|image15|"
-msgstr ""
+msgstr "|image15|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:386
 msgid ""
@@ -747,6 +818,7 @@ msgid ""
 "show that the intensity of the pixels outside the nuclei are now set to "
 "0.*"
 msgstr ""
+"*Figura 14. La salida del módulo MaskImage, el contraste se ajustó para mostrar que la intensidad de los píxeles fuera de los núcleos ahora se establece en 0.*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:390
 msgid ""
@@ -755,24 +827,26 @@ msgid ""
 "(i.e., starting point), and are only segmenting based off the intensity "
 "in our ‘SytoNuclei’ image."
 msgstr ""
+"- *IdentifyPrimaryObjects* se utiliza para encontrar los Nucleolos. Esta es una segmentación de objetos primarios porque no estamos utilizando otro objeto como semilla (es decir, punto de inicio) y solo estamos segmentando en función de la intensidad en nuestra imagen 'SytoNuclei'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:395
 msgid "**🔴 TO DO: Segment nucleoli**"
-msgstr ""
+msgstr "**🔴 PARA HACER: Segmentar los nucleolos**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:397
 msgid "Change the input image from the drop-down menu to ‘SytoNuclei’"
-msgstr ""
+msgstr "   - Cambiar la imagen de entrada del menú desplegable a 'SytoNuclei'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:399
 msgid "Change the name of the objects to ‘Nucleoli’"
-msgstr ""
+msgstr "   - Cambiar el nombre de los objetos a 'Nucleolos'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:401
 msgid ""
 "Adjust the segmentation parameters until you are satisfied with the "
 "segmentation results."
 msgstr ""
+"   - Ajustar los parámetros de segmentación hasta que estés satisfecho con los resultados de la segmentación."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:404
 msgid ""
@@ -782,51 +856,58 @@ msgid ""
 "image, but also looks accurate on the unprocessed image as well. This is "
 "not strictly necessary but can be a nice “sanity check”."
 msgstr ""
+"**🔴 PARA HACER**: Agregar un módulo *OverlayOutlines* en este punto para superponer los nucleolos identificados en la imagen original de 'Syto' para asegurarte de que la segmentación no solo coincida con la imagen 'SytoNuclei' mejorada con manchas, sino que también se vea precisa en la imagen sin procesar. Esto no es estrictamente necesario, pero puede ser un buen punto de control."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:411
 msgid ""
 "Goal: display outlines of your nucleoli and your nuclei on the "
 "unprocessed ‘Syto’ image."
 msgstr ""
+"   - Objetivo: mostrar contornos de tus nucleolos y tus núcleos en la imagen sin procesar de 'Syto'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:414
 msgid ""
 "Here’s an example of what that could look like (red=nuclei, "
 "green=nucleoli):"
 msgstr ""
+"   - Aquí tienes un ejemplo de cómo podría verse (rojo = núcleos, verde = nucleolos):"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:416
 msgid ""
 "Tip: you can use a similar strategy to segment mitochondria using the "
 "‘Mito’ channel"
 msgstr ""
+"   - Consejo: puedes usar una estrategia similar para segmentar las mitocondrias utilizando el canal 'Mito'"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:419
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:307
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:421
 msgid ""
 "*Figure 15. The OverlayOutlines module output, all detected nucleoli are "
 "within the nuclei.*"
 msgstr ""
+"*Figura 15. La salida del módulo OverlayOutlines, todos los nucleolos detectados están dentro de los núcleos.*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:424
 msgid "**9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**"
-msgstr ""
+msgstr "**9. 🔴 PARA HACER: Agregar módulos de medición a tu pipeline (10min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:426
 msgid ""
 "After your segmentation of the nucleoli, add as many object measurement "
 "modules as you would like, we have added a MeasureObjectIntensity."
 msgstr ""
+"- Después de la segmentación de los nucleolos, agregar tantos módulos de medición de objetos como desees, hemos agregado un *MeasureObjectIntensity*."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:430
 msgid ""
 "Some suggested modules to add: MeasureObjectSizeShape, "
 "MeasureObjectIntensity, MeasureGranularity, MeasureObjectNeighbors."
 msgstr ""
+"- Algunos módulos sugeridos para agregar: *MeasureObjectSizeShape*, *MeasureObjectIntensity*, *MeasureGranularity* y *MeasureObjectNeighbors*."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:433
 msgid ""
@@ -840,25 +921,27 @@ msgid ""
 "and/or slow so should not be added for this example pipeline in the "
 "interest of pipeline runtime."
 msgstr ""
+"- ¿Qué objetos crees que serían valiosos para medir con cada uno de estos módulos? ¿En qué canales medirías tus objetos? Para un experimento típico de Cell Painting, agregarías tantas mediciones como sea posible, pero eso no es necesario aquí; sin embargo, asegúrate de que cada objeto reciba al menos algunas mediciones."
+"**Nota**: Si bien *MeasureCorrelation*, *MeasureTexture* y *MeasureObjectIntensityDistribution* pueden producir datos valiosos para generar el perfil morfológico de la imagen, pueden ser intensivos en el uso de memoria y/o lentos, por lo que no deben agregarse a este ejemplo en pos del tiempo de ejecución del pipeline."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:444
 msgid "**10. RelateObjects (5min)**"
-msgstr ""
+msgstr "**10. Relacionar objetos (5min)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:446
 msgid ""
 "**🔴 TO DO:** Add a RelateObjects module and configure it to relate "
 "‘Nucleoli’ to ‘Nuclei’."
-msgstr ""
+msgstr "**🔴 PARA HACER:** Agregar un módulo *RelateObject* y configurarlo para relacionar 'Nucleolos' con 'Núcleos'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:449
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:327
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:451
 msgid "*Figure 16: The RelateObject module output.*"
-msgstr ""
+msgstr "*Figura 16: La salida del módulo RelateObject.*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:453
 msgid ""
@@ -868,862 +951,32 @@ msgid ""
 "of the parent (e.g., how far is each nucleolus from the center of the "
 "nucleus)."
 msgstr ""
+"Relacionar los objetos te permite crear promedios por padre (por ejemplo, para esta célula, ¿cuál es el tamaño promedio de una mitocondria individual?) y calcular distancias desde los objetos secundarios al borde y/o al centro del objeto 'padre' (por ejemplo, ¿qué tan lejos está cada nucleolo del centro del núcleo?)."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:459
 msgid "**11. Run the pipeline (optional)**"
-msgstr ""
+msgstr "**11. Ejecutar el pipeline (opcional)**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:461
 msgid "If you have time, add a ExportToSpreadsheet module at the end."
-msgstr ""
+msgstr "- Si tienes tiempo, agrega un módulo Exportar a hoja de cálculo al final."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:463
 msgid "Exit test mode."
-msgstr ""
+msgstr "- Salir del modo de prueba ('Exit Test Mode')."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:465
 msgid "Click on ‘Output Settings’ button at the bottom left corner."
-msgstr ""
+msgstr "- Haz clic en el botón 'Output Settings' en la esquina inferior izquierda."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:467
 msgid "Change the default output folder."
-msgstr ""
+msgstr "- Cambia la carpeta de salida predeterminada al directorio donde desees guardar los archivos de salida."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:469
 msgid "Click on ‘Analyze Images’ button at the bottom left corner."
-msgstr ""
+msgstr "- Haz clic en el botón 'Analyze Images' en la esquina inferior izquierda."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:471
 msgid "Explore the spreadsheets created for each object."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:2
-msgid "Segmentación y análisis de organelas:"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:5
-msgid "Un ejercicio de computadora usando CellProfiler"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:8
-msgid "Beth Cimini, Barbara Diaz-Rohrer y Rebecca Senft"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:13
-msgid "**Sobre las imágenes de este ejercicio:**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:15
-msgid ""
-"Las imágenes en este experimento provienen de la `Broad Bioimage "
-"Benchmark Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. "
-"Se tratan de campos de células U2OS con cinco canales (ensayo de Cell "
-"Painting; ver Gustafsdottir et al., 2013)"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:22
-msgid "*Figura 1: Imágenes y canales de un ensayo de Cell Painting.*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:24
-msgid "**Objetivos de este ejercicio:**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:26
-msgid ""
-"Este ejercicio te permitirá practicar la búsqueda de parámetros de "
-"segmentación para segmentación para objetos \"padres\" más grandes "
-"(núcleo, célula y citoplasma) y te mostrará cómo extraer características "
-"más pequeñas de tu imagen segmentando organelas dentro de las células y "
-"los núcleos. También te mostrará cómo utilizar el módulo *RelateObjects* "
-"para que puedas relacionar los recuentos medios, las distancias y las "
-"medidas de las organelas \"hijas\" más pequeñas con sus objetos "
-"\"padres\" más grandes (es decir, la célula y el núcleo)."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:35
-msgid "**Materiales necesarios para este ejercicio:**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:37
-msgid ""
-"Las imágenes están contenidas en la carpeta **images**; estas 50 imágenes"
-" (10 imágenes en 5 canales) representan 5 pocillos tratados de un "
-"experimento de una placa de 384 pocillos."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:39
-msgid "**Instrucciones del ejercicio**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:41
-msgid ""
-"Lee los pasos siguientes y sigue las instrucciones que se indican. Los "
-"pasos en los que debe encontrar una solución están marcados con **🔴 PARA "
-"HACER.**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:46
-msgid "**1. Cargar el pipeline de inicio (2 min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:48
-msgid ""
-"Inicia CellProﬁler haciendo doble clic en el icono del escritorio: "
-"|image2|"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:50
-msgid ""
-"Arrastra y suelta el archivo 'segmentation_start.cppipe' en el panel "
-"'Analysis modules' de la izquierda."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:52
-msgid "Aparecerán 2 módulos."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:55
-msgid "**2. Configurar los módulos de entrada (10min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:57
-msgid ""
-"Los cuatro módulos de entrada (*Images, Metadata, NamesAndTypes y "
-"Groups*) son cruciales para cualquier pipeline de CellProfiler porque "
-"definen cómo las imágenes se cargan y organizan en CellProfiler."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:59
-msgid ""
-"Haz clic en el módulo *'Images'* en la esquina superior izquierda de la "
-"ventana de CellProfiler."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:61
-msgid ""
-"Arrastra y suelta la carpeta 'images' en el panel 'Drag and drop files "
-"here'. Debería poblarse automáticamente. Observa que las imágenes de "
-"corrección de iluminación (con extensión '.npy') están incluidas en este "
-"conjunto de datos."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:63
-msgid ""
-"Observa que si la opción 'Filter images?' está configurado en 'Images "
-"only', los archivos '.npy' aparecen en gris."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:67
-msgid ""
-"*Figura 2: El módulo de Imágenes, los archivos en gris no estarán "
-"disponibles para los módulos posteriores*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:69
-msgid ""
-"**🔴 PARA HACER**: Personaliza el filtro para **incluir** los archivos "
-"'.npy'."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:71
-msgid ""
-"En el módulo 'Metadata', ya deberían estar presentes y configurados tres "
-"métodos de extracción de metadatos:"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:73
-msgid ""
-"El primero extrae metadatos de Pocillo, Sitio y Canal de todos los "
-"archivos de imagen, excepto de las imágenes de corrección de iluminación "
-"('.npy')."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:75
-msgid "El segundo extrae metadatos de Placa de la carpeta de imágenes."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:77
-msgid ""
-"El tercero extrae metadatos de Placa de las funciones de corrección de "
-"iluminación."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:79
-msgid ""
-"Haz clic en la lupa al final del cuadro de expresión regular para cada "
-"método de extracción para ver cómo funciona."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:81
-msgid ""
-"Regresa al módulo 'Metadata' y presiona 'Update'. Ahora deberías ver "
-"varias columnas, revísalas para asegurarte de que tengas 5 números de "
-"canal diferentes, 1 placa, 2 sitios y 5 pocillos diferentes."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:85
-msgid ""
-"*Figura 3: El módulo de Metadatos, las columnas en la tabla corresponden "
-"a categorías de metadatos*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:87
-msgid ""
-"En el módulo 'NamesAndTypes', asignamos nombres a las imágenes y "
-"configuramos conjuntos de imágenes (es decir, todos los diferentes "
-"canales para un campo). El mapeo de canales aquí es un poco complicado: "
-"tenemos un conjunto único de imágenes de corrección de iluminación (un "
-"archivo '.npy' por canal) que se asigna a cada pocillo y sitio. "
-"Utilizaremos los metadatos que extrajimos en el módulo anterior para "
-"hacer posible esa asociación."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:89
-msgid ""
-"El módulo 'NamesAndTypes ya está completamente configurado, pero "
-"desplázate y revisa la configuración para ver las dos formas diferentes "
-"de mapear imágenes a nombres de canal que se demuestran aquí. (Hay varias"
-" otras formas de crear mapeos correctos, pero estos pueden servir como un"
-" ejemplo útil para consultar en tu propio trabajo)."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:91
-msgid ""
-"Los archivos de imagen '.tif' se asignan un nombre mediante los Metadatos"
-" extraídos en el módulo anterior (específicamente ChannelNumber)"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:95
-msgid "*Figura 4: Mapeo de imágenes usando los metadatos extraídos*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:97
-msgid ""
-"Las funciones de corrección de iluminación '.npy' se asignan un nombre "
-"basado en una cadena única en el nombre del archivo (como 'IllumER')"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:101
-msgid "*Figura 5: Mapeo de imágenes usando el nombre del archivo*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:103
-msgid ""
-"Dado que solo hay un conjunto de funciones de corrección de iluminación "
-"para toda la placa, los conjuntos de imágenes no pueden construirse "
-"simplemente utilizando 'Image set matching' como 'Order'."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:105
-msgid ""
-"Desplázate hasta la parte inferior de 'NamesAndTypes' para ver cómo se "
-"construyen los conjuntos de imágenes. 'Image Set Matching' está "
-"configurado en 'Metadata'."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:107
-msgid "Cada canal de imagen se configura como 'Placa → Pocillo → Sitio'."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:109
-msgid ""
-"Cada función de corrección de iluminación se configura como 'Placa → "
-"(None) → (None)'"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:113
-msgid ""
-"*Figura 6: Coincidencia de conjunto de imágenes usando metadatos "
-"extraídos*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:115
-msgid ""
-"Para este ejercicio, el módulo 'Groups' no es necesario, por lo que se "
-"configura como 'No'. Este módulo puede ser útil cuando tienes más de una "
-"placa o películas diferentes."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:117
-msgid ""
-"Para obtener más información y ejemplos sobre cómo configurar los módulos"
-" de entrada, hemos creado un blog y un tutorial en video que se pueden "
-"acceder aquí (en inglés): https://carpenter-singh-"
-"lab.broadinstitute.org/blog/input-mod"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:120
-msgid "**3. Examina la salida del módulo CorrectIlluminationApply. (2 min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:122
-msgid ""
-"Dado que los objetivos de los microscopios no suelen tener un patrón de "
-"iluminación completamente uniforme, aplicar una función de corrección de "
-"iluminación puede ayudar a mejorar nuestra segmentación y mediciones al "
-"compensar esto. Presta atención a la parte superior del campo de visión "
-"para ver el mayor efecto de la corrección."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:124
-msgid ""
-"Ingresa al modo de prueba haciendo clic en el botón \"Start Test Mode\"en"
-" la esquina inferior izquierda de la ventana y presiona \"Step\" para "
-"ejecutar el módulo *CorrectIlluminationApply*."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:126
-msgid ""
-"Examina brevemente la salida del módulo *CorrectIlluminationApply*; "
-"podrás ver que las funciones de corrección de iluminación muestran una "
-"iluminación desigual en todo el campo de visión."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:128
-msgid ""
-"Estas funciones se crearon promediando y suavizando las 3456 imágenes de "
-"esta placa, por lo que las áreas tenues en la función de corrección de "
-"iluminación son áreas del campo de visión que son consistentemente más "
-"tenues en lamyoría de esas imágenes."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:130
-msgid ""
-"También ten en cuenta que, aunque las funciones de corrección de "
-"iluminación para cada canal son similares, no son idénticas; por lo "
-"tanto, cada canal en tus propios experimentos debe corregirse "
-"independientemente."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:134
-msgid "*Figura 7: Aplicación de la función de correción de iluminación*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:137
-msgid "**4. Identificar objetos primarios - Núcleos (10 min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:139
-msgid ""
-"A continuación, haremos un primer intento de identificar núcleos y "
-"células en nuestra imagen inicial."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:141
-msgid ""
-"Después del módulo *CorrectIlluminationApply*, agrega un módulo "
-"*IdentifyPrimaryObjects* (de la categoría \"Image Processing\"). Hazlo "
-"haciendo clic en el signo \"+\" en la esquina inferior izquierda de la "
-"ventana de CellProfiler, lo que abrirá una pequeña ventana llamada \"Add "
-"modules\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:143
-msgid ""
-"*Consejo:* También puedes usar la barra de búsqueda en la parte superior "
-"de la ventana \"Add modules\" para buscar todos los módulos por nombre."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:147
-msgid ""
-"*Figura 8: La ventana \"Add modules\", los módulos se dividen en "
-"categorías basados en su función*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:149
-msgid "Crea objetos llamados \"Nuclei\" segmentando en el canal \"Hoechst\":"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:151
-msgid ""
-"Selecciona la imagen \"Hoechst\" como tu imagen de entrada desde el menú "
-"desplegable."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:153
-msgid "Cambia el nombre de los objetos de salida a \"Nuclei\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:155
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:186
-msgid "Presiona \"Step\" para ejecutar el módulo. ¿Cómo se ve tu segmentación?"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:157
-msgid ""
-"En el panel de visualización de contornos (esquina inferior izquierda) "
-"puedes ver tres colores diferentes; el verde es para objetos aceptados, "
-"el naranja para objetos que tocan el borde y el magenta para objetos "
-"fuera del rango de diámetro."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:159
-msgid ""
-"En el panel de tabla (esquina inferior derecha) hay información útil que "
-"puedes usar para ajustar tus configuraciones de segmentación, como el "
-"mediana del diámetro y el umbral."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:163
-msgid ""
-"*Figura 9: La salida del módulo IdentifyPrimaryObjects, puedes usar la "
-"información en esta ventana para modificar tus parámetros de "
-"segmentación.*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:165
-msgid ""
-"Usa la lupa en la parte superior de la ventana para hacer zoom en un área"
-" que se segmentó mal."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:167
-msgid "**🔴 PARA HACER: Mejora tu segmentación de núcleos:**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:169
-msgid ""
-"Selecciona \"Yes\" para la opción \"Use advanced settings?\", luego "
-"cambia algunos de los parámetros:"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:171
-msgid ""
-"Ajusta el método de umbralización (Thresholding method). Esto puede dar "
-"mejores (o peores!) resultados."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:173
-msgid ""
-"Ajusta la configuración de desagrupamiento (\"Method to distinguish "
-"clumped objects\")."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:175
-msgid ""
-"Presiona \"Step\" para volver a ejecutar y ver cómo los cambios afectan "
-"la segmentación."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:177
-msgid ""
-"Ajusta los parámetros de segmentación hasta que sientas que estás listo "
-"para pasar a identificar las células alrededor de los núcleos; la "
-"identificación debe ser buena, pero no necesita ser *perfecta* antes de "
-"avanzar."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:180
-msgid "**5. Identificar objetos secundarios - Células (5 min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:182
-msgid ""
-"Después de *IdentifyPrimaryObjects*, agrega un módulo "
-"*IdentifySecondaryObjects*."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:184
-msgid ""
-"Crea un objeto llamado \"Células\" que se basa en los objetos primarios "
-"\"Núcleos\" que acabas de crear; selecciona la imagen \"Ph_golgi\" como "
-"tu imagen de entrada, núcleos como objetos de entrada y cambia el nombre "
-"a \"Células\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:188
-msgid ""
-"Para este módulo, los colores de contorno corresponden a la semilla del "
-"objeto (verde-núcleos) y los objetos segmentados (rosa-célula)."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:192
-msgid "*Figura 10: La salida del módulo IdentifySecondaryObjects*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:194
-msgid "**🔴 PARA HACER:** Mejora la segmentación celular"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:196
-msgid ""
-"Examina la segmentación y ajusta los parámetros de segmentación hasta que"
-" sientas que estás listo para probarlos en otra imagen; no necesitan ser "
-"perfectos."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:198
-msgid "Ajusta el método de umbralización (Thresholding method)."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:200
-msgid ""
-"Prueba los efectos de usar los diversos métodos para identificar objetos "
-"secundarios (Propagation, Watershed-Image, Distance-N, etc.) y, si usas "
-"Propagation, el factor de regularización."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:203
-msgid ""
-"**6. Prueba la robustez de tus parámetros de segmentación en varias "
-"imágenes (5 min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:205
-msgid ""
-"Es (relativamente) fácil encontrar un buen conjunto de parámetros de "
-"segmentación para una sola imagen, sin embargo, nuestro objetivo es crear"
-" un conjunto de parámetros que pueda segmentar células en todas las "
-"imágenes de un experimento."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:207
-msgid ""
-"Para probar los parámetros, hay dos opciones para cambiar la imagen en la"
-" que estás trabajando en el modo de prueba."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:209
-msgid "Haz clic en \"Next Image Set\" en la esquina inferior izquierda, o"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:211
-msgid ""
-"Ve a \"Test\" en la barra de menú superior → \"Choose Image Set\" para "
-"mostrar una lista de las imágenes en tu experimento, selecciona la imagen"
-" que deseas probar y presiona el botón \"OK\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:213
-msgid ""
-"Consejo: también puedes usar el menú de prueba para elegir un conjunto de"
-" imágenes al azar (\"Coose Random Iage Set\")."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:217
-msgid "*Figura 11: Una sección del menu ‘Choose Image Set’*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:219
-msgid ""
-"Luego, ejecuta esa imagen en modo de prueba para tus primeros 3 módulos "
-"(hasta tu paso de *IdentifySecondaryObjects*)."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:221
-msgid "Puedes hacerlo haciendo clic en el botón de paso, o"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:223
-msgid ""
-"Puedes agregar un botón de pausa en el módulo después de "
-"*IdentifySecondaryObjects* y presionar \"Run\", esto ejecutará todos los "
-"módulos antes de la pausa."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:227
-msgid "*Figura 12: Una sección del panel de módulos de análisis*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:229
-msgid ""
-"Examina la salida: ¿se mantuvo tu segmentación nuclear y celular en "
-"comparación con las primeras imágenes que observaste?"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:231
-msgid ""
-"**🔴 PARA HACER: Ajusta los parámetros para obtener resultados comparables"
-" a los de la primera imagen. Una vez que tu segmentación sea buena, "
-"pruébala en otra imagen.**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:234
-msgid "**7. Identificar objetos terciarios - Citoplasma (2min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:236
-msgid ""
-"Después del módulo *IdentifySecondaryObjects*, agregar un módulo "
-"*IdentifyTertiaryObjects*."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:238
-msgid ""
-"Crear un objeto llamado Citoplasma utilizando los objetos Célula y Núcleo"
-" que has creado."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:240
-msgid ""
-"Seleccionar los objetos identificados más grandes y más pequeños del menú"
-" desplegable."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:242
-msgid "Cambiar el nombre de los objetos a identificar."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:244
-msgid ""
-"La opción \"Reducir el tamaño del objeto más pequeño antes de la "
-"sustracción\" (\"Shrink smaller object prior to subtraction?\") debe "
-"estar configurada en \"No\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:247
-msgid "**8. Examinar los pasos utilizados para segmentar los Nucleolos (15min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:249
-msgid ""
-"Hasta ahora, hemos utilizado imágenes no transformadas para la detección "
-"de objetos, pero no todos los objetos pueden ser segmentados a partir de "
-"imágenes en bruto. CellProfiler contiene una variedad de módulos de "
-"procesamiento de imágenes que pueden ayudar en la segmentación. Para este"
-" ejercicio, utilizaremos dos de estos módulos, pero hay otros que puedes "
-"explorar."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:251
-msgid ""
-"Los siguientes 3 módulos tienen que ver con la creación de los objetos "
-"Nucleolos. Observa la salida de cada uno para ver cómo la imagen se "
-"transforma para ayudar en la segmentación."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:253
-msgid ""
-"Después del módulo *IdentifyTertiaryObjects*, agregar un módulo "
-"*EnhanceOrSuppressFeatures*."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:255
-msgid ""
-"*EnhanceOrSuppressFeatures* es un módulo que ayuda a mejorar partes de "
-"una imagen, en este caso, objetos puntuales o \"manchas\" (Speckles). "
-"Como estamos buscando nucleolos, aplicamos esto a la imagen del canal de "
-"ARN (\"Syto\") y llamamos la salida \"ARN_filtrado\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:257
-msgid "**🔴 PARA HACER: Mejorar las spots de los nucleolos**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:259
-msgid "Cambiar la imagen de entrada del menú desplegable a \"Syto\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:261
-msgid "Cambiar el nombre de la imagen de salida a \"ARN_filtrado\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:263
-msgid ""
-"Cambiar el \"Feature Size\" para ver cómo afecta la salida y encontrar un"
-" valor que funcione bien."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:265
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:283
-msgid "Ver a continuación un ejemplo de los resultados a los que se debe apuntar:"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:269
-msgid ""
-"*Figura 13. La salida del módulo EnhanceOrSuppressFeatures, mejorando la "
-"imagen de Syto te permite aislar los nucleolos contra la señal "
-"nucleoplásmica de fondo.*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:271
-msgid ""
-"Después del módulo *EnhanceOrSuppressFeatures*, agregar un módulo "
-"*MaskImage*."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:273
-msgid ""
-"*MaskImage* te permite crear una versión de la imagen \"ARN_filtrado\" "
-"llamada \"SytoNuclei\" donde todos los píxeles excepto los que "
-"especifiques se establecen en una intensidad de 0. En este caso, "
-"establecemos en 0 cualquier píxel que no esté dentro de un núcleo. Al "
-"hacer esto, podemos disminuir la probabilidad de detectar puntos de ARN "
-"citoplasmático."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:275
-msgid ""
-"**🔴 PARA HACER: Enmascarar la imagen de ARN para mostrar solo los "
-"'Núcleos'**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:277
-msgid "Cambiar la imagen de entrada del menú desplegable a \"ARN_filtrado\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:279
-msgid "Cambiar el nombre de la imagen de salida a \"SytoNuclei\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:281
-msgid "Usar los objetos 'Núcleos' como máscara."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:287
-msgid ""
-"*Figura 14. La salida del módulo MaskImage, el contraste se ajustó para "
-"mostrar que la intensidad de los píxeles fuera de los núcleos ahora se "
-"establece en 0.*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:289
-msgid ""
-"*IdentifyPrimaryObjects* se utiliza para encontrar los Nucleolos. Esta es"
-" una segmentación de objetos primarios porque no estamos utilizando otro "
-"objeto como semilla (es decir, punto de inicio) y solo estamos "
-"segmentando en función de la intensidad en nuestra imagen 'SytoNuclei'."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:291
-msgid "**🔴 PARA HACER: Segmentar los nucleolos**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:293
-msgid "Cambiar la imagen de entrada del menú desplegable a \"SytoNuclei\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:295
-msgid "Cambiar el nombre de los objetos a \"Nucleolos\"."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:297
-msgid ""
-"Ajustar los parámetros de segmentación hasta que estés satisfecho con los"
-" resultados de la segmentación."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:299
-msgid ""
-"**🔴 PARA HACER**: Agregar un módulo *OverlayOutlines* en este punto para "
-"superponer los nucleolos identificados en la imagen original de \"Syto\" "
-"para asegurarte de que la segmentación no solo coincida con la imagen "
-"'SytoNuclei' mejorada con manchas, sino que también se vea precisa en la "
-"imagen sin procesar. Esto no es estrictamente necesario, pero puede ser "
-"un buen punto de control."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:301
-msgid ""
-"Objetivo: mostrar contornos de tus nucleolos y tus núcleos en la imagen "
-"sin procesar de 'Syto'."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:303
-msgid ""
-"Aquí tienes un ejemplo de cómo podría verse (rojo = núcleos, verde = "
-"nucleolos):"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:305
-msgid ""
-"Consejo: puedes usar una estrategia similar para segmentar las "
-"mitocondrias utilizando el canal 'Mito'"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:309
-msgid ""
-"*Figura 15. La salida del módulo OverlayOutlines, todos los nucleolos "
-"detectados están dentro de los núcleos.*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:312
-msgid "**9. 🔴 PARA HACER: Agregar módulos de medición a tu pipeline (10min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:314
-msgid ""
-"Después de la segmentación de los nucleolos, agregar tantos módulos de "
-"medición de objetos como desees, hemos agregado un "
-"*MeasureObjectIntensity*."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:316
-msgid ""
-"Algunos módulos sugeridos para agregar: *MeasureObjectSizeShape*, "
-"*MeasureObjectIntensity*, *MeasureGranularity* y "
-"*MeasureObjectNeighbors*."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:318
-msgid ""
-"¿Qué objetos crees que serían valiosos para medir con cada uno de estos "
-"módulos? ¿En qué canales medirías tus objetos? Para un experimento típico"
-" de Cell Painting, agregarías tantas mediciones como sea posible, pero "
-"eso no es necesario aquí; sin embargo, asegúrate de que cada objeto "
-"reciba al menos algunas mediciones."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:320
-msgid ""
-"Nota: Si bien *MeasureCorrelation*, *MeasureTexture* y "
-"*MeasureObjectIntensityDistribution* pueden producir datos valiosos para "
-"generar el perfil morfológico de la imagen, pueden ser intensivos en el "
-"uso de memoria y/o lentos, por lo que no deben agregarse a este ejemplo "
-"en pos del tiempo de ejecución del pipeline."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:323
-msgid "**10. Relacionar objetos (5min)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:325
-msgid ""
-"**🔴 PARA HACER:** Agregar un módulo *RelateObject* y configurarlo para "
-"relacionar 'Nucleolos' con 'Núcleos'."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:329
-msgid "*Figura 16: La salida del módulo RelateObject.*"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:331
-msgid ""
-"Relacionar los objetos te permite crear promedios por padre (por ejemplo,"
-" para esta célula, ¿cuál es el tamaño promedio de una mitocondria "
-"individual?) y calcular distancias desde los objetos secundarios al borde"
-" y/o al centro del objeto \"padre\" (por ejemplo, ¿qué tan lejos está "
-"cada nucleolo del centro del núcleo?)."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:334
-msgid "**11. Ejecutar el pipeline (opcional)**"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:336
-msgid "Si tienes tiempo, agrega un módulo Exportar a hoja de cálculo al final."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:338
-msgid "Salir del modo de prueba (Exit Test Mode)."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:340
-msgid "Haz clic en el botón 'Output Settings' en la esquina inferior izquierda."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:342
-msgid ""
-"Cambia la carpeta de salida predeterminada al directorio donde desees "
-"guardar los archivos de salida."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:344
-msgid "Haz clic en el botón 'Analyze Images' en la esquina inferior izquierda."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:346
-msgid "Explora las hojas de cálculo creadas para cada objeto."
-msgstr ""
-
+msgstr "- Explora las hojas de cálculo creadas para cada objeto."
