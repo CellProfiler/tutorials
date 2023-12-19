@@ -31,7 +31,9 @@ msgstr "Un ejercicio de computadora usando CellProfiler"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:6
 msgid "Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft"
-msgstr "Beth Cimini, Barbara Diaz-Rohrer y Rebecca Senft"
+msgstr ""
+"Beth Cimini, Barbara Diaz-Rohrer y Rebecca Senft; traducido por Esteban "
+"Miglietta"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.rst:8
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation_SPA.rst:11
