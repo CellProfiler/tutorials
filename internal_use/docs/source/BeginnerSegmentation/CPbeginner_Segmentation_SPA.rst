@@ -24,12 +24,12 @@ Painting; ver Gustafsdottir et al., 2013)
 **Objetivos de este ejercicio:**
 
 Este ejercicio te permitirá practicar la búsqueda de parámetros de 
-segmentación para segmentación para objetos "padres" más grandes (núcleo, 
+segmentación para segmentación para objetos 'padres' más grandes (núcleo, 
 célula y citoplasma) y te mostrará cómo extraer características más 
 pequeñas de tu imagen segmentando organelas dentro de las células y los 
 núcleos. También te mostrará cómo utilizar el módulo *RelateObjects* para 
 que puedas relacionar los recuentos medios, las distancias y las medidas 
-de las organelas "hijas" más pequeñas con sus objetos "padres" más grandes 
+de las organelas 'hijas' más pequeñas con sus objetos 'padres' más grandes 
 (es decir, la célula y el núcleo).
 
 **Materiales necesarios para este ejercicio:**
@@ -121,7 +121,7 @@ Los cuatro módulos de entrada (*Images, Metadata, NamesAndTypes y Groups*) son 
 
 Dado que los objetivos de los microscopios no suelen tener un patrón de iluminación completamente uniforme, aplicar una función de corrección de iluminación puede ayudar a mejorar nuestra segmentación y mediciones al compensar esto. Presta atención a la parte superior del campo de visión para ver el mayor efecto de la corrección.
 
-- Ingresa al modo de prueba haciendo clic en el botón "Start Test Mode"en la esquina inferior izquierda de la ventana y presiona "Step" para ejecutar el módulo *CorrectIlluminationApply*.
+- Ingresa al modo de prueba haciendo clic en el botón 'Start Test Mode'en la esquina inferior izquierda de la ventana y presiona 'Step' para ejecutar el módulo *CorrectIlluminationApply*.
 
 - Examina brevemente la salida del módulo *CorrectIlluminationApply*; podrás ver que las funciones de corrección de iluminación muestran una iluminación desigual en todo el campo de visión.
 
@@ -138,21 +138,21 @@ Dado que los objetivos de los microscopios no suelen tener un patrón de ilumina
 
 A continuación, haremos un primer intento de identificar núcleos y células en nuestra imagen inicial.
 
-- Después del módulo *CorrectIlluminationApply*, agrega un módulo *IdentifyPrimaryObjects* (de la categoría "Image Processing"). Hazlo haciendo clic en el signo "+" en la esquina inferior izquierda de la ventana de CellProfiler, lo que abrirá una pequeña ventana llamada "Add modules".
+- Después del módulo *CorrectIlluminationApply*, agrega un módulo *IdentifyPrimaryObjects* (de la categoría 'Image Processing'). Hazlo haciendo clic en el signo '+' en la esquina inferior izquierda de la ventana de CellProfiler, lo que abrirá una pequeña ventana llamada 'Add modules'.
 
-   - *Consejo:* También puedes usar la barra de búsqueda en la parte superior de la ventana "Add modules" para buscar todos los módulos por nombre.
+   - *Consejo:* También puedes usar la barra de búsqueda en la parte superior de la ventana 'Add modules' para buscar todos los módulos por nombre.
 
 |image9|
 
-*Figura 8: La ventana "Add modules", los módulos se dividen en categorías basados en su función*
+*Figura 8: La ventana 'Add modules', los módulos se dividen en categorías basados en su función*
 
-- Crea objetos llamados "Nuclei" segmentando en el canal "Hoechst":
+- Crea objetos llamados 'Nuclei' segmentando en el canal 'Hoechst':
 
-   - Selecciona la imagen "Hoechst" como tu imagen de entrada desde el menú desplegable.
+   - Selecciona la imagen 'Hoechst' como tu imagen de entrada desde el menú desplegable.
 
-   - Cambia el nombre de los objetos de salida a "Nuclei".
+   - Cambia el nombre de los objetos de salida a 'Nuclei'.
 
-- Presiona "Step" para ejecutar el módulo. ¿Cómo se ve tu segmentación?
+- Presiona 'Step' para ejecutar el módulo. ¿Cómo se ve tu segmentación?
 
 - En el panel de visualización de contornos (esquina inferior izquierda) puedes ver tres colores diferentes; el verde es para objetos aceptados, el naranja para objetos que tocan el borde y el magenta para objetos fuera del rango de diámetro.
 
@@ -166,13 +166,13 @@ A continuación, haremos un primer intento de identificar núcleos y células en
 
 **🔴 PARA HACER: Mejora tu segmentación de núcleos:**
 
-   - Selecciona "Yes" para la opción "Use advanced settings?", luego cambia algunos de los parámetros:
+   - Selecciona 'Yes' para la opción 'Use advanced settings?', luego cambia algunos de los parámetros:
 
       - Ajusta el método de umbralización (Thresholding method). Esto puede dar mejores (o peores!) resultados.
 
-      - Ajusta la configuración de desagrupamiento ("Method to distinguish clumped objects").
+      - Ajusta la configuración de desagrupamiento ('Method to distinguish clumped objects').
 
-   - Presiona "Step" para volver a ejecutar y ver cómo los cambios afectan la segmentación.
+   - Presiona 'Step' para volver a ejecutar y ver cómo los cambios afectan la segmentación.
 
    - Ajusta los parámetros de segmentación hasta que sientas que estás listo para pasar a identificar las células alrededor de los núcleos; la identificación debe ser buena, pero no necesita ser *perfecta* antes de avanzar.
 
@@ -181,9 +181,9 @@ A continuación, haremos un primer intento de identificar núcleos y células en
 
 - Después de *IdentifyPrimaryObjects*, agrega un módulo *IdentifySecondaryObjects*.
 
-- Crea un objeto llamado "Células" que se basa en los objetos primarios "Núcleos" que acabas de crear; selecciona la imagen "Ph_golgi" como tu imagen de entrada, núcleos como objetos de entrada y cambia el nombre a "Células".
+- Crea un objeto llamado 'Células' que se basa en los objetos primarios 'Núcleos' que acabas de crear; selecciona la imagen 'Ph_golgi' como tu imagen de entrada, núcleos como objetos de entrada y cambia el nombre a 'Células'.
 
-- Presiona "Step" para ejecutar el módulo. ¿Cómo se ve tu segmentación?
+- Presiona 'Step' para ejecutar el módulo. ¿Cómo se ve tu segmentación?
 
 - Para este módulo, los colores de contorno corresponden a la semilla del objeto (verde-núcleos) y los objetos segmentados (rosa-célula).
 
@@ -206,11 +206,11 @@ Es (relativamente) fácil encontrar un buen conjunto de parámetros de segmentac
 
 - Para probar los parámetros, hay dos opciones para cambiar la imagen en la que estás trabajando en el modo de prueba.
 
-   - Haz clic en "Next Image Set" en la esquina inferior izquierda, o
+   - Haz clic en 'Next Image Set' en la esquina inferior izquierda, o
 
-   - Ve a "Test" en la barra de menú superior → "Choose Image Set" para mostrar una lista de las imágenes en tu experimento, selecciona la imagen que deseas probar y presiona el botón "OK".
+   - Ve a 'Test' en la barra de menú superior → 'Choose Image Set' para mostrar una lista de las imágenes en tu experimento, selecciona la imagen que deseas probar y presiona el botón 'OK'.
 
-      - Consejo: también puedes usar el menú de prueba para elegir un conjunto de imágenes al azar ("Coose Random Iage Set").
+      - Consejo: también puedes usar el menú de prueba para elegir un conjunto de imágenes al azar ('Coose Random Iage Set').
 
 |image12|
 
@@ -220,7 +220,7 @@ Es (relativamente) fácil encontrar un buen conjunto de parámetros de segmentac
 
    - Puedes hacerlo haciendo clic en el botón de paso, o
 
-   - Puedes agregar un botón de pausa en el módulo después de *IdentifySecondaryObjects* y presionar "Run", esto ejecutará todos los módulos antes de la pausa.
+   - Puedes agregar un botón de pausa en el módulo después de *IdentifySecondaryObjects* y presionar 'Run', esto ejecutará todos los módulos antes de la pausa.
 
 |image13|
 
@@ -241,7 +241,7 @@ Es (relativamente) fácil encontrar un buen conjunto de parámetros de segmentac
 
 - Cambiar el nombre de los objetos a identificar.
 
-- La opción "Reducir el tamaño del objeto más pequeño antes de la sustracción" ("Shrink smaller object prior to subtraction?") debe estar configurada en "No".
+- La opción 'Reducir el tamaño del objeto más pequeño antes de la sustracción' ('Shrink smaller object prior to subtraction?') debe estar configurada en 'No'.
 
 **8. Examinar los pasos utilizados para segmentar los Nucleolos (15min)**
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -252,15 +252,15 @@ Los siguientes 3 módulos tienen que ver con la creación de los objetos Nucleol
 
 - Después del módulo *IdentifyTertiaryObjects*, agregar un módulo *EnhanceOrSuppressFeatures*.
 
-- *EnhanceOrSuppressFeatures* es un módulo que ayuda a mejorar partes de una imagen, en este caso, objetos puntuales o "manchas" (Speckles). Como estamos buscando nucleolos, aplicamos esto a la imagen del canal de ARN ("Syto") y llamamos la salida "ARN_filtrado".
+- *EnhanceOrSuppressFeatures* es un módulo que ayuda a mejorar partes de una imagen, en este caso, objetos puntuales o 'manchas' (Speckles). Como estamos buscando nucleolos, aplicamos esto a la imagen del canal de ARN ('Syto') y llamamos la salida 'ARN_filtrado'.
 
 **🔴 PARA HACER: Mejorar las spots de los nucleolos**
 
-   - Cambiar la imagen de entrada del menú desplegable a "Syto".
+   - Cambiar la imagen de entrada del menú desplegable a 'Syto'.
 
-   - Cambiar el nombre de la imagen de salida a "ARN_filtrado".
+   - Cambiar el nombre de la imagen de salida a 'ARN_filtrado'.
 
-   - Cambiar el "Feature Size" para ver cómo afecta la salida y encontrar un valor que funcione bien.
+   - Cambiar el 'Feature Size' para ver cómo afecta la salida y encontrar un valor que funcione bien.
 
    - Ver a continuación un ejemplo de los resultados a los que se debe apuntar:
 
@@ -270,13 +270,13 @@ Los siguientes 3 módulos tienen que ver con la creación de los objetos Nucleol
 
 - Después del módulo *EnhanceOrSuppressFeatures*, agregar un módulo *MaskImage*.
 
-- *MaskImage* te permite crear una versión de la imagen "ARN_filtrado" llamada "SytoNuclei" donde todos los píxeles excepto los que especifiques se establecen en una intensidad de 0. En este caso, establecemos en 0 cualquier píxel que no esté dentro de un núcleo. Al hacer esto, podemos disminuir la probabilidad de detectar puntos de ARN citoplasmático.
+- *MaskImage* te permite crear una versión de la imagen 'ARN_filtrado' llamada 'SytoNuclei' donde todos los píxeles excepto los que especifiques se establecen en una intensidad de 0. En este caso, establecemos en 0 cualquier píxel que no esté dentro de un núcleo. Al hacer esto, podemos disminuir la probabilidad de detectar puntos de ARN citoplasmático.
 
    **🔴 PARA HACER: Enmascarar la imagen de ARN para mostrar solo los 'Núcleos'**
 
-   - Cambiar la imagen de entrada del menú desplegable a "ARN_filtrado".
+   - Cambiar la imagen de entrada del menú desplegable a 'ARN_filtrado'.
 
-   - Cambiar el nombre de la imagen de salida a "SytoNuclei".
+   - Cambiar el nombre de la imagen de salida a 'SytoNuclei'.
 
    - Usar los objetos 'Núcleos' como máscara.
 
@@ -290,13 +290,13 @@ Los siguientes 3 módulos tienen que ver con la creación de los objetos Nucleol
 
 **🔴 PARA HACER: Segmentar los nucleolos**
 
-   - Cambiar la imagen de entrada del menú desplegable a "SytoNuclei".
+   - Cambiar la imagen de entrada del menú desplegable a 'SytoNuclei'.
 
-   - Cambiar el nombre de los objetos a "Nucleolos".
+   - Cambiar el nombre de los objetos a 'Nucleolos'.
 
    - Ajustar los parámetros de segmentación hasta que estés satisfecho con los resultados de la segmentación.
 
-**🔴 PARA HACER**: Agregar un módulo *OverlayOutlines* en este punto para superponer los nucleolos identificados en la imagen original de "Syto" para asegurarte de que la segmentación no solo coincida con la imagen 'SytoNuclei' mejorada con manchas, sino que también se vea precisa en la imagen sin procesar. Esto no es estrictamente necesario, pero puede ser un buen punto de control.
+**🔴 PARA HACER**: Agregar un módulo *OverlayOutlines* en este punto para superponer los nucleolos identificados en la imagen original de 'Syto' para asegurarte de que la segmentación no solo coincida con la imagen 'SytoNuclei' mejorada con manchas, sino que también se vea precisa en la imagen sin procesar. Esto no es estrictamente necesario, pero puede ser un buen punto de control.
 
    - Objetivo: mostrar contornos de tus nucleolos y tus núcleos en la imagen sin procesar de 'Syto'.
 
@@ -317,7 +317,7 @@ Los siguientes 3 módulos tienen que ver con la creación de los objetos Nucleol
 
 - ¿Qué objetos crees que serían valiosos para medir con cada uno de estos módulos? ¿En qué canales medirías tus objetos? Para un experimento típico de Cell Painting, agregarías tantas mediciones como sea posible, pero eso no es necesario aquí; sin embargo, asegúrate de que cada objeto reciba al menos algunas mediciones. 
 
-Nota: Si bien *MeasureCorrelation*, *MeasureTexture* y *MeasureObjectIntensityDistribution* pueden producir datos valiosos para generar el perfil morfológico de la imagen, pueden ser intensivos en el uso de memoria y/o lentos, por lo que no deben agregarse a este ejemplo en pos del tiempo de ejecución del pipeline.
+**Nota**: Si bien *MeasureCorrelation*, *MeasureTexture* y *MeasureObjectIntensityDistribution* pueden producir datos valiosos para generar el perfil morfológico de la imagen, pueden ser intensivos en el uso de memoria y/o lentos, por lo que no deben agregarse a este ejemplo en pos del tiempo de ejecución del pipeline.
 
 **10. Relacionar objetos (5min)**
 ''''''''''''''''''''''''''''''''''
@@ -328,14 +328,14 @@ Nota: Si bien *MeasureCorrelation*, *MeasureTexture* y *MeasureObjectIntensityDi
 
 *Figura 16: La salida del módulo RelateObject.*
 
-Relacionar los objetos te permite crear promedios por padre (por ejemplo, para esta célula, ¿cuál es el tamaño promedio de una mitocondria individual?) y calcular distancias desde los objetos secundarios al borde y/o al centro del objeto "padre" (por ejemplo, ¿qué tan lejos está cada nucleolo del centro del núcleo?).
+Relacionar los objetos te permite crear promedios por padre (por ejemplo, para esta célula, ¿cuál es el tamaño promedio de una mitocondria individual?) y calcular distancias desde los objetos secundarios al borde y/o al centro del objeto 'padre' (por ejemplo, ¿qué tan lejos está cada nucleolo del centro del núcleo?).
 
 **11. Ejecutar el pipeline (opcional)**
 ''''''''''''''''''''''''''''''''''''''''
 
 - Si tienes tiempo, agrega un módulo Exportar a hoja de cálculo al final.
 
-- Salir del modo de prueba (Exit Test Mode).
+- Salir del modo de prueba ('Exit Test Mode').
 
 - Haz clic en el botón 'Output Settings' en la esquina inferior izquierda.
 
