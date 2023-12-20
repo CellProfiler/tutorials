@@ -24,7 +24,7 @@ A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for l
 
 En español:
 
-<a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_SPA.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
+<a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_SPA.zip" target="_blank"><img src="assets/img/download-button-es.png" alt="Materiales para descargar" width="140px"></a>
 
 
 ## Advanced Segmentation
