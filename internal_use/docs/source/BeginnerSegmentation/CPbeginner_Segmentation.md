@@ -96,7 +96,7 @@ substitutions:
     ```
   image9: |-
     ```{image} ./TutorialImages/Fig8.png
-    :align: middle
+    :align: center
     :scale: 40 %
     :width: 1000
     ```
