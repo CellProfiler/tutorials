@@ -20,21 +20,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:2
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:2
 msgid ""
 "Using machine learning to perform image quality control: A computer "
 "exercise using CellProfiler & CellProfiler Analyst software"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:5
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:5
 msgid "Beth Cimini, Broad Institute"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:7
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:7
 msgid "**Background information:**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:9
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:9
 msgid ""
 "High-quality image analysis relies on having high-quality images to "
 "analyze; the so-called ‘Garbage in, garbage out’ principle. If your image"
@@ -44,7 +44,7 @@ msgid ""
 "images, this is essentially impossible."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:16
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:16
 msgid ""
 "The images in this experiment come from the `Broad Bioimage Benchmark "
 "Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. They are "
@@ -55,17 +55,17 @@ msgid ""
 " an automated quality control method."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:24
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:24
 msgid ""
 "To learn more about machine learning for image quality control, please "
 "see Bray et al 2012 and references therein."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:27
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:27
 msgid "**Goals of this exercise: **"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:29
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:29
 msgid ""
 "This exercise will teach you how to measure aspects of image quality with"
 " CellProfiler and how to use the machine learning tools in CPA to create "
@@ -74,84 +74,84 @@ msgid ""
 "that they may guide your downstream data analysis."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:35
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:35
 msgid "**Materials necessary for this exercise: **"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:37
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:37
 msgid ""
 "These 1200 images (240 sites in 5 channels) represent 120 wells from a "
 "single 384 well plate, either mock treated with DMSO or treated with a "
 "variety of bioactive compounds."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:41
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:41
 msgid ""
 "It is additionally expected that you are generally familiar with the "
 "tools in CellProfiler and CellProfiler Analyst, preferably after "
 "completing the Translocation tutorial or a similar introductory exercise."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:46
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:46
 msgid "**Start the provided QC pipeline on the BBBC022 dataset**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:48
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:48
 msgid ""
 "In order to do quality control, we need to first measure the images in "
 "many ways. This will allow us to do machine learning to use the "
 "measurements to identify the good images from the bad."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:52
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:52
 msgid "Start CellProfiler by double-clicking the desktop icon |Inline1|"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:444
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:444
 msgid "Inline1"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:54
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:54
 msgid ""
 "Drag and drop the ‘BBBC022_QC.cppipe’ file into the ‘Analysis modules’ "
 "box. Three modules should appear- two copies of ‘MeasureImageQuality’ and"
 " one ‘ExportToDatabase’ module."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:58
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:58
 msgid ""
 "Drag and drop the ‘BBBC022_20585_AE’ folder into the ‘File list’ box. It "
 "should automatically populate."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:61
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:61
 msgid "Hit the Analyze Images button."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:63
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:63
 msgid ""
 "You will get an error popup – ‘No prior instances of objectgroup were "
 "defined. Are you sure you want to continue?’ Hit ‘Yes’."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:66
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:66
 msgid ""
 "This is due to the fact that there are no objects defined in the "
 "pipeline. It will not affect the final results."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:69
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:69
 msgid ""
 "The pipeline should take about 10-15 minutes to run. At the end, three "
 "files should be created- a .db database file, a .properties text file, "
 "and a .workspace text file."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:73
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:73
 msgid "**Examine the QC pipeline (~15 minutes)**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:75
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:75
 msgid ""
 "While the pipeline is running, take some time to look over the pipeline "
 "and make sure you understand the various parts. You will probably find it"
@@ -159,40 +159,40 @@ msgid ""
 "it."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:80
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:80
 msgid "*Metadata*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:82
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:82
 msgid ""
 "Plate, well, site, and channel information is being extracted from the "
 "file and folder names"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:85
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:85
 msgid "*NamesAndTypes*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:87
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:87
 msgid ""
 "The images are matched to their channels by metadata and grouped by "
 "Plate, Well, and Site"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:90
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:90
 msgid "*Groups*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:92
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:92
 msgid "This module is not used"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:94
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:106
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:94
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:106
 msgid "*MeasureImageQuality*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:96
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:96
 msgid ""
 "‘Include the image rescaling value?’, ‘Calculate intensity metrics?’, and"
 " ‘Calculate saturation metrics?’ are all set to yes. Open the help "
@@ -200,11 +200,11 @@ msgid ""
 " options."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:446
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:446
 msgid "Inline2"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:101
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:101
 msgid ""
 "‘Calculate blur metrics?’ is set to yes and given multiple spatial "
 "scales- 2, 5, 10, and 20 pixels. Open the help |Inline2| button to read "
@@ -212,7 +212,7 @@ msgid ""
 "focus."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:108
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:108
 msgid ""
 "In this second image ‘MeasureImageQuality’ module, automatic thresholds "
 "are calculated for the ‘OrigHoechst’ and ‘OrigPh_golgi’ images using "
@@ -220,26 +220,26 @@ msgid ""
 "button."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:113
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:113
 msgid ""
 "The choice of these two images and these two thresholding methods was not"
 " random; it corresponds to the methods used to segment nuclei and cell "
 "bodies in the corresponding analysis pipeline."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:118
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:118
 msgid "*ExportToDatabase*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:120
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:120
 msgid "This module has 4 main parts, separated by breaks |Inline3|"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:448
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:448
 msgid "Inline3"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:122
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:122
 msgid ""
 "**Creation of the database**: these options determine what kind of "
 "database will be created (SQLite in this case), whether CellProfiler "
@@ -247,31 +247,31 @@ msgid ""
 "of the tables will be."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:127
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:127
 msgid ""
 "**Creation of the CPA properties file**: these options pre-set some "
 "parameters for CellProfiler Analyst to help make it easier for you to use"
 " such as"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:131
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:131
 msgid ""
 "Setting the plate type to 384, and stating that the Image_Metadata_Plate "
 "and Image_Metadata_Well determine which plate and well to assign each "
 "image to"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:135
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:135
 msgid ""
 "What color to assign each channel in the image display tools in "
 "CellProfiler Analyst"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:138
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:138
 msgid "That you are classifying ‘Image’s, not objects"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:140
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:140
 msgid ""
 "**Creation of the CPA workspace file**: instead of having to explore all "
 "the parameters at random to find features that separate good images from "
@@ -280,7 +280,7 @@ msgid ""
 "populated 12 graphs for you- 10 scatter plots and 2 histograms."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:147
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:147
 msgid ""
 "**CellProfiler specific adjustments**: besides determining the location "
 "of the output database, most of these options deal with how CellProfiler "
@@ -290,13 +290,13 @@ msgid ""
 "any objects, we don’t need to worry about these."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:155
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
 msgid ""
 "**Open the CellProfiler Analyst workspace and determine reasonable "
 "parameter cutoffs (~20 minutes)**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:158
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:158
 msgid ""
 "In the first step of the quality control pipeline, we'll look at graphs "
 "of how various measurements are distributed in the population.  This "
@@ -306,7 +306,7 @@ msgid ""
 "well if you are interested in exploring the dataset."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:165
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:165
 msgid ""
 "First-pass identification of the abnormal images is important since they "
 "are hopefully going to be rare in our overall dataset.  By identifying as"
@@ -315,21 +315,21 @@ msgid ""
 " good classifier in later steps."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:171
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:171
 msgid ""
 "Once your pipeline has finished, close CellProfiler and start "
 "CellProfiler Analyst by double-clicking the icon |Inline4|."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:450
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:450
 msgid "Inline4"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:174
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:174
 msgid "Load the properties file you’ve just created."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:176
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:176
 msgid ""
 "Go to File-> Load Workspace. 12 graphs should be created – 5 scatter "
 "plots about focus (ImageNumber vs ImageQuality_PowerLogLogSlope), 5 "
@@ -338,20 +338,20 @@ msgid ""
 "thresholds calculated for the nuclei and cell channels."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:182
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:182
 msgid ""
 "For some or all of the graphs (preferably at least two of each type), "
 "examine the shape of the data. Are there obvious outliers present?"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:185
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:185
 msgid ""
 "In the ‘gate’ dropdown, select CREATE NEW GATE and give it a name (like "
 "‘HighSat_ER’ for high outliers in the oversaturation graph of the ER "
 "channel)."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:189
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:189
 msgid ""
 "Draw your gate, then right-click (PC)/Command-click (Mac) to bring up a "
 "window. You should see two options named ‘Show images in gate’ (one or "
@@ -359,24 +359,24 @@ msgid ""
 "clarity)"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:194
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:194
 msgid ""
 "The top one will open each of these images in a separate window. This is "
 "generally easiest if only a small number of images (<5) are in the gate."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:198
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:198
 msgid ""
 "The bottom one will open a thumbnail viewer with thumbnails of each "
 "image; you can then double click on the thumbnail to open the full image."
 " This is much faster when there are a lot of images inside the gate."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:208
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:208
 msgid "*Figure 1: Examining the objects inside a gate.*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:210
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:210
 msgid ""
 "Look at some of the images inside the gate ( you may need to click ‘Show "
 "controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, "
@@ -386,46 +386,46 @@ msgid ""
 "‘MANAGE GATES’)."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:217
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:217
 msgid ""
 "**Optional- use the PlateViewer tool to check for other features to gate "
 "on (~10 minutes)**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:220
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:220
 msgid ""
 "If you want to see if you can find additional features that might "
 "distinguish good images from bad images, feel free to explore the feature"
 " set more thoroughly."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:223
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:223
 msgid ""
 "The PlateViewer tool and either choose a few ImageQuality measurements at"
 " random or just use the arrow keys to scroll up and down through the "
 "measurements."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:226
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:226
 msgid ""
 "A good candidate measurement will be relatively constant within most of "
 "the wells but have a small number of outliers (Fig 2)."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:229
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:229
 msgid ""
 "Once you have a good candidate, double click on an outlier well to open "
 "the images from that well.  If one or both seem very aberrant, you may "
 "wish to look at this measurement further."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:237
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:237
 msgid ""
 "*Figure 2: Using the PlateViewer tool to find features that may be good "
 "markers of poor quality images.*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:240
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:240
 msgid ""
 "Once you have a measurement you'd like to gate based on, open that "
 "Histogram or the Scatter Plot tools and graph all the cells based on that"
@@ -435,11 +435,11 @@ msgid ""
 "seems logical to make, proceed as in Step 3."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:246
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:246
 msgid "**Create filters based on the cutoffs you’ve determined (~10 minutes)**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:249
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:249
 msgid ""
 "Now that we've created gates around our poor quality images, we need to "
 "convert them into filters so that we can access them in the Classifier "
@@ -448,18 +448,18 @@ msgid ""
 "worthwhile skill."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:254
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:254
 msgid ""
 "When you feel like you’ve examined enough graphs, it’s time to create "
 "filters based on the gates you’ve determined contain bad images. There "
 "are two ways to do this:"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:258
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:258
 msgid "**Edit the properties file manually (recommended):**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:260
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:260
 msgid ""
 "This method has the advantage that the filters you create are permanent; "
 "they won’t be lost when you close and re-open CPA. It does however "
@@ -468,56 +468,56 @@ msgid ""
 "incorrectly."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:266
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:316
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:266
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:316
 msgid ""
 "From whatever graph you happen to have open, open the Gate Inspector by "
 "calling ‘gate’-> ’MANAGE GATES’."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:269
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:269
 msgid "Open the properties file in a text editor."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:271
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:271
 msgid "In the Image Filters section, create a new line and begin it with"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:278
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:278
 msgid ""
 "For each of the blur or threshold gates in your Gate Inspector, copy the "
 "text followed by the word OR; as an example if your first gate was:"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:286
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:286
 msgid "Edit your SQL statement to read"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:292
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:292
 msgid ""
 "DO NOT hit enter or otherwise add new lines between the different "
 "measurments; the statement must be one continuous line in order to work."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:296
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:296
 msgid "Omit the ‘OR’ after your last gate measurement."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:298
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:298
 msgid ""
 "Repeat for the saturated gates, again omitting the last OR, following the"
 " statement"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:305
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:305
 msgid "Save and close the properties file, then re-open CPA."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:307
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:307
 msgid "**Create the filters inside CPA (not recommended)**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:309
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:309
 msgid ""
 "This method does not require you to manually edit the properties file, "
 "but when filtering based on multiple features it takes longer to set up, "
@@ -527,50 +527,50 @@ msgid ""
 "the properties file."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:319
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:319
 msgid ""
 "Copy the text of the relevant gates into a text editor so that you can "
 "access it later."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:322
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
 msgid ""
 "Determine which is the important cutoff for each gate (ie for a gate "
 "where values are too high, it’s the minimum value, for gates on values "
 "that are too low it’s the maximum value)"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:326
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:326
 msgid "Open the filter creation dialog by selecting ‘filter’->’CREATE NEW FILTER’"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:329
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:329
 msgid "Name your filter Blurry"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:331
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:331
 msgid ""
 "Enter each important cutoff from the blur or threshold gates, selecting "
 "‘Add column’ after each and changing the separator statement to OR"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:335
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:335
 msgid ""
 "Create a filter named Saturated containing the important cutoffs from the"
 " saturation gates"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:342
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:342
 msgid "*Figure 3: Creating filters inside CPA*"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:344
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:344
 msgid ""
 "**Create classifier rules to distinguish good from bad images (~30 "
 "minutes)**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:347
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:347
 msgid ""
 "Creating gates based on the 12 measurements we graphed has helped us "
 "identify some low quality images so far, but we are not utilizing the "
@@ -580,21 +580,21 @@ msgid ""
 "likelihood of identifying additional low quality images."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:354
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:354
 msgid "Open the Classifier tool (|Inline5|, 2\\ :sup:`nd` on left)."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:452
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:452
 msgid "Inline5"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:356
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:356
 msgid ""
 "Fetch 50 random images from ‘experiment’, then 25 each from ‘Blurry’ and "
 "‘Saturated’"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:359
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:359
 msgid ""
 "Create a good classifier by dragging images to the positive and negative "
 "bins and training with the Fast Gentle Boosting classifier. If needed "
@@ -603,14 +603,14 @@ msgid ""
 " classifier, etc."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:365
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:365
 msgid ""
 "In a larger experiment, you might decide to add more bins (for images "
 "that are out of focus, have debris, contain the well edge, etc), but "
 "stick to two bins for this experiment."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:369
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:369
 msgid ""
 "Don’t only fetch additional images from your filtered sets, make sure to "
 "pull some from ‘Random’ as well, since your gates may not contain every "
@@ -618,13 +618,13 @@ msgid ""
 "quality images for your positive bin."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:374
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:374
 msgid ""
 "You will likely have to use more than 5 rules to get good classification-"
 " try setting this number to 25"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:377
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:377
 msgid ""
 "When you’re happy with your classifier (this is a small experiment, so "
 "perfect classification will not be possible, but aim for >60% accuracy in"
@@ -632,24 +632,24 @@ msgid ""
 " rules…’."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:382
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:382
 msgid ""
 "Remove any rules that DO NOT have to do with ImageQuality (like "
 "‘GroupIndex, etc), then copy the remainder Into a text editor and save as"
 " a ‘.txt’ file. Keep the text file open for now."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:386
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:386
 msgid ""
 "Save your training set for future reference if desired, then close "
 "CellProfiler Analyst."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:389
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:389
 msgid "**Add quality control steps to an analysis pipeline(~15 minutes)**"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:391
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:391
 msgid ""
 "If you have time, you can add the list of rules you identified in your "
 "machine learning classifier to the CellProfiler pipeline that corresponds"
@@ -658,34 +658,34 @@ msgid ""
 "premium."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:396
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:396
 msgid ""
 "Reopen CellProfiler, then open the BBBC022_Analysis pipeline (provided or"
 " available as part of the \"AdvancedSegmentation\" tutorial)."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:399
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:399
 msgid ""
 "Reopen the BBBC022_QC pipeline for reference, either in a separate "
 "CellProfiler window or in a text editor."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:402
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:402
 msgid "Click on the |Inline6| button to open the ‘Add modules’ window"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:453
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:453
 msgid "Inline6"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:404
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:404
 msgid ""
 "If your rule set contains any rules based on ‘ImageQuality_Threshold’, "
 "add two ‘MeasureImageQuality’ modules (from the ‘Measurement’ category) "
 "to the very top of your pipeline, otherwise add one."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:409
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:409
 msgid ""
 "Configure the ‘MeasureImageQuality’ module(s) so that they’ll provide all"
 " the measurements specified in your rules file; you can refer to the "
@@ -693,7 +693,7 @@ msgid ""
 "these are."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:414
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:414
 msgid ""
 "For measurements that end in a number, like "
 "‘Image_ImageQuality_Correlation_OrigER_10’, the number refers to the "
@@ -702,26 +702,26 @@ msgid ""
 "based on the rules selected."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:420
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:420
 msgid "Add the ‘FlagImage’ module from the ‘Data Tools’ category."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:422
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:422
 msgid "Leave the flag category as ‘Metadata’, and the name as ‘QCFlag’"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:424
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:424
 msgid ""
 "If you had created many bins in your classification, you would set this "
 "name as something more descriptive, such as ‘QCDebris’, since you’d have "
 "a different flag name for each bin in your classifier."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:428
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:428
 msgid "Leave the ‘Skip image set if flagged?’ setting at no"
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:430
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:430
 msgid ""
 "Your classifier probably wasn’t incredibly accurate, so setting this to "
 "‘yes’ might result in throwing out real data while still not excluding "
@@ -729,20 +729,20 @@ msgid ""
 "felt you needed you *could* set this to yes."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:435
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:435
 msgid ""
 "Set ‘Flag is based on’ to ‘Rules’ and provide the path and file "
 "information to your rules text file."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:438
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:438
 msgid ""
 "Set the Class number to whatever class in your rule set represents the "
 "bad images- this is 2 if you kept the default bins and dragged bad images"
 " to the ‘Negative’ bin."
 msgstr ""
 
-#: ../../source/QualityControl/BBBC022_QualityControlExercise.rst:442
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:442
 msgid "Save your pipeline."
 msgstr ""
 

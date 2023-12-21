@@ -20,25 +20,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
 
-#: ../../source/PixelClassification/PixelClassification.rst:2
+#: ../../source/PixelClassification/PixelClassification.md:2
 msgid "CellProfiler Tutorial: pixel-based classification"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:4
+#: ../../source/PixelClassification/PixelClassification.md:4
 msgid "By Kyle Karhohs, PhD"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:6
+#: ../../source/PixelClassification/PixelClassification.md:6
 msgid ""
 "(A version of this document containing animated GIFs in maintained online"
 " on our `GitHub`_)"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:9
+#: ../../source/PixelClassification/PixelClassification.md:9
 msgid "Introducing Ilastik"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:11
+#: ../../source/PixelClassification/PixelClassification.md:11
 msgid ""
 "CellProfiler is capable of accurate and reliable segmentation of cells by"
 " utilizing a broad collection of classical image processing methods. "
@@ -52,7 +52,7 @@ msgid ""
 "example."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:22
+#: ../../source/PixelClassification/PixelClassification.md:22
 msgid ""
 "Thankfully, machine learning, particularly `pixel-based classification`_ "
 "has yielded powerful techniques that can often solve these challenging "
@@ -63,24 +63,24 @@ msgid ""
 "tissues, organoids, or `co-cultures`_."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:30
+#: ../../source/PixelClassification/PixelClassification.md:30
 msgid ""
 "Now, let’s take a look at how ilastik can be used together with "
 "CellProfiler!"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:34
+#: ../../source/PixelClassification/PixelClassification.md:34
 msgid "I. DIC conundrum"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:36
+#: ../../source/PixelClassification/PixelClassification.md:36
 msgid ""
 "Consider segmenting DIC images, such as those within the imageset "
 "`BBBC030`_. The goal will be to identify individual Chinese Hamster Ovary"
 " (CHO) cells and the regions they occupy."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:44
+#: ../../source/PixelClassification/PixelClassification.md:44
 msgid ""
 "A straightforward thresholding of this image yields poor results, because"
 " the cells have almost the same pixel intensity values (and sometimes "
@@ -94,30 +94,30 @@ msgid ""
 "for a moment we didn't have that option..."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:55
-#: ../../source/PixelClassification/PixelClassification.rst:175
+#: ../../source/PixelClassification/PixelClassification.md:55
+#: ../../source/PixelClassification/PixelClassification.md:175
 msgid "Open CellProfiler."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:56
+#: ../../source/PixelClassification/PixelClassification.md:56
 msgid "Drag-and-drop a BBBC030 image into the **Images** module."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:57
+#: ../../source/PixelClassification/PixelClassification.md:57
 msgid ""
 "Add the **Threshold** module to the pipeline. Select the image name "
 "(which should be 'DNA by default')."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:58
+#: ../../source/PixelClassification/PixelClassification.md:58
 msgid "Run the pipeline and take note of the output."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:66
+#: ../../source/PixelClassification/PixelClassification.md:66
 msgid "II. Pixel-based classification with ilastik"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:67
+#: ../../source/PixelClassification/PixelClassification.md:67
 msgid ""
 "ilastik employs pixel-based classification and complements CellProfiler. "
 "The CHO cells within the DIC image are obvious to the human eye, because "
@@ -126,7 +126,7 @@ msgid ""
 "machine-learning algorithms within ilastik."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:73
+#: ../../source/PixelClassification/PixelClassification.md:73
 msgid ""
 "The machine-learning implemented by ilastik requires user annotation "
 "about what is background and what is a CHO cell before it can "
@@ -136,73 +136,73 @@ msgid ""
 "referred to in machine learning as a training set."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:81
+#: ../../source/PixelClassification/PixelClassification.md:81
 msgid "Annotation with 2 Labels"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:83
+#: ../../source/PixelClassification/PixelClassification.md:83
 msgid "Open ilastik"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:85
+#: ../../source/PixelClassification/PixelClassification.md:85
 msgid "Start a *Pixel Classification* project."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:87
+#: ../../source/PixelClassification/PixelClassification.md:87
 msgid ""
 "Load at least several BBBC030 images by drag-and-drop into the **Input "
 "Data** window."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:89
+#: ../../source/PixelClassification/PixelClassification.md:89
 msgid ""
 "Now explore the image within the ilastik gui. Here are some shortcuts "
 "that may prove useful are:"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:92
+#: ../../source/PixelClassification/PixelClassification.md:92
 msgid "*Ctrl + mouse-wheel* = zoom."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:93
+#: ../../source/PixelClassification/PixelClassification.md:93
 msgid ""
 "The keyboard shortcut *Ctrl-D* will show the grid Ilastik uses to "
 "partition the image for processing."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:95
+#: ../../source/PixelClassification/PixelClassification.md:95
 msgid ""
 "Zoom-in far enough that the grid is no longer visible. This will speed up"
 " the *Live Update*."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:98
+#: ../../source/PixelClassification/PixelClassification.md:98
 msgid ""
 "Begin by labeling pixels for two classes: a background class and a CHO "
 "cell class."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:101
+#: ../../source/PixelClassification/PixelClassification.md:101
 msgid "Open the **Feature Selction** window and add all features."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:103
+#: ../../source/PixelClassification/PixelClassification.md:103
 msgid "Open the **Training** window."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:105
+#: ../../source/PixelClassification/PixelClassification.md:105
 msgid ""
 "Click the **+** button of the Training window to add a label. Add two "
 "labels named *background* and *CHO*."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:108
+#: ../../source/PixelClassification/PixelClassification.md:108
 msgid ""
 "Using the paint brush tool, label pixels (one at a time) for each class "
 "until you are satisfied with the segmentation."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:111
+#: ../../source/PixelClassification/PixelClassification.md:111
 msgid ""
 "We recommend creating labels for each class one pixel at a time, rather "
 "than by making scribbles, to minimize the chance of `over-fitting`_, i.e."
@@ -213,7 +213,7 @@ msgid ""
 "before the pixels of the image become clear."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:123
+#: ../../source/PixelClassification/PixelClassification.md:123
 msgid ""
 "Using a brush size of 1, we click a single pixel from each class: one "
 "within a single CHO cell and the other in the surrounding background. In "
@@ -224,7 +224,7 @@ msgid ""
 "by 1 feature and 1 pixel each for the *CHO* and *background* labels."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:135
+#: ../../source/PixelClassification/PixelClassification.md:135
 msgid ""
 "Adding more labels, one pixel at a time, we continue to refine the "
 "segmentation. Toggling the *Segmentation* and *Uncertainty* views "
@@ -235,7 +235,7 @@ msgid ""
 "pixels that are not currently segmented properly."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:147
+#: ../../source/PixelClassification/PixelClassification.md:147
 msgid ""
 "Continue until it seems that additional labels do not change the results,"
 " or a subset of the pixels begin “flipping” between CHO cell and "
@@ -245,35 +245,35 @@ msgid ""
 " set."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:154
+#: ../../source/PixelClassification/PixelClassification.md:154
 msgid "Export the probability maps"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:156
+#: ../../source/PixelClassification/PixelClassification.md:156
 msgid "When satisfied with the results, export the probability maps."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:158
+#: ../../source/PixelClassification/PixelClassification.md:158
 msgid "Open the **Prediction Export** window."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:159
+#: ../../source/PixelClassification/PixelClassification.md:159
 msgid "Click the **Choose Export Settings** window."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:160
+#: ../../source/PixelClassification/PixelClassification.md:160
 msgid "Change **Transpose to Axis Order** to ``cyx``."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:161
+#: ../../source/PixelClassification/PixelClassification.md:161
 msgid "Change **Format** to ``tiff``."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:162
+#: ../../source/PixelClassification/PixelClassification.md:162
 msgid "Close the export settings dialog box and click the **Export All** button."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:163
+#: ../../source/PixelClassification/PixelClassification.md:163
 msgid ""
 "If you did not initially load all the images into ilastik and wish to "
 "create predictions for them all now, go to the **Batch Processing** "
@@ -281,15 +281,15 @@ msgid ""
 "files**.  This will take a couple of minutes on most computers."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:164
+#: ../../source/PixelClassification/PixelClassification.md:164
 msgid "Note that you're producing a two channel image (Color Image)."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:168
+#: ../../source/PixelClassification/PixelClassification.md:168
 msgid "III. Segmenting probabilities with CellProfiler"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:170
+#: ../../source/PixelClassification/PixelClassification.md:170
 msgid ""
 "The probability map images created with ilastik can then be processed by "
 "CellProfiler to identify and measure the CHO objects within the DIC "
@@ -297,24 +297,24 @@ msgid ""
 "treated as if they were the result of a “stain” for the cells."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:176
+#: ../../source/PixelClassification/PixelClassification.md:176
 msgid "Load the *pixel_based_classification.cpppipe* pipeline file."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:177
+#: ../../source/PixelClassification/PixelClassification.md:177
 msgid ""
 "Add the exported probability images AND their matching original images to"
 " the **Images** module."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:178
+#: ../../source/PixelClassification/PixelClassification.md:178
 msgid ""
 "In the **NamesAndTypes** module, setup the .png files as phase and the "
 ".tiff files was cho, remember to **Select the image type** as **Color "
 "Image** for .tiff files."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:179
+#: ../../source/PixelClassification/PixelClassification.md:179
 msgid ""
 "In the **ColortoGray** module, convert just one channel (Red or Green) to"
 " Gray, you should choose red to gray if your first class in Ilastik was "
@@ -322,13 +322,13 @@ msgid ""
 "channel to gray and name as choSegmented."
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:180
+#: ../../source/PixelClassification/PixelClassification.md:180
 msgid ""
 "Run the pipeline and review the segmentation.  How robustly did it "
 "perform on different images?"
 msgstr ""
 
-#: ../../source/PixelClassification/PixelClassification.rst:182
+#: ../../source/PixelClassification/PixelClassification.md:182
 msgid ""
 "We have now transformed the patterns and texture of intensity in the DIC "
 "image into an image where the intensity reflects the likelihood that a "

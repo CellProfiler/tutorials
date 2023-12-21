@@ -20,24 +20,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
 
-#: ../../source/Translocation/Translocation.rst:2
+#: ../../source/Translocation/Translocation.md:2
 msgid ""
 "Image-based screening using subcellular localization of FOXO1A in "
 "osteosarcoma cells: A computer exercise using CellProfiler & CellProfiler"
 " Analyst software"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:4
+#: ../../source/Translocation/Translocation.md:4
 msgid ""
 "Beth Cimini, Carolina Wählby, Martin Simonsson, Megan Rokop and Mark "
 "Bray, Broad Institute"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:7
+#: ../../source/Translocation/Translocation.md:7
 msgid "***Background information:***"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:9
+#: ../../source/Translocation/Translocation.md:9
 msgid ""
 "In this experiment, we are working with human U2OS osteosarcoma (bone "
 "cancer) cells, in which a Forkhead-protein FOXO1A has been labeled with "
@@ -55,34 +55,34 @@ msgid ""
 "possess fewer side effects than the known drugs."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:25
+#: ../../source/Translocation/Translocation.md:25
 msgid "|Fig1A|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:28
+#: ../../source/Translocation/Translocation.md:28
 msgid "Fig1A"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:25
+#: ../../source/Translocation/Translocation.md:25
 msgid "|Fig1B|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:30
+#: ../../source/Translocation/Translocation.md:30
 msgid "Fig1B"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:33
+#: ../../source/Translocation/Translocation.md:33
 msgid ""
 "*Figure 1: Examples of FOXO1A-GFP localization. Left: Cytoplasmic "
 "localization in untreated cells. Right: Nuclear localization in "
 "Wortmannin treated cells. GFP: Green, DNA: red.*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:39
+#: ../../source/Translocation/Translocation.md:39
 msgid "**Goals of this exercise:**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:41
+#: ../../source/Translocation/Translocation.md:41
 msgid ""
 "In this exercise, we aim to: (1) determine this lowest possible dose "
 "necessary to observe this effect, and (2) to optimize the analysis of "
@@ -90,11 +90,11 @@ msgid ""
 "separate positive controls and negative controls as best as possible."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:46
+#: ../../source/Translocation/Translocation.md:46
 msgid "**Materials necessary for this exercise:**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:48
+#: ../../source/Translocation/Translocation.md:48
 msgid ""
 "The images you will be analyzing were taken from cells growing in a "
 "standard 96-well plate, but you will work with a subset of only 26 of "
@@ -108,11 +108,11 @@ msgid ""
 "how the cells were treated."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:59
+#: ../../source/Translocation/Translocation.md:59
 msgid "**Methods to be used in this exercise:**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:61
+#: ../../source/Translocation/Translocation.md:61
 msgid ""
 "In this exercise, you will use CellProfiler and CellProfiler Analyst to "
 "identify and delineate (or “segment”) each nucleus and cell body, and "
@@ -131,25 +131,25 @@ msgid ""
 "cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:80
+#: ../../source/Translocation/Translocation.md:80
 msgid ""
 "Exercise I: Using the CellProfiler software to identify features and "
 "obtain measurements from cellular images."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:82
+#: ../../source/Translocation/Translocation.md:82
 msgid "**Starting CellProfiler and configuring the input data for analysis**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:84
+#: ../../source/Translocation/Translocation.md:84
 msgid "Start CellProfiler by double-clicking the desktop icon |Inline01|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1187
+#: ../../source/Translocation/Translocation.md:1187
 msgid "Inline01"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:86
+#: ../../source/Translocation/Translocation.md:86
 msgid ""
 "In the CellProfiler interface, you will see the File list panel, a blank "
 "panel indicated by the text “Drop files and folders here”. The File list "
@@ -159,7 +159,7 @@ msgid ""
 " of CellProfiler."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:93
+#: ../../source/Translocation/Translocation.md:93
 msgid ""
 "From File Explorer (Windows) or Finder (Mac), drag and drop the "
 "“TranslocationData” folder into this panel. The names of your files in "
@@ -169,7 +169,7 @@ msgid ""
 "positive GFP controls look like, respectively."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:100
+#: ../../source/Translocation/Translocation.md:100
 msgid ""
 "Scroll to the bottom of the File list and note that in addition to the "
 "image files, there is a file called "
@@ -178,7 +178,7 @@ msgid ""
 "consideration. To do this, follow the next step."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:106
+#: ../../source/Translocation/Translocation.md:106
 msgid ""
 "Under the Module settings panel (below the File list), you will see a "
 "control for specifying which files should be used from the above list. "
@@ -188,63 +188,63 @@ msgid ""
 "indicating that it will not be used."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:113
+#: ../../source/Translocation/Translocation.md:113
 msgid ""
 "Click on the *Metadata* module, which is the second module in the Input "
 "module panel; this module allows you to provide information about the "
 "drug dosages and location on the plate."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:117
+#: ../../source/Translocation/Translocation.md:117
 msgid ""
 "The first extraction set up for you in the *Metadata* module extracts "
 "information about the plate, well, site, and channel of each image by "
 "parsing the file name."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:121
+#: ../../source/Translocation/Translocation.md:121
 msgid ""
 "Click the magnifying glass icon |Inline02| to the right of the text box "
 "labeled “Regular expression”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1189
+#: ../../source/Translocation/Translocation.md:1189
 msgid "Inline02"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:124
+#: ../../source/Translocation/Translocation.md:124
 msgid ""
 "A new dialog box will appear to assist in comparing the entered regular "
 "expression against an example image filename."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:127
+#: ../../source/Translocation/Translocation.md:127
 msgid ""
 "You will see the color of the “Plate”, “Well”, “Site” and “ChannelNumber”"
 " text match the color of the corresponding portion in the Test text "
 "below."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:131
+#: ../../source/Translocation/Translocation.md:131
 msgid ""
 "Once finished, click the “Submit” button to use this expression in the "
 "*Metadata* module."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:134
+#: ../../source/Translocation/Translocation.md:134
 msgid ""
 "The second metadata extraction step requires you to tell CellProfiler the"
 " location of a CSV file.  It is looking for it in CellProfiler's Default "
 "Input Folder, which we must therefore configure."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:138
+#: ../../source/Translocation/Translocation.md:138
 msgid ""
 "This is the file describing the image names, locations in the 96-well "
 "plate, and doses."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:141
+#: ../../source/Translocation/Translocation.md:141
 msgid ""
 "Click the file selection box next to \"Metadata file name\" line and "
 "navigate to the location of the TranslocationData folder on your "
@@ -252,13 +252,13 @@ msgid ""
 "within."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:145
+#: ../../source/Translocation/Translocation.md:145
 msgid ""
 "Return to the ‘Metadata’ module and press ‘Update’. You should now see a "
 "number of columns in the Metadata window."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:148
+#: ../../source/Translocation/Translocation.md:148
 msgid ""
 "If you examine the metadata matching, you can see that  “Well” is "
 "selected from both drop-downs under “CSV Metadata” and “Image Metadata”. "
@@ -267,7 +267,7 @@ msgid ""
 "in the first extraction step."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:154
+#: ../../source/Translocation/Translocation.md:154
 msgid ""
 "Next to the setting labeled “Metadata data type”, make sure “Choose for "
 "each” is selected from the drop-down. For the “Dose” metadata, select "
@@ -275,31 +275,31 @@ msgid ""
 "“Text” values."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:159
+#: ../../source/Translocation/Translocation.md:159
 msgid ""
 "Click on the *NamesAndTypes* module, which is the third module in the "
 "Input module panel; this module allows you to assign a meaningful name to"
 " each image by which other modules will refer to it."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:163
+#: ../../source/Translocation/Translocation.md:163
 msgid ""
 "Note how the images are assigned to channels: images containing \"w1\" in"
 " their file name are assigned to the name \"rawGFP\", while those with "
 "\"w2\" are assigned \"rawDNA\"."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:166
+#: ../../source/Translocation/Translocation.md:166
 msgid ""
 "Click the “Update” button below the divider to display a table that shows"
 " each channel pair matched up for the 26 wells in the assay."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:169
+#: ../../source/Translocation/Translocation.md:169
 msgid "**Identifying the nuclei as the “primary objects” that you will analyze**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:172
+#: ../../source/Translocation/Translocation.md:172
 msgid ""
 "Now that the module inputs and outputs are set up, in your module, the "
 "remaining settings need to be adjusted to best detect the nuclei. The "
@@ -308,18 +308,18 @@ msgid ""
 "and adjust them as needed."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:178
+#: ../../source/Translocation/Translocation.md:178
 msgid ""
 "Click the “Start Test Mode” button to the bottom-left of the CellProfiler"
 " interface. You will see |Inline04| icons appear next to the modules in "
 "the pipeline, as well as new buttons appear below the modules."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1193
+#: ../../source/Translocation/Translocation.md:1193
 msgid "Inline04"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:183
+#: ../../source/Translocation/Translocation.md:183
 msgid ""
 "Click on the “Step” button below the pipeline panel, in order to progress"
 " through each module in the pipeline, one by one. Upon stepping through "
@@ -327,11 +327,11 @@ msgid ""
 "similar to that shown in Figure 2 below."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:192
+#: ../../source/Translocation/Translocation.md:192
 msgid "*Figure 2: Example module display window for IdentifyPrimaryObjects .*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:194
+#: ../../source/Translocation/Translocation.md:194
 msgid ""
 "For the *IdentifyPrimaryObjects* module, the goal is to have the outlines"
 " match the actual nuclei boundaries as well as possible, as well as "
@@ -341,19 +341,19 @@ msgid ""
 "objects into a single object."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:201
+#: ../../source/Translocation/Translocation.md:201
 msgid ""
 "The results of *IdentifyPrimaryObjects* are displayed in four panels in "
 "the display window, as shown in Fig. 2:"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:204
+#: ../../source/Translocation/Translocation.md:204
 msgid ""
 "Upper left: The raw image, titled as “Input image, cycle #” plus the "
 "image number"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:207
+#: ../../source/Translocation/Translocation.md:207
 msgid ""
 "Upper right: A colored image of the identified and labeled objects, "
 "titled with the object name (in this case, “Nuclei”). Note that the "
@@ -361,7 +361,7 @@ msgid ""
 "object from its neighbors."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:212
+#: ../../source/Translocation/Translocation.md:212
 msgid ""
 "Lower left: An image of the object outlines superimposed on the raw "
 "image, titled with the object name. Green outlines around an object "
@@ -371,65 +371,65 @@ msgid ""
 " a size criterion, and have therefore been excluded."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:219
+#: ../../source/Translocation/Translocation.md:219
 msgid "Lower right: A table of module setting values and statistics"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:221
+#: ../../source/Translocation/Translocation.md:221
 msgid ""
 "There are some image tools on the top toolbar that may be helpful to see "
 "the individual objects:"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:224
+#: ../../source/Translocation/Translocation.md:224
 msgid "|Inline05|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1195
+#: ../../source/Translocation/Translocation.md:1195
 msgid "Inline05"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:226
+#: ../../source/Translocation/Translocation.md:226
 msgid ""
 "The 1st icon from the left lets you reset the view back to the original "
 "view."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:229
+#: ../../source/Translocation/Translocation.md:229
 msgid ""
 "The 2nd and 3rd icons let you step backwards and forwards through any "
 "changes you made to the view."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:232
+#: ../../source/Translocation/Translocation.md:232
 msgid ""
 "The 4th icon lets you change the view by moving in any direction in the "
 "display, by clicking and dragging."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:235
+#: ../../source/Translocation/Translocation.md:235
 msgid ""
 "The 5th icon lets you change the view by zooming, by dragging and drawing"
 " a box to zoom in on."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:238
+#: ../../source/Translocation/Translocation.md:238
 msgid ""
 "Zoom in the image in order to see the quality of the nuclei "
 "identification. The result may look like Figure 3."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:245
+#: ../../source/Translocation/Translocation.md:245
 msgid ""
 "*Figure 3: A zoomed-in view of the display window for "
 "IdentifyPrimaryObjects*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:248
+#: ../../source/Translocation/Translocation.md:248
 msgid "**Improve identification of primary objects**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:250
+#: ../../source/Translocation/Translocation.md:250
 msgid ""
 "In this instance, in Figure 3, you can see that the outlines capture too "
 "much of the background around the nuclei. This means that the default "
@@ -439,7 +439,7 @@ msgid ""
 "quickly preview the results."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:257
+#: ../../source/Translocation/Translocation.md:257
 msgid ""
 "Objects outlined in pink are outside the \"Typical diameter\" pixel range"
 " specified in the pipeline. Use the \"Measure Length\" tool |Inline13| "
@@ -447,17 +447,17 @@ msgid ""
 "given the size of your objects."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1206
+#: ../../source/Translocation/Translocation.md:1206
 msgid "Inline13"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:262
+#: ../../source/Translocation/Translocation.md:262
 msgid ""
 "We can figure out why the thresholding method is overly lenient by "
 "looking closer at the original image."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:265
+#: ../../source/Translocation/Translocation.md:265
 msgid ""
 "Right-click on the “Input image, cycle #” panel in the "
 "IdentifyPrimaryObjects display window and select “Adjust Contrast” and "
@@ -469,7 +469,7 @@ msgid ""
 " pixel intensities is reduced."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:274
+#: ../../source/Translocation/Translocation.md:274
 msgid ""
 "Most thresholding methods assume that there are two intensity "
 "distributions present in the image, one of which is categorized as "
@@ -480,7 +480,7 @@ msgid ""
 "\"Thresholding method\" to open the CellProfiler help."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:282
+#: ../../source/Translocation/Translocation.md:282
 msgid ""
 "You'll note that the Translocation_start pipeline uses the Robust "
 "background method initially. This method can be helpful if the majority "
@@ -489,7 +489,7 @@ msgid ""
 "optimal choice. We recommend selecting the Otsu method instead."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:288
+#: ../../source/Translocation/Translocation.md:288
 msgid ""
 "Now, examine your original image again. In this image, there appear to be"
 " instead three classes of staining intensity: the bright nuclei (high "
@@ -499,21 +499,21 @@ msgid ""
 "nuclei detection."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:295
+#: ../../source/Translocation/Translocation.md:295
 msgid ""
 "Click the *IdentifyPrimaryObjects* setting labeled “Two-class or three-"
 "class thresholding?” and select “Three classes.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:299
+#: ../../source/Translocation/Translocation.md:299
 msgid "Click the “Step” button again to see the result from your new settings."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:302
+#: ../../source/Translocation/Translocation.md:302
 msgid "Adjust the \"Threshold correction factor\" to 1."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:304
+#: ../../source/Translocation/Translocation.md:304
 msgid ""
 "This thresholding approach takes the medium-intensity pixels and assigns "
 "them as foreground pixels, leaving only the lowest intensity pixels as "
@@ -521,13 +521,13 @@ msgid ""
 "nuclei boundaries."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:309
+#: ../../source/Translocation/Translocation.md:309
 msgid ""
 "**Identifying the cell body as a “secondary object” that you will "
 "analyze**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:312
+#: ../../source/Translocation/Translocation.md:312
 msgid ""
 "Now that you have confirmed, by eye, that the settings we provided you in"
 " this exercise do allow for identification and segmentation of the "
@@ -535,7 +535,7 @@ msgid ""
 " module."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:317
+#: ../../source/Translocation/Translocation.md:317
 msgid ""
 "Click on the |Inline03| button and add the module "
 "*IdentifySecondaryObjects*, which is located under the module category "
@@ -543,52 +543,52 @@ msgid ""
 "button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1191
+#: ../../source/Translocation/Translocation.md:1191
 msgid "Inline03"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1205
+#: ../../source/Translocation/Translocation.md:1205
 msgid "Inline12"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:321
+#: ../../source/Translocation/Translocation.md:321
 msgid ""
 "For the “Select the input image” module setting, select “rawGFP” from the"
 " drop-down list."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:324
+#: ../../source/Translocation/Translocation.md:324
 msgid ""
 "For the “Select input objects” setting, select “Nuclei” from the drop-"
 "down list."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:327
+#: ../../source/Translocation/Translocation.md:327
 msgid ""
 "For the “Name the objects to be identified” setting, enter “Cells” as a "
 "descriptive name for the secondary objects."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:330
+#: ../../source/Translocation/Translocation.md:330
 msgid ""
 "Click the drop-down box next to “Threshold strategy” and select “Global.”"
 " Then, click the drop-down next to “Thresholding method to select “Otsu”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:334
+#: ../../source/Translocation/Translocation.md:334
 msgid ""
 "Click the setting labeled “Two-class or three-class thresholding?” and "
 "change it from “Two classes” to “Three classes.” Change the setting "
 "“Assign pixels…” that subsequently appears underneath to “Foreground”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:339
+#: ../../source/Translocation/Translocation.md:339
 msgid ""
 "Click on the “Step” button to execute the module and see the results of "
 "secondary object identification using the module settings (Fig. 4)."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:343
+#: ../../source/Translocation/Translocation.md:343
 msgid ""
 "By default, secondary objects are identified with the Propagation method,"
 " which defines cell boundaries by “growing” outwards from the primary "
@@ -596,7 +596,7 @@ msgid ""
 "the nearest primary object, and the local intensity in the GFP image."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:349
+#: ../../source/Translocation/Translocation.md:349
 msgid ""
 "Note that the pink and green outlines do not have the same meaning as in "
 "the *IdentifyPrimaryObjects* display window. In "
@@ -605,11 +605,11 @@ msgid ""
 "boundaries."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:359
+#: ../../source/Translocation/Translocation.md:359
 msgid "*Figure 4: Example module display window for IdentifySecondaryObjects*."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:361
+#: ../../source/Translocation/Translocation.md:361
 msgid ""
 "In contrast to the DNA stain in *IdentifyPrimaryObjects*, the middle "
 "intensity levels associated with the dim cells are assigned as foreground"
@@ -617,7 +617,7 @@ msgid ""
 "cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:366
+#: ../../source/Translocation/Translocation.md:366
 msgid ""
 "However, for this assay, we may prefer to use a segmentation method that "
 "reflects the actual cell boundaries and is not dependent on an intensity "
@@ -626,25 +626,25 @@ msgid ""
 "of pixels without regard to the underlying fluorescence."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:372
+#: ../../source/Translocation/Translocation.md:372
 msgid "Change the “Select method…” setting from “Propagation” to “Distance-N.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:375
+#: ../../source/Translocation/Translocation.md:375
 msgid ""
 "Change the setting “Number of pixels by which to expand…” that appears "
 "underneath to 10 pixels."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:378
+#: ../../source/Translocation/Translocation.md:378
 msgid "Click the “Step” button to see the result from your new settings."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:380
+#: ../../source/Translocation/Translocation.md:380
 msgid "**Identifying the cytoplasm as a “tertiary object”**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:382
+#: ../../source/Translocation/Translocation.md:382
 msgid ""
 "Once we have identified the nucleus and the cell body, these two objects "
 "can be used to define the cell cytoplasm as the region outside the "
@@ -654,53 +654,53 @@ msgid ""
 "objects, effectively identifying the cytoplasm."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:389
+#: ../../source/Translocation/Translocation.md:389
 msgid ""
 "Click on the |Inline03| button and add the module "
 "*IdentifyTertiaryObjects* located under the module category *“Object "
 "Processing”.* Add it to the pipeline by clicking the |Inline12| button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:393
+#: ../../source/Translocation/Translocation.md:393
 msgid ""
 "In this module, for the “Select the larger identified objects” module "
 "setting, select “Cells” from the drop-down list."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:396
+#: ../../source/Translocation/Translocation.md:396
 msgid ""
 "For the “Select the smaller identified objects” setting, select “Nuclei” "
 "from the drop-down list."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:399
+#: ../../source/Translocation/Translocation.md:399
 msgid ""
 "For the “Name the tertiary objects to be identified” setting, enter "
 "“Cytoplasm” as a descriptive name for the tertiary objects."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:402
+#: ../../source/Translocation/Translocation.md:402
 msgid ""
 "Enable the ‘Shrink smaller object prior to subtraction?’ option; this "
 "will ensure that all of your Cytoplasm objects have an area of at least 1"
 " pixel."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:406
+#: ../../source/Translocation/Translocation.md:406
 msgid ""
 "Click the “Step” button to execute the module, and preview the results of"
 " tertiary object identification (Fig. 5)."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:412
+#: ../../source/Translocation/Translocation.md:412
 msgid "*Figure 5: Example module display window for IdentifyTertiaryObjects*."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:414
+#: ../../source/Translocation/Translocation.md:414
 msgid "**Measuring the cells’ characteristics (i.e. the “object features”)**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:416
+#: ../../source/Translocation/Translocation.md:416
 msgid ""
 "Now that the objects have been identified using settings that have been "
 "optimized for the phenotypes of interest, the next step is to make "
@@ -712,7 +712,7 @@ msgid ""
 "the other."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:425
+#: ../../source/Translocation/Translocation.md:425
 msgid ""
 "CellProfiler has the ability to measure many cellular characteristics, "
 "and what we could do in this exercise, is ask it to measure all of them, "
@@ -721,7 +721,7 @@ msgid ""
 "measurements."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:431
+#: ../../source/Translocation/Translocation.md:431
 msgid ""
 "**Measurement of pixel intensity of GFP in nuclei and cytoplasm:** One "
 "example of a particularly useful measurement is the pixel intensities of "
@@ -729,7 +729,7 @@ msgid ""
 "images showing the subcellular location of the FOXO1A-GFP fluorescence."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:436
+#: ../../source/Translocation/Translocation.md:436
 msgid ""
 "Click on the |Inline03| button and add the module "
 "*MeasureObjectIntensity* located under the module category "
@@ -737,19 +737,19 @@ msgid ""
 "button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:440
+#: ../../source/Translocation/Translocation.md:440
 msgid ""
 "In this module, select “rawGFP” in the \"Select images to measure\" box, "
 "by checking the box next to it."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:443
+#: ../../source/Translocation/Translocation.md:443
 msgid ""
 "Select “Nuclei” and \"Cytoplasm\" from the \"Select objects to measure\" "
 "box."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:445
+#: ../../source/Translocation/Translocation.md:445
 msgid ""
 "**Measurement of the correlation of GFP in nuclei to DNA in nuclei:** "
 "Another potentially useful measure is the correlation within the objects "
@@ -759,34 +759,34 @@ msgid ""
 "translocation, the correlation would be positive."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:452
+#: ../../source/Translocation/Translocation.md:452
 msgid ""
 "Click on the |Inline03| button and add the module *MeasureColocalization*"
 " located under the module category *“Measurement”.* Add it to the "
 "pipeline by clicking the |Inline12| button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:456
+#: ../../source/Translocation/Translocation.md:456
 msgid ""
 "In this module, select “rawGFP” and “rawDNA” from the \"Select images to "
 "measure\" box. Leave the \"Set threshold as percentage of maximum "
 "intensity for the images\" to the default value of 15.0."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:460
+#: ../../source/Translocation/Translocation.md:460
 msgid ""
 "For the “Select where to measure correlation” setting, select “Within "
 "objects” and then select “Nuclei” and \"Cytoplasm\" from the “Select "
 "objects to measure” box."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:464
+#: ../../source/Translocation/Translocation.md:464
 msgid ""
 "For \"Method for Costes thresholding\", choose *\"Faster\"* from the "
 "drop-down list to reduce analysis time."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:467
+#: ../../source/Translocation/Translocation.md:467
 msgid ""
 "**Measurement of the ratio of GFP in cytoplasm to GFP in nuclei:** Since "
 "we are interested in the transportation of GFP from the cytoplasm to the "
@@ -796,65 +796,65 @@ msgid ""
 "measurements."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:474
+#: ../../source/Translocation/Translocation.md:474
 msgid ""
 "Click on the |Inline03| button and add the module *CalculateMath* located"
 " under the *“Data Tools”* module category\\ *.* Add it to the pipeline by"
 " clicking the |Inline12| button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:478
+#: ../../source/Translocation/Translocation.md:478
 msgid ""
 "For the “Name the output measurement,” enter the “IntensityRatio” as a "
 "descriptive name."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:481
+#: ../../source/Translocation/Translocation.md:481
 msgid ""
 "Since we calculating a ratio of two measures, select “Divide” from the "
 "drop-down for the “Operation” setting."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:484
+#: ../../source/Translocation/Translocation.md:484
 msgid "For the numerator measurement:"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:486
+#: ../../source/Translocation/Translocation.md:486
 msgid ""
 "Select “Object” for the “Select the numerator type,” and select “Nuclei” "
 "from the drop-down for the “Select the numerator objects.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:490
-#: ../../source/Translocation/Translocation.rst:503
+#: ../../source/Translocation/Translocation.md:490
+#: ../../source/Translocation/Translocation.md:503
 msgid ""
 "Select “Intensity” from the drop-down for the “Select the numerator "
 "measurement” category. A “Measurement” drop-down box will subsequently "
 "appear underneath."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:494
-#: ../../source/Translocation/Translocation.rst:507
+#: ../../source/Translocation/Translocation.md:494
+#: ../../source/Translocation/Translocation.md:507
 msgid ""
 "Select “MeanIntensity” from the “Measurement” drop-down list. Then select"
 " “rawGFP” from the “Image” drop-down that appears."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:497
+#: ../../source/Translocation/Translocation.md:497
 msgid "For the denominator measurement:"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:499
+#: ../../source/Translocation/Translocation.md:499
 msgid ""
 "Select “Object” for the “Select the numerator type,” and select "
 "“Cytoplasm” from the drop-down for the “Select the numerator objects.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:510
+#: ../../source/Translocation/Translocation.md:510
 msgid "**Creating an image with your cell and nuclear outlines on it (optional)**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:513
+#: ../../source/Translocation/Translocation.md:513
 msgid ""
 "It’s often nice to create an image showing the segmentation of your "
 "objects so that you can refer back to it later; in addition to the "
@@ -863,46 +863,46 @@ msgid ""
 " questions about an unusual result."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:519
+#: ../../source/Translocation/Translocation.md:519
 msgid "**Creation of a color image to display the segmentation:**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:521
+#: ../../source/Translocation/Translocation.md:521
 msgid ""
 "Click on the |Inline03| button and add the module *GrayToColor* located "
 "under the *“Image Processing”* module category\\ *.* Add it to the "
 "pipeline by clicking the |Inline12| button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:525
+#: ../../source/Translocation/Translocation.md:525
 msgid "For the “Select a color scheme”, leave the setting at “RGB”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:527
+#: ../../source/Translocation/Translocation.md:527
 msgid "For the channels"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:529
+#: ../../source/Translocation/Translocation.md:529
 msgid "“Set the image to be colored red” set to “Leave this black”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:531
+#: ../../source/Translocation/Translocation.md:531
 msgid "“Set the image to be colored green” set to “rawGFP”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:533
+#: ../../source/Translocation/Translocation.md:533
 msgid "“Set the image to be colored blue” set to “rawDNA”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:535
+#: ../../source/Translocation/Translocation.md:535
 msgid "“Name the output image” can be set to “GFPandDNA” ."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:537
+#: ../../source/Translocation/Translocation.md:537
 msgid "“Relative weight”s for each of the channels can be left at 1."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:539
+#: ../../source/Translocation/Translocation.md:539
 msgid ""
 "**Overlaying the outlines onto the color image:** This module will "
 "overlay the outlines of your identified objects onto the color image. You"
@@ -914,54 +914,54 @@ msgid ""
 "and simply view them one at a time."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:548
+#: ../../source/Translocation/Translocation.md:548
 msgid ""
 "Click on the |Inline03| button and add the module *OverlayOutlines* "
 "located under the *“Image Processing”* module category\\ *.* Add it to "
 "the pipeline by clicking the |Inline12| button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:552
+#: ../../source/Translocation/Translocation.md:552
 msgid "“Display outlines on a blank image” should be set to “No”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:554
+#: ../../source/Translocation/Translocation.md:554
 msgid ""
 "The “Select image on which to display outlines” should be set to the "
 "“GFPandDNA” image we created in the last step."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:557
+#: ../../source/Translocation/Translocation.md:557
 msgid ""
 "“Name the output image” can be set to “CellAndNucleiOverlay” or some "
 "other descriptive name."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:560
+#: ../../source/Translocation/Translocation.md:560
 msgid "The “Outline display mode” dropdown menu should be left at “Color”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:562
+#: ../../source/Translocation/Translocation.md:562
 msgid "“How to outline” can be left at the default (Inner)."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:564
+#: ../../source/Translocation/Translocation.md:564
 msgid "For “Select objects to display” select “Nuclei” from the dropdown menu."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:567
+#: ../../source/Translocation/Translocation.md:567
 msgid ""
 "“Select outline color” can be left as red or set to some other "
 "contrasting color."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:570
+#: ../../source/Translocation/Translocation.md:570
 msgid ""
 "Click the “Add another outline” button, then repeat the previous 3 steps "
 "for “Cells”; you should select a different color for the outlines."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:574
+#: ../../source/Translocation/Translocation.md:574
 msgid ""
 "**Saving the overlay image:** The SaveImages module can be used to either"
 " save images generated in any step of the pipeline or masks of the "
@@ -970,54 +970,54 @@ msgid ""
 "subfolders based on the extracted metadata if you like."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:580
+#: ../../source/Translocation/Translocation.md:580
 msgid ""
 "Click on the |Inline03| button and add the module *SaveImages* located "
 "under the *“File processing”* module category\\ *.* Add it to the "
 "pipeline by clicking the |Inline12| button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:584
+#: ../../source/Translocation/Translocation.md:584
 msgid "For “Select the type of image to save”, select “Image”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:586
+#: ../../source/Translocation/Translocation.md:586
 msgid ""
 "For “Select the image to save”, select your “CellAndNucleiOverlay” image "
 "you just created."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:589
+#: ../../source/Translocation/Translocation.md:589
 msgid ""
 "For “Select method for constructing file names”, keep it set at “From "
 "image filename”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:592
+#: ../../source/Translocation/Translocation.md:592
 msgid "For “Select image name for file prefix”, select the “rawGFP” image."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:594
+#: ../../source/Translocation/Translocation.md:594
 msgid ""
 "Change the “Append a suffix to the image file name?” radio buttons to "
 "“Yes”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:597
+#: ../../source/Translocation/Translocation.md:597
 msgid ""
 "Give the “Text to append to the image name” a descriptive name; "
 "“\\_Overlay” is appropriate."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:600
+#: ../../source/Translocation/Translocation.md:600
 msgid "All the other settings may be left at their default values."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:602
+#: ../../source/Translocation/Translocation.md:602
 msgid "**Exporting the measurements to a database**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:604
+#: ../../source/Translocation/Translocation.md:604
 msgid ""
 "Since we will be using the data visualization and machine learning tools "
 "in CellProfiler Analyst, the measurements will need to be saved to a "
@@ -1025,14 +1025,14 @@ msgid ""
 "Analyst to access them."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:609
+#: ../../source/Translocation/Translocation.md:609
 msgid ""
 "Click on the |Inline03| button and add the module *ExportToDatabase* "
 "located under the module category *“File Processing”.* Add it to the "
 "pipeline by clicking the |Inline12| button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:613
+#: ../../source/Translocation/Translocation.md:613
 msgid ""
 "Note that while in Test mode, the *ExportToDatabase* module will have a "
 "yellow warning sign in the pipeline panel and yellow- highlighted text in"
@@ -1041,37 +1041,37 @@ msgid ""
 "to the database. This is normal behavior and does not indicate an error."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:620
+#: ../../source/Translocation/Translocation.md:620
 msgid "Select “Database type” as “SQLite.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:622
+#: ../../source/Translocation/Translocation.md:622
 msgid ""
 "Check the box labeled “Create a CellProfiler Analyst properties file.” A "
 "number of new settings will subsequently appear underneath."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:625
+#: ../../source/Translocation/Translocation.md:625
 msgid "For “Which objects should be used for locations?”, select “Nuclei”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:627
+#: ../../source/Translocation/Translocation.md:627
 msgid "For “Select the plate type”, choose “96.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:629
+#: ../../source/Translocation/Translocation.md:629
 msgid "For “Select the plate metadata,” choose “Plate.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:631
+#: ../../source/Translocation/Translocation.md:631
 msgid "For “Select the well metadata,” choose “Well.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:633
+#: ../../source/Translocation/Translocation.md:633
 msgid "For “Output file location”, select “Default Output Folder”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:635
+#: ../../source/Translocation/Translocation.md:635
 msgid ""
 "Check the box “Write image thumbnails directly to database?” From the "
 "list-box that subsequently appears, select “rawDNA” and “rawGFP”; you can"
@@ -1079,15 +1079,15 @@ msgid ""
 "(Mac). Leave the rest of the settings at the default values."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:642
+#: ../../source/Translocation/Translocation.md:642
 msgid "**Using the optimized pipeline to automatically analyze all images"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:642
+#: ../../source/Translocation/Translocation.md:642
 msgid "generated by the screening experiment**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:644
+#: ../../source/Translocation/Translocation.md:644
 msgid ""
 "At this point, the settings you have entered were chosen for you because "
 "those settings specifically, when used with these images, result in an "
@@ -1095,13 +1095,13 @@ msgid ""
 "pipeline is now ready to run on the full data set of 26 images."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:649
+#: ../../source/Translocation/Translocation.md:649
 msgid ""
 "Exit Test Mode by clicking the “Exit Test Mode” button at the bottom-left"
 " of the CellProfiler interface."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:652
+#: ../../source/Translocation/Translocation.md:652
 msgid ""
 "Click the “View output settings” button at the bottom-left of the "
 "interface. Then, in the module settings panel, click the folder button to"
@@ -1110,7 +1110,7 @@ msgid ""
 "saved."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:658
+#: ../../source/Translocation/Translocation.md:658
 msgid ""
 "Select the “Window” item from the menu bar and select “Hide all windows "
 "on run;” the “eyeball” icons next to the modules will switch from open "
@@ -1122,63 +1122,63 @@ msgid ""
 "take the time to create and draw each window."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1196
+#: ../../source/Translocation/Translocation.md:1196
 msgid "Inline06"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1198
+#: ../../source/Translocation/Translocation.md:1198
 msgid "Inline07"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:667
+#: ../../source/Translocation/Translocation.md:667
 msgid ""
 "Save your pipeline by selecting *File > Save Project As…*, give the "
 "pipeline a name and save it to your Desktop."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:670
+#: ../../source/Translocation/Translocation.md:670
 msgid ""
 "To analyze all images, click “Analyze images” button in the lower right "
 "corner of the CellProfiler interface."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:673
+#: ../../source/Translocation/Translocation.md:673
 msgid ""
 "(Windows only) A Windows Security Alert box may pop up asking for network"
 " access permission for CellProfiler.exe. Check the “Private networks” "
 "box, then click “Allow access”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:677
+#: ../../source/Translocation/Translocation.md:677
 msgid ""
 "The pipeline will run beginning with the first of 26 images. This full "
 "run may take a few minutes."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:681
+#: ../../source/Translocation/Translocation.md:681
 msgid ""
 "Exercise II: Using the CellProfiler Analyst software to visualize the "
 "data from the experiment, and classify the cells exposed to each drug "
 "condition by their phenotype (FOXO1A-GFP subcellular localization)"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:683
+#: ../../source/Translocation/Translocation.md:683
 msgid ""
 "You can now start CellProfiler Analyst (CPA) to explore the data you have"
 " extracted from the cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:686
+#: ../../source/Translocation/Translocation.md:686
 msgid ""
 "Start CellProfiler Analyst by double-clicking the icon on the desktop "
 "|Inline08|."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1200
+#: ../../source/Translocation/Translocation.md:1200
 msgid "Inline08"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:688
+#: ../../source/Translocation/Translocation.md:688
 msgid ""
 "When CPA is started, it will ask to select a *properties file*. Select "
 "the properties file named *DefaultDB .properties*, located in the Default"
@@ -1186,30 +1186,30 @@ msgid ""
 " module in your pipeline."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:693
+#: ../../source/Translocation/Translocation.md:693
 msgid ""
 "This file is a text file that contains the settings necessary for CPA to "
 "connect to the database that CellProfiler generated."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:696
+#: ../../source/Translocation/Translocation.md:696
 msgid ""
 "As a reminder, this database currently contains the measurement data "
 "obtained from all 26 images, and pointers to the location of those images"
 " on your hard drive."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:700
+#: ../../source/Translocation/Translocation.md:700
 msgid ""
 "If you move the database file, you'll need to edit the properties file to"
 " point to the new database location."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:703
+#: ../../source/Translocation/Translocation.md:703
 msgid "**Visualizing the measurements in a 96-well plate layout view**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:705
+#: ../../source/Translocation/Translocation.md:705
 msgid ""
 "CPA has several tools available for displaying the data for exploration. "
 "If your data came from a multi-well plate, such as the 96-well plate for "
@@ -1217,7 +1217,7 @@ msgid ""
 "visualization tools available is the plate layout format."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:710
+#: ../../source/Translocation/Translocation.md:710
 msgid ""
 "Click on the Plate Viewer icon in the main CPA window (|Inline09|, 3rd "
 "from the left). This selection brings up a 96-well formatted display of "
@@ -1228,11 +1228,11 @@ msgid ""
 "“tool-tip” box appear, which states the actual per-well value."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1202
+#: ../../source/Translocation/Translocation.md:1202
 msgid "Inline09"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:719
+#: ../../source/Translocation/Translocation.md:719
 msgid ""
 "The initial color coding represents the image index, a bookkeeping "
 "measurement which is not relevant for the level of analysis that we are "
@@ -1242,37 +1242,37 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:726
+#: ../../source/Translocation/Translocation.md:726
 msgid ""
 "Column 1, rows A-D, column 12, rows E-H and well E02: Negative controls, "
 "i.e., no drug added"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:729
+#: ../../source/Translocation/Translocation.md:729
 msgid ""
 "Column 1, rows E-H and column 12, rows A-D: Positive controls, i.e., 150 "
 "nM Wortmannin"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:732
+#: ../../source/Translocation/Translocation.md:732
 msgid ""
 "Row E, columns 2-11: Nine doses of 2-fold dilutions of Wortmannin, "
 "increasing from left to right."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:739
+#: ../../source/Translocation/Translocation.md:739
 msgid ""
 "*Figure 6: The Plate Viewer visualization tool illustrating the drug "
 "dosages applied to the plate.*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:742
+#: ../../source/Translocation/Translocation.md:742
 msgid ""
 "Select “\\ *Image\\_Count\\_Nuclei”* from the *Measurement* drop-down to "
 "show the nuclei count for each image."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:745
+#: ../../source/Translocation/Translocation.md:745
 msgid ""
 "Per-object measurements can also be displayed using this tool. Select "
 "“Per-object” as the Data Source, and “\\ "
@@ -1284,7 +1284,7 @@ msgid ""
 " the “Data aggregation” panel.)"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:754
+#: ../../source/Translocation/Translocation.md:754
 msgid ""
 "In this step, you will see how the image thumbnails can also be shown in "
 "the viewer. To do this, under “Well display” in the “View options” panel,"
@@ -1292,7 +1292,7 @@ msgid ""
 "merged color thumbnails of the original images."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:759
+#: ../../source/Translocation/Translocation.md:759
 msgid ""
 "In order to see that the original images are linked to the well display, "
 "you should right-click on a well and select the image number "
@@ -1302,7 +1302,7 @@ msgid ""
 " to subsequent images that you open.)"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:766
+#: ../../source/Translocation/Translocation.md:766
 msgid ""
 "Lastly, you will view the thumbnail montages by right-clicking on a well "
 "and selecting “Show thumbnail montage” from the resulting pop-up. Move "
@@ -1312,19 +1312,19 @@ msgid ""
 " then the montage would be shown as a tiled display.)"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:773
+#: ../../source/Translocation/Translocation.md:773
 msgid ""
 "Do not close the Plate Viewer tool, as you will be referring to it later "
 "in the exercise."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:776
+#: ../../source/Translocation/Translocation.md:776
 msgid ""
 "**Using the Classifier function of CPA to distinguish the cells’ FOXO1A-"
 "GFP subcellular localization phenotypes**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:779
+#: ../../source/Translocation/Translocation.md:779
 msgid ""
 "CellProfiler Analyst contains a machine-learning classification tool, "
 "which will allow you to distinguish different phenotypes automatically. "
@@ -1333,18 +1333,18 @@ msgid ""
 "outside the nucleus (“negatives”) by sorting examples of each into bins."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:785
+#: ../../source/Translocation/Translocation.md:785
 msgid ""
 "Select the *Classifier* icon in the main CPA window (|Inline10|, 2nd on "
 "left). The Classifier interface will appear, similar to that shown in the"
 " top of Fig. 7."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1203
+#: ../../source/Translocation/Translocation.md:1203
 msgid "Inline10"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:789
+#: ../../source/Translocation/Translocation.md:789
 msgid ""
 "Click on the “Fetch!” button, which instructs CPA to display pictures of "
 "a specified number (i.e. 20) of randomly selected cells from this "
@@ -1352,7 +1352,7 @@ msgid ""
 "populated with thumbnail images of these randomly selected cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:794
+#: ../../source/Translocation/Translocation.md:794
 msgid ""
 "Use your mouse to “drag & drop” whichever cells you consider clearly "
 "positive (i.e. FOXO1A-GFP located exclusively in the nucleus) into the "
@@ -1360,69 +1360,69 @@ msgid ""
 "positive cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:799
+#: ../../source/Translocation/Translocation.md:799
 msgid ""
 "A small dot is displayed in the center of each thumbnail image as your "
 "mouse hovers over it. The cell that falls under this dot is the cell to "
 "“drag & drop” which will be used for classification."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:803
+#: ../../source/Translocation/Translocation.md:803
 msgid ""
 "You can also select cells in the unclassified bin using the arrow keys "
 "and assign them to bins with the number keys. E.g. Pressing '1' would "
 "send any selected cells to the first bin ('positive' here)."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:812
+#: ../../source/Translocation/Translocation.md:812
 msgid "|Fig7b| |Fig7c| |Fig7d| |Fig7e|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:817
+#: ../../source/Translocation/Translocation.md:817
 msgid "Fig7b"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:819
+#: ../../source/Translocation/Translocation.md:819
 msgid "Fig7c"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:821
+#: ../../source/Translocation/Translocation.md:821
 msgid "Fig7d"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:823
+#: ../../source/Translocation/Translocation.md:823
 msgid "Fig7e"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:812
+#: ../../source/Translocation/Translocation.md:812
 msgid "|Fig7f| |Fig7g| |Fig7h| |Fig7i|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:825
+#: ../../source/Translocation/Translocation.md:825
 msgid "Fig7f"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:827
+#: ../../source/Translocation/Translocation.md:827
 msgid "Fig7g"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:829
+#: ../../source/Translocation/Translocation.md:829
 msgid "Fig7h"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:831
+#: ../../source/Translocation/Translocation.md:831
 msgid "Fig7i"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:814
+#: ../../source/Translocation/Translocation.md:814
 msgid "**Examples of positive cells**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:814
+#: ../../source/Translocation/Translocation.md:814
 msgid "**Examples of negative cells**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:834
+#: ../../source/Translocation/Translocation.md:834
 msgid ""
 "*Figure 7: * ***Top:*** *The Classifier interface showing 5 positive and "
 "5 negative cells. Thirty unclassified cells remain and are ready for "
@@ -1430,14 +1430,14 @@ msgid ""
 "cells (right).*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:839
+#: ../../source/Translocation/Translocation.md:839
 msgid ""
 "Now “drag & drop” whichever cells you consider clearly negative (i.e. "
 "FOXO1A-GFP located exclusively in the cytoplasm) into the “negative” bin."
 " See the bottom-right panel of Fig. 7 for examples of negative cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:844
+#: ../../source/Translocation/Translocation.md:844
 msgid ""
 "Once you have at least 5 cells in the positive bin and 5 cells in the "
 "negative bin, change the classifier from ‘Random Forest’ to ‘Fast Gentle "
@@ -1447,7 +1447,7 @@ msgid ""
 " until you receive enough cells to be able to put 5 in each bin."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:852
+#: ../../source/Translocation/Translocation.md:852
 msgid ""
 "Note that in this portion of the exercise, the cell images that are "
 "provided to you are a random sampling of the data. Thus, depending on "
@@ -1456,45 +1456,45 @@ msgid ""
 "portion of the exercise will not look the same from user to user."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:859
+#: ../../source/Translocation/Translocation.md:859
 msgid ""
 "We refer to this set of positive and negative cells you have assembled as"
 " the “training set.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:862
+#: ../../source/Translocation/Translocation.md:862
 msgid ""
 "**Reviewing the rules that CPA established (based on your training set) "
 "to classify positive and negative cells**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:865
+#: ../../source/Translocation/Translocation.md:865
 msgid ""
 "The classification rules you will examine below are CPA’s way of defining"
 " the measurements (and the cutoff values the measurements need to have) "
 "in order to distinguish the positive from the negative phenotypes."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:870
+#: ../../source/Translocation/Translocation.md:870
 msgid ""
 "Read the text that is now located in the text box in the upper half of "
 "the Classifier window. This text contains the rules CPA found based on "
 "the training set you provided to it."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:874
+#: ../../source/Translocation/Translocation.md:874
 msgid ""
 "Each rule is in the form an “IF” statement evaluating whether a "
 "measurement is greater than some value."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:877
+#: ../../source/Translocation/Translocation.md:877
 msgid ""
 "The closer to the top of the list a measurement appears, the more "
 "significant it is in distinguishing the phenotypes."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:880
+#: ../../source/Translocation/Translocation.md:880
 msgid ""
 "Note that this rule display is only available with the "
 "'FastGentleBoosting' classifier type. Other classifier types will list "
@@ -1502,7 +1502,7 @@ msgid ""
 "classifier type)."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:885
+#: ../../source/Translocation/Translocation.md:885
 msgid ""
 "Questions to consider: (1) What is the top-most measurement that shows up"
 " in your classification rules? (2) Is the top-most measurement one that "
@@ -1510,11 +1510,11 @@ msgid ""
 "the phenotypes?"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:890
+#: ../../source/Translocation/Translocation.md:890
 msgid "**Reviewing the accuracy of the classification with the confusion matrix**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:893
+#: ../../source/Translocation/Translocation.md:893
 msgid ""
 "Once you have trained a classifier, you can test the ability of the of "
 "the classification rules to predict which class each cell in your "
@@ -1527,14 +1527,14 @@ msgid ""
 " axis."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:903
+#: ../../source/Translocation/Translocation.md:903
 msgid ""
 "Press the ‘Evaluate’ button to generate a confusion matrix for the cells "
 "you’ve classified so far. How accurate is your classification after "
 "adding only a few cells to your training set?"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:907
+#: ../../source/Translocation/Translocation.md:907
 msgid ""
 "Note that the confusion matrix is NOT a measure of how accurate the "
 "classifier will be on your whole data set, simply a measure of *how well "
@@ -1546,23 +1546,23 @@ msgid ""
 " whole experiment."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:917
+#: ../../source/Translocation/Translocation.md:917
 msgid "|Fig8A|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:920
+#: ../../source/Translocation/Translocation.md:920
 msgid "Fig8A"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:917
+#: ../../source/Translocation/Translocation.md:917
 msgid "|Fig8B|"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:922
+#: ../../source/Translocation/Translocation.md:922
 msgid "Fig8B"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:925
+#: ../../source/Translocation/Translocation.md:925
 #, python-format
 msgid ""
 "*Figure 8: Examples of confusion matrices from a poorly-trained (left) "
@@ -1576,13 +1576,13 @@ msgid ""
 "perfectly, that is rare in real data.*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:935
+#: ../../source/Translocation/Translocation.md:935
 msgid ""
 "**Refining the training set by sorting more “unclassified” cells into the"
 " “positive” and “negative” bins**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:938
+#: ../../source/Translocation/Translocation.md:938
 msgid ""
 "At this point, it is important to keep in mind that the CPA Classifier "
 "tool will pick whichever measurement is most significant in making its "
@@ -1591,7 +1591,7 @@ msgid ""
 "the mind of the user)."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:944
+#: ../../source/Translocation/Translocation.md:944
 msgid ""
 "For example, at this point (after only sorting 5 positive & 5 negative "
 "cells), you may notice measurements called *“Object\\_Number”* (the "
@@ -1604,7 +1604,7 @@ msgid ""
 "from the cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:954
+#: ../../source/Translocation/Translocation.md:954
 msgid ""
 "**Refining the training set by obtaining samples from positive and "
 "negative control wells:** Sometimes the phenotype of interest is uncommon"
@@ -1616,76 +1616,76 @@ msgid ""
 "drop the cells of interest directly from the image."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:963
+#: ../../source/Translocation/Translocation.md:963
 msgid ""
 "Open the *Plate Viewer* and double-click on well A01, in order to open an"
 " image from the negative controls."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:966
+#: ../../source/Translocation/Translocation.md:966
 msgid ""
 "Click on a cell in the image that is negative for the phenotype and drag-"
 "and-drop it into the negative bin. Repeat this for 5 negative cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:970
+#: ../../source/Translocation/Translocation.md:970
 msgid ""
 "Repeat the above two steps for A12 (a well containing a positive control "
 "sample), dropping the cells into the positive bin. Do this for 5 positive"
 " cells."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:974
-#: ../../source/Translocation/Translocation.rst:1001
-#: ../../source/Translocation/Translocation.rst:1032
+#: ../../source/Translocation/Translocation.md:974
+#: ../../source/Translocation/Translocation.md:1001
+#: ../../source/Translocation/Translocation.md:1032
 msgid "Click the “Train classifier” button."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:976
+#: ../../source/Translocation/Translocation.md:976
 msgid ""
 "**Refining the training set by correcting misclassified cells in an "
 "image:** You may also apply the rules to all the identified cells in an "
 "image, and use it to correct misclassifications."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:980
+#: ../../source/Translocation/Translocation.md:980
 msgid "Double-click any of cell thumbnails in the positive or negative bins."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:982
+#: ../../source/Translocation/Translocation.md:982
 msgid ""
 "From the image that opens, click “Classify” from the menu, then “Classify"
 " Image”."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:985
+#: ../../source/Translocation/Translocation.md:985
 msgid ""
 "The cells will be color-coded according to their classification based on "
 "the current rules."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:988
+#: ../../source/Translocation/Translocation.md:988
 msgid ""
 "Click the “Show controls >>” button at the bottom to reveal the total "
 "counts of each class on the image. On Windows computers this will also "
 "show which color corresponds to which class."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:992
+#: ../../source/Translocation/Translocation.md:992
 msgid ""
 "On Macs, select “View” from the image menu, and then select “View cell "
 "classes as numbers.” Then, to see what each number means, click the “Show"
 " controls >>” button at the bottom to reveal the numbered class list."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:997
+#: ../../source/Translocation/Translocation.md:997
 msgid ""
 "Look for up to 5 cells that are clearly misclassified. For each of these "
 "cells that you find, click on it and drag-and-drop it into the "
 "appropriate bin."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1003
+#: ../../source/Translocation/Translocation.md:1003
 msgid ""
 "**Refining the training set by fetching positive and negative cells:** "
 "You now have your initial training set, and the rules that define the "
@@ -1696,33 +1696,33 @@ msgid ""
 "distinguishing the FOXO1A-GFP subcellular localization phenotypes."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1011
+#: ../../source/Translocation/Translocation.md:1011
 msgid ""
 "Change the number next to the word “Fetch” from “20” to “5”. Click on the"
 " drop-down box labeled “random” in the fetch controls. Select “positive” "
 "from the drop-down list."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1015
+#: ../../source/Translocation/Translocation.md:1015
 msgid ""
 "Click the “Fetch!” button to retrieve samples of what the computer thinks"
 " are positive cells based on the current set of rules. Refine your "
 "training set by doing the following:"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1019
+#: ../../source/Translocation/Translocation.md:1019
 msgid ""
 "If positive cells are correctly fetched (true positives), drag and drop "
 "them into the positive bin."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1022
+#: ../../source/Translocation/Translocation.md:1022
 msgid ""
 "If negative cells are incorrectly fetched (false positives), drag and "
 "drop them into the negative bin."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1025
+#: ../../source/Translocation/Translocation.md:1025
 msgid ""
 "As with previous steps, if you are not sure about which bin a cell "
 "belongs to, do not add it to the training set. Instead, click to select "
@@ -1730,11 +1730,11 @@ msgid ""
 "from the analysis."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1030
+#: ../../source/Translocation/Translocation.md:1030
 msgid "Repeat this step until you have at least 20 cells in each bin."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1034
+#: ../../source/Translocation/Translocation.md:1034
 msgid ""
 "Questions to consider: (1) What is the top-most rule that shows up in "
 "your classification rules? (2) Is the top-most rule a measurement that "
@@ -1742,7 +1742,7 @@ msgid ""
 " the phenotypes?"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1039
+#: ../../source/Translocation/Translocation.md:1039
 msgid ""
 "Whatever approach you choose to obtain more positive and negative cells, "
 "the procedure is the same: (i) Find rules; (ii) Obtain more cell samples "
@@ -1751,17 +1751,17 @@ msgid ""
 "classifier displays the desired level of accuracy."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1045
+#: ../../source/Translocation/Translocation.md:1045
 msgid "**Classifying all cells in the experiment**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1047
+#: ../../source/Translocation/Translocation.md:1047
 msgid ""
 "Once the classifier is of the desired accuracy, it is ready to be applied"
 " to the complete image data set."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1050
+#: ../../source/Translocation/Translocation.md:1050
 msgid ""
 "Press the “Score all” button. A dialog box will appear with scoring "
 "options; click “OK” to accept the default settings and begin scoring. "
@@ -1769,7 +1769,7 @@ msgid ""
 "the classifier you built."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1055
+#: ../../source/Translocation/Translocation.md:1055
 msgid ""
 "A “Hit table” window will appear containing the summarized scores for "
 "every image (Fig. 9). The total cell count is reported, as well as the "
@@ -1777,7 +1777,7 @@ msgid ""
 "enrichment score."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1060
+#: ../../source/Translocation/Translocation.md:1060
 msgid ""
 "Click on the column header labeled “Enriched Score positive.” (You can "
 "resize the hit table window, if this column is not visible). Clicking "
@@ -1786,79 +1786,79 @@ msgid ""
 "is descending, with the highest score at top."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1066
+#: ../../source/Translocation/Translocation.md:1066
 msgid ""
 "Double-click on the asterisk in the first row to the left of the first "
 "column (“ImageNumber”) to display the corresponding image for the top-"
 "scoring well."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1074
+#: ../../source/Translocation/Translocation.md:1074
 msgid "*Figure 9: Hit table showing the cell counts and enrichment scores.*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1076
+#: ../../source/Translocation/Translocation.md:1076
 msgid ""
 "You can also save your training set and/or classifer model for future "
 "reference or to make changes later; do so by going to *File > Save "
 "Training Set* or *File > Save Classifier Model*"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1080
+#: ../../source/Translocation/Translocation.md:1080
 msgid "**Saving the scores to the measurement database for visualization**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1082
+#: ../../source/Translocation/Translocation.md:1082
 msgid ""
 "Now that we have successfully scored our experiment, we will save the "
 "scores back to the measurement database, so that they can be visualized "
 "using CPA’s tools."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1086
+#: ../../source/Translocation/Translocation.md:1086
 msgid ""
 "Select the “Hit table” window and click “File” from the menu, then “Save "
 "table to database.” When prompted for a name, enter “HitTable”. Select "
 "“save permanently” when prompted."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1090
+#: ../../source/Translocation/Translocation.md:1090
 msgid ""
 "Select Plate Viewer from the CPA interface, then choose “\\*OTHER "
 "TABLE\\*” from “Data source.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1093
+#: ../../source/Translocation/Translocation.md:1093
 msgid "When prompted to select a table, choose “HitTable.”"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1095
+#: ../../source/Translocation/Translocation.md:1095
 msgid ""
 "At the next prompt, select “per-well” as the table type. Then select the "
 "matching columns in order to link the table of hits to the table of image"
 " measurements, by doing the following:"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1099
+#: ../../source/Translocation/Translocation.md:1099
 msgid ""
 "On the first row, choose “\\ *PlateID*\\ ” on the left to match “\\ "
 "*Image\\_Metadata\\_Plate*\\ ” on the right."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1102
+#: ../../source/Translocation/Translocation.md:1102
 msgid ""
 "On the second row, choose “\\ *Image\\_Metadata\\_Well*\\ ” on the left "
 "to match “\\ *Image\\_Metadata\\_Well*\\ ” on the right."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1105
+#: ../../source/Translocation/Translocation.md:1105
 msgid ""
 "Open a new Plate Viewer tool from the main CPA window. On the Plate "
 "Viewer, select “\\ *pEnriched\\_positive”* from the *Measurement* drop-"
 "down list in order to view the enrichment scores in the plate layout."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1109
+#: ../../source/Translocation/Translocation.md:1109
 msgid ""
 "Refer to the previous Plate Viewer display of "
 "*“Image\\_Metadata\\_Dose*\\ ” from section 2A. Consider the following "
@@ -1869,13 +1869,13 @@ msgid ""
 " thereof) tell you about the classifier?"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1117
+#: ../../source/Translocation/Translocation.md:1117
 msgid ""
 "**Plotting the scoring results, to estimate the lowest dose necessary to "
 "induce FOX1O-GFP translocation**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1120
+#: ../../source/Translocation/Translocation.md:1120
 msgid ""
 "You can use additional data tools in CPA to visualize your data in other "
 "ways. In this case, we will use a scatter plot to plot a dose-response "
@@ -1883,30 +1883,30 @@ msgid ""
 "cells with GFP in the nucleus) increases with Wortmannin dose."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1125
+#: ../../source/Translocation/Translocation.md:1125
 msgid ""
 "Click the Scatter Plot icon in the main CPA window |Inline11|, 4th from "
 "left)."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1204
+#: ../../source/Translocation/Translocation.md:1204
 msgid "Inline11"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1127
+#: ../../source/Translocation/Translocation.md:1127
 msgid ""
 "From the “x-axis” row, select “\\ *Per\\_image*\\ ” and “\\ "
 "*Image\\_Metadata\\_Dose*\\ ” from the drop-down lists. Choose “\\ "
 "*log*\\ ” from the “Scale” drop-down."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1131
+#: ../../source/Translocation/Translocation.md:1131
 msgid ""
 "From the “y-axis” row, select “\\ *HitTable*\\ ” and “\\ "
 "*pEnriched\\_positive*\\ ” from the drop-down-lists."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1134
+#: ../../source/Translocation/Translocation.md:1134
 msgid ""
 "Click the “Update chart” button to see the scatter plot. NOTE: due to a "
 "bug in CPA, if you have plot the graph once in “\\ *linear*\\ ” scale "
@@ -1914,7 +1914,7 @@ msgid ""
 "thrown. If you want to look at both, open two separate scatter plots."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1139
+#: ../../source/Translocation/Translocation.md:1139
 msgid ""
 "In the space below, record your questions to the following questions: (1)"
 " What is the enrichment score (*pEnriched\\_positive*) that corresponds "
@@ -1924,18 +1924,18 @@ msgid ""
 "enrichment score similar to that of the maximum dose?"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1147
+#: ../../source/Translocation/Translocation.md:1147
 msgid "**Exporting your classifier for use in a CellProfiler pipeline**"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1149
+#: ../../source/Translocation/Translocation.md:1149
 msgid ""
 "Head back to the Classifier tool. The *File-->Save Classifier Model* menu"
 " option can be used to export a .model file which stores the trained "
 "classifier for use in other software."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1153
+#: ../../source/Translocation/Translocation.md:1153
 msgid ""
 "Within CellProfiler 4+, the *ClassifyObjects* and *FilterObjects* modules"
 " can load these model files and use them to assign objects to classes "
@@ -1943,7 +1943,7 @@ msgid ""
 "without needing to train in CellProfiler Analyst again."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1158
+#: ../../source/Translocation/Translocation.md:1158
 msgid ""
 "Note that to use model files in CellProfiler, the pipeline needs to "
 "produce the same measurements that were present in your CPA database "
@@ -1951,11 +1951,11 @@ msgid ""
 "which will use your model."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1166
+#: ../../source/Translocation/Translocation.md:1166
 msgid "***To learn more about CellProfiler, please see our website:***"
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1168
+#: ../../source/Translocation/Translocation.md:1168
 msgid ""
 "Download CellProfiler and CellProfiler Analyst from the “Download” links "
 "on `https://cellprofiler.org/ <https://cellprofiler.org/>`__ and "
@@ -1964,20 +1964,20 @@ msgid ""
 "webpage also provides tutorials and example pipelines."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1174
+#: ../../source/Translocation/Translocation.md:1174
 msgid ""
 "Visit the Scientific Community Image Forum at https://forum.image.sc/ to "
 "find answers to common questions and ask for help if needed."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1177
+#: ../../source/Translocation/Translocation.md:1177
 msgid ""
 "Video tutorials that may be helpful are available on the Center for Open "
 "Bioimage Analysis YouTube channel: https://www.youtube.com/channel"
 "/UC_id9sE-vu_i30Bd-skay7Q/."
 msgstr ""
 
-#: ../../source/Translocation/Translocation.rst:1181
+#: ../../source/Translocation/Translocation.md:1181
 msgid ""
 "Download sample images and the text file of experimental parameters used "
 "in this exercise from https://cellprofiler-"
