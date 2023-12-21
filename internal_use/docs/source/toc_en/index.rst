@@ -11,7 +11,7 @@ Welcome to cellprofiler-tutorials's documentation!
    :caption: Contents:
    :titlesonly:
 
-   ../Translocation/Translocation
+   Translocation <../Translocation/Translocation>
    ../3d-monolayer/3D_Monolayer
    ../3DNuclei/Nuclei3DTimeConsumingPipeline
    ../AdvancedSegmentation/BBBC022_AnalysisExercise
