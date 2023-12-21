@@ -95,13 +95,14 @@ substitutions:
     ```{image} ./TutorialImages/Inline13.png
     ```
 ---
+# Translocation
 
-# Image-based screening using subcellular localization of FOXO1A in osteosarcoma cells: A computer exercise using CellProfiler & CellProfiler Analyst software
+**Image-based screening using subcellular localization of FOXO1A in osteosarcoma cells: A computer exercise using CellProfiler & CellProfiler Analyst software**
 
 Beth Cimini, Carolina Wählby, Martin Simonsson, Megan Rokop and Mark
 Bray, Broad Institute
 
-**\*Background information:\***
+### **Background information:**
 
 In this experiment, we are working with human U2OS osteosarcoma (bone
 cancer) cells, in which a Forkhead-protein FOXO1A has been labeled with
@@ -128,14 +129,14 @@ patients), but possess fewer side effects than the known drugs.
 localization in untreated cells. Right: Nuclear localization in
 Wortmannin treated cells. GFP: Green, DNA: red.*
 
-**Goals of this exercise:**
+### **Goals of this exercise:**
 
 In this exercise, we aim to: (1) determine this lowest possible dose
 necessary to observe this effect, and (2) to optimize the analysis of
 images in which FOXO1A is cytoplasmic versus nuclear, in order to
 separate positive controls and negative controls as best as possible.
 
-**Materials necessary for this exercise:**
+### **Materials necessary for this exercise:**
 
 The images you will be analyzing were taken from cells growing in a
 standard 96-well plate, but you will work with a subset of only 26 of
@@ -148,7 +149,7 @@ drug. In addition to these images, a text file called
 information about where on the 96-well plate the wells were located, and
 how the cells were treated.
 
-**Methods to be used in this exercise:**
+### **Methods to be used in this exercise:**
 
 In this exercise, you will use CellProfiler and CellProfiler Analyst to
 identify and delineate (or “segment”) each nucleus and cell body, and
@@ -168,7 +169,7 @@ treated and untreated cells.
 
 ## Exercise I: Using the CellProfiler software to identify features and obtain measurements from cellular images.
 
-1. **Starting CellProfiler and configuring the input data for analysis**
+### 1. **Starting CellProfiler and configuring the input data for analysis**
 
 - Start CellProfiler by double-clicking the desktop icon {{ Inline01 }}
 
@@ -252,8 +253,7 @@ treated and untreated cells.
 - Click the “Update” button below the divider to display a table that
   shows each channel pair matched up for the 26 wells in the assay.
 
-2. **Identifying the nuclei as the “primary objects” that you will
-   analyze**
+### 2. **Identifying the nuclei as the “primary objects” that you will       analyze**
 
 Now that the module inputs and outputs are set up, in your module, the
 remaining settings need to be adjusted to best detect the nuclei. The
@@ -328,7 +328,7 @@ The result may look like Figure 3.
 *Figure 3: A zoomed-in view of the display window for IdentifyPrimaryObjects*
 :::
 
-3. **Improve identification of primary objects**
+### 3. **Improve identification of primary objects**
 
 In this instance, in Figure 3, you can see that the outlines capture too
 much of the background around the nuclei. This means that the default
@@ -387,8 +387,7 @@ them as foreground pixels, leaving only the lowest intensity pixels as
 background. The identified outlines should now better match the actual
 nuclei boundaries.
 
-4. **Identifying the cell body as a “secondary object” that you will
-   analyze**
+### 4. **Identifying the cell body as a “secondary object” that you will analyze**
 
 Now that you have confirmed, by eye, that the settings we provided you
 in this exercise do allow for identification and segmentation of the
@@ -457,7 +456,7 @@ of pixels without regard to the underlying fluorescence.
   appears underneath to 10 pixels.
 - Click the “Step” button to see the result from your new settings.
 
-5. **Identifying the cytoplasm as a “tertiary object”**
+### 5. **Identifying the cytoplasm as a “tertiary object”**
 
 Once we have identified the nucleus and the cell body, these two objects
 can be used to define the cell cytoplasm as the region outside the
@@ -488,7 +487,7 @@ objects, effectively identifying the cytoplasm.
 *Figure 5: Example module display window for IdentifyTertiaryObjects*.
 :::
 
-6. **Measuring the cells’ characteristics (i.e. the “object features”)**
+### 6. **Measuring the cells’ characteristics (i.e. the “object features”)**
 
 Now that the objects have been identified using settings that have been
 optimized for the phenotypes of interest, the next step is to make
@@ -505,7 +504,7 @@ and then let the classification tool decide which features are most
 useful. In this exercise, however, we will use three of the possible
 measurements.
 
-**Measurement of pixel intensity of GFP in nuclei and cytoplasm:** One
+#### **Measurement of pixel intensity of GFP in nuclei and cytoplasm:** One
 example of a particularly useful measurement is the pixel intensities of
 the various objects (i.e. nuclei and cytoplasm) as measured from the
 images showing the subcellular location of the FOXO1A-GFP fluorescence.
@@ -517,7 +516,7 @@ images showing the subcellular location of the FOXO1A-GFP fluorescence.
   checking the box next to it.
 - Select “Nuclei” and "Cytoplasm" from the "Select objects to measure" box.
 
-**Measurement of the correlation of GFP in nuclei to DNA in nuclei:**
+#### **Measurement of the correlation of GFP in nuclei to DNA in nuclei:**
 Another potentially useful measure is the correlation within the objects
 of the pixel intensities in the GFP and DNA channels. If the FOXO1A-GFP
 protein is not translocated, the intensity correlation within the
@@ -536,7 +535,7 @@ upon translocation, the correlation would be positive.
 - For "Method for Costes thresholding", choose *"Faster"* from the drop-down
   list to reduce analysis time.
 
-**Measurement of the ratio of GFP in cytoplasm to GFP in nuclei:** Since
+#### **Measurement of the ratio of GFP in cytoplasm to GFP in nuclei:** Since
 we are interested in the transportation of GFP from the cytoplasm to the
 nucleus, it would be useful to measure the ratio of cytoplasmic stain to
 nuclear stain. In this case, we will use the *CalculateMath* module
@@ -575,8 +574,7 @@ measurements.
   - Select “MeanIntensity” from the “Measurement” drop-down list. Then
     select “rawGFP” from the “Image” drop-down that appears.
 
-7. **Creating an image with your cell and nuclear outlines on it
-   (optional)**
+### 7. **Creating an image with your cell and nuclear outlines on it (optional)**
 
 It’s often nice to create an image showing the segmentation of your
 objects so that you can refer back to it later; in addition to the
@@ -584,7 +582,7 @@ ability to quickly scan all the output images to make sure your
 segmentation was successful, you can re-check them later in case you
 have questions about an unusual result.
 
-**Creation of a color image to display the segmentation:**
+#### **Creation of a color image to display the segmentation:**
 
 - Click on the {{ Inline03 }} button and add the module *GrayToColor* located under
   the *“Image Processing”* module category*.* Add it to the pipeline
@@ -602,7 +600,7 @@ have questions about an unusual result.
 
 - “Relative weight”s for each of the channels can be left at 1.
 
-**Overlaying the outlines onto the color image:** This module will
+#### **Overlaying the outlines onto the color image:** This module will
 overlay the outlines of your identified objects onto the color image.
 You may choose whatever color you like to show the outlines, but you may
 find it easiest to use something that contrasts with your color image.
@@ -629,7 +627,7 @@ and simply view them one at a time.
   steps for “Cells”; you should select a different color for the
   outlines.
 
-**Saving the overlay image:** The SaveImages module can be used to
+#### **Saving the overlay image:** The SaveImages module can be used to
 either save images generated in any step of the pipeline or masks of the
 objects created. Here we will save the images to the DefaultOutput
 folder, but you can specify any other location, and additionally create
@@ -650,7 +648,7 @@ subfolders based on the extracted metadata if you like.
   “\_Overlay” is appropriate.
 - All the other settings may be left at their default values.
 
-8. **Exporting the measurements to a database**
+### 8. **Exporting the measurements to a database**
 
 Since we will be using the data visualization and machine learning tools
 in CellProfiler Analyst, the measurements will need to be saved to a
@@ -689,8 +687,7 @@ Analyst to access them.
   Command-click (Mac). Leave the rest of the settings at the default
   values.
 
-9. Using the optimized pipeline to automatically analyze all images
-   : generated by the screening experiment\*\*
+### 9. **Using the optimized pipeline to automatically analyze all images generated by the screening experiment**
 
 At this point, the settings you have entered were chosen for you because
 those settings specifically, when used with these images, result in an
@@ -748,7 +745,7 @@ have extracted from the cells.
   - If you move the database file, you'll need to edit the properties file
     to point to the new database location.
 
-1. **Visualizing the measurements in a 96-well plate layout view**
+### 1. **Visualizing the measurements in a 96-well plate layout view**
 
 CPA has several tools available for displaying the data for exploration.
 If your data came from a multi-well plate, such as the 96-well plate for
@@ -814,8 +811,7 @@ visualization tools available is the plate layout format.
 - Do not close the Plate Viewer tool, as you will be referring to it
   later in the exercise.
 
-2. **Using the Classifier function of CPA to distinguish the cells’
-   FOXO1A-GFP subcellular localization phenotypes**
+### 2. **Using the Classifier function of CPA to distinguish the cells’ FOXO1A-GFP subcellular localization phenotypes**
 
 CellProfiler Analyst contains a machine-learning classification tool,
 which will allow you to distinguish different phenotypes automatically.
@@ -884,8 +880,7 @@ sorting. * \*\*\*Bottom:\*\** *Examples of positive cells (left) and negative ce
   - We refer to this set of positive and negative cells you have
     assembled as the “training set.”
 
-3. **Reviewing the rules that CPA established (based on your training
-   set) to classify positive and negative cells**
+### 3. **Reviewing the rules that CPA established (based on your training set) to classify positive and negative cells**
 
 The classification rules you will examine below are CPA’s way of
 defining the measurements (and the cutoff values the measurements need
@@ -910,8 +905,7 @@ phenotypes.
   measurement one that you would expect to be the most significant one
   to use in distinguishing the phenotypes?
 
-4. **Reviewing the accuracy of the classification with the confusion
-   matrix**
+### 4. **Reviewing the accuracy of the classification with the confusion matrix**
 
 Once you have trained a classifier, you can test the ability of the of
 the classification rules to predict which class each cell in your
@@ -952,8 +946,7 @@ classifier to find rules that accurately predict which class the cells
 belong to. While the cells in this simple example were able to be
 predicted perfectly, that is rare in real data.*
 
-5. **Refining the training set by sorting more “unclassified” cells into
-   the “positive” and “negative” bins**
+### 5. **Refining the training set by sorting more “unclassified” cells into the “positive” and “negative” bins**
 
 At this point, it is important to keep in mind that the CPA Classifier
 tool will pick whichever measurement is most significant in making its
@@ -1016,7 +1009,7 @@ image, and use it to correct misclassifications.
 
 - Click the “Train classifier” button.
 
-**Refining the training set by fetching positive and negative cells:**
+#### **Refining the training set by fetching positive and negative cells:**
 You now have your initial training set, and the rules that define the
 computer’s first attempt at distinguishing the phenotype. Therefore you
 can now request that the computer fetch more examples of positive and
@@ -1056,7 +1049,7 @@ of the desired phenotype; (iii) Correct misclassifications, or sort into
 appropriate bins; (iv) Go back to the first step and repeat, until the
 classifier displays the desired level of accuracy.
 
-6. **Classifying all cells in the experiment**
+### 6. **Classifying all cells in the experiment**
 
 Once the classifier is of the desired accuracy, it is ready to be
 applied to the complete image data set.
@@ -1091,7 +1084,7 @@ You can also save your training set and/or classifer model for future
 reference or to make changes later; do so by going to *File > Save
 Training Set* or *File > Save Classifier Model*
 
-7. **Saving the scores to the measurement database for visualization**
+### 7. **Saving the scores to the measurement database for visualization**
 
 Now that we have successfully scored our experiment, we will save the
 scores back to the measurement database, so that they can be visualized
@@ -1127,8 +1120,7 @@ using CPA’s tools.
   of “*Image_Metadata_Dose*”? (2) What does this correspondence
   (or lack thereof) tell you about the classifier?
 
-8. **Plotting the scoring results, to estimate the lowest dose necessary
-   to induce FOX1O-GFP translocation**
+### 8. **Plotting the scoring results, to estimate the lowest dose necessary to induce FOX1O-GFP translocation**
 
 You can use additional data tools in CPA to visualize your data in other
 ways. In this case, we will use a scatter plot to plot a dose-response
@@ -1153,7 +1145,7 @@ cells with GFP in the nucleus) increases with Wortmannin dose.
   lowest dose that produces an enrichment score similar to that of the
   maximum dose?
 
-9. **Exporting your classifier for use in a CellProfiler pipeline**
+### 9. **Exporting your classifier for use in a CellProfiler pipeline**
 
 Head back to the Classifier tool. The *File-->Save Classifier Model* menu
 option can be used to export a .model file which stores the trained
@@ -1170,7 +1162,7 @@ classifier for use in other software.
 
 ______________________________________________________________________
 
-**\*To learn more about CellProfiler, please see our website:\***
+## **To learn more about CellProfiler, please see our website:**
 
 - Download CellProfiler and CellProfiler Analyst from the
   “Download” links on
