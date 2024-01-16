@@ -1,99 +1,6 @@
 ---
 substitutions:
-  Fig1A: |-
-    ```{image} ./TutorialImages/Fig1A.png
-    :width: 300
-    ```
-  Fig1B: |-
-    ```{image} ./TutorialImages/Fig1B.png
-    :width: 300
-    ```
-  Fig7b: |-
-    ```{image} ./TutorialImages/Fig7b.png
-    :width: 50
-    ```
-  Fig7c: |-
-    ```{image} ./TutorialImages/Fig7c.png
-    :width: 50
-    ```
-  Fig7d: |-
-    ```{image} ./TutorialImages/Fig7d.png
-    :width: 50
-    ```
-  Fig7e: |-
-    ```{image} ./TutorialImages/Fig7e.png
-    :width: 50
-    ```
-  Fig7f: |-
-    ```{image} ./TutorialImages/Fig7f.png
-    :width: 50
-    ```
-  Fig7g: |-
-    ```{image} ./TutorialImages/Fig7g.png
-    :width: 50
-    ```
-  Fig7h: |-
-    ```{image} ./TutorialImages/Fig7h.png
-    :width: 50
-    ```
-  Fig7i: |-
-    ```{image} ./TutorialImages/Fig7i.png
-    :width: 50
-    ```
-  Fig8A: |-
-    ```{image} ./TutorialImages/Fig8A.png
-    :width: 300
-    ```
-  Fig8B: |-
-    ```{image} ./TutorialImages/Fig8B.png
-    :width: 300
-    ```
-  Inline01: |-
-    ```{image} ./TutorialImages/Inline01.png
-    :width: 25
-    ```
-  Inline02: |-
-    ```{image} ./TutorialImages/Inline02.png
-    :width: 25
-    ```
-  Inline03: |-
-    ```{image} ./TutorialImages/Inline03.png
-    :width: 20
-    ```
-  Inline04: |-
-    ```{image} ./TutorialImages/Inline04.png
-    :width: 15
-    ```
-  Inline05: |-
-    ```{image} ./TutorialImages/Inline05.png
-    ```
-  Inline06: |-
-    ```{image} ./TutorialImages/Inline06.png
-    :width: 20
-    ```
-  Inline07: |-
-    ```{image} ./TutorialImages/Inline07.png
-    :width: 20
-    ```
-  Inline08: |-
-    ```{image} ./TutorialImages/Inline08.png
-    :width: 25
-    ```
-  Inline09: |-
-    ```{image} ./TutorialImages/Inline09.png
-    ```
-  Inline10: |-
-    ```{image} ./TutorialImages/Inline10.png
-    ```
-  Inline11: |-
-    ```{image} ./TutorialImages/Inline11.png
-    ```
-  Inline12: |-
-    ```{image} ./TutorialImages/Inline12.png
-    ```
-  Inline13: |-
-    ```{image} ./TutorialImages/Inline13.png
-    ```
+
 ---
 # Translocation
 
@@ -119,11 +26,14 @@ drugs that have the same effect as Wortmannin on FOXO1A subcellular
 localization (and hence may be possible treatments for osteosarcoma
 patients), but possess fewer side effects than the known drugs.
 
-> ```{eval-rst}
-> +---------+---------+
-> | |Fig1A| | |Fig1B| |
-> +---------+---------+
-> ```
+
+```{image} ./TutorialImages/Fig1A.png
+:width: 500
+```
+```{image} ./TutorialImages/Fig1B.png
+:width: 500
+```
+
 
 *Figure 1: Examples of FOXO1A-GFP localization. Left: Cytoplasmic
 localization in untreated cells. Right: Nuclear localization in
@@ -171,7 +81,7 @@ treated and untreated cells.
 
 ### 1. **Starting CellProfiler and configuring the input data for analysis**
 
-- Start CellProfiler by double-clicking the desktop icon {{ Inline01 }}
+- Start CellProfiler by double-clicking the desktop icon <img src="./TutorialImages/Inline01.png" alt="CellProfiler icon" width="35"/>
 
 - In the CellProfiler interface, you will see the File list panel, a
   blank panel indicated by the text “Drop files and folders here”. The
@@ -208,7 +118,7 @@ treated and untreated cells.
   information about the plate, well, site, and channel of each image by
   parsing the file name.
 
-- Click the magnifying glass icon {{ Inline02 }} to the right of the text box
+- Click the magnifying glass icon <img src="./TutorialImages/Inline02.png" alt="CellProfiler icon" width="35"/> to the right of the text box
   labeled “Regular expression”.
 
   - A new dialog box will appear to assist in comparing the entered
@@ -262,7 +172,7 @@ mode,” which will allow you to see the results of your chosen settings,
 and adjust them as needed.
 
 - Click the “Start Test Mode” button to the bottom-left of the
-  CellProfiler interface. You will see {{ Inline04 }} icons appear next
+  CellProfiler interface. You will see <img src="./TutorialImages/Inline04.png" alt="CellProfiler icon" width="35"/> icons appear next
   to the modules in the pipeline, as well as new buttons appear below
   the modules.
 - Click on the “Step” button below the pipeline panel, in order to
@@ -270,12 +180,13 @@ and adjust them as needed.
   stepping through the *IdentifyPrimaryObjects* module, a module
   display window will appear similar to that shown in Figure 2 below.
 
-:::{figure} ./TutorialImages/Fig2.png
-:align: center
-:width: 500
 
-*Figure 2: Example module display window for IdentifyPrimaryObjects .*
-:::
+```{figure} ./TutorialImages/Fig2.png
+:width: 700
+:align: center
+
+*Figure 2: Example module display window for IdentifyPrimaryObjects.*
+```
 
 For the *IdentifyPrimaryObjects* module, the goal is to have the
 outlines match the actual nuclei boundaries as well as possible, as well
@@ -304,7 +215,9 @@ the display window, as shown in Fig. 2:
 There are some image tools on the top toolbar that may be helpful to see
 the individual objects:
 
-{{ Inline05 }}
+```{image} ./TutorialImages/Inline05.png
+:width: 600
+```
 
 The 1st icon from the left lets you reset the view back to the original
 view.
@@ -321,12 +234,12 @@ drawing a box to zoom in on.
 Zoom in the image in order to see the quality of the nuclei identification.
 The result may look like Figure 3.
 
-:::{figure} ./TutorialImages/Fig3.png
+```{figure} ./TutorialImages/Fig3.png
+:width: 700
 :align: center
-:width: 450
 
 *Figure 3: A zoomed-in view of the display window for IdentifyPrimaryObjects*
-:::
+```
 
 ### 3. **Improve identification of primary objects**
 
@@ -338,7 +251,7 @@ Since we are in Test Mode, we can easily adjust the module settings and
 quickly preview the results.
 
 - Objects outlined in pink are outside the "Typical diameter" pixel range
-  specified in the pipeline. Use the "Measure Length" tool {{ Inline13 }} from
+  specified in the pipeline. Use the "Measure Length" tool <img src="./TutorialImages/Inline13.png" alt="CellProfiler icon" width="35"/> from
   the top toolbar to determine if the size range specified is correct given
   the size of your objects.
 
@@ -394,9 +307,9 @@ in this exercise do allow for identification and segmentation of the
 nuclei, you can now find the entire cell using
 *IdentifySecondaryObjects* module.
 
-- Click on the {{ Inline03 }} button and add the module *IdentifySecondaryObjects*,
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *IdentifySecondaryObjects*,
   which is located under the module category *“Object Processing”.* Add
-  it to the pipeline by clicking the {{ Inline12 }} button.
+  it to the pipeline by clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 
 - For the “Select the input image” module setting, select “rawGFP” from
   the drop-down list.
@@ -431,13 +344,12 @@ nuclei, you can now find the entire cell using
     secondary object boundaries and the green outlines indicate the
     primary object boundaries.
 
-:::{figure} ./TutorialImages/Fig4.png
+```{figure} ./TutorialImages/Fig4.png
+:width: 700
 :align: center
-:height: 500
-:width: 500
 
-*Figure 4: Example module display window for IdentifySecondaryObjects*.
-:::
+*Figure 4: Example module display window for IdentifySecondaryObjects*
+```
 
 In contrast to the DNA stain in *IdentifyPrimaryObjects*, the middle
 intensity levels associated with the dim cells are assigned as
@@ -465,9 +377,9 @@ nucleus, but within the cell boundary. We will use the
 objects and “subtract” (or remove) them from the larger identified
 objects, effectively identifying the cytoplasm.
 
-- Click on the {{ Inline03 }} button and add the module *IdentifyTertiaryObjects*
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *IdentifyTertiaryObjects*
   located under the module category *“Object Processing”.* Add it to
-  the pipeline by clicking the {{ Inline12 }} button.
+  the pipeline by clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 - In this module, for the “Select the larger identified objects” module
   setting, select “Cells” from the drop-down list.
 - For the “Select the smaller identified objects” setting, select
@@ -480,12 +392,13 @@ objects, effectively identifying the cytoplasm.
 - Click the “Step” button to execute the module, and preview the
   results of tertiary object identification (Fig. 5).
 
-:::{figure} ./TutorialImages/Fig5.png
+```{figure} ./TutorialImages/Fig5.png
+:width: 700
 :align: center
-:width: 425
 
-*Figure 5: Example module display window for IdentifyTertiaryObjects*.
-:::
+*Figure 5: Example module display window for IdentifyTertiaryObjects*
+```
+
 
 ### 6. **Measuring the cells’ characteristics (i.e. the “object features”)**
 
@@ -509,9 +422,9 @@ example of a particularly useful measurement is the pixel intensities of
 the various objects (i.e. nuclei and cytoplasm) as measured from the
 images showing the subcellular location of the FOXO1A-GFP fluorescence.
 
-- Click on the {{ Inline03 }} button and add the module *MeasureObjectIntensity*
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *MeasureObjectIntensity*
   located under the module category *“Measurement”.* Add it to the
-  pipeline by clicking the {{ Inline12 }} button.
+  pipeline by clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 - In this module, select “rawGFP” in the "Select images to measure" box, by
   checking the box next to it.
 - Select “Nuclei” and "Cytoplasm" from the "Select objects to measure" box.
@@ -523,9 +436,9 @@ protein is not translocated, the intensity correlation within the
 nucleus between the two images would be expected to be negative, whereas
 upon translocation, the correlation would be positive.
 
-- Click on the {{ Inline03 }} button and add the module *MeasureColocalization*
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *MeasureColocalization*
   located under the module category *“Measurement”.* Add it to the pipeline by
-  clicking the {{ Inline12 }} button.
+  clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 - In this module, select “rawGFP” and “rawDNA” from the "Select images to measure"
   box. Leave the "Set threshold as percentage of maximum intensity for the images"
   to the default value of 15.0.
@@ -542,9 +455,9 @@ nuclear stain. In this case, we will use the *CalculateMath* module
 because it performs arithmetic operations between various object
 measurements.
 
-- Click on the {{ Inline03 }} button and add the module *CalculateMath* located under
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *CalculateMath* located under
   the *“Data Tools”* module category*.* Add it to the pipeline by
-  clicking the {{ Inline12 }} button.
+  clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 
 - For the “Name the output measurement,” enter the “IntensityRatio” as
   a descriptive name.
@@ -584,9 +497,9 @@ have questions about an unusual result.
 
 #### **Creation of a color image to display the segmentation:**
 
-- Click on the {{ Inline03 }} button and add the module *GrayToColor* located under
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *GrayToColor* located under
   the *“Image Processing”* module category*.* Add it to the pipeline
-  by clicking the {{ Inline12 }} button.
+  by clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 
 - For the “Select a color scheme”, leave the setting at “RGB”.
 
@@ -609,9 +522,9 @@ types of objects and/or more than 3 channels it is often easier to
 overlay the objects for each channel onto that channel’s grayscale image
 and simply view them one at a time.
 
-- Click on the {{ Inline03 }} button and add the module *OverlayOutlines* located
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *OverlayOutlines* located
   under the *“Image Processing”* module category*.* Add it to the
-  pipeline by clicking the {{ Inline12 }} button.
+  pipeline by clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 - “Display outlines on a blank image” should be set to “No”.
 - The “Select image on which to display outlines” should be set to the
   “GFPandDNA” image we created in the last step.
@@ -633,9 +546,9 @@ objects created. Here we will save the images to the DefaultOutput
 folder, but you can specify any other location, and additionally create
 subfolders based on the extracted metadata if you like.
 
-- Click on the {{ Inline03 }} button and add the module *SaveImages* located under the
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *SaveImages* located under the
   *“File processing”* module category*.* Add it to the pipeline by
-  clicking the {{ Inline12 }} button.
+  clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 - For “Select the type of image to save”, select “Image”.
 - For “Select the image to save”, select your “CellAndNucleiOverlay”
   image you just created.
@@ -655,9 +568,9 @@ in CellProfiler Analyst, the measurements will need to be saved to a
 database using the *ExportToDatabase* module in order for CellProfiler
 Analyst to access them.
 
-- Click on the {{ Inline03 }} button and add the module *ExportToDatabase* located
+- Click on the <img src="./TutorialImages/Inline03.png" alt="CellProfiler icon" width="35"/> button and add the module *ExportToDatabase* located
   under the module category *“File Processing”.* Add it to the pipeline
-  by clicking the {{ Inline12 }} button.
+  by clicking the <img src="./TutorialImages/Inline12.png" alt="CellProfiler icon" width="160"/> button.
 
   - Note that while in Test mode, the *ExportToDatabase* module will
     have a yellow warning sign in the pipeline panel and yellow-
@@ -705,7 +618,7 @@ pipeline is now ready to run on the full data set of 26 images.
 
 - Select the “Window” item from the menu bar and select “Hide all
   windows on run;” the “eyeball” icons next to the modules will switch
-  from open ({{ Inline06 }}) to closed ({{ Inline07 }}). This display indicates that the module
+  from open (<img src="./TutorialImages/Inline06.png" alt="CellProfiler icon" width="35"/>) to closed (<img src="./TutorialImages/Inline07.png" alt="CellProfiler icon" width="35"/>). This display indicates that the module
   display windows for each module will not be shown as each is
   processed. The rationale behind this step is because the pipeline is
   optimized, we no longer need to see the results. Additionally, the
@@ -730,7 +643,7 @@ run may take a few minutes.
 You can now start CellProfiler Analyst (CPA) to explore the data you
 have extracted from the cells.
 
-- Start CellProfiler Analyst by double-clicking the icon on the desktop {{ Inline08 }}.
+- Start CellProfiler Analyst by double-clicking the icon on the desktop <img src="./TutorialImages/Inline08.png" alt="CellProfiler icon" width="35"/>.
 
 - When CPA is started, it will ask to select a *properties file*.
   Select the properties file named *DefaultDB .properties*, located in
@@ -752,7 +665,7 @@ If your data came from a multi-well plate, such as the 96-well plate for
 this particular translocation assay, then one of the most useful data
 visualization tools available is the plate layout format.
 
-- Click on the Plate Viewer icon in the main CPA window ({{ Inline09 }}, 3rd from the left).
+- Click on the Plate Viewer icon in the main CPA window (<img src="./TutorialImages/Inline09.png" alt="CellProfiler icon" width="50"/>, 3rd from the left).
   This selection brings up a 96-well formatted display of the plate
   from which your images originated. The colored squares represent
   wells for which measurement data is present; crossed-out wells
@@ -775,12 +688,14 @@ visualization tools available is the plate layout format.
   - Row E, columns 2-11: Nine doses of 2-fold dilutions of Wortmannin,
     increasing from left to right.
 
-:::{figure} ./TutorialImages/Fig6.png
+
+```{figure} ./TutorialImages/Fig6.png
+:width: 500px
 :align: center
-:width: 500
 
 *Figure 6: The Plate Viewer visualization tool illustrating the drug dosages applied to the plate.*
-:::
+```
+
 
 - Select “*Image_Count_Nuclei”* from the *Measurement* drop-down to
   show the nuclei count for each image.
@@ -819,7 +734,7 @@ In this case, we will “train” the classifier to recognize cells in which
 FOXO1A-GFP is located exclusively in the nucleus (“positives”) versus
 outside the nucleus (“negatives”) by sorting examples of each into bins.
 
-- Select the *Classifier* icon in the main CPA window ({{ Inline10 }}, 2nd on left). The
+- Select the *Classifier* icon in the main CPA window (<img src="./TutorialImages/Inline10.png" alt="CellProfiler icon" width="50"/>, 2nd on left). The
   Classifier interface will appear, similar to that shown in the top of
   Fig. 7.
 
@@ -840,23 +755,22 @@ outside the nucleus (“negatives”) by sorting examples of each into bins.
     keys and assign them to bins with the number keys. E.g. Pressing
     '1' would send any selected cells to the first bin ('positive' here).
 
-:::{figure} ./TutorialImages/Fig7a.png
+```{figure} ./TutorialImages/Fig7a.png
+:width: 700px
 :align: center
-:width: 600
-:::
-
-```{eval-rst}
-+---------------------------------+---------------------------------+
-| |Fig7b| |Fig7c| |Fig7d| |Fig7e| | |Fig7f| |Fig7g| |Fig7h| |Fig7i| |
-+---------------------------------+---------------------------------+
-| **Examples of positive cells**  | **Examples of negative cells**  |
-+---------------------------------+---------------------------------+
 ```
 
-*Figure 7: * \*\*\*Top:\*\** *The Classifier interface showing 5 positive and 5
+```{figure} ./TutorialImages/Fig7b.png
+:width: 700
+:align: center
+
+**Examples of positive cells** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **Examples of negative cells**
+
+Figure 7: <u>**Top:**</u> The Classifier interface showing 5 positive and 5
 negative cells. Thirty unclassified cells remain and are ready for
-sorting. * \*\*\*Bottom:\*\** *Examples of positive cells (left) and negative cells
+sorting. <u>**Bottom:**</u> *Examples of positive cells (left) and negative cells
 (right).*
+```
 
 - Now “drag & drop” whichever cells you consider clearly negative (i.e.
   FOXO1A-GFP located exclusively in the cytoplasm) into the “negative”
@@ -930,11 +844,9 @@ correlation matrix - you need to see how your classifier will perform on
 more data before you can decide whether it’s accurate enough to score
 the whole experiment.
 
-```{eval-rst}
-+---------+---------+
-| |Fig8A| | |Fig8B| |
-+---------+---------+
-```
+```{figure} ./TutorialImages/Fig8.png
+:width: 900px
+:align: center
 
 *Figure 8: Examples of confusion matrices from a poorly-trained (left)
 and well-trained (right) classifier. The cells in the classifier on the
@@ -945,6 +857,7 @@ the right have been assigned to the correct bins, allowing the
 classifier to find rules that accurately predict which class the cells
 belong to. While the cells in this simple example were able to be
 predicted perfectly, that is rare in real data.*
+```
 
 ### 5. **Refining the training set by sorting more “unclassified” cells into the “positive” and “negative” bins**
 
@@ -1073,12 +986,12 @@ enrichment score.
   first column (“ImageNumber”) to display the corresponding image for
   the top-scoring well.
 
-:::{figure} ./TutorialImages/Fig9.png
+```{figure} ./TutorialImages/Fig9.png
+:width: 800px
 :align: center
-:width: 600
 
 *Figure 9: Hit table showing the cell counts and enrichment scores.*
-:::
+```
 
 You can also save your training set and/or classifer model for future
 reference or to make changes later; do so by going to *File > Save
@@ -1127,7 +1040,7 @@ ways. In this case, we will use a scatter plot to plot a dose-response
 curve. This will allow us to see how the ratio of positive cells (i.e.
 cells with GFP in the nucleus) increases with Wortmannin dose.
 
-- Click the Scatter Plot icon in the main CPA window {{ Inline11 }}, 4th from left).
+- Click the Scatter Plot icon in the main CPA window <img src="./TutorialImages/Inline11.png" alt="CellProfiler icon" width="50"/>, 4th from left).
 - From the “x-axis” row, select “*Per_image*” and
   “*Image_Metadata_Dose*” from the drop-down lists. Choose
   “*log*” from the “Scale” drop-down.
