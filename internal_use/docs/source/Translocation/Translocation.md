@@ -27,17 +27,17 @@ localization (and hence may be possible treatments for osteosarcoma
 patients), but possess fewer side effects than the known drugs.
 
 
-```{image} ./TutorialImages/Fig1A.png
-:width: 500
-```
-```{image} ./TutorialImages/Fig1B.png
-:width: 500
+```{figure} ./TutorialImages/Fig1.png
+:width: 900
+:align: center
+
+*Figure 1: Examples of FOXO1A-GFP localization. <u>**Left:**</u> Cytoplasmic
+localization in untreated cells. <u>**Right:**</u> Nuclear localization in
+Wortmannin treated cells. 
+<br>
+Green: **GFP**, Magenta: **DNA**.*
 ```
 
-
-*Figure 1: Examples of FOXO1A-GFP localization. Left: Cytoplasmic
-localization in untreated cells. Right: Nuclear localization in
-Wortmannin treated cells. GFP: Green, DNA: red.*
 
 ### **Goals of this exercise:**
 
