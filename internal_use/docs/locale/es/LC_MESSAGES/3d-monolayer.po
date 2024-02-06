@@ -646,8 +646,9 @@ msgid ""
 "images."
 msgstr ""
 "Añada los módulos de medición que desee. Por ejemplo, puede elegir "
-"**MedirIntensidadObjeto** y/o **MedirTamañoFormaObjeto**. Al aplicar estas "
-"mediciones, tenga cuidado de medir las imágenes originales, no las "
+"**MeasureObjectIntensity** (Medir Intensidad de Objetos) y/o "
+"**MeasureObjectSizeShape** (Medir Tamaño y Forma de Objectos). Al aplicar "
+"estas mediciones, tenga cuidado de medir las imágenes originales, no las "
 "reescaladas."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:355
