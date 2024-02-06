@@ -497,7 +497,7 @@ msgid ""
 " operation, and invert the thresholded membrane. Name the output "
 "*MembInvert*."
 msgstr ""
-"Añade un módulo **ImageMath**. Dentro del módulo ImageMath elija la "
+"Añada un módulo **ImageMath**. Dentro del módulo ImageMath elija la "
 "operación *Invert*, e invierta la membrana umbralizada. Nombre la salida "
 "*MembInvert*."
 
