@@ -158,7 +158,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:45
 msgid "Choose “Process as 3D”"
-msgstr "Seleccione \"Procesar como 3D\"."
+msgstr "Seleccione \"Procesar como 3D\" (\"Process as 3D\")."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:46
 msgid "Populate the fields for “Relative Pixel Spacing”."
