@@ -152,7 +152,9 @@ msgstr "Seleccione el módulo NombreYTipos (NamesAndTypes)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:44
 msgid "Assign a name to “Images matching rules”."
-msgstr "Asigne un nombre a \"Reglas de coincidencia de imágenes\"."
+msgstr ""
+"Asigne un nombre a \"Reglas de coincidencia de imágenes\" (“Images matching "
+"rules”)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:45
 msgid "Choose “Process as 3D”"
