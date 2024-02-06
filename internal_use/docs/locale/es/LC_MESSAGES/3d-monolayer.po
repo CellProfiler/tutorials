@@ -182,8 +182,8 @@ msgid ""
 "images"
 msgstr ""
 "Cerca del final de los metadatos encontrará la información para el \"Tamaño "
-"de vóxel\" (x,y,z). También puedes registrar estos metadatos cuando recojas "
-"tus propias imágenes"
+"de vóxel\" (\"Voxel size') (x,y,z). También puede registrar estos metadatos "
+"cuando obtenga sus propias imágenes"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:51
 msgid ""
