@@ -162,7 +162,9 @@ msgstr "Seleccione \"Procesar como 3D\" (\"Process as 3D\")."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:46
 msgid "Populate the fields for “Relative Pixel Spacing”."
-msgstr "Rellene los campos de \"Espaciado relativo entre píxeles\"."
+msgstr ""
+"Rellene los campos de \"Espaciado relativo entre píxeles\" (\"Relative Pixel"
+" Spacing\")."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:48
 msgid ""
