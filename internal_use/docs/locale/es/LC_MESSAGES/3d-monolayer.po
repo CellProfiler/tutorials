@@ -543,9 +543,9 @@ msgid ""
 "together. The result should look like a cloud of signal where the monolayer "
 "resides. Name the output *ClosedDownsizedMonolayer*."
 msgstr ""
-"Añade un módulo de **Cierre**. Elige un tamaño de *17* para mezclar la "
+"Añada un módulo de **Closing**. Elige un tamaño de *17* para mezclar la "
 "señal. El resultado debería parecerse a una nube de señal donde reside la "
-"monocapa. Nombra la salida *ClosedDownsizedMonolayer*."
+"monocapa. Nombre la salida *ClosedDownsizedMonolayer*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:282
 msgid ""
