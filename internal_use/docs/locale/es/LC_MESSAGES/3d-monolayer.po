@@ -385,7 +385,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:163
 msgid "Find objects: cells"
-msgstr "Buscar objetos: celdas"
+msgstr "Buscar objetos: células"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:165
 msgid ""
