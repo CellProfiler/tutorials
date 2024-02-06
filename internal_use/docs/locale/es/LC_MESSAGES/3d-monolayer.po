@@ -532,9 +532,9 @@ msgid ""
 "makes processing faster and decreases noise. Name the output "
 "*DownsizedMonolayer*."
 msgstr ""
-"Añadir un módulo **Resize** para redimensionar la Monocapa con un *Factor de"
-" redimensionamiento* de *0,25* para X e Y (mantener un factor de 1,0 para "
-"Z). Reducir el tamaño de la imagen hace que el procesado sea más rápido y "
+"Añada un módulo **Resize** para redimensionar la Monocapa con un *Factor de "
+"redimensionamiento* de *0,25* para X e Y (mantener un factor de 1,0 para Z)."
+" Reducir el tamaño de la imagen hace que el procesado sea más rápido y "
 "disminuye el ruido. Nombre la salida *DownsizedMonolayer*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:273
