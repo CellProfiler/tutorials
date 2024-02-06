@@ -509,9 +509,9 @@ msgid ""
 "*MembInvertRemoveHoles*."
 msgstr ""
 "Añadir un módulo **RemoveHoles** para eliminar los pequeños agujeros en la "
-"segmentación del interior de la celda. Esto ayuda a evitar que las celdas se"
-" dividan durante la segmentación de la cuenca. Elija un tamaño de *20*. "
-"Nombre la salida *MembInvertRemoveHoles*."
+"segmentación del interior de las células. Esto ayuda a evitar que las "
+"celcélulas se dividan durante la segmentación con el método Watershed. Elija"
+" un tamaño de *20*. Nombre la salida *MembInvertRemoveHoles*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:257
 msgid ""
