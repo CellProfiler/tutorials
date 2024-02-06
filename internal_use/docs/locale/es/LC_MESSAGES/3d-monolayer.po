@@ -291,7 +291,7 @@ msgstr ""
 " *Y*, esto reducirá a la mitad cada una de las dimensiones XY, por lo que la"
 " imagen resultante tendrá una cuarta parte del área de la original. *No "
 "redimensione Z* (mantenga el factor en *1*), de lo contrario descartará "
-"imágenes de la pila Z. Nombre la salida *ADNRedimensionado*."
+"imágenes de la stack Z. Nombre la salida *ResizedDNA*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:103
 msgid ""
