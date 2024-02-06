@@ -623,7 +623,7 @@ msgstr ""
 "from* a *Markers*. Los Marcadores serán la imagen *cellSeeds*, que es la "
 "salida del módulo ConvertObjectsToImage. Finalmente, configure la Máscara "
 "para que también sea la imagen *MembFinal*. Esto ayudará a preservar los "
-"límites de las celdas. Nombre la salida de este módulo *Células*."
+"límites de las células. Nombre la salida de este módulo *Células*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:338
 msgid "Making measurements"
