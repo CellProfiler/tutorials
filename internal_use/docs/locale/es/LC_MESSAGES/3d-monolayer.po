@@ -520,10 +520,10 @@ msgid ""
 "define where cells are present and the background above and below the cells."
 " Name the output *Monolayer*."
 msgstr ""
-"Añade otro módulo **ImageMath**. Añada todas las imágenes originales juntas."
+"Añada otro módulo **ImageMath**. Añada todas las imágenes originales juntas."
 " Esto crea una imagen compuesta que se utilizará en los siguientes pasos "
 "para definir donde las células están presentes y el fondo por encima y por "
-"debajo de las células. Nombre la salida *Monocapa*."
+"debajo de las células. Nombre la salida *Monolayer*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:266
 msgid ""
