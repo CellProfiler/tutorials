@@ -109,8 +109,8 @@ msgid ""
 "skay7Q."
 msgstr ""
 "En la página de YouTube del Center for Open Bioimage Analysis "
-"(https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q) encontrará "
-"tutoriales en vídeo muy útiles."
+"(https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q) podrá encontrar "
+"tutoriales en vídeo útiles."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:31
 msgid "Importing data in CellProfiler"
