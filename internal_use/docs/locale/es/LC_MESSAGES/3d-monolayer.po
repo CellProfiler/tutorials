@@ -217,7 +217,7 @@ msgid ""
 "Give the images “variable names” that describe the contents of the image. "
 "For example, use the name *dna* to describe an image stained with DAPI."
 msgstr ""
-"Dé a las imágenes \"nombres variables\" que describan el contenido de la "
+"Dé a las imágenes \"nombres-variable\" que describan el contenido de la "
 "imagen. Por ejemplo, utilice el nombre *dna* para describir una imagen "
 "teñida con DAPI."
 
