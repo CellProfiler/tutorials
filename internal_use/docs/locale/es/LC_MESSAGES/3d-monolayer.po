@@ -635,8 +635,8 @@ msgid ""
 "measurements can be made using modules from the **Measurements** category."
 msgstr ""
 "Ahora que los núcleos y las células se han segmentado en esta monocapa, se "
-"pueden realizar mediciones utilizando módulos de la categoría "
-"**Mediciones**."
+"pueden realizar mediciones utilizando módulos de la categoría **Mediciones**"
+" (Measurements)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:344
 msgid ""
