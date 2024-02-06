@@ -419,8 +419,8 @@ msgid ""
 msgstr ""
 "Empezaremos encogiendo los núcleos para hacerlos más parecidos a semillas "
 "añadiendo un módulo **ErodeObjects**. Utiliza el elemento estructurante "
-"*ball* con un tamaño de *5*. Seleccione \"Sí\" en la opción \"Evitar la "
-"eliminación de objetos\" para no perder ningún núcleo."
+"*ball* (bola) con un tamaño de *5*. Seleccione \"Sí\" en la opción \"Evitar "
+"la eliminación de objetos\" para no perder ningún núcleo."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:179
 msgid ""
