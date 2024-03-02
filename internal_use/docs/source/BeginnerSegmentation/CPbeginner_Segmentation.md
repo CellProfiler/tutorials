@@ -106,9 +106,9 @@ substitutions:
 
 ## A computer exercise using CellProﬁler
 
-## Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft
+### Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft
 
-## Broad Institute
+### Broad Institute
 
 **Background information:**
 
@@ -117,9 +117,13 @@ Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC022/).
 They are ﬁelds of U2OS cells imaged in ﬁve channels (Cell Painting
 assay; see Gustafsdottir et al., 2013)
 
-{{ image1 }}
+```{figure} ./TutorialImages/Fig1.png
+:width: 900
+:align: center
 
-*Figure 1: Images and channels from a Cell Painting assay.*
+*Figure 1: Images and channels from a **Cell Painting** assay.*
+```
+
 
 **Goals of this exercise:**
 
@@ -163,11 +167,13 @@ loaded and organized in CellProfiler.
 - Notice that if the ‘Filter images?’ is set to ‘Images only’ the ‘.npy’
   files appeared grey out.
 
-{{ image3 }}
+```{figure} ./TutorialImages/Fig2.png
+:width: 700
+:align: center
 
-Figure 2: The Images module, grey out files will not be available for
+*Figure 2: The Images module, grey out files will **not** be available for downstream modules*
+```
 
-: downstream modules\*
 
 - \*\* 🔴 TO DO\*\*: Change the filter to a custom filter to **include** the ‘.npy’ files.
 
@@ -187,10 +193,14 @@ Figure 2: The Images module, grey out files will not be available for
   should now see several columns, look through them you should have 5
   different channel numbers, 1 plate, 2 sites and 5 different wells.
 
-{{ image4 }}
+```{figure} ./TutorialImages/Fig3.png
+:width: 700
+:align: center
 
 *Figure 3: The Metadata module, columns in table correspond to metadata
 categories*
+```
+
 
 - In the ‘NamesAndTypes’ module, we assign names to the images and
   configure image sets (i.e., all the different channels for a field of
@@ -209,16 +219,22 @@ categories*
   - The ‘.tif’ image ﬁles are assigned a name by the Metadata
     extracted in the previous module (speciﬁcally ChannelNumber)
 
-{{ image5 }}
+```{figure} ./TutorialImages/Fig4.png
+:width: 700
+:align: center
 
 *Figure 4: Image mapping using extracted metadata*
+```
 
 - The ‘.npy’ illumination correction functions are assigned a name
   based on a unique string in the filename (such as ‘IllumER’)
 
-{{ image6 }}
+```{figure} ./TutorialImages/Fig5.png
+:width: 700
+:align: center
 
 *Figure 5: Image mapping using filename*
+```
 
 - As there is only one set of illumination correction functions for
   each entire plate, the image sets cannot simply be constructed by
@@ -231,9 +247,12 @@ categories*
   - Each illumination correction function is set to ‘Plate → (None) →
     (None)’
 
-{{ image7 }}
+```{figure} ./TutorialImages/Fig6.png
+:width: 700
+:align: center
 
 *Figure 6: Image set matching using extracted metadata*
+```
 
 - For this exercise the ‘Groups’ module is not needed so it is set to
   ‘No’, this module can be useful when you have more than one plate, or
@@ -266,9 +285,12 @@ effect of correction.
   your own experiments should therefore be illumination corrected
   independently.
 
-{{ image8 }}
+```{figure} ./TutorialImages/Fig7.png
+:width: 700
+:align: center
 
 *Figure 7: Application of the illumination correction function*
+```
 
 **4. IdentifyPrimaryObjects – Nuclei (10min)**
 
@@ -284,10 +306,13 @@ initial image.
   - Tip: You can also use the search bar at the top of the ‘Add
     modules’ window to search all modules by name.
 
-{{ image9 }}
+```{figure} ./TutorialImages/Fig8.png
+:width: 400
+:align: center
 
 *Figure 8: The Add modules window, modules are divided in
 categories based on their function*
+```
 
 - Create objects called Nuclei by segmenting on the Hoechst channel.
 
@@ -305,11 +330,14 @@ categories based on their function*
   can use to adjust your segmentation settings, like the median
   diameter, and the threshold.
 
-{{ image10 }}
+```{figure} ./TutorialImages/Fig9.png
+:width: 700
+:align: center
 
 *Figure 9: The IdentifyPrimaryObjects module output, you can
 use the information in this window to modify your segmentation
 parameters*
+```
 
 - Use the magnifying glass at the top of the window to zoom in on an
   area that was segmented poorly.
@@ -331,7 +359,7 @@ parameters*
     identiﬁcation should be good but doesn’t need to be perfect before
     you move on.
 
-1. **IdentifySecondaryObjects – Cells (5min)**
+**5. IdentifySecondaryObjects – Cells (5min)**
 
 - After the IdentifyPrimaryObjects, add an IdentifySecondaryObjects
   module.
@@ -342,9 +370,12 @@ parameters*
 - For this module the outline colors correspond to the
   object seed (green-nuclei) and the segmented objects (pink-cell)
 
-{{ image11 }}
+```{figure} ./TutorialImages/Fig10.png
+:width: 700
+:align: center
 
 *Figure 10: The IdentifySecondaryObjects module output*
+```
 
 - **🔴 TO DO**: Improve cell segmentation
 
@@ -374,9 +405,12 @@ parameters that can segment cells on all the images on an experiment.
     - Tip: you can also use the Test menu to choose a random image
       set
 
-{{ image12 }}
+```{figure} ./TutorialImages/Fig11.png
+:width: 700
+:align: center
 
 *Figure 11: A section of the ‘Choose Image Set’ menu.*
+```
 
 - Then run that image in test mode for your ﬁrst 3 modules (through
   your IdentifySecondaryObjects step).
@@ -386,9 +420,12 @@ parameters that can segment cells on all the images on an experiment.
     IdentifySecondaryObjects and hit ‘Run’, this will run all modules
     before the pause.
 
-{{ image13 }}
+```{figure} ./TutorialImages/Fig12.png
+:width: 400
+:align: center
 
 *Figure 12: A section of the ‘Analysis modules’ pane.*
+```
 
 - Examine the output – did your nuclear and cellular segmentation hold
   up compared to the ﬁrst images you looked at?
@@ -437,11 +474,15 @@ in segmentation.
     value that works well.
   - See below for an example of results to aim for:
 
-{{ image14 }}
+```{figure} ./TutorialImages/Fig13.png
+:width: 700
+:align: center
 
 *Figure 13. The EnhanceOrSuppress module output, enhancing
 the Syto image allows you to isolate nucleoli against the nucleoplasmic
 background signal.*
+```
+
 
 - After the EnhanceOrSuppressFeatures module, add an MaskImage module.
 
@@ -458,11 +499,15 @@ background signal.*
   - Use the objects ‘Nuclei’ as the mask.
   - See below for an example of results to aim for:
 
-{{ image15 }}
+```{figure} ./TutorialImages/Fig14.png
+:width: 700
+:align: center
 
 *Figure 14. The MaskImage module output, the contrast was adjusted to
 show that the intensity of the pixels outside the nuclei are now set to
 0.*
+```
+
 
 - IdentifyPrimaryObjects is used to ﬁnd the Nucleoli. This is a Primary
   object segmentation because we are not using another object as a seed
@@ -489,10 +534,14 @@ show that the intensity of the pixels outside the nuclei are now set to
   - Tip: you can use a similar strategy to segment mitochondria using
     the ‘Mito’ channel
 
-{{ image16 }}
+```{figure} ./TutorialImages/Fig15.png
+:width: 700
+:align: center
 
 *Figure 15. The OverlayOutlines module output, all detected
 nucleoli are within the nuclei.*
+```
+
 
 **9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**
 
@@ -517,9 +566,12 @@ nucleoli are within the nuclei.*
 - **🔴 TO DO:** Add a RelateObjects module and configure it to relate
   ‘Nucleoli’ to ‘Nuclei’.
 
-{{ image17 }}
+```{figure} ./TutorialImages/Fig16.png
+:width: 700
+:align: center
 
 *Figure 16: The RelateObject module output.*
+```
 
 Relating the objects allows you to create per-parent means (e.g., for
 this cell, what is the average size of an individual mitochondrion) and
