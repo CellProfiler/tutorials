@@ -1,8 +1,5 @@
----
-substitutions:
 
----
-# Translocation
+# Translocation Tutorial
 
 **Image-based screening using subcellular localization of FOXO1A in osteosarcoma cells: A computer exercise using CellProfiler & CellProfiler Analyst software**
 
@@ -398,7 +395,6 @@ objects, effectively identifying the cytoplasm.
 
 *Figure 5: Example module display window for IdentifyTertiaryObjects*
 ```
-
 
 ### 6. **Measuring the cells’ characteristics (i.e. the “object features”)**
 
