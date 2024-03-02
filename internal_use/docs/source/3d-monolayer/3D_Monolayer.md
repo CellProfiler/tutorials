@@ -1,8 +1,8 @@
 # CellProfiler Tutorial: 3d monolayer
 
-# Organizing and importing images
+## Organizing and importing images
 
-## Z-stacks as TIFFs
+### Z-stacks as TIFFs
 
 - This tutorial features images of human induced pluripotent stem cells
   from the Allen Institute of Cell Science. More details are available
@@ -24,7 +24,7 @@
   Analysis YouTube page at
   <https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q>.
 
-## Importing data in CellProfiler
+### Importing data in CellProfiler
 
 01. Highlight the Images module.
 
@@ -71,9 +71,9 @@
     Channel 1 contains images of mitochondria, and Channel 2 contain
     images of DNA. You can name them *origMemb*, *origMito* and *origDNA*, respectively.
 
-# Find objects: nuclei
+## Find objects: nuclei
 
-## Image preparation
+### Image preparation
 
 Before attempting to segment the cells in the images, pre-processing the
 images with filters and various image processing methods will improve
@@ -118,7 +118,7 @@ the results.
 :width: 1000
 ```
 
-## Segmentation
+### Segmentation
 
 In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module does not support 3D images. Thus, we will have to use a different strategy to segment the nuclei.
 
@@ -169,7 +169,7 @@ In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module do
 :width: 1000
 ```
 
-# Find objects: cells
+## Find objects: cells
 
 Now that we’ve segmented the nuclei, we want to segment the cytoplasm for
 each nuclei whose boundaries are defined by the membrane channel. The
@@ -177,7 +177,7 @@ membrane channel presents more of a challenge because, unlike the
 nuclei, the membrane signal is variable and the boundaries are connected
 together in a sort of mesh. However, we can use the location of the nuclei we already found as 'seeds' to guide the Watershed module later on to identify regions with cells.
 
-## Transform nuclei into seeds
+### Transform nuclei into 'seeds'
 
 1. We will start by shrinking the nuclei to make them more seed-like by adding an
    **ErodeObjects** module. Use the *ball* structuring element with a
@@ -215,7 +215,7 @@ together in a sort of mesh. However, we can use the location of the nuclei we al
 :width: 1000
 ```
 
-## Transform the membrane channel into cytoplasm signal
+### Transform the membrane channel into cytoplasm signal
 
 The Watershed module finds objects that have bright signal, so the
 cytoplasm that will define the cell volume should have bright signal.
@@ -338,7 +338,7 @@ membrane channel to achieve this effect.
 :width: 1000
 ```
 
-# Making measurements
+## Making measurements
 
 Now that the nuclei and cells have been segmented in this monolayer,
 measurements can be made using modules from the **Measurements**
@@ -355,7 +355,7 @@ category.
 :width: 1000
 ```
 
-# Creating visuals
+## Creating visuals
 
 Congratulations! The nuclei and cells have been segmented and measured
 in this monolayer. Visuals that reveal the details of the segmentation
@@ -387,7 +387,7 @@ segmentations.
 :width: 1000
 ```
 
-# Export measurements
+## Export measurements
 
 1. Save the output of the measurements modules using
    **ExportToSpreadsheet** or **ExportToDatabase**.
