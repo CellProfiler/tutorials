@@ -36,10 +36,10 @@ Calibration Image: Voxel dimensions: 1x1x1 um
 Load the pipeline file (.cppipe). Drag-and-drop the file or go to
 File->Import->Pipeline from File…
 
-Note: The pipeline should populate all information needed, but it’s
+> Note: The pipeline should populate all information needed, but it’s
 always a good practice to check if everything is fine.
 %
-> **Tip: Use the question mark button (<img src="images/image15.png" width="40"/>) to learn more or if you have questions.**
+> **Tip: Use the <img src="images/Info.png" width="40"/> to learn more or if you have questions.**
 
 2. Highlight the **NameAndType** module.
 
@@ -84,15 +84,16 @@ attempting to segment the nuclei in these images, conditioning the
 images with filters and various image processing methods will improve
 segmentation results.
 
-1. Hit the start test mode button.
+1. Hit the <img src="images/StartTestMode.png" width="150"/> button.
 
-**Tip:** You can select different image sets. For that you can go to the
-main tab, hit the test tab and choose another image set or you can hit
-the Next Image Set button.
-
-<img src="images/image16.png" width="200"/>
-<img src="images/image21.png" width="400"/>
-
+>**Tip:** You can select different image sets. For that you can hit the <img src="images/NextImageSet.png" width="150"/> button, or you can go to the
+main tab, hit the test tab and choose another image set 
+> <br>
+>```{image} images/image16.png
+>:width: 200
+>:align: center
+>```
+<br>
 
 2. **GaussianFilter** module This module will blur the image and remove part of the noise. Filtering an image with a Gaussian filter can be helpful if the foreground signal is noisy or near the noise floor.
    1. Select the input image: Nuclei (from **NamesAndTypes** module),
@@ -104,7 +105,7 @@ the Next Image Set button.
 :align: center
 ```
 
-Hit the **Step** button and a new window will pop up with a resulting image
+Hit the <img src="images/Step.png" width="150"/> button and a new window will pop up with a resulting image
 that should look like this. The image can vary depending on the Image
 set chose.
 
@@ -379,7 +380,7 @@ in one or several files, as requested.
 
 09. Select the measurements to export: Yes
 
-10. Press button to select measurements:
+10. Press the button to select measurements:
 
     1. RealsizeNuclei:
 

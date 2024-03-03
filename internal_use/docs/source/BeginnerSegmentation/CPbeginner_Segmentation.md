@@ -46,7 +46,7 @@ you must figure out a solution are marked with 🔴 *TO DO.*
 
 ### **1. Load starting pipeline (2 min)**
 
-- Start CellProﬁler by double-clicking the desktop icon: {{ image2 }}
+- Start CellProﬁler by double-clicking the desktop icon: <img src="./TutorialImages/CellProfilerLogo.png" width="40">
 - Drag and drop the ‘segmentation_start.cppipe’ ﬁle into the ‘Analysis modules’ pane on the left.
 - 2 modules should pop up.
 
@@ -73,7 +73,7 @@ loaded and organized in CellProfiler.
 ```
 
 
-- \*\* 🔴 TO DO\*\*: Change the filter to a custom filter to **include** the ‘.npy’ files.
+- **🔴 TO DO**: Change the filter to a custom filter to **include** the ‘.npy’ files.
 
 - In the ‘Metadata’ module three metadata extraction methods should
   already be present and conﬁgured:
@@ -168,7 +168,7 @@ help improve our segmentation and measurements by compensating for this.
 Pay close attention to the top of the ﬁeld of view to see the greatest
 effect of correction.
 
-- Enter test mode by clicking on the ‘Start Test Mode’ button at the
+- Enter test mode by clicking on the  <img src="./TutorialImages/StartTestMode.png" width="120"/> button at the
   bottom left corner of the window and hit ‘Step’ to run the
   CorrectIlluminationApply module.
 - Brieﬂy examine the output of the CorrectIlluminationApply module—you
@@ -313,10 +313,8 @@ parameters that can segment cells on all the images on an experiment.
 - Then run that image in test mode for your ﬁrst 3 modules (through
   your IdentifySecondaryObjects step).
 
-  - You can do it by clicking the step button, or
-  - You can add a pause button on the module after
-    IdentifySecondaryObjects and hit ‘Run’, this will run all modules
-    before the pause.
+  - You can do it by clicking the <img src="./TutorialImages/Step.png" width="120"/> button, or
+  - You can add a pause button (<img src="./TutorialImages/Pause.png" width="40"/>) on the module after **IdentifySecondaryObjects** and hit ‘Run’, this will run all modules before the pause.
 
 ```{figure} ./TutorialImages/Fig12.png
 :width: 400
@@ -481,7 +479,7 @@ nucleus).
 
 - If you have time, add a ExportToSpreadsheet module at the end.
 - Exit test mode.
-- Click on ‘Output Settings’ button at the bottom left corner.
+- Click on <img src="./TutorialImages/OutputSettings.png" width="120"/> button at the bottom left corner.
 - Change the default output folder.
-- Click on ‘Analyze Images’ button at the bottom left corner.
+- Click on <img src="./TutorialImages/AnalyzeImages.png" width="120"/> button at the bottom left corner.
 - Explore the spreadsheets created for each object.

@@ -40,7 +40,7 @@ measure ~1500 features of each cell and from that create a
 including drug mechanisms of action, gene-pathway interactions, and
 more. See Bray et al 2016 and citations within for more information.
 
-Goals of this exercise: \*\*
+## **Goals of this exercise:**
 
 This exercise will give you practice at finding segmentation parameters
 that will be robust across whatever variability may exist in your
@@ -75,7 +75,7 @@ a similar introductory exercise.
 
 ### 1. **Load images and metadata**
 
-- Start CellProfiler by double-clicking the desktop icon <img src="./TutorialImages/Inline1.png" alt="CellProfiler icon" width="35"/>
+- Start CellProfiler by double-clicking the desktop icon <img src="./TutorialImages/CellProfilerLogo.png" alt="CellProfiler icon" width="35"/>
 
 * Drag and drop the ‘BBBC022_Analysis_Start.cppipe’ file into the
   ‘Analysis modules’ box. 7 modules should pop up, and almost all of
@@ -87,13 +87,10 @@ a similar introductory exercise.
 
 ### 2. **Import metadata from the CSV**
 
-So that we can explore what cells treated with different drugs look like later
-in the exercise, we must add this information into CellProfiler from the CSV.
-Provided with this exercise is a CSV called ‘20585_AE.csv’ detailing drug treatment
+So that we can explore what cells treated with different drugs look like later in the exercise, we must add this information into CellProfiler from the CSV. Provided with this exercise is a CSV called ‘20585_AE.csv’ detailing drug treatment
 info for each image.
 
-- In the ‘Metadata’ module, three metadata extraction methods should already be
-  present and fully configured:
+- In the ‘Metadata’ module, three metadata extraction methods should already be present and fully configured:
 
   - The first pulls Well, Site, and Channel metadata from all of the
     image files except for the illumination correction functions
@@ -105,28 +102,19 @@ info for each image.
   location of the CSV file.  It is looking for it in CellProfiler's Default
   Input Folder, which we must therefore configure.
 
-  - Select the ‘View output settings’ button in the bottom left corner of the
-    screen.
-  - Set the ‘Default Input Folder’ to the location of ‘20585_AE.csv’ within the
-    exercise folder
+  - Select the  <img src="./TutorialImages/OutputSettings.png" width="120"/> button in the bottom left corner of the screen.
+  - Set the ‘Default Input Folder’ to the location of ‘20585_AE.csv’ within the exercise folder
 
-- Return to the ‘Metadata’ module and press ‘Update’. You should now see a number of
-  columns in the Metadata window.
+- Return to the ‘Metadata’ module and press ‘Update’. You should now see a number of columns in the Metadata window.
 
-  - If you like, examine the CSV and how the ‘Match file and image’ settings are
-    configured:
+  - If you like, examine the CSV and how the ‘Match file and image’ settings are configured:
 
-    - Image_Metadata_PlateID (from the spreadsheet) is matched to Plate (extracted
-      from the folder name by the second extraction step)
-    - Image_Metadata_CPD_WELL_POSITION (from the spreadsheet) is matched to Well
-      (extracted from the file name by the first extraction step)
+    - Image_Metadata_PlateID (from the spreadsheet) is matched to Plate (extracted from the folder name by the second extraction step)
+    - Image_Metadata_CPD_WELL_POSITION (from the spreadsheet) is matched to Well (extracted from the file name by the first extraction step)
 
 ### 3. **Examine the channel mappings in NamesAndTypes (optional)**
 
-The channel mapping here is a bit more complicated than anything we've worked with
-before- we have a single set of illumination correction images that map to each
-and every well and site.  We can use the metadata we extracted in the last module
-to make that association possible.
+The channel mapping here is a bit more complicated than anything we've worked with before- we have a single set of illumination correction images that map to each and every well and site.  We can use the metadata we extracted in the last module to make that association possible.
 
 - Two different ways of mapping images to channel names are
   demonstrated here. There are several others, and often you could
