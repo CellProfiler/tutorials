@@ -1,15 +1,7 @@
----
-substitutions:
-  image1: |-
-    ```{image} images/image3.png
-    :height: 0.39615in
-    :width: 0.53646in
-    ```
----
 
-**UnmixColors**
+# **UnmixColors tutorial**
 
-UnmixColors creates separate images per dye stain for histologically
+The **UnmixColors** module creates separate images per dye stain for histologically
 stained images.
 
 This module creates separate grayscale images from a color image stained
@@ -30,41 +22,43 @@ For example:
 - Hematoxylin-Eosin: Hematoxylin + Eosin
 - Giemsa: Methylene Blue + Eosin
 
-**Note:** Mixes of single color fluorescent images should be unmixed
+> **Note:** Mixes of single color fluorescent images should be unmixed
 with the **ColortoGray** module.
 
-**Technical notes:**
+## **Technical notes:**
 
 This module is adapted from the ImageJ plugin, Colour_Deconvolution.java
 written by A.C. Ruifrok, whose paper forms the basis for this code.
 
-**Goals of this exercise:**
+## **Goals of this exercise:**
 
 In this exercise, we will guide you to separate stained samples through
 the UnmixColors module using reference absorbances and calculate your
 absorbance in the Custom mode.
 
-**Materials necessary for this exercise:**
+## **Materials necessary for this exercise:**
 
 - Histopathological image of parathyroid adenoma. Hematoxylin and eosin
   : stain in a slide.
 
 **Example 1:** Parathyroid Adenoma
-
-/…/Input/Exampe1Parathyroid_Adenoma.jpg
+<br>
+  
+        /…/Input/Exampe1Parathyroid_Adenoma.jpg
 
 **Example 2:** Parathyroid Adenoma
+<br>
+  
+        /…/Input/Example2Parathyroid_adenoma.jpg
 
-/…/Input/Example2Parathyroid_adenoma.jpg
-
-**Importing data in CellProfiler**
+## **Importing data in CellProfiler**
 
 1. Highlight the **Images** module.
 2. Drag-and-drop the Example 1 image only into the Images module window.
 
-```{image} images/image13.png
-:height: 6.18056in
-:width: 6.5in
+```{figure} ./images/image13.png
+:width: 600
+:align: center
 ```
 
 3. Highlight the **NameAndType** module.
@@ -76,25 +70,25 @@ Select the image type: Color image
 1. Assign the images “variable names” that describe the contents in the
    : image. For example, use the name "HE" or "Hematoxylin-Eosin" or
      something else that will remind you what the image is.
-2. Hit the "update" button to populate
+2. Hit the **"update"** button to populate
 
 ```{image} images/image11.png
-:height: 5.44913in
-:width: 5.73438in
+:width: 600
+:align: center
 ```
 
-**UnmixColors module:**
+## The **UnmixColors module:**
 
 Add the **UnmixColor** module to the pipeline. Double click or right
-click on the white rectangular area below Groups or click the + button
+click on the white rectangular area below Groups or click the **+** button
 in front of the Adjust modules, this pops up the Add modules window,
 search the **UnmixColors** module and double click in it.
 
 ```{image} images/image1.png
-:height: 4in
-:width: 6.5in
+:width: 600
+:align: center
 ```
-
+<br>
 Using the **UnmixColors** module, try to separate the hematoxylin from
 the eosin staining in this new example.
 
@@ -106,42 +100,38 @@ the eosin staining in this new example.
 - Name this new output image as Eosin
 - Choose the Stain as Eosin
 
-image1|\*\*Tip: Use the question mark button to learn more or if you have
-questions.\*\*
+> **Tip: Use the <img src="images/info.png" width="40"/> to learn more or if you have questions.**
 
 ```{image} images/image14.png
-:height: 4.23611in
-:width: 6.5in
+:width: 600
+:align: center
 ```
 
-Start Test Mode (left bottom of the window) and Test your **UnmixColor**
-module pressing the Step button. The result of the **UnmixColors**
-module should pop-up and show you a Hematoxylin image (Nucleus) and an
-Eosin image (cytoplasm).
+Hit the <img src="images/StartTestMode.png" width="120"/> (left bottom of the window) and test your **UnmixColor** module pressing the <img src="images/Step.png" width="120"/> button. The result of the **UnmixColors**
+module should pop-up and show you a Hematoxylin image (Nucleus) and an Eosin image (cytoplasm).
 
 ```{image} images/image8.png
-:height: 2.97222in
-:width: 6.5in
+:width: 600
+:align: center
 ```
 
 **Note:** If there are other cells/components that you also want to
 separate by color, choose the stain that most closely resembles the
 color you want. Please note that if you are looking to simply split a
 color image into red, green and blue components, use the **ColorToGray**
-module rather than **UnmixColors**. The question mark button to the
-right of Stain can help you choose the correct Stain.
+module rather than **UnmixColors**. The <img src="images/info.png" width="40"/> button to the right of Stain can help you choose the correct Stain.
 
 ```{image} images/image4.png
-:height: 7.06944in
-:width: 6.5in
+:width: 600
+:align: center
 ```
 
 **Tip: The image tools on the top toolbar may be helpful to see the
 details on your image/objects:**
 
-```{image} images/image12.png
-:height: 0.36217in
-:width: 2.51563in
+```{image} images/ImageToolbar.png
+:width: 400
+:align: center
 ```
 
 The 1st icon from the left lets you reset the view back to the original
@@ -159,8 +149,8 @@ drawing a box to zoom in on.
 Zoom in on the image in order to see the quality of the separation.
 
 ```{image} images/image7.png
-:height: 4.41667in
-:width: 6.5in
+:width: 600
+:align: center
 ```
 
 Most of the time the Stain settings does a good job with the standard
@@ -168,20 +158,17 @@ Stain, but If you are not happy with your results you can try different
 combinations of stains to match the structure/color you want to segment
 later.
 
-For example:
-
-Right click the **UnmixColors** module and Duplicate the module in your
-pipeline.
+For example you can right-click the **UnmixColors** module and Duplicate it in your pipeline.
 
 Change the Hematoxylin stain for Feulgen Stain and the Eosin Stain for
-Azocarmine. (remember to rename the output images to stay Hematoxylin
-and Eosin)
+Azocarmine. 
+> **(!) Remember to rename the output images to stay Hematoxylin and Eosin**
 
 Observe the difference between the first and the second separation.
 
 ```{image} images/image6.png
-:height: 6.17708in
-:width: 6.44792in
+:width: 600
+:align: center
 ```
 
 **Now let’s try another example of the same type of tissue and staining
@@ -198,11 +185,12 @@ Hit run to run your two **UnmixColors** modules to try to separate the
 hematoxylin from the eosin staining in this new example.
 
 ```{image} images/image5.png
-:height: 6.02778in
-:width: 6.5in
+:width: 600
+:align: center
 ```
+<br>
 
-**Common issue and troubleshooting:**
+## **Common issues and troubleshooting:**
 
 Sometimes the same kind of tissue stained in different days or acquired
 in different illumination conditions will produce different patterns of
@@ -217,8 +205,8 @@ small cropped image regions where only one of your stains is present
 in this image).
 
 ```{image} images/image9.png
-:height: 2.98611in
-:width: 6.5in
+:width: 600
+:align: center
 ```
 
 If you choose the second option, we suggest you make the cropped
@@ -232,9 +220,10 @@ reference images you can try
 (UnmixColorsTutorial/CustomReferenceImages/)
 
 ```{image} images/image10.png
-:height: 1.1875in
-:width: 2.5in
+:width: 600
+:align: center
 ```
+<br>
 
 CellProfiler can then use this to estimate your RGB absorbance.
 
@@ -244,20 +233,20 @@ button, so you can click on it and choose the purple or pink image to
 estimate the RGB absorbance. Cell Profiler will automatically calculate
 the absorbance for you.
 
-After Estimate both Stains you can now test the color separation using
+After estimating both Stains you can now test the color separation using
 the Test Mode.
 
 ```{image} images/image2.png
-:height: 3.34722in
-:width: 6.5in
+:width: 600
+:align: center
 ```
 
-**Note:** If the resulting image doesn’t match your expectation you can
+> **Note:** If the resulting image doesn’t match your expectation you can
 try again using other regions to estimate your RGB absorbance.
 
-**Congratulations, you finished the Unmix Colors Tutorial.**
+### **Congratulations, you finished the Unmix Colors Tutorial.**
 
-**References:**
+## **References:**
 
 <https://cellprofiler-manual.s3.amazonaws.com/CellProfiler-4.2.1/modules/imageprocessing.html>
 
@@ -265,14 +254,14 @@ Ruifrok AC, Johnston DA. (2001) “Quantification of histochemical
 staining by color deconvolution.” Analytical & Quantitative Cytology &
 Histology, 23: 291-299.
 
-**Images sources:**
+## **Images sources:**
 
-Example 1: Parathyroid Adenoma 6 by euthman.jpg ([CC
+> **Example 1**: Parathyroid Adenoma 6 by euthman.jpg ([CC
 2.0](https://creativecommons.org/licenses/by/2.0/), 1148 x 765
 pixels, file size: 441 KB,
 <https://www.flickr.com/photos/euthman/4703621316/in/photolist-8aDhKf>)
 
-Example 2: Parathyroid_adenoma_histopathology\_(2).jpg ‎([CC
+> **Example 2**: Parathyroid_adenoma_histopathology\_(2).jpg ‎([CC
 3.0-SA](https://creativecommons.org/licenses/by-sa/3.0/deed.en), 600
 × 452 pixels, file size: 172 KB,
 <https://commons.wikimedia.org/wiki/File:Parathyroid_adenoma_histopathology_(2).jpg>)
