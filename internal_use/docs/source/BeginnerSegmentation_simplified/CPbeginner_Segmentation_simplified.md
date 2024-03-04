@@ -13,7 +13,15 @@ Broad Instituteof MIT and Harvard, Cambridge, MA.
 The images in this experiment come from the [Broad Bioimage
 Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC022/).
 They are ﬁelds of U2OS cells imaged in ﬁve channels (Cell Painting
-assay; see Gustafsdottir et al., 2013)
+assay; see Gustafsdottir et al., 2013).
+
+>### The **Cell Painting** assay 
+>
+>is a high-content, high-throughput imaging technique used to capture a wide array of cellular phenotypes in response to diverse perturbations. Briefly, cells are treated with a wide array of drugs, genetic or genetic perturbations (usgin CRISPR, for example) and then fixed and stained with six fluorescent dyes that mark different cellular compartments, including nuclei, cytoplasm, endoplasmic reticulum, Golgi apparatus, mitochondria, and actin. 
+>
+>High-resolution images are then captured using automated fluorescence microscopy, and image analysis algorithms (like the one we will use in this tutorial) are applied to extract thousands of morphological features. These features are used to create a high dimensional **"morphological profile"** (consisting in up to several thousand features) for each perturbation. 
+>
+>Then, by comparing and clustering the morphological profiles of cells treated with different compdounds, researchers can identify potential drug candidates, toxicity or understand the mechanism of action of existing drugs; or, in combination with genetic perturbations, these profiles assay can be used to determine the function of genes or to understand the underlying mechanisms of genetic diseases and potential therapeutic interventions.
 
 ```{figure} ./TutorialImages/Fig1.png
 :width: 900
@@ -42,34 +50,16 @@ sites imaged in 5 channels) represent 5 mock treated wells from a single
 ## **Exercise instructions:**
 
 Read through the steps below and follow instructions where stated. Steps where
-you must figure out a solution are marked with 🔴 *TO DO.*
+you must figure out a solution are marked with 🔴 **TO DO.**
 
 ### **1. Load starting pipeline (2 min)**
 
-<<<<<<< Updated upstream
-- Start CellProﬁler by double-clicking the desktop icon: {{ image2 }}
-=======
 - Start CellProﬁler by double-clicking the desktop icon: <img src="./TutorialImages/CellProfilerLogo.png" width="40">
->>>>>>> Stashed changes
 - Drag and drop the ‘segmentation_start.cppipe’ ﬁle into the ‘Analysis modules’ pane on the left.
 - 2 modules should pop up.
 
 ###  **2. Set up the input modules (10min)**
 
-<<<<<<< Updated upstream
-The four input modules (Images, Metadata, NamesAndTypes, and Groups) are
-crucial for any CellProfiler pipeline because they define how images are
-loaded and organized in CellProfiler.
-
-- Click on the ‘Images’ module in the top left corner of the
-  CellProfiler window.
-- Drag and drop the ‘images’ folder into the ‘Drop files and folders
-  here’ pane. It should automatically populate. Notice that
-  illumination correction images (with a ﬁle extension of ‘.npy’) are
-  included in this data set.
-- Notice that if the ‘Filter images?’ is set to ‘Images only’ the ‘.npy’
-  files appeared grey out.
-=======
 The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are
 crucial for any CellProfiler pipeline because they define how images are loaded and organized in CellProfiler.
 
@@ -79,30 +69,17 @@ crucial for any CellProfiler pipeline because they define how images are loaded 
   illumination correction images (with a ﬁle extension of ‘.npy’) are
   included in this data set.
 - Notice that if the `‘Filter images?’` is set to `‘Images only’`, the ‘.npy’ files appeared grey out.
->>>>>>> Stashed changes
 
 ```{figure} ./TutorialImages/Fig2.png
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 2: The Images module, grey out files will **not** be available for downstream modules*
-```
-
-
-- \*\* 🔴 TO DO\*\*: Change the filter to a custom filter to **include** the ‘.npy’ files.
-
-- In the ‘Metadata’ module three metadata extraction methods should
-=======
 *Figure 2: The **Images** module, grey out files will **not** be available for downstream modules*
 ```
 
-
 - **🔴 TO DO**: Change the filter to a custom filter to **include** the ‘.npy’ files.
 
-- In the **Metadata** module three metadata extraction methods should
->>>>>>> Stashed changes
-  already be present and conﬁgured:
+- In the **Metadata** module three metadata extraction methods should already be present and conﬁgured:
 
   - The ﬁrst pulls Well, Site, and Channel metadata from all the image
     ﬁles except for the illumination correction functions.
@@ -113,11 +90,8 @@ crucial for any CellProfiler pipeline because they define how images are loaded 
 - Click on the magnifying glass at the end of the regular expression
   box for each extraction method to see how it works.
 
-<<<<<<< Updated upstream
-- Return to the ‘Metadata’ module and press ‘Update’. You
-=======
+
 - Return to the **Metadata** module and press ‘Update’. You
->>>>>>> Stashed changes
   should now see several columns, look through them you should have 5
   different channel numbers, 1 plate, 2 sites and 5 different wells.
 
@@ -125,20 +99,11 @@ crucial for any CellProfiler pipeline because they define how images are loaded 
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 3: The Metadata module, columns in table correspond to metadata
-=======
 *Figure 3: The **Metadata** module, columns in table correspond to metadata
->>>>>>> Stashed changes
 categories*
 ```
 
-
-<<<<<<< Updated upstream
-- In the ‘NamesAndTypes’ module, we assign names to the images and
-=======
 - In the **NamesAndTypes** module, we assign names to the images and
->>>>>>> Stashed changes
   configure image sets (i.e., all the different channels for a field of
   view). The channel mapping here is a bit complicated – we have a
   single set of illumination correction images (one ‘.npy’ file per
@@ -146,11 +111,8 @@ categories*
   metadata we extracted in the previous module to make that association
   possible.
 
-<<<<<<< Updated upstream
-- The ‘NamesAndTypes’ module is fully configured already but scroll and
-=======
+
 - The **NamesAndTypes** module is fully configured already but scroll and
->>>>>>> Stashed changes
   look through the configuration to see the two different ways of
   mapping images to channel names that are demonstrated here. (There
   are several other ways to create correct mappings, but these may
@@ -194,20 +156,10 @@ categories*
 *Figure 6: Image set matching using extracted metadata*
 ```
 
-<<<<<<< Updated upstream
-- For this exercise the ‘Groups’ module is not needed so it is set to
-  ‘No’, this module can be useful when you have more than one plate, or
-  different movies.
-- For more information and examples on how to configure the Input
-  modules we have created a blog and video tutorial that can be
-  accessed here:
-  <https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial>.
-=======
 - For this exercise the **Groups** module is not needed so it is set to
   ‘No’, this module can be useful when you have more than one plate, or
   different movies.
 - For more information and examples on how to configure the Input modules we have created a blog and video tutorial that can be accessed [here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial).
->>>>>>> Stashed changes
 
 ###  **3. Examine the output of the CorrectIlluminationApply module. (2min)**
 
@@ -217,16 +169,10 @@ help improve our segmentation and measurements by compensating for this.
 Pay close attention to the top of the ﬁeld of view to see the greatest
 effect of correction.
 
-<<<<<<< Updated upstream
-- Enter test mode by clicking on the ‘Start Test Mode’ button at the
-  bottom left corner of the window and hit ‘Step’ to run the
-  CorrectIlluminationApply module.
-- Brieﬂy examine the output of the CorrectIlluminationApply module—you
-=======
 - Enter test mode by clicking on the  <img src="./TutorialImages/StartTestMode.png" width="120"/> button at the
   bottom left corner of the window and hit <img src="./TutorialImages/Step.png" width="120"/> to run the **CorrectIlluminationApply** module.
 - Brieﬂy examine the output of the **CorrectIlluminationApply** module—you
->>>>>>> Stashed changes
+ 
   can see that the illumination correction functions show uneven
   illumination across the ﬁeld of view.
 - These functions were created by averaging and smoothing all 3456
@@ -250,15 +196,6 @@ effect of correction.
 Next, we’ll take a ﬁrst pass at identifying nuclei and cells in our
 initial image.
 
-<<<<<<< Updated upstream
-- After the CorrectIlluminationApply module, add an
-  IdentifyPrimaryObjects module (from the ‘Object Processing’ module
-  category). Do this by clicking on the ‘+’ sign in the bottom left
-  corner of the CellProfiler window, which will pop up a small window
-  called ‘Add modules.’.
-
-  - Tip: You can also use the search bar at the top of the ‘Add
-=======
 - After the **CorrectIlluminationApply** module, add an
   **IdentifyPrimaryObjects** module (from the ‘Object Processing’ module
   category). Do this by clicking on the <img src="./TutorialImages/AddModule.png" width="35"/>  button in the bottom left
@@ -266,7 +203,7 @@ initial image.
   called ‘Add modules.’.
 
   > **Tip**: You can also use the search bar at the top of the ‘Add
->>>>>>> Stashed changes
+ 
     modules’ window to search all modules by name.
 
 ```{figure} ./TutorialImages/Fig8.png
@@ -283,11 +220,8 @@ categories based on their function*
     menu.
   - Change the name of the output objects to ‘Nuclei’.
 
-<<<<<<< Updated upstream
-- Hit’ Step’ to run the module. How does your segmentation look?
-=======
 - Hit <img src="./TutorialImages/Step.png" width="120"/> to run the module. **How does your segmentation look?**
->>>>>>> Stashed changes
+ 
 
 - On the outlines display pane (bottom left) you can see three
   different colors; green is for accepted objects, orange for objects
@@ -301,21 +235,14 @@ categories based on their function*
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 9: The IdentifyPrimaryObjects module output, you can
-=======
 *Figure 9: The **IdentifyPrimaryObjects** module output, you can
->>>>>>> Stashed changes
+ 
 use the information in this window to modify your segmentation
 parameters*
 ```
 
-<<<<<<< Updated upstream
-- Use the magnifying glass at the top of the window to zoom in on an
-  area that was segmented poorly.
-=======
 - Use the <img src="./TutorialImages/Zoom.png" width="35"/> at the top of the window to zoom in on an area that was segmented poorly.
->>>>>>> Stashed changes
+ 
 
 - **🔴 TO DO**: Improve your segmentation of nuclei:
 
@@ -326,12 +253,8 @@ parameters*
       results.
     - Adjust the declumping settings.
 
-<<<<<<< Updated upstream
-  - Hit ‘Step’ to rerun and see how the changes affect the
-    segmentation.
-=======
   - Hit <img src="./TutorialImages/Step.png" width="120"/> to rerun and see how the changes affect the segmentation.
->>>>>>> Stashed changes
+ 
 
   - Adjust the segmentation parameters until you feel you’re ready to
     move on to identifying the cells around the nuclei; the
@@ -340,20 +263,14 @@ parameters*
 
 ### **5. IdentifySecondaryObjects – Cells (5min)**
 
-<<<<<<< Updated upstream
-- After the IdentifyPrimaryObjects, add an IdentifySecondaryObjects
-=======
 - After the **IdentifyPrimaryObjects**, add an **IdentifySecondaryObjects**
->>>>>>> Stashed changes
+ 
   module.
 - Create an object called Cells that is seeded on the Nuclei primary
   objects that you just created; select the Ph_golgi image for your
   input image, nuclei for input objects and change the name to ‘Cells’.
-<<<<<<< Updated upstream
-- Hit’ Step’ to run the module. How does your segmentation look?
-=======
 - Hit <img src="./TutorialImages/Step.png" width="120"/> to run the module. **How does your segmentation look?**
->>>>>>> Stashed changes
+ 
 - For this module the outline colors correspond to the
   object seed (green-nuclei) and the segmented objects (pink-cell)
 
@@ -361,11 +278,8 @@ parameters*
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 10: The IdentifySecondaryObjects module output*
-=======
 *Figure 10: The **IdentifySecondaryObjects** module output*
->>>>>>> Stashed changes
+ 
 ```
 
 - **🔴 TO DO**: Improve cell segmentation
@@ -403,20 +317,11 @@ parameters that can segment cells on all the images on an experiment.
 *Figure 11: A section of the ‘Choose Image Set’ menu.*
 ```
 
-- Then run that image in test mode for your ﬁrst 3 modules (through
-<<<<<<< Updated upstream
-  your IdentifySecondaryObjects step).
-
-  - You can do it by clicking the step button, or
-  - You can add a pause button on the module after
-    IdentifySecondaryObjects and hit ‘Run’, this will run all modules
-    before the pause.
-=======
-  your **IdentifySecondaryObjects** step).
+- Then run that image in test mode for your ﬁrst 3 modules (through your **IdentifySecondaryObjects** step).
 
   - You can do it by clicking the <img src="./TutorialImages/Step.png" width="120"/> button, or
   - You can add a pause button (<img src="./TutorialImages/Pause.png" width="40"/>) on the module after **IdentifySecondaryObjects** and hit ‘Run’, this will run all modules before the pause.
->>>>>>> Stashed changes
+ 
 
 ```{figure} ./TutorialImages/Fig12.png
 :width: 400
@@ -432,13 +337,9 @@ parameters that can segment cells on all the images on an experiment.
 
 ### **7. IdentifyTertiaryObjects- Cytoplasm (2min)**
 
-<<<<<<< Updated upstream
-- After the IdentifySecondaryObjects module, add an
-  IdentifyTertiaryObjects module.
-=======
 - After the **IdentifySecondaryObjects** module, add an
   **IdentifyTertiaryObjects** module.
->>>>>>> Stashed changes
+ 
 
 - Create an object called Cytoplasm using the Cell and Nuclei objects
   you’ve created.
@@ -461,17 +362,11 @@ The next 3 modules have to do with the creation of the Nucleoli objects.
 Look at the output from each to see how the image is transformed to aid
 in segmentation.
 
-<<<<<<< Updated upstream
-- After the IdentifyTertiaryObjects module, add an
-  EnhanceOrSuppressFeatures module.
-
-- EnhanceOrSuppressFeatures is a module that helps enhance parts of an
-=======
 - After the **IdentifyTertiaryObjects** module, add an
   **EnhanceOrSuppressFeatures** module.
 
 - **EnhanceOrSuppressFeatures** is a module that helps enhance parts of an
->>>>>>> Stashed changes
+ 
   image- in this case, punctate objects or ‘Speckles’. As we are
   looking for nucleoli, we apply this to the RNA channel (Syto) image
   and call the output ‘FilteredRNA’.
@@ -488,25 +383,16 @@ in segmentation.
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 13. The EnhanceOrSuppress module output, enhancing
-=======
 *Figure 13. The **EnhanceOrSuppress** module output, enhancing
->>>>>>> Stashed changes
+ 
 the Syto image allows you to isolate nucleoli against the nucleoplasmic
 background signal.*
 ```
 
-
-<<<<<<< Updated upstream
-- After the EnhanceOrSuppressFeatures module, add an MaskImage module.
-
-- MaskImage allows you to create a version of the ‘FilteredRNA’ image
-=======
 - After the **EnhanceOrSuppressFeatures** module, add an **MaskImage** module.
 
 - **MaskImage** allows you to create a version of the ‘FilteredRNA’ image
->>>>>>> Stashed changes
+ 
   called ‘SytoNuclei’ where all the pixels except the ones you
   specify are set to an intensity of 0. In this case, we set to 0
   any pixel not inside a nucleus. By doing this, we can decrease the
@@ -523,11 +409,8 @@ background signal.*
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 14. The MaskImage module output, the contrast was adjusted to
-=======
 *Figure 14. The **MaskImage** module output, the contrast was adjusted to
->>>>>>> Stashed changes
+ 
 show that the intensity of the pixels outside the nuclei are now set to
 0.*
 ```
@@ -545,11 +428,8 @@ show that the intensity of the pixels outside the nuclei are now set to
   - Adjust the segmentation parameters until you are satisfied with the
     segmentation results.
 
-<<<<<<< Updated upstream
-  **🔴 TO DO**: Add an ‘OverlayOutlines’ module at this point to overlay
-=======
   **🔴 TO DO**: Add an **OverlayOutlines** module at this point to overlay
->>>>>>> Stashed changes
+ 
   the identiﬁed nucleoli on the original Syto image to assure yourself
   that the segmentation not only matches the speckle enhanced
   ‘SytoNuclei’ image, but also looks accurate on the unprocessed image
@@ -566,11 +446,8 @@ show that the intensity of the pixels outside the nuclei are now set to
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 15. The OverlayOutlines module output, all detected
-=======
 *Figure 15. The **OverlayOutlines** module output, all detected
->>>>>>> Stashed changes
+ 
 nucleoli are within the nuclei.*
 ```
 
@@ -578,50 +455,23 @@ nucleoli are within the nuclei.*
 ### **9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**
 
 - After your segmentation of the nucleoli, add as many object
-  measurement modules as you would like, we have added a
-<<<<<<< Updated upstream
-  MeasureObjectIntensity.
-- Some suggested modules to add: MeasureObjectSizeShape,
-  MeasureObjectIntensity, MeasureGranularity, MeasureObjectNeighbors.
-=======
-  **MeasureObjectIntensity**.
-- Some suggested modules to add: **MeasurebjectSizeShape**,
-  **MeasureObjectIntensity**, **MeasureGranularity**, **MeasureObjectNeighbors**.
->>>>>>> Stashed changes
-- Which objects do you think would be valuable to measure with each of
-  these modules? Which channels would you measure your objects in? For
-  a typical Cell Painting experiment you would add as many measurements
-  as possible, but that isn’t necessary here; however, do make sure
-  every object gets at least some measurements.Note: While
-<<<<<<< Updated upstream
-  MeasureCorrelation, MeasureTexture, and
-  MeasureObjectIntensityDistribution can produce valuable data for
-=======
-  **MeasureCorrelation**, **MeasureTexture**, and
-  **MeasureObjectIntensityDistribution** can produce valuable data for
->>>>>>> Stashed changes
-  downstream proﬁling, they can be memory-intensive and/or slow so
-  should not be added for this example pipeline in the interest of
-  pipeline runtime.
+  measurement modules as you would like, we have added a **MeasureObjectIntensity**.
+  - Some suggested modules to add: **MeasurebjectSizeShape**, **MeasureObjectIntensity**, **MeasureGranularity**, **MeasureObjectNeighbors**.
+ 
+- Which objects do you think would be valuable to measure with each of these modules? Which channels would you measure your objects in? For a typical Cell Painting experiment you would add as many measurements as possible, but that isn’t necessary here; however, do make sure every object gets at least some measurements.Note: While **MeasureCorrelation**, **MeasureTexture**, and **MeasureObjectIntensityDistribution** can produce valuable data for downstream proﬁling, they can be memory-intensive and/or slow so should not be added for this example pipeline in the interest of pipeline runtime.
 
 ### **10. RelateObjects (5min)**
 
-<<<<<<< Updated upstream
-- **🔴 TO DO:** Add a RelateObjects module and configure it to relate
-=======
 - **🔴 TO DO:** Add a **RelateObjects** module and configure it to relate
->>>>>>> Stashed changes
+ 
   ‘Nucleoli’ to ‘Nuclei’.
 
 ```{figure} ./TutorialImages/Fig16.png
 :width: 700
 :align: center
 
-<<<<<<< Updated upstream
-*Figure 16: The RelateObject module output.*
-=======
 *Figure 16: The **RelateObject** module output.*
->>>>>>> Stashed changes
+ 
 ```
 
 Relating the objects allows you to create per-parent means (e.g., for
@@ -632,17 +482,10 @@ nucleus).
 
 ### **11. Run the pipeline (optional)**
 
-<<<<<<< Updated upstream
-- If you have time, add a ExportToSpreadsheet module at the end.
-- Exit test mode.
-- Click on ‘Output Settings’ button at the bottom left corner.
-- Change the default output folder.
-- Click on ‘Analyze Images’ button at the bottom left corner.
-=======
 - If you have time, add a **ExportToSpreadsheet** module at the end.
 - Exit test mode.
 - Click on <img src="./TutorialImages/OutputSettings.png" width="120"/> button at the bottom left corner.
 - Change the default output folder.
 - Click on <img src="./TutorialImages/AnalyzeImages.png" width="120"/> button at the bottom left corner.
->>>>>>> Stashed changes
+ 
 - Explore the spreadsheets created for each object.
