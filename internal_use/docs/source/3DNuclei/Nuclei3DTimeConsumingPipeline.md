@@ -3,7 +3,7 @@
 # **Analysis of noisy 3D nuclei**
 **Tutorial for the Association of Biomolecular Research Facilities - Ligh Microscopy Research Group (ABRF/LMRG)**
 
-### **Proposal:**
+## **Proposal:**
 
 Segment the objects in a fluorescence z-stack image and provide:
 
@@ -13,7 +13,7 @@ Segment the objects in a fluorescence z-stack image and provide:
 - Volume in cubic microns (um^3). Label volume.
 - 3D volume image of your segmented image
 
-### **Input:**
+## **Input:**
 
 Four different z-stack images that vary in their signal-to-noise ratio
 and the clustering of their objects of nuclei in 3D cell culture.

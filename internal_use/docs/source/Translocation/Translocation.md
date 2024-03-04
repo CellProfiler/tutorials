@@ -6,7 +6,7 @@
 Beth Cimini, Carolina Wählby, Martin Simonsson, Megan Rokop and Mark
 Bray, Broad Institute
 
-### **Background information:**
+## **Background information:**
 
 In this experiment, we are working with human U2OS osteosarcoma (bone
 cancer) cells, in which a Forkhead-protein FOXO1A has been labeled with
@@ -36,14 +36,14 @@ Green: **GFP**, Magenta: **DNA**.*
 ```
 
 
-### **Goals of this exercise:**
+## **Goals of this exercise:**
 
 In this exercise, we aim to: (1) determine this lowest possible dose
 necessary to observe this effect, and (2) to optimize the analysis of
 images in which FOXO1A is cytoplasmic versus nuclear, in order to
 separate positive controls and negative controls as best as possible.
 
-### **Materials necessary for this exercise:**
+## **Materials necessary for this exercise:**
 
 The images you will be analyzing were taken from cells growing in a
 standard 96-well plate, but you will work with a subset of only 26 of
@@ -56,7 +56,7 @@ drug. In addition to these images, a text file called
 information about where on the 96-well plate the wells were located, and
 how the cells were treated.
 
-### **Methods to be used in this exercise:**
+## **Methods to be used in this exercise:**
 
 In this exercise, you will use CellProfiler and CellProfiler Analyst to
 identify and delineate (or “segment”) each nucleus and cell body, and
