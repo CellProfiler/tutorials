@@ -1,14 +1,116 @@
+---
+substitutions:
+  image1: |-
+    ```{image} ./TutorialImages/Fig1.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image10: |-
+    ```{image} ./TutorialImages/Fig9.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image11: |-
+    ```{image} ./TutorialImages/Fig10.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image12: |-
+    ```{image} ./TutorialImages/Fig11.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image13: |-
+    ```{image} ./TutorialImages/Fig12.png
+    :align: center
+    :scale: 40 %
+    :width: 1000
+    ```
+  image14: |-
+    ```{image} ./TutorialImages/Fig13.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image15: |-
+    ```{image} ./TutorialImages/Fig14.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image16: |-
+    ```{image} ./TutorialImages/Fig15.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image17: |-
+    ```{image} ./TutorialImages/Fig16.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image2: |-
+    ```{image} ./TutorialImages/icon.png
+    :height: 0.26065in
+    :width: 0.26065in
+    ```
+  image3: |-
+    ```{image} ./TutorialImages/Fig2.png
+    :align: center
+    :height: 2.74931in
+    :width: 7in
+    ```
+  image4: |-
+    ```{image} ./TutorialImages/Fig3.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image5: |-
+    ```{image} ./TutorialImages/Fig4.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image6: |-
+    ```{image} ./TutorialImages/Fig5.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image7: |-
+    ```{image} ./TutorialImages/Fig6.png
+    :height: 0.60764in
+    :width: 7.5in
+    ```
+  image8: |-
+    ```{image} ./TutorialImages/Fig7.png
+    :align: center
+    :scale: 70 %
+    :width: 1000
+    ```
+  image9: |-
+    ```{image} ./TutorialImages/Fig8.png
+    :align: center
+    :scale: 40 %
+    :width: 1000
+    ```
+---
 
 # Segmentation and organelle analysis:
 
 ## A computer exercise using CellProﬁler
 
+### Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft
 
-Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft.
-<br>
-Broad Instituteof MIT and Harvard, Cambridge, MA.
+### Broad Institute
 
-## **Background information:**
+**Background information:**
 
 The images in this experiment come from the [Broad Bioimage
 Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC022/).
@@ -23,7 +125,7 @@ assay; see Gustafsdottir et al., 2013)
 ```
 
 
-## **Goals of this exercise:**
+**Goals of this exercise:**
 
 This exercise will give you practice ﬁnding segmentation parameters for
 larger “parent” objects (nucleus, cell, and cytoplasm) and show you ways
@@ -33,24 +135,24 @@ RelateObjects so that you can relate the average counts, distances, and
 measurements of the smaller “child” organelles to their larger “parent”
 objects (i.e., cell and nucleus).
 
-## **Materials necessary for this exercise:**
+**Materials necessary for this exercise:**
 
 The images are contained in the **images** folder; these 50 images (10
 sites imaged in 5 channels) represent 5 mock treated wells from a single
 384 well plate experiment.
 
-## **Exercise instructions:**
+**Exercise instructions:**
 
 Read through the steps below and follow instructions where stated. Steps where
 you must figure out a solution are marked with 🔴 *TO DO.*
 
-### **1. Load starting pipeline (2 min)**
+**1. Load starting pipeline (2 min)**
 
 - Start CellProﬁler by double-clicking the desktop icon: {{ image2 }}
 - Drag and drop the ‘segmentation_start.cppipe’ ﬁle into the ‘Analysis modules’ pane on the left.
 - 2 modules should pop up.
 
-###  **2. Set up the input modules (10min)**
+**2. Set up the input modules (10min)**
 
 The four input modules (Images, Metadata, NamesAndTypes, and Groups) are
 crucial for any CellProfiler pipeline because they define how images are
@@ -160,7 +262,7 @@ categories*
   accessed here:
   <https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial>.
 
-###  **3. Examine the output of the CorrectIlluminationApply module. (2min)**
+**3. Examine the output of the CorrectIlluminationApply module. (2min)**
 
 Since microscope objectives don’t typically have a completely uniform
 illumination pattern, applying an illumination correction function can
@@ -190,7 +292,7 @@ effect of correction.
 *Figure 7: Application of the illumination correction function*
 ```
 
-###  **4. IdentifyPrimaryObjects – Nuclei (10min)**
+**4. IdentifyPrimaryObjects – Nuclei (10min)**
 
 Next, we’ll take a ﬁrst pass at identifying nuclei and cells in our
 initial image.
@@ -257,7 +359,7 @@ parameters*
     identiﬁcation should be good but doesn’t need to be perfect before
     you move on.
 
-### **5. IdentifySecondaryObjects – Cells (5min)**
+**5. IdentifySecondaryObjects – Cells (5min)**
 
 - After the IdentifyPrimaryObjects, add an IdentifySecondaryObjects
   module.
@@ -285,7 +387,7 @@ parameters*
     secondary objects (Propagation, Watershed-Image, Distance-N, etc)
     and, if using Propagation, the regularization factor.
 
-### **6. Test the robustness of your segmentation parameters across images (5min)**
+**6. Test the robustness of your segmentation parameters across images (5min)**
 
 It’s (relatively!) easy to come up with a good set of segmentation
 parameters for a single image however we aim to create a set of
@@ -330,7 +432,7 @@ parameters that can segment cells on all the images on an experiment.
 - **🔴 TO DO**: Adjust the parameters to get comparable results to the
   first image. Once your segmentation is good, try it on another image.
 
-### **7. IdentifyTertiaryObjects- Cytoplasm (2min)**
+**7. IdentifyTertiaryObjects- Cytoplasm (2min)**
 
 - After the IdentifySecondaryObjects module, add an
   IdentifyTertiaryObjects module.
@@ -344,7 +446,7 @@ parameters that can segment cells on all the images on an experiment.
   - ‘Shrink smaller object prior to subtraction?’ should both set to
     ‘No’.
 
-### **8. Examine the steps used to segment the Nucleoli (15min)**
+**8. Examine the steps used to segment the Nucleoli (15min)**
 
 So far, we have used untransformed images for object detection, but not
 all objects can be segmented from raw images. CellProfiler contains a
@@ -441,7 +543,7 @@ nucleoli are within the nuclei.*
 ```
 
 
-### **9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**
+**9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**
 
 - After your segmentation of the nucleoli, add as many object
   measurement modules as you would like, we have added a
@@ -459,7 +561,7 @@ nucleoli are within the nuclei.*
   should not be added for this example pipeline in the interest of
   pipeline runtime.
 
-### **10. RelateObjects (5min)**
+**10. RelateObjects (5min)**
 
 - **🔴 TO DO:** Add a RelateObjects module and configure it to relate
   ‘Nucleoli’ to ‘Nuclei’.
@@ -477,7 +579,7 @@ calculate distances from the child objects to the edge and/or the center
 of the parent (e.g., how far is each nucleolus from the center of the
 nucleus).
 
-### **11. Run the pipeline (optional)**
+**11. Run the pipeline (optional)**
 
 - If you have time, add a ExportToSpreadsheet module at the end.
 - Exit test mode.
