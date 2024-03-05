@@ -27,7 +27,7 @@ assay; see Gustafsdottir et al., 2013).
 :width: 900
 :align: center
 
-*Figure 1: Images and channels from a **Cell Painting** assay.*
+*Figure 1: Cell Painting assays are commonly run on multiwell plates and several Images ('Sites') are taken from each well. Each image contains information of 6 different cellular dyes, imaged in 5 channels.
 ```
 
 
