@@ -1,5 +1,5 @@
 
-# **UnmixColors tutorial**
+# UnmixColors module tutorial
 
 The **UnmixColors** module creates separate images per dye stain for histologically
 stained images.

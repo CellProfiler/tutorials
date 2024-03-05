@@ -1,7 +1,7 @@
 
-# Segmentation and organelle analysis:
+# Beginner Segmentation and Organelle Analysis
 
-## A computer exercise using CellProﬁler
+***A computer exercise using CellProﬁler***
 
 
 Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft.

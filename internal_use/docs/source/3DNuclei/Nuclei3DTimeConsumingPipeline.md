@@ -1,6 +1,6 @@
 
 
-# **Analysis of noisy 3D nuclei**
+# Analysis of noisy 3D nuclei
 **Tutorial for the Association of Biomolecular Research Facilities - Ligh Microscopy Research Group (ABRF/LMRG)**
 
 ## **Proposal:**

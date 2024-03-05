@@ -1,5 +1,6 @@
 
-# Advanced segmentation and organelle analysis: A computer exercise using the CellProfiler & CellProfiler Analyst softwares
+# Advanced segmentation and organelle analysis
+***A computer exercise using the CellProfiler & CellProfiler Analyst softwares***
 
  **Beth Cimini** 
 <br>

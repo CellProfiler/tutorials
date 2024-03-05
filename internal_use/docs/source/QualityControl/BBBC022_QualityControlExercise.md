@@ -1,7 +1,9 @@
 
 
-# Using machine learning to perform image quality control: A computer exercise using CellProfiler & CellProfiler Analyst software
- **Beth Cimini** 
+# Image quality control using machine learning 
+***A computer exercise using CellProfiler & CellProfiler Analyst software*** 
+
+**Beth Cimini** 
 <br>
 **Broad Institute of MIT and Harvard, Cambridge, MA**
 

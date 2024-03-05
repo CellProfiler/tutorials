@@ -15,9 +15,9 @@
 
 [pixel-based classification]: https://en.wikipedia.org/wiki/Contextual_image_classification
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# CellProfiler Tutorial: pixel-based classification
+# Pixel-based classification tutorial
 
-By Kyle Karhohs, PhD
+**By Kyle Karhohs, PhD**
 
 (A version of this document containing animated GIFs in maintained online on our [GitHub])
 

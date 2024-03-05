@@ -1,4 +1,4 @@
-# CellProfiler Tutorial: 3d monolayer
+# 3D Cell Monolayer Segmentation and Analysis Tutorial
 
 ## Organizing and importing images
 
