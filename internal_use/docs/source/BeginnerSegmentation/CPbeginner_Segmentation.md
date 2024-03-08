@@ -248,6 +248,7 @@ parameters*
     identiﬁcation should be good but doesn’t need to be perfect before
     you move on.
 
+
 ### **5. IdentifySecondaryObjects – Cells (5min)**
 
 - After the **IdentifyPrimaryObjects**, add an **IdentifySecondaryObjects**
