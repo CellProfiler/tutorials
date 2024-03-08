@@ -58,7 +58,7 @@ Read through the steps below and follow instructions where stated. Steps where y
     > Alternatively, you can also import a pipeline by going to `File` in the main menu (top), then `Import  >  Pipeline from file`
 
 ```{figure} ./TutorialImages/Fig2.png
-:width: 500
+:width: 700
 :align: center
 
  Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline, drag and drop pipelines (.ccpipe or .ccproj files) into the left area.
@@ -67,7 +67,7 @@ Read through the steps below and follow instructions where stated. Steps where y
 ###  **2. Load images**
 
 
-- Click on the **Images** module in the top left corner of the CellProfiler window.
+- Click on the **Images** module in the top left corner of the **Input** pane on CellProfiler window.
 - Drag and drop the folder named `'images_Illum-corrected'` into the `Drop files and folders here` pane. It should automatically populate.
 
     > Alternatively, you can also load the images by double clicking in the `Drop files and folders here` pane and using the pop-up window to select them.
@@ -92,21 +92,33 @@ Read through the steps below and follow instructions where stated. Steps where y
 
 The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are crucial for any CellProfiler pipeline because they define how images are loaded and organized in CellProfiler.
 
-- In the **Metadata** module is already conﬁgured. I extracts information that is not contained within the images themselves (thus, the name 'Metadata'):
+- The **Metadata** module is already conﬁgured. You can extracts information that is required for you analysis amd is not contained within the images themselves (thus, the name 'Metadata'):
 
   - In this case, the module extracts the **Plate**, **Well**, **Site** and **ChannelNumber** from the image files' names.
 
-    - This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose to which images to apply them to.
+    - This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose to which images to apply them to.  
+    - You can also add a file where is contained the Metadata per image.
 
   - The module uses a `'regular expression'` (also known as RegEx), a sort of template that fits all the file names and allows to obtain data from them.
 
   - Click on the magnifying glass at the end of the regular expression box for each extraction method to see how it works.
 
+  -  Let's analyze the example used in this tutorial:  
+>**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch(?P<ChannelNumber>[1-5]).tif`**  
+
+>`(?P<Plate>.*)`: Extract all the characters and assign it to the measurment "Plate" for the image. 
+>
+>`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single {1} uppercase letter from A to P [A-P]. Then, extract 
+the next two digits {2} between [0-9] and assign it to the measurment "Well" for the image.  
+>
+>`site(?P<Site>[0-9])`: After the string "site", extract the next two digits {2} between [0-9] and assign it to the measurment "Site" for the image.   
+>
+>`Ch(?P<ChannelNumber>[1-5])`: After the string "Ch", extract the next digit between [1-5] and assign it to the measurment "Channel" for the image.
+
 >If you want to learn more about how this regular expressions work or how to adapt them to other situations, click on the <img src="./TutorialImages/Info.png" width="35"> button.
 
-
 ```{figure} ./TutorialImages/Fig4.png
-:width: 800
+:width: 650
 :align: center
 
 *Figure 4: The **Metadata** module, columns in table correspond to metadata categories*
@@ -141,7 +153,7 @@ The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Group
 
 ## Build the analysis pipeline
 
-Now, you are ready to start building your iamge analysis pipeline. But, **what IS an analysis pipeline?**
+Now, you are ready to start building your image analysis pipeline. But, **what IS an analysis pipeline?**
 
 Basically, it is a series of sequential processes, in which the output of one process serves as the input of one of the following ones.
 
@@ -149,10 +161,14 @@ Thus, the order in which this processes are executed is **very** important, as i
 
   > During the construction of the pipeline, you will see two symbols appearing next to the modules:
   >
-  >  - <img src="./TutorialImages/Check.png" width="35"/> means that the module is activated and well configured
-  >  - <img src="./TutorialImages/Error.png" width="35"/> means that there is an error in the configuration of the module. You can hover with your mouse on it to get information on the problem.
+  >  - <img src="./TutorialImages/Check.png" width="35"/> Checked box means that the module is activated and well configured
+  >  - <img src="./TutorialImages/Error.png" width="35"/> This means that there is an error in the configuration of the module. You can hover with your mouse on it to get information on the problem.
   >     - Because the pipeline is sequential, it is possible that changing an upstream module will generate errors on a downstream module.
   >  - You can click on any of the two symbols above to inactivate the module, which is signaled as <img src="./TutorialImages/InactivatedModule.png" width="35"/>. This means that the module (and any output it produces) is no longer a part of the pipeline and will be skipped.
+  >
+  >  - <img src="./TutorialImages/open_eyes.png" width="35"/> Open eye means that the module output pop up when you run the pipeline.
+  >
+  >  - <img src="./TutorialImages/close_eyes.png" width="35"/> Close eye means that the module output doesn't pop up when you run the pipeline.
 
 ###  **4. IdentifyPrimaryObjects – Nuclei (10min)**
 
@@ -170,7 +186,7 @@ Thus, the order in which this processes are executed is **very** important, as i
 ```
 
 
-- Select `'OrigDNA'` image as your input image from the drop-down menu.
+- Select `'OrigDNA'` image as your input image from the drop-down menu. `'OrigDNA'` is the name assigned to the nuclei channel in **NamesAndTypes** module. You can check it in the setting of Input Modules described before. 
 - Change the name of the output objects to ‘Nuclei’.
 
 - Hit <img src="./TutorialImages/Step.png" width="120"/> to run the module. A new window will pop up showing you the original input image (top left) and the results of running the module. 
@@ -203,7 +219,9 @@ Thus, the order in which this processes are executed is **very** important, as i
  
   - Adjust the segmentation parameters until you feel you’re ready to move on to identifying the cells around the nuclei.
   
-  > The segmentation should be good but **doesn’t need to be perfect** before you move on.
+  > The segmentation should be good but **doesn’t need to be perfect** before you move on.  
+  
+  <br>
 
 ### **5. IdentifySecondaryObjects – Cells (5min)**
 
@@ -242,7 +260,9 @@ It’s (relatively!) easy to come up with a good set of segmentation parameters 
 
 - To test the parameters, there are two options to change the image you are working on in Test Mode:
 
-  - Click on the <img src="./TutorialImages/NextImageSet.png" width="120"/> at the bottom left corner, or
+  - Click on the <img src="./TutorialImages/NextImageSet.png" width="120"/> at the bottom left corner,   
+  
+    or
 
   - Go to `‘Test’` on the top menu bar → `Choose Image Set` to bring up a list of the images in your experiment, select the image you want to test, and press the `‘OK’` button.
 
