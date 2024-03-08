@@ -1,5 +1,5 @@
 
-# Segmentation and organelle analysis:
+# Beginner segmentation and organelle analysis:
 
 ## A computer exercise using CellProﬁler
 
