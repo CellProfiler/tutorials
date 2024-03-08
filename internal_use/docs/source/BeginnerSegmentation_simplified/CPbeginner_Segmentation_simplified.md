@@ -27,9 +27,8 @@ assay; see Gustafsdottir et al., 2013).
 :width: 900
 :align: center
 
-*Figure 1: Cell Painting assays are commonly run on multiwell plates and several Images ('Sites') are taken from each well. Each image contains information of 6 different cellular dyes, imaged in 5 channels.
+Figure 1: Cell Painting assays are commonly run on multiwell plates and several Images ('Sites') are taken from each well. Each image contains information of 6 different cellular dyes, imaged in 5 channels.
 ```
-
 
 ## **Goals of this exercise:**
 
@@ -55,87 +54,69 @@ you must figure out a solution are marked with 🔴 **TO DO.**
 ### **1. Load starting pipeline (2 min)**
 
 - Start CellProﬁler by double-clicking the desktop icon: <img src="./TutorialImages/CellProfilerLogo.png" width="40">
-- Drag and drop the ‘segmentation_start.cppipe’ ﬁle into the ‘Analysis modules’ pane on the left.
-- 2 modules should pop up.
+- Drag and drop the `‘segmentation_start.cppipe’` ﬁle into the `‘Analysis modules’` pane on the left.
 
-###  **2. Set up the input modules (10min)**
-
-The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are
-crucial for any CellProfiler pipeline because they define how images are loaded and organized in CellProfiler.
-
-- Click on the **Images** module in the top left corner of the
-  CellProfiler window.
-- Drag and drop the ‘images’ folder into the `Drop files and folders here` pane. It should automatically populate. Notice that
-  illumination correction images (with a ﬁle extension of ‘.npy’) are
-  included in this data set.
-- Notice that if the `‘Filter images?’` is set to `‘Images only’`, the ‘.npy’ files appeared grey out.
+    > Alternatively, you can also import a pipeline by going to `File` in the main menu (top), then `Import  >  Pipeline from file`
 
 ```{figure} ./TutorialImages/Fig2.png
-:width: 700
+:width: 500
 :align: center
 
-*Figure 2: The **Images** module, grey out files will **not** be available for downstream modules*
+ Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline, drag and drop pipelines (.ccpipe or .ccproj files) into the left area.
 ```
 
-- **🔴 TO DO**: Change the filter to a custom filter to **include** the ‘.npy’ files.
-
-- In the **Metadata** module three metadata extraction methods should already be present and conﬁgured:
-
-  - The ﬁrst pulls Well, Site, and Channel metadata from all the image
-    ﬁles except for the illumination correction functions.
-  - The second pulls Plate metadata from the image folder.
-  - The third pulls Plate metadata from the illumination correction
-    functions.
-
-- Click on the magnifying glass at the end of the regular expression
-  box for each extraction method to see how it works.
+###  **2. Load images**
 
 
-- Return to the **Metadata** module and press ‘Update’. You
-  should now see several columns, look through them you should have 5
-  different channel numbers, 1 plate, 2 sites and 5 different wells.
+- Click on the **Images** module in the top left corner of the CellProfiler window.
+- Drag and drop the folder named `'images_Illum-corrected'` into the `Drop files and folders here` pane. It should automatically populate.
+
+    > Alternatively, you can also load the images by double clicking in the `Drop files and folders here` pane and using the pop-up window to select them.
 
 ```{figure} ./TutorialImages/Fig3.png
 :width: 700
 :align: center
 
-*Figure 3: The **Metadata** module, columns in table correspond to metadata
-categories*
+*Figure 3: The **Images** module, grey out files will **not** be available for downstream modules*
 ```
+> **TIP**: You can use the `‘Filter images?’` options to filter out any file that you don't want CellProfiler to process. For example, if `‘Images only’` is selected, all files that are not images will be filtered out (they appear greyed out).
 
-- In the **NamesAndTypes** module, we assign names to the images and
-  configure image sets (i.e., all the different channels for a field of
-  view). The channel mapping here is a bit complicated – we have a
-  single set of illumination correction images (one ‘.npy’ file per
-  channel) that map to each and every well and site. We will use the
-  metadata we extracted in the previous module to make that association
-  possible.
+###  **3. [OPTIONAL] Set up the input modules (10min)**
+  
+  > *You can skip this step is you prefer, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline.*
 
+The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are crucial for any CellProfiler pipeline because they define how images are loaded and organized in CellProfiler.
 
-- The **NamesAndTypes** module is fully configured already but scroll and
-  look through the configuration to see the two different ways of
-  mapping images to channel names that are demonstrated here. (There
-  are several other ways to create correct mappings, but these may
-  serve as a helpful example to refer to in your own work).
+- In the **Metadata** module is already conﬁgured. I extracts information that is not contained within the images themselves (thus, the name 'Metadata'):
 
-  - The ‘.tif’ image ﬁles are assigned a name by the Metadata
-    extracted in the previous module (speciﬁcally ChannelNumber)
+  - In this case, the module extracts the **Plate**, **Well**, **Site** and **ChannelNumber** from the image files' names.
+
+    - This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose to which images to apply them to.
+
+  - The module uses a `'regular expression'` (also known as RegEx), a sort of template that fits all the file names and allows to obtain data from them.
+
+  - Click on the magnifying glass at the end of the regular expression box for each extraction method to see how it works.
+
+>If you want to learn more about how this regular expressions work or how to adapt them to other situations, click on the <img src="./TutorialImages/Info.png" width="35"> button.
+
 
 ```{figure} ./TutorialImages/Fig4.png
-:width: 700
+:width: 800
 :align: center
 
-*Figure 4: Image mapping using extracted metadata*
+*Figure 4: The **Metadata** module, columns in table correspond to metadata categories*
 ```
 
-- The ‘.npy’ illumination correction functions are assigned a name
-  based on a unique string in the filename (such as ‘IllumER’)
+- In the **NamesAndTypes** module, we assign names to the images and configure image sets (i.e., all the different channels for a field of view). We will use the metadata we extracted in the previous module to make that association possible.
+
+  - This module is also fully configured already, but scroll and look through the configuration to see how we use the **ChannelNumber** obtained from the **Metadata** module to assign names to each image (There are several other ways to create correct mappings, but these may serve as a helpful example to refer to in your own work).
+
 
 ```{figure} ./TutorialImages/Fig5.png
-:width: 700
+:width: 800
 :align: center
 
-*Figure 5: Image mapping using filename*
+*Figure 5: Image mapping using extracted metadata*
 ```
 
 - As there is only one set of illumination correction functions for
