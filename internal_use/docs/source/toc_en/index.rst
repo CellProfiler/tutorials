@@ -11,12 +11,22 @@ Welcome to cellprofiler-tutorials's documentation!
    :caption: Contents:
    :titlesonly:
 
+   Beginner Segmentation <../BeginnerSegmentation/CPbeginner_Segmentation>
+
+   Simplified Beginner Segmentation <../BeginnerSegmentation_simplified/CPbeginner_Segmentation_simplified>
+
+   Advanced Segmentation <../AdvancedSegmentation/BBBC022_AnalysisExercise>
+
    Translocation <../Translocation/Translocation>
-   ../3d-monolayer/3D_Monolayer
-   ../3DNuclei/Nuclei3DTimeConsumingPipeline
-   ../AdvancedSegmentation/BBBC022_AnalysisExercise
-   ../BeginnerSegmentation/CPbeginner_Segmentation
-   ../FishCelegans/ABRF_LMRGFish
-   ../PixelClassification/PixelClassification
-   ../QualityControl/BBBC022_QualityControlExercise
-   ../UnmixColorsTutorial/UnmixColorsTutorial
+
+   3D Cell Monolayer <../3d-monolayer/3D_Monolayer>
+
+   Noisy 3D Nuclei <../3DNuclei/Nuclei3DTimeConsumingPipeline>
+
+   Pixel Classification <../PixelClassification/PixelClassification>
+
+   Image Quality Control <../QualityControl/BBBC022_QualityControlExercise>
+
+   FISH analysis in C. elegans <../FishCelegans/ABRF_LMRGFish>
+
+   UnmixColors module <../UnmixColorsTutorial/UnmixColorsTutorial>
