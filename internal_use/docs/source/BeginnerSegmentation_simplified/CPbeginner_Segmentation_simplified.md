@@ -48,8 +48,7 @@ sites imaged in 5 channels) represent 5 mock treated wells from a single
 
 ## **Exercise instructions:**
 
-Read through the steps below and follow instructions where stated. Steps where
-you must figure out a solution are marked with 🔴 **TO DO.**
+Read through the steps below and follow instructions where stated. Steps where you must figure out a solution are marked with 🔴 **TO DO.**
 
 ### **1. Load starting pipeline (2 min)**
 
@@ -81,7 +80,13 @@ you must figure out a solution are marked with 🔴 **TO DO.**
 ```
 > **TIP**: You can use the `‘Filter images?’` options to filter out any file that you don't want CellProfiler to process. For example, if `‘Images only’` is selected, all files that are not images will be filtered out (they appear greyed out).
 
-###  **3. [OPTIONAL] Set up the input modules (10min)**
+- You can open and examine any image by double clicking on them
+- 🔴 **TO DO.** Open an image and familiarize yourself with the tools in the image toolbar: <img src="./TutorialImages/ImageToolbar.png" width="220">
+
+  > **TIP** you can manually adjust birghtness and contrast in the image display by right-clicking on it and going to `'Adjust Contrast'` 
+
+-------------------------------------------------------------------------------------------------------------------------
+###  **3. [OPTIONAL STEP] Set up the input modules (10min)**
   
   > *You can skip this step is you prefer, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline.*
 
@@ -119,141 +124,101 @@ The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Group
 *Figure 5: Image mapping using extracted metadata*
 ```
 
-- As there is only one set of illumination correction functions for
-  each entire plate, the image sets cannot simply be constructed by
-  using ‘Image set matching’ as ‘Order’.
+  - Scroll to the bottom of the **NamesAndTypes** module settings to see how the image sets are constructed ‘`Image set matching’` is set to `‘Metadata’`. Each image channel is set to ‘Well → Site’.
 
-- Scroll to the bottom of the ‘NamesAndTypes’ to see how the image sets
-  are constructed ‘Image set matching’ is set to ‘Metadata’
-
-  - Each image channel is set to ‘Plate → Well → Site’.
-  - Each illumination correction function is set to ‘Plate → (None) →
-    (None)’
 
 ```{figure} ./TutorialImages/Fig6.png
-:width: 700
+:width: 800
 :align: center
 
 *Figure 6: Image set matching using extracted metadata*
 ```
 
-- For this exercise the **Groups** module is not needed so it is set to
-  ‘No’, this module can be useful when you have more than one plate, or
-  different movies.
-- For more information and examples on how to configure the Input modules we have created a blog and video tutorial that can be accessed [here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial).
+- For this exercise the **Groups** module is not needed so it is set to ‘No’, this module can be useful when you have more than one plate, or different movies.
 
-###  **3. Examine the output of the CorrectIlluminationApply module. (2min)**
+> **For more information and examples on how to configure the Input modules we have created a blog and video tutorial that can be accessed [here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial).**
+--------------------------------------------------------------------------------------------------------------------------
 
-Since microscope objectives don’t typically have a completely uniform
-illumination pattern, applying an illumination correction function can
-help improve our segmentation and measurements by compensating for this.
-Pay close attention to the top of the ﬁeld of view to see the greatest
-effect of correction.
+## Build the analysis pipeline
 
-- Enter test mode by clicking on the  <img src="./TutorialImages/StartTestMode.png" width="120"/> button at the
-  bottom left corner of the window and hit <img src="./TutorialImages/Step.png" width="120"/> to run the **CorrectIlluminationApply** module.
-- Brieﬂy examine the output of the **CorrectIlluminationApply** module—you
- 
-  can see that the illumination correction functions show uneven
-  illumination across the ﬁeld of view.
-- These functions were created by averaging and smoothing all 3456
-  images from this plate, so dim areas in the illumination correction
-  function are areas of the field of view that are consistently dimmer
-  across many images.
-- Also note that while the illumination correction functions
-  for each channel are similar, they aren’t identical; each channel in
-  your own experiments should therefore be illumination corrected
-  independently.
+Now, you are ready to start building your iamge analysis pipeline. But, **what IS an analysis pipeline?**
 
-```{figure} ./TutorialImages/Fig7.png
-:width: 700
-:align: center
+Basically, it is a series of sequential processes, in which the output of one process serves as the input of one of the following ones.
 
-*Figure 7: Application of the illumination correction function*
-```
+Thus, the order in which this processes are executed is **very** important, as is the proper naming of the inputs and the outputs (as you will see in this tutorial)
+
+  > During the construction of the pipeline, you will see two symbols appearing next to the modules:
+  >
+  >  - <img src="./TutorialImages/Check.png" width="35"/> means that the module is activated and well configured
+  >  - <img src="./TutorialImages/Error.png" width="35"/> means that there is an error in the configuration of the module. You can hover with your mouse on it to get information on the problem.
+  >     - Because the pipeline is sequential, it is possible that changing an upstream module will generate errors on a downstream module.
+  >  - You can click on any of the two symbols above to inactivate the module, which is signaled as <img src="./TutorialImages/InactivatedModule.png" width="35"/>. This means that the module (and any output it produces) is no longer a part of the pipeline and will be skipped.
 
 ###  **4. IdentifyPrimaryObjects – Nuclei (10min)**
 
-Next, we’ll take a ﬁrst pass at identifying nuclei and cells in our
-initial image.
+> **AIM: use the nuclear channel to segment (isolate and identify all the pixels belonging to) each nuclei.**
 
-- After the **CorrectIlluminationApply** module, add an
-  **IdentifyPrimaryObjects** module (from the ‘Object Processing’ module
-  category). Do this by clicking on the <img src="./TutorialImages/AddModule.png" width="35"/>  button in the bottom left
-  corner of the CellProfiler window, which will pop up a small window
-  called ‘Add modules.’.
+- Add an **IdentifyPrimaryObjects** module to the pipeline. Do this by clicking on the <img src="./TutorialImages/AddModule.png" width="35"/>  button in the bottom left corner of the CellProfiler window, which will pop up a small window called `‘Add modules’`. Navigate to the `Object Processing` category and select **IdentifyPrimaryObjects**. Double click on the module or click on <img src="./TutorialImages/AddToPipeline.png" width="120"/>.
 
-  > **Tip**: You can also use the search bar at the top of the ‘Add
- 
-    modules’ window to search all modules by name.
+  > **Tip**: You can also use the `'Find Modules'` search bar at the top of the ‘Add modules’ window to search all modules by name.
 
 ```{figure} ./TutorialImages/Fig8.png
 :width: 400
 :align: center
 
-*Figure 8: The Add modules window, modules are divided in
-categories based on their function*
+*Figure 8: The 'Add Modules' window, modules are divided in categories based on their function*
 ```
 
-- Create objects called Nuclei by segmenting on the Hoechst channel.
 
-  - Select ‘Hoechst’ image as your input image from the drop-down
-    menu.
-  - Change the name of the output objects to ‘Nuclei’.
+- Select `'OrigDNA'` image as your input image from the drop-down menu.
+- Change the name of the output objects to ‘Nuclei’.
 
-- Hit <img src="./TutorialImages/Step.png" width="120"/> to run the module. **How does your segmentation look?**
- 
-
-- On the outlines display pane (bottom left) you can see three
-  different colors; green is for accepted objects, orange for objects
-  touching the border, and pink for objects outside the diameter range.
-
-- On the table pane (bottom right) there is useful information that you
-  can use to adjust your segmentation settings, like the median
-  diameter, and the threshold.
+- Hit <img src="./TutorialImages/Step.png" width="120"/> to run the module. A new window will pop up showing you the original input image (top left) and the results of running the module. 
+  - In this case, you can see the segmented nuclei both as outlines on top of the original image (bottom left) and as labeled objects (top right).
+    
+    > Notice that the colors in the labeled objects are assigned at random and might change ecery time you run the module.
+  
+  - On the outlines display pane (bottom left) you can see three different colors; green is for accepted objects, orange for objects touching the border, and pink for objects outside the diameter range.
+  - On the table pane (bottom right) there is useful information that you can use to adjust your segmentation settings, like the median diameter, and the threshold.
+-  **How does your segmentation look?**
 
 ```{figure} ./TutorialImages/Fig9.png
 :width: 700
 :align: center
 
-*Figure 9: The **IdentifyPrimaryObjects** module output, you can
- 
-use the information in this window to modify your segmentation
-parameters*
+*Figure 9: The **IdentifyPrimaryObjects** module output, you can use the information in this window to modify your segmentation parameters*
 ```
 
-- Use the <img src="./TutorialImages/Zoom.png" width="35"/> at the top of the window to zoom in on an area that was segmented poorly.
+- Use the <img src="./TutorialImages/Zoom.png" width="35"/> at the top of the window to activate the Zoom tool. Click and drag the mouse on the image to zoom in on an area that was segmented poorly.
  
 
 - **🔴 TO DO**: Improve your segmentation of nuclei:
 
-  - Select ‘Yes’ for the ‘Use advanced settings?’ option, then change
-    some of the parameters:
+  - Select `‘Yes’` for the `‘Use advanced settings?’` option, then change some of the parameters:
 
-    - Adjust the threshold method, may lead to better (or worse!)
-      results.
+    - Adjust the threshold method, may lead to better (or worse!) results.
     - Adjust the declumping settings.
 
-  - Hit <img src="./TutorialImages/Step.png" width="120"/> to rerun and see how the changes affect the segmentation.
+  - Hit <img src="./TutorialImages/Step.png" width="120"/> after each change to rerun and see how they affect the segmentation.
  
-
-  - Adjust the segmentation parameters until you feel you’re ready to
-    move on to identifying the cells around the nuclei; the
-    identiﬁcation should be good but doesn’t need to be perfect before
-    you move on.
+  - Adjust the segmentation parameters until you feel you’re ready to move on to identifying the cells around the nuclei.
+  
+  > The segmentation should be good but **doesn’t need to be perfect** before you move on.
 
 ### **5. IdentifySecondaryObjects – Cells (5min)**
 
-- After the **IdentifyPrimaryObjects**, add an **IdentifySecondaryObjects**
- 
-  module.
-- Create an object called Cells that is seeded on the Nuclei primary
-  objects that you just created; select the Ph_golgi image for your
-  input image, nuclei for input objects and change the name to ‘Cells’.
+> **AIM: segment each cell individually using the previously segmented nuclei as a guide**
+
+Since we don't have a cellular marker that labels homogenously the whole cell, we will use the `'OrigActin_Golgi_Membrane'` channel, which is the closest we have.
+
+- After the **IdentifyPrimaryObjects**, add a **IdentifySecondaryObjects** module.
+- Select the `'OrigActin_Golgi_Membrane'` image as your input image, select the `'Nuclei'` objects (created by the previous module) as input objects and change the name to `‘Cells’`.
+
+> The **IdentifySecondaryObject** module uses a "primary" object (in this case, the `'Nuclei'`) as a reference to find a "secondary" object, which contains the "primary". The "primary" is used as seed from which the "secondary" expands out.
+
 - Hit <img src="./TutorialImages/Step.png" width="120"/> to run the module. **How does your segmentation look?**
  
-- For this module the outline colors correspond to the
-  object seed (green-nuclei) and the segmented objects (pink-cell)
+- For this module, the outline colors correspond to the seed object (green-Nuclei) and the segmented objects (magenta-Cell)
 
 ```{figure} ./TutorialImages/Fig10.png
 :width: 700
@@ -265,43 +230,35 @@ parameters*
 
 - **🔴 TO DO**: Improve cell segmentation
 
-  - Examine the segmentation and adjust the segmentation parameters
-    until you feel you’re ready to test them on another image; they
-    don’t need to be perfect.
-  - Adjust the threshold method.
-  - Test the effects of using the various methods for identifying
-    secondary objects (Propagation, Watershed-Image, Distance-N, etc)
-    and, if using Propagation, the regularization factor.
+  - Adjust the thresholding method.
+  - Test the effects of using the various methods for identifying secondary objects (Propagation, Watershed-Image Distance-N, etc) and, if using Propagation, the regularization factor.
+  - Examine the segmentation and adjust the module parameters until you feel you’re ready to test them on another image
+
+  > Remember, **they don’t need to be perfect!**
 
 ### **6. Test the robustness of your segmentation parameters across images (5min)**
 
-It’s (relatively!) easy to come up with a good set of segmentation
-parameters for a single image however we aim to create a set of
-parameters that can segment cells on all the images on an experiment.
+It’s (relatively!) easy to come up with a good set of segmentation parameters for a single image however we aim to create a set of parameters that can segment cells on all the images on an experiment.
 
-- To test the parameters, there are two options to change the image you
-  are working on in Test Mode
+- To test the parameters, there are two options to change the image you are working on in Test Mode:
 
-  - Click on the ‘Next Image Set’ at the bottom left corner, or
+  - Click on the <img src="./TutorialImages/NextImageSet.png" width="120"/> at the bottom left corner, or
 
-  - Go to ‘Test’ on the top menu bar → Choose Image Set to bring up a
-    list of the images in your experiment, select the image you want
-    to test, and press the ‘OK’ button.
+  - Go to `‘Test’` on the top menu bar → `Choose Image Set` to bring up a list of the images in your experiment, select the image you want to test, and press the `‘OK’` button.
 
-    - Tip: you can also use the Test menu to choose a random image
-      set
+  - You can also use the `'Test'` menu to choose a random image set
 
 ```{figure} ./TutorialImages/Fig11.png
 :width: 700
 :align: center
 
-*Figure 11: A section of the ‘Choose Image Set’ menu.*
+*Figure 11: A section of the `‘Choose Image Set’` menu.*
 ```
 
-- Then run that image in test mode for your ﬁrst 3 modules (through your **IdentifySecondaryObjects** step).
+- Run tthe new image set you selected in test mode for your ﬁrst 2 modules (through your **IdentifySecondaryObjects** step).
 
   - You can do it by clicking the <img src="./TutorialImages/Step.png" width="120"/> button, or
-  - You can add a pause button (<img src="./TutorialImages/Pause.png" width="40"/>) on the module after **IdentifySecondaryObjects** and hit ‘Run’, this will run all modules before the pause.
+  - You can activate the pause button (<img src="./TutorialImages/Pause.png" width="40"/>) on the module after **IdentifySecondaryObjects** and hit <img src="./TutorialImages/Run.png" width="120"/>, this will run all modules before the pause.
  
 
 ```{figure} ./TutorialImages/Fig12.png
@@ -311,27 +268,28 @@ parameters that can segment cells on all the images on an experiment.
 *Figure 12: A section of the ‘Analysis modules’ pane.*
 ```
 
-- Examine the output – did your nuclear and cellular segmentation hold
-  up compared to the ﬁrst images you looked at?
-- **🔴 TO DO**: Adjust the parameters to get comparable results to the
-  first image. Once your segmentation is good, try it on another image.
+- Examine the output – did your nuclear and cellular segmentation hold up compared to the ﬁrst images you looked at?
+- **🔴 TO DO**: Adjust the parameters to get comparable results to the first image. Once your segmentation is good, try it on another image.
 
 ### **7. IdentifyTertiaryObjects- Cytoplasm (2min)**
 
-- After the **IdentifySecondaryObjects** module, add an
-  **IdentifyTertiaryObjects** module.
- 
+> **AIM: Identify the Cytoplasm of the cell**
 
-- Create an object called Cytoplasm using the Cell and Nuclei objects
-  you’ve created.
+The `'Cell'` objects that we just identified contain both the cytoplasm of the cells and the nucleus. However the nucleus and the cytoplasm are two very distinct cellular compartments and, thus, we want to be able to make measurements in each of them separately. 
 
-  - Select the larger and smaller identified objects from the
-    drop-down menu.
+Fortunately, to identify the cytoplasm, all we have to do is to subtract the `'Nuclei'` object, from the `'Cell'`object. We can do this using the **IdentifyTertiaryObjects** module
+
+- After the **IdentifySecondaryObjects** module, add an **IdentifyTertiaryObjects** module.
+
+- Create an object called `'Cytoplasm'` using the `'Cell'` and `'Nuclei'` objects you’ve created.
+
+  - Select the larger and smaller identified objects from the drop-down menu.
   - Change the name of the objects to be identified.
-  - ‘Shrink smaller object prior to subtraction?’ should both set to
-    ‘No’.
+  - ‘Shrink smaller object prior to subtraction?’ should both set to ‘No’.
 
-### **8. Examine the steps used to segment the Nucleoli (15min)**
+### **8. Segment the nucleoli (15min)**
+
+> **AIM: Segment a more challenging cellular compartment: the nucleoli**
 
 So far, we have used untransformed images for object detection, but not
 all objects can be segmented from raw images. CellProfiler contains a
@@ -339,45 +297,33 @@ variety of image processing modules that can aid segmentation. For this
 exercise, we will use two such modules, but there are other ones you can
 explore.
 
-The next 3 modules have to do with the creation of the Nucleoli objects.
-Look at the output from each to see how the image is transformed to aid
-in segmentation.
+We will segment the nucleoli using the `'OrigRNA'` channel, in which all nucleic acids (DNA and RNA) are labeled, both inside and outside the nucleus (using Syto, a commercial dye). This means some trouble, because:
+  - Not only the nucleoli but also the nuclei are albeled, which means that the nucleoli will not contrast so well with their background (the nucleus)
+  - There are RNA in the cytoplasm which are NOT nucleoli, and we don't want to identify those.
 
-- After the **IdentifyTertiaryObjects** module, add an
-  **EnhanceOrSuppressFeatures** module.
+The next 3 modules will help address these issues to create the `'Nucleoli'` object. Look at the output from each to see how the image is transformed to aid in segmentation.
 
-- **EnhanceOrSuppressFeatures** is a module that helps enhance parts of an
- 
-  image- in this case, punctate objects or ‘Speckles’. As we are
-  looking for nucleoli, we apply this to the RNA channel (Syto) image
-  and call the output ‘FilteredRNA’.
+- After the **IdentifyTertiaryObjects** module, add an **EnhanceOrSuppressFeatures** module.
+
+  - **EnhanceOrSuppressFeatures** is a module that helps enhance parts of an image, in this case, punctate objects or `‘Speckles’`. As we are looking for nucleoli, we apply this to the RNA channel (`'OrigRNA'`) image and call the output `‘FilteredRNA’`.
 
   **🔴 TO DO: Enhance nucleoli spots**
 
-  - Change the input image from the drop-down menu to ‘Syto’
-  - Change the name of the output image to ‘FilteredRNA’
-  - Change the feature size to see how this affects the output and find a
-    value that works well.
+  - Change the input image from the drop-down menu to `‘OrigRNA’`
+  - Change the name of the output image to `‘FilteredRNA’`
+  - Change the feature size to see how this affects the output and find a value that works well.
   - See below for an example of results to aim for:
 
 ```{figure} ./TutorialImages/Fig13.png
 :width: 700
 :align: center
 
-*Figure 13. The **EnhanceOrSuppress** module output, enhancing
- 
-the Syto image allows you to isolate nucleoli against the nucleoplasmic
-background signal.*
+*Figure 13. The **EnhanceOrSuppress** module output, enhancing the OrigRNA image allows you to isolate nucleoli against the nucleoplasmic background signal.*
 ```
 
 - After the **EnhanceOrSuppressFeatures** module, add an **MaskImage** module.
 
-- **MaskImage** allows you to create a version of the ‘FilteredRNA’ image
- 
-  called ‘SytoNuclei’ where all the pixels except the ones you
-  specify are set to an intensity of 0. In this case, we set to 0
-  any pixel not inside a nucleus. By doing this, we can decrease the
-  likelihood of detecting cytoplasmic RNA dots.
+- **MaskImage** allows you to create a version of the `‘FilteredRNA’` image called `‘RNA_in_Nuclei’` where all the pixels except the ones you specify are set to an intensity of 0. In this case, we set to 0 any pixel not inside a nucleus. By doing this, we can decrease the likelihood of detecting cytoplasmic RNA dots.
 
   **🔴 TO DO: Mask the RNA image to show only the ‘Nuclei’**
 
@@ -390,38 +336,24 @@ background signal.*
 :width: 700
 :align: center
 
-*Figure 14. The **MaskImage** module output, the contrast was adjusted to
- 
-show that the intensity of the pixels outside the nuclei are now set to
-0.*
+*Figure 14. The **MaskImage** module output, the contrast was adjusted to show that the intensity of the pixels outside the nuclei are now set to 0.*
 ```
-
-
-- IdentifyPrimaryObjects is used to ﬁnd the Nucleoli. This is a Primary
-  object segmentation because we are not using another object as a seed
-  (i.e., starting point), and are only segmenting based off the
-  intensity in our ‘SytoNuclei’ image.
+- After the **MaskImage** module, add an **IdentifyPrimaryObject** module.
+  - **IdentifyPrimaryObjects** is used to ﬁnd the nucleoli. This is a Primary object segmentation because we are not using another object as a seed (i.e., starting point), and are only segmenting based off the intensity in our `‘RNA_in_Nuclei’` image.
 
   **🔴 TO DO: Segment nucleoli**
 
-  - Change the input image from the drop-down menu to ‘SytoNuclei’
-  - Change the name of the objects to ‘Nucleoli’
-  - Adjust the segmentation parameters until you are satisfied with the
-    segmentation results.
+  - Change the input image from the drop-down menu to `‘RNA_in_Nuclei’`
+  - Change the name of the objects to `‘Nucleoli’`
+  - Adjust the segmentation parameters until you are satisfied with the segmentation results.
 
-  **🔴 TO DO**: Add an **OverlayOutlines** module at this point to overlay
- 
-  the identiﬁed nucleoli on the original Syto image to assure yourself
-  that the segmentation not only matches the speckle enhanced
-  ‘SytoNuclei’ image, but also looks accurate on the unprocessed image
-  as well. This is not strictly necessary but can be a nice “sanity
-  check”.
+  > **Tip**: you can use a similar strategy to segment mitochondria using the `'OrigMito'` channel
 
-  - Goal: display outlines of your nucleoli and your nuclei on the
-    unprocessed ‘Syto’ image.
-  - Here’s an example of what that could look like (red=nuclei, green=nucleoli):
-  - Tip: you can use a similar strategy to segment mitochondria using
-    the ‘Mito’ channel
+  **🔴 TO DO**: Add an **OverlayOutlines** module at this point to overlay the identiﬁed nucleoli on the original Syto image to assure yourself that the segmentation not only matches the speckle enhanced ‘SytoNuclei’ image, but also looks accurate on the unprocessed image as well. This is not strictly necessary but can be a nice “sanity check”.
+
+  - **Goal**: display outlines of your nucleoli and your nuclei on the unprocessed `'OrigRNA'` image.
+  - Here’s an example of what that could look like (red=Nuclei, green=Nucleoli):
+
 
 ```{figure} ./TutorialImages/Fig15.png
 :width: 700
@@ -435,38 +367,61 @@ nucleoli are within the nuclei.*
 
 ### **9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**
 
-- After your segmentation of the nucleoli, add as many object
-  measurement modules as you would like, we have added a **MeasureObjectIntensity**.
-  - Some suggested modules to add: **MeasurebjectSizeShape**, **MeasureObjectIntensity**, **MeasureGranularity**, **MeasureObjectNeighbors**.
+- After your segmentation of the nucleoli, add as many object measurement modules as you would like.
+  - Some suggested modules to add: **MeasureObjectIntensity**, **MeasurebjectSizeShape**, **MeasureColocalization**, **MeasureObjectNeighbors**.
  
-- Which objects do you think would be valuable to measure with each of these modules? Which channels would you measure your objects in? For a typical Cell Painting experiment you would add as many measurements as possible, but that isn’t necessary here; however, do make sure every object gets at least some measurements.Note: While **MeasureCorrelation**, **MeasureTexture**, and **MeasureObjectIntensityDistribution** can produce valuable data for downstream proﬁling, they can be memory-intensive and/or slow so should not be added for this example pipeline in the interest of pipeline runtime.
+- Which objects do you think would be valuable to measure with each of these modules? 
+- Which channels would you measure your objects in? 
 
-### **10. RelateObjects (5min)**
+For a typical Cell Painting experiment you would add as many measurements as possible, but that isn’t necessary here; however, do make sure every object gets at least some measurements.
 
-- **🔴 TO DO:** Add a **RelateObjects** module and configure it to relate
- 
-  ‘Nucleoli’ to ‘Nuclei’.
+> **IMPORTANT NOTE**: there are many more measurement modules and, while we encourage you to explore them. However, some of them like **MeasureCorrelation**, **MeasureTexture** and **MeasureObjectIntensityDistribution** can produce valuable data for downstream proﬁling, but they can be memory-intensive and/or slow so should **not** be added for this example pipeline in the interest of pipeline runtime.
+
+### **10. Relate Nucleoli to their corresponding Nuclei using the RelateObjects module (5min)**
+
+Right now, you have segmented the nucleoli independently. However, we would like to associate every `'Nucleoli'` to their respective `'Nuclei'`.
+
+- **🔴 TO DO:** Add a **RelateObjects** module and configure it to relate `‘Nucleoli’` to `‘Nuclei’`.
 
 ```{figure} ./TutorialImages/Fig16.png
 :width: 700
 :align: center
 
-*Figure 16: The **RelateObject** module output.*
+*Figure 16: The **RelateObjects** module output.*
+ 
+```
+Relating the objects allows you to create per-parent means (e.g., for this cell, what is the average size of an individual mitochondrion) and calculate distances from the child objects to the edge and/or the center of the parent (e.g., how far is each nucleolus from the center of the nucleus).
+
+### **11. Export measurements**
+
+- Add a **ExportToSpreadsheet** module at the end of the pipeline.
+- In `'Output file location'` select `'Default Output Folder'`
+  - You can change the `'Default Output Folder'` by clicking the <img src="./TutorialImages/OutputSettings.png" width="120"/> button at the bottom left corner of the window
+- Leave all the deafult settings (as shown in Figure 17)
+  - You can pick and choose which measurements to export by selecting `'No'` in the `'Export all measurement types?'` setting
+
+  > **Note** that a <img src="./TutorialImages/Warning.png" width="35"/> appears next to the module. This is not an error. If you hover over it with your mouse, you will see that it is just a warning saying that '**ExportToSpreadsheet** will not produce output in Test Mode'. The measurements will only be saved when you run the pipeline for all images (see next section).
+
+```{figure} ./TutorialImages/Fig17.png
+:width: 700
+:align: center
+
+*Figure 17: The **ExportToSpreadsheet** module.*
  
 ```
 
-Relating the objects allows you to create per-parent means (e.g., for
-this cell, what is the average size of an individual mitochondrion) and
-calculate distances from the child objects to the edge and/or the center
-of the parent (e.g., how far is each nucleolus from the center of the
-nucleus).
+### **12. Run the pipeline**
+Now you have a pipeline that works well across different images. It is time to run it through your entire dataset and collect the results!
 
-### **11. Run the pipeline (optional)**
+- Exit test mode by clicking on the <img src="./TutorialImages/ExitTestMode.png" width="120"/> button.
 
-- If you have time, add a **ExportToSpreadsheet** module at the end.
-- Exit test mode.
-- Click on <img src="./TutorialImages/OutputSettings.png" width="120"/> button at the bottom left corner.
-- Change the default output folder.
-- Click on <img src="./TutorialImages/AnalyzeImages.png" width="120"/> button at the bottom left corner.
+- Turn all the <img src="./TutorialImages/EyeOpen.png" width="50"/> symbols to <img src="./TutorialImages/EyeClosed.png" width="50"/> so that module outputs don't pop up during analysis.
+  - You can also do this by goinf to `'Windows'` in the main menu (top of the screen) and selecting `'Hide All Windows On Run'`
+
+- Then, click on <img src="./TutorialImages/AnalyzeImages.png" width="120"/> button at the bottom left corner.
  
 - Explore the spreadsheets created for each object.
+
+<br>
+
+**CONGRATULATIONS!! YOU HAVE SUCCESFULLY RUN YOUR FIRST CELL PROFILER PIPELINE!**
