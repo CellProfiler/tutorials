@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 16:49-0500\n"
+"POT-Creation-Date: 2024-03-15 11:33-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,778 +16,604 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:1
-msgid "**ABRF/LMRG**"
-msgstr ""
-
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:3
-msgid "**Image Analysis Study**"
+msgid "Analysis of noisy 3D nuclei"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:5
-msgid "**Nuclei in 3D cell culture images (and associated calibration image[s])**"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:4
+msgid "**Tutorial for the Association of Biomolecular Research Facilities - Ligh Microscopy Research Group (ABRF/LMRG)**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:8
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:6
 msgid "**Proposal:**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:10
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:8
 msgid "Segment the objects in a fluorescence z-stack image and provide:"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:12
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:10
 msgid "Centroid location in microns (um) for each nucleus: x, y, and z c"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:14
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:11
 msgid "Coordinates listed in separate columns. Labels x, y, and z."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:16
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:12
 msgid "Integrated Intensity. Label intensity."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:18
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:13
 msgid "Volume in cubic microns (um^3). Label volume."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:20
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:14
 msgid "3D volume image of your segmented image"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:22
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:16
 msgid "**Input:**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:24
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:18
 msgid "Four different z-stack images that vary in their signal-to-noise ratio and the clustering of their objects of nuclei in 3D cell culture."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:27
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:21
 msgid "Voxel dimensions: 0.124x0.124x0.200 um"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:29
-msgid "Calibration Image"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:23
+msgid "Calibration Image: Voxel dimensions: 1x1x1 um"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:31
-msgid "Voxel dimensions: 1x1x1 um"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:33
-msgid "**TimeConsumingProtocol** - 92s for four images"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:35
-msgid "/Users/mcruz/Documents/Tutorials/ABRFTutorial/3DNuclei/3DNucleiPipelineComputeConsumingFinal.cppipe"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:37
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:25
 msgid "**Importing data in CellProfiler**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:39
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:27
 msgid "Highlight the **Images** module."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:42
-msgid "Drag-and-drop the images you will analyze into the Images module"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:29
+msgid "Drag-and-drop the images you will analyze into the Images module window."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:42
-msgid "window."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:48
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:36
 msgid "Load the pipeline file (.cppipe). Drag-and-drop the file or go to File->Import->Pipeline from File…"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:51
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:39
 msgid "Note: The pipeline should populate all information needed, but it’s always a good practice to check if everything is fine."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:55
-msgid "|image3| **Tip: Use the question mark button to learn more or if you have questions.**"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:42
+msgid "**Tip: Use the <img src=\"images/Info.png\" width=\"40\"/> to learn more or if you have questions.**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:561
-msgid "image3"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:58
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:44
 msgid "Highlight the **NameAndType** module."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:62
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:47
 msgid "The **NamesAndTypes** module gives each image a meaningful name by which modules in the analysis pipeline will refer to it. This module will also let you define an image stack that should be processed as a whole 3D volume."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:68
-msgid "Assign a name to: All images This is the simplest choice and the"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:52
+msgid "Assign a name to: All images This is the simplest choice and the appropriate one because we have only one kind of image."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:68
-msgid "appropriate one because we have only one kind of image."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:70
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:54
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:73
-msgid "Populate the fields for “Relative Pixel Spacing”. This calibration"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:56
+msgid "Populate the fields for “Relative Pixel Spacing”. This calibration affects modules that handle 3D images as volumes."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:73
-msgid "affects modules that handle 3D images as volumes."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:75
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:59
 msgid "The relative pixel spacing was provided and is 0.124 um in x and y and 0.200 um in z. To run the calibration file please change the relative pixel spacing to 1x1x1 um."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:81
-msgid "Assign the images “variable names” that describe the contents in the"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:63
+msgid "Assign the images “variable names” that describe the contents in the image. For example, use the name \"Nuclei\", \"DNA\", “DAPI” or something else that will remind you what the image is."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:80
-msgid "image. For example, use the name \"Nuclei\", \"DNA\", “DAPI” or something else that will remind you what the image is."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:83
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:64
 msgid "Hit the \"update\" button to populate"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:89
-msgid "This pipeline can be divided into three main parts: Image processing, segmentation and measurement/export."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:72
+msgid "This analysis pipeline can be divided into three main parts: Image processing,segmentation and measurement/export."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:96
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:80
 msgid "**Image processing:**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:98
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:82
 msgid "The image set provided varies in signal-to-noise ratio, before attempting to segment the nuclei in these images, conditioning the images with filters and various image processing methods will improve segmentation results."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:103
-msgid "Hit the start test mode button."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:87
+msgid "Hit the <img src=\"images/StartTestMode.png\" width=\"150\"/> button."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:105
-msgid "**Tip:** You can select different image sets. For that you can go to the main tab, hit the test tab and choose another image set or you can hit the Next Image Set button."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:89
+msgid "**Tip:** You can select different image sets. For that you can hit the <img src=\"images/NextImageSet.png\" width=\"150\"/> button, or you can go to the main tab, hit the test tab and choose another image set  <br>"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:109
-msgid "|image1|\\ |image2|"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:98
+msgid "**GaussianFilter** module This module will blur the image and remove part of the noise. Filtering an image with a Gaussian filter can be helpful if the foreground signal is noisy or near the noise floor."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:555
-msgid "image1"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:558
-msgid "image2"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:114
-msgid "**GaussianFilter** module This module will blur the image and remove"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:112
-msgid "part of the noise. Filtering an image with a Gaussian filter can be helpful if the foreground signal is noisy or near the noise floor."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:116
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:99
 msgid "Select the input image: Nuclei (from **NamesAndTypes** module),"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:118
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:100
 msgid "Name the output image: GaussianFilter,"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:120
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:101
 msgid "Sigma: 1 (larger sigmas induce more blurring)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:126
-msgid "Hit the Step button and a new window will pop up with a resulting image that should look like this. The image can vary depending on the Image set chose."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:108
+msgid "Hit the <img src=\"images/Step.png\" width=\"150\"/> button and a new window will pop up with a resulting image that should look like this. The image can vary depending on the Image set chose."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:134
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:117
 msgid "The resulting image is still noisy in image set 3 and 4, so we added a **ReduceNoise** module to perform a non-local mean noise reduction. Instead of only using a neighborhood of pixels around a central pixel for denoising, such as in **GaussianFilter**."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:142
-msgid "**ReduceNoise** module. This module performs non-local means of noise"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:122
+msgid "**ReduceNoise** module. This module performs non-local means of noise reduction. This will run a 5x5 pixel patch with a maximal distance of 2 pixels to search for patches to use for denoising using a cut-off of 0.2."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:140
-msgid "reduction. This will run a 5x5 pixel patch with a maximal distance of 2 pixels to search for patches to use for denoising using a cut-off of 0.2."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:124
+msgid "**NOTE** This module is quite time consuming, don't worry if it takes several seconds to run."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:145
-msgid "Select the output image: GaussianFilter (from **GaussianFilter**"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:126
+msgid "Select the output image: GaussianFilter (from **GaussianFilter** module)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:145
-msgid "module)."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:147
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:127
 msgid "Name the output image: ReduceNoise"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:149
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:128
 msgid "Size: 5"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:151
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:129
 msgid "Distance: 2"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:153
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:130
 msgid "Cut-off distance: 0.2"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:159
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:137
 msgid "**Tip: The image tools on the top toolbar may be helpful to see the details on your image/objects:**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:166
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:145
 msgid "The 1st icon from the left lets you reset the view back to the original view."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:169
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:148
 msgid "The 2nd and 3rd icons let you step backwards and forwards through any changes you made to the view."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:172
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:151
 msgid "The 4th icon lets you change the view by moving in any direction in the display, by clicking and dragging."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:175
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:154
 msgid "The 5th icon lets you change the view by zooming, by dragging and drawing a box to zoom in on."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:182
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:162
 msgid "**Segmentation**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:184
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:164
 msgid "Now all objects on different image sets have similar dispersion patterns so we can start the segmentation process. **Tip:** To view pixel intensities in an open image, move your mouse over the image, the pixel intensities will appear in the bottom bar of the display window."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:194
-msgid "**Threshold** module. This module produces a binary, or black and"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:169
+msgid "**Threshold** module. This module produces a binary, or black and white, image based on a threshold that can be pre-selected or calculated automatically using one of many methods. After the threshold value has been determined, the Threshold module will set pixel intensities below the value to zero (black) and above the value to one (white)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:190
-msgid "white, image based on a threshold that can be pre-selected or calculated automatically using one of many methods. After the threshold value has been determined, the Threshold module will set pixel intensities below the value to zero (black) and above the value to one (white)."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:196
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:170
 msgid "Select the input image: ReduceNoise (from **ReduceNoise** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:198
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:171
 msgid "Name the output image: Threshold"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:202
-msgid "Threshold strategy: Global (We choose a global threshold strategy"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:172
+msgid "Threshold strategy: Global (We choose a global threshold strategy here because our background is relatively uniform after the image processing steps of this pipeline)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:201
-msgid "here because our background is relatively uniform after the image processing steps of this pipeline)."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:173
+msgid "Threshold method: Otsu (automatically-calculated threshold method because it can adapt to changes in lighting conditions between images (in this case we have images with different pixel intensities)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:207
-msgid "Threshold method: Otsu (automatically-calculated threshold method"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:174
+msgid "Two-class or three-class thresholding: Three classes (separate three major pixel levels \\[foreground, mid-level and   background\\])."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:205
-msgid "because it can adapt to changes in lighting conditions between images (in this case we have images with different pixel intensities)."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:176
+msgid "Assign pixels in the middle intensity: Background (the middle : intensity pixels levels are noise in these images)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:211
-msgid "Two-class or three-class thresholding: Three classes (separate"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:178
+msgid "Threshold smoothing scale: 1.5 (Smoothing improves the uniformity of the resulting objects, by removing jagged edges caused by   noise in the acquired image)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:210
-msgid "three major pixel levels [foreground, mid-level and background])."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:214
-msgid "Assign pixels in the middle intensity: Background (the middle"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:214
-msgid "intensity pixels levels are noise in these images)."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:218
-msgid "Threshold smoothing scale: 1.5 (Smoothing improves the uniformity"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:217
-msgid "of the resulting objects, by removing jagged edges caused by noise in the acquired image)."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:220
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:180
 msgid "Threshold correction factor: 1"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:231
-msgid "**Watershed** module. This module is used to separate different"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:192
+msgid "**Watershed** module. This module is used to separate different objects in an image, which in this case will assign which nuclei."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:231
-msgid "objects in an image, which in this case will assign which nuclei."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:233
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:193
 msgid "Use advanced settings: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:235
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:194
 msgid "Select the input image: Threshold (from **Threshold** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:237
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:195
 msgid "Name the output object: Watershed"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:242
-msgid "Generate from: Distance (we don’t have markers to guide the"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:196
+msgid "Generate from: Distance (we don’t have markers to guide the segmentation process so the markers and other inputs for the algorithm will be automatically generated based on the footprint size)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:240
-msgid "segmentation process so the markers and other inputs for the algorithm will be automatically generated based on the footprint size)."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:197
+msgid "Footprint: 10 (define the dimensions of the window used to scan the input image for local maxima, this will create a local maxima from a binary image that will be at the centers of objects. Large footprint will suppress local maximas that are close together into a single maxima, so two or more objects will be segmented as one. Small footprint can lead to oversegmenation, this means one nuclei segmented as two or more objects."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:251
-msgid "Footprint: 10 (define the dimensions of the window used to scan"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:245
-msgid "the input image for local maxima, this will create a local maxima from a binary image that will be at the centers of objects. Large footprint will suppress local maximas that are close together into a single maxima, so two or more objects will be segmented as one. Small footprint can lead to oversegmenation, this means one nuclei segmented as two or more objects."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:253
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:199
 msgid "Downsample: 3 (reduce processing time without losing data)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:263
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:211
 msgid "**Note:** Sometimes the processing and the segmentation steps can shrink or dilate your original structures. In this pipeline the objects are shrinked after the segmentation, you could test this using an image with a known object size."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:269
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:216
 msgid "**DilateObjects** module. This module dilates your objects and"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:269
-msgid "smooths the edges."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:218
+msgid ": smooths the edges."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:271
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:219
 msgid "Select the input object: Watershed (from **Watershed** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:273
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:220
 msgid "Name the output object: RealsizeNuclei"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:276
-msgid "Structuring element: Octahedron (Size: 1) (dilate the objects"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:221
+msgid "Structuring element: Octahedron (Size: 1) (dilate the objects using an octahedron profile with a size of 1)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:276
-msgid "using an octahedron profile with a size of 1)."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:233
+msgid "**Note**: The colors are assigned at random and will vary in each run of the module."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:286
-msgid "Note: The colors will vary."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:288
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:235
 msgid "**Measure and export data**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:290
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:237
 msgid "Now that the nuclei have been segmented, measurements can be made using modules from the **Measurements** category. This study is asking for 3 particular measurements:"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:294
-msgid "Centroid location (x, y and z),"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:241
+msgid "Centroid location (x, y and z)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:296
-msgid "Integrated intensity and"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:243
+msgid "Integrated intensity"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:298
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:501
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:245
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:388
 msgid "Volume"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:300
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:247
 msgid "In this case we need two modules to extract this information, **MeasureObjectIntensity** and **MeasureObjectSizeShape** modules."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:303
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:250
 msgid "**Note:** When applying these measurements, be careful to measure the original images, not rescaled or processed images."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:306
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:253
 msgid "**MeasureObjectIntensity** module"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:309
-msgid "Select images to measure: Nuclei (original image from"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:255
+msgid "Select images to measure: Nuclei (original image from **NamesAndTypes** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:309
-msgid "**NamesAndTypes** module)"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:256
+msgid "Select objects to measure: RealsizeNuclei (from **DilateObjects** module) to have all the intensity measurements from the object."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:312
-msgid "Select objects to measure: RealsizeNuclei (from **DilateObjects**"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:312
-msgid "module) to have all the intensity measurements from the object."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:318
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:263
 msgid "**Note:** The measure modules will provide several features for identified objects and at this point we cannot choose which measurement, so the module will extract all intensity features possible."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:326
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:272
 msgid "**MeasureObjectSizeShape module**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:329
-msgid "Select object sets to measure: RealsizeNuclei (from"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:274
+msgid "Select object sets to measure: RealsizeNuclei (from **DilateObjects** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:329
-msgid "**DilateObjects** module)"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:331
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:275
 msgid "Calculate the Zernike features: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:333
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:276
 msgid "Calculate the advanced features: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:343
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:288
 msgid "**Creating visuals**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:350
-msgid "Add the **RescaleIntesity** module to your pipeline. This module lets"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:290
+msgid "Add the **RescaleIntesity** module to your pipeline. This module lets you rescale the intensity of the input images by any of several methods. You should use caution when interpreting intensity and texture measurements derived from images that have been rescaled because certain options for this module do not preserve the relative intensities from image to image."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:346
-msgid "you rescale the intensity of the input images by any of several methods. You should use caution when interpreting intensity and texture measurements derived from images that have been rescaled because certain options for this module do not preserve the relative intensities from image to image."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:291
+msgid "Select the input image image: Nuclei (from **NamesAndTypes** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:353
-msgid "Selecting the input image image: Nuclei (from **NamesAndTypes**"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:353
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:402
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:444
-msgid "module)"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:355
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:292
 msgid "Name the output image: RescaleIntensityNuclei"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:361
-msgid "Rescaling method: Stretch each image to use the full intensity"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:293
+msgid "Rescaling method: Stretch each image to use the full intensity range (Find the minimum and maximum values within the unmasked part of the image (or the whole image if there is no mask) and rescale every pixel so that the minimum has an intensity of zero and the maximum has an intensity of one)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:358
-msgid "range (Find the minimum and maximum values within the unmasked part of the image (or the whole image if there is no mask) and rescale every pixel so that the minimum has an intensity of zero and the maximum has an intensity of one)."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:305
+msgid "**OverlayObjects** module. This module overlay the objects as colored masks on the image. We recommend overlaying onto rescaled images,which will be easier to visualize outside of CellProfiler."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:373
-msgid "**OverlayObjects** module. This module overlay the objects as colored"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:372
-msgid "masks on the image. We recommend overlaying onto rescaled images, which will be easier to visualize outside of CellProfiler."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:375
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:306
 msgid "Input: RescaleIntensityNuclei (from **RescaleIntensity** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:377
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:307
 msgid "Name the output image: OverlayObjects"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:379
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:308
 msgid "Objects: RealsizeNuclei (from **DilateObjects** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:382
-msgid "Opacity: 0.3 (Increase this value to decrease the transparency of"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:309
+msgid "Opacity: 0.3 (Increase this value to decrease the transparency of the colorized object labels)."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:382
-msgid "the colorized object labels)."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:316
+msgid "**SaveImages** module. This module saves image or movie files. Because CellProfiler usually performs many image analysis steps on many groups of images, it does not save any of the resulting images to the hard drive unless you specifically choose to do so with the SaveImages module. You can save any of the processed images created by CellProfiler during the analysis using this module. You can choose from many different image formats for saving your files. This allows you to use the module as a file format converter, by loading files in their original format and then saving them in an alternate format."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:397
-msgid "**SaveImages** module. This module saves image or movie files."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:389
-msgid "Because CellProfiler usually performs many image analysis steps on many groups of images, it does not save any of the resulting images to the hard drive unless you specifically choose to do so with the SaveImages module. You can save any of the processed images created by CellProfiler during the analysis using this module. You can choose from many different image formats for saving your files. This allows you to use the module as a file format converter, by loading files in their original format and then saving them in an alternate format."
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:399
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:318
 msgid "Select the type of image to save: Image"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:402
-msgid "Select the image to save: OverlayObjects (from **OverlayObjects**"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:319
+msgid "Select the image to save: OverlayObjects (from **OverlayObjects** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:405
-msgid "Select method for constructing file names: From image filename"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:320
+msgid "Select method for constructing file names: From image filename (use this option to avoid reassignment of your images)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:405
-msgid "(use this option to avoid reassignment of your images)"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:321
+msgid "Select image name for file prefix: Nuclei (select the original image name from NamesAndTypes module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:408
-msgid "Select image name for file prefix: Nuclei (select the original"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:408
-msgid "image name from NamesAndTypes module)"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:410
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:322
 msgid "Append a suffix to the image file name?: Yes"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:413
-msgid "Text to append to the image name: Overlay (just add Overlay in the"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:323
+msgid "Text to append to the image name: Overlay (just add Overlay in the end of your original image file name)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:413
-msgid "end of your original image file name)"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:324
+msgid "Saved file format: tiff (tiff is a lossless format, but you can choose others depending on what you need to do with this images)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:417
-msgid "Saved file format: tiff (tiff is a lossless format, but you can"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:325
+msgid "Image bit depth: 8-bit integer (this bit depth is easily read outside Cell Profiler)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:416
-msgid "choose others depending on what you need to do with this images)"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:420
-msgid "Image bit depth: 8-bit integer (this bit depth is easily read"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:420
-msgid "outside Cell Profiler)"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:422
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:326
 msgid "Save with lossless compression: Yes"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:425
-msgid "Output file location: Default Output Folder (or create a new"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:327
+msgid "Output file location: Default Output Folder (or create a new folder just for this images)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:425
-msgid "folder just for this images)"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:328
+msgid "Overwrite existing files without warning?: No (prevent file overwritten)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:428
-msgid "Overwrite existing files without warning?: No (prevent file"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:428
-msgid "overwritten)"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:430
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:329
 msgid "When to save: Every cycle (Save every image set)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:432
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:330
 msgid "Record the file and path information to the saved image?: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:434
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:331
 msgid "Create subfolders in the output folder: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:441
-msgid "**ConvertObjectsToImage** module. Transform objects in image (provide"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:338
+msgid "**ConvertObjectsToImage** module. Transform objects in image (provide a 3D volume image of the segmented image)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:441
-msgid "a 3D volume image of the segmented image)"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:340
+msgid "Select the input objects: RealsizeNuclei (from **DilateObjects** module)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:444
-msgid "Select the input objects: RealsizeNuclei (from **DilateObjects**"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:446
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:341
 msgid "Name the output image: NucleiObjects3D"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:448
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:342
 msgid "Select the color format: Grayscale"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:461
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:349
 msgid "**Export measurements**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:463
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:351
 msgid "It’s good practice to place all export modules at the end of your pipeline. CellProfiler automatically calculates execution times for each module that was run before the export module. By placing your export modules at the end of your pipeline, you will have access to module execution times for each module in your pipeline. Save the output of the measurement modules using **ExportToSpreadsheet** or **ExportToDatabase**."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:471
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:359
 msgid "**ExportToSpreadsheet** module. This module exports measurements into one or more files that can be opened in Excel or other spreadsheet programs. This module will convert the measurements to a comma-, tab-, or other character-delimited text format and save them to the hard drive in one or several files, as requested."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:477
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:365
 msgid "Select the column delimiter: Comma (“,”)"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:479
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:367
 msgid "Output file location: Default Output Folder"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:481
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:369
 msgid "Add a prefix to file names: Yes"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:483
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:371
 msgid "Filename prefix: MyExpt\\_"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:485
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:373
 msgid "Overwrite existing files without warning: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:487
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:375
 msgid "Add image metadata columns to your object data file: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:489
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:377
 msgid "Add image file and folder names to your object data file: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:491
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:379
 msgid "Representation of Nan/Inf: NaN"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:493
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:381
 msgid "Select the measurements to export: Yes"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:495
-msgid "Press button to select measurements:"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:383
+msgid "Press the button to select measurements:"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:497
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:385
 msgid "RealsizeNuclei:"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:499
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:387
 msgid "AreaShape: Center: X, Y and Z"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:503
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:390
 msgid "Intensity: IntegratedIntensity"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:505
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:392
 msgid "Calculate the per-image mean values for object measurements?:No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:507
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:394
 msgid "Calculate the per-image median values for object measurements?:No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:510
-msgid "Calculate the per-image standard deviation values for object"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:396
+msgid "Calculate the per-image standard deviation values for object measurements?:No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:510
-msgid "measurements?:No"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:398
+msgid "Output file location:Default Output Folder|"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:512
-msgid "Output file location:Default Output Folder\\|"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:514
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:400
 msgid "Create a GenePattern GCT file?:No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:516
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:402
 msgid "Export all measurement types?:No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:518
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:404
 msgid "Data to export: RealsizeNuclei"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:520
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:526
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:406
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:412
 msgid "Use the object name for the file name?: No"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:522
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:408
 msgid "File name: Nuclei.csv"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:524
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:410
 msgid "Data to export: Experiment"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:528
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:414
 msgid "File name: Metadata.csv"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:534
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:421
 msgid "**Results overview:**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:540
-msgid "**Congratulations!** The nucleus has been segmented, measured and exported. Now we need to convert the units from the csv file generated in Cell Profiler to microns and create a new table with just the values asked by the Study (X, Y, Z positions, Integrated Intensity and volume for each nuclei)."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:428
+msgid "**Congratulations!**"
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:546
-msgid "For this purpose we create an interactive colab notebook that will ask you the X, Y and Z values to calculate the Voxel (um^3), you need to upload the csv generated by Cell Profiler to finally export a new csv file with the normalized values."
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:429
+msgid "The nucleus has been segmented, measured and exported."
 msgstr ""
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:551
-msgid "https://colab.research.google.com/drive/1xvkJFG6GqBl1H0VorbOvtnyiUMPpXZmU?usp=sharing"
-msgstr ""
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:553
-msgid "**End**"
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:432
+msgid "**The End**"
 msgstr ""
