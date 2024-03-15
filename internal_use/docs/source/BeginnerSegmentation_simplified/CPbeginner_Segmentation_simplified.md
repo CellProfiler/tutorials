@@ -4,7 +4,7 @@
 ## A computer exercise using CellProﬁler
 
 
-Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft.
+Beth Cimini, Barbara Diaz-Rohrer, Esteban Miglietta, Paula Llanos and Rebecca Senft.
 <br>
 Broad Instituteof MIT and Harvard, Cambridge, MA.
 
