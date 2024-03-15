@@ -11,9 +11,7 @@ Welcome to cellprofiler-tutorials's documentation!
    :caption: Contents:
    :titlesonly:
 
-   Beginner Segmentation <../BeginnerSegmentation/CPbeginner_Segmentation>
-
-   Simplified Beginner Segmentation <../BeginnerSegmentation_simplified/CPbeginner_Segmentation_simplified>
+   Beginner Segmentation <../BeginnerSegmentation_simplified/CPbeginner_Segmentation_simplified>
 
    Advanced Segmentation <../AdvancedSegmentation/BBBC022_AnalysisExercise>
 
