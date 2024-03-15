@@ -4,7 +4,7 @@
 ## A computer exercise using CellProﬁler
 
 
-Beth Cimini, Barbara Diaz-Rohrer and Rebecca Senft.
+Beth Cimini, Barbara Diaz-Rohrer, Esteban Miglietta, Paula Llanos and Rebecca Senft.
 <br>
 Broad Instituteof MIT and Harvard, Cambridge, MA.
 
@@ -219,7 +219,9 @@ Thus, the order in which this processes are executed is **very** important, as i
  
   - Adjust the segmentation parameters until you feel you’re ready to move on to identifying the cells around the nuclei.
   
-  > The segmentation should be good but **doesn’t need to be perfect** before you move on.  
+  > The segmentation should be good but **doesn’t need to be perfect** before you move on.
+  >
+  > On that topic, we recommend checking this blog post on [When To Say ‘Good Enough’](https://carpenter-singh-lab.broadinstitute.org/blog/when-to-say-good-enough).
   
   <br>
 
@@ -389,6 +391,9 @@ nucleoli are within the nuclei.*
 
 - After your segmentation of the nucleoli, add as many object measurement modules as you would like.
   - Some suggested modules to add: **MeasureObjectIntensity**, **MeasurebjectSizeShape**, **MeasureColocalization**, **MeasureObjectNeighbors**.
+  > **IMPORTANT!** 
+  >
+  >If you choose to include the **MeasureColocalization** module, we highly recommend to set the `'Calculate the Manders coefficients using Costes auto threshold'` option to `'NO'`. Otherwise, this module can be very time-consuming
  
 - Which objects do you think would be valuable to measure with each of these modules? 
 - Which channels would you measure your objects in? 
@@ -430,7 +435,30 @@ Relating the objects allows you to create per-parent means (e.g., for this cell,
  
 ```
 
-### **12. Run the pipeline**
+### **12. Save overlay images** **[OPTIONAL]**
+
+As we are exporting the results of our analysis, it can also save the SanityCheck images we made previously because they are useful as a control of your segmentations and to share your work with others!
+
+- Add a **Save Images** module at the end of the pipeline.
+- Choose `'SanityCheck'` as the image to save.
+- We want to name the resulting image after the OrigRNA image that was used to create it. 
+  - In the `'Select method to construct file names'` field, leave '`From iamge filename'`.
+  - In the `'Select image name for file prefix'` field, select '`OrigRNA'`.
+- Add `'_overlay'` as a suffix to the saved images. Then, the image name will be the filename + `'_overlay'`
+- In `'Output file location'` select `'Default Output Folder sub-folder'` and name that sub-folder `'overlay_images'`
+  - You can change the `'Default Output Folder'` by clicking the <img src="./TutorialImages/OutputSettings.png" width="120"/> button at the bottom left corner of the window.
+- Leave the rest of the settings as they are in the default (as swown in Figure 18)
+
+
+```{figure} ./TutorialImages/Fig18.png
+:width: 700
+:align: center
+
+*Figure 18: The **SaveImages** module.*
+ 
+```
+
+### **13. Run the pipeline**
 Now you have a pipeline that works well across different images. It is time to run it through your entire dataset and collect the results!
 
 - Exit test mode by clicking on the <img src="./TutorialImages/ExitTestMode.png" width="120"/> button.

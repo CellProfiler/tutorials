@@ -2,15 +2,15 @@ CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
 DateRevision:426
 GitHash:
-ModuleCount:16
+ModuleCount:17
 HasImagePlaneDetails:False
 
-Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.', '', 'Drag and drop your IMAGES (you can drag and drop the entire "images_Illum-corrected" folder) into the panel just below this one.', '', '<-Drag and drop your "segmentation_start.cppipe" files into the left panel.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     :
     Filter images?:Images only
     Select the rule criteria:or (extension does isimage) (file does contain ".npy")
 
-Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:['The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:['FOR THIS TUTORIAL, YOU CAN SKIP THIS MODULE, AS IT IS ALREADY CONFIGURED.', '', 'The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.', '', '']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Extract metadata?:Yes
     Metadata data type:Choose for each
     Metadata types:{"ChannelNumber": "integer", "Date": "text", "FileLocation": "text", "Frame": "text", "Series": "text", "Site": "integer", "Well": "text"}
@@ -27,7 +27,7 @@ Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_win
     Metadata file name:
     Does cached metadata exist?:No
 
-NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:['The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:['FOR THIS TUTORIAL, YOU CAN SKIP THIS MODULE, AS IT IS ALREADY CONFIGURED.', '', 'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Assign a name to:Images matching rules
     Select the image type:Grayscale image
     Name to assign these images:DNA
@@ -72,12 +72,12 @@ NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|sho
     Set intensity range from:Image metadata
     Maximum intensity:255.0
 
-Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['FOR THIS TUTORIAL, YOU CAN SKIP THIS MODULE, AS IT IS NOT USED.', '', 'The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Do you want to group your images?:No
     grouping metadata count:1
     Metadata category:None
 
-IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:['This module is used to create a group of objects called Nuclei by segmenting the nuclear regions from the OrigDNA image.', 'The settings used here should be good enough for the images used in this tutorial but they depend highly on the image set!', '', 'We encourage you to play around with the settings in order to get a "good enough" segmentation of your own data.', 'REMEMBER: we aim for "good enough" because there is no settings that will give you a PERFECT segmentation every time in every image.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:OrigDNA
     Name the primary objects to be identified:Nuclei
     Typical diameter of objects, in pixel units (Min,Max):10,150
@@ -98,7 +98,7 @@ IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_num
     Threshold strategy:Global
     Thresholding method:Otsu
     Threshold smoothing scale:1.3488
-    Threshold correction factor:.9
+    Threshold correction factor:0.9
     Lower and upper bounds on threshold:0.002,1.0
     Manual threshold:0.0
     Select the measurement to threshold with:None
@@ -113,7 +113,7 @@ IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_num
     # of deviations:2
     Thresholding method:Otsu
 
-IdentifySecondaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+IdentifySecondaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:['This module is used to create a group of objects called Cells by segmenting the celular regions from the OrigActin_Golgi_Membrane image.', 'To help with this, this module takes the Nuclei objects created in the previous module as input, to use them as references for building the Cells objects.', '', 'We encourage you to play around with the settings in order to get a "good enough" segmentation of your own data.', 'REMEMBER: we aim for "good enough" because there is no settings that will give you a PERFECT segmentation every time in every image.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:Nuclei
     Name the objects to be identified:Cells
     Select the method to identify the secondary objects:Propagation
@@ -143,13 +143,13 @@ IdentifySecondaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_n
     # of deviations:2
     Thresholding method:Otsu
 
-IdentifyTertiaryObjects:[module_num:7|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+IdentifyTertiaryObjects:[module_num:7|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['This module creates a set of Cytoplasm objects by simply subtracting the Nuclei objects from their corresponding Cells objects.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the larger identified objects:Cells
     Select the smaller identified objects:Nuclei
     Name the tertiary objects to be identified:Cytoplasm
     Shrink smaller object prior to subtraction?:No
 
-EnhanceOrSuppressFeatures:[module_num:8|svn_version:'Unknown'|variable_revision_number:7|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+EnhanceOrSuppressFeatures:[module_num:8|svn_version:'Unknown'|variable_revision_number:7|show_window:True|notes:['Now we want to segment nucleoli from the OrigRNA image, but the nuclear RNA spots (which are the nucleoli) are not contrasted enough with their nuclear background.', 'This module processes the OrigRNA image and enhances "speckly" shapes of a certain size, producing a new image called FilteredRNA.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:OrigRNA
     Name the output image:FilteredRNA
     Select the operation:Enhance
@@ -163,7 +163,7 @@ EnhanceOrSuppressFeatures:[module_num:8|svn_version:'Unknown'|variable_revision_
     Speed and accuracy:Fast
     Rescale result image:No
 
-MaskImage:[module_num:9|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+MaskImage:[module_num:9|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['In the FilteredRNA image, not only the nuclear RNA spots have been enhanced, but also the cytoplasmic ones (which are NOT nucleoli)!!', '', 'This module will mask the FilteredRNA image using the Nuclei objects so that any pixel outside of the Nuclei becomes 0 (thus, ridding us of the cytoplasmic RNA spots). ', 'The resulting masked image is named RNA_in_Nuclei.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:FilteredRNA
     Name the output image:RNA_in_Nuclei
     Use objects or an image as a mask?:Objects
@@ -171,7 +171,7 @@ MaskImage:[module_num:9|svn_version:'Unknown'|variable_revision_number:3|show_wi
     Select image for mask:None
     Invert the mask?:No
 
-IdentifyPrimaryObjects:[module_num:10|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+IdentifyPrimaryObjects:[module_num:10|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:['This module is used to create a group of objects called Nucleoli by segmenting the RNA spots from the RNA_in_Nuclei image.', '']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:RNA_in_Nuclei
     Name the primary objects to be identified:Nucleoli
     Typical diameter of objects, in pixel units (Min,Max):2,15
@@ -207,7 +207,7 @@ IdentifyPrimaryObjects:[module_num:10|svn_version:'Unknown'|variable_revision_nu
     # of deviations:2
     Thresholding method:Otsu
 
-OverlayOutlines:[module_num:11|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+OverlayOutlines:[module_num:11|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:['This module produces a visualization of our segmentations so far by overlaying the Nuclei and Nucleoli objects outlines onto the OrigRNA image.', 'This is useful both as a sanity check and as a means of showing theresults of your analysis to others!', '', 'The output of this module is called SanityCheck.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Display outlines on a blank image?:No
     Select image on which to display outlines:OrigRNA
     Name the output image:SanityCheck
@@ -219,16 +219,16 @@ OverlayOutlines:[module_num:11|svn_version:'Unknown'|variable_revision_number:4|
     Select outline color:Green
     Select objects to display:Nucleoli
 
-MeasureObjectIntensity:[module_num:12|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
+MeasureObjectIntensity:[module_num:12|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:['This module will measure a series of intensity metrics within each selected object on all selected images.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
     Select images to measure:OrigDNA, OrigER, OrigMito, OrigRNA
-    Select objects to measure:Cells, Cytoplasm, Nuclei
+    Select objects to measure:Cells, Cytoplasm, Nuclei, Nucleoli
 
-MeasureObjectSizeShape:[module_num:13|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectSizeShape:[module_num:13|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:['This module will measure the area and a series of shaped-related metrics of each selected object.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select object sets to measure:Cells, Cytoplasm, Nuclei, Nucleoli
     Calculate the Zernike features?:Yes
     Calculate the advanced features?:No
 
-MeasureColocalization:[module_num:14|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+MeasureColocalization:[module_num:14|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['Measures the colocalization and correlation between intensities in your different images on a pixel-by-pixel basis, within identified objects or across an entire image. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select images to measure:OrigActin_Golgi_Membrane, OrigDNA, OrigER, OrigMito, OrigRNA
     Set threshold as percentage of maximum intensity for the images:15.0
     Select where to measure correlation:Within objects
@@ -238,10 +238,10 @@ MeasureColocalization:[module_num:14|svn_version:'Unknown'|variable_revision_num
     Calculate the Manders coefficients?:Yes
     Calculate the Rank Weighted Colocalization coefficients?:Yes
     Calculate the Overlap coefficients?:Yes
-    Calculate the Manders coefficients using Costes auto threshold?:Yes
+    Calculate the Manders coefficients using Costes auto threshold?:No
     Method for Costes thresholding:Fast
 
-RelateObjects:[module_num:15|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RelateObjects:[module_num:15|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['This module relates a larger "Parent object" to another smaller "Child object/s". In this case, this allows us to identify which Nucleoli belong to which Nuclei.', 'The output is a new object called NucleoliChildObjects that has all of the nucleoli belonging to a single nucleus ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Parent objects:Nuclei
     Child objects:Nucleoli
     Calculate child-parent distances?:Both
@@ -259,7 +259,27 @@ RelateObjects:[module_num:15|svn_version:'Unknown'|variable_revision_number:5|sh
     Parent name:None
     Parent name:None
 
-ExportToSpreadsheet:[module_num:16|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:16|svn_version:'Unknown'|variable_revision_number:16|show_window:True|notes:['This module saves the SanityCheck images for future reference. It does so in a sub-folder of the default output folder called "overlay-images".', 'Tha name of the saved file is constructed using the name of the corresponding OrigRNA image as a prefix and adding a "_overlay" suffix. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:SanityCheck
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:OrigRNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_overlay
+    Saved file format:tiff
+    Output file location:Default Output Folder sub-folder|overlay_images
+    Image bit depth:8-bit integer
+    Overwrite existing files without warning?:No
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+    Save with lossless compression?:Yes
+
+ExportToSpreadsheet:[module_num:17|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:['NOTE: this module will not produce an output in "Test mode". When working in "Test mode" it will show a warning saying exactly that.', '', 'This module exports all the measurements into a .csv file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:Comma (",")
     Add image metadata columns to your object data file?:No
     Add image file and folder names to your object data file?:No
