@@ -20,11 +20,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
 
-#: ../../source/index.rst:9
+#: ../../source/index.md:9
 msgid "Contents:"
 msgstr ""
 
-#: ../../source/index.rst:7
+#: ../../source/index.md:7
 msgid "Welcome to cellprofiler-tutorials's documentation!"
 msgstr ""
 
