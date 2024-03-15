@@ -1,108 +1,82 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Imaging Platform
-# This file is distributed under the same license as the cellprofiler-tutorials package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Esteban, 2024
-# Beth Cimini, 2024
-# 
+# This file is distributed under the same license as the
+# cellprofiler-tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: cellprofiler-tutorials\n"
+"Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-13 16:49-0500\n"
-"PO-Revision-Date: 2024-01-29 15:29+0000\n"
-"Last-Translator: Beth Cimini, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:2
 msgid ""
-"Using machine learning to perform image quality control: A computer exercise"
-" using CellProfiler & CellProfiler Analyst software"
+"Using machine learning to perform image quality control: A computer "
+"exercise using CellProfiler & CellProfiler Analyst software"
 msgstr ""
-"Utilización del aprendizaje automático para realizar el control de calidad "
-"de las imágenes: Un ejercicio informático con los programas CellProfiler y "
-"CellProfiler Analyst"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:5
 msgid "Beth Cimini, Broad Institute"
-msgstr "Beth Cimini, Instituto Broad"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:7
 msgid "**Background information:**"
-msgstr "**Sobre las imágenes de este ejercicio:**"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:9
 msgid ""
-"High-quality image analysis relies on having high-quality images to analyze;"
-" the so-called ‘Garbage in, garbage out’ principle. If your image set is "
-"small it is straightforward to curate it and remove images that are not in "
-"focus or that contain debris that might disrupt segmentation. In a high "
-"content screen containing tens or hundreds of thousands of images, this is "
-"essentially impossible."
+"High-quality image analysis relies on having high-quality images to "
+"analyze; the so-called ‘Garbage in, garbage out’ principle. If your image"
+" set is small it is straightforward to curate it and remove images that "
+"are not in focus or that contain debris that might disrupt segmentation. "
+"In a high content screen containing tens or hundreds of thousands of "
+"images, this is essentially impossible."
 msgstr ""
-"El análisis de imágenes de alta calidad se basa en disponer de imágenes de "
-"alta calidad para analizar; es el principio de \"basura dentro, basura "
-"fuera\". Si el conjunto de imágenes es pequeño, resulta sencillo "
-"seleccionarlo y eliminar las imágenes que no están enfocadas o que contienen"
-" restos que podrían alterar la segmentación. En un sitio screen de alto "
-"contenido que contenga decenas o cientos de miles de imágenes, esto es "
-"esencialmente imposible."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:16
 msgid ""
 "The images in this experiment come from the `Broad Bioimage Benchmark "
-"Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. They are 240 "
-"of 69,120 fields of U2OS cells treated with a panel of 1600 known bioactive "
-"compounds and imaged in five channels for a so-called CellPainting assay- "
-"see Gustafsdottir et al, 2013 for more information. Given the large size of "
-"this experiment, it was necessary to come up with an automated quality "
-"control method."
+"Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. They are "
+"240 of 69,120 fields of U2OS cells treated with a panel of 1600 known "
+"bioactive compounds and imaged in five channels for a so-called "
+"CellPainting assay- see Gustafsdottir et al, 2013 for more information. "
+"Given the large size of this experiment, it was necessary to come up with"
+" an automated quality control method."
 msgstr ""
-"Las imágenes de este experimento proceden de la `Broad Bioimage Benchmark "
-"Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. Son 240 de "
-"69.120 campos de células U2OS tratadas con un panel de 1.600 compuestos "
-"bioactivos conocidos y obtenidas en cinco canales para un ensayo denominado "
-"CellPainting (véase Gustafsdottir et al, 2013 para más información). Dado el"
-" gran tamaño de este experimento, fue necesario idear un método de control "
-"de calidad automatizado."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:24
 msgid ""
-"To learn more about machine learning for image quality control, please see "
-"Bray et al 2012 and references therein."
+"To learn more about machine learning for image quality control, please "
+"see Bray et al 2012 and references therein."
 msgstr ""
-"Para obtener más información sobre el aprendizaje automático para el control"
-" de calidad de las imágenes, consulte Bray et al 2012 y sus referencias."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:27
 msgid "**Goals of this exercise: **"
-msgstr "**Objetivos de este ejercicio: **"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:29
 msgid ""
-"This exercise will teach you how to measure aspects of image quality with "
-"CellProfiler and how to use the machine learning tools in CPA to create "
-"robust rules to distinguish low-quality images. It additionally will show "
-"you how to incorporate these rules into an image analysis pipeline so that "
-"they may guide your downstream data analysis."
+"This exercise will teach you how to measure aspects of image quality with"
+" CellProfiler and how to use the machine learning tools in CPA to create "
+"robust rules to distinguish low-quality images. It additionally will show"
+" you how to incorporate these rules into an image analysis pipeline so "
+"that they may guide your downstream data analysis."
 msgstr ""
-"Este ejercicio le enseñará cómo medir aspectos de la calidad de imagen con "
-"CellProfiler y cómo utilizar las herramientas de aprendizaje automático en "
-"CPA para crear reglas robustas para distinguir imágenes de baja calidad. "
-"Además, le mostrará cómo incorporar estas reglas en un análisis de imagen "
-"pipeline para que puedan guiar su análisis de datos posterior."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:35
 msgid "**Materials necessary for this exercise: **"
-msgstr "**Materiales necesarios para este ejercicio: **"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:37
 msgid ""
@@ -110,355 +84,265 @@ msgid ""
 "single 384 well plate, either mock treated with DMSO or treated with a "
 "variety of bioactive compounds."
 msgstr ""
-"Estas 1.200 imágenes (240 sitios en 5 canales) representan 120 pocillos de "
-"una única placa de 384 pocillo, tratados simbólicamente con DMSO o con "
-"diversos compuestos bioactivos."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:41
 msgid ""
-"It is additionally expected that you are generally familiar with the tools "
-"in CellProfiler and CellProfiler Analyst, preferably after completing the "
-"Translocation tutorial or a similar introductory exercise."
+"It is additionally expected that you are generally familiar with the "
+"tools in CellProfiler and CellProfiler Analyst, preferably after "
+"completing the Translocation tutorial or a similar introductory exercise."
 msgstr ""
-"Además, se espera que esté familiarizado con las herramientas de "
-"CellProfiler y CellProfiler Analyst, preferiblemente después de completar el"
-" tutorial de Translocación o un ejercicio introductorio similar."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:46
 msgid "**Start the provided QC pipeline on the BBBC022 dataset**"
 msgstr ""
-"**Inicie el control de calidad proporcionado pipeline en el conjunto de "
-"datos BBBC022."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:48
 msgid ""
-"In order to do quality control, we need to first measure the images in many "
-"ways. This will allow us to do machine learning to use the measurements to "
-"identify the good images from the bad."
+"In order to do quality control, we need to first measure the images in "
+"many ways. This will allow us to do machine learning to use the "
+"measurements to identify the good images from the bad."
 msgstr ""
-"Para hacer el control de calidad, primero tenemos que medir las imágenes de "
-"muchas maneras. Esto nos permitirá utilizar el aprendizaje automático para "
-"distinguir las imágenes buenas de las malas."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:52
 msgid "Start CellProfiler by double-clicking the desktop icon |Inline1|"
 msgstr ""
-"Inicie CellProfiler haciendo doble clic en el icono del escritorio "
-"|Inline1|."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:444
 msgid "Inline1"
-msgstr " "
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:54
 msgid ""
-"Drag and drop the ‘BBBC022_QC.cppipe’ file into the ‘Analysis modules’ box. "
-"Three modules should appear- two copies of ‘MeasureImageQuality’ and one "
-"‘ExportToDatabase’ module."
+"Drag and drop the ‘BBBC022_QC.cppipe’ file into the ‘Analysis modules’ "
+"box. Three modules should appear- two copies of ‘MeasureImageQuality’ and"
+" one ‘ExportToDatabase’ module."
 msgstr ""
-"Arrastre y suelte el archivo \"BBBC022_QC.cppipe\" en el cuadro \"Módulos de"
-" análisis\". Deberían aparecer tres módulos: dos copias de "
-"\"MeasureImageQuality\" y un módulo \"ExportToDatabase\"."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:58
 msgid ""
 "Drag and drop the ‘BBBC022_20585_AE’ folder into the ‘File list’ box. It "
 "should automatically populate."
 msgstr ""
-"Arrastre y suelte la carpeta 'BBBC022_20585_AE' en el cuadro 'Lista de "
-"archivos'. Debería rellenarse automáticamente."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:61
 msgid "Hit the Analyze Images button."
-msgstr "Pulse el botón Analizar imágenes."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:63
 msgid ""
 "You will get an error popup – ‘No prior instances of objectgroup were "
 "defined. Are you sure you want to continue?’ Hit ‘Yes’."
 msgstr ""
-"Aparecerá un mensaje de error: \"No se han definido instancias anteriores de"
-" objectgroup. ¿Está seguro de que desea continuar? Pulse \"Sí\"."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:66
 msgid ""
-"This is due to the fact that there are no objects defined in the pipeline. "
-"It will not affect the final results."
+"This is due to the fact that there are no objects defined in the "
+"pipeline. It will not affect the final results."
 msgstr ""
-"Esto se debe a que no hay objetos definidos en pipeline. No afectará a los "
-"resultados finales."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:69
 msgid ""
-"The pipeline should take about 10-15 minutes to run. At the end, three files"
-" should be created- a .db database file, a .properties text file, and a "
-".workspace text file."
+"The pipeline should take about 10-15 minutes to run. At the end, three "
+"files should be created- a .db database file, a .properties text file, "
+"and a .workspace text file."
 msgstr ""
-"La ejecución de pipeline debería durar entre 10 y 15 minutos. Al final, se "
-"crearán tres archivos: un archivo de base de datos .db, un archivo de texto "
-".properties y un archivo de texto .workspace."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:73
 msgid "**Examine the QC pipeline (~15 minutes)**"
-msgstr "**Examine el CC pipeline (~15 minutos)**"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:75
 msgid ""
-"While the pipeline is running, take some time to look over the pipeline and "
-"make sure you understand the various parts. You will probably find it "
-"easiest to open a second CellProfiler window and open the pipeline in it."
+"While the pipeline is running, take some time to look over the pipeline "
+"and make sure you understand the various parts. You will probably find it"
+" easiest to open a second CellProfiler window and open the pipeline in "
+"it."
 msgstr ""
-"Mientras se ejecuta el pipeline, tómese un tiempo para revisar el pipeline y"
-" asegurarse de que entiende las distintas partes. Probablemente le resulte "
-"más fácil abrir una segunda ventana de CellProfiler y abrir el pipeline en "
-"ella."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:80
 msgid "*Metadata*"
-msgstr "*Metadatos*"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:82
 msgid ""
-"Plate, well, site, and channel information is being extracted from the file "
-"and folder names"
+"Plate, well, site, and channel information is being extracted from the "
+"file and folder names"
 msgstr ""
-"La información de la placa, pocillo, campo, y del canal se extrae de los "
-"nombres de archivos y carpetas"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:85
 msgid "*NamesAndTypes*"
-msgstr "*NamesAndTypes*"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:87
 msgid ""
-"The images are matched to their channels by metadata and grouped by Plate, "
-"Well, and Site"
+"The images are matched to their channels by metadata and grouped by "
+"Plate, Well, and Site"
 msgstr ""
-"Las imágenes se corresponden con sus canales mediante metadatos y se agrupan"
-" por Placa, pocillo, y campo"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:90
 msgid "*Groups*"
-msgstr "*Grupos*"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:92
 msgid "This module is not used"
-msgstr "Este módulo no se utiliza"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:94
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:106
 msgid "*MeasureImageQuality*"
-msgstr "*MedirCalidadDeImagen*"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:96
 msgid ""
-"‘Include the image rescaling value?’, ‘Calculate intensity metrics?’, and "
-"‘Calculate saturation metrics?’ are all set to yes. Open the help |Inline2| "
-"button to read about the measurements exported by each of these options."
+"‘Include the image rescaling value?’, ‘Calculate intensity metrics?’, and"
+" ‘Calculate saturation metrics?’ are all set to yes. Open the help "
+"|Inline2| button to read about the measurements exported by each of these"
+" options."
 msgstr ""
-"Las opciones \"¿Incluir el valor de reescalado de la imagen?\", \"¿Calcular "
-"las métricas de intensidad?\" y \"¿Calcular las métricas de saturación?\" "
-"tienen el valor \"sí\". Abra el botón de ayuda |Inline2| para leer sobre las"
-" medidas exportadas por cada una de estas opciones."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:446
 msgid "Inline2"
-msgstr "En línea2"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:101
 msgid ""
-"‘Calculate blur metrics?’ is set to yes and given multiple spatial scales- "
-"2, 5, 10, and 20 pixels. Open the help |Inline2| button to read about the "
-"different methods used to determine whether an image is in focus."
+"‘Calculate blur metrics?’ is set to yes and given multiple spatial "
+"scales- 2, 5, 10, and 20 pixels. Open the help |Inline2| button to read "
+"about the different methods used to determine whether an image is in "
+"focus."
 msgstr ""
-"'¿Calcular métricas de desenfoque?' está ajustado a sí y se dan múltiples "
-"escalas espaciales- 2, 5, 10 y 20 píxeles. Abra el botón de ayuda |Inline2| "
-"para leer sobre los diferentes métodos utilizados para determinar si una "
-"imagen está enfocada."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:108
 msgid ""
-"In this second image ‘MeasureImageQuality’ module, automatic thresholds are "
-"calculated for the ‘OrigHoechst’ and ‘OrigPh_golgi’ images using specific "
-"threshold metrics. Read about why by opening the help |Inline2| button."
+"In this second image ‘MeasureImageQuality’ module, automatic thresholds "
+"are calculated for the ‘OrigHoechst’ and ‘OrigPh_golgi’ images using "
+"specific threshold metrics. Read about why by opening the help |Inline2| "
+"button."
 msgstr ""
-"En este segundo módulo de imagen 'MeasureImageQuality', se calculan umbrales"
-" automáticos para las imágenes 'OrigHoechst' y 'OrigPh_golgi' utilizando "
-"métricas de umbral específicas. Lea por qué abriendo el botón de ayuda "
-"|Inline2|."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:113
 msgid ""
-"The choice of these two images and these two thresholding methods was not "
-"random; it corresponds to the methods used to segment nuclei and cell bodies"
-" in the corresponding analysis pipeline."
+"The choice of these two images and these two thresholding methods was not"
+" random; it corresponds to the methods used to segment nuclei and cell "
+"bodies in the corresponding analysis pipeline."
 msgstr ""
-"La elección de estas dos imágenes y de estos dos métodos de umbralización no"
-" fue aleatoria; corresponde a los métodos utilizados para segmentar los "
-"núcleos y los cuerpos celulares en el análisis correspondiente pipeline."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:118
 msgid "*ExportToDatabase*"
-msgstr "*Exportar a base de datos"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:120
 msgid "This module has 4 main parts, separated by breaks |Inline3|"
 msgstr ""
-"Este módulo consta de 4 partes principales, separadas por pausas |Inline3|."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:448
 msgid "Inline3"
-msgstr "En línea3"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:122
 msgid ""
-"**Creation of the database**: these options determine what kind of database "
-"will be created (SQLite in this case), whether CellProfiler should overwrite"
-" or add to previously existing data, and what the names of the tables will "
-"be."
+"**Creation of the database**: these options determine what kind of "
+"database will be created (SQLite in this case), whether CellProfiler "
+"should overwrite or add to previously existing data, and what the names "
+"of the tables will be."
 msgstr ""
-"**Creación de la base de datos**: estas opciones determinan qué tipo de base"
-" de datos se creará (SQLite en este caso), si CellProfiler debe sobrescribir"
-" o añadir a los datos previamente existentes, y cuáles serán los nombres de "
-"las tablas."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:127
 msgid ""
 "**Creation of the CPA properties file**: these options pre-set some "
-"parameters for CellProfiler Analyst to help make it easier for you to use "
-"such as"
+"parameters for CellProfiler Analyst to help make it easier for you to use"
+" such as"
 msgstr ""
-"**Creación del archivo de propiedades CPA**: estas opciones preestablecen "
-"algunos parámetros para CellProfiler Analyst para facilitar su uso, tales "
-"como"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:131
 msgid ""
-"Setting the plate type to 384, and stating that the Image_Metadata_Plate and"
-" Image_Metadata_Well determine which plate and well to assign each image to"
+"Setting the plate type to 384, and stating that the Image_Metadata_Plate "
+"and Image_Metadata_Well determine which plate and well to assign each "
+"image to"
 msgstr ""
-"Estableciendo el tipo de placa a 384, y declarando que Image_Metadata_Plate "
-"e Image_Metadata_Well determinan a qué placa y pocillo asignar cada imagen."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:135
 msgid ""
-"What color to assign each channel in the image display tools in CellProfiler"
-" Analyst"
+"What color to assign each channel in the image display tools in "
+"CellProfiler Analyst"
 msgstr ""
-"Qué color asignar a cada canal en las herramientas de visualización de "
-"imágenes en CellProfiler Analyst."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:138
 msgid "That you are classifying ‘Image’s, not objects"
-msgstr "Que está clasificando \"Imágenes\", no objetos."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:140
 msgid ""
-"**Creation of the CPA workspace file**: instead of having to explore all the"
-" parameters at random to find features that separate good images from bad "
-"images, these options allow you to auto-create graphs for the features that "
-"are likely to be the most important. Here we’ve pre-populated 12 graphs for "
-"you- 10 scatter plots and 2 histograms."
+"**Creation of the CPA workspace file**: instead of having to explore all "
+"the parameters at random to find features that separate good images from "
+"bad images, these options allow you to auto-create graphs for the "
+"features that are likely to be the most important. Here we’ve pre-"
+"populated 12 graphs for you- 10 scatter plots and 2 histograms."
 msgstr ""
-"**Creación del archivo del espacio de trabajo de la CPA**: en lugar de tener"
-" que explorar todos los parámetros al azar para encontrar las "
-"características que separan las imágenes buenas de las malas, estas opciones"
-" le permiten crear automáticamente gráficos para las características que "
-"probablemente sean las más importantes. Aquí le hemos preparado 12 gráficos:"
-" 10 diagramas de dispersión y 2 histogramas."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:147
 msgid ""
-"**CellProfiler specific adjustments**: besides determining the location of "
-"the output database, most of these options deal with how CellProfiler should"
-" treat the objects it identifies (should it calculate means/medians/standard"
-" deviations for all of them, should it combine their measurements into a "
-"single table, etc). As we are not identifying any objects, we don’t need to "
-"worry about these."
+"**CellProfiler specific adjustments**: besides determining the location "
+"of the output database, most of these options deal with how CellProfiler "
+"should treat the objects it identifies (should it calculate "
+"means/medians/standard deviations for all of them, should it combine "
+"their measurements into a single table, etc). As we are not identifying "
+"any objects, we don’t need to worry about these."
 msgstr ""
-"**Ajustes específicos de CellProfiler**: además de determinar la ubicación "
-"de la base de datos de salida, la mayoría de estas opciones tienen que ver "
-"con cómo CellProfiler debe tratar los objetos que identifica (si debe "
-"calcular medias/medias/desviaciones estándar para todos ellos, si debe "
-"combinar sus medidas en una única tabla, etc.). Como no estamos "
-"identificando ningún objeto, no necesitamos preocuparnos por esto."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
 msgid ""
-"**Open the CellProfiler Analyst workspace and determine reasonable parameter"
-" cutoffs (~20 minutes)**"
+"**Open the CellProfiler Analyst workspace and determine reasonable "
+"parameter cutoffs (~20 minutes)**"
 msgstr ""
-"**Abra el espacio de trabajo de CellProfiler Analyst y determine parámetros "
-"razonables (~20 minutos)**."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:158
 msgid ""
-"In the first step of the quality control pipeline, we'll look at graphs of "
-"how various measurements are distributed in the population.  This allows us "
-"to get a sense of what the \"normal\" values are for each parameter.  We'll "
-"set gates around the \"abnormal\" values for later usage.  You can feel free"
-" to graph and examine additional parameters as well if you are interested in"
-" exploring the dataset."
+"In the first step of the quality control pipeline, we'll look at graphs "
+"of how various measurements are distributed in the population.  This "
+"allows us to get a sense of what the \"normal\" values are for each "
+"parameter.  We'll set gates around the \"abnormal\" values for later "
+"usage.  You can feel free to graph and examine additional parameters as "
+"well if you are interested in exploring the dataset."
 msgstr ""
-"En el primer paso del control de calidad pipeline, observaremos gráficos de "
-"cómo se distribuyen diversas mediciones en la población.  Esto nos permitirá"
-" hacernos una idea de cuáles son los valores \"normales\" de cada parámetro."
-"  Estableceremos barreras en torno a los valores \"anormales\" para su uso "
-"posterior.  Si está interesado en explorar el conjunto de datos, puede "
-"graficar y examinar parámetros adicionales en pocillo."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:165
 msgid ""
-"First-pass identification of the abnormal images is important since they are"
-" hopefully going to be rare in our overall dataset.  By identifying as many "
-"abnormal images as possible in this and the next step, we'll hopefully have "
-"a large and robust enough training set that we can train a good classifier "
-"in later steps."
+"First-pass identification of the abnormal images is important since they "
+"are hopefully going to be rare in our overall dataset.  By identifying as"
+" many abnormal images as possible in this and the next step, we'll "
+"hopefully have a large and robust enough training set that we can train a"
+" good classifier in later steps."
 msgstr ""
-"La primera identificación de las imágenes anómalas es importante, ya que "
-"esperamos que sean raras en nuestro conjunto de datos.  Al identificar "
-"tantas imágenes anómalas como sea posible en este paso y en el siguiente, "
-"esperamos tener un conjunto de entrenamiento lo suficientemente grande y "
-"robusto como para poder entrenar un buen clasificador en pasos posteriores."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:171
 msgid ""
-"Once your pipeline has finished, close CellProfiler and start CellProfiler "
-"Analyst by double-clicking the icon |Inline4|."
+"Once your pipeline has finished, close CellProfiler and start "
+"CellProfiler Analyst by double-clicking the icon |Inline4|."
 msgstr ""
-"Una vez que haya finalizado su pipeline, cierre CellProfiler e inicie "
-"CellProfiler Analyst haciendo doble clic en el icono |Inline4|."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:450
 msgid "Inline4"
-msgstr "En línea4"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:174
 msgid "Load the properties file you’ve just created."
-msgstr "Carga el archivo de propiedades que acabas de crear."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:176
 msgid ""
-"Go to File-> Load Workspace. 12 graphs should be created – 5 scatter plots "
-"about focus (ImageNumber vs ImageQuality_PowerLogLogSlope), 5 scatter plots "
-"about oversaturation (ImageQuality_StdIntensity vs "
+"Go to File-> Load Workspace. 12 graphs should be created – 5 scatter "
+"plots about focus (ImageNumber vs ImageQuality_PowerLogLogSlope), 5 "
+"scatter plots about oversaturation (ImageQuality_StdIntensity vs "
 "ImageQuality_PercentMaximal), and 2 histograms showing the automatic "
 "thresholds calculated for the nuclei and cell channels."
 msgstr ""
-"Vaya a Archivo-&gt; Cargar espacio de trabajo. Se crearán 12 gráficos: 5 "
-"gráficos de dispersión sobre el enfoque (ImageNumber vs "
-"ImageQuality_PowerLogLogSlope), 5 gráficos de dispersión sobre la "
-"sobresaturación (ImageQuality_StdIntensity vs ImageQuality_PercentMaximal) y"
-" 2 histogramas que muestran los umbrales automáticos calculados para los "
-"canales de núcleos y células."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:182
 msgid ""
 "For some or all of the graphs (preferably at least two of each type), "
 "examine the shape of the data. Are there obvious outliers present?"
 msgstr ""
-"Para algunos o todos los gráficos (preferiblemente al menos dos de cada "
-"tipo), examine la forma de los datos. ¿Existen valores atípicos evidentes?"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:185
 msgid ""
@@ -466,176 +350,123 @@ msgid ""
 "‘HighSat_ER’ for high outliers in the oversaturation graph of the ER "
 "channel)."
 msgstr ""
-"En el menú desplegable 'puerta', seleccione CREAR NUEVA PUERTA y dele un "
-"nombre (como 'HighSat_ER' para valores extremos altos en el gráfico de "
-"sobresaturación del canal ER)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:189
 msgid ""
 "Draw your gate, then right-click (PC)/Command-click (Mac) to bring up a "
-"window. You should see two options named ‘Show images in gate’ (one or both "
-"of these will be renamed in the next CPA release for the sake of clarity)"
+"window. You should see two options named ‘Show images in gate’ (one or "
+"both of these will be renamed in the next CPA release for the sake of "
+"clarity)"
 msgstr ""
-"Dibuja tu puerta y haz clic con el botón derecho (PC)/Comando-clic (Mac) "
-"para abrir una ventana. Deberías ver dos opciones llamadas \"Mostrar "
-"imágenes en la puerta\" (una o ambas serán renombradas en la próxima versión"
-" de la CPA en aras de la claridad)"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:194
 msgid ""
 "The top one will open each of these images in a separate window. This is "
 "generally easiest if only a small number of images (<5) are in the gate."
 msgstr ""
-"La superior abrirá cada una de estas imágenes en una ventana separada. Esto "
-"suele ser más fácil si sólo hay un pequeño número de imágenes (&lt;5) en la "
-"puerta."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:198
 msgid ""
-"The bottom one will open a thumbnail viewer with thumbnails of each image; "
-"you can then double click on the thumbnail to open the full image. This is "
-"much faster when there are a lot of images inside the gate."
+"The bottom one will open a thumbnail viewer with thumbnails of each "
+"image; you can then double click on the thumbnail to open the full image."
+" This is much faster when there are a lot of images inside the gate."
 msgstr ""
-"La inferior abrirá un visor de miniaturas con miniaturas de cada imagen; "
-"luego puedes hacer doble clic en la miniatura para abrir la imagen completa."
-" Esto es mucho más rápido cuando hay muchas imágenes dentro de la puerta."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:208
 msgid "*Figure 1: Examining the objects inside a gate.*"
-msgstr "*Figura 1: Examen de los objetos dentro de una puerta.*"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:210
 msgid ""
 "Look at some of the images inside the gate ( you may need to click ‘Show "
-"controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, and"
-" are they free of bright debris? If they seem all or mostly like they’re "
-"high quality, adjust the gate to look at a different/smaller subset or "
-"delete it altogether by using the Gate Inspector (‘gate’-> ‘MANAGE GATES’)."
+"controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, "
+"and are they free of bright debris? If they seem all or mostly like "
+"they’re high quality, adjust the gate to look at a different/smaller "
+"subset or delete it altogether by using the Gate Inspector (‘gate’-> "
+"‘MANAGE GATES’)."
 msgstr ""
-"Observa algunas de las imágenes del interior de la puerta (puede que tengas "
-"que hacer clic en \"Mostrar controles\" para ajustar el zoom, el "
-"estiramiento del contraste, etc.). ¿Están enfocadas y no tienen restos "
-"brillantes? Si parece que todas o la mayoría son de alta calidad, ajuste la "
-"puerta para ver un subconjunto diferente o más pequeño, o elimínelo del todo"
-" utilizando el Inspector de Puertas ('puerta'-&gt; 'GESTIÓN DE PUERTAS')."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:217
 msgid ""
-"**Optional- use the PlateViewer tool to check for other features to gate on "
-"(~10 minutes)**"
+"**Optional- use the PlateViewer tool to check for other features to gate "
+"on (~10 minutes)**"
 msgstr ""
-"**Opcional: utilice la herramienta PlateViewer para comprobar si hay otras "
-"funciones que se puedan activar (~10 minutos)**."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:220
 msgid ""
 "If you want to see if you can find additional features that might "
-"distinguish good images from bad images, feel free to explore the feature "
-"set more thoroughly."
+"distinguish good images from bad images, feel free to explore the feature"
+" set more thoroughly."
 msgstr ""
-"Si quieres ver si puedes encontrar características adicionales que puedan "
-"distinguir las imágenes buenas de las malas, no dudes en explorar el "
-"conjunto de características más a fondo."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:223
 msgid ""
-"The PlateViewer tool and either choose a few ImageQuality measurements at "
-"random or just use the arrow keys to scroll up and down through the "
+"The PlateViewer tool and either choose a few ImageQuality measurements at"
+" random or just use the arrow keys to scroll up and down through the "
 "measurements."
 msgstr ""
-"La herramienta PlateViewer y elegir algunas mediciones ImageQuality al azar "
-"o simplemente utilizar las teclas de flecha para desplazarse hacia arriba y "
-"hacia abajo a través de las mediciones."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:226
 msgid ""
-"A good candidate measurement will be relatively constant within most of the "
-"wells but have a small number of outliers (Fig 2)."
+"A good candidate measurement will be relatively constant within most of "
+"the wells but have a small number of outliers (Fig 2)."
 msgstr ""
-"Una buena medición candidata será relativamente constante en la mayoría de "
-"los pocillos, pero tendrá un pequeño número de valores atípicos (Fig. 2)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:229
 msgid ""
-"Once you have a good candidate, double click on an outlier well to open the "
-"images from that well.  If one or both seem very aberrant, you may wish to "
-"look at this measurement further."
+"Once you have a good candidate, double click on an outlier well to open "
+"the images from that well.  If one or both seem very aberrant, you may "
+"wish to look at this measurement further."
 msgstr ""
-"Una vez que tenga un buen candidato, haga doble clic en un valor atípico "
-"pocillo para abrir las imágenes de ese pocillo.  Si una o ambas parecen muy "
-"aberrantes, tal vez desee examinar más a fondo esta medición."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:237
 msgid ""
 "*Figure 2: Using the PlateViewer tool to find features that may be good "
 "markers of poor quality images.*"
 msgstr ""
-"*Figura 2: Uso de la herramienta PlateViewer para encontrar rasgos que "
-"pueden ser buenos marcadores de imágenes de mala calidad.*"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:240
 msgid ""
-"Once you have a measurement you'd like to gate based on, open that Histogram"
-" or the Scatter Plot tools and graph all the cells based on that (if you're "
-"using the Scatter Plot tool, you may wish to graph your chosen feature on "
-"the Y-axis vs ImageNumber on the X-axis as in the Workspace plots, but feel "
-"free to play around). If you find a gate that seems logical to make, proceed"
-" as in Step 3."
+"Once you have a measurement you'd like to gate based on, open that "
+"Histogram or the Scatter Plot tools and graph all the cells based on that"
+" (if you're using the Scatter Plot tool, you may wish to graph your "
+"chosen feature on the Y-axis vs ImageNumber on the X-axis as in the "
+"Workspace plots, but feel free to play around). If you find a gate that "
+"seems logical to make, proceed as in Step 3."
 msgstr ""
-"Una vez que tenga una medida en la que quiera basar la puerta, abra el "
-"Histograma o las herramientas de Gráfico de Dispersión y grafique todas las "
-"celdas basándose en ella (si está utilizando la herramienta de Gráfico de "
-"Dispersión, puede que desee graficar la característica elegida en el eje Y "
-"frente a ImageNumber en el eje X como en los gráficos de Espacio de Trabajo,"
-" pero siéntase libre de jugar). Si encuentra una puerta que le parezca "
-"lógica, proceda como en el Paso 3."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:246
-msgid ""
-"**Create filters based on the cutoffs you’ve determined (~10 minutes)**"
+msgid "**Create filters based on the cutoffs you’ve determined (~10 minutes)**"
 msgstr ""
-"**Crea filtros en función de los límites que hayas determinado (~10 "
-"minutos)**."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:249
 msgid ""
 "Now that we've created gates around our poor quality images, we need to "
-"convert them into filters so that we can access them in the Classifier tool."
-"  This process will be unnecessary in later versions of CellProfiler "
-"Analyst, but knowing how to manipulate the properties file is a worthwhile "
-"skill."
+"convert them into filters so that we can access them in the Classifier "
+"tool.  This process will be unnecessary in later versions of CellProfiler"
+" Analyst, but knowing how to manipulate the properties file is a "
+"worthwhile skill."
 msgstr ""
-"Ahora que hemos creado puertas alrededor de nuestras imágenes de baja "
-"calidad, necesitamos convertirlas en filtros para poder acceder a ellas en "
-"la herramienta Clasificador.  Este proceso será innecesario en versiones "
-"posteriores de CellProfiler Analyst, pero saber cómo manipular el archivo de"
-" propiedades es una habilidad que vale la pena."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:254
 msgid ""
 "When you feel like you’ve examined enough graphs, it’s time to create "
-"filters based on the gates you’ve determined contain bad images. There are "
-"two ways to do this:"
+"filters based on the gates you’ve determined contain bad images. There "
+"are two ways to do this:"
 msgstr ""
-"Cuando creas que has examinado suficientes gráficos, es el momento de crear "
-"filtros basados en las puertas que has determinado que contienen malas "
-"imágenes. Hay dos formas de hacerlo:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:258
 msgid "**Edit the properties file manually (recommended):**"
-msgstr "**Editar manualmente el archivo de propiedades (recomendado):**"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:260
 msgid ""
 "This method has the advantage that the filters you create are permanent; "
-"they won’t be lost when you close and re-open CPA. It does however require "
-"you to edit the properties file, and potentially requires you to "
-"troubleshoot what’s wrong with the SQL call if you type it in incorrectly."
+"they won’t be lost when you close and re-open CPA. It does however "
+"require you to edit the properties file, and potentially requires you to "
+"troubleshoot what’s wrong with the SQL call if you type it in "
+"incorrectly."
 msgstr ""
-"Este método tiene la ventaja de que los filtros que cree son permanentes; no"
-" se perderán cuando cierre y vuelva a abrir CPA. Sin embargo requiere que "
-"usted edite el archivo de propiedades, y potencialmente requiere que usted "
-"solucione el problema de la llamada SQL si la escribe incorrectamente."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:266
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:316
@@ -643,307 +474,224 @@ msgid ""
 "From whatever graph you happen to have open, open the Gate Inspector by "
 "calling ‘gate’-> ’MANAGE GATES’."
 msgstr ""
-"Desde cualquier gráfico que tengas abierto, abre el Inspector de Puertas "
-"llamando a 'puerta'-&gt; 'GESTIONAR PUERTAS'."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:269
 msgid "Open the properties file in a text editor."
-msgstr "Abra el archivo de propiedades en un editor de texto."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:271
 msgid "In the Image Filters section, create a new line and begin it with"
-msgstr "En la sección Filtros de imagen, cree una nueva línea y comience con"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:278
 msgid ""
 "For each of the blur or threshold gates in your Gate Inspector, copy the "
 "text followed by the word OR; as an example if your first gate was:"
 msgstr ""
-"Para cada una de las puertas de desenfoque o umbral en su Inspector de "
-"Puertas, copie el texto seguido de la palabra OR; como ejemplo si su primera"
-" puerta fuera:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:286
 msgid "Edit your SQL statement to read"
-msgstr "Edite su sentencia SQL para que diga"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:292
 msgid ""
 "DO NOT hit enter or otherwise add new lines between the different "
 "measurments; the statement must be one continuous line in order to work."
 msgstr ""
-"NO pulse Intro ni añada nuevas líneas entre las diferentes mediciones; la "
-"declaración debe ser una línea continua para que funcione."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:296
 msgid "Omit the ‘OR’ after your last gate measurement."
-msgstr "Omita el \"O\" después de la última medida de la puerta."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:298
 msgid ""
-"Repeat for the saturated gates, again omitting the last OR, following the "
-"statement"
+"Repeat for the saturated gates, again omitting the last OR, following the"
+" statement"
 msgstr ""
-"Repetir para las puertas saturadas, omitiendo de nuevo la última OR, "
-"siguiendo la declaración"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:305
 msgid "Save and close the properties file, then re-open CPA."
 msgstr ""
-"Guarde y cierre el archivo de propiedades y, a continuación, vuelva a abrir "
-"la CPA."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:307
 msgid "**Create the filters inside CPA (not recommended)**"
-msgstr "**Crear los filtros dentro de CPA (no recomendado)**"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:309
 msgid ""
-"This method does not require you to manually edit the properties file, but "
-"when filtering based on multiple features it takes longer to set up, cannot "
-"be edited, and would need to be repeated every time you closed and re-opened"
-" CellProfiler Analyst. It is therefore not recommended for use in this "
-"tutorial, but is presented in case you cannot or will not edit the "
-"properties file."
+"This method does not require you to manually edit the properties file, "
+"but when filtering based on multiple features it takes longer to set up, "
+"cannot be edited, and would need to be repeated every time you closed and"
+" re-opened CellProfiler Analyst. It is therefore not recommended for use "
+"in this tutorial, but is presented in case you cannot or will not edit "
+"the properties file."
 msgstr ""
-"Este método no requiere que usted edite manualmente el archivo de "
-"propiedades, pero cuando se filtra en base a múltiples características toma "
-"más tiempo configurarlo, no puede ser editado, y necesitaría ser repetido "
-"cada vez que cierre y vuelva a abrir CellProfiler Analyst. Por lo tanto, no "
-"se recomienda su uso en este tutorial, pero se presenta en caso de que no "
-"pueda o no quiera editar el archivo de propiedades."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:319
 msgid ""
 "Copy the text of the relevant gates into a text editor so that you can "
 "access it later."
 msgstr ""
-"Copie el texto de las puertas correspondientes en un editor de texto para "
-"poder acceder a él más tarde."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
 msgid ""
-"Determine which is the important cutoff for each gate (ie for a gate where "
-"values are too high, it’s the minimum value, for gates on values that are "
-"too low it’s the maximum value)"
+"Determine which is the important cutoff for each gate (ie for a gate "
+"where values are too high, it’s the minimum value, for gates on values "
+"that are too low it’s the maximum value)"
 msgstr ""
-"Determinar cuál es el corte importante para cada puerta (es decir, para una "
-"puerta en la que los valores son demasiado altos, es el valor mínimo, para "
-"las puertas en los valores que son demasiado bajos es el valor máximo)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:326
-msgid ""
-"Open the filter creation dialog by selecting ‘filter’->’CREATE NEW FILTER’"
+msgid "Open the filter creation dialog by selecting ‘filter’->’CREATE NEW FILTER’"
 msgstr ""
-"Abra el cuadro de diálogo de creación de filtros seleccionando "
-"\"filtro\"-&gt;\"CREAR NUEVO FILTRO\"."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:329
 msgid "Name your filter Blurry"
-msgstr "Nombre su filtro Borroso"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:331
 msgid ""
-"Enter each important cutoff from the blur or threshold gates, selecting ‘Add"
-" column’ after each and changing the separator statement to OR"
+"Enter each important cutoff from the blur or threshold gates, selecting "
+"‘Add column’ after each and changing the separator statement to OR"
 msgstr ""
-"Introduzca cada corte importante de las puertas de desenfoque o umbral, "
-"seleccionando \"Añadir columna\" después de cada uno y cambiando la "
-"declaración separadora a OR"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:335
 msgid ""
-"Create a filter named Saturated containing the important cutoffs from the "
-"saturation gates"
+"Create a filter named Saturated containing the important cutoffs from the"
+" saturation gates"
 msgstr ""
-"Crea un filtro llamado Saturated que contenga los cortes importantes de las "
-"compuertas de saturación"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:342
 msgid "*Figure 3: Creating filters inside CPA*"
-msgstr "*Figura 3: Creación de filtros dentro de CPA*."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:344
 msgid ""
 "**Create classifier rules to distinguish good from bad images (~30 "
 "minutes)**"
 msgstr ""
-"**Crear reglas de clasificación para distinguir las imágenes buenas de las "
-"malas (~30 minutos)**."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:347
 msgid ""
 "Creating gates based on the 12 measurements we graphed has helped us "
-"identify some low quality images so far, but we are not utilizing the rest "
-"of our measurements and we can't be certain we've found them all.  By "
-"creating a machine learning classifier we can find features that correlate "
-"well with bad images in our experiment and increase our likelihood of "
-"identifying additional low quality images."
+"identify some low quality images so far, but we are not utilizing the "
+"rest of our measurements and we can't be certain we've found them all.  "
+"By creating a machine learning classifier we can find features that "
+"correlate well with bad images in our experiment and increase our "
+"likelihood of identifying additional low quality images."
 msgstr ""
-"La creación de puertas basadas en las 12 mediciones que graficamos nos ha "
-"ayudado a identificar algunas imágenes de baja calidad hasta ahora, pero no "
-"estamos utilizando el resto de nuestras mediciones y no podemos estar "
-"seguros de haberlas encontrado todas.  Mediante la creación de un "
-"clasificador de aprendizaje automático podemos encontrar características que"
-" se correlacionan pocillo con malas imágenes en nuestro experimento y "
-"aumentar nuestra probabilidad de identificar imágenes de baja calidad "
-"adicionales."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:354
 msgid "Open the Classifier tool (|Inline5|, 2\\ :sup:`nd` on left)."
 msgstr ""
-"Abra la herramienta Clasificador (|Inline5|, 2\\ :sup:`nd` a la izquierda)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:452
 msgid "Inline5"
-msgstr "En línea5"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:356
 msgid ""
 "Fetch 50 random images from ‘experiment’, then 25 each from ‘Blurry’ and "
 "‘Saturated’"
 msgstr ""
-"Obtén 50 imágenes aleatorias de \"experimento\", 25 de \"Borrosa\" y 25 de "
-"\"Saturada\"."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:359
 msgid ""
 "Create a good classifier by dragging images to the positive and negative "
-"bins and training with the Fast Gentle Boosting classifier. If needed feel "
-"free to refer to the Translocation tutorial instructions for reminders of "
-"how to fetch more images, check the confusion matrix of your classifier, "
-"etc."
+"bins and training with the Fast Gentle Boosting classifier. If needed "
+"feel free to refer to the Translocation tutorial instructions for "
+"reminders of how to fetch more images, check the confusion matrix of your"
+" classifier, etc."
 msgstr ""
-"Cree un buen clasificador arrastrando las imágenes a los bines positivo y "
-"negativo y entrenando con el clasificador Fast Gentle Boosting. Si es "
-"necesario, no dude en consultar las instrucciones del tutorial Translocation"
-" para recordar cómo obtener más imágenes, comprobar la matriz de confusión "
-"de su clasificador, etc."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:365
 msgid ""
-"In a larger experiment, you might decide to add more bins (for images that "
-"are out of focus, have debris, contain the well edge, etc), but stick to two"
-" bins for this experiment."
+"In a larger experiment, you might decide to add more bins (for images "
+"that are out of focus, have debris, contain the well edge, etc), but "
+"stick to two bins for this experiment."
 msgstr ""
-"En un experimento de mayor envergadura, es posible que decida añadir más "
-"contenedores (para imágenes desenfocadas, con restos, que contengan el borde"
-" pocillo, etc.), pero limítese a dos contenedores para este experimento."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:369
 msgid ""
 "Don’t only fetch additional images from your filtered sets, make sure to "
-"pull some from ‘Random’ as well, since your gates may not contain every bad "
-"image in the experiment and since you want a robust set of good-quality "
-"images for your positive bin."
+"pull some from ‘Random’ as well, since your gates may not contain every "
+"bad image in the experiment and since you want a robust set of good-"
+"quality images for your positive bin."
 msgstr ""
-"No sólo obtenga imágenes adicionales de sus conjuntos filtrados, asegúrese "
-"de obtener algunas de 'Random' como pocillo, ya que sus puertas pueden no "
-"contener todas las imágenes malas del experimento y quiere un conjunto "
-"robusto de imágenes de buena calidad para su contenedor positivo."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:374
 msgid ""
-"You will likely have to use more than 5 rules to get good classification- "
-"try setting this number to 25"
+"You will likely have to use more than 5 rules to get good classification-"
+" try setting this number to 25"
 msgstr ""
-"Es probable que tenga que utilizar más de 5 reglas para obtener una buena "
-"clasificación: pruebe a fijar este número en 25."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:377
 msgid ""
 "When you’re happy with your classifier (this is a small experiment, so "
-"perfect classification will not be possible, but aim for >60% accuracy in "
-"each bin at least), examine the rules created by using ‘Advanced’->’Edit "
-"rules…’."
+"perfect classification will not be possible, but aim for >60% accuracy in"
+" each bin at least), examine the rules created by using ‘Advanced’->’Edit"
+" rules…’."
 msgstr ""
-"Cuando esté satisfecho con su clasificador (se trata de un pequeño "
-"experimento, por lo que no será posible una clasificación perfecta, pero "
-"intente obtener una precisión &gt;60% en cada casilla como mínimo), examine "
-"las reglas creadas mediante 'Avanzado'-&gt;'Editar reglas...'."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:382
 msgid ""
-"Remove any rules that DO NOT have to do with ImageQuality (like ‘GroupIndex,"
-" etc), then copy the remainder Into a text editor and save as a ‘.txt’ file."
-" Keep the text file open for now."
+"Remove any rules that DO NOT have to do with ImageQuality (like "
+"‘GroupIndex, etc), then copy the remainder Into a text editor and save as"
+" a ‘.txt’ file. Keep the text file open for now."
 msgstr ""
-"Elimine cualquier regla que NO tenga que ver con ImageQuality (como "
-"'GroupIndex, etc), luego copie el resto en un editor de texto y guárdelo "
-"como un archivo '.txt'. Mantenga el archivo de texto abierto por ahora."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:386
 msgid ""
 "Save your training set for future reference if desired, then close "
 "CellProfiler Analyst."
 msgstr ""
-"Guarde su conjunto de entrenamiento para futuras referencias si lo desea, "
-"luego cierre CellProfiler Analyst."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:389
 msgid "**Add quality control steps to an analysis pipeline(~15 minutes)**"
 msgstr ""
-"**Añadir pasos de control de calidad a un análisis pipeline(~15 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:391
 msgid ""
 "If you have time, you can add the list of rules you identified in your "
-"machine learning classifier to the CellProfiler pipeline that corresponds to"
-" this data set.  This can be valuable to do in processing your own large "
-"datasets, especially if time or computational power is at a premium."
+"machine learning classifier to the CellProfiler pipeline that corresponds"
+" to this data set.  This can be valuable to do in processing your own "
+"large datasets, especially if time or computational power is at a "
+"premium."
 msgstr ""
-"Si tiene tiempo, puede añadir la lista de reglas que identificó en su "
-"clasificador de aprendizaje automático al CellProfiler pipeline que "
-"corresponde a este conjunto de datos.  Esto puede ser valioso a la hora de "
-"procesar sus propios conjuntos de datos de gran tamaño, especialmente si el "
-"tiempo o la potencia de cálculo son escasos."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:396
 msgid ""
-"Reopen CellProfiler, then open the BBBC022_Analysis pipeline (provided or "
-"available as part of the \"AdvancedSegmentation\" tutorial)."
+"Reopen CellProfiler, then open the BBBC022_Analysis pipeline (provided or"
+" available as part of the \"AdvancedSegmentation\" tutorial)."
 msgstr ""
-"Vuelva a abrir CellProfiler, luego abra el BBBC022_Analysis pipeline "
-"(proporcionado o disponible como parte del tutorial "
-"\"AdvancedSegmentation\")."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:399
 msgid ""
 "Reopen the BBBC022_QC pipeline for reference, either in a separate "
 "CellProfiler window or in a text editor."
 msgstr ""
-"Vuelva a abrir el BBBC022_QC pipeline como referencia, ya sea en una ventana"
-" separada de CellProfiler o en un editor de texto."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:402
 msgid "Click on the |Inline6| button to open the ‘Add modules’ window"
-msgstr "Haga clic en el botón |Inline6| para abrir la ventana \"Añadir módulos\"."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:453
 msgid "Inline6"
-msgstr "En línea6"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:404
 msgid ""
-"If your rule set contains any rules based on ‘ImageQuality_Threshold’, add "
-"two ‘MeasureImageQuality’ modules (from the ‘Measurement’ category) to the "
-"very top of your pipeline, otherwise add one."
+"If your rule set contains any rules based on ‘ImageQuality_Threshold’, "
+"add two ‘MeasureImageQuality’ modules (from the ‘Measurement’ category) "
+"to the very top of your pipeline, otherwise add one."
 msgstr ""
-"Si su conjunto de reglas contiene alguna regla basada en "
-"'ImageQuality_Threshold', añada dos módulos 'MeasureImageQuality' (de la "
-"categoría 'Measurement') en la parte superior de su pipeline, de lo "
-"contrario añada uno."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:409
 msgid ""
-"Configure the ‘MeasureImageQuality’ module(s) so that they’ll provide all "
-"the measurements specified in your rules file; you can refer to the settings"
-" in the QC pipeline and/or the rules file to determine which these are."
+"Configure the ‘MeasureImageQuality’ module(s) so that they’ll provide all"
+" the measurements specified in your rules file; you can refer to the "
+"settings in the QC pipeline and/or the rules file to determine which "
+"these are."
 msgstr ""
-"Configure los módulos \"MeasureImageQuality\" para que proporcionen todas "
-"las mediciones especificadas en el archivo de reglas; puede consultar la "
-"configuración en QC pipeline y/o el archivo de reglas para determinar cuáles"
-" son."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:414
 msgid ""
@@ -953,67 +701,48 @@ msgid ""
 "measuring the blur at 4 scales, but you may or may not need all of them "
 "based on the rules selected."
 msgstr ""
-"Para las mediciones que terminan en un número, como "
-"'Image_ImageQuality_Correlation_OrigER_10', el número se refiere a la escala"
-" 'Escala espacial para mediciones de desenfoque' especificada. Empezó "
-"midiendo el desenfoque en 4 escalas, pero puede o no necesitarlas todas en "
-"función de las reglas seleccionadas."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:420
 msgid "Add the ‘FlagImage’ module from the ‘Data Tools’ category."
-msgstr "Añada el módulo \"FlagImage\" de la categoría \"Herramientas de datos\"."
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:422
 msgid "Leave the flag category as ‘Metadata’, and the name as ‘QCFlag’"
 msgstr ""
-"Deje la categoría del indicador como \"Metadatos\" y el nombre como "
-"\"QCFlag\"."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:424
 msgid ""
-"If you had created many bins in your classification, you would set this name"
-" as something more descriptive, such as ‘QCDebris’, since you’d have a "
-"different flag name for each bin in your classifier."
+"If you had created many bins in your classification, you would set this "
+"name as something more descriptive, such as ‘QCDebris’, since you’d have "
+"a different flag name for each bin in your classifier."
 msgstr ""
-"Si hubiera creado muchas bandejas en su clasificación, establecería este "
-"nombre como algo más descriptivo, como 'QCDebris', ya que tendría un nombre "
-"de bandera diferente para cada bandeja en su clasificador."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:428
 msgid "Leave the ‘Skip image set if flagged?’ setting at no"
-msgstr "Deje la opción \"¿Omitir imagen si está marcada?"
+msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:430
 msgid ""
 "Your classifier probably wasn’t incredibly accurate, so setting this to "
-"‘yes’ might result in throwing out real data while still not excluding all "
-"the bad images. Nevertheless, if you had far more images than you felt you "
-"needed you *could* set this to yes."
+"‘yes’ might result in throwing out real data while still not excluding "
+"all the bad images. Nevertheless, if you had far more images than you "
+"felt you needed you *could* set this to yes."
 msgstr ""
-"Su clasificador probablemente no era increíblemente preciso, por lo que "
-"establecerlo en \"sí\" podría resultar en descartar datos reales sin excluir"
-" todas las imágenes malas. No obstante, si tiene muchas más imágenes de las "
-"que cree que necesita, *podría* establecer esta opción en \"sí\"."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:435
 msgid ""
-"Set ‘Flag is based on’ to ‘Rules’ and provide the path and file information "
-"to your rules text file."
+"Set ‘Flag is based on’ to ‘Rules’ and provide the path and file "
+"information to your rules text file."
 msgstr ""
-"Establezca \"Indicador basado en\" en \"Reglas\" y proporcione la ruta y la "
-"información del archivo de texto de sus reglas."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:438
 msgid ""
-"Set the Class number to whatever class in your rule set represents the bad "
-"images- this is 2 if you kept the default bins and dragged bad images to the"
-" ‘Negative’ bin."
+"Set the Class number to whatever class in your rule set represents the "
+"bad images- this is 2 if you kept the default bins and dragged bad images"
+" to the ‘Negative’ bin."
 msgstr ""
-"Establezca el número de Clase en la clase que represente a las imágenes "
-"defectuosas en su conjunto de reglas - esto es 2 si mantiene los "
-"contenedores predeterminados y arrastra las imágenes defectuosas al "
-"contenedor \"Negativo\"."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:442
 msgid "Save your pipeline."
-msgstr "Guarde su pipeline."
+msgstr ""
+
