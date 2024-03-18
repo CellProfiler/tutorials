@@ -1,511 +1,670 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Imaging Platform
-# This file is distributed under the same license as the
-# cellprofiler-tutorials package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the cellprofiler-tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Esteban, 2024
+# Beth Cimini, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: cellprofiler-tutorials \n"
+"Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 16:49-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: es\n"
-"Language-Team: es <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"PO-Revision-Date: 2024-01-29 15:29+0000\n"
+"Last-Translator: Beth Cimini, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:2
-msgid "CellProfiler Tutorial: 3d monolayer"
-msgstr ""
+#: ../../source/3d-monolayer/3D_Monolayer.md:3
+msgid "Organizing and importing images"
+msgstr "Organizar e importar imágenes"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:5
-msgid "Organizing and importing images"
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:8
 msgid "Z-stacks as TIFFs"
-msgstr ""
+msgstr "Z-stacks como TIFF"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:10
 msgid ""
-"This tutorial features images of human induced pluripotent stem cells "
-"from the Allen Institute of Cell Science. More details are available at "
-"the following link: https://bbbc.broadinstitute.org/BBBC034."
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:13
-msgid ""
 "CellProfiler 3D currently only works with TIFF files. TIFF files can be "
 "rather complicated, having hyper-stack structures with all channels and "
-"z-planes in a single file. The acceptable CellProfiler format for storing"
-" z-stacks is to have a separate TIFF file for each channel."
+"z-planes in a single file. The acceptable CellProfiler format for storing "
+"z-stacks is to have a separate TIFF file for each channel."
 msgstr ""
+"CellProfiler 3D actualmente sólo funciona con archivos TIFF. Los archivos "
+"TIFF pueden ser bastante complicados, teniendo estructuras hyper-stack con "
+"todos los canales y planos z en un solo archivo. El formato aceptable de "
+"CellProfiler para almacenar z-stacks es tener un archivo TIFF separado para "
+"cada canal."
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:15
+msgid ""
+"CellProfiler can be used to convert from other file formats to individual "
+"TIFF files for each channel using the **SaveImages** module."
+msgstr ""
+"CellProfiler puede utilizarse para convertir desde otros formatos de archivo"
+" a archivos TIFF individuales para cada canal utilizando el módulo "
+"**SaveImages**."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:18
 msgid ""
-"CellProfiler can be used to convert from other file formats to individual"
-" TIFF files for each channel using the **SaveImages** module."
+"Note that this tutorial is an advanced tutorial. We recommend completing the"
+" Translocation tutorial in order to learn principles of image thresholding "
+"and segmentation prior to starting this tutorial."
 msgstr ""
+"Tenga en cuenta que este tutorial es un tutorial avanzado. Recomendamos "
+"completar el Tutorial de  Traslocación para aprender los principios de la "
+"umbralización y segmentación de imágenes antes de comenzar este tutorial."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:21
 msgid ""
-"Note that this tutorial is an advanced tutorial. We recommend completing "
-"the Translocation tutorial in order to learn principles of image "
-"thresholding and segmentation prior to starting this tutorial."
+"Appropiately naming the output(s) of each CellProfiler module is important "
+"in order to avoid confusion,especially in large and complex pipelines. "
+"Throughout this tutorial we will suggest names for each of the outputs, but "
+"feel free to use your own."
 msgstr ""
+"Es importante nombrar apropiadamente la(s) salida(s) de cada módulo de "
+"CellProfiler para evitar confusiones, especialmente en pipelines grandes y "
+"complejos. A lo largo de este tutorial sugeriremos nombres para cada una de "
+"las salidas, pero siéntase libre de utilizar los suyos propios."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:24
-msgid ""
-"Appropiately naming the output(s) of each CellProfiler module is "
-"important in order to avoid confusion,especially in large and complex "
-"pipelines. Throughout this tutorial we will suggest names for each of the"
-" outputs, but feel free to use your own."
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:25
+#: ../../source/3d-monolayer/3D_Monolayer.md:22
 msgid ""
 "This tutorial will guide you through the creation of a complete analysis "
 "pipeline. If you wish, you can also find a final version of a similar "
 "pipeline in the *3d_monolayer_final.cppipe* file, which should be in the "
-"same folder as this tutorial. To load the pipeline, simply drag the file "
-"to the left panel on the CellProfiler window."
+"same folder as this tutorial. To load the pipeline, simply drag the file to "
+"the left panel on the CellProfiler window."
 msgstr ""
+"Este tutorial le guiará en la creación de un análisis completo pipeline. Si "
+"lo desea, también puede encontrar una versión final de un pipeline similar "
+"en el archivo *3d_monolayer_final.cppipe*, que debería estar en la misma "
+"carpeta que este tutorial. Para cargar el pipeline, simplemente arrastre el "
+"archivo al panel izquierdo de la ventana de CellProfiler."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:26
-msgid ""
-"Helpful video tutorials are available on the Center for Open Bioimage "
-"Analysis YouTube page at https://www.youtube.com/channel/UC_id9sE-"
-"vu_i30Bd-skay7Q."
-msgstr ""
+#: ../../source/3d-monolayer/3D_Monolayer.md:27
+msgid "Importing data in CellProfiler"
+msgstr "Importación de datos en CellProfiler"
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:29
+msgid "Highlight the Images module."
+msgstr "Seleccione el módulo Imágenes (Images)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:31
-msgid "Importing data in CellProfiler"
+msgid ""
+"Drag-and-drop the images you will analyze into the Images module window."
 msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:33
-msgid "Highlight the Images module."
-msgstr ""
+"Arrastre y suelte las imágenes que vaya a analizar en la ventana del módulo "
+"Imágenes."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:34
-msgid "Drag-and-drop the images you will analyze into the Images module window."
-msgstr ""
+msgid "Highlight the Metadata module."
+msgstr "Seleccione el módulo Metadatos (Metadata)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:36
-msgid "Highlight the Metadata module."
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:37
 msgid "Enter the following regular expression:"
-msgstr ""
+msgstr "Introduzca la siguiente expresión regular:"
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:39
-msgid "``^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])``"
+#: ../../source/3d-monolayer/3D_Monolayer.md:40
+msgid ""
+"This regular expression will parse the filenames and organize the data."
 msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:41
-msgid "This regular expression will parse the filenames and organize the data."
-msgstr ""
+"Esta expresión regular analizará los nombres de archivo y organizará los "
+"datos."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:43
 msgid "Highlight the NamesAndTypes module."
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:44
-msgid "Assign a name to “Images matching rules”."
-msgstr ""
+msgstr "Seleccione el módulo NombreYTipos (NamesAndTypes)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:45
+msgid "Assign a name to “Images matching rules”."
+msgstr ""
+"Asigne un nombre a \"Reglas de coincidencia de imágenes\" (“Images matching "
+"rules”)."
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:47
 msgid "Choose “Process as 3D”"
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:46
-msgid "Populate the fields for “Relative Pixel Spacing”."
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:48
-msgid ""
-"You can find this information on the image metadata. Open the image in "
-"Fiji and go to Image > Show Info… (or use Ctrl + I)"
-msgstr ""
+msgstr "Seleccione \"Procesar como 3D\" (\"Process as 3D\")."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:49
-msgid ""
-"Near the end of the metadata you will find the information for the “Voxel"
-" size” (x,y,z). You can also record this metadata when collecting your "
-"own images"
+msgid "Populate the fields for “Relative Pixel Spacing”."
 msgstr ""
+"Rellene los campos de \"Espaciado relativo entre píxeles\" (\"Relative Pixel"
+" Spacing\")."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:51
+msgid ""
+"You can find this information on the image metadata. Open the image in Fiji "
+"and go to Image > Show Info… (or use Ctrl + I)"
+msgstr ""
+"Puede encontrar esta información en los metadatos de la imagen. Abra la "
+"imagen en Fiji y vaya a Imagen > Mostrar Información... (o utilice Ctrl + "
+"I)."
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:52
+msgid ""
+"Near the end of the metadata you will find the information for the “Voxel "
+"size” (x,y,z). You can also record this metadata when collecting your own "
+"images"
+msgstr ""
+"Cerca del final de los metadatos encontrará la información para el \"Tamaño "
+"de vóxel\" (\"Voxel size') (x,y,z). También puede registrar estos metadatos "
+"cuando obtenga sus propias imágenes"
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:54
 msgid ""
 "For this example, the relative pixel spacing is 0.26 in x and y and 0.29 "
 "pixels in z."
 msgstr ""
+"Para este ejemplo, el espaciado relativo entre píxeles es de 0,26 en x e y y"
+" de 0,29 píxeles en z."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:53
+#: ../../source/3d-monolayer/3D_Monolayer.md:56
 msgid ""
 "The actual units do not matter, rather their relative proportion. The "
 "numbers are unitless and therefore the decimal place does not matter."
 msgstr ""
+"Las unidades reales no importan, sino su proporción relativa. Los números no"
+" tienen unidades y, por tanto, el decimal no importa."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:57
+#: ../../source/3d-monolayer/3D_Monolayer.md:65
 msgid ""
-"Create “rule criteria” to identify an image by its color/channel. For "
-"example, using the Metadata you just extracted - ``Metadata -> Does -> "
-"Have ChannelNumber matching -> 0`` would match the first image."
+"Give the images “variable names” that describe the contents of the image. "
+"For example, use the name *dna* to describe an image stained with DAPI."
 msgstr ""
+"Dé a las imágenes \"nombres-variable\" que describan el contenido de la "
+"imagen. Por ejemplo, utilice el nombre *dna* para describir una imagen "
+"teñida con DAPI."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:61
+#: ../../source/3d-monolayer/3D_Monolayer.md:69
 msgid ""
-"Give the images “variable names” that describe the contents of the image."
-" For example, use the name *dna* to describe an image stained with DAPI."
+"Add images with rulesets for the other channels in the experiment. In this "
+"case, Channel 0 contains images of the plasma membrane, Channel 1 contains "
+"images of mitochondria, and Channel 2 contain images of DNA. You can name "
+"them *origMemb*, *origMito* and *origDNA*, respectively."
 msgstr ""
+"Añada imágenes con conjuntos de reglas para los demás canales del "
+"experimento. En este caso, el Canal 0 contiene imágenes de la membrana "
+"plasmática, el Canal 1 contiene imágenes de mitocondrias y el Canal 2 "
+"contiene imágenes de ADN. Puede nombrarlos *origMemb*, *origMito* y "
+"*origDNA*, respectivamente."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:64
-msgid ""
-"Add images with rulesets for the other channels in the experiment. In "
-"this case, Channel 0 contains images of the plasma membrane, Channel 1 "
-"contains images of mitochondria, and Channel 2 contain images of DNA. You"
-" can name them *origMemb*, *origMito* and *origDNA*, respectively."
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:70
+#: ../../source/3d-monolayer/3D_Monolayer.md:74
 msgid "Find objects: nuclei"
-msgstr ""
+msgstr "Encontrar objetos: núcleos"
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:73
+#: ../../source/3d-monolayer/3D_Monolayer.md:76
 msgid "Image preparation"
-msgstr ""
+msgstr "Preparación de imágenes"
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:75
+#: ../../source/3d-monolayer/3D_Monolayer.md:78
 msgid ""
 "Before attempting to segment the cells in the images, pre-processing the "
-"images with filters and various image processing methods will improve the"
-" results."
+"images with filters and various image processing methods will improve the "
+"results."
 msgstr ""
+"Antes de intentar segmentar las células en las imágenes, el preprocesamiento"
+" de las mismas con filtros y diversos métodos de tratamiento de imágenes "
+"mejorará los resultados."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:79
+#: ../../source/3d-monolayer/3D_Monolayer.md:82
 msgid ""
 "Add a **RescaleIntensity** module for the DNA channel. Rescaling the DNA "
-"image proportionally stretches the intensity values to the full intensity"
-" range, from 0 to 1. In this case, we find that rescaling improves the "
-"thresholding and subsequent segmentation of nuclei. When using rescaling "
-"in your pipelines, be careful to perform measurements on the original "
-"images, not the rescaled images. Name the output *RescaledDNA*."
+"image proportionally stretches the intensity values to the full intensity "
+"range, from 0 to 1. In this case, we find that rescaling improves the "
+"thresholding and subsequent segmentation of nuclei. When using rescaling in "
+"your pipelines, be careful to perform measurements on the original images, "
+"not the rescaled images. Name the output *RescaledDNA*."
 msgstr ""
+"Añadir un módulo **RescaleIntensity**  para el canal de ADN. El reescalado "
+"de la imagen de ADN estira proporcionalmente los valores de intensidad a "
+"todo el rango de intensidad, de 0 a 1. En este caso, encontramos que el "
+"reescalado mejora el umbral y la posterior segmentación de los núcleos. "
+"Cuando utilice el reescalado en sus procesos, tenga cuidado de realizar las "
+"mediciones en las imágenes originales, no en las reescaladas. Nombre la "
+"salida *RescaledDNA*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:91
+#: ../../source/3d-monolayer/3D_Monolayer.md:95
 msgid ""
-"Add a **Resize** module. Processing 3D images requires much more "
-"computation time than 2D images. Often, downsampling an image can yield "
-"large performance gains and at the same time smooth an image to remove "
-"noise. Final segmentation results will be minimally affected by "
-"downsampling if the objects of interest are relatively large compared to "
-"the pixel size. Choose a value of *0.5* for both *X* and *Y*, this will "
-"halve each of the XY dimensions, so the resulting image will have a "
-"quarter of the area of the original. *Do not resize Z* (keep the factor "
-"at *1*), otherwise you will discard images from the Z stack. Name the "
-"output *ResizedDNA*."
+"Add a **Resize** module. Processing 3D images requires much more computation"
+" time than 2D images. Often, downsampling an image can yield large "
+"performance gains and at the same time smooth an image to remove noise. "
+"Final segmentation results will be minimally affected by downsampling if the"
+" objects of interest are relatively large compared to the pixel size. Choose"
+" a value of *0.5* for both *X* and *Y*, this will halve each of the XY "
+"dimensions, so the resulting image will have a quarter of the area of the "
+"original. *Do not resize Z* (keep the factor at *1*), otherwise you will "
+"discard images from the Z stack. Name the output *ResizedDNA*."
 msgstr ""
+"Añadir un módulo **Resize**. El procesamiento de imágenes 3D requiere mucho "
+"más tiempo de cálculo que el de las imágenes 2D. A menudo, reducir el tamaño"
+" de una imagen puede aumentar considerablemente el rendimiento y, al mismo "
+"tiempo, suavizar la imagen para eliminar el ruido. Los resultados finales de"
+" la segmentación se verán mínimamente afectados por la reducción de la "
+"resolución si los objetos de interés son relativamente grandes en "
+"comparación con el tamaño de los píxeles. Elija un valor de *0,5* para *X* y"
+" *Y*, esto reducirá a la mitad cada una de las dimensiones XY, por lo que la"
+" imagen resultante tendrá una cuarta parte del área de la original. *No "
+"redimensione Z* (mantenga el factor en *1*), de lo contrario descartará "
+"imágenes de la stack Z. Nombre la salida *ResizedDNA*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:103
+#: ../../source/3d-monolayer/3D_Monolayer.md:108
 msgid ""
-"Add a **MedianFilter** module. A median filter will homogenize the signal"
-" within the nucleus and reduce noise in the background. DNA is not "
-"uniformly distributed throughout the nucleus, which can lead to holes "
-"forming in the downstream object identification. A median filter will "
-"preserve boundaries better than other smoothing filters such as the "
-"Gaussian filter. For the example images, choose a filter size of *5*. "
-"This number was chosen empirically: it is smaller than the diameter of a "
-"typical nucleus; it is small enough that nuclei aren’t merged together, "
-"yet large enough to suppress over-segmentation of the nuclei. Name the "
-"output *MedianFiltDNA*."
+"Add a **MedianFilter** module. A median filter will homogenize the signal "
+"within the nucleus and reduce noise in the background. DNA is not uniformly "
+"distributed throughout the nucleus, which can lead to holes forming in the "
+"downstream object identification. A median filter will preserve boundaries "
+"better than other smoothing filters such as the Gaussian filter. For the "
+"example images, choose a filter size of *5*. This number was chosen "
+"empirically: it is smaller than the diameter of a typical nucleus; it is "
+"small enough that nuclei aren’t merged together, yet large enough to "
+"suppress over-segmentation of the nuclei. Name the output *MedianFiltDNA*."
 msgstr ""
+"Añadir un módulo **MedianFilter**. Un filtro de mediana homogeneizará la "
+"señal dentro del núcleo y reducirá el ruido de fondo. El ADN no está "
+"distribuido uniformemente por todo el núcleo, lo que puede dar lugar a la "
+"formación de agujeros en la identificación de objetos posterior. Un filtro "
+"mediano preservará los límites mejor que otros filtros de suavizado, como el"
+" filtro gaussiano. Para las imágenes de ejemplo, elija un tamaño de filtro "
+"de *5*. Este número se eligió empíricamente: es más pequeño que el diámetro "
+"de un núcleo típico; es lo suficientemente pequeño como para que los núcleos"
+" no se fusionen, pero lo suficientemente grande como para suprimir la "
+"sobresegmentación de los núcleos. Nombre la salida *MedianFiltDNA*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:116
+#: ../../source/3d-monolayer/3D_Monolayer.md:121
 msgid "Segmentation"
-msgstr ""
+msgstr "Segmentación"
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:117
+#: ../../source/3d-monolayer/3D_Monolayer.md:123
 msgid ""
 "In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* "
 "module does not support 3D images. Thus, we will have to use a different "
 "strategy to segment the nuclei."
 msgstr ""
+"En CellProfiler 4 (y versiones anteriores) el módulo "
+"*IdentifyPrimaryObjects* no soporta imágenes 3D. Por lo tanto, tendremos que"
+" utilizar una estrategia diferente para segmentar los núcleos."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:119
+#: ../../source/3d-monolayer/3D_Monolayer.md:125
 msgid ""
 "Add an **Threshold** module. This identifies a pixel intensity value to "
 "separate the foreground (nuclei) from the background. Empirically, we’ve "
-"found that a two-class Otsu threshold works well for this data. We "
-"encourage you to try other thresholding methods to compare the outputs. "
-"Name the output *MaskDNA*."
+"found that a two-class Otsu threshold works well for this data. We encourage"
+" you to try other thresholding methods to compare the outputs. Name the "
+"output *MaskDNA*."
 msgstr ""
+"Añadir un módulo **Threshold**. Esto identifica un valor de intensidad de "
+"píxel para separar el primer plano (núcleos) del fondo. Empíricamente, hemos"
+" encontrado que un umbral Otsu de dos clases funciona pocillo para estos "
+"datos. Le animamos a probar otros métodos de umbralización para comparar los"
+" resultados. Nombre la salida *MaskDNA*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:130
+#: ../../source/3d-monolayer/3D_Monolayer.md:137
 msgid ""
-"Add a **RemoveHoles** module. This module implements an algorithm that "
-"will remove small holes within the nucleus. Any remaining holes will "
-"contribute to over-segmentation of the nuclei. Choose a size of *20*."
+"Add a **RemoveHoles** module. This module implements an algorithm that will "
+"remove small holes within the nucleus. Any remaining holes will contribute "
+"to over-segmentation of the nuclei. Choose a size of *20*."
 msgstr ""
+"Añade un módulo **RemoveHoles**. Este módulo implementa un algoritmo que "
+"eliminará pequeños agujeros dentro del núcleo. Cualquier agujero restante "
+"contribuirá a la sobre-segmentación de los núcleos. Elija un tamaño de *20*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:140
+#: ../../source/3d-monolayer/3D_Monolayer.md:161
 msgid ""
-"Add a **Watershed** module. This module implements the watershed "
-"algorithm, which will segment the nuclei. Select a Footprint of *10* and "
-"Downsample by *2*. Downsampling reduces processing time and decreases "
-"noise. For more information on the watershed algorithm refer to this "
-"helpful `MATLAB blog post "
-"<https://www.mathworks.com/company/newsletters/articles/the-watershed-"
-"transform-strategies-for-image-segmentation.html>`__."
+"Add a **ResizeObjects** module to return the segmented nuclei to the size of"
+" the original image. Since the original image was scaled down by *0.5*, it "
+"must be scaled up by *2*. The output of this module is the nuclei we are "
+"seeking. Name the output *Nuclei*."
 msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:152
-msgid ""
-"Add a **ResizeObjects** module to return the segmented nuclei to the size"
-" of the original image. Since the original image was scaled down by "
-"*0.5*, it must be scaled up by *2*. The output of this module is the "
-"nuclei we are seeking. Name the output *Nuclei*."
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:163
-msgid "Find objects: cells"
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:165
-msgid ""
-"Now that we’ve segmented the nuclei, we want to segment the cytoplasm for"
-" each nuclei whose boundaries are defined by the membrane channel. The "
-"membrane channel presents more of a challenge because, unlike the nuclei,"
-" the membrane signal is variable and the boundaries are connected "
-"together in a sort of mesh. However, we can use the location of the "
-"nuclei we already found as 'seeds' to guide the Watershed module later on"
-" to identify regions with cells."
-msgstr ""
+"Añadir un módulo **ResizeObjects** para devolver los núcleos segmentados al "
+"tamaño de la imagen original. Dado que la imagen original se redujo en "
+"*0,5*, se debe ampliar en *2*. La salida de este módulo son los núcleos que "
+"estamos buscando. Nombre la salida *Nuclei*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:172
-msgid "Transform nuclei into seeds"
-msgstr ""
+msgid "Find objects: cells"
+msgstr "Buscar objetos: células"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:174
 msgid ""
-"We will start by shrinking the nuclei to make them more seed-like by "
-"adding an **ErodeObjects** module. Use the *ball* structuring element "
-"with a size of *5*. Select “Yes” for the “Prevent object removal” option "
-"in order to avoid losing any nuclei."
+"Now that we’ve segmented the nuclei, we want to segment the cytoplasm for "
+"each nuclei whose boundaries are defined by the membrane channel. The "
+"membrane channel presents more of a challenge because, unlike the nuclei, "
+"the membrane signal is variable and the boundaries are connected together in"
+" a sort of mesh. However, we can use the location of the nuclei we already "
+"found as 'seeds' to guide the Watershed module later on to identify regions "
+"with cells."
 msgstr ""
+"Ahora que hemos segmentado los núcleos, queremos segmentar el citoplasma "
+"para cada núcleo cuyos límites están definidos por el canal de membrana. El "
+"canal de membrana presenta más dificultades porque, a diferencia de los "
+"núcleos, la señal de membrana es variable y los límites están conectados "
+"entre sí en una especie de malla. No obstante, podemos utilizar la ubicación"
+" de los núcleos que ya hemos encontrado como \"semillas\" para guiar "
+"posteriormente al módulo Watershed en la identificación de regiones con "
+"células."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:179
+#: ../../source/3d-monolayer/3D_Monolayer.md:182
+msgid ""
+"We will start by shrinking the nuclei to make them more seed-like by adding "
+"an **ErodeObjects** module. Use the *ball* structuring element with a size "
+"of *5*. Select “Yes” for the “Prevent object removal” option in order to "
+"avoid losing any nuclei."
+msgstr ""
+"Empezaremos encogiendo los núcleos para hacerlos más parecidos a semillas "
+"añadiendo un módulo **ErodeObjects**. Utiliza el elemento estructurante "
+"*ball* (bola) con un tamaño de *5*. Seleccione \"Sí\" en la opción \"Evitar "
+"la eliminación de objetos\" para no perder ningún núcleo."
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:187
 msgid ""
 "We’ve found that we can achieve the best results by applying "
 "**ErodeObjects** to the output of the Watershed module rather than the "
-"resized Nuclei that are at the original size (since the Watershed output "
-"has been downsampled, the resulting seeds from **ErodeObjects** are "
-"smaller and more seed-like). So, select the *downsizedNuclei* object as "
-"input. Name the output *erodedDownsizedNuclei*."
+"resized Nuclei that are at the original size (since the Watershed output has"
+" been downsampled, the resulting seeds from **ErodeObjects** are smaller and"
+" more seed-like). So, select the *downsizedNuclei* object as input. Name the"
+" output *erodedDownsizedNuclei*."
 msgstr ""
+"Hemos descubierto que podemos conseguir los mejores resultados aplicando "
+"**ErodeObjects** a la salida del módulo Watershed en lugar de los Núcleos "
+"redimensionados que tienen el tamaño original (dado que la salida de "
+"Watershed ha sido reducida, las semillas resultantes de **ErodeObjects** son"
+" más pequeñas y más parecidas a las semillas). Por tanto, seleccione el "
+"objeto *downsizedNuclei* como entrada. Nombre la salida "
+"*erodedDownsizedNuclei*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:190
+#: ../../source/3d-monolayer/3D_Monolayer.md:199
 msgid ""
-"Resize these seeds using the **ResizeObjects** module with a factor of "
-"*2*. Name the output *erodedResizedNuclei*."
+"Resize these seeds using the **ResizeObjects** module with a factor of *2*. "
+"Name the output *erodedResizedNuclei*."
 msgstr ""
+"Cambie el tamaño de estas semillas utilizando el módulo **ResizeObjects** "
+"con un factor de *2*. Nombre la salida *erodedResizedNuclei*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:198
+#: ../../source/3d-monolayer/3D_Monolayer.md:208
 msgid ""
 "Next convert the eroded and resized nuclei to an image using the "
 "**ConvertObjectsToImage** module. Select the *uint16* color format. This "
 "image will serve as the seeds for segmenting the cells. Name the output "
 "*cellSeeds*."
 msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:208
-msgid "Transform the membrane channel into cytoplasm signal"
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:210
-msgid ""
-"The Watershed module finds objects that have bright signal, so the "
-"cytoplasm that will define the cell volume should have bright signal. "
-"However, this is not the case in the membrane channel; it must be "
-"transformed into an image where the cytoplasm is bright and the "
-"boundaries between the cells are dark. Therefore, we will invert the "
-"membrane channel to achieve this effect."
-msgstr ""
+"A continuación, convierta los núcleos erosionados y redimensionados en una "
+"imagen utilizando el módulo **ConvertObjectsToImage**. Seleccione el formato"
+" de color *uint16*. Esta imagen servirá como semillas para segmentar las "
+"células. Nombre la salida *cellSeeds*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:218
+msgid "Transform the membrane channel into cytoplasm signal"
+msgstr "Transformar el canal de membrana en señal de citoplasma"
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:220
+msgid ""
+"The Watershed module finds objects that have bright signal, so the cytoplasm"
+" that will define the cell volume should have bright signal. However, this "
+"is not the case in the membrane channel; it must be transformed into an "
+"image where the cytoplasm is bright and the boundaries between the cells are"
+" dark. Therefore, we will invert the membrane channel to achieve this "
+"effect."
+msgstr ""
+"El módulo Watershed encuentra objetos que tienen señal brillante, por lo que"
+" el citoplasma que definirá el volumen celular debería tener señal "
+"brillante. Sin embargo, este no es el caso del canal de membrana; debe "
+"transformarse en una imagen en la que el citoplasma sea brillante y los "
+"límites entre las células sean oscuros. Por lo tanto, invertiremos el canal "
+"de membrana para conseguir este efecto."
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:227
 msgid ""
 "Add a **Threshold** module and threshold the original membrane image "
 "(*origMemb*). We find that the *Otsu three-class* method with middle "
-"intensity pixels assigned to the foreground works well, but feel free to "
-"try others. Name the output *MembThreshold*."
+"intensity pixels assigned to the foreground works well, but feel free to try"
+" others. Name the output *MembThreshold*."
 msgstr ""
+"Añada un módulo **Threshold** y umbralice la imagen original de la membrana "
+"(*origMemb*). Encontramos que el método *Otsu three-class* con píxeles de "
+"intensidad media asignados al primer plano funciona pocillo, pero siéntase "
+"libre de probar otros. Nombre la salida *MembThreshold*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:228
+#: ../../source/3d-monolayer/3D_Monolayer.md:238
 msgid ""
-"Add an **ImageMath** module. Within the ImageMath module choose the "
-"*Invert* operation, and invert the thresholded membrane. Name the output "
+"Add an **ImageMath** module. Within the ImageMath module choose the *Invert*"
+" operation, and invert the thresholded membrane. Name the output "
 "*MembInvert*."
 msgstr ""
+"Añada un módulo **ImageMath**. Dentro del módulo ImageMath elija la "
+"operación *Invert*, e invierta la membrana umbralizada. Nombre la salida "
+"*MembInvert*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:240
+#: ../../source/3d-monolayer/3D_Monolayer.md:247
 msgid ""
-"Add a **RemoveHoles** module to remove the small holes in the "
-"segmentation of the cell interior. This helps to prevent the cells from "
-"being split during the Watershed segmentation. Choose a size of *20*. "
-"Name the output *MembInvertRemoveHoles*."
+"Add a **RemoveHoles** module to remove the small holes in the segmentation "
+"of the cell interior. This helps to prevent the cells from being split "
+"during the Watershed segmentation. Choose a size of *20*. Name the output "
+"*MembInvertRemoveHoles*."
 msgstr ""
+"Añadir un módulo **RemoveHoles** para eliminar los pequeños agujeros en la "
+"segmentación del interior de las células. Esto ayuda a evitar que las "
+"celcélulas se dividan durante la segmentación con el método Watershed. Elija"
+" un tamaño de *20*. Nombre la salida *MembInvertRemoveHoles*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:257
+#: ../../source/3d-monolayer/3D_Monolayer.md:258
 msgid ""
-"Add another **ImageMath** module. Add all of the original images "
-"together. This creates a composite image that will be used in the "
-"following steps to define where cells are present and the background "
-"above and below the cells. Name the output *Monolayer*."
+"Add another **ImageMath** module. Add all of the original images together. "
+"This creates a composite image that will be used in the following steps to "
+"define where cells are present and the background above and below the cells."
+" Name the output *Monolayer*."
 msgstr ""
+"Añada otro módulo **ImageMath**. Añada todas las imágenes originales juntas."
+" Esto crea una imagen compuesta que se utilizará en los siguientes pasos "
+"para definir donde las células están presentes y el fondo por encima y por "
+"debajo de las células. Nombre la salida *Monolayer*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:266
+#: ../../source/3d-monolayer/3D_Monolayer.md:268
 msgid ""
-"Add a **Resize** module to resize the Monolayer with a *Resizing factor* "
-"of *0.25* for X and Y (keep a factor of 1.0 for Z). Downsampling the "
-"image makes processing faster and decreases noise. Name the output "
+"Add a **Resize** module to resize the Monolayer with a *Resizing factor* of "
+"*0.25* for X and Y (keep a factor of 1.0 for Z). Downsampling the image "
+"makes processing faster and decreases noise. Name the output "
 "*DownsizedMonolayer*."
 msgstr ""
+"Añada un módulo **Resize** para redimensionar la Monocapa con un *Factor de "
+"redimensionamiento* de *0,25* para X e Y (mantener un factor de 1,0 para Z)."
+" Reducir el tamaño de la imagen hace que el procesado sea más rápido y "
+"disminuye el ruido. Nombre la salida *DownsizedMonolayer*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:273
+#: ../../source/3d-monolayer/3D_Monolayer.md:276
 msgid ""
 "Add a **Closing** module. Choose a size of *17* to blend the signal "
-"together. The result should look like a cloud of signal where the "
-"monolayer resides. Name the output *ClosedDownsizedMonolayer*."
+"together. The result should look like a cloud of signal where the monolayer "
+"resides. Name the output *ClosedDownsizedMonolayer*."
 msgstr ""
+"Añada un módulo de **Closing**. Elige un tamaño de *17* para mezclar la "
+"señal. El resultado debería parecerse a una nube de señal donde reside la "
+"monocapa. Nombre la salida *ClosedDownsizedMonolayer*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:282
+#: ../../source/3d-monolayer/3D_Monolayer.md:286
 msgid ""
-"Add a **Resize** module to resize the closed Monolayer back to its "
-"original size, *Resizing factor* of *4* for X and Y (keep a factor of "
-"*1.0* for Z). Name the output *ResizedClosedMonolayer*."
+"Add a **Resize** module to resize the closed Monolayer back to its original "
+"size, *Resizing factor* of *4* for X and Y (keep a factor of *1.0* for Z). "
+"Name the output *ResizedClosedMonolayer*."
 msgstr ""
+"Añada un módulo **Resize** para redimensionar la Monocapa cerrada a su "
+"tamaño original, *Factor de redimensionamiento* de *4* para X e Y (mantenga "
+"un factor de *1.0* para Z). Nombra la salida *ResizedClosedMonolayer*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:289
+#: ../../source/3d-monolayer/3D_Monolayer.md:294
 msgid ""
-"Add a **Threshold** module and threshold the smoothed monolayer image. "
-"The idea is to end up with a 3D mask of the region where the cells of the"
-" monolayer exist in. We found that using a global Otsu method with three "
-"classes (middle class identified as foreground) works well for this "
-"example. This will define what is and is not monolayer. Name the output "
+"Add a **Threshold** module and threshold the smoothed monolayer image. The "
+"idea is to end up with a 3D mask of the region where the cells of the "
+"monolayer exist in. We found that using a global Otsu method with three "
+"classes (middle class identified as foreground) works well for this example."
+" This will define what is and is not monolayer. Name the output "
 "*MonolayerMask*."
 msgstr ""
+"Añada un módulo **Threshold** y umbralice la imagen suavizada de la "
+"monocapa. La idea es terminar con una máscara 3D de la región en la que "
+"existen las células de la monocapa. Hemos encontrado que el uso de un método"
+" global de Otsu con tres clases (clase media identificada como primer plano)"
+" funciona bien para este ejemplo. Esto definirá lo que es y lo que no es "
+"monocapa. Nombre la salida *MonolayerMask*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:293
+#: ../../source/3d-monolayer/3D_Monolayer.md:298
 msgid ""
-"Note that most of the middle planes of the stack should be completely "
-"white (part of the monolayer), while the regions above and below are "
-"primarily black (not part of the monolayer)."
+"Note that most of the middle planes of the stack should be completely white "
+"(part of the monolayer), while the regions above and below are primarily "
+"black (not part of the monolayer)."
 msgstr ""
+"Observe que la mayor parte de los planos centrales del stack deben ser "
+"completamente blancos (parte de la monocapa), mientras que las regiones por "
+"encima y por debajo son principalmente negras (no forman parte de la "
+"monocapa)."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:305
+#: ../../source/3d-monolayer/3D_Monolayer.md:306
 msgid ""
 "Add a **MaskImage** module. You will use an *Image* as a mask (the "
-"MonolayerMask image generated in the previous step). In this case, the "
-"mask does not need to be inverted. Note that the planes on the bottom and"
-" top of the z-stack are black in the masked image. Name the output "
-"*MembMasked*."
+"MonolayerMask image generated in the previous step). In this case, the mask "
+"does not need to be inverted. Note that the planes on the bottom and top of "
+"the z-stack are black in the masked image. Name the output *MembMasked*."
 msgstr ""
+"Añada un módulo **MaskImage**. Utilizará una *Imagen* como máscara (la "
+"imagen MonolayerMask generada en el paso anterior). En este caso, no es "
+"necesario invertir la máscara. Tenga en cuenta que los planos en la parte "
+"inferior y superior del stack z son de color negro en la imagen enmascarada."
+" Nombre la salida *MembMasked*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:315
+#: ../../source/3d-monolayer/3D_Monolayer.md:317
 msgid ""
-"Add an **ErodeImage** module. We will use this module to erode the "
-"membrane image generated in the previous step. Eroding using a *ball* of "
-"size *1* improves the separation between individual cells in the "
-"Watershed segmentation (the next step). Name the output *MembFinal*."
+"Add an **ErodeImage** module. We will use this module to erode the membrane "
+"image generated in the previous step. Eroding using a *ball* of size *1* "
+"improves the separation between individual cells in the Watershed "
+"segmentation (the next step). Name the output *MembFinal*."
 msgstr ""
+"Añade un módulo **ErodeImage**. Utilizaremos este módulo para erosionar la "
+"imagen de membrana generada en el paso anterior. La erosión utilizando una "
+"*bola* de tamaño *1* mejora la separación entre células individuales en la "
+"segmentación Watershed (el siguiente paso). Nombre la salida *MembFinal*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:325
+#: ../../source/3d-monolayer/3D_Monolayer.md:328
 msgid ""
 "Add a **Watershed** module. The input is the result of the previous "
-"ErodeImage module, referred to here as the MembFinal. Change the "
-"*Generate from* option to *Markers*. The Markers will be the *cellSeeds* "
-"image, which is the output of the ConvertObjectsToImage module. Finally, "
-"set the Mask to also be the *MembFinal*. This will help preserve the cell"
-" boundaries. Name the output of this module *Cells*."
+"ErodeImage module, referred to here as the MembFinal. Change the *Generate "
+"from* option to *Markers*. The Markers will be the *cellSeeds* image, which "
+"is the output of the ConvertObjectsToImage module. Finally, set the Mask to "
+"also be the *MembFinal*. This will help preserve the cell boundaries. Name "
+"the output of this module *Cells*."
 msgstr ""
+"Añade un módulo **Watershed**. La entrada es el resultado del módulo "
+"ErodeImage anterior, denominado aquí MembFinal. Cambia la opción *Generate "
+"from* a *Markers*. Los Marcadores serán la imagen *cellSeeds*, que es la "
+"salida del módulo ConvertObjectsToImage. Finalmente, configure la Máscara "
+"para que también sea la imagen *MembFinal*. Esto ayudará a preservar los "
+"límites de las células. Nombre la salida de este módulo *Células*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:338
+#: ../../source/3d-monolayer/3D_Monolayer.md:341
 msgid "Making measurements"
-msgstr ""
+msgstr "Realización de mediciones"
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:340
+#: ../../source/3d-monolayer/3D_Monolayer.md:343
 msgid ""
 "Now that the nuclei and cells have been segmented in this monolayer, "
-"measurements can be made using modules from the **Measurements** "
-"category."
+"measurements can be made using modules from the **Measurements** category."
 msgstr ""
+"Ahora que los núcleos y las células se han segmentado en esta monocapa, se "
+"pueden realizar mediciones utilizando módulos de la categoría **Mediciones**"
+" (Measurements)."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:344
+#: ../../source/3d-monolayer/3D_Monolayer.md:347
 msgid ""
 "Add any desired measurements modules. For example, you might choose to "
-"**MeasureObjectIntensity** and/or **MeasureObjectSizeShape**. When "
-"applying these measurements, be careful to measure the original images, "
-"not rescaled images."
+"**MeasureObjectIntensity** and/or **MeasureObjectSizeShape**. When applying "
+"these measurements, be careful to measure the original images, not rescaled "
+"images."
 msgstr ""
+"Añada los módulos de medición que desee. Por ejemplo, puede elegir "
+"**MeasureObjectIntensity** (Medir Intensidad de Objetos) y/o "
+"**MeasureObjectSizeShape** (Medir Tamaño y Forma de Objectos). Al aplicar "
+"estas mediciones, tenga cuidado de medir las imágenes originales, no las "
+"reescaladas."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:355
+#: ../../source/3d-monolayer/3D_Monolayer.md:358
 msgid "Creating visuals"
-msgstr ""
+msgstr "Creación de imágenes"
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:357
+#: ../../source/3d-monolayer/3D_Monolayer.md:360
 msgid ""
-"Congratulations! The nuclei and cells have been segmented and measured in"
-" this monolayer. Visuals that reveal the details of the segmentation can "
-"be also be created within CellProfiler. The following steps will walk you"
-" through two different options to visualize your CellProfiler "
-"segmentations."
+"Congratulations! The nuclei and cells have been segmented and measured in "
+"this monolayer. Visuals that reveal the details of the segmentation can be "
+"also be created within CellProfiler. The following steps will walk you "
+"through two different options to visualize your CellProfiler segmentations."
 msgstr ""
+"¡Enhorabuena! Los núcleos y las células han sido segmentados y medidos en "
+"esta monocapa. Las visualizaciones que revelan los detalles de la "
+"segmentación también pueden ser creados dentro de CellProfiler. Los "
+"siguientes pasos le guiarán a través de dos opciones diferentes para "
+"visualizar sus segmentaciones en CellProfiler."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:363
+#: ../../source/3d-monolayer/3D_Monolayer.md:366
 msgid ""
-"The **OverlayObjects** module will overlay the objects as colored masks "
-"on the image. We recommend overlaying onto rescaled images, which will be"
-" easier to visualize outside of CellProfiler. For example, you can choose"
-" the *Nuclei* as the objects and the *RescaledDNA* as your image. Name "
-"the output *NucleiOverlay*. You can try and do the same for the cell "
-"bodies, overlaying the *Cells* object onto a rescaled version of the "
-"*origMemb* image. Name the output *CellsOverlay*."
+"The **OverlayObjects** module will overlay the objects as colored masks on "
+"the image. We recommend overlaying onto rescaled images, which will be "
+"easier to visualize outside of CellProfiler. For example, you can choose the"
+" *Nuclei* as the objects and the *RescaledDNA* as your image. Name the "
+"output *NucleiOverlay*. You can try and do the same for the cell bodies, "
+"overlaying the *Cells* object onto a rescaled version of the *origMemb* "
+"image. Name the output *CellsOverlay*."
 msgstr ""
+"El módulo **OverlayObjects** superpondrá los objetos como máscaras "
+"coloreadas sobre la imagen. Recomendamos superponer sobre imágenes "
+"reescaladas, que serán más fáciles de visualizar fuera de CellProfiler. Por "
+"ejemplo, puede elegir los *Núcleos* como objetos y el *ADN reescalado* como "
+"imagen. Nombre la salida *NucleiOverlay*. Puede intentar hacer lo mismo para"
+" los cuerpos celulares, superponiendo el objeto *Cells* sobre una versión "
+"reescalada de la imagen *origMemb*. Nombre la salida *CellsOverlay*."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:377
+#: ../../source/3d-monolayer/3D_Monolayer.md:379
 msgid ""
 "You can also convert the objects to images using the "
 "**ConvertObjectsToImage** module and then save the output using "
-"**SaveImages**. This option will allow you to visualize the segmentations"
-" directly in Fiji and use them as masks for further processing."
+"**SaveImages**. This option will allow you to visualize the segmentations "
+"directly in Fiji and use them as masks for further processing."
 msgstr ""
+"También puede convertir los objetos en imágenes utilizando el módulo "
+"**ConvertObjectsToImage** y luego guardar el resultado utilizando "
+"**SaveImages**. Esta opción te permitirá visualizar las segmentaciones "
+"directamente en Fiji y utilizarlas como máscaras para procesamientos "
+"posteriores."
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:390
+msgid "Export measurements"
+msgstr "Exportar medidas"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:392
-msgid "Export measurements"
-msgstr ""
-
-#: ../../source/3d-monolayer/3D_Monolayer.md:394
 msgid ""
-"Save the output of the measurements modules using **ExportToSpreadsheet**"
-" or **ExportToDatabase**."
+"Save the output of the measurements modules using **ExportToSpreadsheet** or"
+" **ExportToDatabase**."
 msgstr ""
+"Guarde la salida de los módulos de medición utilizando "
+"**ExportToSpreadsheet** o **ExportToDatabase**."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:397
+#: ../../source/3d-monolayer/3D_Monolayer.md:395
 msgid ""
-"It’s good practice to place all export modules at the end of your "
-"pipeline. CellProfiler automatically calculates execution times for each "
-"module that was run before the export module. By placing your export "
-"modules at the end of your pipeline, you will have access to module "
-"execution times for each module in your pipeline."
+"It’s good practice to place all export modules at the end of your pipeline. "
+"CellProfiler automatically calculates execution times for each module that "
+"was run before the export module. By placing your export modules at the end "
+"of your pipeline, you will have access to module execution times for each "
+"module in your pipeline."
 msgstr ""
+"Es una buena práctica colocar todos los módulos de exportación al final de "
+"su pipeline. CellProfiler calcula automáticamente los tiempos de ejecución "
+"para cada módulo que fue ejecutado antes del módulo de exportación. Al "
+"colocar tus módulos de exportación al final de tu pipeline, tendrás acceso a"
+" los tiempos de ejecución de cada módulo en tu pipeline."
 
-#: ../../source/3d-monolayer/3D_Monolayer.md:403
+#: ../../source/3d-monolayer/3D_Monolayer.md:401
 msgid "Thank you for completing the 3d monolayer tutorial!"
-msgstr ""
-
+msgstr "¡Gracias por completar el tutorial de monocapa 3d!"
