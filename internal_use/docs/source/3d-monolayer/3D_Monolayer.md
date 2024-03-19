@@ -1,12 +1,21 @@
 # 3D Cell Monolayer Segmentation and Analysis Tutorial
 
+- **Note** that this tutorial is an advanced tutorial. We recommend
+  completing the **Beginner Segmentation tutorial** in order to learn principles of
+  image thresholding and segmentation prior to starting this tutorial.
+- Appropiately naming the output(s) of each CellProfiler module is important in order to avoid confusion,especially in large and complex pipelines. Throughout this tutorial we will suggest names for each of the outputs, but feel free to use your own.
+- This tutorial will guide you through the creation of a complete analysis pipeline. If you wish, you can also find a final version of a similar pipeline in the *3d_monolayer_final.cppipe* file, which should be in the same folder as this tutorial. To load the pipeline, simply drag the file to the left panel on the CellProfiler window.
+- Helpful video tutorials are available on the Center for Open Bioimage
+  Analysis YouTube page at
+  <https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q>.
+- This tutorial features images of human induced pluripotent stem cells
+from the Allen Institute of Cell Science. More details are available
+at the following link: <https://bbbc.broadinstitute.org/BBBC034>.
+
 ## Organizing and importing images
 
 ### Z-stacks as TIFFs
 
-- This tutorial features images of human induced pluripotent stem cells
-  from the Allen Institute of Cell Science. More details are available
-  at the following link: <https://bbbc.broadinstitute.org/BBBC034>.
 - CellProfiler 3D currently only works with TIFF files. TIFF files can
   be rather complicated, having hyper-stack structures with all
   channels and z-planes in a single file. The acceptable CellProfiler
@@ -15,23 +24,15 @@
 - CellProfiler can be used to convert from other file formats to
   individual TIFF files for each channel using the **SaveImages**
   module.
-- Note that this tutorial is an advanced tutorial. We recommend
-  completing the Translocation tutorial in order to learn principles of
-  image thresholding and segmentation prior to starting this tutorial.
-- Appropiately naming the output(s) of each CellProfiler module is important in order to avoid confusion,especially in large and complex pipelines. Throughout this tutorial we will suggest names for each of the outputs, but feel free to use your own.
-- This tutorial will guide you through the creation of a complete analysis pipeline. If you wish, you can also find a final version of a similar pipeline in the *3d_monolayer_final.cppipe* file, which should be in the same folder as this tutorial. To load the pipeline, simply drag the file to the left panel on the CellProfiler window.
-- Helpful video tutorials are available on the Center for Open Bioimage
-  Analysis YouTube page at
-  <https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q>.
 
 ### Importing data in CellProfiler
 
-01. Highlight the Images module.
+01. Highlight the **Images** module.
 
-02. Drag-and-drop the images you will analyze into the Images module
+02. Drag-and-drop the images you will analyze into the **Images** module
     window.
 
-03. Highlight the Metadata module.
+03. Highlight the **Metadata** module.
 
 04. Enter the following regular expression:
 
@@ -40,7 +41,7 @@
     This regular expression will parse the filenames and organize the
     data.
 
-05. Highlight the NamesAndTypes module.
+05. Highlight the **NamesAndTypes** module.
 
 06. Assign a name to “Images matching rules”.
 
@@ -120,7 +121,7 @@ the results.
 
 ### Segmentation
 
-In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module does not support 3D images. Thus, we will have to use a different strategy to segment the nuclei.
+In CellProfiler 4 (and previous versions) the **IdentifyPrimaryObjects** module does not support 3D images. Thus, we will have to use a different strategy to segment the nuclei.
 
 1. Add an **Threshold** module. This identifies a pixel intensity value
    to separate the foreground (nuclei) from the background. Empirically,
@@ -175,7 +176,7 @@ Now that we’ve segmented the nuclei, we want to segment the cytoplasm for
 each nuclei whose boundaries are defined by the membrane channel. The
 membrane channel presents more of a challenge because, unlike the
 nuclei, the membrane signal is variable and the boundaries are connected
-together in a sort of mesh. However, we can use the location of the nuclei we already found as 'seeds' to guide the Watershed module later on to identify regions with cells.
+together in a sort of mesh. However, we can use the location of the nuclei we already found as 'seeds' to guide the **Watershed** module later on to identify regions with cells.
 
 ### Transform nuclei into 'seeds'
 
@@ -185,8 +186,8 @@ together in a sort of mesh. However, we can use the location of the nuclei we al
    order to avoid losing any nuclei.
 
    We’ve found that we can achieve the best results by applying
-   **ErodeObjects** to the output of the Watershed module rather than
-   the resized Nuclei that are at the original size (since the Watershed
+   **ErodeObjects** to the output of the **Watershed** module rather than
+   the resized Nuclei that are at the original size (since the **Watershed** module
    output has been downsampled, the resulting seeds from
    **ErodeObjects** are smaller and more seed-like). So, select the *downsizedNuclei* object as input. Name the output *erodedDownsizedNuclei*.
 
@@ -217,7 +218,7 @@ together in a sort of mesh. However, we can use the location of the nuclei we al
 
 ### Transform the membrane channel into cytoplasm signal
 
-The Watershed module finds objects that have bright signal, so the
+The **Watershed** module finds objects that have bright signal, so the
 cytoplasm that will define the cell volume should have bright signal.
 However, this is not the case in the membrane channel; it must be
 transformed into an image where the cytoplasm is bright and the
@@ -235,7 +236,7 @@ membrane channel to achieve this effect.
 :width: 1000
 ```
 
-2. Add an **ImageMath** module. Within the ImageMath module choose the
+2. Add an **ImageMath** module. Within the **ImageMath** module choose the
    *Invert* operation, and invert the thresholded membrane. Name the output *MembInvert*.
 
 ```{image} images/16_ImageMath.png
@@ -326,10 +327,10 @@ membrane channel to achieve this effect.
 ```
 
 11. Add a **Watershed** module. The input is the result of the previous
-    ErodeImage module, referred to here as the MembFinal. Change the
+    **ErodeImage** module, referred to here as the MembFinal. Change the
     *Generate from* option to *Markers*. The Markers will be the
     *cellSeeds* image, which is the output of the
-    ConvertObjectsToImage module. Finally, set the Mask to also be the
+    **ConvertObjectsToImage** module. Finally, set the Mask to also be the
     *MembFinal*. This will help preserve the cell boundaries. Name the output of this module *Cells*.
 
 ```{image} images/25_Watershed.png
