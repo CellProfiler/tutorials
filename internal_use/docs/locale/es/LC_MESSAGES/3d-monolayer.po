@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Esteban, 2024
 # Beth Cimini, 2024
+# Esteban, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,14 +13,18 @@ msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-15 11:33-0400\n"
-"PO-Revision-Date: 2024-01-29 15:29+0000\n"
-"Last-Translator: Beth Cimini, 2024\n"
+"PO-Revision-Date: 2023-12-13 22:27+0000\n"
+"Last-Translator: Esteban, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:1
+msgid "3D Cell Monolayer Segmentation and Analysis Tutorial"
+msgstr "Tutorial de análisis y segmentación monocapa 3D células"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:3
 msgid "Organizing and importing images"
@@ -29,6 +33,16 @@ msgstr "Organizar e importar imágenes"
 #: ../../source/3d-monolayer/3D_Monolayer.md:5
 msgid "Z-stacks as TIFFs"
 msgstr "Z-stacks como TIFF"
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:7
+msgid ""
+"This tutorial features images of human induced pluripotent stem cells from "
+"the Allen Institute of Cell Science. More details are available at the "
+"following link: <https://bbbc.broadinstitute.org/BBBC034>."
+msgstr ""
+"Este tutorial presenta imágenes células madre pluripotentes inducidas "
+"humanas del Allen Institute of Cell Science. Más detalles están disponibles "
+"en el siguiente enlace: <https://bbbc.broadinstitute.org/BBBC034>."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:10
 msgid ""
@@ -59,7 +73,7 @@ msgid ""
 "and segmentation prior to starting this tutorial."
 msgstr ""
 "Tenga en cuenta que este tutorial es un tutorial avanzado. Recomendamos "
-"completar el Tutorial de  Traslocación para aprender los principios de la "
+"completar el Tutorial de Traslocación para aprender los principios de la "
 "umbralización y segmentación de imágenes antes de comenzar este tutorial."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:21
@@ -88,6 +102,16 @@ msgstr ""
 "carpeta que este tutorial. Para cargar el pipeline, simplemente arrastre el "
 "archivo al panel izquierdo de la ventana de CellProfiler."
 
+#: ../../source/3d-monolayer/3D_Monolayer.md:23
+msgid ""
+"Helpful video tutorials are available on the Center for Open Bioimage "
+"Analysis YouTube page at <https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-"
+"skay7Q>."
+msgstr ""
+"Hay tutoriales en vídeo muy útiles disponibles en la página de YouTube del "
+"Center for Open Bioimage Analysis en "
+"<https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q>."
+
 #: ../../source/3d-monolayer/3D_Monolayer.md:27
 msgid "Importing data in CellProfiler"
 msgstr "Importación de datos en CellProfiler"
@@ -110,6 +134,10 @@ msgstr "Seleccione el módulo Metadatos (Metadata)."
 #: ../../source/3d-monolayer/3D_Monolayer.md:36
 msgid "Enter the following regular expression:"
 msgstr "Introduzca la siguiente expresión regular:"
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:38
+msgid "`^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])`"
+msgstr "`^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])`"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:40
 msgid ""
@@ -173,6 +201,16 @@ msgstr ""
 "Las unidades reales no importan, sino su proporción relativa. Los números no"
 " tienen unidades y, por tanto, el decimal no importa."
 
+#: ../../source/3d-monolayer/3D_Monolayer.md:60
+msgid ""
+"Create “rule criteria” to identify an image by its color/channel. For "
+"example, using the Metadata you just extracted - `Metadata -> Does -> Have "
+"ChannelNumber matching -> 0` would match the first image."
+msgstr ""
+"Cree “criterios de reglas” para identificar una imagen por su color/canal. "
+"Por ejemplo, usando los metadatos que acaba de extraer: `Metadata -> Does ->"
+" Have ChannelNumber matching -> 0` coincidiría con la primera imagen."
+
 #: ../../source/3d-monolayer/3D_Monolayer.md:65
 msgid ""
 "Give the images “variable names” that describe the contents of the image. "
@@ -222,9 +260,9 @@ msgid ""
 "your pipelines, be careful to perform measurements on the original images, "
 "not the rescaled images. Name the output *RescaledDNA*."
 msgstr ""
-"Añadir un módulo **RescaleIntensity**  para el canal de ADN. El reescalado "
-"de la imagen de ADN estira proporcionalmente los valores de intensidad a "
-"todo el rango de intensidad, de 0 a 1. En este caso, encontramos que el "
+"Añadir un módulo **RescaleIntensity** para el canal de ADN. El reescalado de"
+" la imagen de ADN estira proporcionalmente los valores de intensidad a todo "
+"el rango de intensidad, de 0 a 1. En este caso, encontramos que el "
 "reescalado mejora el umbral y la posterior segmentación de los núcleos. "
 "Cuando utilice el reescalado en sus procesos, tenga cuidado de realizar las "
 "mediciones en las imágenes originales, no en las reescaladas. Nombre la "
@@ -315,6 +353,23 @@ msgstr ""
 "eliminará pequeños agujeros dentro del núcleo. Cualquier agujero restante "
 "contribuirá a la sobre-segmentación de los núcleos. Elija un tamaño de *20*."
 
+#: ../../source/3d-monolayer/3D_Monolayer.md:148
+msgid ""
+"Add a **Watershed** module. This module implements the watershed algorithm, "
+"which will segment the nuclei. Select a Footprint of *10* and Downsample by "
+"*2*. Downsampling reduces processing time and decreases noise. For more "
+"information on the watershed algorithm refer to this helpful [MATLAB blog "
+"post](https://www.mathworks.com/company/newsletters/articles/the-watershed-"
+"transform-strategies-for-image-segmentation.html)."
+msgstr ""
+"Agregue un módulo **Watershed**. Este módulo implementa el algoritmo "
+"watershed, que segmentará los núcleos. Seleccione un \"Footprint\" de *10* y"
+" \"Downsample\" en *2*. La reducción (\"Downsampling\") de la imagen reduce "
+"el tiempo de procesamiento y disminuye el ruido. Para obtener más "
+"información sobre el algoritmo de watershed, consulte esta [publicación de "
+"blog de MATLAB] (https://www.mathworks.com/company/newsletters/articles/the-"
+"watershed-transform-strategies-for-image-segmentation.html)."
+
 #: ../../source/3d-monolayer/3D_Monolayer.md:161
 msgid ""
 "Add a **ResizeObjects** module to return the segmented nuclei to the size of"
@@ -329,7 +384,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:172
 msgid "Find objects: cells"
-msgstr "Buscar objetos: células"
+msgstr "Buscar objetos: celdas"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:174
 msgid ""
@@ -349,6 +404,10 @@ msgstr ""
 " de los núcleos que ya hemos encontrado como \"semillas\" para guiar "
 "posteriormente al módulo Watershed en la identificación de regiones con "
 "células."
+
+#: ../../source/3d-monolayer/3D_Monolayer.md:180
+msgid "Transform nuclei into 'seeds'"
+msgstr "Transformar núcleos en 'semillas'"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:182
 msgid ""
@@ -371,7 +430,7 @@ msgid ""
 " more seed-like). So, select the *downsizedNuclei* object as input. Name the"
 " output *erodedDownsizedNuclei*."
 msgstr ""
-"Hemos descubierto que podemos conseguir los mejores resultados aplicando "
+"Hemos encontrado que podemos conseguir los mejores resultados aplicando "
 "**ErodeObjects** a la salida del módulo Watershed en lugar de los Núcleos "
 "redimensionados que tienen el tamaño original (dado que la salida de "
 "Watershed ha sido reducida, las semillas resultantes de **ErodeObjects** son"
@@ -412,8 +471,8 @@ msgid ""
 " dark. Therefore, we will invert the membrane channel to achieve this "
 "effect."
 msgstr ""
-"El módulo Watershed encuentra objetos que tienen señal brillante, por lo que"
-" el citoplasma que definirá el volumen celular debería tener señal "
+"El módulo **Watershed** encuentra objetos que tienen señal brillante, por lo"
+" que el citoplasma que definirá el volumen celular debería tener señal "
 "brillante. Sin embargo, este no es el caso del canal de membrana; debe "
 "transformarse en una imagen en la que el citoplasma sea brillante y los "
 "límites entre las células sean oscuros. Por lo tanto, invertiremos el canal "
@@ -641,7 +700,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:390
 msgid "Export measurements"
-msgstr "Exportar medidas"
+msgstr "Exportar mediciones"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:392
 msgid ""
