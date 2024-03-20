@@ -1,4 +1,4 @@
-## BeginnerSegmentation
+## Simplified_BeginnerSegmentation
 
 A tutorial that uses a CellPainting assay to ﬁnd segmentation
 parameters for larger “parent” objects (nucleus, cell, and cytoplasm)
