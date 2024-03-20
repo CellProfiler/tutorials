@@ -1,12 +1,21 @@
 # 3D Cell Monolayer Segmentation and Analysis Tutorial
 
+- **Note** that this tutorial is an advanced tutorial. We recommend
+  completing the **Beginner Segmentation tutorial** in order to learn principles of
+  image thresholding and segmentation prior to starting this tutorial.
+- Appropiately naming the output(s) of each CellProfiler module is important in order to avoid confusion,especially in large and complex pipelines. Throughout this tutorial we will suggest names for each of the outputs, but feel free to use your own.
+- This tutorial will guide you through the creation of a complete analysis pipeline. If you wish, you can also find a final version of a similar pipeline in the *3d_monolayer_final.cppipe* file, which should be in the same folder as this tutorial. To load the pipeline, simply drag the file to the left panel on the CellProfiler window.
+- Helpful video tutorials are available on the Center for Open Bioimage
+  Analysis YouTube page at
+  <https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q>.
+- This tutorial features images of human induced pluripotent stem cells
+from the Allen Institute of Cell Science. More details are available
+at the following link: <https://bbbc.broadinstitute.org/BBBC034>.
+
 ## Organizing and importing images
 
 ### Z-stacks as TIFFs
 
-- This tutorial features images of human induced pluripotent stem cells
-  from the Allen Institute of Cell Science. More details are available
-  at the following link: <https://bbbc.broadinstitute.org/BBBC034>.
 - CellProfiler 3D currently only works with TIFF files. TIFF files can
   be rather complicated, having hyper-stack structures with all
   channels and z-planes in a single file. The acceptable CellProfiler
@@ -15,23 +24,15 @@
 - CellProfiler can be used to convert from other file formats to
   individual TIFF files for each channel using the **SaveImages**
   module.
-- Note that this tutorial is an advanced tutorial. We recommend
-  completing the Translocation tutorial in order to learn principles of
-  image thresholding and segmentation prior to starting this tutorial.
-- Appropiately naming the output(s) of each CellProfiler module is important in order to avoid confusion,especially in large and complex pipelines. Throughout this tutorial we will suggest names for each of the outputs, but feel free to use your own.
-- This tutorial will guide you through the creation of a complete analysis pipeline. If you wish, you can also find a final version of a similar pipeline in the *3d_monolayer_final.cppipe* file, which should be in the same folder as this tutorial. To load the pipeline, simply drag the file to the left panel on the CellProfiler window.
-- Helpful video tutorials are available on the Center for Open Bioimage
-  Analysis YouTube page at
-  <https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q>.
 
 ### Importing data in CellProfiler
 
-01. Highlight the Images module.
+01. Highlight the **Images** module.
 
-02. Drag-and-drop the images you will analyze into the Images module
+02. Drag-and-drop the images you will analyze into the **Images** module
     window.
 
-03. Highlight the Metadata module.
+03. Highlight the **Metadata** module.
 
 04. Enter the following regular expression:
 
@@ -40,7 +41,7 @@
     This regular expression will parse the filenames and organize the
     data.
 
-05. Highlight the NamesAndTypes module.
+05. Highlight the **NamesAndTypes** module.
 
 06. Assign a name to “Images matching rules”.
 
@@ -87,9 +88,8 @@ the results.
    on the original images, not the rescaled images. Name the output *RescaledDNA*.
 
 ```{image} images/5_RescaleIntensity.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 2. Add a **Resize** module. Processing 3D images requires much more
@@ -100,9 +100,8 @@ the results.
    compared to the pixel size. Choose a value of *0.5* for both *X* and *Y*, this will halve each of the XY dimensions, so the resulting image will have a quarter of the area of the original. *Do not resize Z* (keep the factor at *1*), otherwise you will discard images from the Z stack. Name the output *ResizedDNA*.
 
 ```{image} images/6_Resize.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 3. Add a **MedianFilter** module. A median filter will homogenize the
@@ -113,14 +112,13 @@ the results.
    such as the Gaussian filter. For the example images, choose a filter size of *5*. This number was chosen empirically: it is smaller than the diameter of a typical nucleus; it is small enough that nuclei aren’t merged together, yet large enough to suppress over-segmentation of the nuclei. Name the output *MedianFiltDNA*.
 
 ```{image} images/7_MedianFilter.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 ### Segmentation
 
-In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module does not support 3D images. Thus, we will have to use a different strategy to segment the nuclei.
+In CellProfiler 4 (and previous versions) the **IdentifyPrimaryObjects** module does not support 3D images. Thus, we will have to use a different strategy to segment the nuclei.
 
 1. Add an **Threshold** module. This identifies a pixel intensity value
    to separate the foreground (nuclei) from the background. Empirically,
@@ -129,9 +127,8 @@ In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module do
    outputs. Name the output *MaskDNA*.
 
 ```{image} images/8_Threshold.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 2. Add a **RemoveHoles** module. This module implements an algorithm
@@ -140,9 +137,8 @@ In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module do
    *20*.
 
 ```{image} images/9_RemoveHoles.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 3. Add a **Watershed** module. This module implements the watershed
@@ -153,9 +149,8 @@ In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module do
    post](https://www.mathworks.com/company/newsletters/articles/the-watershed-transform-strategies-for-image-segmentation.html).
 
 ```{image} images/10_Watershed.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 4. Add a **ResizeObjects** module to return the segmented nuclei to the
@@ -164,9 +159,8 @@ In CellProfiler 4 (and previous versions) the *IdentifyPrimaryObjects* module do
    the nuclei we are seeking. Name the output *Nuclei*.
 
 ```{image} images/11_ResizeObjects.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 ## Find objects: cells
@@ -175,7 +169,7 @@ Now that we’ve segmented the nuclei, we want to segment the cytoplasm for
 each nuclei whose boundaries are defined by the membrane channel. The
 membrane channel presents more of a challenge because, unlike the
 nuclei, the membrane signal is variable and the boundaries are connected
-together in a sort of mesh. However, we can use the location of the nuclei we already found as 'seeds' to guide the Watershed module later on to identify regions with cells.
+together in a sort of mesh. However, we can use the location of the nuclei we already found as 'seeds' to guide the **Watershed** module later on to identify regions with cells.
 
 ### Transform nuclei into 'seeds'
 
@@ -185,24 +179,22 @@ together in a sort of mesh. However, we can use the location of the nuclei we al
    order to avoid losing any nuclei.
 
    We’ve found that we can achieve the best results by applying
-   **ErodeObjects** to the output of the Watershed module rather than
-   the resized Nuclei that are at the original size (since the Watershed
+   **ErodeObjects** to the output of the **Watershed** module rather than
+   the resized Nuclei that are at the original size (since the **Watershed** module
    output has been downsampled, the resulting seeds from
    **ErodeObjects** are smaller and more seed-like). So, select the *downsizedNuclei* object as input. Name the output *erodedDownsizedNuclei*.
 
 ```{image} images/12_ErodeObjects.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 2. Resize these seeds using the **ResizeObjects** module with a
    factor of *2*. Name the output *erodedResizedNuclei*.
 
 ```{image} images/13_ResizeObjects.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 3. Next convert the eroded and resized nuclei to an image using the
@@ -210,14 +202,13 @@ together in a sort of mesh. However, we can use the location of the nuclei we al
    This image will serve as the seeds for segmenting the cells. Name the output *cellSeeds*.
 
 ```{image} images/14_ConvertObjectsToImages.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 ### Transform the membrane channel into cytoplasm signal
 
-The Watershed module finds objects that have bright signal, so the
+The **Watershed** module finds objects that have bright signal, so the
 cytoplasm that will define the cell volume should have bright signal.
 However, this is not the case in the membrane channel; it must be
 transformed into an image where the cytoplasm is bright and the
@@ -230,18 +221,16 @@ membrane channel to achieve this effect.
    free to try others. Name the output *MembThreshold*.
 
 ```{image} images/15_Threshold.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
-2. Add an **ImageMath** module. Within the ImageMath module choose the
+2. Add an **ImageMath** module. Within the **ImageMath** module choose the
    *Invert* operation, and invert the thresholded membrane. Name the output *MembInvert*.
 
 ```{image} images/16_ImageMath.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 3. Add a **RemoveHoles** module to remove the small holes in the
@@ -250,9 +239,8 @@ membrane channel to achieve this effect.
    *20*. Name the output *MembInvertRemoveHoles*.
 
 ```{image} images/17_RemoveHoles.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 4. Add another **ImageMath** module. Add all of the original images
@@ -260,17 +248,15 @@ membrane channel to achieve this effect.
    cells. Name the output *Monolayer*.
 
 ```{image} images/18_ImageMath.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 5. Add a **Resize** module to resize the Monolayer with a *Resizing factor* of *0.25* for X and Y (keep a factor of 1.0 for Z). Downsampling the image makes processing faster and decreases noise. Name the output *DownsizedMonolayer*.
 
 ```{image} images/19_Resize.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 6. Add a **Closing** module. Choose a size of *17* to blend the signal
@@ -278,17 +264,15 @@ membrane channel to achieve this effect.
    monolayer resides. Name the output *ClosedDownsizedMonolayer*.
 
 ```{image} images/20_Closing.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 7. Add a **Resize** module to resize the closed Monolayer back to its original size, *Resizing factor* of *4* for X and Y (keep a factor of *1.0* for Z). Name the output *ResizedClosedMonolayer*.
 
 ```{image} images/21_Resize.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 8. Add a **Threshold** module and threshold the smoothed monolayer
@@ -298,9 +282,8 @@ membrane channel to achieve this effect.
    Note that most of the middle planes of the stack should be completely white (part of the monolayer), while the regions above and below are primarily black (not part of the monolayer).
 
 ```{image} images/22_Threshold.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 9. Add a **MaskImage** module. You will use an *Image* as a mask (the
@@ -309,9 +292,8 @@ membrane channel to achieve this effect.
    bottom and top of the z-stack are black in the masked image. Name the output *MembMasked*.
 
 ```{image} images/23_MaskImage.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 10. Add an **ErodeImage** module. We will use this module to erode the
@@ -320,22 +302,20 @@ membrane channel to achieve this effect.
     in the Watershed segmentation (the next step). Name the output *MembFinal*.
 
 ```{image} images/24_ErodeImage.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 11. Add a **Watershed** module. The input is the result of the previous
-    ErodeImage module, referred to here as the MembFinal. Change the
+    **ErodeImage** module, referred to here as the MembFinal. Change the
     *Generate from* option to *Markers*. The Markers will be the
     *cellSeeds* image, which is the output of the
-    ConvertObjectsToImage module. Finally, set the Mask to also be the
+    **ConvertObjectsToImage** module. Finally, set the Mask to also be the
     *MembFinal*. This will help preserve the cell boundaries. Name the output of this module *Cells*.
 
 ```{image} images/25_Watershed.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 ## Making measurements
@@ -350,9 +330,8 @@ category.
    images, not rescaled images.
 
 ```{image} images/26_MeasureObjectIntensity.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 ## Creating visuals
@@ -371,9 +350,8 @@ segmentations.
    You can try and do the same for the cell bodies, overlaying the *Cells* object onto a rescaled version of the *origMemb* image. Name the output *CellsOverlay*.
 
 ```{image} images/28_OverlayObjects.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 2. You can also convert the objects to images using the
@@ -382,9 +360,8 @@ segmentations.
    segmentations directly in Fiji and use them as masks for further processing.
 
 ```{image} images/33_ConvertObjectsToImage.png
+:width: 700
 :align: center
-:scale: 70 %
-:width: 1000
 ```
 
 ## Export measurements

@@ -1,5 +1,4 @@
 
-
 # Analysis of noisy 3D nuclei
 **Tutorial for the Association of Biomolecular Research Facilities - Ligh Microscopy Research Group (ABRF/LMRG)**
 
@@ -16,7 +15,7 @@ Segment the objects in a fluorescence z-stack image and provide:
 ## **Input:**
 
 Four different z-stack images that vary in their signal-to-noise ratio
-and the clustering of their objects of nuclei in 3D cell culture.
+and the clustering of their nuclei in 3D cell culture.
 
 Voxel dimensions: 0.124x0.124x0.200 um
 
@@ -26,7 +25,7 @@ Calibration Image: Voxel dimensions: 1x1x1 um
 
 1. Highlight the **Images** module.
 
-   1. Drag-and-drop the images you will analyze into the Images module window.
+   1. Drag-and-drop the images you will analyze into the **Images** module window.
 
 ```{image} images/image20.png
 :width: 700
@@ -39,9 +38,9 @@ File->Import->Pipeline from File…
 > Note: The pipeline should populate all information needed, but it’s
 always a good practice to check if everything is fine.
 %
-> **Tip: Use the <img src="images/Info.png" width="40"/> to learn more or if you have questions.**
+> **Tip: Use the <img src="images/Info.png" width="40"/> button to learn more or if you have questions.**
 
-2. Highlight the **NameAndType** module.
+2. Highlight the **NamesAndTypes** module.
 
 %
 > The **NamesAndTypes** module gives each image a meaningful name by
