@@ -175,9 +175,14 @@ Thus, the order in which this processes are executed is **very** important, as i
   >
   >  - The <img src="./TutorialImages/close_eyes.png" width="35"/> icon means that the module output will not be visible when you run the pipeline.
 
+The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. You can activate this mode by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/> in the lower-left of the window. 
+When you are done developing your pipeline, you can exit the `'Test Mode'` by clicking on <img src="./TutorialImages/exitTestMode.png" width="120"/> and then finally run the entire pipeline on your complete image dataset using the <img src="./TutorialImages/analyzeImages.png" width="120"/> button.
+
 ###  **4. IdentifyPrimaryObjects – Nuclei (10min)**
 
 > **AIM: use the nuclear channel to segment (isolate and identify all the pixels belonging to) each nuclei.**
+
+- Enter '`Test Mode'` by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/>.\
 
 - Add an **IdentifyPrimaryObjects** module to the pipeline. Do this by clicking on the <img src="./TutorialImages/AddModule.png" width="35"/>  button in the bottom left corner of the CellProfiler window, which will pop up a small window called `‘Add modules’`. Navigate to the `Object Processing` category and select **IdentifyPrimaryObjects**. Double click on the module or click on <img src="./TutorialImages/AddToPipeline.png" width="120"/>.
 
