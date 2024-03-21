@@ -4,7 +4,7 @@
 ## A computer exercise using CellProﬁler
 
 
-Beth Cimini, Barbara Diaz-Rohrer, Esteban Miglietta, Paula Llanos and Rebecca Senft.
+Beth Cimini, Barbara Diaz-Rohrer, Esteban Miglietta, Paula Llanos, Mario Cruz and Rebecca Senft.
 <br>
 Broad Institute of MIT and Harvard, Cambridge, MA.
 
@@ -19,9 +19,9 @@ assay; see Gustafsdottir et al., 2013).
 >
 >is a high-content, high-throughput imaging technique used to capture a wide array of cellular phenotypes in response to diverse perturbations. Briefly, cells are treated with a variety of drugs, environmental changes or genetic perturbations (using CRISPR, for example) and then fixed and stained with six fluorescent dyes that mark different cellular compartments, including nuclei, cytoplasm, endoplasmic reticulum, Golgi apparatus, mitochondria, and actin. 
 >
->High-resolution images are then captured using automated fluorescence microscopy, and image analysis algorithms (like the one we will use in this tutorial) are applied to extract thousands of morphological features. These features are used to create a high dimensional **"morphological profile"** (consisting in up to several thousand features) for each perturbation. 
+>High-resolution images are then captured using automated fluorescence microscopy, and image analysis algorithms (like the one we will use in this tutorial) are applied to extract thousands of morphological features. These features are used to create a high dimensional **"morphological profile"** (consisting of up to several thousand features) for each perturbation. 
 >
->Finally, by comparing and clustering the morphological profiles of cells treated with different compdounds, researchers can identify potential new drug candidates, assess their toxicity or understand the mechanism of action of existing drugs; or, in combination with genetic perturbations, these profiles assays can be used to determine the function of genes or to understand the underlying mechanisms of genetic diseases and potential therapeutic interventions.
+>Finally, by comparing and clustering the morphological profiles of cells treated with different compounds, researchers can identify potential new drug candidates, assess their toxicity or understand the mechanism of action of existing drugs; or, in combination with genetic perturbations, these profiles assays can be used to determine the function of genes or to understand the underlying mechanisms of genetic diseases and potential therapeutic interventions.
 
 ```{figure} ./TutorialImages/Fig1.png
 :width: 900
@@ -83,12 +83,12 @@ Read through the steps below and follow instructions where stated. Steps where y
 - You can open and examine any image by double clicking on them
 - 🔴 **TO DO.** Open an image and familiarize yourself with the tools in the image toolbar: <img src="./TutorialImages/ImageToolbar.png" width="220">
 
-  > **TIP** you can manually adjust birghtness and contrast in the image display by right-clicking on it and going to `'Adjust Contrast'` 
+  > **TIP** you can manually adjust brightness and contrast in the image display by right-clicking on it and going to `'Adjust Contrast'` 
 
 -------------------------------------------------------------------------------------------------------------------------
 ###  **3. [OPTIONAL STEP] Set up the input modules (10min)**
   
-  > *You can skip this step is you prefer, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline.*
+  > *You can skip this step ig you prefer, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline.*
 
 The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are crucial for any CellProfiler pipeline because they define how images are loaded and organized.
 
@@ -96,8 +96,8 @@ The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Group
 
   - In this case, the module extracts the **Plate**, **Well**, **Site** and **ChannelNumber** from the image files' names.
 
-    - This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose to which images to apply them to.  
-    - You can also add a file where is contained the Metadata per image.
+    - This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose which images to apply them to.  
+    - You can also add a file which adds extra Metadata per image.
 
   - The module uses a `'regular expression'` (also known as RegEx), a sort of template that fits all the file names and allows to obtain data from them.
 
@@ -108,19 +108,19 @@ The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Group
 
 > Expressions contained between parentheses are VARIABLE and are captured into named variables (denoted as `(?P<VariableName>)`).
 >
-> Expressions outside parentheses are CONSTANT and should be present in ALL image file names (like the unerscores and the '.tif')
+> Expressions outside parentheses are CONSTANT and should be present in ALL image file names (like the underscores and the '.tif')
 >
 > `^`: Start the regular expression
 >
->`(?P<Plate>.*)`: Extract all the characters before the first underscore character (_) and assign them to the measurment **"Plate"** for the image. 
+>`(?P<Plate>.*)`: Extract all the characters before the first underscore character (_) and assign them to the measurement **"Plate"** for the image. 
 >
->`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single (denoted as {1}) uppercase letter from A to P (denoted as [A-P]). Then, extracts the next two digits ({2}) between [0-9] and assign it to the measurment **"Well"** for the image.  
+>`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single (denoted as {1}) uppercase letter from A to P (denoted as [A-P]). Then, extract the next two digits ({2}) between [0-9] and assign it to the measurment **"Well"** for the image.  
 >
->`site(?P<Site>[0-9])`: After the constant string "site", extract the next two digits {2} between [0-9] and assign it to the measurment **"Site"** for the image.
+>`site(?P<Site>[0-9])`: After the constant string "site", extract the next two digits {2} between [0-9] and assign it to the measurement **"Site"** for the image.
 >
->`Ch(?P<ChannelNumber>[1-5])`: After the constant string "Ch", extract the next digit between [1-5] and assign it to the measurment **"ChannelNumber"** for the image.
+>`Ch(?P<ChannelNumber>[1-5])`: After the constant string "Ch", extract the next digit between [1-5] and assign it to the measurement **"ChannelNumber"** for the image.
 
->If you want to learn more about how this regular expressions work or how to adapt them to other situations, click on the <img src="./TutorialImages/Info.png" width="35"> button.
+>If you want to learn more about how these regular expressions work or how to adapt them to other situations, click on the <img src="./TutorialImages/Info.png" width="35"> button.
 
 ```{figure} ./TutorialImages/Fig4.png
 :width: 650
@@ -358,7 +358,7 @@ The next 3 modules will help address these issues to create the `'Nucleoli'` obj
   **🔴 TO DO: Mask the RNA image to show only the nuclear region**
 
   - Change the input image from the drop-down menu to ‘FilteredRNA’.
-  - Change the name of the output image to ‘SytoNuclei’.
+  - Change the name of the output image to ‘RNA_in_Nuclei’.
   - Use the objects ‘Nuclei’ as the mask.
   - See below for an example of results to aim for:
 
@@ -383,6 +383,7 @@ The next 3 modules will help address these issues to create the `'Nucleoli'` obj
   **🔴 TO DO**: Add an **OverlayOutlines** module at this point to overlay the identiﬁed nucleoli on the `'Orig_RNA'` image to assure yourself that the segmentation not only matches the speckle enhanced `'FilteredRNA'` image, but also looks accurate on the unprocessed image as well. This is not strictly necessary but can be a nice “sanity check”.
 
   - **Goal**: display outlines of your nucleoli and your nuclei on the unprocessed `'OrigRNA'` image.
+  - Name the output image `'SanityCheck'`
   - Here’s an example of what that could look like (red=Nuclei, green=Nucleoli):
 
 
@@ -400,7 +401,7 @@ The next 3 modules will help address these issues to create the `'Nucleoli'` obj
   - Some suggested modules to add: **MeasureObjectIntensity**, **MeasurebjectSizeShape**, **MeasureColocalization**, **MeasureObjectNeighbors**.
   > **IMPORTANT!** 
   >
-  >If you choose to include the **MeasureColocalization** module, we highly recommend to set the `'Calculate the Manders coefficients using Costes auto threshold'` option to `'NO'`. Otherwise, this module can be very time-consuming
+  >If you choose to include the **MeasureColocalization** module, we highly recommend setting the `'Calculate the Manders coefficients using Costes auto threshold'` option to `'NO'`. Otherwise, this module can be very time-consuming
  
 - Which objects do you think would be valuable to measure with each of these modules? 
 - Which channels would you measure your objects in? 
@@ -429,7 +430,7 @@ Relating the objects allows you to create per-parent means (e.g., for this cell,
 - Add a **ExportToSpreadsheet** module at the end of the pipeline.
 - In `'Output file location'` select `'Default Output Folder'`
   - You can change the `'Default Output Folder'` by clicking the <img src="./TutorialImages/OutputSettings.png" width="120"/> button at the bottom left corner of the window
-- Leave all the deafult settings (as shown in Figure 17)
+- Leave all the default settings (as shown in Figure 17)
   - You can pick and choose which measurements to export by selecting `'No'` in the `'Export all measurement types?'` setting
 
   > **Note** that a <img src="./TutorialImages/Warning.png" width="35"/> appears next to the module. This is not an error. If you hover over it with your mouse, you will see that it is just a warning saying that '**ExportToSpreadsheet** will not produce output in Test Mode'. The measurements will only be saved when you run the pipeline for all images (see next section).
@@ -454,7 +455,7 @@ As we are exporting the results of our analysis, it can also be worthwhile to sa
 - Add `'_overlay'` as a suffix to the saved images. Then, the image name will be the original filename + `'_overlay'`
 - In `'Output file location'` select `'Default Output Folder sub-folder'` and name that sub-folder `'overlay_images'`
   - You can change the `'Default Output Folder'` by clicking the <img src="./TutorialImages/OutputSettings.png" width="120"/> button at the bottom left corner of the window.
-- Leave the rest of the settings as they are in the default (as swown in Figure 18)
+- Leave the rest of the settings as they are in the default (as shown in Figure 18)
 
 
 ```{figure} ./TutorialImages/Fig18.png
@@ -471,7 +472,7 @@ Now you have a pipeline that works well across different images. It is time to r
 - Exit test mode by clicking on the <img src="./TutorialImages/ExitTestMode.png" width="120"/> button.
 
 - Turn all the <img src="./TutorialImages/EyeOpen.png" width="50"/> symbols to <img src="./TutorialImages/EyeClosed.png" width="50"/> so that module outputs don't pop up during analysis.
-  - You can also do this by goinf to `'Windows'` in the main menu (top of the screen) and selecting `'Hide All Windows On Run'`
+  - You can also do this by going to `'Windows'` in the main menu (top of the screen) and selecting `'Hide All Windows On Run'`
 
 - Then, click on <img src="./TutorialImages/AnalyzeImages.png" width="120"/> button at the bottom left corner.
  
@@ -479,4 +480,4 @@ Now you have a pipeline that works well across different images. It is time to r
 
 <br>
 
-**CONGRATULATIONS!! YOU HAVE SUCCESFULLY RUN YOUR FIRST CELL PROFILER PIPELINE!**
+**CONGRATULATIONS!! YOU HAVE SUCCESSFULLY RUN YOUR FIRST CELL PROFILER PIPELINE!**
