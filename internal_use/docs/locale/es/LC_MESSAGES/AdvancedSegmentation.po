@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2023
-# Esteban, 2023
+# Beth Cimini, 2024
+# Esteban, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 16:49-0500\n"
+"POT-Creation-Date: 2024-03-15 11:33-0400\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Esteban, 2023\n"
+"Last-Translator: Esteban, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,26 +23,32 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:2
+msgid "Advanced segmentation and organelle analysis"
+msgstr "Segmentación avanzada y análisis de organelas"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:3
 msgid ""
-"Advanced segmentation and organelle analysis: A computer exercise using "
-"CellProfiler & CellProfiler Analyst software"
+"***A computer exercise using the CellProfiler & CellProfiler Analyst "
+"softwares***"
 msgstr ""
-"Segmentación avanzada y análisis de organelas: Un ejercicio informático con "
-"los programas CellProfiler y CellProfiler Analyst"
+"***Un ejercicio informático utilizando los softwares CellProfiler y "
+"CellProfiler Analyst***"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:5
-msgid "Beth Cimini, Broad Institute"
-msgstr "Beth Cimini, Instituto Broad"
+msgid ""
+"**Beth Cimini**  <br>  **Broad Institute of MIT and Harvard, Cambridge, MA**"
+msgstr ""
+"**Beth Cimini** <br> **Broad Institute of MIT and Harvard, Cambridge, MA**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:7
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:9
 msgid "**Background information:**"
 msgstr "**Sobre las imágenes de este ejercicio:**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:9
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:11
 msgid ""
-"The images in this experiment come from the `Broad Bioimage Benchmark "
-"Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. They are 240 "
-"of 69,120 fields of U2OS cells treated with a panel of 1600 known bioactive "
+"The images in this experiment come from the [Broad Bioimage Benchmark "
+"Collection](https://data.broadinstitute.org/bbbc/BBBC022/). They are 240 of "
+"69,120 fields of U2OS cells treated with a panel of 1600 known bioactive "
 "compounds and imaged in five channels for a so-called Cell Painting assay- "
 "see Gustafsdottir et al, 2013 for more information. The compounds target a "
 "wide range of cell pathways, meaning that some cells and organelles will "
@@ -50,22 +56,22 @@ msgid ""
 "treated controls. This will give you an opportunity to try to find "
 "segmentation parameters that work across a wide range of conditions."
 msgstr ""
-"Las imágenes de este experimento proceden de la `Broad Bioimage Benchmark "
-"Collection <https://data.broadinstitute.org/bbbc/BBBC022/>`__. Son 240 de "
-"69.120 campos de células U2OS tratadas con un panel de 1.600 compuestos "
-"bioactivos conocidos y visualizadas en cinco canales para un ensayo "
-"denominado Cell Painting (para más información, véase Gustafsdottir et al, "
-"2013). Los compuestos se dirigen a una amplia gama de vías celulares, lo que"
-" significa que algunas células y organelas tendrán morfologías muy "
-"diferentes entre sí y con respecto a los controles. Esto le dará la "
+"Las imágenes de este experimento provienen de la [Broad Bioimage Benchmark "
+"Collection] (https://data.broadinstitute.org/bbbc/BBBC022/). Son 240 de "
+"69,120 campos de U2OS células tratadas con un panel de 1600 compuestos "
+"bioactivos conocidos y fotografiados en cinco canales para el llamado ensayo"
+" de Cell Painting; consulte Gustafsdottir et al, 2013 para obtener más "
+"información. Los compuestos se apuntan a una amplia gama de vías celulares, "
+"lo que significa que algunos células y organelas tendrán morfologías muy "
+"diferentes tanto entre sí como respecto de los controles. Esto le dará la "
 "oportunidad de intentar encontrar parámetros de segmentación que funcionen "
 "en una amplia gama de condiciones."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:24
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:26
 msgid "*Figure 1: Images and channels from a CellPainting assay.*"
 msgstr "*Figura 1: Imágenes y canales de un ensayo de CellPainting.*"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:26
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:29
 msgid ""
 "While in the traditional Cell Painting protocol we do not actually segment "
 "out any organelles (other than the nucleus), the large number of stained "
@@ -82,7 +88,7 @@ msgstr ""
 "pipelines y una habilidad importante para configurar un análisis "
 "CellProfiler."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:33
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:36
 msgid ""
 "Cell Painting generally consists of a few simple segmentation steps followed"
 " by adding as many measurement modules as can be reasonably included in a "
@@ -101,11 +107,11 @@ msgstr ""
 " fármacos, las interacciones entre genes y vías, y más. Para más "
 "información, véase Bray et al 2016 y sus citas."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:41
-msgid "**Goals of this exercise: **"
-msgstr "**Objetivos de este ejercicio: **"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:44
+msgid "**Goals of this exercise:**"
+msgstr "**Objetivos de este ejercicio:**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:43
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:46
 msgid ""
 "This exercise will give you practice at finding segmentation parameters that"
 " will be robust across whatever variability may exist in your sample. This "
@@ -117,13 +123,13 @@ msgstr ""
 "existir en su muestra. Esto no siempre es sencillo, por lo que será "
 "necesario examinar la segmentación en una amplia gama de imágenes."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:52
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:55
 msgid "*Figure 2: Examples of varied nuclei found in this data set.*"
 msgstr ""
 "*Figura 2: Ejemplos de núcleos variados encontrados en este conjunto de "
 "datos.*"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:54
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:58
 msgid ""
 "This exercise will additionally show you some ways to pull out smaller "
 "features in your image by segmenting organelles within the cells and nuclei."
@@ -137,11 +143,11 @@ msgstr ""
 "estudiar los recuentos medios, las distancias y las medidas de las organelas"
 " más pequeñas dentro de sus objetos parentales más grandes."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:60
-msgid "**Materials necessary for this exercise: **"
-msgstr "**Materiales necesarios para este ejercicio: **"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:64
+msgid "**Materials necessary for this exercise:**"
+msgstr "**Materiales necesarios para este ejercicio:**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:62
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:66
 msgid ""
 "These 1200 images (240 sites in 5 channels) represent 120 wells from a "
 "single 384 well plate, either mock treated with DMSO or treated with a "
@@ -153,7 +159,7 @@ msgstr ""
 "compuestos bioactivos. También se ha incluido un archivo CSV con la "
 "información asociada al tratamiento farmacológico."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:67
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:71
 msgid ""
 "It is additionally expected that you are generally familiar with "
 "CellProfiler, preferably after completing the Translocation tutorial or a "
@@ -163,21 +169,29 @@ msgstr ""
 "después de completar el tutorial de Translocación o un ejercicio "
 "introductorio similar."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:71
-msgid "**Load images and metadata**"
-msgstr "**Cargar imágenes y metadatos**"
-
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:73
-msgid "Start CellProfiler by double-clicking the desktop icon |Inline1|"
-msgstr ""
-"Inicie CellProfiler haciendo doble clic en el icono del escritorio "
-"|Inline1|."
-
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:75
-msgid "Inline1"
-msgstr " "
+msgid "**Input images and configure metadata**"
+msgstr "**Ingrese imágenes y configure metadatos**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:78
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:77
+msgid "1. **Load images and metadata**"
+msgstr "1. **Cargar imágenes y metadatos**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
+msgid ""
+"Start CellProfiler by double-clicking the desktop icon <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\" alt=\"CellProfiler icon\" "
+"width=\"35\"/>"
+msgstr ""
+"Inicie CellProfiler haciendo doble clic en el icono del escritorio <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\" alt=\"CellProfiler icon\" "
+"width=\"35\"/>"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
+msgid "CellProfiler icon"
+msgstr "Icono de CellProfiler"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:81
 msgid ""
 "Drag and drop the ‘BBBC022_Analysis_Start.cppipe’ file into the ‘Analysis "
 "modules’ box. 7 modules should pop up, and almost all of them will show "
@@ -187,7 +201,7 @@ msgstr ""
 "'Módulos de análisis' )Analysis Modules). Deberían aparecer 7 módulos, y "
 "casi todos mostrarán errores. **Este es el comportamiento esperado."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:82
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:84
 msgid ""
 "Drag and drop the ‘BBBC022_20585_AE’ folder into the ‘File list’ box. It "
 "should automatically populate. Notice that illumination correction images "
@@ -198,11 +212,11 @@ msgstr ""
 "corrección de iluminación (con extensión '.npy') están incluidas en este "
 "conjunto de datos."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:87
-msgid "**Import metadata from the CSV**"
-msgstr "**Importar metadatos del CSV**"
-
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:89
+msgid "2. **Import metadata from the CSV**"
+msgstr "2. **Importar metadatos desde CSV**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:91
 msgid ""
 "So that we can explore what cells treated with different drugs look like "
 "later in the exercise, we must add this information into CellProfiler from "
@@ -223,7 +237,7 @@ msgstr ""
 "En el módulo \"Metadata\", ya deberían estar presentes y totalmente "
 "configurados tres métodos de extracción de metadatos:"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:97
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:96
 msgid ""
 "The first pulls Well, Site, and Channel metadata from all of the image files"
 " except for the illumination correction functions"
@@ -231,18 +245,18 @@ msgstr ""
 "La primera extrae los metadatos de Pocillo, Campo y Canal de todos los "
 "archivos de imagen excepto de las funciones de corrección de iluminación"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:100
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:98
 msgid "The second pulls Plate metadata from the image folder"
 msgstr "El segundo extrae los metadatos de la Placa de la carpeta de imágenes"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:102
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:99
 msgid ""
 "The third pulls Plate metadata from the illumination correction functions"
 msgstr ""
 "El tercero extrae metadatos de Placa de las funciones de corrección de "
 "iluminación"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:105
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:102
 msgid ""
 "The fourth metadata extraction step requires you to tell CellProfiler the "
 "location of the CSV file.  It is looking for it in CellProfiler's Default "
@@ -252,15 +266,15 @@ msgstr ""
 "CellProfiler la ubicación del archivo CSV.  Lo busca en la Carpeta de "
 "Entrada Predeterminada de CellProfiler, que por lo tanto debemos configurar."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:109
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:106
 msgid ""
-"Select the ‘View output settings’ button in the bottom left corner of the "
-"screen."
+"Select the  <img src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/>"
+" button in the bottom left corner of the screen."
 msgstr ""
-"Seleccione el botón \"Configuración de salida\" (\"Output settings\") en la "
-"esquina inferior izquierda de la pantalla."
+"Seleccione el botón <img src=\"./TutorialImages/OutputSettings.png\" "
+"width=\"120\"/> en la esquina inferior izquierda de la pantalla."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:112
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:107
 msgid ""
 "Set the ‘Default Input Folder’ to the location of ‘20585_AE.csv’ within the "
 "exercise folder"
@@ -268,7 +282,7 @@ msgstr ""
 "Establezca la 'Carpeta de entrada por defecto' ('Default Input Folder') en "
 "la ubicación de '20585_AE.csv' dentro de la carpeta del ejercicio."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:115
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:109
 msgid ""
 "Return to the ‘Metadata’ module and press ‘Update’. You should now see a "
 "number of columns in the Metadata window."
@@ -276,7 +290,7 @@ msgstr ""
 "Vuelva al módulo \"Metadatos\" y pulse \"Actualizar\". Ahora debería ver una"
 " serie de columnas en la ventana Metadatos."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:118
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:111
 msgid ""
 "If you like, examine the CSV and how the ‘Match file and image’ settings are"
 " configured:"
@@ -284,7 +298,7 @@ msgstr ""
 "Si lo desea, examine el CSV y cómo están configurados los ajustes de "
 "\"Coincidir archivo e imagen\" ('Match file and image'):"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:121
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:113
 msgid ""
 "Image_Metadata_PlateID (from the spreadsheet) is matched to Plate (extracted"
 " from the folder name by the second extraction step)"
@@ -292,7 +306,7 @@ msgstr ""
 "Image_Metadata_PlateID (de la hoja de cálculo) se empareja con Plate "
 "(extraído del nombre de la carpeta por el segundo paso de extracción)"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:124
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:114
 msgid ""
 "Image_Metadata_CPD_WELL_POSITION (from the spreadsheet) is matched to Well "
 "(extracted from the file name by the first extraction step)"
@@ -300,11 +314,12 @@ msgstr ""
 "Image_Metadata_CPD_WELL_POSITION (de la hoja de cálculo) se corresponde con "
 "Well (extraído del nombre del archivo mediante el primer paso de extracción)"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:128
-msgid "**Examine the channel mappings in NamesAndTypes (optional)**"
-msgstr "**Examine las asignaciones de canales en NamesAndTypes (opcional)**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:116
+msgid "3. **Examine the channel mappings in NamesAndTypes (optional)**"
+msgstr ""
+"3. **Examine las asignaciones de canales en NamesAndTypes (opcional)**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:130
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:118
 msgid ""
 "The channel mapping here is a bit more complicated than anything we've "
 "worked with before- we have a single set of illumination correction images "
@@ -317,7 +332,7 @@ msgstr ""
 "pocillos y campos.  Podemos utilizar los metadatos que extrajimos en el "
 "último módulo para hacer posible esa asociación."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:135
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:120
 msgid ""
 "Two different ways of mapping images to channel names are demonstrated here."
 " There are several others, and often you could create several correct "
@@ -329,7 +344,7 @@ msgstr ""
 "correctas para un conjunto dado de imágenes, pero éstas pueden servir como "
 "ejemplo útil para referirse a ellas en su propio trabajo."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:140
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:125
 msgid ""
 "The ‘.tif’ image files are assigned a name by the Metadata extracted in the "
 "previous module (specifically ChannelNumber)"
@@ -337,7 +352,7 @@ msgstr ""
 "A los archivos de imagen '.tif' se les asigna un nombre mediante los "
 "metadatos extraídos en el módulo anterior (concretamente ChannelNumber)"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:143
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:128
 msgid ""
 "The ‘.npy’ illumination correction functions are assigned a name based on a "
 "unique string in the name (such as ‘IllumER’)"
@@ -345,7 +360,7 @@ msgstr ""
 "A las funciones de corrección de la iluminación '.npy' se les asigna un "
 "nombre basado en una cadena única en el nombre (como 'IllumER')"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:146
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:131
 msgid ""
 "As there is only one set of illumination correction functions for each "
 "entire plate, the image sets cannot simply be constructed by using ‘Image "
@@ -355,7 +370,7 @@ msgstr ""
 "para toda la placa, los conjuntos de imágenes no pueden construirse "
 "simplemente utilizando 'Image set matching' como 'Order'."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:150
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:135
 msgid ""
 "Scroll to the bottom of the ‘NamesAndTypes’ to see how the image sets are "
 "constructed"
@@ -363,24 +378,24 @@ msgstr ""
 "Desplácese hasta la parte inferior de \"NamesAndTypes\" para ver cómo se "
 "construyen los conjuntos de imágenes"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:153
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:138
 msgid "‘Image set matching’ is set to ‘Metadata’"
 msgstr ""
 "La \"Coincidencia de conjunto de imágenes\" (\"Image set matching\") se "
 "establece en \"Metadata\"."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:155
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:139
 msgid "Each image channel is set to ‘Plate->Well->Site’."
 msgstr "Cada canal de imagen se ajusta a 'Placa->Pocillo->Campo'."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:157
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:140
 msgid ""
 "Each illumination correction function is set to ‘Plate->(None)->(None)’"
 msgstr ""
 "Cada función de corrección de iluminación se establece en "
 "'Placa->(Ninguna)->(Ninguna)'."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:160
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:143
 msgid ""
 "Metadata based matching can be useful in any circumstance where a larger "
 "group of images needs to be mapped with a smaller one, such as every plate "
@@ -395,18 +410,23 @@ msgstr ""
 " o que cada película de una serie de vídeos timelapse se empareje con su "
 "propia máscara de recorte única."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:170
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:153
 msgid "*Figure 3: A section of the ‘Image set matching’ dialog.*"
 msgstr ""
 "*Figura 3: Sección del cuadro de diálogo \"Coincidencia de conjuntos de "
 "imágenes \" (\"Image set matching\")*."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:172
-msgid ""
-"**Examine the output of the CorrectIlluminationApply module (optional)**"
-msgstr "**Examine la salida del módulo CorrectIlluminationApply (opcional)**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:155
+msgid "**Illumination correction**"
+msgstr "**Correción de Iluminación**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:175
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:157
+msgid ""
+"4. **Examine the output of the CorrectIlluminationApply module (optional)**"
+msgstr ""
+"4. **Examine la salida del módulo CorrectIlluminationApply (opcional)**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:159
 msgid ""
 "Since microscope objectives don't typically have a completely uniform "
 "illumination pattern, applying an illumination correction function can help "
@@ -420,14 +440,14 @@ msgstr ""
 " mediciones sean más uniformes al compensar este hecho.  Preste mucha "
 "atención a la parte superior del campo de visión para ver el mayor efecto."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:180
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:164
 msgid ""
 "Enter test mode and hit ‘Step’ to run the CorrectIlluminationApply module."
 msgstr ""
 "Entre en el modo de prueba y pulse 'Paso' ('Step') para ejecutar el módulo "
 "CorrectIlluminationApply."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:183
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:167
 msgid ""
 "Briefly examine the output of the CorrectIlluminationApply module- you can "
 "see that the illumination correction functions show significant "
@@ -437,7 +457,7 @@ msgstr ""
 "que las funciones de corrección de iluminación muestran una heterogeneidad "
 "significativa en todo el campo de visión."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:187
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:171
 msgid ""
 "These functions were created by averaging and smoothing all 3456 images from"
 " this plate, indicating the image captured is consistently dimmer in those "
@@ -447,7 +467,7 @@ msgstr ""
 "esta placa, lo que indica que la imagen captada es sistemáticamente más "
 "tenue en esas regiones en casi todas las imágenes."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:191
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:175
 msgid ""
 "Also note that while the illumination correction functions for each channel "
 "are similar, they aren’t identical; each channel in your own experiments "
@@ -457,15 +477,19 @@ msgstr ""
 "iluminación para cada canal son similares, no son idénticas; por lo tanto, "
 "cada canal en tus propios experimentos debe corregirse independientemente."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:199
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:183
 msgid "*Figure 4: Application of the illumination correction functions.*"
 msgstr "*Figura 4: Aplicación de las funciones de corrección de iluminación.*"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:201
-msgid "**IdentifyPrimaryObjects- Nuclei**"
-msgstr "**IdentificarObjetosPrimarios-Núcleos**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
+msgid "**Segmenet Nuclei, Cells and Cytoplasm**"
+msgstr "**Segmentar Núcleos , Células y Citoplasma**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:203
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
+msgid "5. **IdentifyPrimaryObjects- Nuclei**"
+msgstr "5. **IdentifyPrimaryObjects - Núcleos**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:190
 msgid ""
 "Next we'll take a first pass at identifying nuclei and cells in our initial "
 "image."
@@ -473,7 +497,7 @@ msgstr ""
 "A continuación, realizaremos una primera pasada para identificar núcleos y "
 "células en nuestra imagen inicial."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:205
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:192
 msgid ""
 "**After** the CorrectIlluminationApply module but **before** any others, add"
 " an IdentifyPrimaryObjects module (from the ‘Object Processing’ module "
@@ -483,7 +507,7 @@ msgstr ""
 "otro, añade un módulo IdentifyPrimaryObjects (de la categoría de módulos "
 "'Procesamiento de objetos')."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:209
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:195
 msgid ""
 "Create objects called Nuclei by segmenting on the Hoechst channel. Hit "
 "‘Step’ to run the module. How does your segmentation look?"
@@ -491,7 +515,7 @@ msgstr ""
 "Cree objetos llamados Núcleos segmentando en el canal Hoechst. Pulse 'Paso' "
 "para ejecutar el módulo. ¿Cómo se ve su segmentación?"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:212
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:197
 msgid ""
 "Use the magnifying glass at the top of the window to zoom in on an area that"
 " was segmented poorly, then update some of your parameters in "
@@ -502,7 +526,7 @@ msgstr ""
 "IdentifyPrimaryObjects y pulse \"Paso\" para volver a ejecutar la "
 "segmentación."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:216
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:200
 msgid ""
 "Adjust the segmentation parameters until you feel you’re ready to move on to"
 " identifying the cells around the nuclei; as you will test the parameters "
@@ -515,11 +539,11 @@ msgstr ""
 "identificación debe ser buena pero no es necesario que sea perfecta antes de"
 " pasar a la siguiente fase."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:221
-msgid "**IdentifySecondaryObjects- Cells**"
-msgstr "**IdentifySecondaryObjects- Células**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:205
+msgid "6. **IdentifySecondaryObjects- Cells**"
+msgstr "6. **IdentifySecondaryObjects - Células**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:223
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:207
 msgid ""
 "**After** the IdentifyPrimaryObjects module but **before** the "
 "EnhanceOrSuppressFeatures module, add an IdentifySecondaryObjects module."
@@ -527,7 +551,7 @@ msgstr ""
 "**Después** del módulo IdentifyPrimaryObjects pero **antes** del módulo "
 "EnhanceOrSuppressFeatures, añada un módulo IdentifySecondaryObjects."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:227
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:210
 msgid ""
 "Create an object called Cells that is seeded on the Nuclei primary objects "
 "that you just created; use the Ph_golgi image."
@@ -535,7 +559,7 @@ msgstr ""
 "Cree un objeto llamado Células que se siembra en los objetos primarios "
 "Núcleos que acaba de crear; utilice la imagen Ph_golgi."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:230
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:212
 msgid ""
 "For the purposes of this exercise, you need not worry about excluding cell "
 "bodies that touch the edge of the image."
@@ -543,7 +567,7 @@ msgstr ""
 "A efectos de este ejercicio, no debe preocuparse por excluir los cuerpos "
 "celulares que tocan el borde de la imagen."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:233
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:214
 msgid ""
 "Examine the segmentation and adjust the segmentation parameters until you "
 "feel you’re ready to test them on another image; they need not be perfect "
@@ -553,15 +577,15 @@ msgstr ""
 "considere que está preparado para probarlos en otra imagen; no es necesario "
 "que sean perfectos antes de seguir adelante."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:237
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:218
 msgid ""
-"**Test the robustness of your segmentation parameters across multiple "
+"7. **Test the robustness of your segmentation parameters across multiple "
 "compounds**"
 msgstr ""
-"**Pruebe la solidez de sus parámetros de segmentación en varios "
-"compuestos**."
+"7. **Pruebe la robustez de sus parámetros de segmentación en múltiples "
+"compuestos**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:240
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:220
 msgid ""
 "It's (relatively!) easy to come up with a good set of segmentation "
 "parameters for a single image or a set of similar images; this data set "
@@ -579,7 +603,7 @@ msgstr ""
 "puedan segmentar células que muestren una variedad de morfologías, ¡ya que "
 "puede encontrarse con un problema similar en sus propios experimentos!"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:247
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:222
 msgid ""
 "Go to Test->Choose Image Set to bring up a list of the images in your "
 "experiment."
@@ -587,11 +611,11 @@ msgstr ""
 "Vaya a 'Test->Choose Image Set ' para que aparezca una lista de las imágenes"
 " de su experimento."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:254
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:229
 msgid "*Figure 5: A section of the ‘Choose Image Set’ menu.*"
 msgstr "*Figura 5: Sección del menú \"Elegir conjunto de imágenes \"*."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:256
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:232
 msgid ""
 "Look at the column titled ‘Image_Metadata_SOURCE_COMPOUND_NAME’ to see what "
 "chemical was used in each well of the experiment. You may click on the "
@@ -602,7 +626,7 @@ msgstr ""
 "puede hacer clic en la columna para ordenar toda la tabla por los valores "
 "que contiene."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:261
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:237
 msgid ""
 "Choose a row where ‘Image_Metadata_SOURCE_COMPOUND_NAME’ is blank- this will"
 " be a mock treated well. Press the ‘OK’ button, then run that image in test "
@@ -619,7 +643,7 @@ msgstr ""
 " vez que su segmentación sea buena, pruébela en una imagen tratada "
 "adicional."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:268
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:244
 msgid ""
 "Test your segmentation on images from a few different compounds- you may "
 "choose ones you’ve worked with before, random ones, or some combination "
@@ -638,7 +662,7 @@ msgstr ""
 "luego vuelva a un pocillo Control para asegurarse de que sigue funcionando "
 "bien allí."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:276
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:252
 msgid ""
 "You’re encouraged to explore the compound list on your own, but if you find "
 "yourself consistently ending up with images that look similar you can try "
@@ -650,38 +674,38 @@ msgstr ""
 "imágenes de la siguiente lista de pocillos: A08, A12, B12, B18, C7, D6, D19,"
 " D22, E3."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:280
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:256
 msgid ""
-"Some hints on what to play with: -  In both IdentifyPrimaryObjects and "
+"Some hints on what to play with: \\-  In both IdentifyPrimaryObjects and "
 "IdentifySecondaryObjects adjusting the threshold limits can be a good thing "
-"for when wells are empty, confluent, or have bright debris in them -  In "
+"for when wells are empty, confluent, or have bright debris in them \\-  In "
 "both IdentifyPrimaryObjects and IdentifySecondaryObjects adjusting the "
-"threshold method may lead to better (or worse!) results. -  In "
+"threshold method may lead to better (or worse!) results. \\-  In "
 "IdentifyPrimaryObjects, adjusting the declumping settings (make sure to turn"
 " 'Use advanced settings?' on) will probably be necessary for a robust "
-"segmentation -  In IdentifySecondaryObjects, you will want to test the "
+"segmentation \\-  In IdentifySecondaryObjects, you will want to test the "
 "effects of using the various methods for identifying secondary objects "
 "(Propagation, Watershed-Image, Distance-N, etc) and, if using Propagation, "
 "the regularization factor."
 msgstr ""
-"Algunas pistas sobre con qué jugar: - Tanto en IdentifyPrimaryObjects como "
-"en IdentifySecondaryObjects, ajustar los límites del umbral puede ser una "
-"buena idea para cuando los pocillos están vacíos, confluentes, o tienen "
-"restos brillantes en ellos - Tanto en IdentifyPrimaryObjects como en "
-"IdentifySecondaryObjects, ajustar el método de umbralización puede conducir "
-"a mejores (¡o peores!) resultados. - En IdentifyPrimaryObjects, es probable "
-"que sea necesario ajustar la configuración de desagregación (declumping) "
-"(asegúrese de activar 'Use advanced settings?') para obtener una "
-"segmentación robusta - En IdentifySecondaryObjects, querrá probar los "
-"efectos de utilizar los distintos métodos para identificar objetos "
-"secundarios (Propagation, Watershed-Image, Distance-N, etc) y, si utiliza "
-"Propagation, el factor de regularización."
+"Algunos consejos sobre con qué parámetros jugar: \\- Tanto en "
+"IdentifyPrimaryObjects como en IdentifySecondaryObjects, ajustar los límites"
+" de umbralización puede ser una buena opción cuando los pocillos están "
+"vacíos, confluentes o tienen residuos brillantes. \\- Tanto en "
+"IdentifyPrimaryObjects como en IdentifySecondaryObjects, ajustar el método "
+"de umbralización puede conducir a mejores (¡o peores!) resultados. \\- En "
+"IdentifyPrimaryObjects, probablemente sea necesario ajustar la configuración"
+" de desagregación (declumping) (asegúrese de activar 'Use advanced "
+"settings?') para una segmentación robusta. \\- En IdentifySecondaryObjects, "
+"querrá probar los efectos del uso de los distintos métodos para identificar "
+"objetos secundarios (Propagation, Watershed-Image, Distance-N, etc) y, si se"
+" usa Propagation, el factor de regularización."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:286
-msgid "**IdentifyTertiaryObjects- Cytoplasm**"
-msgstr "**IdentificarObjetosTerciarios- Citoplasma**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:262
+msgid "8. **IdentifyTertiaryObjects- Cytoplasm**"
+msgstr "8. **IdentifyTertiaryObjects - Citoplasma**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:288
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:264
 msgid ""
 "**After** the IdentifySecondaryObjects module but **before** the "
 "EnhanceOrSuppressFeatures module, add an IdentifyTertiaryObjects module."
@@ -689,7 +713,7 @@ msgstr ""
 "**Después** del módulo IdentifySecondaryObjects pero **antes** del módulo "
 "EnhanceOrSuppressFeatures, añada un módulo IdentifyTertiaryObjects."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:292
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:267
 msgid ""
 "Create an object called Cytoplasm using the Cell and Nuclei objects you’ve "
 "created; ‘Shrink smaller object prior to subtraction?’ should both set to "
@@ -699,11 +723,15 @@ msgstr ""
 " ha creado; '¿Reducir objeto más pequeño antes de la sustracción?' (\"Shrink"
 " smaller object prior to subtraction?\") debe estar en 'No'."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:295
-msgid "**Examine the steps used to segment the Nucleoli**"
-msgstr "**Examine los pasos utilizados para segmentar los nucleolos**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:270
+msgid "**Segment Nucleoli inside the Nuclei**"
+msgstr "**Segmentar nucléolos dentro de los núcleos**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:297
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:272
+msgid "9. **Examine the steps used to segment the Nucleoli**"
+msgstr "9. **Examine los pasos utilizados para segmentar los nucléolos**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:274
 msgid ""
 "The next 3 modules have to do with the creation of the Nucleoli objects. "
 "Look at the output from each to see how the image is transformed to aid in "
@@ -713,7 +741,7 @@ msgstr ""
 "Nucleolos. Observa la salida de cada uno para ver cómo la imagen se "
 "transforma para ayudar en la segmentación."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:301
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:278
 msgid ""
 "EnhanceOrSuppressFeatures is a module that helps enhance particular parts of"
 " an image- in this case, punctate objects or ‘Speckles’. By specifying the "
@@ -727,7 +755,7 @@ msgstr ""
 "Como estamos buscando nucleolos, aplicamos esto a la imagen del canal de ARN"
 " (Syto), y llamamos al resultado 'FilteredRNA'. (Véase la figura 6)"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:308
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:285
 msgid ""
 "MaskImage allows you to create a version of the ‘FilteredRNA’ image called "
 "‘SytoNuclei’ where all of the pixels except the ones you specify are set to "
@@ -741,7 +769,7 @@ msgstr ""
 "que no esté dentro de un núcleo. Haciendo esto, podemos disminuir la "
 "probabilidad de detectar los puntos de ARN citoplasmático."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:314
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:291
 msgid ""
 "IdentifyPrimaryObjects is used to find the Nucleoli- this is a Primary "
 "object segmentation because we are not using another object as a seed to "
@@ -753,7 +781,7 @@ msgstr ""
 "como una semilla para crecer alrededor, pero sólo la segmentación basada en "
 "la intensidad en nuestra imagen 'SytoNuclei'."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:319
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:296
 msgid ""
 "If you like, you can add an \"OverlayOutlines\" module at this point to "
 "overlay the identified nucleoli on the original Syto image to assure "
@@ -768,7 +796,7 @@ msgstr ""
 "imagen sin procesar.  Esto no es necesario, pero puede ser una buena "
 "comprobación de la bondad de la segmentación."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:329
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:306
 msgid ""
 "*Figure 6: Enhancing the Syto image allows you to isolate nucleoli against "
 "the nucleoplasmic background signal.*"
@@ -776,11 +804,15 @@ msgstr ""
 "*Figura 6: La mejora de la imagen Syto permite aislar los nucleolos frente a"
 " la señal de fondo nucleoplásmica.*"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:332
-msgid "**Mask the Mito image by the Cytoplasm object**"
-msgstr "**Enmascarar la imagen de la Mitocondria con el objeto Citoplasma."
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:309
+msgid "**Segment the Mitochondria inside the Cytoplasm**"
+msgstr "**Segmentar las mitocondrias dentro del citoplasma**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:334
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
+msgid "10. **Mask the Mito image by the Cytoplasm object**"
+msgstr "10. **Enmascarar la imagen de Mito con el objeto Cytoplasm**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:313
 msgid ""
 "Now that you’ve seen an example of how to segment an organelle, you will do "
 "so for Mitochondria in the following steps."
@@ -788,7 +820,7 @@ msgstr ""
 "Ahora que ha visto un ejemplo de cómo segmentar una organela, lo hará para "
 "las Mitocondrias en los siguientes pasos."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:337
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:316
 msgid ""
 "**After** the IdentifyPrimaryObjects module for Nucleoli but **before** the "
 "RelateObjects modules, add a MaskImage module (from the Image Processing "
@@ -798,11 +830,11 @@ msgstr ""
 "de los módulos RelateObjects, añada un módulo MaskImage (de la categoría de "
 "módulos Image Processing)."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:341
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:320
 msgid "Call your output image ‘MaskedMito’."
 msgstr "Llame a su imagen de salida 'MitoMáscara'."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:343
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:322
 msgid ""
 "As you saw above with the Nucleoli example, mask the image via Objects, and "
 "use the Cytoplasm objects to create the mask."
@@ -811,7 +843,7 @@ msgstr ""
 "imagen mediante Objetos, y utilice los objetos Citoplasma para crear la "
 "máscara."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:346
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:325
 msgid ""
 "You may even experiment with doing a similar EnhanceOrSuppressFeatures step "
 "before the masking as was used for the Nucleoli; you may get greater signal-"
@@ -824,17 +856,17 @@ msgstr ""
 "a expensas de \"fragmentar\" los objetos Mitocondrias en los pasos "
 "posteriores de identificación."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:355
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:334
 msgid ""
 "*Figure 7: The MaskedMito image contains only the regions of interest.*"
 msgstr ""
 "*Figura 7: La imagen MitoMáscara contiene sólo las regiones de interés.*"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:357
-msgid "**IdentifyPrimaryObjects- Mitochondria**"
-msgstr "**IdentificarObjetosPrimarios- Mitocondrias**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:338
+msgid "12. **IdentifyPrimaryObjects- Mitochondria**"
+msgstr "12. **IdentifyPrimaryObjects - Mitocondrias**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:359
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:340
 msgid ""
 "**After** your MaskImage module but **before** the RelateObjects modules, "
 "add an IdentifyPrimary Objects module to identify Mitochondria from your "
@@ -844,7 +876,7 @@ msgstr ""
 "RelateObjects, añada un módulo IdentifyPrimary Objects para identificar "
 "Mitocondrias a partir de su imagen MitoMáscara."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:363
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:344
 msgid ""
 "You should consider using a wide range of pixel sizes here; 2-20 is a "
 "reasonable first place to start."
@@ -852,7 +884,7 @@ msgstr ""
 "Debería considerar el uso de una amplia gama de tamaños de píxel aquí; 2-20 "
 "es un primer lugar razonable para empezar."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:366
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:347
 msgid ""
 "If you did use EnhanceOrSuppressFeatures in the previous step, using "
 "OverlayOutlines to compare the outlines with the original image is a good "
@@ -862,11 +894,15 @@ msgstr ""
 "OverlayOutlines para comparar los contornos con la imagen original es una "
 "buena idea."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:370
-msgid "**Add measurement modules to your pipeline**"
-msgstr "**Añada módulos de medición a su pipeline**."
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:351
+msgid "**Perform Measurements**"
+msgstr "**Realizar mediciones**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:372
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:353
+msgid "13. **Add measurement modules to your pipeline**"
+msgstr "13. **Agregar módulos de medición a su pipeline**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:355
 msgid ""
 "**After** your segmentation of the mitochondria but **before** the "
 "RelateObjects modules, add as many object measurement modules as you would "
@@ -876,7 +912,7 @@ msgstr ""
 "módulos RelateObjects, añada tantos módulos de medición de objetos como "
 "desee."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:376
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:359
 msgid ""
 "Some suggested modules to add- MeasureObjectSizeShape, "
 "MeasureObjectIntensity, MeasureGranularity, MeasureObjectNeighbors."
@@ -884,7 +920,7 @@ msgstr ""
 "Algunos módulos sugeridos para añadir- MeasureObjectSizeShape, "
 "MeasureObjectIntensity, MeasureGranularity, MeasureObjectNeighbors."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:379
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:362
 msgid ""
 "Which objects do you think would be valuable to measure with each of these "
 "modules? Which channels would you measure your objects in?"
@@ -892,7 +928,7 @@ msgstr ""
 "¿Qué objetos crees que sería valioso medir con cada uno de estos módulos? "
 "¿En qué canales mediría sus objetos?"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:383
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:365
 msgid ""
 "For a typical Cell Painting experiment you would add as many measurements as"
 " possible, but that isn’t necessary here; however, do make sure every object"
@@ -902,7 +938,7 @@ msgstr ""
 "como fuera posible, pero eso no es necesario aquí; sin embargo, asegúrese de"
 " que cada objeto recibe al menos algunas mediciones."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:387
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:369
 msgid ""
 "While MeasureCorrelation, MeasureTexture, and "
 "MeasureObjectIntensityDistribution can produce valuable data for downstream "
@@ -916,11 +952,111 @@ msgstr ""
 " deben ser añadidos para este ejemplo de procesamiento en pos del tiempo de "
 "ejecución del pipeline. MeasureNeurons no es adecuado para este pipeline."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:394
-msgid "**Examine the settings of RelateObjects **"
-msgstr "**Examine la configuración de RelateObjects **"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:376
+msgid "**Export data**"
+msgstr "**Exportar datos**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:377
+msgid ""
+"In order to use the data visualization and machine learning tools in "
+"CellProfiler Analyst, the measurements will need to be saved to a database "
+"using the **ExportToDatabase**."
+msgstr ""
+"Para utilizar las herramientas de visualización de datos y aprendizaje "
+"automático en CellProfiler Analyst, las mediciones deberán guardarse en una "
+"base de datos mediante **ExportToDatabase**."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:381
+msgid ""
+"Add a module **ExportToDatabase** located under the module *“File "
+"Processing” category*"
+msgstr ""
+"Agregue un módulo **ExportToDatabase** ubicado debajo dede la categoría de "
+"módulos *“File Processing”*."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:383
+msgid ""
+"**NOTE:**  while in *Test mode*, the **ExportToDatabase** module will have a"
+" yellow warning sign in the pipeline panel and yellow- highlighted text in "
+"the module settings. Holding the mouse over the yellow-highlighted text "
+"informs the user that measurements produced in Test mode are not written to "
+"the database. This is normal behavior and does NOT indicate an error."
+msgstr ""
+"**NOTA:** mientras esté en *Test mode*, el módulo **ExportToDatabase** "
+"tendrá una señal de advertencia amarilla en el panel del pipeline y un texto"
+" resaltado en amarillo en el los ajustes del módulo. Al mantener el mouse "
+"sobre el texto resaltado en amarillo, se informa al usuario que las "
+"mediciones producidas en el modo de prueba no se escriben en la base de "
+"datos. Este es un comportamiento normal y NO indica un error."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:390
+msgid "Set up the module as in the image below:"
+msgstr "Configure el módulo como en la imagen a continuación:"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:396
+msgid ""
+"*Figure 8: The ExportToDatabase module.  The yellow warning symbol warns you"
+" that since you've chosen to make individual tables for each object, you "
+"will only be able to examine one object at a time in CellProfiler Analyst.*"
+msgstr ""
+"*Figura 8: El módulo ExportToDatabase.  El símbolo amarillo de advertencia "
+"le avisa de que, como ha elegido hacer tablas individuales para cada objeto,"
+" sólo podrá examinar un objeto a la vez en CellProfiler Analyst.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:401
+msgid ""
+"Check the box “Write image thumbnails directly to database?” From the list-"
+"box that subsequently appears, select “rawDNA” and “rawGFP”; you can make "
+"multiple selections by using Ctrl-click (Windows) or Command-click (Mac). "
+"Leave the rest of the settings at the default values."
+msgstr ""
+"Marque la casilla “Write image thumbnails directly to database?”. En la "
+"lista desplegable que aparece a continuación, seleccione \"rawDNA\" y "
+"\"rawGFP\"; puede hacer selecciones múltiples pulsando Ctrl-clic (Windows) o"
+" Cmd-clic (Mac). Deje el resto de la configuración en los valores por "
+"defecto."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:408
+msgid ""
+"**NOTE:** Because you have different object counts for some of your "
+"different   types of objects (the counts of Nuclei, Cells, and Cytoplasm "
+"will be   the same, but the counts of Mitochondria and Nucleoli will not "
+"be),   you will not be able to export the objects as a single data table but"
+"   must instead use a different data table for each object. This will   not "
+"affect the actual outcome of the experiment, but will mean that   each "
+"object will get its own properties file and that you can only   look at the "
+"measurement for one object at a time in CellProfiler   Analyst."
+msgstr ""
+"**NOTA:** Debido a que tiene diferentes recuentos de objetos para algunos de"
+" sus diferentes tipos de objetos (los recuentos de Núcleos, Células y "
+"Citoplasma serán los mismos, pero los recuentos de Mitocondrias y Nucléolos "
+"no lo serán), no podrá exportar los objetos como una única tabla de datos, "
+"sino que deberá utilizar una tabla de datos diferente para cada objeto. Esto"
+" no afectará el resultado real del experimento, pero significará que cada "
+"objeto obtendrá su propio archivo de propiedades y que solo podrá ver la "
+"medición de un objeto a la vez en CellProfiler Analyst."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:422
+msgid ""
+"*Figure 9: The  warning symbol warns you that since you've chosen to make "
+"individual tables for each object, you will only be able to examine one "
+"object at a time in CellProfiler Analyst.*"
+msgstr ""
+"*Figura 9: El símbolo de advertencia le advierte que, dado que ha elegido "
+"crear tablas individuales para cada objeto, solo podrá examinar un objeto a "
+"la vez en CellProfiler Analyst.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:427
+msgid "**Relate Nucleoli and Mitochondria to their respective nuclei/cells**"
+msgstr ""
+"**Relaciona los nucléolos y las mitocondrias con sus respectivos "
+"núcleos/células**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
+msgid "14. Examine the settings of RelateObjects"
+msgstr "14. Examinar la configuración del módulo RelateObjects"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:431
 msgid ""
 "**After** your Measurement and **before** your Export modules you should "
 "find two RelateObjects modules. One relates Nucleoli to Nuclei, while the "
@@ -930,7 +1066,7 @@ msgstr ""
 "debería encontrar dos módulos RelateObjects. Uno relaciona Nucleolos con "
 "Núcleos, mientras que el otro relaciona Mitocondrias con Células."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:400
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:434
 msgid ""
 "Relating the objects allows you to create per-parent means (ie, for this "
 "cell what is the average size of an individual mitochondrion) and calculate "
@@ -943,11 +1079,15 @@ msgstr ""
 " progenitor (es decir, a qué distancia está cada nucleolo del centro del "
 "núcleo)."
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:406
-msgid "**Run the pipeline (optional)**"
-msgstr "**Ejecutar el pipeline (opcional)**"
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:440
+msgid "**Perform the analysis on ALL the images**"
+msgstr "**Realizar el análisis de TODAS las imágenes**"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:408
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:442
+msgid "15. **Run the pipeline (optional)**"
+msgstr "15. **Ejecute el pipeline (opcional)**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:444
 msgid ""
 "If you have time and/or if you’d like to play with the data in CellProfiler "
 "Analyst later, exit test mode, close the eyes next to each module, and run "
@@ -957,40 +1097,10 @@ msgstr ""
 "Analyst más tarde, salga del modo de prueba, cierre los ojos junto a cada "
 "módulo y ejecute el pipeline"
 
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:412
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:447
 msgid ""
 "The pipeline will create a database called BBBC022.db, containing the output"
 " of all of the measurements you have added to your pipeline"
 msgstr ""
 "El pipeline creará una base de datos llamada BBBC022.db, que contendrá el "
 "resultado de todas las mediciones que haya añadido a su pipeline"
-
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:415
-msgid ""
-"Because you have different object counts for some of your different types of"
-" objects (the counts of Nuclei, Cells, and Cytoplasm will be the same, but "
-"the counts of Mitochondria and Nucleoli will not be), you will not be able "
-"to export the objects as a single data table but must instead use a "
-"different data table for each object. This will not affect the actual "
-"outcome of the experiment, but will mean that each object will get its own "
-"properties file and that you can only look at the measurement for one object"
-" at a time in CellProfiler Analyst."
-msgstr ""
-"Debido a que tiene diferentes recuentos de objetos para algunos de sus "
-"diferentes tipos de objetos (los recuentos de Núcleos, Células y Citoplasma "
-"serán los mismos, pero los recuentos de Mitocondrias y Nucléolos no lo "
-"serán), no podrá exportar los objetos como una única tabla de datos, sino "
-"que deberá utilizar una tabla de datos diferente para cada objeto. Esto no "
-"afectará al resultado real del experimento, pero significará que cada objeto"
-" tendrá su propio archivo de propiedades y que sólo podrá ver la medición de"
-" un objeto a la vez en CellProfiler Analyst."
-
-#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
-msgid ""
-"*Figure 8: The ExportToDatabase module.  The yellow warning symbol warns you"
-" that since you've chosen to make individual tables for each object, you "
-"will only be able to examine one object at a time in CellProfiler Analyst.*"
-msgstr ""
-"*Figura 8: El módulo ExportToDatabase.  El símbolo amarillo de advertencia "
-"le avisa de que, como ha elegido hacer tablas individuales para cada objeto,"
-" sólo podrá examinar un objeto a la vez en CellProfiler Analyst.*"
