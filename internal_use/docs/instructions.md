@@ -36,7 +36,7 @@ Whenever a resource is fully translated and reviewed, Transifex will make a pull
 
 -- In your terminal `cd` into `[YourTutorialsRepo]/internal_use/docs/source/`
 -- Run `sphinx-build -b html -D language=es -D root_doc=toc_es/index . ../build/html_es` to build in Spanish  
--- Run `sphinx-build -b html -D language=es -D root_doc=toc_pt_BR/index . ../build/html_pt_BR` to build in Protuguese (Brazil)
+-- Run `sphinx-build -b html -D language=pt_BR -D root_doc=toc_pt_BR/index . ../build/html_pt_BR` to build in Protuguese (Brazil)
 
 
 ## **To build/update the .toc files for the translation in transifex**
