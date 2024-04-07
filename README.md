@@ -41,7 +41,7 @@ This exercise will guide you through setting segmentation parameters that will b
 
 A tutorial that describes building a pipeline to segment the nuclei and cell boundaries of a HeLa cell monolayer in 3d using the Watershed module.<br> 
 
-<a href="https://github.com/CellProfiler/tutorials/raw/master/3d_monolayer/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<a href="https://www.youtube.com/watch?v=iLlB4VFatIU"> <img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://github.com/CellProfiler/tutorials/raw/master/3d_monolayer/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## Pixel-based Classification
@@ -50,7 +50,7 @@ A tutorial that describes building a pipeline to segment the nuclei and cell bou
 
 A tutorial describing how to use ilastik in combination with CellProfiler to segment cells imaged only in phase contrast without any added fluorescence. <br> 
 
-<a href="https://github.com/CellProfiler/tutorials/raw/master/PixelBasedClassification/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<a href="https://youtu.be/89XPqczqhvU?feature=shared"> <img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://github.com/CellProfiler/tutorials/raw/master/PixelBasedClassification/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
 
 ## Quality Control
