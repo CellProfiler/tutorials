@@ -4,7 +4,7 @@ CellProfiler tutorials are exercises we've guided groups of users through to hel
 
 
 ## Beginner Segmentation
-<img src="assets/img/beginner-badge.png" alt="beginner" width="140px"> </a>
+<img src="assets/img/beginner-badge.png" alt="beginner" width="140px">
 
 
 
