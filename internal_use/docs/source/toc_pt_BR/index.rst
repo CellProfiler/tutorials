@@ -3,7 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to cellprofiler-tutorials's documentation!
+
+Bem-vindo à documentação dos tutoriais do CellProfiler!
 ==================================================
 
 .. toctree::
@@ -11,4 +12,4 @@ Welcome to cellprofiler-tutorials's documentation!
    :caption: Contents:
    :titlesonly:
 
-   ../BeginnerSegmentation/CPbeginner_Segmentation
+   PT_Segmentação para iniciantes <../BeginnerSegmentation/CPbeginner_Segmentation>
