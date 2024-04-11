@@ -39,7 +39,7 @@ Whenever a resource is fully translated and reviewed, Transifex will make a pull
 -- Run `sphinx-build -b html -D language=pt_BR -D root_doc=toc_pt_BR/index . ../build/html_pt_BR` to build in Protuguese (Brazil)
 
 
-## **To build/update the .toc files for the translation in transifex**
+## **To build (when adding new tutorials) or update (when editing an existing tutorial in English) the .toc files for the translation in transifex**
 
 - (Install sphynx)
 - Make sure you've properly updated your index if necessary (see above)
