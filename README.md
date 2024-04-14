@@ -141,7 +141,7 @@ A tutorial that describes how to use the UnmixColors module.<br>
 -----
 # Other video tutorials
 
-See more video tutorials on the Center for Open Bioimage Analysis (COBA) [YouTube account](broad.io/COBAWorkshops)
+See more video tutorials on the Center for Open Bioimage Analysis (COBA) [YouTube account](https://broad.io/COBAWorkshops)
 
 -----
 # Tutorials for image-based profiling
