@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2024
 # Esteban, 2024
+# Beth Cimini, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-21 15:26-0400\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Esteban, 2024\n"
+"Last-Translator: Beth Cimini, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -357,7 +357,7 @@ msgid ""
 "Click on the magnifying glass at the end of the regular expression box for "
 "each extraction method to see how it works."
 msgstr ""
-"- Haz clic en la lupa al final del cuadro de expresión regular para cada "
+"Haz clic en la lupa al final del cuadro de expresión regular para cada "
 "método de extracción para ver cómo funciona."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:106
@@ -515,7 +515,7 @@ msgid ""
 msgstr ""
 "**Para obtener más información y ejemplos sobre cómo configurar los módulos "
 "de entrada, hemos creado un blog y un video tutorial al que se puede acceder"
-" [aquí](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules- "
+" [aquí](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-"
 "tutorial).**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:159
@@ -713,7 +713,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:200
 msgid "Change the name of the output objects to ‘Nuclei’."
-msgstr "   - Cambia el nombre de los objetos de salida a 'Nuclei'."
+msgstr "Cambia el nombre de los objetos de salida a 'Nuclei'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:202
 msgid ""
@@ -749,7 +749,7 @@ msgid ""
 "colors; green is for accepted objects, orange for objects touching the "
 "border, and pink for objects outside the diameter range."
 msgstr ""
-"- En el panel de visualización de contornos (esquina inferior izquierda) "
+"En el panel de visualización de contornos (esquina inferior izquierda) "
 "puedes ver tres colores diferentes; el VERDE es para objetos aceptados, el "
 "ANARANJADO para objetos que tocan el borde y el MAGENTA para objetos fuera "
 "del rango de diámetro."
@@ -760,7 +760,7 @@ msgid ""
 "use to adjust your segmentation settings, like the median diameter, and the "
 "threshold."
 msgstr ""
-"- En el panel de tabla (esquina inferior derecha) hay información útil que "
+"En el panel de tabla (esquina inferior derecha) hay información útil que "
 "puedes usar para ajustar tus configuraciones de segmentación, como el "
 "mediana del diámetro y el umbral."
 
@@ -802,14 +802,14 @@ msgstr ""
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:225
 msgid "Adjust the threshold method, may lead to better (or worse!) results."
 msgstr ""
-"      - Ajusta el método de umbralización ('Thresholding method'). Esto "
-"puede dar mejores (o peores!) resultados."
+"Ajusta el método de umbralización ('Thresholding method'). Esto puede dar "
+"mejores (o peores!) resultados."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:226
 msgid "Adjust the declumping settings."
 msgstr ""
-"      - Ajusta la configuración de desagrupamiento ('Method to distinguish "
-"clumped objects')."
+"Ajusta la configuración de desagrupamiento ('Method to distinguish clumped "
+"objects')."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:228
 msgid ""
@@ -1043,7 +1043,7 @@ msgid ""
 "Examine the output – did your nuclear and cellular segmentation hold up "
 "compared to the ﬁrst images you looked at?"
 msgstr ""
-"- Examina la salida: ¿se mantuvo tu segmentación nuclear y celular en "
+"Examina la salida: ¿se mantuvo tu segmentación nuclear y celular en "
 "comparación con las primeras imágenes que observaste?"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:306
@@ -1105,19 +1105,19 @@ msgstr ""
 msgid ""
 "Select the larger and smaller identified objects from the drop-down menu."
 msgstr ""
-"- Selecciona los objetos identificados más grandes y más pequeños del menú "
+"Selecciona los objetos identificados más grandes y más pequeños del menú "
 "desplegable."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:321
 msgid "Change the name of the objects to be identified."
-msgstr "- Cambia el nombre de los objetos a identificar."
+msgstr "Cambia el nombre de los objetos a identificar."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:322
 msgid "‘Shrink smaller object prior to subtraction?’ should both set to ‘No’."
 msgstr ""
-"- La opción 'Reducir el tamaño del objeto más pequeño antes de la "
-"sustracción' ('Shrink smaller object prior to subtraction?') debe estar "
-"configurada en 'No'."
+"La opción 'Reducir el tamaño del objeto más pequeño antes de la sustracción'"
+" ('Shrink smaller object prior to subtraction?') debe estar configurada en "
+"'No'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:324
 msgid "**8. Segment the nucleoli (15min)**"
@@ -1284,9 +1284,7 @@ msgstr "Cambia el nombre de la imagen de salida a 'RNA_in_Nuclei'."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:367
 msgid "Use the objects ‘Nuclei’ as the mask."
-msgstr ""
-"   - Usar los objetos 'Nuclei' como máscara.   \n"
-"   - Ver a continuación un ejemplo de los resultados a los que se debe apuntar:"
+msgstr "Usar los objetos 'Nuclei' como máscara.  "
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:374
 msgid ""
@@ -1697,7 +1695,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:484
 msgid "Explore the spreadsheets created for each object."
-msgstr "- Explora las hojas de cálculo creadas para cada objeto."
+msgstr "Explora las hojas de cálculo creadas para cada objeto."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:488
 msgid ""
