@@ -8,7 +8,8 @@
 
 2. Make a PR adding the folder of materials to the tutorial repo. In addition to the materials, please also 
     1) write a short description of the tutorial to add to the readme and
-    2) create a gif (tips on making one [here](https://docs.google.com/document/d/1G5odCSbX1fW8vReKH5ubgvWc1sIGquLisUe7t5pR7d8/edit#heading=h.kjidkmwv6jq3)) and add that gif to to the `assets` > `img` folder. 
+    2) create a gif (tips on making one [here](https://docs.google.com/document/d/1G5odCSbX1fW8vReKH5ubgvWc1sIGquLisUe7t5pR7d8/edit#heading=h.kjidkmwv6jq3)) and add that gif to to the `assets` > `img` folder.
+    3) add the tutorial to the `internal_use/docs/source/index.rst` file, and the index file of whatever language that tutorial is in (ie if English, `internal_use/docs/source/toc_en/index.rst`)
 
 3. Update the readme with the description and gif. If there is an associated blogpost or video, please link that using the appropriate badge. If the tutorial is particularly geared toward beginners, add the beginner badge. If the tutorial is advanced such that a user should definitely do a beginner tutorial first, use the advanced badge. 
 
