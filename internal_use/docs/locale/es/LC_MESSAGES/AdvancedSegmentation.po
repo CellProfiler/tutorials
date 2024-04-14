@@ -473,9 +473,9 @@ msgid ""
 "are similar, they aren’t identical; each channel in your own experiments "
 "should therefore be illumination corrected independently."
 msgstr ""
-"- También ten en cuenta que, aunque las funciones de corrección de "
-"iluminación para cada canal son similares, no son idénticas; por lo tanto, "
-"cada canal en tus propios experimentos debe corregirse independientemente."
+"También ten en cuenta que, aunque las funciones de corrección de iluminación"
+" para cada canal son similares, no son idénticas; por lo tanto, cada canal "
+"en tus propios experimentos debe corregirse independientemente."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:183
 msgid "*Figure 4: Application of the illumination correction functions.*"
