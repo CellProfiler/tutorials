@@ -8,6 +8,7 @@ on:
     paths:
     - 'internal_use/docs/source/**.md'
     - 'internal_use/docs/source/**.yml'
+    - '.github/workflows/push-translations.yml'
 
 permissions:
   contents: write
@@ -34,7 +35,7 @@ jobs:
     # Update the files
     - name: Update the files
       run: |
-        sphinx-build -b gettext . _build/gettext
+        sphinx-build -b gettext internal_use/docs/source internal_use/docs/_build/gettext
 
     - name: Push translations to a branch (branch protection)
       run: |
