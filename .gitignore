@@ -99,4 +99,4 @@ output/
 .vscode/
 
 # Build
-internal_use/docs/_build/gettext/.doctrees/
+internal_use/docs/_build/gettext/.doctrees/*/*.doctree
