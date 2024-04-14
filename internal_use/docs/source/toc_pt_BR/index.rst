@@ -5,7 +5,7 @@
 
 
 Bem-vindo à documentação dos tutoriais do CellProfiler!
-==================================================
+=======================================================
 
 .. toctree::
    :maxdepth: 0

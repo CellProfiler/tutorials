@@ -97,3 +97,6 @@ output/
 
 # VS code files
 .vscode/
+
+# Build
+**/.doctrees/

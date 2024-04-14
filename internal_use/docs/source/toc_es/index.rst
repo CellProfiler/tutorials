@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Bienvenida/o a la documentación de los tutoriales de CellProfiler!
-==================================================
+==================================================================
 
 .. toctree::
    :maxdepth: 0
