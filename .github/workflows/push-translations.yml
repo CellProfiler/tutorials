@@ -30,7 +30,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install sphinx-intl myst-parser linkify
+        pip install sphinx-intl myst-parser
 
     # Update the files
     - name: Update the files

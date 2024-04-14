@@ -29,7 +29,7 @@ author = 'Imaging Platform'
 # ones.
 extensions = ['sphinx.ext.intersphinx', 'myst_parser']
 locale_dirs = ['../locale/']
-myst_enable_extensions = ['colon_fence', 'dollarmath', 'linkify', 'substitution', 'tasklist', 'html_image']
+myst_enable_extensions = ['colon_fence', 'dollarmath', 'substitution', 'tasklist', 'html_image']
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
