@@ -8,3 +8,6 @@ git:
     translation_files_expression: internal_use/docs/locale/<lang>/LC_MESSAGES
     ignore_files:
     - internal_use/docs/_build/gettext/index.pot
+    - internal_use/docs/_build/gettext/toc_es.pot
+    - internal_use/docs/_build/gettext/toc_pt_BR.pot
+    - internal_use/docs/_build/gettext/toc_en.pot
