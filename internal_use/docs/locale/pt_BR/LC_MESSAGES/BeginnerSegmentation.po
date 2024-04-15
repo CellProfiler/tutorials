@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:2
 msgid "Beginner segmentation and organelle analysis:"
-msgstr "Segmentação para iniciantes e análise de organelas:"
+msgstr "Segmentação e análise de organelas para iniciantes :"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:4
 msgid "A computer exercise using CellProﬁler"
