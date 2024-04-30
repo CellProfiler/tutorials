@@ -1,0 +1,314 @@
+CellProfiler Pipeline: http://www.cellprofiler.org
+Version:5
+DateRevision:426
+GitHash:
+ModuleCount:15
+HasImagePlaneDetails:False
+
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.', '', 'Drag and drop your IMAGES (you can drag and drop the entire "images_Illum-corrected" folder) into the panel just below this one.', '', '<-Drag and drop your "segmentation_start.cppipe" files into the left panel.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    :
+    Filter images?:Images only
+    Select the rule criteria:or (extension does isimage) (file does contain ".npy")
+
+Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:['FOR THIS TUTORIAL, YOU CAN SKIP THIS MODULE, AS IT IS ALREADY CONFIGURED.', '', 'The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.', '', '']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:Yes
+    Metadata data type:Choose for each
+    Metadata types:{"ChannelNumber": "integer", "Date": "text", "FileLocation": "text", "Frame": "text", "Series": "text", "Site": "integer", "Well": "text"}
+    Extraction method count:1
+    Metadata extraction method:Extract from file/folder names
+    Metadata source:File name
+    Regular expression to extract from file name:(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch(?P<ChannelNumber>[1-5]).
+    Regular expression to extract from folder name:(?P<Date>[0-9]{4}_[0-9]{2}_[0-9]{2})$
+    Extract metadata from:All images
+    Select the filtering criteria:and (file doesnot contain "")
+    Metadata file location:Elsewhere...|
+    Match file and image metadata:[]
+    Use case insensitive matching?:No
+    Metadata file name:
+    Does cached metadata exist?:No
+
+NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:['FOR THIS TUTORIAL, YOU CAN SKIP THIS MODULE, AS IT IS ALREADY CONFIGURED.', '', 'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:Images matching rules
+    Select the image type:Grayscale image
+    Name to assign these images:DNA
+    Match metadata:[{'OrigER': 'Well', 'OrigMito': 'Well', 'OrigDNA': 'Well', 'OrigRNA': 'Well', 'OrigActin_Golgi_Membrane': 'Well'}, {'OrigER': 'Site', 'OrigMito': 'Site', 'OrigDNA': 'Site', 'OrigRNA': 'Site', 'OrigActin_Golgi_Membrane': 'Site'}]
+    Image set matching method:Metadata
+    Set intensity range from:Image metadata
+    Assignments count:5
+    Single images count:0
+    Maximum intensity:255.0
+    Process as 3D?:No
+    Relative pixel spacing in X:1.0
+    Relative pixel spacing in Y:1.0
+    Relative pixel spacing in Z:1.0
+    Select the rule criteria:and (file does contain "Ch1")
+    Name to assign these images:OrigDNA
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain "Ch2")
+    Name to assign these images:OrigER
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain "Ch3")
+    Name to assign these images:OrigRNA
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain "Ch4")
+    Name to assign these images:OrigActin_Golgi_Membrane
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain "Ch5")
+    Name to assign these images:OrigMito
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+
+Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['FOR THIS TUTORIAL, YOU CAN SKIP THIS MODULE, AS IT IS NOT USED.', '', 'The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:No
+    grouping metadata count:1
+    Metadata category:None
+
+IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['This module is used to create a group of objects called Nuclei by segmenting the nuclear regions from the OrigDNA image.', 'The settings used here should be good enough for the images used in this tutorial but they depend highly on the image set!', '', 'We encourage you to play around with the settings in order to get a "good enough" segmentation of your own data.', 'REMEMBER: we aim for "good enough" because there is no settings that will give you a PERFECT segmentation every time in every image.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigDNA
+    Name the primary objects to be identified:Nuclei
+    Typical diameter of objects, in pixel units (Min,Max):10,150
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Shape
+    Method to draw dividing lines between clumped objects:Shape
+    Size of smoothing filter:20
+    Suppress local maxima that are closer than this minimum allowed distance:20
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:After declumping only
+    Automatically calculate size of smoothing filter for declumping?:No
+    Automatically calculate minimum allowed distance between local maxima?:No
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:0.9
+    Lower and upper bounds on threshold:0.002,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:10
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2
+    Thresholding method:Otsu
+
+IdentifySecondaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:10|show_window:False|notes:['This module is used to create a group of objects called Cells by segmenting the celular regions from the OrigActin_Golgi_Membrane image.', 'To help with this, this module takes the Nuclei objects created in the previous module as input, to use them as references for building the Cells objects.', '', 'We encourage you to play around with the settings in order to get a "good enough" segmentation of your own data.', 'REMEMBER: we aim for "good enough" because there is no settings that will give you a PERFECT segmentation every time in every image.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:Nuclei
+    Name the objects to be identified:Cells
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:OrigActin_Golgi_Membrane
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.005
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0
+    Threshold correction factor:0.7
+    Lower and upper bounds on threshold:0.003,1
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:10
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2
+    Thresholding method:Otsu
+
+IdentifyTertiaryObjects:[module_num:7|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['This module creates a set of Cytoplasm objects by simply subtracting the Nuclei objects from their corresponding Cells objects.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the larger identified objects:Cells
+    Select the smaller identified objects:Nuclei
+    Name the tertiary objects to be identified:Cytoplasm
+    Shrink smaller object prior to subtraction?:No
+
+EnhanceOrSuppressFeatures:[module_num:8|svn_version:'Unknown'|variable_revision_number:7|show_window:False|notes:['Now we want to segment nucleoli from the OrigRNA image, but the nuclear RNA spots (which are the nucleoli) are not contrasted enough with their nuclear background.', 'This module processes the OrigRNA image and enhances "speckly" shapes of a certain size, producing a new image called FilteredRNA.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigRNA
+    Name the output image:FilteredRNA
+    Select the operation:Enhance
+    Feature size:10
+    Feature type:Speckles
+    Range of hole sizes:1,10
+    Smoothing scale:2.0
+    Shear angle:0.0
+    Decay:0.95
+    Enhancement method:Tubeness
+    Speed and accuracy:Fast
+    Rescale result image:No
+
+MaskImage:[module_num:9|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['In the FilteredRNA image, not only the nuclear RNA spots have been enhanced, but also the cytoplasmic ones (which are NOT nucleoli)!!', '', 'This module will mask the FilteredRNA image using the Nuclei objects so that any pixel outside of the Nuclei becomes 0 (thus, ridding us of the cytoplasmic RNA spots). ', 'The resulting masked image is named RNA_in_Nuclei.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:FilteredRNA
+    Name the output image:RNA_in_Nuclei
+    Use objects or an image as a mask?:Objects
+    Select object for mask:Nuclei
+    Select image for mask:None
+    Invert the mask?:No
+
+IdentifyPrimaryObjects:[module_num:10|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['This module is used to create a group of objects called Nucleoli by segmenting the RNA spots from the RNA_in_Nuclei image.', '']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:RNA_in_Nuclei
+    Name the primary objects to be identified:Nucleoli
+    Typical diameter of objects, in pixel units (Min,Max):2,15
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:No
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Shape
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Minimum Cross-Entropy
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Background
+    Size of adaptive window:10
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2
+    Thresholding method:Otsu
+
+Runilastik:[module_num:11|svn_version:'Unknown'|variable_revision_number:1|show_window:False|notes:['Note that if you get an error trying to run this, please ensure the ilastik executable program (.exe or .app) is not currently running on your computer. ', '', 'In this module, you must specify the path to your ilastik installation (typically a .exe within a subfolder of Program Files for Windows and a .app in the  Applications folder on Mac), as well as the path to the .ilp project file itself']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigRNA
+    Name the output image:Runilastik
+    Run ilastik in docker or local environment:Local
+    Executable:
+    Project file:
+    Select the project type:Pixel Classification
+
+ColorToGray:[module_num:12|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['This module is used to split the two channel image created by ilastik (since the original ilastik project file had two channels - if more than 2 channels had been created in ilastik, there might be many channels here!) so that we can get out the probability predictions for the nucleoli specifically. The second channel does not actually NEED to be extracted here, but is done as a demonstration.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:Runilastik
+    Conversion method:Split
+    Image type:Channels
+    Name the output image:OrigGray
+    Relative weight of the red channel:1.0
+    Relative weight of the green channel:1.0
+    Relative weight of the blue channel:1.0
+    Convert red to gray?:Yes
+    Name the output image:OrigRed
+    Convert green to gray?:Yes
+    Name the output image:OrigGreen
+    Convert blue to gray?:Yes
+    Name the output image:OrigBlue
+    Convert hue to gray?:Yes
+    Name the output image:OrigHue
+    Convert saturation to gray?:Yes
+    Name the output image:OrigSaturation
+    Convert value to gray?:Yes
+    Name the output image:OrigValue
+    Channel count:2
+    Channel number:1
+    Relative weight of the channel:1.0
+    Image name:ilastik_nucleoli
+    Channel number:2
+    Relative weight of the channel:1.0
+    Image name:ilastik_nonnucleoli
+
+IdentifyPrimaryObjects:[module_num:13|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['This module is used to create a group of objects called NucleoliFromIlastik by segmenting the RNA spots from the ilastik_nucleoli image.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:ilastik_nucleoli
+    Name the primary objects to be identified:NucleoliFromilastik
+    Typical diameter of objects, in pixel units (Min,Max):2,15
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:No
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Shape
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Minimum Cross-Entropy
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Background
+    Size of adaptive window:10
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2
+    Thresholding method:Otsu
+
+OverlayOutlines:[module_num:14|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['This module produces a visualization of our segmentations so far by overlaying the Nuclei, Nucleoli, and NucleoliFromIlastik objects outlines onto the OrigRNA image.', 'This is useful both as a sanity check and as a means of showing theresults of your analysis to others!', '', 'The output of this module is called SanityCheck.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Display outlines on a blank image?:No
+    Select image on which to display outlines:OrigRNA
+    Name the output image:SanityCheck
+    Outline display mode:Color
+    Select method to determine brightness of outlines:Max of image
+    How to outline:Inner
+    Select outline color:#FB0280
+    Select objects to display:Nuclei
+    Select outline color:Green
+    Select objects to display:Nucleoli
+    Select outline color:#FFFFFF
+    Select objects to display:NucleoliFromilastik
+
+SaveImages:[module_num:15|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:['This module saves the SanityCheck images for future reference. It does so in a sub-folder of the default output folder called "overlay-images".', 'Tha name of the saved file is constructed using the name of the corresponding OrigRNA image as a prefix and adding a "_ilastik_overlay" suffix. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:SanityCheck
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:OrigRNA
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:Yes
+    Text to append to the image name:_ilastik_overlay
+    Saved file format:tiff
+    Output file location:Default Output Folder sub-folder|overlay_images
+    Image bit depth:8-bit integer
+    Overwrite existing files without warning?:No
+    When to save:Every cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+    Save with lossless compression?:Yes
