@@ -77,9 +77,8 @@ Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_windo
     grouping metadata count:1
     Metadata category:None
 
-RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:5|show_window:False|notes:['This module creates an object called RunCellpose from running the Cellpose pretrained nuclei model on the OrigDNA images. ', '', 'Running this module with Docker is very slow compared to running Cellpose in a Python/conda environment that contains both Cellpose and CellProfiler. But since setting up such a thing can be computationally challenging, if you do not wish to try to create such a Python environment, you can trade "human time" spent installing these programs for "unattended computer time" where the program is slower to run but just requires Docker, which is typically easy to install. If your number of images is very very large, this solution may not be acceptable, but for dozens or hundreds of images is likely a good trade.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:OrigDNA
-    Rescale images before running Cellpose:Yes
     Run CellPose in docker or local python environment:Docker
     Select Cellpose docker image:cellprofiler/runcellpose_with_pretrained:0.1
     Expected object diameter:30
@@ -151,11 +150,11 @@ OverlayOutlines:[module_num:7|svn_version:'Unknown'|variable_revision_number:4|s
     Select outline color:#21FFFF
     Select objects to display:RunCellpose
 
-SaveImages:[module_num:8|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:['This module saves the SanityCheck images for future reference. It does so in a sub-folder of the default output folder called "overlay-images".', 'Tha name of the saved file is constructed using the name of the corresponding OrigRNA image as a prefix and adding a "_nuclear_overlay" suffix. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:8|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:['This module saves the NucleiCheck images for future reference. It does so in a sub-folder of the default output folder called "overlay-images".', 'Tha name of the saved file is constructed using the name of the corresponding OrigDNA image as a prefix and adding a "_nuclear_overlay" suffix. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:Image
-    Select the image to save:SanityCheck
+    Select the image to save:NucleiCheck
     Select method for constructing file names:From image filename
-    Select image name for file prefix:OrigRNA
+    Select image name for file prefix:OrigER
     Enter single file name:OrigBlue
     Number of digits:4
     Append a suffix to the image file name?:Yes
