@@ -122,48 +122,119 @@ Visualization of images and objects in the Workspace Viewer
 
 ## **Exercise 2: Running ilastik locally or from a Docker container**
 
-```{figure} ./TutorialImages/IlastikLiveUpdate.png
-:width: 700
-:align: center
+Classical segmentation requires the thing you care about in an image be bright and every single other pixel dark(er). If you have a good clean fluorescent signal for the thing you care about, great! If not, you may need to resort to some tricks.
 
- Figure x: .
-```
+One trick is by training a classifier on a pixel-by-pixel basis to say "here is what I think is the likelihood that this is the pixel that you care about". If your classifier is good, that will give you an image where the pixels you care about are high-probability (bright) and everywhere else is low-probability (dark). That's exactly what we want! Biologists tend to call this "Pixel Classification"; computer scientists will sometimes refer to it as "Semantic Segmentation".
 
-```{figure} ./TutorialImages/RunIlastik.png
-:width: 700
-:align: center
-
- Figure x: .
-```
-
-
-```{figure} ./TutorialImages/WorkspaceViewerilastik.png
-:width: 700
-:align: center
-
- Figure x: .
-```
-
-### Bonus-to-the-Bonus - train your own ilastik model
+There are a few popular Fiji plugins for doing this, including Weka Trainable Segmentation and Labkit. We tend to use ilastik, because it makes it easy to automate creating a classifier from a very small number of images and then bulk-applying it to many others in "Batch Processing" mode. You can check out a tutorial we have written for running ilastik, and *then* CellProfiler at tutorials.cellprofiler.org (look for Pixel Classification). 
 
 ```{figure} ./TutorialImages/IlastikBatchMode.png
 :width: 700
 :align: center
 
- Figure x: .
+ilastik's Batch Processing mode
 ```
 
-https://github.com/CellProfiler/CellProfiler-plugins/blob/master/active_plugins/runilastik.py
+Why do two steps though, when you can do one instead? In this tutorial we'll take a pre-trained ilastik classifer and run it inside our CellProfiler pipeline, so we can find and measure objects all in one step.
+
+You will need either ilastik or Docker Desktop installed on your computer for this exercise. If ilastik, make sure it is CLOSED, if Docker Desktop, make sure it is OPEN. We recommend installing ilastik because it is a good and helpful tool, and will allow you to do this exercise's bonus exercise.
+
+```{warning}
+If you are on Windows, RunIlastik in Local mode (working on an installed copy of ilastik, rather than a copy inside a Docker file), this exercise will work in TestMode, but not will not run in analysis mode - we are working with the ilastik developers to determine why that is. This is fine for the purpose of this exercise; if you have a lot of your own data you want to run later, you can still use ilastik in a two step process, and/or use Dockerized ilastik.
+```
+
+### FYI only - how did we make this?
+
+This classifer was made in ilastik1.4.1b5 by training on 4 images (A14_site1, E18_site1, D16_site1, and C12_site1) identifying two classes - one class for nucleoli (yellow below), and one class for every other part of the image (blue below). One COULD have made more classes, but this in practice worked.
+
+```{figure} ./TutorialImages/IlastikLiveUpdate.png
+:width: 700
+:align: center
+
+Screenshot of this ilastik classifer
+```
+
+When using ilastik for fluorescence microscopy, you will likely get the best performance if you keep your annotations extremely minimal - the classifier you're going to use was trained by using 31 total pixels of annotation across the 4 images (13 pixels of annotation inside nucleoli, and 18 pixels outside of them); no image had more than 14 pixels annotated in total. We strongly suggest you make your classifiers one pixel at a time! This feels counterintuitive but we promise it's true.
+
+### Grab the Runilastik plugin
+1. Download [the plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/master/active_plugins/runilastik.py) into a folder on your local computer. As stated above, we strongly suggest a folder that contains ONLY plugins
+1. In CellProfiler's File -> Preferences menu, set the `CellProfiler plugins directory` to the folder containing the plugin
+1. Close and reopen CellProfiler to load the plugin
+
+### Load the classifier and evaluate it
+1. Drag `bonus_2_ilastik.cppipe` into the pipeline panel.
+1. Drag the `images_Illum-corrected` subfolder from the main exercise into the Images module
+1. Open the Runilastik module, set the path to your project file (`NucleoliDetection.ilp`) and then also 
+  - ilastik-installed (recommended): set the path to your local installation of ilastik
+  - Docker-installed: change the top setting from Local to Docker
+
+3. Put CellProfiler into TestMode <img src="./TutorialImages/startTestMode.png" width="120"/>, open the eyes next to Runilastik and OverlayOutlines, and then hit <img src="./TutorialImages/Run.png" width="120"/>
+  - You may wish to put a pause next to SaveImages, or uncheck it, to keep it from saving images, but that's up to you
+
+```{note}
+If using Docker, the very first time you hit the Runilastik module, it will need to download an ~5GB file, which may be slow depending on your connection. You only need to do this step once however!
+```
+
+4. Evaluate your prediction in Runilastik across a few image sets - how well does it perform? Does it perform worse on images it wasn't trained on?
+
+```{figure} ./TutorialImages/RunIlastik.png
+:width: 700
+:align: center
+
+Screenshot of the Runilastik module 
+```
+
+5. Evaluate your segmentations across a few image sets using OverlayOutlines and/or the WorkspaceViewer - are there cases where you think the ilastik model-based segmentation performs better? The filtering-and-masking segmentation?
+
+```{figure} ./TutorialImages/WorkspaceViewerilastik.png
+:width: 700
+:align: center
+
+Evaluating segmentations in the Workspace Viewer
+```
+
+
+### Bonus-to-the-Bonus - train your own ilastik model
+
+Based on your evaluations above, can you identify some places where additional training might help fix some issues in the ilastik model? 
+
+1. Open `NucleoliDetection.ilp` in ilastik
+1. Navigate to the `Training` tab 
+1. Turn on `LiveUpdate`
+1. Pick an image you think needed some help and add (a very small number of very small) annotations. Did things get better or worse? 
+1. Add some very large annotations to one image, then switch images in order to prove to yourself large annotations can actually harm in some cases rather than help (if you want to save your classifier, go back and use the eraser tool to delete these!)
+1. If you think you've materially improved the prediction, save this model and return to CellProfiler. Did it help in the cases where you thought it would?
 
 ## **Exercise 3: Running Cellpose from a Docker container**
 
+RunCellpose is by far our most popular plugin, simply because a) Cellpose is awesome and b) `conda` installing software when you aren't very computationally comfortable isn't. You can use the plugin in either of two modes - using a local `conda` or `python` installation that contains both CellProfiler or Cellpose, OR using Docker. The run time with Docker is substantially slower (about a minute more per image, in our testing), but if installation would take you a long time and be frustrating, in this sense you can "trade" your personal hands-on frustration time for time where CellProfiler is running on your computer (but you aren't there). For many biologists, this is a good trade!
 
+### Start Docker Desktop
+1. If you have not already installed Docker Desktop from the link above, please do so! This may involve rebooting your computer.
+1. Start Docker Desktop
+1. Optional but strongly recommended - once Docker Desktop opens, use the search functionality to search `Cellpose` and look for the `runcellpose_with_pretrained` model and pull it. If for whatever reason this isn't working, move on, but it will save you some time later. 
 
-https://github.com/CellProfiler/CellProfiler-plugins/blob/11b46ee7f6eb78f97f784a731c5a1931b66c90d4/active_plugins/runcellpose.py
+### Grab the RunCellpose plugin
+1. Download [the plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/11b46ee7f6eb78f97f784a731c5a1931b66c90d4/active_plugins/runcellpose.py) into a folder on your local computer. As stated above, we strongly suggest a folder that contains ONLY plugins
+1. In CellProfiler's File -> Preferences menu, set the `CellProfiler plugins directory` to the folder containing the plugin
+1. Close and reopen CellProfiler to load the plugin
+
+### Load the pipeline and evaluate segmentation
+1. Drag `bonus_3_cellpose.cppipe` into the pipeline panel.
+1. Drag the `images_Illum-corrected` subfolder from the main exercise into the Images module
+1. Put CellProfiler into TestMode <img src="./TutorialImages/startTestMode.png" width="120"/>, open the eyes next to RunCellpose and OverlayOutlines, and then hit <img src="./TutorialImages/Run.png" width="120"/>
+  - You may wish to put a pause next to SaveImages, or uncheck it, to keep it from saving images, but that's up to you
+
+```{note}
+If you didn't already pull the container in the Docker Desktop section above, the very first time you hit the RunCellpose module, it will need to download an ~13GB file, which may be slow depending on your connection. You only need to do this step once however!
+```
 
 ```{figure} ./TutorialImages/RunCellpose.png
 :width: 700
 :align: center
 
- Figure x: .
+The output of the RunCellpose module
 ```
+
+4. As before, using OverlayOutlines and/or the WorkspaceViewer, evaluate segmentation on a few images. Where is CellProfiler doing better, and where is Cellpose doing better?
+5. Use the <img src="./TutorialImages/Info.png" width="35"> button to learn more about the different parameters you can pass to Cellpose (we don't offer all of them, but many) - how does tweaking these affect your output? How does changing the model you're using, and/or the image you're segmenting?
