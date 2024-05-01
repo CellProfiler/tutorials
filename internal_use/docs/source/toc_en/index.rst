@@ -13,6 +13,8 @@ Welcome to cellprofiler-tutorials's documentation!
 
    Beginner Segmentation <../BeginnerSegmentation/CPbeginner_Segmentation>
 
+   Beginner Segmentation Bonus Materials <../BeginnerSegmentation/BeginnerSegmentationPlugins>
+
    Advanced Segmentation <../AdvancedSegmentation/BBBC022_AnalysisExercise>
 
    Translocation <../Translocation/Translocation>
