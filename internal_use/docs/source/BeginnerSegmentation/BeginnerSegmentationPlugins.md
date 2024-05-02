@@ -8,19 +8,20 @@ Broad Institute of MIT and Harvard, Cambridge, MA.
 
 ### General background information
 
-This exercise is meant to extend and build upon the Beginner Segmentation exercise available from tutorials.cellprofiler.org . Please consult that tutorial for general information on how to configure CellProfiler as well as information about the images. It will be generally assumed you understand the modules covered in that tutorial, including input, object creation, overlays, and saving. 
+This exercise is meant to extend and build upon the Beginner Segmentation exercise available from [the CellProfiler tutorials page](tutorials.cellprofiler.org) . Please consult that tutorial for general information on how to configure CellProfiler as well as information about the images. It will be generally assumed you understand the modules covered in that tutorial, including input, object creation, overlays, and saving. 
 
 ### What is this exercise?
 
-There are a number of great software tools available to a biologist wishing to analyze images these days - forum.image.sc has more than 60 open-source tools alone. Sometimes, though, it helps to have a multi-tool workflow - do one step in ToolA, and then another in ToolB (and then possibly C, D, etc, but hopefully not!). In this tutorial, you'll try 3 different ways of accessing work you did in other tools. 
+There are a number of great software tools available to life scientists wishing to analyze images these days - [forum.image.sc](forum.image.sc) alone has more than 60 open-source tools! Sometimes, though, it helps to have a multi-tool workflow - do one step in Tool A, and then another in Tool B (and then possibly C, D, etc, but hopefully not!). In this tutorial, you'll try 3 different ways of accessing work you did in other tools. 
 
-1. Loading masks created by other segmentation tools (in this case, [Cellpose](https://www.cellpose.org/), but many tools use this format)
-1. Accessing [ilastik](https://www.ilastik.org/) to use a trained pixel classification model via CellProfiler's plugins system
-1. Running Cellpose in CellProfiler via CellProfiler's plugins system and a Docker container
+1. Loading masks created by other segmentation tools (in this case, [Cellpose](https://www.cellpose.org/), but the same strategy works for many tools use this format).
+1. Accessing [ilastik](https://www.ilastik.org/) to use a trained pixel classification model via CellProfiler's plugins system.
+1. Running Cellpose in CellProfiler via CellProfiler's plugins system and a Docker container.
 
 ### Plugins
 
-While CellProfiler doesn't have as many plugins as, say, Fiji, it does have many for you to try! You can visit plugins.cellprofiler.org to learn more. To quote from that site:
+While CellProfiler doesn't have as many plugins as, say, Fiji, it does have many for you to try! 
+You can visit plugins.cellprofiler.org to learn more. To quote from that site:
 
 >Plugins advance the capabilities of CellProfiler but are not officially supported in the same way as modules. A module may be in CellProfiler-plugins instead of CellProfiler itself because:
 >- it is under active development
@@ -30,8 +31,9 @@ While CellProfiler doesn't have as many plugins as, say, Fiji, it does have many
 >- it requires extra libraries or other dependencies we are unable or unwilling to require for CellProfiler
 >- it has been contributed by a community member
 
-````{tip}
-While that documentation has instructions on [installing plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-plugins-without-dependencies), in step 2 it suggests downloading all of the CellProfiler plugins; this isn't a bad thing to do, but you can download individual plugins from GitHub with the website button below as well or instead. We strongly recommend making a dedicated folder for CellProfiler plugins, as loading can be slow if there are a lot of other miscellaneous files around.
+````{tips}
+- While that documentation has instructions for [installing plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-plugins-without-dependencies), in step 2 it suggests downloading all of the CellProfiler plugins; this isn't a bad thing to do, but you can download individual plugins from GitHub with the website button below as well or instead.
+- We strongly recommend making a dedicated folder to store your CellProfiler plugins, as loading can be slow if there are a lot of other miscellaneous files around (such if they sit in the Downloads folder, for example).
 
 ```{figure} ./TutorialImages/GitHubDownloadButton.png
 :width: 400
@@ -45,11 +47,11 @@ GitHub's "Download Raw Files" button
 
 In Exercise 3 (and for Windows users, optionally Excercise 2 as well), we want to access software that we either don't want to install locally because it's painful if you're not pretty comfortable in Python (Cellpose) or that we CAN install locally but may not play nicely with other tools' multiprocessing setup (ilastik). 
 
-Computer scientists will often use software containers to ship tools or data that are hard to install - [here](https://journals.sagepub.com/doi/10.1177/25152459211017853) is a good introduction and overview for non-computer scientists. You can think of them as "a pre-configured operating system in a box". Because they come to you pre-configured, installation of any software happens once-and-only-once (by the creator of the container, not by you), and should stay working for long after ie the latest Mac upgrade breaks a certain older software installation. Groups like [biocontainers](https://biocontainers.pro/) have already containerized many of the tools you know and love. There are a number of types of software containers, but one of the most common is called a Docker container. 
+Computer scientists will often use software **containers** to ship tools or data that are hard to install - [here](https://journals.sagepub.com/doi/10.1177/25152459211017853) is a good introduction and overview for non-computer scientists. You can think of containers as "a pre-configured operating system in a box". Because they come to you pre-configured, installation of any software happens once-and-only-once (by the creator of the container, not by you), and should stay working for long after ie the latest Mac upgrade breaks a certain older software installation. Groups like [biocontainers](https://biocontainers.pro/) have already containerized many of the tools you know and love. There are a number of types of software containers, but one of the most common is called a **Docker** container. 
 
-Most biologists aren't aware of or don't use containers, especially because typical usage involves accessing them via your terminal. But Docker doesn't have to mean terminal! There are [containers that spit out interactive websites for you to use](https://github.com/COBA-NIH/docker_gradio_demo), and CellProfiler has plugins that are specifically set up to call other tools that live inside Docker containers. 
+Most life scientists aren't aware of or don't use containers, especially because typical usage involves accessing them via your terminal. But Docker doesn't have to mean terminal! There are [containers that spit out interactive websites for you to use](https://github.com/COBA-NIH/docker_gradio_demo), and CellProfiler has plugins that are specifically set up to call other tools that live (and are executed) inside Docker containers. 
 
-To do this, CellProfiler needs to have the infrastructure for Docker containers up and running, which you can give it by installing a free program called [Docker Desktop](https://www.docker.com/products/docker-desktop/). You need not make an account (but you probably will need to reboot your computer). You then simply must make sure the program is open and running when you try to use a Docker-calling plugin in CellProfiler - CellProfiler will take care of everything else!
+To do this, CellProfiler needs to have the infrastructure for Docker containers up and running, which you can give it by installing a free program called [**Docker Desktop**](https://www.docker.com/products/docker-desktop/). You don't need to make an account to use it, but you probably will need to reboot your computer after installation is complete. Then, whenever you want to use a Docker-calling plugin in CellProfiler, you simply must make sure that Docker Desktop is open and running, CellProfiler will take care of everything else!
 
 ```{figure} ./TutorialImages/DockerDesktop.png
 :width: 700
@@ -68,10 +70,10 @@ In this exercise, we will be loading in *label masks* (sometimes also called *la
 
 We've used Cellpose 2.2.2 to generate nuclear masks from the DNA images and cell masks from the ActinGolgi images. 
 
-### FYI only - how did we make these?
-Cellpose was installed in a conda environment according to the [official instructions](https://github.com/MouseLand/cellpose?tab=readme-ov-file#installation) for installation with the GUI.
+### Only if you are curious - how did we make these label masks?
+Cellpose was installed in a conda environment according to the [official instructions](https://github.com/MouseLand/cellpose?tab=readme-ov-file#installation) for installation with the GUI. The software was started in that conda environment using the command `cellpose`.
 
-Nuclear masks were made by starting cellpose in that conda environment with the command `cellpose`, and then dragging each nuclear image into the GUI, selecting the nuclei model, and then saving to PNG with *Cmd+N* (Mac) *Ctl+N* (Windows). Since there were only 10 and the hotkeys were available, this was not too painful.
+Nuclear masks were made by dragging each DNA image into the GUI, selecting the 'nuclei' model with default settings, and then saving them individually as PNG using *Cmd+N* (Mac) *Ctl+N* (Windows). Since there were only 10 images and the hotkeys were available, this was not too painful.
 
 ```{figure} ./TutorialImages/CellposeGUI.png
 :width: 700
@@ -91,16 +93,16 @@ Cell masks were made by navigating into the image folder and then running the co
  Command line execution of Cellpose
  ```
 
-### Loading these masks into CellProfiler
+### Loading the label masks into CellProfiler
 
 1. Open up a clean copy of CellProfiler (or run File -> New Project) and drag `bonus_1_import_masks.cppipe` into the pipeline panel.
-1. Drag the `images_Illum-corrected` subfolder from the main exercise and the `cellpose_masks_cells` subfolder from this exercise. *Do not drag in the `cellpose_masks_nuclei` folder.*
-1. Put CellProfiler into TestMode <img src="./TutorialImages/startTestMode.png" width="120"/>, open the eye next to OverlayOutlines, and then hit <img src="./TutorialImages/Step.png" width="120"/> 3 times to create a classical segmentation and compare it with the Cellpose-generated version.
-1. Optionally, open the Workspace Viewer to create easily on-the-fly customizable overlays
-1. Hit <img src="./TutorialImages/NextImageSet.png" width="120"/> and repeat a couple of times to examine a couple more images
+1. Drag the `images_Illum-corrected` subfolder from the main Beginner Segmentation exercise and also the `cellpose_masks_cells` subfolder from this exercise. *Do not drag in the `cellpose_masks_nuclei` folder.*
+1. Put CellProfiler into TestMode <img src="./TutorialImages/startTestMode.png" width="120"/>, open the eye icon <img src="./TutorialImages/EyeOpen.png" width="50"/> next to OverlayOutlines, and then hit <img src="./TutorialImages/Step.png" width="120"/> 3 times to create a classical segmentation and compare it with the Cellpose-generated version.
+1. Optionally, open the Workspace Viewer using <img src="./TutorialImages/WorkspaceViewer.png" width="120"/> to create easily on-the-fly customizable overlays.
+1. Hit <img src="./TutorialImages/NextImageSet.png" width="120"/> and repeat a couple of times to examine the segmentations on more images.
 
 ```{admonition} Question for you
-Are there cases where you think classical typically performs better? Where Cellpose performs better?
+Are there cases where you think classical segmentation typically performs better? Where Cellpose performs better?
 ```
 
 ```{figure} ./TutorialImages/WorkspaceViewerImportedMasks.png
@@ -110,13 +112,12 @@ Are there cases where you think classical typically performs better? Where Cellp
 Visualization of images and objects in the Workspace Viewer
 ```
 ### Reverse engineer how this worked
-1. Open the NamesAndTypes module 
-1. Find the entry in NamesAndTypes that adds the masks - is there any setting you notice about it that is different than the other channels?
+1. Open the NamesAndTypes module. 
+1. Scroll down in NamesAndTypes to find the entry that adds the masks - is there any setting you notice about it that is different than for the other images?
 1. Find the entry in NamesAndTypes that has 2 rules the image has to pass, not just one - do you understand why that is?
 
 ### Bonus-to-the-Bonus - add the provided nuclear segmentations as well
-
-1. Add the `cellpose_masks_nuclei` folder in the Images module
+1. Drag and drop the `cellpose_masks_nuclei` folder in the Images module to add the nuclear masks to the image list.
 1. Go to the NamesAndTypes module and configure it so both kinds of masks can be loaded (hint: there's a duplicate button!)
   - You'll probably have to modify the existing settings for loading the cell masks by changing its rule or adding a second rule. Do you understand how/why?
 
@@ -124,9 +125,9 @@ Visualization of images and objects in the Workspace Viewer
 
 Classical segmentation requires the thing you care about in an image be bright and every single other pixel dark(er). If you have a good clean fluorescent signal for the thing you care about, great! If not, you may need to resort to some tricks.
 
-One trick is by training a classifier on a pixel-by-pixel basis to say "here is what I think is the likelihood that this is the pixel that you care about". If your classifier is good, that will give you an image where the pixels you care about are high-probability (bright) and everywhere else is low-probability (dark). That's exactly what we want! Biologists tend to call this "Pixel Classification"; computer scientists will sometimes refer to it as "Semantic Segmentation".
+One such trick is to train a classifier on a pixel-by-pixel basis to say "here is what I think is the likelihood that this is the pixel that you care about" and assign that pixel a probability value. If your classifier is good, that will give you an image where the pixels you care about are high-probability (bright) and everywhere else is low-probability (dark). That's exactly what we want! Life scientists tend to call this **"Pixel Classification"**; computer scientists will sometimes refer to it as **"Semantic Segmentation"**.
 
-There are a few popular Fiji plugins for doing this, including Weka Trainable Segmentation and Labkit. We tend to use ilastik, because it makes it easy to automate creating a classifier from a very small number of images and then bulk-applying it to many others in "Batch Processing" mode. You can check out a tutorial we have written for running ilastik, and *then* CellProfiler at tutorials.cellprofiler.org (look for Pixel Classification). 
+There are a few popular Fiji plugins for doing this, including Weka Trainable Segmentation and Labkit. We tend to use ilastik, because it makes it easy to automate creating a classifier from a very small number of images and then bulk-applying it to many others in "Batch Processing" mode. You can check out a tutorial we have written for running ilastik, and *then* CellProfiler at [tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (look for Pixel-based Classification). 
 
 ```{figure} ./TutorialImages/IlastikBatchMode.png
 :width: 700
@@ -137,13 +138,13 @@ ilastik's Batch Processing mode
 
 Why do two steps though, when you can do one instead? In this tutorial we'll take a pre-trained ilastik classifer and run it inside our CellProfiler pipeline, so we can find and measure objects all in one step.
 
-You will need either ilastik or Docker Desktop installed on your computer for this exercise. If ilastik, make sure it is CLOSED, if Docker Desktop, make sure it is OPEN. We recommend installing ilastik because it is a good and helpful tool, and will allow you to do this exercise's bonus exercise.
+You will need either ilastik or Docker Desktop installed on your computer for this exercise. If ilastik, make sure it is CLOSED, if Docker Desktop, make sure it is OPEN. We recommend installing ilastik because it is a good and helpful tool, and will allow you to do this exercise's bonus challenge.
 
 ```{warning}
-If you are on Windows, RunIlastik in Local mode (working on an installed copy of ilastik, rather than a copy inside a Docker file), this exercise will work in TestMode, but not will not run in analysis mode - we are working with the ilastik developers to determine why that is. This is fine for the purpose of this exercise; if you have a lot of your own data you want to run later, you can still use ilastik in a two step process, and/or use Dockerized ilastik.
+If you are on Windows, execute RunIlastik in Local mode (working on an installed copy of ilastik, rather than a copy inside a Docker file), this exercise will work in TestMode, but not will not run in analysis mode - we are working with the ilastik developers to determine why that is. This is fine for the purpose of this exercise; if you have a lot of your own data you want to run later, you can still use ilastik in a two step process, and/or use Dockerized ilastik.
 ```
 
-### FYI only - how did we make this?
+### Only if you are curious - how did we train the classifier?
 
 This classifer was made in ilastik1.4.1b5 by training on 4 images (A14_site1, E18_site1, D16_site1, and C12_site1) identifying two classes - one class for nucleoli (yellow below), and one class for every other part of the image (blue below). One COULD have made more classes, but this in practice worked.
 
