@@ -182,8 +182,6 @@ When you are done developing your pipeline, you can exit the `'Test Mode'` by cl
 
 > **AIM: use the nuclear channel to segment (isolate and identify all the pixels belonging to) each nuclei.**
 
-- Enter '`Test Mode'` by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/>.\
-
 - Add an **IdentifyPrimaryObjects** module to the pipeline. Do this by clicking on the <img src="./TutorialImages/AddModule.png" width="35"/>  button in the bottom left corner of the CellProfiler window, which will pop up a small window called `‘Add modules’`. Navigate to the `Object Processing` category and select **IdentifyPrimaryObjects**. Double click on the module or click on <img src="./TutorialImages/AddToPipeline.png" width="120"/>.
 
   > **Tip**: You can also use the `'Find Modules'` search bar at the top of the ‘Add modules’ window to search all modules by name.
@@ -224,6 +222,8 @@ When you are done developing your pipeline, you can exit the `'Test Mode'` by cl
 
     - Adjust the threshold method, may lead to better (or worse!) results.
     - Adjust the declumping settings.
+
+  - Enter '`Test Mode'` by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/>.\
 
   - Hit <img src="./TutorialImages/Step.png" width="120"/> after each change to rerun the module and see how the new parameters affect the segmentation.
  
