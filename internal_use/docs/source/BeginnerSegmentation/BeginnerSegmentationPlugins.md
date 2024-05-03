@@ -49,9 +49,7 @@ In Exercise 3 (and for Windows users, optionally Excercise 2 as well), we want t
 
 Computer scientists will often use software **containers** to ship tools or data that are hard to install - [here](https://journals.sagepub.com/doi/10.1177/25152459211017853) is a good introduction and overview for non-computer scientists. You can think of containers as "a pre-configured operating system in a box". Because they come to you pre-configured, installation of any software happens once-and-only-once (by the creator of the container, not by you), and should stay working for long after ie the latest Mac upgrade breaks a certain older software installation. Groups like [biocontainers](https://biocontainers.pro/) have already containerized many of the tools you know and love. There are a number of types of software containers, but one of the most common is called a **Docker** container. 
 
-Most life scientists aren't aware of or don't use containers, especially because typical usage involves accessing them via your terminal. But Docker doesn't have to mean terminal! There are [containers that spit out interactive websites for you to use](https://github.com/COBA-NIH/docker_gradio_demo), and CellProfiler has plugins that are specifically set up to call other tools that live (and are executed) inside Docker containers. 
-
-To do this, CellProfiler needs to have the infrastructure for Docker containers up and running, which you can give it by installing a free program called [**Docker Desktop**](https://www.docker.com/products/docker-desktop/). You don't need to make an account to use it, but you probably will need to reboot your computer after installation is complete. Then, whenever you want to use a Docker-calling plugin in CellProfiler, you simply must make sure that Docker Desktop is open and running, CellProfiler will take care of everything else!
+To use this option, CellProfiler needs to have the infrastructure for Docker containers up and running, which you can give it by installing a free program called [**Docker Desktop**](https://www.docker.com/products/docker-desktop/). You don't need to make an account to use it, but you probably will need to reboot your computer after installation is complete. Then, whenever you want to use a Docker-calling plugin in CellProfiler, you simply must make sure that Docker Desktop is open and running, CellProfiler will take care of everything else!
 
 ```{figure} ./TutorialImages/DockerDesktop.png
 :width: 700
@@ -73,7 +71,7 @@ We've used Cellpose 2.2.2 to generate nuclear masks from the DNA images and cell
 ### Only if you are curious - how did we make these label masks?
 Cellpose was installed in a conda environment according to the [official instructions](https://github.com/MouseLand/cellpose?tab=readme-ov-file#installation) for installation with the GUI. The software was started in that conda environment using the command `cellpose`.
 
-Nuclear masks were made by dragging each DNA image into the GUI, selecting the 'nuclei' model with default settings, and then saving them individually as PNG using *Cmd+N* (Mac) *Ctl+N* (Windows). Since there were only 10 images and the hotkeys were available, this was not too painful.
+Nuclear masks were made by dragging each DNA image into the GUI, selecting the 'nuclei' model with default settings, and then saving them individually as PNG using *Cmd+N* (Mac) *Ctl+N* (Windows). Since there were only 10 images and the hotkeys were available, this task was not too tedious.
 
 ```{figure} ./TutorialImages/CellposeGUI.png
 :width: 700
@@ -118,7 +116,7 @@ Visualization of images and objects in the Workspace Viewer
 
 ### Bonus-to-the-Bonus - add the provided nuclear segmentations as well
 1. Drag and drop the `cellpose_masks_nuclei` folder in the Images module to add the nuclear masks to the image list.
-1. Go to the NamesAndTypes module and configure it so both kinds of masks can be loaded (hint: there's a duplicate button!)
+2. Go to the NamesAndTypes module and configure it so both kinds of masks can be loaded (hint: there's a duplicate button!)
   - You'll probably have to modify the existing settings for loading the cell masks by changing its rule or adding a second rule. Do you understand how/why?
 
 ## **Exercise 2: Running ilastik locally or from a Docker container**
@@ -173,7 +171,7 @@ When using ilastik for fluorescence microscopy, you will likely get the best per
   - You may wish to put a pause next to SaveImages, or uncheck it, to keep it from saving images, but that's up to you
 
 ```{note}
-If using Docker, the very first time you hit the Runilastik module, it will need to download an ~5GB file, which may be slow depending on your connection. You only need to do this step once however!
+If using Docker, the very first time you hit the Runilastik module, it will need to download a ~5GB file, which may be slow depending on your connection. You only need to do this step once however!
 ```
 
 4. Evaluate your prediction in Runilastik across a few image sets - how well does it perform? Does it perform worse on images it wasn't trained on?
@@ -227,7 +225,7 @@ RunCellpose is by far our most popular plugin, simply because a) Cellpose is awe
   - You may wish to put a pause next to SaveImages, or uncheck it, to keep it from saving images, but that's up to you
 
 ```{note}
-If you didn't already pull the container in the Docker Desktop section above, the very first time you hit the RunCellpose module, it will need to download an ~13GB file, which may be slow depending on your connection. You only need to do this step once however!
+If you didn't already pull the container in the Docker Desktop section above, the very first time you hit the RunCellpose module, it will need to download a ~13GB file, which may be slow depending on your connection. You only need to do this step once however!
 ```
 
 ```{figure} ./TutorialImages/RunCellpose.png
@@ -239,3 +237,7 @@ The output of the RunCellpose module
 
 4. As before, using OverlayOutlines and/or the WorkspaceViewer, evaluate segmentation on a few images. Where is CellProfiler doing better, and where is Cellpose doing better?
 5. Use the <img src="./TutorialImages/Info.png" width="35"> button to learn more about the different parameters you can pass to Cellpose (we don't offer all of them, but many) - how does tweaking these affect your output? How does changing the model you're using, and/or the image you're segmenting?
+
+### What next? Want to know more about CellProfliler plugins and modules?
+1. Read the [CellProfiler-plugins paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)
+2. Watch the [video](https://www.youtube.com/watch?v=fgF_YueM1b8) to learn how to write a module
