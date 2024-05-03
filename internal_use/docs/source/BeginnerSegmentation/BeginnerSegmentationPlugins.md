@@ -14,7 +14,7 @@ This exercise is meant to extend and build upon the Beginner Segmentation exerci
 
 There are a number of great software tools available to life scientists wishing to analyze images these days - [forum.image.sc](forum.image.sc) alone has more than 60 open-source tools! Sometimes, though, it helps to have a multi-tool workflow - do one step in Tool A, and then another in Tool B (and then possibly C, D, etc, but hopefully not!). In this tutorial, you'll try 3 different ways of accessing work you did in other tools. 
 
-1. Loading masks created by other segmentation tools (in this case, [Cellpose](https://www.cellpose.org/), but the same strategy works for many tools use this format).
+1. Loading masks created by other segmentation tools (in this case, [Cellpose](https://www.cellpose.org/), but the same strategy works for many tools which use this format).
 1. Accessing [ilastik](https://www.ilastik.org/) to use a trained pixel classification model via CellProfiler's plugins system.
 1. Running Cellpose in CellProfiler via CellProfiler's plugins system and a Docker container.
 
@@ -31,8 +31,11 @@ You can visit plugins.cellprofiler.org to learn more. To quote from that site:
 >- it requires extra libraries or other dependencies we are unable or unwilling to require for CellProfiler
 >- it has been contributed by a community member
 
-````{tips}
+```{tip}
 - While that documentation has instructions for [installing plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-plugins-without-dependencies), in step 2 it suggests downloading all of the CellProfiler plugins; this isn't a bad thing to do, but you can download individual plugins from GitHub with the website button below as well or instead.
+```
+
+````{tip}
 - We strongly recommend making a dedicated folder to store your CellProfiler plugins, as loading can be slow if there are a lot of other miscellaneous files around (such if they sit in the Downloads folder, for example).
 
 ```{figure} ./TutorialImages/GitHubDownloadButton.png
@@ -73,7 +76,7 @@ We've used Cellpose 2.2.2 to generate nuclear masks from the DNA images and cell
 ### Only if you are curious - how did we make these label masks?
 Cellpose was installed in a conda environment according to the [official instructions](https://github.com/MouseLand/cellpose?tab=readme-ov-file#installation) for installation with the GUI. The software was started in that conda environment using the command `cellpose`.
 
-Nuclear masks were made by dragging each DNA image into the GUI, selecting the 'nuclei' model with default settings, and then saving them individually as PNG using *Cmd+N* (Mac) *Ctl+N* (Windows). Since there were only 10 images and the hotkeys were available, this was not too painful.
+Nuclear masks were made by dragging each DNA image into the GUI, selecting the 'nuclei' model with default settings, and then saving them individually as PNG using *Cmd+N* (Mac) *Ctl+N* (Windows). Since there were only 10 images and the hotkeys were available, this was not too time-consuming to do.
 
 ```{figure} ./TutorialImages/CellposeGUI.png
 :width: 700
@@ -125,9 +128,9 @@ Visualization of images and objects in the Workspace Viewer
 
 Classical segmentation requires the thing you care about in an image be bright and every single other pixel dark(er). If you have a good clean fluorescent signal for the thing you care about, great! If not, you may need to resort to some tricks.
 
-One such trick is to train a classifier on a pixel-by-pixel basis to say "here is what I think is the likelihood that this is the pixel that you care about" and assign that pixel a probability value. If your classifier is good, that will give you an image where the pixels you care about are high-probability (bright) and everywhere else is low-probability (dark). That's exactly what we want! Life scientists tend to call this **"Pixel Classification"**; computer scientists will sometimes refer to it as **"Semantic Segmentation"**.
+One such trick is to train a classifier on a pixel-by-pixel basis to say "here is what I think is the likelihood that this is a pixel you want to end up in your segmentation"; this classifier then ends up creating for each  pixel a *probability value* that corresponds to how likely it thinks it is you want to segment that pixel. If your classifier is good, that will give you an image where the pixels you care about are high-probability (bright) and everywhere else is low-probability (dark). That's exactly what we want! Life scientists tend to call this **"Pixel Classification"**; computer scientists will sometimes refer to it as **"Semantic Segmentation"**.
 
-There are a few popular Fiji plugins for doing this, including Weka Trainable Segmentation and Labkit. We tend to use ilastik, because it makes it easy to automate creating a classifier from a very small number of images and then bulk-applying it to many others in "Batch Processing" mode. You can check out a tutorial we have written for running ilastik, and *then* CellProfiler at [tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (look for Pixel-based Classification). 
+There are a few popular Fiji plugins for doing this, including Weka Trainable Segmentation and Labkit, and you should absolutely use them if they work better for you! We tend to use ilastik, because it makes it easy to automate creating a classifier from a very small number of images and then bulk-applying it to many others in "Batch Processing" mode. You can check out a tutorial we have written for running ilastik, and *then* CellProfiler at [tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (look for Pixel-based Classification). 
 
 ```{figure} ./TutorialImages/IlastikBatchMode.png
 :width: 700
@@ -173,7 +176,7 @@ When using ilastik for fluorescence microscopy, you will likely get the best per
   - You may wish to put a pause next to SaveImages, or uncheck it, to keep it from saving images, but that's up to you
 
 ```{note}
-If using Docker, the very first time you hit the Runilastik module, it will need to download an ~5GB file, which may be slow depending on your connection. You only need to do this step once however!
+If using Docker, the very first time you hit the Runilastik module, it will need to download a ~5GB file, which may be slow depending on your connection. You only need to do this step once however!
 ```
 
 4. Evaluate your prediction in Runilastik across a few image sets - how well does it perform? Does it perform worse on images it wasn't trained on?
@@ -227,7 +230,7 @@ RunCellpose is by far our most popular plugin, simply because a) Cellpose is awe
   - You may wish to put a pause next to SaveImages, or uncheck it, to keep it from saving images, but that's up to you
 
 ```{note}
-If you didn't already pull the container in the Docker Desktop section above, the very first time you hit the RunCellpose module, it will need to download an ~13GB file, which may be slow depending on your connection. You only need to do this step once however!
+If you didn't already pull the container in the Docker Desktop section above, the very first time you hit the RunCellpose module, it will need to download a ~13GB file, which may be slow depending on your connection. You only need to do this step once however!
 ```
 
 ```{figure} ./TutorialImages/RunCellpose.png
@@ -239,3 +242,7 @@ The output of the RunCellpose module
 
 4. As before, using OverlayOutlines and/or the WorkspaceViewer, evaluate segmentation on a few images. Where is CellProfiler doing better, and where is Cellpose doing better?
 5. Use the <img src="./TutorialImages/Info.png" width="35"> button to learn more about the different parameters you can pass to Cellpose (we don't offer all of them, but many) - how does tweaking these affect your output? How does changing the model you're using, and/or the image you're segmenting?
+
+## What next? Want to know more about CellProfliler plugins and modules?
+1. Read the [CellProfiler-plugins paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)
+2. Watch the [video](https://www.youtube.com/watch?v=fgF_YueM1b8) to learn how to write a module
