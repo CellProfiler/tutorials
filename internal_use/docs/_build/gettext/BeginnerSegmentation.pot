@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 15:26-0400\n"
+"POT-Creation-Date: 2024-05-03 12:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,76 +301,76 @@ msgid "**AIM: use the nuclear channel to segment (isolate and identify all the p
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:185
-msgid "Enter '`Test Mode'` by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>.\\"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:187
 msgid "Add an **IdentifyPrimaryObjects** module to the pipeline. Do this by clicking on the <img src=\"./TutorialImages/AddModule.png\" width=\"35\"/>  button in the bottom left corner of the CellProfiler window, which will pop up a small window called `‘Add modules’`. Navigate to the `Object Processing` category and select **IdentifyPrimaryObjects**. Double click on the module or click on <img src=\"./TutorialImages/AddToPipeline.png\" width=\"120\"/>."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:189
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:187
 msgid "**Tip**: You can also use the `'Find Modules'` search bar at the top of the ‘Add modules’ window to search all modules by name."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:195
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:193
 msgid "*Figure 8: The 'Add Modules' window, modules are divided in categories based on their function*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:199
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:197
 msgid "Select `'OrigDNA'` image as your input image from the drop-down menu. `'OrigDNA'` is the name assigned to the nuclei channel in **NamesAndTypes** module. You can check it in the setting of Input Modules described before."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:200
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:198
 msgid "Change the name of the output objects to ‘Nuclei’."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:202
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:200
 msgid "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> to run the module. A new window will pop up showing you the original input image (top left) and the results of running the module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:203
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:201
 msgid "In this case, you can see the segmented nuclei both as outlines on top of the original image (bottom left) and as labeled objects (top right)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:203
 msgid "Notice that the colors in the labeled objects are assigned at random and might change ecery time you run the module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:207
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
 msgid "On the outlines display pane (bottom left) you can see three different colors; green is for accepted objects, orange for objects touching the border, and pink for objects outside the diameter range."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:208
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:206
 msgid "On the table pane (bottom right) there is useful information that you can use to adjust your segmentation settings, like the median diameter, and the threshold."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:209
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:207
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:253
 msgid "**How does your segmentation look?**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:215
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:213
 msgid "*Figure 9: The **IdentifyPrimaryObjects** module output, you can use the information in this window to modify your segmentation parameters*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:218
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:216
 msgid "Use the <img src=\"./TutorialImages/Zoom.png\" width=\"35\"/> at the top of the window to activate the Zoom tool. Click and drag the mouse on the image to zoom in on an area that was segmented poorly."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:219
 msgid "**🔴 TO DO**: Improve your segmentation of nuclei:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
 msgid "Select `‘Yes’` for the `‘Use advanced settings?’` option, then change some of the parameters:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:225
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
 msgid "Adjust the threshold method, may lead to better (or worse!) results."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:226
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:224
 msgid "Adjust the declumping settings."
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:226
+msgid "Enter '`Test Mode'` by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>.\\"
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:228
