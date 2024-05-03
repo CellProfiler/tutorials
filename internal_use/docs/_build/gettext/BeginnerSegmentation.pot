@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-03 12:17+0000\n"
+"POT-Creation-Date: 2024-05-03 12:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -289,7 +289,7 @@ msgid "The <img src=\"./TutorialImages/close_eyes.png\" width=\"35\"/> icon mean
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:178
-msgid "The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. You can activate this mode by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/> in the lower-left of the window.  When you are done developing your pipeline, you can exit the `'Test Mode'` by clicking on <img src=\"./TutorialImages/exitTestMode.png\" width=\"120\"/> and then finally run the entire pipeline on your complete image dataset using the <img src=\"./TutorialImages/analyzeImages.png\" width=\"120\"/> button."
+msgid "The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. Once your pipeline has at least one non-input module in it, you can activate this mode by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/> in the lower-left of the window.  When you are done developing your pipeline, you can exit the `'Test Mode'` by clicking on <img src=\"./TutorialImages/exitTestMode.png\" width=\"120\"/> and then finally run the entire pipeline on your complete image dataset using the <img src=\"./TutorialImages/analyzeImages.png\" width=\"120\"/> button."
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:181
@@ -321,56 +321,56 @@ msgid "Change the name of the output objects to ‘Nuclei’."
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:200
+msgid "Enter '`Test Mode'` by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>.\\"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:202
 msgid "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> to run the module. A new window will pop up showing you the original input image (top left) and the results of running the module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:201
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:203
 msgid "In this case, you can see the segmented nuclei both as outlines on top of the original image (bottom left) and as labeled objects (top right)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:203
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
 msgid "Notice that the colors in the labeled objects are assigned at random and might change ecery time you run the module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:207
 msgid "On the outlines display pane (bottom left) you can see three different colors; green is for accepted objects, orange for objects touching the border, and pink for objects outside the diameter range."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:206
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:208
 msgid "On the table pane (bottom right) there is useful information that you can use to adjust your segmentation settings, like the median diameter, and the threshold."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:207
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:209
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:253
 msgid "**How does your segmentation look?**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:213
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:215
 msgid "*Figure 9: The **IdentifyPrimaryObjects** module output, you can use the information in this window to modify your segmentation parameters*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:216
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:218
 msgid "Use the <img src=\"./TutorialImages/Zoom.png\" width=\"35\"/> at the top of the window to activate the Zoom tool. Click and drag the mouse on the image to zoom in on an area that was segmented poorly."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:219
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
 msgid "**🔴 TO DO**: Improve your segmentation of nuclei:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
 msgid "Select `‘Yes’` for the `‘Use advanced settings?’` option, then change some of the parameters:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:225
 msgid "Adjust the threshold method, may lead to better (or worse!) results."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:224
-msgid "Adjust the declumping settings."
-msgstr ""
-
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:226
-msgid "Enter '`Test Mode'` by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>.\\"
+msgid "Adjust the declumping settings."
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:228
