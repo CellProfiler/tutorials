@@ -175,7 +175,7 @@ Thus, the order in which this processes are executed is **very** important, as i
   >
   >  - The <img src="./TutorialImages/close_eyes.png" width="35"/> icon means that the module output will not be visible when you run the pipeline.
 
-The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. You can activate this mode by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/> in the lower-left of the window. 
+The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. Once your pipeline has at least one non-input module in it, you can activate this mode by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/> in the lower-left of the window. 
 When you are done developing your pipeline, you can exit the `'Test Mode'` by clicking on <img src="./TutorialImages/exitTestMode.png" width="120"/> and then finally run the entire pipeline on your complete image dataset using the <img src="./TutorialImages/analyzeImages.png" width="120"/> button.
 
 ###  **4. IdentifyPrimaryObjects – Nuclei (10min)**
@@ -196,6 +196,8 @@ When you are done developing your pipeline, you can exit the `'Test Mode'` by cl
 
 - Select `'OrigDNA'` image as your input image from the drop-down menu. `'OrigDNA'` is the name assigned to the nuclei channel in **NamesAndTypes** module. You can check it in the setting of Input Modules described before. 
 - Change the name of the output objects to ‘Nuclei’.
+
+- Enter '`Test Mode'` by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/>.\
 
 - Hit <img src="./TutorialImages/Step.png" width="120"/> to run the module. A new window will pop up showing you the original input image (top left) and the results of running the module. 
   - In this case, you can see the segmented nuclei both as outlines on top of the original image (bottom left) and as labeled objects (top right).
@@ -222,8 +224,6 @@ When you are done developing your pipeline, you can exit the `'Test Mode'` by cl
 
     - Adjust the threshold method, may lead to better (or worse!) results.
     - Adjust the declumping settings.
-
-  - Enter '`Test Mode'` by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/>.\
 
   - Hit <img src="./TutorialImages/Step.png" width="120"/> after each change to rerun the module and see how the new parameters affect the segmentation.
  
