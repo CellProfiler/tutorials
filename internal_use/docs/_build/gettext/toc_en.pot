@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2024-05-07 16:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,10 @@ msgstr ""
 
 #: ../../source/toc_en/index.rst:9
 msgid "Beginner Segmentation"
+msgstr ""
+
+#: ../../source/toc_en/index.rst:9
+msgid "Beginner Segmentation Bonus Materials"
 msgstr ""
 
 #: ../../source/toc_en/index.rst:9
