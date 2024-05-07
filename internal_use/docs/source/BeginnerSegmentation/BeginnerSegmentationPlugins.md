@@ -31,13 +31,8 @@ You can visit plugins.cellprofiler.org to learn more. To quote from that site:
 >- it requires extra libraries or other dependencies we are unable or unwilling to require for CellProfiler
 >- it has been contributed by a community member
 
-```{tip}
-- While that documentation has instructions for [installing plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-plugins-without-dependencies), in step 2 it suggests downloading all of the CellProfiler plugins; this isn't a bad thing to do, but you can download individual plugins from GitHub with the website button below as well or instead.
-```
-
 ````{tip}
-- We strongly recommend making a dedicated folder to store your CellProfiler plugins, as loading can be slow if there are a lot of other miscellaneous files around (such if they sit in the Downloads folder, for example).
-
+While that documentation has instructions for [installing plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-plugins-without-dependencies), in step 2 it suggests downloading all of the CellProfiler plugins; this isn't a bad thing to do, but you can download individual plugins from GitHub with the website button below as well or instead.
 ```{figure} ./TutorialImages/GitHubDownloadButton.png
 :width: 400
 :align: center
@@ -45,6 +40,10 @@ You can visit plugins.cellprofiler.org to learn more. To quote from that site:
 GitHub's "Download Raw Files" button
 ```
 ````
+
+```{tip}
+We strongly recommend making a dedicated folder to store your CellProfiler plugins, as loading can be slow if there are a lot of other miscellaneous files around (such if they sit in the Downloads folder, for example).
+```
 
 ### Docker Desktop
 

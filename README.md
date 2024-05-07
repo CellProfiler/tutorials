@@ -16,6 +16,12 @@ A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for l
 
 <a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
 
+### Bonus materials
+
+We have also created bonus materials designed to go with this tutorial - in these exercises, you will practice using CellProfiler to interface with other software tools like ilastik and Cellpose. 
+
+<a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
+
 
 En español:
 
