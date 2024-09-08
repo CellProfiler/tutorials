@@ -100,7 +100,7 @@ Cell masks were made by navigating into the image folder and then running the co
 1. Open up a clean copy of CellProfiler (or run File -> New Project) and drag `bonus_1_import_masks.cppipe` into the pipeline panel.
 1. Drag the `images_Illum-corrected` subfolder from the main Beginner Segmentation exercise and also the `cellpose_masks_cells` subfolder from this exercise. *Do not drag in the `cellpose_masks_nuclei` folder.*
 1. Put CellProfiler into TestMode <img src="./TutorialImages/startTestMode.png" width="120"/>, open the eye icon <img src="./TutorialImages/EyeOpen.png" width="50"/> next to OverlayOutlines, and then hit <img src="./TutorialImages/Step.png" width="120"/> 3 times to create a classical segmentation and compare it with the Cellpose-generated version. You can check the settings in the OverlayOutlines module to see which outline color corresponds to which segmentation in the output.
-1. Optionally, open the Workspace Viewer using <img src="./TutorialImages/WorkspaceViewer.png" width="120"/> to create easily on-the-fly customizable overlays.
+1. Optionally, open the Workspace Viewer using <img src="./TutorialImages/ViewWorkspace.png" width="120"/> to create easily on-the-fly customizable overlays.
 1. Hit <img src="./TutorialImages/NextImageSet.png" width="120"/> and repeat a couple of times to examine the segmentations on more images.
 
 ```{admonition} Question for you
@@ -120,7 +120,7 @@ Visualization of images and objects in the Workspace Viewer
 
 ### Bonus-to-the-Bonus - add the provided nuclear segmentations as well
 1. Drag and drop the `cellpose_masks_nuclei` folder in the Images module to add the nuclear masks to the image list.
-1. Go to the NamesAndTypes module and configure it so both kinds of masks can be loaded (hint: there's a duplicate button!)
+1. Go to the NamesAndTypes module and configure it so both kinds of masks can be loaded (hint: there's a duplicate button you can use to make a second copy of a channel!)
   - You'll probably have to modify the existing settings for loading the cell masks by changing its rule or adding a second rule. Do you understand how/why?
 
 ## **Exercise 2: Running ilastik locally or from a Docker container**
@@ -241,6 +241,28 @@ The output of the RunCellpose module
 
 4. As before, using OverlayOutlines and/or the WorkspaceViewer, evaluate segmentation on a few images. Where is CellProfiler doing better, and where is Cellpose doing better?
 5. Use the <img src="./TutorialImages/Info.png" width="35"> button to learn more about the different parameters you can pass to Cellpose (we don't offer all of them, but many!) - how does tweaking these affect your output? How about changing the model you're using, and/or the image you're segmenting?
+
+### Bonus-to-the-Bonus 1 - test on a more varied data set
+
+The data we gave you in this exercise was all very clean, and all from the negative control wells of this experiment. The [folder linked here](https://drive.google.com/file/d/10kZMhr2bVR14vMP7kG5iZGujjUI3Nn3Y/view?usp=sharing) contains images with a broader variety of phenotypes - try replacing the images in the `Images` module with this folder instead and see how well the two kinds of segmentation work in different conditions!
+
+```{figure} ../AdvancedSegmentation/TutorialImages/Fig2.png
+:width: 700
+:align: center
+A broader range of phenotypes can be harder to consistently account for in conducting segmentation.
+```
+
+```{tip}
+You’re encouraged to explore the performance in some random images on your own (you can do this from the `Test` menu with the `Random Image Set` option), but if you find yourself consistently ending up with images that look similar you can try examining images from the following list of wells- A08, A12, B12, B18, C7, D6, D19, D22, E3. You can pick these with `Test` -> `Choose Image Set`
+```
+
+### Bonus-to-the-Bonus 2 - improve Cellpose segmentation
+
+Based on your evaluations above, can you identify some places where additional training might help fix some issues in the Cellpose model? If you happen to have Cellpose on your computer (or want to try installing it - see Exercise 1 for a link to the official install instructions), open Cellpose with some of the `Ch1` images and see if you can train a model that will perform better.
+
+### Bonus-to-the-Bonus 3 - test your classical segmentation skills
+
+The classical segmentation parameters provided here are based on expert tuning from a very experienced CellProfiler user - how close can you get? Add another IdentifyPrimaryObjects module to the pipeline, tune it yourself, and then look in the workspace viewer to see how it performs, especially in the more diverse image set from Bonus-to-the-Bonus 1. Compare your parameters to the expert ones - how do they differ? Do you understand why some of these settings may have been chosen?
 
 ## What next? Want to know more about CellProfliler plugins and modules?
 1. Read the [CellProfiler-plugins paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)

@@ -355,7 +355,7 @@ MeasureColocalization:[module_num:14|svn_version:'Unknown'|variable_revision_num
     Calculate the Rank Weighted Colocalization coefficients?:Yes
     Calculate the Overlap coefficients?:Yes
     Calculate the Manders coefficients using Costes auto threshold?:Yes
-    Method for Costes thresholding:Fast
+    Method for Costes thresholding:Faster
 
 MeasureObjectIntensity:[module_num:15|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select images to measure:ER, Mito, Hoechst, Ph_golgi, Syto
