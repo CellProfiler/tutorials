@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 16:39+0000\n"
+"POT-Creation-Date: 2024-09-08 11:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,7 +189,7 @@ msgid "Put CellProfiler into TestMode <img src=\"./TutorialImages/startTestMode.
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:103
-msgid "Optionally, open the Workspace Viewer using <img src=\"./TutorialImages/WorkspaceViewer.png\" width=\"120\"/> to create easily on-the-fly customizable overlays."
+msgid "Optionally, open the Workspace Viewer using <img src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\"/> to create easily on-the-fly customizable overlays."
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:104
@@ -233,7 +233,7 @@ msgid "Drag and drop the `cellpose_masks_nuclei` folder in the Images module to 
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:123
-msgid "Go to the NamesAndTypes module and configure it so both kinds of masks can be loaded (hint: there's a duplicate button!)"
+msgid "Go to the NamesAndTypes module and configure it so both kinds of masks can be loaded (hint: there's a duplicate button you can use to make a second copy of a channel!)"
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:124
@@ -462,14 +462,46 @@ msgid "Use the <img src=\"./TutorialImages/Info.png\" width=\"35\"> button to le
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:245
-msgid "What next? Want to know more about CellProfliler plugins and modules?"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:246
-msgid "Read the [CellProfiler-plugins paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)"
+msgid "Bonus-to-the-Bonus 1 - test on a more varied data set"
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:247
+msgid "The data we gave you in this exercise was all very clean, and all from the negative control wells of this experiment. The [folder linked here](https://drive.google.com/file/d/10kZMhr2bVR14vMP7kG5iZGujjUI3Nn3Y/view?usp=sharing) contains images with a broader variety of phenotypes - try replacing the images in the `Images` module with this folder instead and see how well the two kinds of segmentation work in different conditions!"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
+msgid "A broader range of phenotypes can be harder to consistently account for in conducting segmentation."
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:256
+msgid "You’re encouraged to explore the performance in some random images on your own (you can do this from the `Test` menu with the `Random Image Set` option), but if you find yourself consistently ending up with images that look similar you can try examining images from the following list of wells- A08, A12, B12, B18, C7, D6, D19, D22, E3. You can pick these with `Test` -> `Choose Image Set`"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:259
+msgid "Bonus-to-the-Bonus 2 - improve Cellpose segmentation"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:261
+msgid "Based on your evaluations above, can you identify some places where additional training might help fix some issues in the Cellpose model? If you happen to have Cellpose on your computer (or want to try installing it - see Exercise 1 for a link to the official install instructions), open Cellpose with some of the `Ch1` images and see if you can train a model that will perform better."
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:263
+msgid "Bonus-to-the-Bonus 3 - test your classical segmentation skills"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:265
+msgid "The classical segmentation parameters provided here are based on expert tuning from a very experienced CellProfiler user - how close can you get? Add another IdentifyPrimaryObjects module to the pipeline, tune it yourself, and then look in the workspace viewer to see how it performs, especially in the more diverse image set from Bonus-to-the-Bonus 1. Compare your parameters to the expert ones - how do they differ? Do you understand why some of these settings may have been chosen?"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:267
+msgid "What next? Want to know more about CellProfliler plugins and modules?"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:268
+msgid "Read the [CellProfiler-plugins paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:269
 msgid "Watch this [video](https://www.youtube.com/watch?v=fgF_YueM1b8) to learn how to write a module"
 msgstr ""
 
