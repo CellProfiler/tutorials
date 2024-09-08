@@ -8,4 +8,4 @@ They are ﬁelds of U2OS cells (10 sites imaged in 5 channels), and
 represent 5 mock treated wells from a single 384 well plate experiment.
 
 The download bundle for this tutorial lives in a public google drive folder:
-https://drive.google.com/drive/folders/1t6h2e4ifjRISQaXvFg-Mr9mOfc0vET9C?usp=sharing
+https://drive.google.com/file/d/18YB8RhfFNKZmYFBd2I0mujJNkcxxEuIZ/view?usp=sharing

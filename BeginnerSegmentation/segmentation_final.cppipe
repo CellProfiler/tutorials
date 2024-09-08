@@ -239,7 +239,7 @@ MeasureColocalization:[module_num:14|svn_version:'Unknown'|variable_revision_num
     Calculate the Rank Weighted Colocalization coefficients?:Yes
     Calculate the Overlap coefficients?:Yes
     Calculate the Manders coefficients using Costes auto threshold?:No
-    Method for Costes thresholding:Fast
+    Method for Costes thresholding:Faster
 
 RelateObjects:[module_num:15|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['This module relates a larger "Parent object" to another smaller "Child object/s". In this case, this allows us to identify which Nucleoli belong to which Nuclei.', 'The output is a new object called NucleoliChildObjects that has all of the nucleoli belonging to a single nucleus ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Parent objects:Nuclei

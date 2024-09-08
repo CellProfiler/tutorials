@@ -3,15 +3,15 @@
 1. Gather all the necessary files in a folder. Give the folder a descriptive name with no spaces. Note that files > 25 MB (and especially >100 MB) may not be uploadable to GitHub. If your tutorial requires large files, please do the following: 
     1. Add the files to a folder with a descriptive name (no spaces)
     2. Zip the folder (on mac, right click > Compress...)
-    3. Add the .zip file to google drive in the `Outreach` > `Workshops_Webinars_Tutorials` folder on the shared g drive
+    3. Add the .zip file to google drive in the `Outreach` > `Workshops_Webinars_Tutorials`> `GithubLinkedTutorialFiles` folder on the shared g drive
     4. Make sure the folder is public and copy the link to share the folder to use for the download link later.
 
 2. Make a PR adding the folder of materials to the tutorial repo. In addition to the materials, please also 
     1) write a short description of the tutorial to add to the readme and
-    2) create a gif (tips on making one [here](https://docs.google.com/document/d/1G5odCSbX1fW8vReKH5ubgvWc1sIGquLisUe7t5pR7d8/edit#heading=h.kjidkmwv6jq3)) and add that gif to to the `assets` > `img` folder.
+    2) create a gif (tips on making one [here](https://docs.google.com/document/d/1G5odCSbX1fW8vReKH5ubgvWc1sIGquLisUe7t5pR7d8/edit#heading=h.kjidkmwv6jq3); in 2024 on Mac, Beth likes Gifski) and add that gif to to the `assets` > `img` folder.
     3) add the tutorial to the `internal_use/docs/source/index.rst` file, and the index file of whatever language that tutorial is in (ie if English, `internal_use/docs/source/toc_en/index.rst`)
 
-3. Update the readme with the description and gif. If there is an associated blogpost or video, please link that using the appropriate badge. If the tutorial is particularly geared toward beginners, add the beginner badge. If the tutorial is advanced such that a user should definitely do a beginner tutorial first, use the advanced badge. 
+3. Update the top-level readme with the description and gif. If there is an associated blogpost or video, please link that using the appropriate badge. If the tutorial is particularly geared toward beginners, add the beginner badge. If the tutorial is advanced such that a user should definitely do a beginner tutorial first, use the advanced badge. 
 
 ## Here's an example of what the markdown looks like for the Translocation tutorial: 
 ```

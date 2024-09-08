@@ -40,11 +40,11 @@ This exercise will guide you through setting segmentation parameters that will b
 
 <img class="imggif" src="assets/img/advancedsegmentation.gif" alt="example segmentation" align="right" width="250">
 
-<a href="https://drive.google.com/file/d/1zB6Cye3nlXN3J4oc4r32upn175v0jYg_/view?usp=sharing" target="_blank"><img src="assets/img/download-button.png" alt="Download materials" width="140px"> </a> 
+<a href="https://drive.google.com/file/d/1qVaQiPZKqOPEsa62lYEpm7ot3th7ADqE/view?usp=sharing" target="_blank"><img src="assets/img/download-button.png" alt="Download materials" width="140px"> </a> 
 
 En español:
 
-<a href="https://drive.google.com/file/d/1s6GrMSBwoyu67-VCPDxz9okM518JsHHq/view?usp=sharing" target="_blank"><img src="assets/img/download-button-es.png" alt="Materiales para descargar" width="140px"></a>
+<a href="https://drive.google.com/file/d/1LlmSZif9gOyn31xPLftzpJSflMukEFZU/view?usp=sharing" target="_blank"><img src="assets/img/download-button-es.png" alt="Materiales para descargar" width="140px"></a>
 
 ## Translocation
 
