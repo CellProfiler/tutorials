@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2024
 # Esteban, 2024
+# Beth Cimini, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-20 17:10-0400\n"
+"POT-Creation-Date: 2024-04-14 16:22+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Esteban, 2024\n"
+"Last-Translator: Beth Cimini, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,10 +142,14 @@ msgstr "`^(?P<Plate>.*)_xy(?P<Site>[0-9])_ch(?P<ChannelNumber>[0-9])`"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:41
 msgid ""
-"This regular expression will parse the filenames and organize the data."
+"This regular expression will parse the filenames and organize the data. We "
+"suggest you copy this expression so accidental spelling errors or extra "
+"spaces don't affect the metadata extraction"
 msgstr ""
-"Esta expresión regular analizará los nombres de archivo y organizará los "
-"datos."
+"Esta expresión regular analizará los nombres de archivos y organizará los "
+"datos. Le sugerimos copiar esta expresión para que los errores ortográficos "
+"accidentales o los espacios adicionales no afecten la extracción de "
+"metadatos."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:44
 msgid "Highlight the **NamesAndTypes** module."
