@@ -77,9 +77,10 @@ Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_windo
     grouping metadata count:1
     Metadata category:None
 
-RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:OrigDNA
-    Run CellPose in docker or local python environment:Docker
+    Rescale images before running Cellpose:No
+    Run CellPose in docker or local python environment:Python
     Select Cellpose docker image:cellprofiler/runcellpose_with_pretrained:0.1
     Expected object diameter:30
     Detection mode:nuclei
@@ -101,6 +102,7 @@ RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:4|show_
     Use Omnipose for mask reconstruction:No
     Invert images:No
     Remove objects that are touching the edge?:Yes
+    Rescale probability map?:No
 
 IdentifyPrimaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['This module is used to create a group of objects called Nuclei by segmenting the nuclear regions from the OrigDNA image.', 'The settings used here should be good enough for the images used in this tutorial but they depend highly on the image set!', '', 'We encourage you to play around with the settings in order to get a "good enough" segmentation of your own data.', 'REMEMBER: we aim for "good enough" because there is no settings that will give you a PERFECT segmentation every time in every image.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:OrigDNA

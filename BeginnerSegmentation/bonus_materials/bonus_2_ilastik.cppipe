@@ -211,7 +211,7 @@ Runilastik:[module_num:11|svn_version:'Unknown'|variable_revision_number:1|show_
     Select the input image:OrigRNA
     Name the output image:Runilastik
     Run ilastik in docker or local environment:Local
-    Executable:
+    Executable:/opt/ilastik/run_ilastik.sh
     Project file:
     Select the project type:Pixel Classification
 
