@@ -5,7 +5,7 @@ GitHash:
 ModuleCount:4
 HasImagePlaneDetails:False
 
-Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.', '', 'Drag and drop your IMAGES (you can drag and drop the entire "images_Illum-corrected" folder) into the panel just below this one.', '', '<-Drag and drop your "segmentation_start.cppipe" files into the left panel.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['WELCOME TO THE BEGGINNER SEGMENTATION TUTORIAL!! :D', '', 'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.', 'Drag and drop your IMAGES (you can drag and drop the entire "images_Illum-corrected" folder) into the panel just below this one.', '', '<-Drag and drop your "segmentation_start.cppipe" files into the left panel.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     :
     Filter images?:Images only
     Select the rule criteria:or (extension does isimage) (file does contain ".npy")

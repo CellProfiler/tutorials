@@ -86,75 +86,14 @@ Read through the steps below and follow instructions where stated. Steps where y
   > **TIP** you can manually adjust brightness and contrast in the image display by right-clicking on it and going to `'Adjust Contrast'` 
 
 -------------------------------------------------------------------------------------------------------------------------
-###  **3. [OPTIONAL STEP] Set up the input modules (10min)**
+###  3. [OPTIONAL STEP] Set up the input modules
   
-  > *You can skip this step ig you prefer, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline.*
+  > *We suggest you skip this step for now, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline (`segmentation_start.cpipe`).*
+  
+  > *At the end of this tutorial you will find instructions on how to set up the input modules*
 
-The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are crucial for any CellProfiler pipeline because they define how images are loaded and organized.
-
-- The **Metadata** module is already conﬁgured. With it, you can extract information that is required for you analysis and which is not contained within the images themselves (thus, the name 'Metadata'):
-
-  - In this case, the module extracts the **Plate**, **Well**, **Site** and **ChannelNumber** from the image files' names.
-
-    - This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose which images to apply them to.  
-    - You can also add a file which adds extra Metadata per image.
-
-  - The module uses a `'regular expression'` (also known as RegEx), a sort of template that fits all the file names and allows to obtain data from them.
-
-  - Click on the magnifying glass at the end of the regular expression box for each extraction method to see how it works.
-
-  -  Let's analyze the example used in this tutorial:  
->**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch(?P<ChannelNumber>[1-5]).tif`**  
-
-> Expressions contained between parentheses are VARIABLE and are captured into named variables (denoted as `(?P<VariableName>)`).
->
-> Expressions outside parentheses are CONSTANT and should be present in ALL image file names (like the underscores and the '.tif')
->
-> `^`: Start the regular expression
->
->`(?P<Plate>.*)`: Extract all the characters before the first underscore character (_) and assign them to the measurement **"Plate"** for the image. 
->
->`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single (denoted as {1}) uppercase letter from A to P (denoted as [A-P]). Then, extract the next two digits ({2}) between [0-9] and assign it to the measurment **"Well"** for the image.  
->
->`site(?P<Site>[0-9])`: After the constant string "site", extract the next two digits {2} between [0-9] and assign it to the measurement **"Site"** for the image.
->
->`Ch(?P<ChannelNumber>[1-5])`: After the constant string "Ch", extract the next digit between [1-5] and assign it to the measurement **"ChannelNumber"** for the image.
-
->If you want to learn more about how these regular expressions work or how to adapt them to other situations, click on the <img src="./TutorialImages/Info.png" width="35"> button.
-
-```{figure} ./TutorialImages/Fig4.png
-:width: 650
-:align: center
-
-*Figure 4: The **Metadata** module, columns in table correspond to metadata categories*
-```
-
-- In the **NamesAndTypes** module, we assign names to the images and configure image sets (i.e., all the different channels for a field of view). We will use the metadata we extracted in the previous module to make that association possible.
-
-  - This module is also fully configured already, but scroll and look through the configuration to see how we use the **ChannelNumber** obtained from the **Metadata** module to assign names to each image (There are several other ways to create correct mappings, but these may serve as a helpful example to refer to in your own work).
-
-
-```{figure} ./TutorialImages/Fig5.png
-:width: 800
-:align: center
-
-*Figure 5: Image mapping using extracted metadata*
-```
-
-  - Scroll to the bottom of the **NamesAndTypes** module settings to see how the image sets are constructed ‘`Image set matching’` is set to `‘Metadata’`. Each image channel is set to ‘Well → Site’.
-
-
-```{figure} ./TutorialImages/Fig6.png
-:width: 800
-:align: center
-
-*Figure 6: Image set matching using extracted metadata*
-```
-
-- For this exercise the **Groups** module is not needed so it is set to ‘No’, this module can be useful when you have more than one plate, or different movies.
-
-> **For more information and examples on how to configure the Input modules we have created a blog and video tutorial that can be accessed [here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial).**
 --------------------------------------------------------------------------------------------------------------------------
+------------------------
 
 ## Build the analysis pipeline
 
@@ -177,6 +116,13 @@ Thus, the order in which this processes are executed is **very** important, as i
 
 The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. Once your pipeline has at least one non-input module in it, you can activate this mode by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/> in the lower-left of the window. 
 When you are done developing your pipeline, you can exit the `'Test Mode'` by clicking on <img src="./TutorialImages/exitTestMode.png" width="120"/> and then finally run the entire pipeline on your complete image dataset using the <img src="./TutorialImages/analyzeImages.png" width="120"/> button.
+
+```{figure} ./TutorialImages/BeginnerPipelineSummary.png
+:width: 700
+:align: center
+
+*Overview of the final **pipeline** that you will be building with the general aim of each section*
+```
 
 ###  **4. IdentifyPrimaryObjects – Nuclei (10min)**
 
@@ -486,3 +432,72 @@ Now you have a pipeline that works well across different images. It is time to r
 <br>
 
 **CONGRATULATIONS!! YOU HAVE SUCCESSFULLY RUN YOUR FIRST CELL PROFILER PIPELINE!**
+
+------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+###  **3. [OPTIONAL] Set up the input modules (10min)**
+  
+The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are crucial for any CellProfiler pipeline because they define how images are loaded and organized.
+
+- The **Metadata** module is already conﬁgured. With it, you can extract information that is required for you analysis and which is not contained within the images themselves (thus, the name 'Metadata'):
+
+  - In this case, the module extracts the **Plate**, **Well**, **Site** and **ChannelNumber** from the image files' names.
+
+    - This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose which images to apply them to.  
+    - You can also add a file which adds extra Metadata per image.
+
+  - The module uses a `'regular expression'` (also known as RegEx), a sort of template that fits all the file names and allows to obtain data from them.
+
+  - Click on the magnifying glass at the end of the regular expression box for each extraction method to see how it works.
+
+  -  Let's analyze the example used in this tutorial:  
+>**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch(?P<ChannelNumber>[1-5]).tif`**  
+
+> Expressions contained between parentheses are VARIABLE and are captured into named variables (denoted as `(?P<VariableName>)`).
+>
+> Expressions outside parentheses are CONSTANT and should be present in ALL image file names (like the underscores and the '.tif')
+>
+> `^`: Start the regular expression
+>
+>`(?P<Plate>.*)`: Extract all the characters before the first underscore character (_) and assign them to the measurement **"Plate"** for the image. 
+>
+>`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single (denoted as {1}) uppercase letter from A to P (denoted as [A-P]). Then, extract the next two digits ({2}) between [0-9] and assign it to the measurment **"Well"** for the image.  
+>
+>`site(?P<Site>[0-9])`: After the constant string "site", extract the next two digits {2} between [0-9] and assign it to the measurement **"Site"** for the image.
+>
+>`Ch(?P<ChannelNumber>[1-5])`: After the constant string "Ch", extract the next digit between [1-5] and assign it to the measurement **"ChannelNumber"** for the image.
+
+>If you want to learn more about how these regular expressions work or how to adapt them to other situations, click on the <img src="./TutorialImages/Info.png" width="35"> button.
+
+```{figure} ./TutorialImages/Fig4.png
+:width: 650
+:align: center
+
+*Figure 4: The **Metadata** module, columns in table correspond to metadata categories*
+```
+
+- In the **NamesAndTypes** module, we assign names to the images and configure image sets (i.e., all the different channels for a field of view). We will use the metadata we extracted in the previous module to make that association possible.
+
+  - This module is also fully configured already, but scroll and look through the configuration to see how we use the **ChannelNumber** obtained from the **Metadata** module to assign names to each image (There are several other ways to create correct mappings, but these may serve as a helpful example to refer to in your own work).
+
+
+```{figure} ./TutorialImages/Fig5.png
+:width: 800
+:align: center
+
+*Figure 5: Image mapping using extracted metadata*
+```
+
+  - Scroll to the bottom of the **NamesAndTypes** module settings to see how the image sets are constructed ‘`Image set matching’` is set to `‘Metadata’`. Each image channel is set to ‘Well → Site’.
+
+
+```{figure} ./TutorialImages/Fig6.png
+:width: 800
+:align: center
+
+*Figure 6: Image set matching using extracted metadata*
+```
+
+- For this exercise the **Groups** module is not needed so it is set to ‘No’, this module can be useful when you have more than one plate, or different movies.
+
+> **For more information and examples on how to configure the Input modules we have created a blog and video tutorial that can be accessed [here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial).**
