@@ -117,6 +117,13 @@ Thus, the order in which this processes are executed is **very** important, as i
 The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. Once your pipeline has at least one non-input module in it, you can activate this mode by clicking on <img src="./TutorialImages/startTestMode.png" width="120"/> in the lower-left of the window. 
 When you are done developing your pipeline, you can exit the `'Test Mode'` by clicking on <img src="./TutorialImages/exitTestMode.png" width="120"/> and then finally run the entire pipeline on your complete image dataset using the <img src="./TutorialImages/analyzeImages.png" width="120"/> button.
 
+```{figure} ./TutorialImages/BeginnerPipelineSummary.png
+:width: 700
+:align: center
+
+*Overview of the final **pipeline** that you will be building with the general aim of each section*
+```
+
 ###  **4. IdentifyPrimaryObjects – Nuclei (10min)**
 
 > **AIM: use the nuclear channel to segment (isolate and identify all the pixels belonging to) each nuclei.**
