@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-08 11:53+0000\n"
+"POT-Creation-Date: 2024-10-21 15:49+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
 "Last-Translator: Beth Cimini, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
@@ -1397,244 +1397,32 @@ msgstr ""
 " imagem clicando com o botão direito sobre ela e indo em `'Adjust Contrast'`"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:89
-msgid "**3. [OPTIONAL STEP] Set up the input modules (10min)**"
-msgstr "**3. [ETAPA OPCIONAL] Configure os módulos de entrada (10min)**"
+msgid "3. [OPTIONAL STEP] Set up the input modules"
+msgstr "3. [ETAPA OPCIONAL] Configurar os módulos de entrada"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:91
 msgid ""
-"*You can skip this step ig you prefer, it will not affect the rest of the "
+"*We suggest you skip this step for now, it will not affect the rest of the "
 "pipeline, as these modules have been properly set up in the starting "
-"pipeline.*"
+"pipeline (`segmentation_start.cpipe`).*"
 msgstr ""
-"*Você pode pular esta etapa se preferir, isso não afetará o restante do "
-"pipeline, pois esses módulos foram configurados corretamente no pipeline "
-"inicial.*"
+"*Sugerimos que você pule esta etapa por enquanto, pois ela não afetará o "
+"restante do pipeline, pois esses módulos foram configurados corretamente no "
+"pipeline inicial (`segmentation_start.cpipe`).*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:93
 msgid ""
-"The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and "
-"**Groups**) are crucial for any CellProfiler pipeline because they define "
-"how images are loaded and organized."
+"*At the end of this tutorial you will find instructions on how to set up the"
+" input modules*"
 msgstr ""
-"Os quatro módulos de entrada (**Images**, **Metadada**, **NamesAndTypes** e "
-"**Groups**) são cruciais para qualquer pipeline do CellProfiler porque "
-"definem como as imagens são carregadas e organizadas."
+"*No final deste tutorial você encontrará instruções sobre como configurar os"
+" módulos de entrada*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:95
-msgid ""
-"The **Metadata** module is already conﬁgured. With it, you can extract "
-"information that is required for you analysis and which is not contained "
-"within the images themselves (thus, the name 'Metadata'):"
-msgstr ""
-"O módulo **Metadada** já está configurado. Com ele, você pode extrair "
-"informações necessárias para sua análise e que não estão contidas nas "
-"próprias imagens (daí o nome 'Metadados'):"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:97
-msgid ""
-"In this case, the module extracts the **Plate**, **Well**, **Site** and "
-"**ChannelNumber** from the image files' names."
-msgstr ""
-"Neste caso, o módulo extrai **Plate**, **Well**, **Site** e "
-"**ChannelNumber** dos nomes dos arquivos de imagem."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:99
-msgid ""
-"This situation is a rather simple one, but if your own data is more complex,"
-" there are other ways of obtaining metadata. You can `Add another extraction"
-" method` and choose which images to apply them to."
-msgstr ""
-"Esta situação é bastante simples, mas se os seus próprios dados forem mais "
-"complexos, existem outras formas de obter metadados. Você pode `Adicionar "
-"outro método de extração` e escolher em quais imagens aplicá-los."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:100
-msgid "You can also add a file which adds extra Metadata per image."
-msgstr ""
-"Você também pode adicionar um arquivo que contém metadados extras por "
-"imagem."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:102
-msgid ""
-"The module uses a `'regular expression'` (also known as RegEx), a sort of "
-"template that fits all the file names and allows to obtain data from them."
-msgstr ""
-"O módulo utiliza uma `'expressão regular'` (também conhecida como RegEx), "
-"uma espécie de modelo que ajusta todos os nomes de arquivos e permite obter "
-"dados deles."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:104
-msgid ""
-"Click on the magnifying glass at the end of the regular expression box for "
-"each extraction method to see how it works."
-msgstr ""
-"Clique na lupa no final da caixa de expressão regular de cada método de "
-"extração para ver como funciona."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:106
-msgid "Let's analyze the example used in this tutorial:"
-msgstr "Vamos analisar o exemplo usado neste tutorial:"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:107
-msgid ""
-"**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch(?P<ChannelNumber>[1-5]).tif`**"
-msgstr ""
-"**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch( "
-"?P<ChannelNumber>[1-5]).tif`**"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:109
-msgid ""
-"Expressions contained between parentheses are VARIABLE and are captured into"
-" named variables (denoted as `(?P<VariableName>)`)."
-msgstr ""
-"As expressões contidas entre parênteses são VARIÁVEIS e são capturadas em "
-"variáveis nomeadas (denotadas como `(?P<VariableName>)`)."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:111
-msgid ""
-"Expressions outside parentheses are CONSTANT and should be present in ALL "
-"image file names (like the underscores and the '.tif')"
-msgstr ""
-"Expressões fora dos parênteses são CONSTANTES e devem estar presentes em "
-"TODOS os nomes de arquivos de imagem (como os sublinhados e o '.tif')"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:113
-msgid "`^`: Start the regular expression"
-msgstr "`^`: Inicia a expressão regular"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:115
-msgid ""
-"`(?P<Plate>.*)`: Extract all the characters before the first underscore "
-"character (_) and assign them to the measurement **\"Plate\"** for the "
-"image."
-msgstr ""
-"`(?P<Plate>.*)`: Extraia todos os caracteres antes do primeiro caractere de "
-"sublinhado (_) e atribua-os à medida **\"Placa\"** para a imagem ."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:117
-msgid ""
-"`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single (denoted as {1}) uppercase "
-"letter from A to P (denoted as [A-P]). Then, extract the next two digits "
-"({2}) between [0-9] and assign it to the measurment **\"Well\"** for the "
-"image."
-msgstr ""
-"`(?P<Well>[A-P]{1}[0-9]{2})`: Extraia uma única letra maiúscula (denotada "
-"como {1}) de A a P (denotada como [A-P]). Em seguida, extraia os próximos "
-"dois dígitos ({2}) entre [0-9] e atribua-os à medição **\"Well\"** para a "
-"imagem."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:119
-msgid ""
-"`site(?P<Site>[0-9])`: After the constant string \"site\", extract the next "
-"two digits {2} between [0-9] and assign it to the measurement **\"Site\"** "
-"for the image."
-msgstr ""
-"`site(?P<Site>[0-9])`: Após a string constante \"site\", extraia os próximos"
-" dois dígitos {2} entre [0-9] e atribua-o à medição **\"Site\"** para a "
-"imagem."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:121
-msgid ""
-"`Ch(?P<ChannelNumber>[1-5])`: After the constant string \"Ch\", extract the "
-"next digit between [1-5] and assign it to the measurement "
-"**\"ChannelNumber\"** for the image."
-msgstr ""
-"`Ch(?P<ChannelNumber>[1-5])`: Após a string constante \"Ch\", extraia o "
-"próximo dígito entre [1-5] e atribua-o à medição **\"ChannelNumber\"** para "
-"a imagem."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:123
-msgid ""
-"If you want to learn more about how these regular expressions work or how to"
-" adapt them to other situations, click on the <img "
-"src=\"./TutorialImages/Info.png\" width=\"35\"> button."
-msgstr ""
-"Se quiser saber mais sobre como funcionam essas expressões regulares ou como"
-" adaptá-las a outras situações, clique no botão <img "
-"src=\"./TutorialImages/Info.png\" width=\"35\">."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:129
-msgid ""
-"*Figure 4: The **Metadata** module, columns in table correspond to metadata "
-"categories*"
-msgstr ""
-"*Figura 4: O módulo **Metadada**, as colunas na tabela correspondem às "
-"categorias de metadados*"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:132
-msgid ""
-"In the **NamesAndTypes** module, we assign names to the images and configure"
-" image sets (i.e., all the different channels for a field of view). We will "
-"use the metadata we extracted in the previous module to make that "
-"association possible."
-msgstr ""
-"No módulo **NamesAndTypes**, atribuímos nomes às imagens e configuramos "
-"conjuntos de imagens (ou seja, todos os diferentes canais de cada campo). "
-"Usaremos os metadados que extraímos no módulo anterior para possibilitar "
-"essa associação."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:134
-msgid ""
-"This module is also fully configured already, but scroll and look through "
-"the configuration to see how we use the **ChannelNumber** obtained from the "
-"**Metadata** module to assign names to each image (There are several other "
-"ways to create correct mappings, but these may serve as a helpful example to"
-" refer to in your own work)."
-msgstr ""
-"Este módulo também já está totalmente configurado, mas observe a "
-"configuração para ver como usamos o **ChannelNumber** obtido do módulo "
-"**Metadata** para atribuir nomes a cada imagem (existem várias outras "
-"maneiras de criar mapeamentos, mas estes podem servir como um exemplo útil "
-"para referência em seu próprio trabalho)."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:141
-msgid "*Figure 5: Image mapping using extracted metadata*"
-msgstr "*Figura 5: Mapeamento de imagens usando metadados extraídos*"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:144
-msgid ""
-"Scroll to the bottom of the **NamesAndTypes** module settings to see how the"
-" image sets are constructed ‘`Image set matching’` is set to `‘Metadata’`. "
-"Each image channel is set to ‘Well → Site’."
-msgstr ""
-"Role até a parte inferior das configurações do módulo **NamesAndTypes** para"
-" ver como os conjuntos de imagens são construídos. ‘`Image set matching’` "
-"(‘`Correspondência do conjunto de imagens’`) está definida como "
-"`‘Metadada’`. Cada canal de imagem está definido como ‘Well → Site’."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:151
-msgid "*Figure 6: Image set matching using extracted metadata*"
-msgstr ""
-"*Figura 6: Correspondência do conjunto de imagens usando metadados "
-"extraídos*"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:154
-msgid ""
-"For this exercise the **Groups** module is not needed so it is set to ‘No’, "
-"this module can be useful when you have more than one plate, or different "
-"movies."
-msgstr ""
-"Para este exercício o módulo **Groups** não é necessário, por isso está "
-"definido como ‘Não’. Este módulo pode ser útil quando você tem mais de uma "
-"placa ou arquivos de videos diferentes."
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:156
-msgid ""
-"**For more information and examples on how to configure the Input modules we"
-" have created a blog and video tutorial that can be accessed "
-"[here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-"
-"tutorial).**"
-msgstr ""
-"**Para mais informações e exemplos de como configurar os módulos de entrada "
-"criamos um blog e um tutorial em vídeo que pode ser acessado "
-"[aqui](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules- "
-"tutorial).**"
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:159
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:98
 msgid "Build the analysis pipeline"
 msgstr "Construa o pipeline de análise"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:161
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:100
 msgid ""
 "Now, you are ready to start building your image analysis pipeline. But, "
 "**what IS an analysis pipeline?**"
@@ -1642,7 +1430,7 @@ msgstr ""
 "Agora você está pronto para começar a construir seu pipeline de análise de "
 "imagem. Mas, **o que É um pipeline de análise?**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:163
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:102
 msgid ""
 "Basically, it is a series of sequential processes, in which the output of "
 "one process serves as the input of one of the following ones."
@@ -1650,7 +1438,7 @@ msgstr ""
 "Basicamente, é uma série de módulos sequenciais, em que a saída de um módulo"
 " serve como entrada de um ou mais dos seguintes."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:165
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:104
 msgid ""
 "Thus, the order in which this processes are executed is **very** important, "
 "as is the proper naming of the inputs and the outputs (as you will see in "
@@ -1660,7 +1448,7 @@ msgstr ""
 "assim como a nomenclatura adequada das entradas e saídas (como você verá "
 "neste tutorial)"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:167
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:106
 msgid ""
 "During the construction of the pipeline, you will see two symbols appearing "
 "next to the modules:"
@@ -1668,7 +1456,7 @@ msgstr ""
 "Durante a construção do pipeline, você verá dois símbolos aparecendo ao lado"
 " dos módulos:"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:169
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:108
 msgid ""
 "<img src=\"./TutorialImages/Check.png\" width=\"35\"/> Checked box means "
 "that the module is activated and well configured"
@@ -1676,7 +1464,7 @@ msgstr ""
 "<img src=\"./TutorialImages/Check.png\" width=\"35\"/> A caixa marcada "
 "significa que o módulo está ativado e bem configurado"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:170
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:109
 msgid ""
 "<img src=\"./TutorialImages/Error.png\" width=\"35\"/> This means that there"
 " is an error in the configuration of the module. You can hover with your "
@@ -1686,7 +1474,7 @@ msgstr ""
 " um erro na configuração do módulo. Você pode parar o mouse sobre o ícone "
 "para obter informações sobre o problema."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:171
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:110
 msgid ""
 "Because the pipeline is sequential, it is possible that changing an upstream"
 " module will generate errors on a downstream module."
@@ -1694,7 +1482,7 @@ msgstr ""
 "Como o pipeline é sequencial, é possível que a alteração de um módulo acima "
 "gere erros em um módulo baixo."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:172
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:111
 msgid ""
 "You can click on any of the two symbols above to inactivate the module, "
 "which is signaled as <img src=\"./TutorialImages/InactivatedModule.png\" "
@@ -1707,7 +1495,7 @@ msgstr ""
 "significa que o módulo (e qualquer saída que ele produz) não faz mais parte "
 "do pipeline e será ignorado."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:174
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:113
 msgid ""
 "The <img src=\"./TutorialImages/open_eyes.png\" width=\"35\"/> icon means "
 "that the module output will be visible (it will pop-up in a new window or "
@@ -1717,7 +1505,7 @@ msgstr ""
 " que o resultado do módulo estará visível (aparecerá em uma nova janela ou "
 "guia) quando você executar o pipeline."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:176
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:115
 msgid ""
 "The <img src=\"./TutorialImages/close_eyes.png\" width=\"35\"/> icon means "
 "that the module output will not be visible when you run the pipeline."
@@ -1726,7 +1514,7 @@ msgstr ""
 "significa que o resultado do módulo não estará visível quando você executar "
 "o pipeline."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:178
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:117
 msgid ""
 "The usefulness of building a pipeline is that you can apply the same series "
 "of processing/analysis steps to all the image dataset, which makes the "
@@ -1759,11 +1547,19 @@ msgstr ""
 "o <span botão class='notranslate'><img "
 "src=\"./TutorialImages/analyzeImages.png\" width=\"120\"/></span>."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:181
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:124
+msgid ""
+"*Overview of the final **pipeline** that you will be building with the "
+"general aim of each section*"
+msgstr ""
+"*Visão geral do **pipeline** final que você construirá com o objetivo geral "
+"de cada seção*"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:127
 msgid "**4. IdentifyPrimaryObjects – Nuclei (10min)**"
 msgstr "**4. IdentifyPrimaryObjects – Núcleos (10min)**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:183
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:129
 msgid ""
 "**AIM: use the nuclear channel to segment (isolate and identify all the "
 "pixels belonging to) each nuclei.**"
@@ -1771,7 +1567,7 @@ msgstr ""
 "**OBJETIVO: usar o canal nuclear para segmentar (isolar e identificar todos "
 "os pixels pertencentes a cada núcleo.**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:185
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:131
 msgid ""
 "Add an **IdentifyPrimaryObjects** module to the pipeline. Do this by "
 "clicking on the <img src=\"./TutorialImages/AddModule.png\" width=\"35\"/>  "
@@ -1789,7 +1585,7 @@ msgstr ""
 "módulo ou clique em <img src=\"./TutorialImages/AddToPipeline.png\" "
 "width=\"120\"/>."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:187
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:133
 msgid ""
 "**Tip**: You can also use the `'Find Modules'` search bar at the top of the "
 "‘Add modules’ window to search all modules by name."
@@ -1798,7 +1594,7 @@ msgstr ""
 " parte superior da janela ‘Add modules’ para pesquisar todos os módulos por "
 "nome."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:193
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:139
 msgid ""
 "*Figure 8: The 'Add Modules' window, modules are divided in categories based"
 " on their function*"
@@ -1806,7 +1602,7 @@ msgstr ""
 "*Figura 8: Na janela 'Add modules', os módulos são divididos em categorias "
 "com base em sua função*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:197
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:143
 msgid ""
 "Select `'OrigDNA'` image as your input image from the drop-down menu. "
 "`'OrigDNA'` is the name assigned to the nuclei channel in **NamesAndTypes** "
@@ -1817,11 +1613,11 @@ msgstr ""
 "**NamesAndTypes**. Você pode verificar isso na configuração dos Módulos de "
 "Entrada descrita anteriormente."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:198
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:144
 msgid "Change the name of the output objects to ‘Nuclei’."
 msgstr "Altere o nome dos objetos de saída para ‘Nuclei’."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:200
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:146
 msgid ""
 "Enter '`Test Mode'` by clicking on <img "
 "src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>.\\"
@@ -1829,7 +1625,7 @@ msgstr ""
 "Entre no '`Modo de Teste'` clicando em <img "
 "src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>.\\"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:202
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:148
 msgid ""
 "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> to run the "
 "module. A new window will pop up showing you the original input image (top "
@@ -1839,7 +1635,7 @@ msgstr ""
 "executar o módulo. Uma nova janela aparecerá mostrando a imagem de entrada "
 "original (canto superior esquerdo) e os resultados da execução do módulo."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:203
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:149
 msgid ""
 "In this case, you can see the segmented nuclei both as outlines on top of "
 "the original image (bottom left) and as labeled objects (top right)."
@@ -1848,7 +1644,7 @@ msgstr ""
 "topo da imagem original (canto inferior esquerdo) quanto como objetos "
 "rotulados (canto superior direito)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:151
 msgid ""
 "Notice that the colors in the labeled objects are assigned at random and "
 "might change ecery time you run the module."
@@ -1856,7 +1652,7 @@ msgstr ""
 "Observe que as cores nos objetos rotulados são atribuídas aleatoriamente e "
 "podem mudar toda vez que você executa o módulo."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:207
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:153
 msgid ""
 "On the outlines display pane (bottom left) you can see three different "
 "colors; green is for accepted objects, orange for objects touching the "
@@ -1866,7 +1662,7 @@ msgstr ""
 "três cores diferentes; verde é para objetos aceitos, laranja para objetos "
 "que tocam a borda e magenta para objetos fora do tamanho."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:208
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:154
 msgid ""
 "On the table pane (bottom right) there is useful information that you can "
 "use to adjust your segmentation settings, like the median diameter, and the "
@@ -1876,12 +1672,12 @@ msgstr ""
 "pode usar para ajustar suas configurações de segmentação, como o diâmetro "
 "médio e o limite (threshold)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:209
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:253
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:155
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:199
 msgid "**How does your segmentation look?**"
 msgstr "**Como está sua segmentação?**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:215
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:161
 msgid ""
 "*Figure 9: The **IdentifyPrimaryObjects** module output, you can use the "
 "information in this window to modify your segmentation parameters*"
@@ -1889,7 +1685,7 @@ msgstr ""
 "*Figura 9: Resultado do módulo **IdentifyPrimaryObjects**, você pode usar as"
 " informações nesta janela para modificar seus parâmetros de segmentação*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:218
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:164
 msgid ""
 "Use the <img src=\"./TutorialImages/Zoom.png\" width=\"35\"/> at the top of "
 "the window to activate the Zoom tool. Click and drag the mouse on the image "
@@ -1899,11 +1695,11 @@ msgstr ""
 "superior da janela para ativar a ferramenta Zoom. Clique e arraste o mouse "
 "sobre a imagem para ampliar uma área que foi mal segmentada."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:167
 msgid "**🔴 TO DO**: Improve your segmentation of nuclei:"
 msgstr "**🔴 PARA FAZER**: Melhore sua segmentação de núcleos:"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:169
 msgid ""
 "Select `‘Yes’` for the `‘Use advanced settings?’` option, then change some "
 "of the parameters:"
@@ -1911,17 +1707,17 @@ msgstr ""
 "Selecione ``Yes'` para a opção `‘Use advanced settings?’`  e altere alguns "
 "dos parâmetros:"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:225
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:171
 msgid "Adjust the threshold method, may lead to better (or worse!) results."
 msgstr ""
 "Ajustar o método de limite (threshold) pode levar a resultados melhores (ou "
 "piores!)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:226
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:172
 msgid "Adjust the declumping settings."
 msgstr "Ajuste as configurações de desagregação de objetos (declumping)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:228
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:174
 msgid ""
 "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> after each change"
 " to rerun the module and see how the new parameters affect the segmentation."
@@ -1930,7 +1726,7 @@ msgstr ""
 "alteração para executar novamente o módulo e ver como os novos parâmetros "
 "afetam a segmentação."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:230
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:176
 msgid ""
 "Adjust the segmentation parameters until you feel you’re ready to move on to"
 " identifying the cells around the nuclei."
@@ -1938,7 +1734,7 @@ msgstr ""
 "Ajuste os parâmetros de segmentação até sentir que está pronto para "
 "identificar as células ao redor dos núcleos."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:232
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:178
 msgid ""
 "The segmentation should be good but **doesn’t need to be perfect** before "
 "you move on."
@@ -1946,7 +1742,7 @@ msgstr ""
 "A segmentação deve ser boa, mas **não precisa ser perfeita** antes de "
 "prosseguir."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:234
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:180
 msgid ""
 "On that topic, we recommend checking this blog post on [When To Say ‘Good "
 "Enough’](https://carpenter-singh-lab.broadinstitute.org/blog/when-to-say-"
@@ -1956,11 +1752,11 @@ msgstr ""
 "dizer ‘bom o suficiente’](https://carpenter-singh-"
 "lab.broadinstitute.org/blog/when-to-say-good-enough)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:238
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:184
 msgid "**5. IdentifySecondaryObjects – Cells (5min)**"
 msgstr "**5. IdentifySecondaryObjects – Células (5min)**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:240
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:186
 msgid ""
 "**AIM: segment each cell individually using the previously segmented nuclei "
 "as a guide**"
@@ -1968,7 +1764,7 @@ msgstr ""
 "**OBJETIVO: segmentar cada célula individualmente usando os núcleos "
 "previamente segmentados como guia**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:242
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:188
 msgid ""
 "Since we don't have a cellular marker that labels homogenously the whole "
 "cell, we will use the `'OrigActin_Golgi_Membrane'` channel, which is the "
@@ -1978,7 +1774,7 @@ msgstr ""
 "usaremos o canal `'OrigActin_Golgi_Membrane'`, que é o mais próximo que "
 "temos."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:244
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:190
 msgid ""
 "After the **IdentifyPrimaryObjects**, add a **IdentifySecondaryObjects** "
 "module."
@@ -1986,7 +1782,7 @@ msgstr ""
 "Após **IdentifyPrimaryObjects**, adicione um módulo "
 "**IdentifySecondaryObjects**."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:245
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:191
 msgid ""
 "Select the `'OrigActin_Golgi_Membrane'` image as your input image, select "
 "the `'Nuclei'` objects (created by the previous module) as input objects and"
@@ -1996,7 +1792,7 @@ msgstr ""
 "selecione os objetos `'Nuclei'` (criados pelo módulo anterior) como objetos "
 "de entrada e mude o nome para `'Cells'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:247
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:193
 msgid ""
 "The **IdentifySecondaryObject** module uses a \"primary\" object (in this "
 "case, the `'Nuclei'`) as a reference to find a \"secondary\" object, which "
@@ -2008,13 +1804,13 @@ msgstr ""
 "contém o \"primário\". O “primário” é usado como semente a partir do qual o "
 "“secundário” se expande."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:249
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:195
 msgid "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> to run the module."
 msgstr ""
 "Clique em <img src=\"./TutorialImages/Step.png\" width=\"120\"/> para "
 "executar o módulo."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:251
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:197
 msgid ""
 "In this module output, the outline colors correspond to the seed object "
 "(green-Nuclei) and the segmented objects (magenta-Cell)"
@@ -2022,19 +1818,19 @@ msgstr ""
 "Na janela de resultados deste módulo, as cores do contorno correspondem ao "
 "objeto semente (núcleos verdes) e aos objetos segmentados (células magenta)"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:259
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
 msgid "*Figure 10: The **IdentifySecondaryObjects** module output*"
 msgstr "*Figura 10: Resultado do módulo **IdentifySecondaryObjects***"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:263
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:209
 msgid "**🔴 TO DO**: Improve cell segmentation"
 msgstr "**🔴 PARA FAZER**: Melhorar a segmentação da célula"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:265
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:211
 msgid "Adjust the thresholding method."
 msgstr "Ajuste o método de limite (threshold)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:266
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:212
 msgid ""
 "Test the effects of using the various methods for identifying secondary "
 "objects (Propagation, Watershed-Image Distance-N, etc) and, if using "
@@ -2044,7 +1840,7 @@ msgstr ""
 "objetos secundários (Propagation, Watershed-Image Distance-N, etc) e, se "
 "utilizar Propagation, teste também o fator de regularização."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:267
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:213
 msgid ""
 "Examine the segmentation and adjust the module parameters until you feel "
 "you’re ready to test them on another image"
@@ -2052,11 +1848,11 @@ msgstr ""
 "Examine a segmentação e ajuste os parâmetros do módulo até sentir que está "
 "pronto para testá-los em outra imagem"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:269
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:215
 msgid "Remember, **they don’t need to be perfect!**"
 msgstr "Lembre-se, **a segmentação não precisa ser perfeita!**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:271
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:217
 msgid ""
 "**6. Test the robustness of your segmentation parameters across images "
 "(5min)**"
@@ -2064,7 +1860,7 @@ msgstr ""
 "**6. Teste a robustez dos seus parâmetros de segmentação em outras imagens "
 "(5min)**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:273
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:219
 msgid ""
 "It’s (relatively!) easy to come up with a good set of segmentation "
 "parameters for a single image however we aim to create a set of parameters "
@@ -2074,7 +1870,7 @@ msgstr ""
 "para uma única imagem, mas nosso objetivo é criar um conjunto de parâmetros "
 "que possa segmentar células em todas as imagens de um experimento."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:275
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
 msgid ""
 "To test the parameters, there are two options to change the image you are "
 "working on in Test Mode:"
@@ -2082,7 +1878,7 @@ msgstr ""
 "Para testar os parâmetros, existem duas opções para alterar a imagem em que "
 "você está trabalhando a primeira no Modo de Teste (Test Mode):"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:277
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
 msgid ""
 "Click on the <img src=\"./TutorialImages/NextImageSet.png\" width=\"120\"/> "
 "at the bottom left corner,"
@@ -2090,11 +1886,11 @@ msgstr ""
 "Clique em <img src=\"./TutorialImages/NextImageSet.png\" width=\"120\"/> no "
 "canto inferior esquerdo,"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:279
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:225
 msgid "or"
 msgstr "ou"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:281
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:227
 msgid ""
 "Go to `‘Test’` on the top menu bar → `Choose Image Set` to bring up a list "
 "of the images in your experiment, select the image you want to test, and "
@@ -2104,17 +1900,17 @@ msgstr ""
 "uma lista das imagens em seu experimento, selecione a imagem que deseja "
 "testar e pressione o botão ``OK'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:283
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:229
 msgid "You can also use the `'Test'` menu to choose a random image set"
 msgstr ""
 "Você também pode usar o menu `'Test'` para escolher um conjunto de imagens "
 "de forma aleatória"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:289
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:235
 msgid "*Figure 11: A section of the `‘Choose Image Set’` menu.*"
 msgstr "*Figura 11: Uma seção do menu ``Choose Image Set'`.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:292
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:238
 msgid ""
 "Run tthe new image set you selected in test mode for your ﬁrst 2 modules "
 "(through your **IdentifySecondaryObjects** step)."
@@ -2122,7 +1918,7 @@ msgstr ""
 "Execute o novo conjunto de imagens selecionado no modo de teste para seus "
 "dois primeiros módulos (por meio da etapa **IdentifySecondaryObjects**)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:294
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:240
 msgid ""
 "You can do it by clicking the <img src=\"./TutorialImages/Step.png\" "
 "width=\"120\"/> button, or"
@@ -2130,7 +1926,7 @@ msgstr ""
 "Você pode fazer isso clicando no botão <img "
 "src=\"./TutorialImages/Step.png\" width=\"120\"/> ou"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:295
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:241
 msgid ""
 "You can activate the pause button (<img src=\"./TutorialImages/Pause.png\" "
 "width=\"40\"/>) on the module after **IdentifySecondaryObjects** and hit "
@@ -2142,11 +1938,11 @@ msgstr ""
 " src=\"./TutorialImages/Run.png\" width=\"120\"/>, isso executará todos "
 "módulos antes da pausa."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:302
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:248
 msgid "*Figure 12: A section of the ‘Analysis modules’ pane.*"
 msgstr "*Figura 12: Uma seção do painel ‘Analysis modules’.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:305
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:251
 msgid ""
 "Examine the output – did your nuclear and cellular segmentation hold up "
 "compared to the ﬁrst images you looked at?"
@@ -2154,7 +1950,7 @@ msgstr ""
 "Examine o resultado – a qualidade da sua segmentação nuclear e celular se "
 "manteve em comparação com as primeiras imagens que você viu?"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:306
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:252
 msgid ""
 "**🔴 TO DO**: Adjust the parameters to get comparable results to the first "
 "image. Once your segmentation is good, try it on another image."
@@ -2163,15 +1959,15 @@ msgstr ""
 " da primeira imagem. Quando sua segmentação estiver boa, experimente em "
 "outra imagem."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:308
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:254
 msgid "**7. IdentifyTertiaryObjects- Cytoplasm (2min)**"
 msgstr "**7. IdentifyTertiaryObjects - Citoplasma (2min)**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:310
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:256
 msgid "**AIM: Identify the Cytoplasm of the cell**"
 msgstr "**OBJETIVO: Identificar o citoplasma da célula**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:312
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:258
 msgid ""
 "The `'Cells'` objects that we just identified contain both the cytoplasm of "
 "the cells and the nucleus. However the nucleus and the cytoplasm are two "
@@ -2183,7 +1979,7 @@ msgstr ""
 "compartimentos celulares muito distintos e, assim, queremos poder fazer "
 "medições em cada um deles separadamente."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:314
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:260
 msgid ""
 "Fortunately, to identify the cytoplasm, all we have to do is to subtract the"
 " `'Nuclei'` object, from the `'Cells'`object. We can do this using the "
@@ -2193,7 +1989,7 @@ msgstr ""
 "`'Nuclei'` do objeto `'Cells'`. Podemos fazer isso usando o módulo "
 "**IdentifyTertiaryObjects**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:316
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:262
 msgid ""
 "After the **IdentifySecondaryObjects** module, add an "
 "**IdentifyTertiaryObjects** module."
@@ -2201,7 +1997,7 @@ msgstr ""
 "Após o módulo **IdentifySecondaryObjects**, adicione o módulo "
 "**IdentifyTertiaryObjects**."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:318
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:264
 msgid ""
 "Create an object called `'Cytoplasm'` using the `'Cells'` and `'Nuclei'` "
 "objects you’ve created."
@@ -2209,33 +2005,33 @@ msgstr ""
 "Crie um objeto chamado `'Cytoplasm'` usando os objetos `'Cells'` e "
 "`'Nuclei'` que você criou."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:320
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:266
 msgid ""
 "Select the larger and smaller identified objects from the drop-down menu."
 msgstr ""
 "Selecione os objetos identificados maiores e menores no menu suspenso."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:321
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:267
 msgid "Change the name of the objects to be identified."
 msgstr "Altere o nome dos objetos a serem identificados."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:322
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:268
 msgid "‘Shrink smaller object prior to subtraction?’ should both set to ‘No’."
 msgstr ""
 "‘Shrink smaller object prior to subtraction?’ (‘Reduzir o objeto menor antes"
 " da subtração?’) devem ambos ser definidos como ‘No’."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:324
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:270
 msgid "**8. Segment the nucleoli (15min)**"
 msgstr "**8. Segmentar os nucléolos (15min)**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:326
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:272
 msgid "**AIM: Segment a more challenging cellular compartment: the nucleoli**"
 msgstr ""
 "**OBJETIVO: Segmentar um compartimento celular mais desafiador: os "
 "nucléolos**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:328
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:274
 msgid ""
 "So far, we have used untransformed images for object detection, but not all "
 "objects can be segmented from raw images. CellProfiler contains a variety of"
@@ -2248,7 +2044,7 @@ msgstr ""
 "imagem que podem auxiliar na segmentação. Para este exercício, usaremos dois"
 " desses módulos, mas existem outros que você pode explorar."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:334
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:280
 msgid ""
 "We will segment the nucleoli using the `'OrigRNA'` channel, in which all "
 "nucleic acids (DNA and RNA) are labeled, both inside and outside the nucleus"
@@ -2259,7 +2055,7 @@ msgstr ""
 "núcleo (usando Syto, um corante comercial). Isso resulta em alguns "
 "problemas, porque:"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:335
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:281
 msgid ""
 "Not only the nucleoli but also the nuclei are labeled, which means that the "
 "nucleoli will not contrast so well with their background (the nucleus)"
@@ -2267,7 +2063,7 @@ msgstr ""
 "Não apenas os nucléolos, mas também os núcleos são marcados, o que significa"
 " que os nucléolos não contrastarão tão bem com o seu fundo (o núcleo)"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:336
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:282
 msgid ""
 "There are RNA spots in the cytoplasm which are NOT nucleoli, and we don't "
 "want to identify those."
@@ -2275,7 +2071,7 @@ msgstr ""
 "Existem manchas de RNA no citoplasma que NÃO são nucléolos e não queremos "
 "identificá-las."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:338
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:284
 msgid ""
 "The next 3 modules will help address these issues to create the `'Nucleoli'`"
 " object. Look at the output from each to see how the image is transformed to"
@@ -2285,7 +2081,7 @@ msgstr ""
 "objeto `'Nucleoli'`. Observe o resultado de cada um para ver como a imagem é"
 " transformada para auxiliar na segmentação."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:340
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:286
 msgid ""
 "After the **IdentifyTertiaryObjects** module, add an "
 "**EnhanceOrSuppressFeatures** module."
@@ -2293,7 +2089,7 @@ msgstr ""
 "Após o módulo **IdentifyTertiaryObjects**, adicione um módulo "
 "**EnhanceOrSuppressFeatures** (Melhorar ou suprimir características)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:342
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:288
 msgid ""
 "**EnhanceOrSuppressFeatures** is a module that helps enhance parts of an "
 "image, in this case, punctate objects or `‘Speckles’`. As we are looking for"
@@ -2305,19 +2101,19 @@ msgstr ""
 " nucléolos, aplicamos isso à imagem do canal de RNA (`'OrigRNA'`) e chamamos"
 " o resultado de ``FilteredRNA'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:344
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:290
 msgid "**🔴 TO DO: Enhance nucleoli spots**"
 msgstr "**🔴 PARA FAZER: Melhore marcação de nucléolos**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:346
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:292
 msgid "Change the input image from the drop-down menu to `‘OrigRNA’`"
 msgstr "Altere a imagem de entrada no menu suspenso para ``OrigRNA'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:347
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:293
 msgid "Change the name of the output image to `‘FilteredRNA’`"
 msgstr "Altere o nome da imagem de saída para ``FilteredRNA'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:348
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:294
 msgid ""
 "Change the feature size to see how this affects the output and find a value "
 "that works well."
@@ -2325,7 +2121,7 @@ msgstr ""
 "Altere o valor do tamanho da característica para ver como isso afeta o "
 "resultado e encontre um valor que funcione bem."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:349
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:295
 msgid ""
 "**NOTE**: be careful when using large numbers as the module might take a "
 "long time to run"
@@ -2333,12 +2129,12 @@ msgstr ""
 "**NOTA**: tenha cuidado ao usar números grandes, pois o módulo pode demorar "
 "muito para ser executado"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:350
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:368
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:296
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:314
 msgid "See below for an example of results to aim for:"
 msgstr "Veja abaixo um exemplo de um bom resultado:"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:356
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:302
 msgid ""
 "*Figure 13. The **EnhanceOrSuppress** module output, enhancing the OrigRNA "
 "image allows you to isolate nucleoli against the nucleoplasmic background "
@@ -2347,14 +2143,14 @@ msgstr ""
 "*Figura 13. Resultado do módulo **EnhanceOrSuppress**, aprimorando a imagem "
 "OrigRNA, permite isolar nucléolos contra o sinal de fundo nucleoplasmático.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:359
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:305
 msgid ""
 "After the **EnhanceOrSuppressFeatures** module, add an **MaskImage** module."
 msgstr ""
 "Após o módulo **EnhanceOrSuppressFeatures**, adicione um módulo "
 "**MaskImage**."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:361
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:307
 msgid ""
 "**MaskImage** allows you to create a version of the `‘FilteredRNA’` image "
 "called `‘RNA_in_Nuclei’` where all the pixels except the ones you specify "
@@ -2368,25 +2164,25 @@ msgstr ""
 " 0 qualquer pixel que não esteja dentro de um núcleo. Ao fazer isso, podemos"
 " diminuir a probabilidade de detecção de pontos de RNA citoplasmático."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:363
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:309
 msgid "**🔴 TO DO: Mask the RNA image to show only the nuclear region**"
 msgstr ""
 "**🔴 PARA FAZER: Mascarar a imagem do RNA para mostrar apenas a região "
 "nuclear**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:365
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:311
 msgid "Change the input image from the drop-down menu to ‘FilteredRNA’."
 msgstr "Altere a imagem de entrada no menu suspenso para ‘FilteredRNA’."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:366
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:312
 msgid "Change the name of the output image to ‘RNA_in_Nuclei’."
 msgstr "Altere o nome da imagem de saída para ‘RNA_in_Nuclei’."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:367
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:313
 msgid "Use the objects ‘Nuclei’ as the mask."
 msgstr "Use os objetos ‘Nuclei’ como máscara."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:374
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:320
 msgid ""
 "*Figure 14. The **MaskImage** module output, the contrast was adjusted to "
 "show that the intensity of the pixels outside the nuclei are now set to 0.*"
@@ -2395,13 +2191,13 @@ msgstr ""
 " mostrar que a intensidade dos pixels fora dos núcleos agora está definida "
 "como 0.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:377
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:323
 msgid ""
 "After the **MaskImage** module, add an **IdentifyPrimaryObject** module."
 msgstr ""
 "Após o módulo **MaskImage**, adicione um módulo **IdentifyPrimaryObject**."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:378
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:324
 msgid ""
 "**IdentifyPrimaryObjects** is used to ﬁnd the nucleoli. This is a Primary "
 "object segmentation because we are not using another object as a seed (i.e.,"
@@ -2413,25 +2209,25 @@ msgstr ""
 "semente (ou seja, ponto de partida), e estamos apenas segmentando com base "
 "na intensidade em nossa imagem ``RNA_in_Nuclei'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:380
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:326
 msgid "**🔴 TO DO: Segment nucleoli**"
 msgstr "**🔴 PARA FAZER: segmentar nucléolos**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:382
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:328
 msgid "Change the input image from the drop-down menu to `‘RNA_in_Nuclei’`"
 msgstr "Altere a imagem de entrada no menu suspenso para ``RNA_in_Nuclei'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:383
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:329
 msgid "Change the name of the objects to `‘Nucleoli’`"
 msgstr "Mude o nome dos objetos para ``Nucleoli'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:384
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:330
 msgid ""
 "Adjust the segmentation parameters until you are satisfied with the results."
 msgstr ""
 "Ajuste os parâmetros de segmentação até ficar satisfeito com os resultados."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:386
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:332
 msgid ""
 "**Tip**: you can use a similar strategy to segment mitochondria using the "
 "`'OrigMito'` channel"
@@ -2439,7 +2235,7 @@ msgstr ""
 "**Dica**: você pode usar uma estratégia semelhante para segmentar "
 "mitocôndrias usando o canal `'OrigMito'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:388
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:334
 msgid ""
 "**🔴 TO DO**: Add an **OverlayOutlines** module at this point to overlay the "
 "identiﬁed nucleoli on the `'Orig_RNA'` image to assure yourself that the "
@@ -2454,7 +2250,7 @@ msgstr ""
 " gostaria na imagem não processada. Isso não é estritamente necessário, mas "
 "pode ser uma boa “verificação de sanidade”."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:390
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:336
 msgid ""
 "**Goal**: display outlines of your nucleoli and your nuclei on the "
 "unprocessed `'OrigRNA'` image."
@@ -2462,18 +2258,18 @@ msgstr ""
 "**Objetivo**: exibir contornos de seus nucléolos e seus núcleos na imagem "
 "`'OrigRNA'` não processada."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:391
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:337
 msgid "Name the output image `'SanityCheck'`"
 msgstr "Nomeie a imagem de saída como `'SanityCheck'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:392
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:338
 msgid ""
 "Here’s an example of what that could look like (red=Nuclei, green=Nucleoli):"
 msgstr ""
 "Aqui está um exemplo de como seria o resultado (vermelho=Núcleos, "
 "verde=Nucléolos):"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:399
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:345
 msgid ""
 "*Figure 15. The **OverlayOutlines** module output, all detected nucleoli are"
 " within the nuclei.*"
@@ -2481,12 +2277,12 @@ msgstr ""
 "*Figura 15. Resultado do módulo **OverlayOutlines** mostra que todos os "
 "nucléolos detectados estão dentro dos núcleos.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:403
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:349
 msgid "**9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**"
 msgstr ""
 "**9. 🔴 PARA FAZER: Adicione módulos de medição ao seu pipeline (10min)**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:405
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:351
 msgid ""
 "After your segmentation of the nucleoli, add as many object measurement "
 "modules as you would like."
@@ -2494,7 +2290,7 @@ msgstr ""
 "Após a segmentação dos nucléolos, adicione quantos módulos de medição de "
 "objetos desejar."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:406
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:352
 msgid ""
 "Some suggested modules to add: **MeasureObjectIntensity**, "
 "**MeasurebjectSizeShape**, **MeasureColocalization**, "
@@ -2504,11 +2300,11 @@ msgstr ""
 "**MeasurebjectSizeShape**, **MeasureColocalization**, "
 "**MeasureObjectNeighbors**."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:407
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:353
 msgid "**IMPORTANT!**"
 msgstr "**IMPORTANTE!**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:409
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:355
 msgid ""
 "If you choose to include the **MeasureColocalization** module, we highly "
 "recommend setting the `'Calculate the Manders coefficients using Costes auto"
@@ -2520,7 +2316,7 @@ msgstr ""
 "limite automático de custos'` como `'NÃO'`. Caso contrário, este módulo pode"
 " consumir muito tempo"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:411
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:357
 msgid ""
 "Which objects do you think would be valuable to measure with each of these "
 "modules?"
@@ -2528,11 +2324,11 @@ msgstr ""
 "Quais objetos você acha que seriam valiosos para medir com cada um desses "
 "módulos?"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:412
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:358
 msgid "Which channels would you measure your objects in?"
 msgstr "Em quais canais você mediria seus objetos?"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:414
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:360
 msgid ""
 "For a typical Cell Painting experiment you would add as many measurements as"
 " possible, but that isn’t necessary here; however, do make sure every object"
@@ -2542,7 +2338,7 @@ msgstr ""
 "adicionaria tantas medidas quanto possível, mas aqui isso não é necessário; "
 "no entanto, certifique-se de que cada objeto tenha alguma medição."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:416
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:362
 msgid ""
 "**IMPORTANT NOTE**: there are many more measurement modules and, while we "
 "encourage you to explore them and some of them like **MeasureCorrelation**, "
@@ -2558,7 +2354,7 @@ msgstr ""
 "e/ou ser lentos. Portanto, para executar esta análise dentro de um prazo "
 "razoável, eles **não** devem ser adicionados a este pipeline de exemplo."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:418
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:364
 msgid ""
 "**10. Relate Nucleoli to their corresponding Nuclei using the RelateObjects "
 "module (5min)**"
@@ -2566,7 +2362,7 @@ msgstr ""
 "**10. Relacione Nucléolos com seus Núcleos correspondentes usando o módulo "
 "RelateObjects (5min)**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:420
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:366
 msgid ""
 "Right now, you have segmented the nucleoli independently. However, we would "
 "like to associate every `'Nucleoli'` to their respective `'Nuclei'`."
@@ -2575,7 +2371,7 @@ msgstr ""
 "entanto, gostaríamos de associar cada `'Nucléolo'` aos seus respectivos "
 "`'Núcleos'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:422
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:368
 msgid ""
 "**🔴 TO DO:** Add a **RelateObjects** module and configure it to relate "
 "`‘Nucleoli’` to `‘Nuclei’`."
@@ -2583,11 +2379,11 @@ msgstr ""
 "**🔴 PARA FAZER:** Adicione um módulo **RelateObjects** e configure-o para "
 "relacionar ``Nucleoli'` a ``Nuclei'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:428
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:374
 msgid "*Figure 16: The **RelateObjects** module output.*"
 msgstr "*Figura 16: Resultado do módulo **RelateObjects**.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:431
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:377
 msgid ""
 "Relating the objects allows you to create per-parent means (e.g., for this "
 "cell, what is the average size of an individual mitochondrion) and calculate"
@@ -2599,21 +2395,21 @@ msgstr ""
 "calcular distâncias dos objetos filhos até a borda e/ou centro do objeto "
 "parental (por exemplo, quão longe está cada nucléolo do centro do núcleo)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:433
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:379
 msgid "**11. Export measurements**"
 msgstr "**11. Exportar medidas**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:435
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:381
 msgid "Add a **ExportToSpreadsheet** module at the end of the pipeline."
 msgstr "Adicione um módulo **ExportToSpreadsheet** no final do pipeline."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:436
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:382
 msgid "In `'Output file location'` select `'Default Output Folder'`"
 msgstr ""
 "Em  `'Output file location'` (`'Local do arquivo de saída'`) selecione "
 "`'Default Output Folder'` (`'Pasta de saída padrão'`)"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:437
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:383
 msgid ""
 "You can change the `'Default Output Folder'` by clicking the <img "
 "src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/> button at the "
@@ -2623,11 +2419,11 @@ msgstr ""
 "src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/> no canto "
 "inferior esquerdo da janela"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:438
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:384
 msgid "Leave all the default settings (as shown in Figure 17)"
 msgstr "Deixe todas as configurações padrão (conforme mostrado na Figura 17)"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:439
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:385
 msgid ""
 "You can pick and choose which measurements to export by selecting `'No'` in "
 "the `'Export all measurement types?'` setting"
@@ -2636,7 +2432,7 @@ msgstr ""
 "configuração  `'Export all measurement types?'` (`'Exportar todos os tipos "
 "de medidas?'`)"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:441
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:387
 msgid ""
 "**Note** that a <img src=\"./TutorialImages/Warning.png\" width=\"35\"/> "
 "appears next to the module. This is not an error. If you hover over it with "
@@ -2651,15 +2447,15 @@ msgstr ""
 "pode ser executado no modo de teste'. As medições só serão salvas quando "
 "você executar o pipeline para todas as imagens (veja a próxima seção)."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:447
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:393
 msgid "*Figure 17: The **ExportToSpreadsheet** module.*"
 msgstr "*Figura 17: O módulo **ExportToSpreadsheet**.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:451
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:397
 msgid "**12. Save overlay images** **[OPTIONAL]**"
 msgstr "**12. Salvar imagens sobrepostas** **[OPCIONAL]**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:453
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:399
 msgid ""
 "As we are exporting the results of our analysis, it can also be worthwhile "
 "to save the SanityCheck images we made previously because they are useful as"
@@ -2670,15 +2466,15 @@ msgstr ""
 "pois elas são úteis para controlar suas segmentações e para compartilhar seu"
 " trabalho com outras pessoas!"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:455
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:401
 msgid "Add a **SaveImages** module at the end of the pipeline."
 msgstr "Adicione um módulo **SaveImages** no final do pipeline."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:456
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:402
 msgid "Choose `'SanityCheck'` as the image to save."
 msgstr "Escolha `'SanityCheck'` como imagem a ser salva."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:457
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:403
 msgid ""
 "We want to name the resulting image after the OrigRNA image that was used to"
 " create it."
@@ -2686,7 +2482,7 @@ msgstr ""
 "Queremos nomear a imagem resultante com o mesmo nome da imagem OrigRNA que "
 "foi usada para criá-la."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:458
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:404
 msgid ""
 "In the `'Select method to construct file names'` field, leave '`From iamge "
 "filename'`."
@@ -2694,14 +2490,14 @@ msgstr ""
 "No campo  `'Select method to construct file names'` (`'Selecionar método "
 "para construir nomes de arquivos'`), deixe '`From image filename'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:459
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:405
 msgid ""
 "In the `'Select image name for file prefix'` field, select '`OrigRNA'`."
 msgstr ""
 "No campo `'Select image name for file prefix'` (`'Selecionar nome da imagem "
 "para prefixo de arquivo'`), selecione '`OrigRNA'`."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:460
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:406
 msgid ""
 "Add `'_overlay'` as a suffix to the saved images. Then, the image name will "
 "be the original filename + `'_overlay'`"
@@ -2709,7 +2505,7 @@ msgstr ""
 "Adicione `'_overlay'` como sufixo às imagens salvas. Então, o nome da imagem"
 " será o nome do arquivo original + `'_overlay'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:461
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:407
 msgid ""
 "In `'Output file location'` select `'Default Output Folder sub-folder'` and "
 "name that sub-folder `'overlay_images'`"
@@ -2718,7 +2514,7 @@ msgstr ""
 "`'Default Output Folder sub-folder'` (`'Subpasta da pasta de saída padrão'`)"
 " e nomeie essa subpasta como `'overlay_images'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:462
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:408
 msgid ""
 "You can change the `'Default Output Folder'` by clicking the <img "
 "src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/> button at the "
@@ -2728,7 +2524,7 @@ msgstr ""
 "clicando no botão <img src=\"./TutorialImages/OutputSettings.png\" "
 "width=\"120\"/> no canto inferior esquerdo da janela."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:463
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:409
 msgid ""
 "Leave the rest of the settings as they are in the default (as shown in "
 "Figure 18)"
@@ -2736,15 +2532,15 @@ msgstr ""
 "Deixe o restante das configurações como estão no padrão (conforme mostrado "
 "na Figura 18)"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:470
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:416
 msgid "*Figure 18: The **SaveImages** module.*"
 msgstr "*Figura 18: O módulo **SaveImages**.*"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:474
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:420
 msgid "**13. Run the pipeline**"
 msgstr "**13. Execute o pipeline**"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:475
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:421
 msgid ""
 "Now you have a pipeline that works well across different images. It is time "
 "to run it through your entire dataset and collect the results!"
@@ -2752,7 +2548,7 @@ msgstr ""
 "Agora você tem um pipeline que funciona bem em imagens diferentes. É hora de"
 " analisar todo o seu conjunto de dados e coletar os resultados!"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:477
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:423
 msgid ""
 "Exit test mode by clicking on the <img "
 "src=\"./TutorialImages/ExitTestMode.png\" width=\"120\"/> button."
@@ -2760,7 +2556,7 @@ msgstr ""
 "Saia do modo de teste clicando no botão <img "
 "src=\"./TutorialImages/ExitTestMode.png\" width=\"120\"/>."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:479
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:425
 msgid ""
 "Turn all the <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> "
 "symbols to <img src=\"./TutorialImages/EyeClosed.png\" width=\"50\"/> so "
@@ -2770,7 +2566,7 @@ msgstr ""
 "width=\"50\"/> em <img src=\"./TutorialImages/EyeClosed.png\" width=\"50\"/>"
 " para que os resultados dos módulos não apareçam durante a análise."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:480
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:426
 msgid ""
 "You can also do this by going to `'Windows'` in the main menu (top of the "
 "screen) and selecting `'Hide All Windows On Run'`"
@@ -2778,7 +2574,7 @@ msgstr ""
 "Você também pode fazer isso acessando `'Windows'` no menu principal (parte "
 "superior da tela) e selecionando `'Hide All Windows On Run'`"
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:482
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:428
 msgid ""
 "Then, click on <img src=\"./TutorialImages/AnalyzeImages.png\" "
 "width=\"120\"/> button at the bottom left corner."
@@ -2786,14 +2582,238 @@ msgstr ""
 "Em seguida, clique no botão <img src=\"./TutorialImages/AnalyzeImages.png\" "
 "width=\"120\"/> no canto inferior esquerdo."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:484
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:430
 msgid "Explore the spreadsheets created for each object."
 msgstr "Explore as planilhas criadas para cada objeto."
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:488
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:434
 msgid ""
 "**CONGRATULATIONS!! YOU HAVE SUCCESSFULLY RUN YOUR FIRST CELL PROFILER "
 "PIPELINE!**"
 msgstr ""
 "**PARABÉNS!! VOCÊ EXECUTOU COM SUCESSO SEU PRIMEIRO PIPELINE DO "
 "CELLPROFILER!**"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:438
+msgid "**3. [OPTIONAL] Set up the input modules (10min)**"
+msgstr "**3. [OPCIONAL] Configurar os módulos de entrada (10min)**"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:440
+msgid ""
+"The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and "
+"**Groups**) are crucial for any CellProfiler pipeline because they define "
+"how images are loaded and organized."
+msgstr ""
+"Os quatro módulos de entrada (**Images**, **Metadada**, **NamesAndTypes** e "
+"**Groups**) são cruciais para qualquer pipeline do CellProfiler porque "
+"definem como as imagens são carregadas e organizadas."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:442
+msgid ""
+"The **Metadata** module is already conﬁgured. With it, you can extract "
+"information that is required for you analysis and which is not contained "
+"within the images themselves (thus, the name 'Metadata'):"
+msgstr ""
+"O módulo **Metadada** já está configurado. Com ele, você pode extrair "
+"informações necessárias para sua análise e que não estão contidas nas "
+"próprias imagens (daí o nome 'Metadados'):"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:444
+msgid ""
+"In this case, the module extracts the **Plate**, **Well**, **Site** and "
+"**ChannelNumber** from the image files' names."
+msgstr ""
+"Neste caso, o módulo extrai **Plate**, **Well**, **Site** e "
+"**ChannelNumber** dos nomes dos arquivos de imagem."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:446
+msgid ""
+"This situation is a rather simple one, but if your own data is more complex,"
+" there are other ways of obtaining metadata. You can `Add another extraction"
+" method` and choose which images to apply them to."
+msgstr ""
+"Esta situação é bastante simples, mas se os seus próprios dados forem mais "
+"complexos, existem outras formas de obter metadados. Você pode `Adicionar "
+"outro método de extração` e escolher em quais imagens aplicá-los."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:447
+msgid "You can also add a file which adds extra Metadata per image."
+msgstr ""
+"Você também pode adicionar um arquivo que contém metadados extras por "
+"imagem."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:449
+msgid ""
+"The module uses a `'regular expression'` (also known as RegEx), a sort of "
+"template that fits all the file names and allows to obtain data from them."
+msgstr ""
+"O módulo utiliza uma `'expressão regular'` (também conhecida como RegEx), "
+"uma espécie de modelo que ajusta todos os nomes de arquivos e permite obter "
+"dados deles."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:451
+msgid ""
+"Click on the magnifying glass at the end of the regular expression box for "
+"each extraction method to see how it works."
+msgstr ""
+"Clique na lupa no final da caixa de expressão regular de cada método de "
+"extração para ver como funciona."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:453
+msgid "Let's analyze the example used in this tutorial:"
+msgstr "Vamos analisar o exemplo usado neste tutorial:"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:454
+msgid ""
+"**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch(?P<ChannelNumber>[1-5]).tif`**"
+msgstr ""
+"**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch( "
+"?P<ChannelNumber>[1-5]).tif`**"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:456
+msgid ""
+"Expressions contained between parentheses are VARIABLE and are captured into"
+" named variables (denoted as `(?P<VariableName>)`)."
+msgstr ""
+"As expressões contidas entre parênteses são VARIÁVEIS e são capturadas em "
+"variáveis nomeadas (denotadas como `(?P<VariableName>)`)."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:458
+msgid ""
+"Expressions outside parentheses are CONSTANT and should be present in ALL "
+"image file names (like the underscores and the '.tif')"
+msgstr ""
+"Expressões fora dos parênteses são CONSTANTES e devem estar presentes em "
+"TODOS os nomes de arquivos de imagem (como os sublinhados e o '.tif')"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:460
+msgid "`^`: Start the regular expression"
+msgstr "`^`: Inicia a expressão regular"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:462
+msgid ""
+"`(?P<Plate>.*)`: Extract all the characters before the first underscore "
+"character (_) and assign them to the measurement **\"Plate\"** for the "
+"image."
+msgstr ""
+"`(?P<Plate>.*)`: Extraia todos os caracteres antes do primeiro caractere de "
+"sublinhado (_) e atribua-os à medida **\"Placa\"** para a imagem ."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:464
+msgid ""
+"`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single (denoted as {1}) uppercase "
+"letter from A to P (denoted as [A-P]). Then, extract the next two digits "
+"({2}) between [0-9] and assign it to the measurment **\"Well\"** for the "
+"image."
+msgstr ""
+"`(?P<Well>[A-P]{1}[0-9]{2})`: Extraia uma única letra maiúscula (denotada "
+"como {1}) de A a P (denotada como [A-P]). Em seguida, extraia os próximos "
+"dois dígitos ({2}) entre [0-9] e atribua-os à medição **\"Well\"** para a "
+"imagem."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:466
+msgid ""
+"`site(?P<Site>[0-9])`: After the constant string \"site\", extract the next "
+"two digits {2} between [0-9] and assign it to the measurement **\"Site\"** "
+"for the image."
+msgstr ""
+"`site(?P<Site>[0-9])`: Após a string constante \"site\", extraia os próximos"
+" dois dígitos {2} entre [0-9] e atribua-o à medição **\"Site\"** para a "
+"imagem."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:468
+msgid ""
+"`Ch(?P<ChannelNumber>[1-5])`: After the constant string \"Ch\", extract the "
+"next digit between [1-5] and assign it to the measurement "
+"**\"ChannelNumber\"** for the image."
+msgstr ""
+"`Ch(?P<ChannelNumber>[1-5])`: Após a string constante \"Ch\", extraia o "
+"próximo dígito entre [1-5] e atribua-o à medição **\"ChannelNumber\"** para "
+"a imagem."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:470
+msgid ""
+"If you want to learn more about how these regular expressions work or how to"
+" adapt them to other situations, click on the <img "
+"src=\"./TutorialImages/Info.png\" width=\"35\"> button."
+msgstr ""
+"Se quiser saber mais sobre como funcionam essas expressões regulares ou como"
+" adaptá-las a outras situações, clique no botão <img "
+"src=\"./TutorialImages/Info.png\" width=\"35\">."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:476
+msgid ""
+"*Figure 4: The **Metadata** module, columns in table correspond to metadata "
+"categories*"
+msgstr ""
+"*Figura 4: O módulo **Metadada**, as colunas na tabela correspondem às "
+"categorias de metadados*"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:479
+msgid ""
+"In the **NamesAndTypes** module, we assign names to the images and configure"
+" image sets (i.e., all the different channels for a field of view). We will "
+"use the metadata we extracted in the previous module to make that "
+"association possible."
+msgstr ""
+"No módulo **NamesAndTypes**, atribuímos nomes às imagens e configuramos "
+"conjuntos de imagens (ou seja, todos os diferentes canais de cada campo). "
+"Usaremos os metadados que extraímos no módulo anterior para possibilitar "
+"essa associação."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:481
+msgid ""
+"This module is also fully configured already, but scroll and look through "
+"the configuration to see how we use the **ChannelNumber** obtained from the "
+"**Metadata** module to assign names to each image (There are several other "
+"ways to create correct mappings, but these may serve as a helpful example to"
+" refer to in your own work)."
+msgstr ""
+"Este módulo também já está totalmente configurado, mas observe a "
+"configuração para ver como usamos o **ChannelNumber** obtido do módulo "
+"**Metadata** para atribuir nomes a cada imagem (existem várias outras "
+"maneiras de criar mapeamentos, mas estes podem servir como um exemplo útil "
+"para referência em seu próprio trabalho)."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:488
+msgid "*Figure 5: Image mapping using extracted metadata*"
+msgstr "*Figura 5: Mapeamento de imagens usando metadados extraídos*"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:491
+msgid ""
+"Scroll to the bottom of the **NamesAndTypes** module settings to see how the"
+" image sets are constructed ‘`Image set matching’` is set to `‘Metadata’`. "
+"Each image channel is set to ‘Well → Site’."
+msgstr ""
+"Role até a parte inferior das configurações do módulo **NamesAndTypes** para"
+" ver como os conjuntos de imagens são construídos. ‘`Image set matching’` "
+"(‘`Correspondência do conjunto de imagens’`) está definida como "
+"`‘Metadada’`. Cada canal de imagem está definido como ‘Well → Site’."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:498
+msgid "*Figure 6: Image set matching using extracted metadata*"
+msgstr ""
+"*Figura 6: Correspondência do conjunto de imagens usando metadados "
+"extraídos*"
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:501
+msgid ""
+"For this exercise the **Groups** module is not needed so it is set to ‘No’, "
+"this module can be useful when you have more than one plate, or different "
+"movies."
+msgstr ""
+"Para este exercício o módulo **Groups** não é necessário, por isso está "
+"definido como ‘Não’. Este módulo pode ser útil quando você tem mais de uma "
+"placa ou arquivos de videos diferentes."
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:503
+msgid ""
+"**For more information and examples on how to configure the Input modules we"
+" have created a blog and video tutorial that can be accessed "
+"[here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-"
+"tutorial).**"
+msgstr ""
+"**Para mais informações e exemplos de como configurar os módulos de entrada "
+"criamos um blog e um tutorial em vídeo que pode ser acessado "
+"[aqui](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules- "
+"tutorial).**"
