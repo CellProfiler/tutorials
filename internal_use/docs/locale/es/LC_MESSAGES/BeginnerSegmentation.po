@@ -368,7 +368,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:84
 msgid "Nuclei segmented in the Cellpose GUI"
-msgstr "Núcleos segmentados en la GUI de Cellpose"
+msgstr "Núcleos segmentados en la interfaz gráfica de Cellpose"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:87
 msgid ""
