@@ -509,7 +509,7 @@ msgid ""
 "Drag and drop the `cellpose_masks_nuclei` folder in the Images module to add"
 " the nuclear masks to the image list."
 msgstr ""
-"Arrastre y suelte la carpeta `cellpose_masks_nuclei` en el módulo Imágenes "
+"Arrastra y suelta la carpeta `cellpose_masks_nuclei` en el módulo Images "
 "para agregar las máscaras nucleares a la lista de imágenes."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:123
