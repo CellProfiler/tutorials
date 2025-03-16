@@ -444,8 +444,8 @@ msgid ""
 "src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\"/> to create easily "
 "on-the-fly customizable overlays."
 msgstr ""
-"Opcionalmente, abra el Visor del espacio de trabajo usando <img "
-"src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\"/> para crear "
+"Opcionalmente, abre el Visor de Espacio de Trabajo (Workspace Viewer) usando"
+" <img src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\"/> para crear "
 "superposiciones fácilmente personalizables sobre la marcha."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:104
