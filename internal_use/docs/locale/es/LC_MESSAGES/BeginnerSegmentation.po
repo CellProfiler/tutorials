@@ -120,7 +120,7 @@ msgid ""
 msgstr ""
 "Si bien CellProfiler no tiene tantos complementos como, por ejemplo, Fiji, "
 "¡tiene muchos que puedes probar! Puede visitar plugins.cellprofiler.org para"
-" obtener más información. Para citar ese campo:"
+" obtener más información. Citando ese sitio:"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:26
 msgid ""
