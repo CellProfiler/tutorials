@@ -193,7 +193,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:48
 msgid "Docker Desktop"
-msgstr "Escritorio acoplable"
+msgstr "Docker Desktop"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:50
 msgid ""
