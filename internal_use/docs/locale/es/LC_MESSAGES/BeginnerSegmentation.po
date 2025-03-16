@@ -76,10 +76,10 @@ msgstr ""
 "científicos que desean analizar imágenes en estos días: ¡solo "
 "[forum.image.sc](forum.image.sc) tiene más de 60 herramientas de código "
 "abierto! A veces, sin embargo, ayuda tener un flujo de trabajo de múltiples "
-"herramientas: realice un paso en la Herramienta A y luego otro en la "
+"herramientas: realizar un paso en la Herramienta A y luego otro en la "
 "Herramienta B (y luego posiblemente C, D, etc., ¡pero con suerte no!). En "
-"este tutorial, probará 3 formas diferentes de acceder al trabajo que realizó"
-" con otras herramientas."
+"este tutorial, probarás 3 formas diferentes de acceder al trabajo que "
+"realizaste con otras herramientas."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:17
 msgid ""
