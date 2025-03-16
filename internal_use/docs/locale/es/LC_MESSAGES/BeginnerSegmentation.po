@@ -172,9 +172,9 @@ msgstr ""
 "Si bien esa documentación tiene instrucciones para [instalar complementos] "
 "(https://plugins.cellprofiler.org/using_plugins.html#installing-plugins- "
 "without-dependencies), en el paso 2 sugiere descargar todos los complementos"
-" de CellProfiler; Esto no es malo, pero puedes descargar complementos "
-"individuales desde GitHub con el botón del sitio web a continuación como "
-"pocillo o en su lugar."
+" de CellProfiler; Esto no es malo, pero también (o en lugar de ello) puedes "
+"descargar complementos individuales desde GitHub con el botón del sitio web "
+"a continuación."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:40
 msgid "GitHub's \"Download Raw Files\" button"
