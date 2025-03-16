@@ -501,8 +501,8 @@ msgstr ""
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:121
 msgid "Bonus-to-the-Bonus - add the provided nuclear segmentations as well"
 msgstr ""
-"Bonificación a la bonificación: agregue las segmentaciones nucleares "
-"proporcionadas como pocillo"
+"Para créditos extra: agrega tembién las segmentaciones nucleares "
+"proporcionadas."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:122
 msgid ""
