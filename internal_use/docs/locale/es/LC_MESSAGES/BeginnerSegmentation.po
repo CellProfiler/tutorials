@@ -474,7 +474,7 @@ msgstr "Visualización de imágenes y objetos en el Workspace Viewer."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:116
 msgid "Reverse engineer how this worked"
-msgstr "Ingeniería inversa de cómo funcionó esto"
+msgstr "Haz ingeniería reversa cómo funcionó esto"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:117
 msgid "Open the NamesAndTypes module."
