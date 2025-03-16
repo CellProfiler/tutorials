@@ -129,8 +129,8 @@ msgid ""
 "plugins instead of CellProfiler itself because:"
 msgstr ""
 "Los complementos mejoran las capacidades de CellProfiler pero no son "
-"oficialmente compatibles de la misma manera que los módulos. Un módulo puede"
-" estar en CellProfiler-plugins en lugar del propio CellProfiler porque:"
+"mantenidos oficialmente de la misma manera que los módulos. Un módulo puede "
+"estar en CellProfiler-plugins en lugar del propio CellProfiler porque:"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:27
 msgid "it is under active development"
