@@ -544,9 +544,9 @@ msgid ""
 "fluorescent signal for the thing you care about, great! If not, you may need"
 " to resort to some tricks."
 msgstr ""
-"La segmentación clásica requiere que lo que le interesa en una imagen sea "
-"brillante y todos los demás píxeles sean oscuros. Si tienes una buena señal "
-"fluorescente limpia para lo que te importa, ¡genial! Si no es así, es "
+"La segmentación clásica requiere que lo que nos interesa en una imagen sea "
+"brillante y que todos los demás píxeles sean (más) oscuros. Si tienes una "
+"buena señal fluorescente para lo que te importa, ¡genial! Si no es así, es "
 "posible que tengas que recurrir a algunos trucos."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:130
