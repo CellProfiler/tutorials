@@ -186,10 +186,10 @@ msgid ""
 "plugins, as loading can be slow if there are a lot of other miscellaneous "
 "files around (such if they sit in the Downloads folder, for example)."
 msgstr ""
-"Recomendamos encarecidamente crear una carpeta dedicada para almacenar sus "
+"Recomendamos fuertemente crear una carpeta dedicada para almacenar tus "
 "complementos de CellProfiler, ya que la carga puede ser lenta si hay muchos "
-"otros archivos diversos (por ejemplo, si se encuentran en la carpeta "
-"Descargas)."
+"otros archivos en la misma ubicación (por ejemplo, si se encuentran en la "
+"carpeta Descargas)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:48
 msgid "Docker Desktop"
