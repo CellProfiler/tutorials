@@ -495,7 +495,7 @@ msgid ""
 "Find the entry in NamesAndTypes that has 2 rules the image has to pass, not "
 "just one - do you understand why that is?"
 msgstr ""
-"Busque la entrada en NamesAndTypes que tiene 2 reglas que la imagen debe "
+"Busca la entrada en NamesAndTypes que tiene 2 reglas que la imagen debe "
 "pasar, no solo una. ¿Entiendes por qué?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:121
