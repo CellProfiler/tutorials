@@ -393,7 +393,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:95
 msgid "Command line execution of Cellpose"
-msgstr "Ejecución de línea de comando de Cellpose"
+msgstr "Ejecución de Cellpose desde la línea de comando"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:98
 msgid "Loading the label masks into CellProfiler"
