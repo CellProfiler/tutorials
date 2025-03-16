@@ -338,7 +338,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:75
 msgid "Only if you are curious - how did we make these label masks?"
-msgstr "Solo si tienes curiosidad: ¿cómo hicimos estas máscaras marca?"
+msgstr "Solo si tienes curiosidad: ¿cómo hicimos estas máscaras etiquetadas?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:76
 msgid ""
