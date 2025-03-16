@@ -465,7 +465,7 @@ msgid ""
 "Are there cases where you think classical segmentation typically performs "
 "better? Where Cellpose performs better?"
 msgstr ""
-"¿Hay casos en los que cree que la segmentación clásica suele funcionar "
+"¿Hay casos en los que crees que la segmentación clásica suele funcionar "
 "mejor? ¿Dónde funciona mejor Cellpose?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:114
