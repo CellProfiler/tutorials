@@ -105,7 +105,7 @@ msgid ""
 "Running Cellpose in CellProfiler via CellProfiler's plugins system and a "
 "Docker container."
 msgstr ""
-"Ejecutar Cellpose en CellProfiler a través del sistema de complementos de "
+"Ejecutando Cellpose en CellProfiler a través del sistema de complementos de "
 "CellProfiler y un contenedor Docker."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:21
