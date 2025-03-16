@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:13
 msgid "What is this exercise?"
-msgstr "¿Qué es este ejercicio?"
+msgstr "¿En qué consiste este ejercicio?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:15
 msgid ""
