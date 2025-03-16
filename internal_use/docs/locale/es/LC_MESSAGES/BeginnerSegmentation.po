@@ -334,7 +334,7 @@ msgid ""
 "cell masks from the ActinGolgi images."
 msgstr ""
 "Hemos utilizado Cellpose 2.2.2 para generar máscaras nucleares a partir de "
-"imágenes de ADN y máscaras de células a partir de imágenes de ActinGolgi."
+"las imágenes ADN y máscaras de células a partir de las imágenes ActinGolgi."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:75
 msgid "Only if you are curious - how did we make these label masks?"
