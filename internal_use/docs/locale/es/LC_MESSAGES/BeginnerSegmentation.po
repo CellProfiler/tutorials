@@ -518,7 +518,7 @@ msgid ""
 "be loaded (hint: there's a duplicate button you can use to make a second "
 "copy of a channel!)"
 msgstr ""
-"Vaya al módulo NamesAndTypes y configúrelo para que se puedan cargar ambos "
+"Ve al módulo NamesAndTypes y configúrlo para que se puedan cargar ambos "
 "tipos de máscaras (pista: hay un botón duplicado que puede usar para hacer "
 "una segunda copia de un canal)."
 
