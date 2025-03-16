@@ -529,7 +529,7 @@ msgid ""
 "how/why?"
 msgstr ""
 "Probablemente tendrás que modificar la configuración existente para cargar "
-"las máscaras celular cambiando su regla o agregando una segunda regla. "
+"las máscaras celulares cambiando su regla o agregando una segunda regla. "
 "¿Entiendes cómo/por qué?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:126
