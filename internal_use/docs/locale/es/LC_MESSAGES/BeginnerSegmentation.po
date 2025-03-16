@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:21
 msgid "Plugins"
-msgstr "Complementos"
+msgstr "Complementos (*plugins*)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:23
 msgid ""
