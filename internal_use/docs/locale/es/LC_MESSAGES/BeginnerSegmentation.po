@@ -739,7 +739,7 @@ msgid ""
 "Open the RunIlastik module, set the path to your project file "
 "(`NucleoliDetection.ilp`) and then also:"
 msgstr ""
-"Abra el módulo RunIlastik, establezca la ruta a su archivo de proyecto "
+"Abre el módulo RunIlastik, establece la ruta a su archivo de proyecto "
 "(`NucleoliDetection.ilp`) y luego también:"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:171
