@@ -747,8 +747,8 @@ msgid ""
 "ilastik-installed (recommended): set the path to your local installation of "
 "ilastik."
 msgstr ""
-"ilastik-installed (recomendado): establezca la ruta a su instalación local "
-"de ilastik."
+"ilastik-instalado (recomendado): establece la ruta a tu instalación local de"
+" ilastik."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:172
 msgid "Docker-installed: change the top setting from Local to Docker."
