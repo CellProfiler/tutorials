@@ -663,7 +663,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:157
 msgid "Screenshot of this ilastik classifer"
-msgstr "Captura de pantalla de este clasificador de Ilastik."
+msgstr "Captura de pantalla de nuestro clasificador de Ilastik."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:160
 msgid ""
