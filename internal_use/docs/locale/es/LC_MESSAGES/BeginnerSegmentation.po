@@ -731,7 +731,7 @@ msgid ""
 "Drag the `images_Illum-corrected` subfolder from the main exercise into the "
 "Images panel."
 msgstr ""
-"Arrastre la subcarpeta `images_Illum-corrected` desde el ejercicio principal"
+"Arrastra la subcarpeta `images_Illum-corrected` desde el ejercicio principal"
 " al panel Imágenes."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:170
