@@ -605,9 +605,9 @@ msgid ""
 " take a pre-trained ilastik classifer and run it inside our CellProfiler "
 "pipeline, so we can find and measure objects all in one step."
 msgstr ""
-"¿Por qué seguir dos pasos cuando puedes hacer uno? En este tutorial, "
+"¿Por qué hacer dos pasos cuando puedes hacer uno? En este tutorial, "
 "tomaremos un clasificador ilastik previamente entrenado y lo ejecutaremos "
-"dentro de nuestro CellProfiler pipeline, para que podamos encontrar y medir "
+"dentro de nuestro pipeline de CellProfiler, para poder encontrar y medir "
 "objetos, todo en un solo paso."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:143
