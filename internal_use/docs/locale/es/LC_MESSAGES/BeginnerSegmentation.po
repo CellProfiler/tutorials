@@ -688,7 +688,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:162
 msgid "Grab the Runilastik plugin"
-msgstr "Habilita el complemento Runilastik"
+msgstr "Habilitar el complemento Runilastik"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:163
 msgid ""
