@@ -724,7 +724,7 @@ msgstr "Cargar el clasificador y evaluarlo."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:168
 msgid "Drag `bonus_2_ilastik.cppipe` into the pipeline panel."
-msgstr "Arrastra `bonus_2_ilastik.cppipe` al panel pipeline."
+msgstr "Arrastra el archivo `bonus_2_ilastik.cppipe` al panel de pipeline."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:169
 msgid ""
