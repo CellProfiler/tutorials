@@ -709,8 +709,9 @@ msgid ""
 "plugin."
 msgstr ""
 "En el menú Archivo -> Preferencias de CellProfiler (CellProfiler -> "
-"Preferencias en Mac), configure el `directorio de complementos de "
-"CellProfiler` en la carpeta que contiene el complemento."
+"Preferencias en Mac), configura el `directorio de complementos de "
+"CellProfiler` (`CellProfiler Plugins Directory`) en la carpeta que contiene "
+"el complemento."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:165
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:223
