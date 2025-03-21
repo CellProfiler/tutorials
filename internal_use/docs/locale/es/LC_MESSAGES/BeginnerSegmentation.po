@@ -823,7 +823,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:196
 msgid "Evaluating segmentations in the Workspace Viewer"
-msgstr "Evaluación de segmentaciones en el Visor de espacio de trabajo"
+msgstr "Evaluación de segmentaciones en el `WorkspaceViewer`"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:200
 msgid "Bonus-to-the-Bonus - train your own ilastik model"
