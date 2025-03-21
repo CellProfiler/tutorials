@@ -801,13 +801,13 @@ msgid ""
 "Evaluate your prediction in Runilastik across a few image sets - how well "
 "does it perform? Does it perform worse on images it wasn't trained on?"
 msgstr ""
-"Evalúe su predicción en Runilastik a través de algunos conjuntos de "
-"imágenes: ¿cómo funciona pocillo? ¿Funciona peor en imágenes en las que no "
+"Evalúa tu predicción en `Runilastik` a través de algunos conjuntos de "
+"imágenes: ¿cómo tan bien funciona? ¿Funciona peor en imágenes en las que no "
 "fue entrenado?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:187
 msgid "Screenshot of the Runilastik module"
-msgstr "Captura de pantalla del módulo Runilastik"
+msgstr "Captura de pantalla del módulo `Runilastik`"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:190
 msgid ""
