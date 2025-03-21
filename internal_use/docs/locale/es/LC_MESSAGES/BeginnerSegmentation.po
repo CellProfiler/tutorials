@@ -1002,8 +1002,8 @@ msgid ""
 "You may wish to put a pause next to SaveImages, or uncheck it, to keep it "
 "from saving images, but that's up to you"
 msgstr ""
-"Es posible que desees poner una pausa junto a SaveImages, o desmarcarla, "
-"para evitar que guarde imágenes, pero eso depende de ti."
+"Si lo deseas, puedes poner una pausa junto a `SaveImages`, o desmarcarlo, "
+"para evitar que guarde imágenes."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:232
 msgid ""
