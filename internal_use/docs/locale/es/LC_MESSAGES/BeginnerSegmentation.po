@@ -1145,8 +1145,8 @@ msgid ""
 "Read the [CellProfiler-plugins "
 "paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)"
 msgstr ""
-"Lea el [documento CellProfiler-"
-"plugins](https://pubmed.ncbi.nlm.nih.gov/37690102/)"
+"Lee el [paper de complementos de "
+"CellProfiler](https://pubmed.ncbi.nlm.nih.gov/37690102/)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:269
 msgid ""
