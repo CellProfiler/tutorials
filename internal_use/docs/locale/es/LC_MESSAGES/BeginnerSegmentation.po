@@ -1436,7 +1436,7 @@ msgid ""
 "*At the end of this tutorial you will find instructions on how to set up the"
 " input modules*"
 msgstr ""
-"*Al final de este tutorial encontrará instrucciones sobre cómo configurar "
+"*Al final de este tutorial encontrarás instrucciones sobre cómo configurar "
 "los módulos de entrada*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:98
