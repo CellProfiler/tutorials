@@ -973,7 +973,7 @@ msgstr "Carga pipeline y evalúa la segmentación"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:226
 msgid "Drag `bonus_3_cellpose.cppipe` into the pipeline panel."
-msgstr "Arrastra `bonus_3_cellpose.cppipe` al panel pipeline."
+msgstr "Arrastra `bonus_3_cellpose.cppipe` al panel de pipeline."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:227
 msgid ""
