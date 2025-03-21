@@ -920,8 +920,8 @@ msgid ""
 "If you have not already installed Docker Desktop from the link above, please"
 " do so! This may involve rebooting your computer."
 msgstr ""
-"Si aún no ha instalado Docker Desktop desde el enlace anterior, ¡hágalo! "
-"Esto puede implicar reiniciar su computadora."
+"Si aún no has instalado Docker Desktop desde el enlace anterior, ¡hazlo "
+"ahora! Esto puede implicar reiniciar tu computadora."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:217
 msgid "Start Docker Desktop."
