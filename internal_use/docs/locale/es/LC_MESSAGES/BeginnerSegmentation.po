@@ -1153,8 +1153,8 @@ msgid ""
 "Watch this [video](https://www.youtube.com/watch?v=fgF_YueM1b8) to learn how"
 " to write a module"
 msgstr ""
-"Mire este [video](https://www.youtube.com/watch?v=fgF_YueM1b8) para aprender"
-" a escribir un módulo"
+"Mira este [video](https://www.youtube.com/watch?v=fgF_YueM1b8) para aprender"
+" a escribir tu propio complemento!"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:2
 msgid "Beginner segmentation and organelle analysis:"
