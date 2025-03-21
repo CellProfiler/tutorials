@@ -844,11 +844,11 @@ msgstr "Abre el archivo `NucleoliDetection.ilp` en ilastik."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:205
 msgid "Navigate to the `Training` tab."
-msgstr "Vaya a la pestaña \"Entrenamiento\"."
+msgstr "Ve a la pestaña \"Training\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:206
 msgid "Turn `LiveUpdate` on."
-msgstr "Active \"LiveUpdate\"."
+msgstr "Activa \"LiveUpdate\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:207
 msgid ""
