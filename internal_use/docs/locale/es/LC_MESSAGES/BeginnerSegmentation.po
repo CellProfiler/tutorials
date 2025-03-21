@@ -878,8 +878,9 @@ msgid ""
 "and return to CellProfiler. Did it help in the cases where you thought it "
 "would?"
 msgstr ""
-"Si cree que ha mejorado lo suficiente la predicción, guarde este modelo y "
-"regrese a CellProfiler. ¿Ayudó en los casos en los que pensaba que ayudaría?"
+"Si crees que has mejorado lo suficiente la predicción, guarda este nuevo "
+"modelo y regresa a CellProfiler. ¿Ayudó en los casos en los que pensabas que"
+" ayudaría?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:211
 msgid "**Exercise 3: Running Cellpose from a Docker container**"
