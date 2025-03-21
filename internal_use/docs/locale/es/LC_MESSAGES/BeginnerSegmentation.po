@@ -1419,7 +1419,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:89
 msgid "3. [OPTIONAL STEP] Set up the input modules"
-msgstr "3. [PASO OPCIONAL] Configure los módulos de entrada"
+msgstr "3. [PASO OPCIONAL] Configura los módulos de entrada"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:91
 msgid ""
