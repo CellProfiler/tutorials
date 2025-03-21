@@ -1027,7 +1027,7 @@ msgid ""
 "segmentation on a few images. Where is CellProfiler doing better, and where "
 "is Cellpose doing better?"
 msgstr ""
-"Como antes, utilizando OverlayOutlines y/o WorkspaceViewer, evalúe la "
+"Como antes, utilizando `OverlayOutlines` y/o `WorkspaceViewer`, evalúa la "
 "segmentación en algunas imágenes. ¿Dónde le está yendo mejor a CellProfiler "
 "y dónde le está yendo mejor a Cellpose?"
 
