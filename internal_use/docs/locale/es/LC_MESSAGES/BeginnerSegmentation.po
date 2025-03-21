@@ -840,7 +840,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:204
 msgid "Open `NucleoliDetection.ilp` in ilastik."
-msgstr "Abra `NucleoliDetection.ilp` en ilastik."
+msgstr "Abre el archivo `NucleoliDetection.ilp` en ilastik."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:205
 msgid "Navigate to the `Training` tab."
