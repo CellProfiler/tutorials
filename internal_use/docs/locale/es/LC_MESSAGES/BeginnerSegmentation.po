@@ -943,7 +943,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:220
 msgid "Grab the RunCellpose plugin"
-msgstr "Toma el complemento RunCellpose"
+msgstr "Toma el complemento `RunCellpose`"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:221
 msgid ""
