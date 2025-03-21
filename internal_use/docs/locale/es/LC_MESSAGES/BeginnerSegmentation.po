@@ -1039,15 +1039,15 @@ msgid ""
 "How about changing the model you're using, and/or the image you're "
 "segmenting?"
 msgstr ""
-"Utilice el botón <img src=\"./TutorialImages/Info.png\" width=\"35\"> para "
-"obtener más información sobre los diferentes parámetros que puede pasar a "
-"Cellpose (¡no los ofrecemos todos, pero sí muchos!). ¿Cómo afecta su ajuste "
-"su resultado? ? ¿Qué tal cambiar el modelo que estás usando y/o la imagen "
-"que estás segmentando?"
+"Utiliza el botón <img src=\"./TutorialImages/Info.png\" width=\"35\"> para "
+"obtener más información sobre los diferentes parámetros que puedes pasarle a"
+" Cellpose (¡no los ofrecemos todos, pero sí muchos!). ¿Cómo afecta cambiar "
+"estos parámetros al resultado? ? ¿Qué tal cambiar el modelo que estás usando"
+" y/o la imagen que estás segmentando?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:245
 msgid "Bonus-to-the-Bonus 1 - test on a more varied data set"
-msgstr "Bono a bono 1: prueba con un conjunto de datos más variado"
+msgstr "Bonus del bonus 1: prueba con un conjunto de datos más variado"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:247
 msgid ""
