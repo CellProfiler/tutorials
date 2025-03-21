@@ -980,8 +980,8 @@ msgid ""
 "Drag the `images_Illum-corrected` subfolder from the main exercise into the "
 "Images module"
 msgstr ""
-"Arrastre la subcarpeta `images_Illum-corrected` desde el ejercicio principal"
-" al módulo Imágenes"
+"Arrastra la subcarpeta `images_Illum-corrected` desde el ejercicio principal"
+" al módulo `Images`."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:228
 msgid ""
