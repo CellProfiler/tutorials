@@ -1093,7 +1093,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:259
 msgid "Bonus-to-the-Bonus 2 - improve Cellpose segmentation"
-msgstr "Bono a bono 2: mejora la segmentación de Cellpose"
+msgstr "Bonus del Bonus 2: mejora la segmentación de Cellpose"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:261
 msgid ""
