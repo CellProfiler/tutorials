@@ -834,9 +834,9 @@ msgid ""
 "Based on your evaluations above, can you identify some places where "
 "additional training might help fix some issues in the ilastik model?"
 msgstr ""
-"Según sus evaluaciones anteriores, ¿puede identificar algunos lugares donde "
-"la capacitación adicional podría ayudar a solucionar algunos problemas en el"
-" modelo ilastik?"
+"Según tus evaluaciones anteriores, ¿puedes identificar algunos lugares donde"
+" entrenamiento adicional podría ayudar a solucionar algunos problemas en el "
+"modelo ilastik?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:204
 msgid "Open `NucleoliDetection.ilp` in ilastik."
