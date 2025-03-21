@@ -1427,8 +1427,8 @@ msgid ""
 "pipeline, as these modules have been properly set up in the starting "
 "pipeline (`segmentation_start.cpipe`).*"
 msgstr ""
-"*Le sugerimos que omita este paso por ahora, no afectará al resto de "
-"pipeline, ya que estos módulos se han configurado correctamente en el "
+"*Te sugerimos que omitas este paso por ahora, no afectará al resto del "
+"pipeline, ya que estos módulos ya han sido configurados correctamente en el "
 "pipeline inicial (`segmentation_start.cpipe`).*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:93
