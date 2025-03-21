@@ -1137,7 +1137,7 @@ msgstr ""
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:267
 msgid "What next? Want to know more about CellProfliler plugins and modules?"
 msgstr ""
-"¿Qué sigue? ¿Quiere saber más sobre los complementos y módulos de "
+"¿Qué sigue? ¿Quieres saber más sobre los complementos y módulos de "
 "CellProfliler?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:268
