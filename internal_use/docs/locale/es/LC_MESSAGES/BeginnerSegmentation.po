@@ -969,7 +969,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:225
 msgid "Load the pipeline and evaluate segmentation"
-msgstr "Cargue pipeline y evalúe la segmentación"
+msgstr "Carga pipeline y evalúa la segmentación"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:226
 msgid "Drag `bonus_3_cellpose.cppipe` into the pipeline panel."
