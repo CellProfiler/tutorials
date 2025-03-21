@@ -1572,8 +1572,8 @@ msgid ""
 "*Overview of the final **pipeline** that you will be building with the "
 "general aim of each section*"
 msgstr ""
-"*Descripción general del proyecto final **pipeline** que construirás con el "
-"objetivo general de cada sección*"
+"*Descripción general del **pipeline** final que construirás con el objetivo "
+"general de cada sección*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:127
 msgid "**4. IdentifyPrimaryObjects – Nuclei (10min)**"
