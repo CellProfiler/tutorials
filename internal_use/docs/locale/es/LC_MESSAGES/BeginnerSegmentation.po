@@ -1113,7 +1113,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:263
 msgid "Bonus-to-the-Bonus 3 - test your classical segmentation skills"
-msgstr "Bonus-to-the-Bonus 3: prueba tus habilidades de segmentación clásica"
+msgstr "Bonus del Bonus 3: prueba tus habilidades de segmentación clásica"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:265
 msgid ""
