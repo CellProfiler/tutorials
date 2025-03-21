@@ -963,8 +963,9 @@ msgid ""
 "In CellProfiler's File -> Preferences menu, set the `CellProfiler plugins "
 "directory` to the folder containing the plugin."
 msgstr ""
-"En el menú Archivo -> Preferencias de CellProfiler, configure el `directorio"
-" de complementos de CellProfiler` en la carpeta que contiene el complemento."
+"En el menú File -> Preferences de CellProfiler, configura el Directorio de "
+"Complementos de CellProfiler (CellProfiler plugins directory) en la carpeta "
+"que contiene el complemento."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:225
 msgid "Load the pipeline and evaluate segmentation"
