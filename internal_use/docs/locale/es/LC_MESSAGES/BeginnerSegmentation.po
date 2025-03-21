@@ -855,8 +855,9 @@ msgid ""
 "Pick an image you think needed some help and add (a very small number of "
 "single-pixel) annotations. Did things get better or worse?"
 msgstr ""
-"Elija una imagen que crea que necesita ayuda y agregue anotaciones (una "
-"cantidad muy pequeña de un solo píxel). ¿Las cosas mejoraron o empeoraron?"
+"Elije una imagen que creas que necesita ayuda y agrega anotaciones (una "
+"cantidad muy pequeña de anoteciones de un solo píxel!). ¿Las cosas mejoraron"
+" o empeoraron?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:208
 msgid ""
