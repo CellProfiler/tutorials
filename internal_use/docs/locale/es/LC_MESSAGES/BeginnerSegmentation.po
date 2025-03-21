@@ -991,10 +991,10 @@ msgid ""
 "RunCellpose and OverlayOutlines, and then hit <img "
 "src=\"./TutorialImages/Run.png\" width=\"120\"/>"
 msgstr ""
-"Coloque CellProfiler en TestMode <img "
-"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, abra los íconos "
+"Coloca CellProfiler en Modo de Prueba <img "
+"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, abre los íconos "
 "de ojos <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> junto a "
-"RunCellpose y OverlayOutlines, y luego presione <img "
+"`RunCellpose` y `OverlayOutlines`, y luego presiona <img "
 "src=\"./TutorialImages/Run.png\" width=\"120\"/>"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:229
