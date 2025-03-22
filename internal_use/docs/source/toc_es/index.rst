@@ -13,6 +13,8 @@ Bienvenida/o a la documentación de los tutoriales de CellProfiler!
 
    ES_Segmentación para Principientes <../BeginnerSegmentation/CPbeginner_Segmentation>
 
+   ES_Materiales Adicionales a la Segmentación para Principiantes <../BeginnerSegmentation/BeginnerSegmentationPlugins>
+
    ES_Segmentación Avanzada <../AdvancedSegmentation/BBBC022_AnalysisExercise>
 
    ES_Traslocación <../Translocation/Translocation>
