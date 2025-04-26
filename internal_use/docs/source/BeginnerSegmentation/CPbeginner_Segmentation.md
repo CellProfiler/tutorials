@@ -53,15 +53,23 @@ Read through the steps below and follow instructions where stated. Steps where y
 ### **1. Load starting pipeline (2 min)**
 
 - Start CellProﬁler by double-clicking the desktop icon: <img src="./TutorialImages/CellProfilerLogo.png" width="40">
-- Drag and drop the `‘segmentation_start.cppipe’` ﬁle into the `‘Analysis modules’` pane on the left.
-
-    > Alternatively, you can also import a pipeline by going to `File` in the main menu (top), then `Import  >  Pipeline from file`
 
 ```{figure} ./TutorialImages/Fig2.png
 :width: 700
 :align: center
 
  Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline (.ccpipe or .ccproj files), drag and drop the pipeline file into the left area.
+```
+
+- Drag and drop the `‘segmentation_start.cppipe’` ﬁle into the `‘Analysis modules’` pane on the left.
+
+    > Alternatively, you can also import a pipeline by going to `File` in the main menu (top), then `Import  >  Pipeline from file`
+
+```{figure} ./TutorialImages/load_pipeline_start.png
+:width: 700
+:align: center
+
+ Figure 2b: **Loading the starting pipeline**. When you succesfully load the `‘segmentation_start.cppipe’` file into CellProfiler, you will notice a welcome message in the Notes panel. This initial pipeline has no analysis modules (you will fix that soon!) but has all the Loading modules already configured for you (see **Step 3** for more details)
 ```
 
 ###  **2. Load images**
