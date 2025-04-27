@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Beth Cimini, 2024
 # Esteban, 2025
-# Beth Cimini, 2025
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-26 23:11+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2025\n"
+"Last-Translator: Esteban, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1353,11 +1353,12 @@ msgid ""
 "modules (you will fix that soon!) but has all the Loading modules already "
 "configured for you (see **Step 3** for more details)"
 msgstr ""
-"Figura 2b: **Cargando el archivo inicial pipeline**. Al cargar correctamente"
-" el archivo `‘segmentation_start.cppipe’` en CellProfiler, verá un mensaje "
-"de bienvenida en el panel Notas. Este archivo inicial pipeline no tiene "
-"módulos de análisis (¡lo solucionaremos pronto!), pero sí tiene todos los "
-"módulos de carga ya configurados (consulte el **Paso 3** para más detalles)."
+"Figura 2b: **Cargando el archivo del pipeline inicial**. Al cargar "
+"correctamente el archivo `‘segmentation_start.cppipe’` en CellProfiler, "
+"verás un mensaje de bienvenida en el panel de Notas. Este pipeline inicial "
+"no tiene ningún módulo de análisis aún (¡tú pronto solucionarás esto!), pero"
+" sí tiene todos los módulos de carga ya configurados (consulta el **Paso 3**"
+" para más detalles)."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:75
 msgid "**2. Load images**"
