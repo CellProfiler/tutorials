@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 15:49+0000\n"
+"POT-Creation-Date: 2025-04-26 23:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -577,772 +577,776 @@ msgstr ""
 msgid "Start CellProﬁler by double-clicking the desktop icon: <img src=\"./TutorialImages/CellProfilerLogo.png\" width=\"40\">"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:56
-msgid "Drag and drop the `‘segmentation_start.cppipe’` ﬁle into the `‘Analysis modules’` pane on the left."
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:58
-msgid "Alternatively, you can also import a pipeline by going to `File` in the main menu (top), then `Import  >  Pipeline from file`"
-msgstr ""
-
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:64
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:61
 msgid "Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline (.ccpipe or .ccproj files), drag and drop the pipeline file into the left area."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:67
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:64
+msgid "Drag and drop the `‘segmentation_start.cppipe’` ﬁle into the `‘Analysis modules’` pane on the left."
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:66
+msgid "Alternatively, you can also import a pipeline by going to `File` in the main menu (top), then `Import  >  Pipeline from file`"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:72
+msgid "Figure 2b: **Loading the starting pipeline**. When you succesfully load the `‘segmentation_start.cppipe’` file into CellProfiler, you will notice a welcome message in the Notes panel. This initial pipeline has no analysis modules (you will fix that soon!) but has all the Loading modules already configured for you (see **Step 3** for more details)"
+msgstr ""
+
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:75
 msgid "**2. Load images**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:70
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:78
 msgid "Click on the **Images** module in the top left corner of the **Input** pane on CellProfiler window."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:71
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:79
 msgid "Drag and drop the folder named `'images_Illum-corrected'` into the `Drop files and folders here` pane. It should automatically populate."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:73
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:81
 msgid "Alternatively, you can also load the images by double clicking in the `Drop files and folders here` pane and using the pop-up window to select them."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:79
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:87
 msgid "*Figure 3: The **Images** module, grey out files will **not** be available for downstream modules*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:81
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:89
 msgid "**TIP**: You can use the `‘Filter images?’` options to filter out any file that you don't want CellProfiler to process. For example, if `‘Images only’` is selected, all files that are not images will be filtered out (they appear greyed out)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:83
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:91
 msgid "You can open and examine any image by double clicking on them"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:84
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:92
 msgid "🔴 **TO DO.** Open an image and familiarize yourself with the tools in the image toolbar: <img src=\"./TutorialImages/ImageToolbar.png\" width=\"220\">"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:86
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:94
 msgid "**TIP** you can manually adjust brightness and contrast in the image display by right-clicking on it and going to `'Adjust Contrast'`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:89
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:97
 msgid "3. [OPTIONAL STEP] Set up the input modules"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:91
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:99
 msgid "*We suggest you skip this step for now, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline (`segmentation_start.cpipe`).*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:93
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:101
 msgid "*At the end of this tutorial you will find instructions on how to set up the input modules*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:98
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:106
 msgid "Build the analysis pipeline"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:100
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:108
 msgid "Now, you are ready to start building your image analysis pipeline. But, **what IS an analysis pipeline?**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:102
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:110
 msgid "Basically, it is a series of sequential processes, in which the output of one process serves as the input of one of the following ones."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:104
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:112
 msgid "Thus, the order in which this processes are executed is **very** important, as is the proper naming of the inputs and the outputs (as you will see in this tutorial)"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:106
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:114
 msgid "During the construction of the pipeline, you will see two symbols appearing next to the modules:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:108
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:116
 msgid "<img src=\"./TutorialImages/Check.png\" width=\"35\"/> Checked box means that the module is activated and well configured"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:109
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:117
 msgid "<img src=\"./TutorialImages/Error.png\" width=\"35\"/> This means that there is an error in the configuration of the module. You can hover with your mouse on it to get information on the problem."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:110
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:118
 msgid "Because the pipeline is sequential, it is possible that changing an upstream module will generate errors on a downstream module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:111
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:119
 msgid "You can click on any of the two symbols above to inactivate the module, which is signaled as <img src=\"./TutorialImages/InactivatedModule.png\" width=\"35\"/>. This means that the module (and any output it produces) is no longer a part of the pipeline and will be skipped."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:113
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:121
 msgid "The <img src=\"./TutorialImages/open_eyes.png\" width=\"35\"/> icon means that the module output will be visible (it will pop-up in a new window or tab) when you run the pipeline."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:115
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:123
 msgid "The <img src=\"./TutorialImages/close_eyes.png\" width=\"35\"/> icon means that the module output will not be visible when you run the pipeline."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:117
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:125
 msgid "The usefulness of building a pipeline is that you can apply the same series of processing/analysis steps to all the image dataset, which makes the analysis both fast and reproducible. However, while constructing the pipeline, we don't want to run our unfinished pipeline on ALL the images every time we try something new. That's why CellProfiler has a `'Test Mode'`, which allows you to run every step individually and separately one a SINGLE IMAGE at a time. Once your pipeline has at least one non-input module in it, you can activate this mode by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/> in the lower-left of the window.  When you are done developing your pipeline, you can exit the `'Test Mode'` by clicking on <img src=\"./TutorialImages/exitTestMode.png\" width=\"120\"/> and then finally run the entire pipeline on your complete image dataset using the <img src=\"./TutorialImages/analyzeImages.png\" width=\"120\"/> button."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:124
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:132
 msgid "*Overview of the final **pipeline** that you will be building with the general aim of each section*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:127
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:135
 msgid "**4. IdentifyPrimaryObjects – Nuclei (10min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:129
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:137
 msgid "**AIM: use the nuclear channel to segment (isolate and identify all the pixels belonging to) each nuclei.**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:131
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:139
 msgid "Add an **IdentifyPrimaryObjects** module to the pipeline. Do this by clicking on the <img src=\"./TutorialImages/AddModule.png\" width=\"35\"/>  button in the bottom left corner of the CellProfiler window, which will pop up a small window called `‘Add modules’`. Navigate to the `Object Processing` category and select **IdentifyPrimaryObjects**. Double click on the module or click on <img src=\"./TutorialImages/AddToPipeline.png\" width=\"120\"/>."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:133
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:141
 msgid "**Tip**: You can also use the `'Find Modules'` search bar at the top of the ‘Add modules’ window to search all modules by name."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:139
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:147
 msgid "*Figure 8: The 'Add Modules' window, modules are divided in categories based on their function*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:143
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:151
 msgid "Select `'OrigDNA'` image as your input image from the drop-down menu. `'OrigDNA'` is the name assigned to the nuclei channel in **NamesAndTypes** module. You can check it in the setting of Input Modules described before."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:144
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:152
 msgid "Change the name of the output objects to ‘Nuclei’."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:146
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:154
 msgid "Enter '`Test Mode'` by clicking on <img src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>.\\"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:148
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:156
 msgid "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> to run the module. A new window will pop up showing you the original input image (top left) and the results of running the module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:149
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:157
 msgid "In this case, you can see the segmented nuclei both as outlines on top of the original image (bottom left) and as labeled objects (top right)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:151
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:159
 msgid "Notice that the colors in the labeled objects are assigned at random and might change ecery time you run the module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:153
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:161
 msgid "On the outlines display pane (bottom left) you can see three different colors; green is for accepted objects, orange for objects touching the border, and pink for objects outside the diameter range."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:154
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:162
 msgid "On the table pane (bottom right) there is useful information that you can use to adjust your segmentation settings, like the median diameter, and the threshold."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:155
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:199
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:163
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:207
 msgid "**How does your segmentation look?**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:161
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:169
 msgid "*Figure 9: The **IdentifyPrimaryObjects** module output, you can use the information in this window to modify your segmentation parameters*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:164
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:172
 msgid "Use the <img src=\"./TutorialImages/Zoom.png\" width=\"35\"/> at the top of the window to activate the Zoom tool. Click and drag the mouse on the image to zoom in on an area that was segmented poorly."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:167
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:175
 msgid "**🔴 TO DO**: Improve your segmentation of nuclei:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:169
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:177
 msgid "Select `‘Yes’` for the `‘Use advanced settings?’` option, then change some of the parameters:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:171
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:179
 msgid "Adjust the threshold method, may lead to better (or worse!) results."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:172
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:180
 msgid "Adjust the declumping settings."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:174
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:182
 msgid "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> after each change to rerun the module and see how the new parameters affect the segmentation."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:176
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:184
 msgid "Adjust the segmentation parameters until you feel you’re ready to move on to identifying the cells around the nuclei."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:178
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:186
 msgid "The segmentation should be good but **doesn’t need to be perfect** before you move on."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:180
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:188
 msgid "On that topic, we recommend checking this blog post on [When To Say ‘Good Enough’](https://carpenter-singh-lab.broadinstitute.org/blog/when-to-say-good-enough)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:184
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:192
 msgid "**5. IdentifySecondaryObjects – Cells (5min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:186
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:194
 msgid "**AIM: segment each cell individually using the previously segmented nuclei as a guide**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:188
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:196
 msgid "Since we don't have a cellular marker that labels homogenously the whole cell, we will use the `'OrigActin_Golgi_Membrane'` channel, which is the closest we have."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:190
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:198
 msgid "After the **IdentifyPrimaryObjects**, add a **IdentifySecondaryObjects** module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:191
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:199
 msgid "Select the `'OrigActin_Golgi_Membrane'` image as your input image, select the `'Nuclei'` objects (created by the previous module) as input objects and change the name to `'Cells'`."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:193
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:201
 msgid "The **IdentifySecondaryObject** module uses a \"primary\" object (in this case, the `'Nuclei'`) as a reference to find a \"secondary\" object, which contains the \"primary\". The \"primary\" is used as seed from which the \"secondary\" expands out."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:195
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:203
 msgid "Hit <img src=\"./TutorialImages/Step.png\" width=\"120\"/> to run the module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:197
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
 msgid "In this module output, the outline colors correspond to the seed object (green-Nuclei) and the segmented objects (magenta-Cell)"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:205
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:213
 msgid "*Figure 10: The **IdentifySecondaryObjects** module output*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:209
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:217
 msgid "**🔴 TO DO**: Improve cell segmentation"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:211
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:219
 msgid "Adjust the thresholding method."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:212
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:220
 msgid "Test the effects of using the various methods for identifying secondary objects (Propagation, Watershed-Image Distance-N, etc) and, if using Propagation, the regularization factor."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:213
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
 msgid "Examine the segmentation and adjust the module parameters until you feel you’re ready to test them on another image"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:215
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
 msgid "Remember, **they don’t need to be perfect!**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:217
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:225
 msgid "**6. Test the robustness of your segmentation parameters across images (5min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:219
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:227
 msgid "It’s (relatively!) easy to come up with a good set of segmentation parameters for a single image however we aim to create a set of parameters that can segment cells on all the images on an experiment."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:221
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:229
 msgid "To test the parameters, there are two options to change the image you are working on in Test Mode:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:223
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:231
 msgid "Click on the <img src=\"./TutorialImages/NextImageSet.png\" width=\"120\"/> at the bottom left corner,"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:225
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:233
 msgid "or"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:227
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:235
 msgid "Go to `‘Test’` on the top menu bar → `Choose Image Set` to bring up a list of the images in your experiment, select the image you want to test, and press the `‘OK’` button."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:229
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:237
 msgid "You can also use the `'Test'` menu to choose a random image set"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:235
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:243
 msgid "*Figure 11: A section of the `‘Choose Image Set’` menu.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:238
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:246
 msgid "Run tthe new image set you selected in test mode for your ﬁrst 2 modules (through your **IdentifySecondaryObjects** step)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:240
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:248
 msgid "You can do it by clicking the <img src=\"./TutorialImages/Step.png\" width=\"120\"/> button, or"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:241
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:249
 msgid "You can activate the pause button (<img src=\"./TutorialImages/Pause.png\" width=\"40\"/>) on the module after **IdentifySecondaryObjects** and hit <img src=\"./TutorialImages/Run.png\" width=\"120\"/>, this will run all modules before the pause."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:248
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:256
 msgid "*Figure 12: A section of the ‘Analysis modules’ pane.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:251
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:259
 msgid "Examine the output – did your nuclear and cellular segmentation hold up compared to the ﬁrst images you looked at?"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:252
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:260
 msgid "**🔴 TO DO**: Adjust the parameters to get comparable results to the first image. Once your segmentation is good, try it on another image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:254
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:262
 msgid "**7. IdentifyTertiaryObjects- Cytoplasm (2min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:256
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:264
 msgid "**AIM: Identify the Cytoplasm of the cell**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:258
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:266
 msgid "The `'Cells'` objects that we just identified contain both the cytoplasm of the cells and the nucleus. However the nucleus and the cytoplasm are two very distinct cellular compartments and, thus, we want to be able to make measurements in each of them separately."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:260
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:268
 msgid "Fortunately, to identify the cytoplasm, all we have to do is to subtract the `'Nuclei'` object, from the `'Cells'`object. We can do this using the **IdentifyTertiaryObjects** module"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:262
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:270
 msgid "After the **IdentifySecondaryObjects** module, add an **IdentifyTertiaryObjects** module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:264
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:272
 msgid "Create an object called `'Cytoplasm'` using the `'Cells'` and `'Nuclei'` objects you’ve created."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:266
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:274
 msgid "Select the larger and smaller identified objects from the drop-down menu."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:267
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:275
 msgid "Change the name of the objects to be identified."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:268
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:276
 msgid "‘Shrink smaller object prior to subtraction?’ should both set to ‘No’."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:270
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:278
 msgid "**8. Segment the nucleoli (15min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:272
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:280
 msgid "**AIM: Segment a more challenging cellular compartment: the nucleoli**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:274
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:282
 msgid "So far, we have used untransformed images for object detection, but not all objects can be segmented from raw images. CellProfiler contains a variety of image processing modules that can aid segmentation. For this exercise, we will use two such modules, but there are other ones you can explore."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:280
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:288
 msgid "We will segment the nucleoli using the `'OrigRNA'` channel, in which all nucleic acids (DNA and RNA) are labeled, both inside and outside the nucleus (using Syto, a commercial dye). This means some trouble, because:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:281
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:289
 msgid "Not only the nucleoli but also the nuclei are labeled, which means that the nucleoli will not contrast so well with their background (the nucleus)"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:282
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:290
 msgid "There are RNA spots in the cytoplasm which are NOT nucleoli, and we don't want to identify those."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:284
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:292
 msgid "The next 3 modules will help address these issues to create the `'Nucleoli'` object. Look at the output from each to see how the image is transformed to aid in segmentation."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:286
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:294
 msgid "After the **IdentifyTertiaryObjects** module, add an **EnhanceOrSuppressFeatures** module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:288
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:296
 msgid "**EnhanceOrSuppressFeatures** is a module that helps enhance parts of an image, in this case, punctate objects or `‘Speckles’`. As we are looking for nucleoli, we apply this to the RNA channel (`'OrigRNA'`) image and call the output `‘FilteredRNA’`."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:290
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:298
 msgid "**🔴 TO DO: Enhance nucleoli spots**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:292
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:300
 msgid "Change the input image from the drop-down menu to `‘OrigRNA’`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:293
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:301
 msgid "Change the name of the output image to `‘FilteredRNA’`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:294
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:302
 msgid "Change the feature size to see how this affects the output and find a value that works well."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:295
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:303
 msgid "**NOTE**: be careful when using large numbers as the module might take a long time to run"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:296
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:314
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:304
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:322
 msgid "See below for an example of results to aim for:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:302
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:310
 msgid "*Figure 13. The **EnhanceOrSuppress** module output, enhancing the OrigRNA image allows you to isolate nucleoli against the nucleoplasmic background signal.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:305
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:313
 msgid "After the **EnhanceOrSuppressFeatures** module, add an **MaskImage** module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:307
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:315
 msgid "**MaskImage** allows you to create a version of the `‘FilteredRNA’` image called `‘RNA_in_Nuclei’` where all the pixels except the ones you specify are set to an intensity of 0. In this case, we set to 0 any pixel not inside a nucleus. By doing this, we can decrease the likelihood of detecting cytoplasmic RNA dots."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:309
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:317
 msgid "**🔴 TO DO: Mask the RNA image to show only the nuclear region**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:311
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:319
 msgid "Change the input image from the drop-down menu to ‘FilteredRNA’."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:312
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:320
 msgid "Change the name of the output image to ‘RNA_in_Nuclei’."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:313
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:321
 msgid "Use the objects ‘Nuclei’ as the mask."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:320
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:328
 msgid "*Figure 14. The **MaskImage** module output, the contrast was adjusted to show that the intensity of the pixels outside the nuclei are now set to 0.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:323
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:331
 msgid "After the **MaskImage** module, add an **IdentifyPrimaryObject** module."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:324
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:332
 msgid "**IdentifyPrimaryObjects** is used to ﬁnd the nucleoli. This is a Primary object segmentation because we are not using another object as a seed (i.e., starting point), and are only segmenting based off the intensity in our `‘RNA_in_Nuclei’` image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:326
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:334
 msgid "**🔴 TO DO: Segment nucleoli**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:328
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:336
 msgid "Change the input image from the drop-down menu to `‘RNA_in_Nuclei’`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:329
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:337
 msgid "Change the name of the objects to `‘Nucleoli’`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:330
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:338
 msgid "Adjust the segmentation parameters until you are satisfied with the results."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:332
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:340
 msgid "**Tip**: you can use a similar strategy to segment mitochondria using the `'OrigMito'` channel"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:334
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:342
 msgid "**🔴 TO DO**: Add an **OverlayOutlines** module at this point to overlay the identiﬁed nucleoli on the `'Orig_RNA'` image to assure yourself that the segmentation not only matches the speckle enhanced `'FilteredRNA'` image, but also looks accurate on the unprocessed image as well. This is not strictly necessary but can be a nice “sanity check”."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:336
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:344
 msgid "**Goal**: display outlines of your nucleoli and your nuclei on the unprocessed `'OrigRNA'` image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:337
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:345
 msgid "Name the output image `'SanityCheck'`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:338
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:346
 msgid "Here’s an example of what that could look like (red=Nuclei, green=Nucleoli):"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:345
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:353
 msgid "*Figure 15. The **OverlayOutlines** module output, all detected nucleoli are within the nuclei.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:349
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:357
 msgid "**9. 🔴 TO DO: Add measurement modules to your pipeline (10min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:351
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:359
 msgid "After your segmentation of the nucleoli, add as many object measurement modules as you would like."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:352
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:360
 msgid "Some suggested modules to add: **MeasureObjectIntensity**, **MeasurebjectSizeShape**, **MeasureColocalization**, **MeasureObjectNeighbors**."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:353
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:361
 msgid "**IMPORTANT!**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:355
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:363
 msgid "If you choose to include the **MeasureColocalization** module, we highly recommend setting the `'Calculate the Manders coefficients using Costes auto threshold'` option to `'NO'`. Otherwise, this module can be very time-consuming"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:357
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:365
 msgid "Which objects do you think would be valuable to measure with each of these modules?"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:358
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:366
 msgid "Which channels would you measure your objects in?"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:360
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:368
 msgid "For a typical Cell Painting experiment you would add as many measurements as possible, but that isn’t necessary here; however, do make sure every object gets at least some measurements."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:362
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:370
 msgid "**IMPORTANT NOTE**: there are many more measurement modules and, while we encourage you to explore them and some of them like **MeasureCorrelation**, **MeasureTexture** and **MeasureObjectIntensityDistribution** can produce valuable data for downstream proﬁling, they can be memory-intensive and/or slow. So, for the sake of running this analysis within a reasonable time, they should **not** be added for this example pipeline."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:364
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:372
 msgid "**10. Relate Nucleoli to their corresponding Nuclei using the RelateObjects module (5min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:366
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:374
 msgid "Right now, you have segmented the nucleoli independently. However, we would like to associate every `'Nucleoli'` to their respective `'Nuclei'`."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:368
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:376
 msgid "**🔴 TO DO:** Add a **RelateObjects** module and configure it to relate `‘Nucleoli’` to `‘Nuclei’`."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:374
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:382
 msgid "*Figure 16: The **RelateObjects** module output.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:377
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:385
 msgid "Relating the objects allows you to create per-parent means (e.g., for this cell, what is the average size of an individual mitochondrion) and calculate distances from the child objects to the edge and/or the center of the parent (e.g., how far is each nucleolus from the center of the nucleus)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:379
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:387
 msgid "**11. Export measurements**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:381
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:389
 msgid "Add a **ExportToSpreadsheet** module at the end of the pipeline."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:382
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:390
 msgid "In `'Output file location'` select `'Default Output Folder'`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:383
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:391
 msgid "You can change the `'Default Output Folder'` by clicking the <img src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/> button at the bottom left corner of the window"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:384
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:392
 msgid "Leave all the default settings (as shown in Figure 17)"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:385
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:393
 msgid "You can pick and choose which measurements to export by selecting `'No'` in the `'Export all measurement types?'` setting"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:387
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:395
 msgid "**Note** that a <img src=\"./TutorialImages/Warning.png\" width=\"35\"/> appears next to the module. This is not an error. If you hover over it with your mouse, you will see that it is just a warning saying that '**ExportToSpreadsheet** will not produce output in Test Mode'. The measurements will only be saved when you run the pipeline for all images (see next section)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:393
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:401
 msgid "*Figure 17: The **ExportToSpreadsheet** module.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:397
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:405
 msgid "**12. Save overlay images** **[OPTIONAL]**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:399
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:407
 msgid "As we are exporting the results of our analysis, it can also be worthwhile to save the SanityCheck images we made previously because they are useful as a control of your segmentations and to share your work with others!"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:401
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:409
 msgid "Add a **SaveImages** module at the end of the pipeline."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:402
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:410
 msgid "Choose `'SanityCheck'` as the image to save."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:403
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:411
 msgid "We want to name the resulting image after the OrigRNA image that was used to create it."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:404
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:412
 msgid "In the `'Select method to construct file names'` field, leave '`From iamge filename'`."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:405
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:413
 msgid "In the `'Select image name for file prefix'` field, select '`OrigRNA'`."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:406
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:414
 msgid "Add `'_overlay'` as a suffix to the saved images. Then, the image name will be the original filename + `'_overlay'`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:407
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:415
 msgid "In `'Output file location'` select `'Default Output Folder sub-folder'` and name that sub-folder `'overlay_images'`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:408
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:416
 msgid "You can change the `'Default Output Folder'` by clicking the <img src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/> button at the bottom left corner of the window."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:409
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:417
 msgid "Leave the rest of the settings as they are in the default (as shown in Figure 18)"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:416
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:424
 msgid "*Figure 18: The **SaveImages** module.*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:420
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:428
 msgid "**13. Run the pipeline**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:421
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:429
 msgid "Now you have a pipeline that works well across different images. It is time to run it through your entire dataset and collect the results!"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:423
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:431
 msgid "Exit test mode by clicking on the <img src=\"./TutorialImages/ExitTestMode.png\" width=\"120\"/> button."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:425
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:433
 msgid "Turn all the <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> symbols to <img src=\"./TutorialImages/EyeClosed.png\" width=\"50\"/> so that module outputs don't pop up during analysis."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:426
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:434
 msgid "You can also do this by going to `'Windows'` in the main menu (top of the screen) and selecting `'Hide All Windows On Run'`"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:428
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:436
 msgid "Then, click on <img src=\"./TutorialImages/AnalyzeImages.png\" width=\"120\"/> button at the bottom left corner."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:430
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:438
 msgid "Explore the spreadsheets created for each object."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:434
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:442
 msgid "**CONGRATULATIONS!! YOU HAVE SUCCESSFULLY RUN YOUR FIRST CELL PROFILER PIPELINE!**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:438
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:446
 msgid "**3. [OPTIONAL] Set up the input modules (10min)**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:440
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:448
 msgid "The four input modules (**Images**, **Metadata**, **NamesAndTypes**, and **Groups**) are crucial for any CellProfiler pipeline because they define how images are loaded and organized."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:442
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:450
 msgid "The **Metadata** module is already conﬁgured. With it, you can extract information that is required for you analysis and which is not contained within the images themselves (thus, the name 'Metadata'):"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:444
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:452
 msgid "In this case, the module extracts the **Plate**, **Well**, **Site** and **ChannelNumber** from the image files' names."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:446
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:454
 msgid "This situation is a rather simple one, but if your own data is more complex, there are other ways of obtaining metadata. You can `Add another extraction method` and choose which images to apply them to."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:447
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:455
 msgid "You can also add a file which adds extra Metadata per image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:449
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:457
 msgid "The module uses a `'regular expression'` (also known as RegEx), a sort of template that fits all the file names and allows to obtain data from them."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:451
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:459
 msgid "Click on the magnifying glass at the end of the regular expression box for each extraction method to see how it works."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:453
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:461
 msgid "Let's analyze the example used in this tutorial:"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:454
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:462
 msgid "**`^(?P<Plate>.*)_(?P<Well>[A-P]{1}[0-9]{2})_site(?P<Site>[0-9])_Ch(?P<ChannelNumber>[1-5]).tif`**"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:456
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:464
 msgid "Expressions contained between parentheses are VARIABLE and are captured into named variables (denoted as `(?P<VariableName>)`)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:458
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:466
 msgid "Expressions outside parentheses are CONSTANT and should be present in ALL image file names (like the underscores and the '.tif')"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:460
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:468
 msgid "`^`: Start the regular expression"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:462
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:470
 msgid "`(?P<Plate>.*)`: Extract all the characters before the first underscore character (_) and assign them to the measurement **\"Plate\"** for the image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:464
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:472
 msgid "`(?P<Well>[A-P]{1}[0-9]{2})`: Extract a single (denoted as {1}) uppercase letter from A to P (denoted as [A-P]). Then, extract the next two digits ({2}) between [0-9] and assign it to the measurment **\"Well\"** for the image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:466
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:474
 msgid "`site(?P<Site>[0-9])`: After the constant string \"site\", extract the next two digits {2} between [0-9] and assign it to the measurement **\"Site\"** for the image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:468
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:476
 msgid "`Ch(?P<ChannelNumber>[1-5])`: After the constant string \"Ch\", extract the next digit between [1-5] and assign it to the measurement **\"ChannelNumber\"** for the image."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:470
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:478
 msgid "If you want to learn more about how these regular expressions work or how to adapt them to other situations, click on the <img src=\"./TutorialImages/Info.png\" width=\"35\"> button."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:476
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:484
 msgid "*Figure 4: The **Metadata** module, columns in table correspond to metadata categories*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:479
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:487
 msgid "In the **NamesAndTypes** module, we assign names to the images and configure image sets (i.e., all the different channels for a field of view). We will use the metadata we extracted in the previous module to make that association possible."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:481
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:489
 msgid "This module is also fully configured already, but scroll and look through the configuration to see how we use the **ChannelNumber** obtained from the **Metadata** module to assign names to each image (There are several other ways to create correct mappings, but these may serve as a helpful example to refer to in your own work)."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:488
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:496
 msgid "*Figure 5: Image mapping using extracted metadata*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:491
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:499
 msgid "Scroll to the bottom of the **NamesAndTypes** module settings to see how the image sets are constructed ‘`Image set matching’` is set to `‘Metadata’`. Each image channel is set to ‘Well → Site’."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:498
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:506
 msgid "*Figure 6: Image set matching using extracted metadata*"
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:501
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:509
 msgid "For this exercise the **Groups** module is not needed so it is set to ‘No’, this module can be useful when you have more than one plate, or different movies."
 msgstr ""
 
-#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:503
+#: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:511
 msgid "**For more information and examples on how to configure the Input modules we have created a blog and video tutorial that can be accessed [here](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial).**"
 msgstr ""
