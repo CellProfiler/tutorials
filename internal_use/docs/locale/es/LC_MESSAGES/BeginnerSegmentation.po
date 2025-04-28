@@ -350,7 +350,7 @@ msgid ""
 "in that conda environment using the command `cellpose`."
 msgstr ""
 "Cellpose se instaló en un entorno de conda de acuerdo con las [instrucciones"
-" oficiales] (https://github.com/MouseLand/cellpose?tab=readme-ov-"
+" oficiales](https://github.com/MouseLand/cellpose?tab=readme-ov-"
 "file#installation) para la instalación con la interfaz gráfica (GUI). El "
 "software se inició en ese entorno conda usando el comando \"cellpose\"."
 
