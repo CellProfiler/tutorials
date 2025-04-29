@@ -850,7 +850,7 @@ msgstr "Ve a la pestaña \"Training\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:206
 msgid "Turn `LiveUpdate` on."
-msgstr "Activa \"LiveUpdate\"."
+msgstr "Activa \"Live Update\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:207
 msgid ""
