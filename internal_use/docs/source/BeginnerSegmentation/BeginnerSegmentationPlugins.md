@@ -21,7 +21,7 @@ There are a number of great software tools available to life scientists wishing 
 ### Plugins
 
 While CellProfiler doesn't have as many plugins as, say, Fiji, it does have many for you to try! 
-You can visit plugins.cellprofiler.org to learn more. To quote from that site:
+You can visit [plugins.cellprofiler.org](plugins.cellprofiler.org) to learn more. To quote from that site:
 
 >Plugins advance the capabilities of CellProfiler but are not officially supported in the same way as modules. A module may be in CellProfiler-plugins instead of CellProfiler itself because:
 >- it is under active development
