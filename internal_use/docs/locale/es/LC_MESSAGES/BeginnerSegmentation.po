@@ -829,7 +829,7 @@ msgstr "Evaluación de segmentaciones en el `WorkspaceViewer`"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:200
 msgid "Bonus-to-the-Bonus - train your own ilastik model"
-msgstr "Bonus del bonus: entrena tu propio modelo ilastik!"
+msgstr "Bonus del bonus: entrena tu propio modelo en ilastik!"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:202
 msgid ""
