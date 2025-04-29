@@ -599,7 +599,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:138
 msgid "ilastik's Batch Processing mode"
-msgstr "Modo de procesamiento por lotes de ilastik"
+msgstr "Modo de procesamiento en lotes de ilastik"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:141
 msgid ""
