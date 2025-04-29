@@ -1,8 +1,8 @@
 CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
-DateRevision:426
+DateRevision:428
 GitHash:
-ModuleCount:8
+ModuleCount:9
 HasImagePlaneDetails:False
 
 Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.', '', 'Drag and drop your IMAGES (you can drag and drop the entire "images_Illum-corrected" folder) into the panel just below this one.', '', '<-Drag and drop your "segmentation_start.cppipe" files into the left panel.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
@@ -77,8 +77,9 @@ Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_windo
     grouping metadata count:1
     Metadata category:None
 
-RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:OrigDNA
+    Rescale images before running Cellpose:No
     Run CellPose in docker or local python environment:Docker
     Select Cellpose docker image:cellprofiler/runcellpose_with_pretrained:0.1
     Expected object diameter:30
@@ -101,6 +102,7 @@ RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:4|show_
     Use Omnipose for mask reconstruction:No
     Invert images:No
     Remove objects that are touching the edge?:Yes
+    Rescale probability map?:No
 
 IdentifyPrimaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:15|show_window:False|notes:['This module is used to create a group of objects called Nuclei by segmenting the nuclear regions from the OrigDNA image.', 'The settings used here should be good enough for the images used in this tutorial but they depend highly on the image set!', '', 'We encourage you to play around with the settings in order to get a "good enough" segmentation of your own data.', 'REMEMBER: we aim for "good enough" because there is no settings that will give you a PERFECT segmentation every time in every image.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:OrigDNA
@@ -138,9 +140,23 @@ IdentifyPrimaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_num
     # of deviations:2
     Thresholding method:Otsu
 
-OverlayOutlines:[module_num:7|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['This module produces a visualization of our segmentations so far by overlaying the RunCellpose and Nuclei objects outlines onto the OrigDNA image.', 'This is useful both as a sanity check and as a means of showing the results of your analysis to others!', '', 'The output of this module is called NucleiCheck.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+RescaleIntensity:[module_num:7|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:['Sometimes, the intensity of the image pixels are very dim compared to the bright segmentation outlines that we are going overlay on the next module.', "By rescaling the image, we are modifying the pixel values so that they cover the entire range of intensities and the image doesn't look too dim compared with the outlines.", 'This is for visualization purposes ONLY. You should not make measurements on the rescaled image!']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigDNA
+    Name the output image:OrigDNA_RESCALED
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+OverlayOutlines:[module_num:8|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:['This module produces a visualization of our segmentations so far by overlaying the RunCellpose and Nuclei objects outlines onto the OrigDNA image.', 'This is useful both as a sanity check and as a means of showing the results of your analysis to others!', '', 'The output of this module is called NucleiCheck.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Display outlines on a blank image?:No
-    Select image on which to display outlines:OrigDNA
+    Select image on which to display outlines:OrigDNA_RESCALED
     Name the output image:NucleiCheck
     Outline display mode:Color
     Select method to determine brightness of outlines:Max of image
@@ -150,7 +166,7 @@ OverlayOutlines:[module_num:7|svn_version:'Unknown'|variable_revision_number:4|s
     Select outline color:#21FFFF
     Select objects to display:RunCellpose
 
-SaveImages:[module_num:8|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:['This module saves the NucleiCheck images for future reference. It does so in a sub-folder of the default output folder called "overlay-images".', 'Tha name of the saved file is constructed using the name of the corresponding OrigDNA image as a prefix and adding a "_nuclear_overlay" suffix. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:9|svn_version:'Unknown'|variable_revision_number:16|show_window:False|notes:['This module saves the NucleiCheck images for future reference. It does so in a sub-folder of the default output folder called "overlay-images".', 'Tha name of the saved file is constructed using the name of the corresponding OrigDNA image as a prefix and adding a "_nuclear_overlay" suffix. ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:Image
     Select the image to save:NucleiCheck
     Select method for constructing file names:From image filename
