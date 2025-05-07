@@ -1112,8 +1112,8 @@ msgstr ""
 "perto você pode chegar? Adicione outro módulo IdentifyPrimaryObjects ao "
 "pipeline, ajuste-o você mesmo e, em seguida, olhe no visualizador do espaço "
 "de trabalho para ver como ele funciona, especialmente no conjunto de imagens"
-" mais diversificado do Bonus-to-the-Bonus 1. Compare seus parâmetros com os "
-"de especialistas - como eles diferem? Você entende por que algumas dessas "
+" mais diversificado do Bônus-do-Bônus 1. Compare seus parâmetros com os de "
+"um especialista - como eles diferem? Você entende por que algumas dessas "
 "configurações podem ter sido escolhidas?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:267
