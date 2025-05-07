@@ -411,7 +411,7 @@ msgid ""
 msgstr ""
 "Arraste a subpasta `images_Illum-corriged` do exercício principal de "
 "segmentação para iniciantes e também a subpasta `cellpose_masks_cells` deste"
-" exercício. *Não arraste na pasta `cellpose_masks_nuclei`.*"
+" exercício. *Não arraste a pasta `cellpose_masks_nuclei`.*"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:102
 msgid ""
