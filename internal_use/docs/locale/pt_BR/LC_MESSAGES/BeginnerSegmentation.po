@@ -808,7 +808,7 @@ msgid ""
 msgstr ""
 "Avalie suas segmentações em alguns conjuntos de imagens usando "
 "OverlayOutlines e/ou WorkspaceViewer - há casos em que você acha que a "
-"segmentação baseada em modelo ilastik tem melhor desempenho? A segmentação "
+"segmentação baseada no modelo ilastik tem melhor desempenho? A segmentação "
 "de filtragem e mascaramento?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:196
