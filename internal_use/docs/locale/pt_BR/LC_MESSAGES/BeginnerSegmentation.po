@@ -512,8 +512,8 @@ msgid ""
 "copy of a channel!)"
 msgstr ""
 "Vá para o módulo NamesAndTypes e configure-o para que ambos os tipos de "
-"máscaras possam ser carregados (dica: há um botão duplicado que você pode "
-"usar para fazer uma segunda cópia de um canal!)"
+"máscaras possam ser carregados (dica: há um botão de duplicação que você "
+"pode usar para fazer uma segunda cópia de um canal!)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:124
 msgid ""
