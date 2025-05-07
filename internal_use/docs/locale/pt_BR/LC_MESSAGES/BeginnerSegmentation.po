@@ -441,7 +441,7 @@ msgid ""
 msgstr ""
 "Opcionalmente, abra o Visualizador do Espaço de Trabalho usando <img "
 "src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\"/> para criar "
-"sobreposições personalizáveis facilmente e em tempo real."
+"sobreposições personalizáveis e em tempo real."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:104
 msgid ""
