@@ -137,7 +137,7 @@ msgstr "está em desenvolvimento ativo"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:28
 msgid "it has a niche audience"
-msgstr "tem um público de nicho"
+msgstr "tem um público específico"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:29
 msgid "it is not documented to CellProfiler’s standards"
