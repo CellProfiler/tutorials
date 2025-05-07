@@ -35,6 +35,9 @@ English version
 Versión en Español
 <a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_ES.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
 
+Versão em português:
+<a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_PT.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
+
 
 ## Advanced Segmentation
 
