@@ -1003,7 +1003,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:239
 msgid "The output of the RunCellpose module"
-msgstr "A saída do módulo RunCellpose"
+msgstr "Resultado do módulo RunCellpose"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:242
 msgid ""
