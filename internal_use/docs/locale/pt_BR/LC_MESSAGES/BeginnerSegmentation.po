@@ -792,8 +792,8 @@ msgid ""
 "Evaluate your prediction in Runilastik across a few image sets - how well "
 "does it perform? Does it perform worse on images it wasn't trained on?"
 msgstr ""
-"Avalie sua previsão no Runilastik em alguns conjuntos de imagens - qual é o "
-"seu desempenho? O desempenho é pior em imagens nas quais não foi treinado?"
+"Avalie a segmentação do Runilastik em alguns conjuntos de imagens - qual é o"
+" seu desempenho? O desempenho é pior em imagens nas quais não foi treinado?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:187
 msgid "Screenshot of the Runilastik module"
