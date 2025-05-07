@@ -650,8 +650,8 @@ msgstr ""
 "Este classificador foi feito no ilastik 1.4.1b5 treinando em 4 imagens "
 "(A14_site1, E18_site1, D16_site1 e C12_site1) nas quais rotulamos apenas "
 "duas classes: uma classe para nucléolos (amarelo na figura abaixo) e uma "
-"classe para todas as outras parte da imagem (azul na imagem abaixo). PODERIA"
-" ter feito mais aulas, mas isso, na prática, funcionou."
+"classe para todas as outras parte da imagem (azul na imagem abaixo). "
+"PODERIAMOS ter feito mais classes, mas isso, na prática, funcionou."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:157
 msgid "Screenshot of this ilastik classifer"
