@@ -295,8 +295,8 @@ msgstr ""
 "Sempre que você instalar um programa que pode executar outros programas, é "
 "claro que você deve ter cuidado. Os Dockers oferecem acesso a uma grande "
 "variedade de ferramentas que, de outra forma, seriam difíceis de instalar "
-"(ou instalar juntas), mas tenha cuidado ao executar apenas contêineres que "
-"você reconhece ou confia!"
+"(ou instalar juntas), mas tenha cuidado, execute apenas contêineres que você"
+" reconhece ou confia!"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:69
 msgid "**Exercise 1: Importing masks from another segmentation tool**"
