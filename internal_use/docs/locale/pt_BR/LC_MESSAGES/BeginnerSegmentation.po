@@ -1054,7 +1054,7 @@ msgid ""
 "A broader range of phenotypes can be harder to consistently account for in "
 "conducting segmentation."
 msgstr ""
-"Uma gama mais ampla de fenótipos pode ser mais difícil de ser contabilizada "
+"Uma gama mais ampla de fenótipos pode ser mais difícil de ser reproduzida "
 "consistentemente na condução da segmentação."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:256
