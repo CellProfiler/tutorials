@@ -360,7 +360,7 @@ msgstr ""
 " selecionando o modelo de 'núcleos' com configurações padrão e salvando-as "
 "individualmente como PNG usando *Cmd+N* (Mac) *Ctl+N* (Windows). Como havia "
 "apenas 10 imagens e as teclas de atalho estavam disponíveis, isso não "
-"consumia muito tempo."
+"consumiu muito tempo."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:84
 msgid "Nuclei segmented in the Cellpose GUI"
