@@ -1,4 +1,4 @@
-## Introduction to tutorials
+# Introduction to tutorials
 
 CellProfiler tutorials are exercises we've guided groups of users through to help them better understand how to use CellProfiler. Please also check out our [examples page](https://cellprofiler.org/examples), which includes additional pipelines and materials for using CellProfiler with specific samples and imaging applications.
 
@@ -7,8 +7,6 @@ CellProfiler tutorials are exercises we've guided groups of users through to hel
 
 ## Beginner Segmentation
 <img src="assets/img/beginner-badge.png" alt="beginner" width="140px">
-
-
 
 A tutorial that uses a CellPainting assay to ﬁnd segmentation parameters for larger “parent” objects (nucleus, cell, and cytoplasm) and show you ways to pull out smaller features in your image by segmenting organelles within the nuclei. You will also be shown how to use RelateObjects so that you can relate the average counts, distances, and measurements of the smaller “child” organelles to their larger “parent” objects. <br> 
 
@@ -25,9 +23,10 @@ Versão em português:
 <a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
 
 ### Bonus materials
+
 <img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> 
 
-We have also created bonus materials designed to go with this tutorial - in these exercises, you will practice using CellProfiler to interface with other software tools like ilastik and Cellpose. 
+We have also created bonus materials designed to go with this tutorial - in these exercises, you will practice using CellProfiler to interface with other software tools like ilastik and Cellpose and in doing so will learn how to use CellProfiler plugins.
 
 English version
 <a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
@@ -38,11 +37,9 @@ Versión en Español
 Versão em português:
 <a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_PT.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
 
-
 ## Advanced Segmentation
 
 <img src="assets/img/advanced-badge.png" alt="advanced" width="140px"> 
-
 
 This exercise will guide you through setting segmentation parameters that will be robust across your sample. Additionally, it will show you some ways to pull out smaller features in your image by segmenting organelles within the cells and nuclei. You will learn how to use RelateObjects module to obtain average counts, distances, and measurements of the smaller organelles inside their larger parent objects. <br> 
 
