@@ -9,9 +9,13 @@ Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA.
 1. Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/) (recommended for less computationally comfortable users) or [Podman Desktop](https://podman.io) (an alternative to Docker for more computationally comfortable users).
 1. Download at least one RunCellpose Docker and one ilastik Docker from Dockerhub.
 This will happen automatically the first time you call a given Docker from CellProfiler (i.e. run a CellProfiler pipeline that uses the Docker) but if you are running this tutorial in a workshop setting we strongly recommend download in advance of the workshop as these are large files (5-10 GB) and bandwidth is often limited in a workshop setting.
-In Docker Desktop, you can search for containers in the top search bar.
+In Docker Desktop or Podman Desktop you can search for containers in the top search bar (see below).
 Make sure you select a tag (version) that is supported by the plugin you are using and then select "Pull".
 We reccomend `biocontainers/ilastik:1.4.0_cv2` for ilastik and `cellprofiler/runcellpose_with_pretrained:3.1.2.2` or `cellprofiler/runcellpose_with_pretrained:4.0.6` for Cellpose.
+1. (Optional but recommended) Download and install [ilastik](https://www.ilastik.org/download).
+1. (Optional but recommended) Clone (i.e. download whole) the Cellprofiler-plugins repository.
+In your terminal type `git clone https://github.com/CellProfiler/CellProfiler-plugins.git`.
+Alternatively, download just the [Runilastik plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/master/active_plugins/runilastik.py) and [RunCellpose plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/master/active_plugins/runcellpose.py) by selecting the "Download raw file" button.
 
 ```{figure} ./TutorialImages/DockerSearch.png
 :width: 400
@@ -171,11 +175,19 @@ Visualization of images and objects in the Workspace Viewer
 
 ## **Exercise 2: Running ilastik locally or from a Docker container**
 
-Classical segmentation requires the thing you care about in an image be bright and every single other pixel dark(er). If you have a good clean fluorescent signal for the thing you care about, great! If not, you may need to resort to some tricks.
+Classical segmentation requires the thing you care about in an image be bright and every single other pixel dark(er).
+If you have a good clean fluorescent signal for the thing you care about, great!
+If not, you may need to resort to some tricks, or use another tool such as a pixel classifier.
 
-One such trick is to train a classifier on a pixel-by-pixel basis to say "here is what I think is the likelihood that this is a pixel you want to end up in your segmentation"; this classifier then ends up creating for each  pixel a *probability value* that corresponds to how likely it thinks it is you want to segment that pixel. If your classifier is good, that will give you an image where the pixels you care about are high-probability (bright) and everywhere else is low-probability (dark). That's exactly what we want! Life scientists tend to call this **"Pixel Classification"**; computer scientists will sometimes refer to it as **"Semantic Segmentation"**.
+A pixel classifier is a classifier trained on a pixel-by-pixel basis to say "here is what I think is the likelihood that this is a pixel you want to end up in your segmentation".
+This classifier then ends up creating for each  pixel a *probability value* that corresponds to how likely it thinks it is you want to segment that pixel.
+If your classifier is good, that will give you an image where the pixels you care about are high-probability (bright) and everywhere else is low-probability (dark).
+That's exactly what we want!
+Life scientists tend to call this **"Pixel Classification"**; computer scientists will sometimes refer to it as **"Semantic Segmentation"**.
 
-There are a few popular Fiji plugins for doing this, including Weka Trainable Segmentation and Labkit, and you should absolutely use them if they work better for you! We tend to use ilastik, because it makes it easy to automate creating a classifier from a very small number of images and then bulk-applying it to many others in "Batch Processing" mode. You can check out a tutorial we have written for running ilastik, and *then* CellProfiler at [tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (look for Pixel-based Classification).
+We like to use ilastik for pixel classification because it makes it easy to automate creating a classifier from a very small number of images and then bulk-applying it to many others in "Batch Processing" mode.
+You can check out a tutorial we have written for running ilastik, and *then* CellProfiler at [tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (look for Pixel-based Classification).
+Fiji has a few popular plugins for pixel classification, including Weka Trainable Segmentation and Labkit, and you should absolutely use them if they work better for you!
 
 ```{figure} ./TutorialImages/IlastikBatchMode.png
 :width: 700
@@ -186,7 +198,10 @@ ilastik's Batch Processing mode
 
 Why do two steps though, when you can do one instead? In this tutorial we'll take a pre-trained ilastik classifer and run it inside our CellProfiler pipeline, so we can find and measure objects all in one step.
 
-You will need either ilastik or Docker Desktop installed on your computer for this exercise. If ilastik, make sure it is CLOSED, if Docker Desktop, make sure it is OPEN. We recommend installing ilastik because it is a good and helpful tool, and will allow you to do this exercise's bonus challenge.
+You will need either ilastik or Docker Desktop (or Podman Desktop) installed on your computer for this exercise.
+If using ilastik, make sure it is CLOSED.
+If using Docker Desktop (or Podman Desktop), make sure it is OPEN.
+We recommend installing ilastik because it is a good and helpful tool and will allow you to do this exercise's bonus challenge.
 
 ```{warning}
 If you are on Windows, execute RunIlastik in Local mode (working on an installed copy of ilastik, rather than a copy inside a Docker file), this exercise will work in TestMode, but not will not run in analysis mode - we are working with the ilastik developers to determine why that is. This is fine for the purpose of this exercise; if you have a lot of your own data you want to run later, you can still use ilastik in a two step process, and/or use Dockerized ilastik.
@@ -194,7 +209,8 @@ If you are on Windows, execute RunIlastik in Local mode (working on an installed
 
 ### Only if you are curious - how did we train the classifier?
 
-This classifer was made in ilastik 1.4.1b5 by training on 4 images (A14_site1, E18_site1, D16_site1, and C12_site1) in which we labeled just two classes: one class for nucleoli (yellow in the figure below), and one class for every other part of the image (blue in the imagebelow). One COULD have made more classes, but this, in practice, worked.
+This classifer was made in ilastik 1.4.1b5 by training on 4 images (A14_site1, E18_site1, D16_site1, and C12_site1) in which we labeled just two classes: one class for nucleoli (yellow in the figure below), and one class for every other part of the image (blue in the imag ebelow).
+One COULD have made more classes, but this worked for our purposes.
 
 ```{figure} ./TutorialImages/IlastikLiveUpdate.png
 :width: 700
@@ -212,7 +228,8 @@ Learn more about using ilastik in the Ask Erin, Dear Beth video podcast [Intro t
 
 ### Grab the Runilastik plugin
 
-1. Download [the plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/master/active_plugins/runilastik.py) into a folder on your local computer. As stated above, we strongly suggest a folder that contains ONLY plugins.
+1. Download [the Runilastik plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/master/active_plugins/runilastik.py) into a folder on your local computer.
+As stated above, we strongly suggest a folder that contains ONLY plugins.
 1. In CellProfiler's File -> Preferences menu (CellProfiler -> Preferences in Mac), set the `CellProfiler plugins directory` to the folder containing the plugin.
 1. Close and reopen CellProfiler in order to be able to load the plugin.
 
