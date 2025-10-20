@@ -12,6 +12,11 @@ This will happen automatically the first time you call a given Docker from CellP
 In Docker Desktop or Podman Desktop you can search for containers in the top search bar (see below).
 Make sure you select a tag (version) that is supported by the plugin you are using and then select "Pull".
 We reccomend `biocontainers/ilastik:1.4.0_cv2` for ilastik and `cellprofiler/runcellpose_with_pretrained:3.1.2.2` or `cellprofiler/runcellpose_with_pretrained:4.0.6` for Cellpose.
+1. Download the example images from the Beginner Segmentation Tutorial.
+[Click here for download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip).
+(Delete/ignore the pipelines; we will just use the images.)
+1. Download the pipelines/materials for this tutorial.
+[Click here for download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip).
 1. (Optional but recommended) Download and install [ilastik](https://www.ilastik.org/download).
 1. (Optional but recommended) Clone (i.e. download whole) the Cellprofiler-plugins repository.
 In your terminal type `git clone https://github.com/CellProfiler/CellProfiler-plugins.git`.
@@ -352,7 +357,7 @@ Add another IdentifyPrimaryObjects module to the pipeline, tune it yourself, and
 Compare your parameters to the expert ones - how do they differ?
 Do you understand why some of these settings may have been chosen?
 
-## What next? Want to know more about CellProfliler plugins and modules?
+## What next? Want to know more about CellProfiler plugins and modules?
 
 1. Read the [CellProfiler-plugins paper](https://pubmed.ncbi.nlm.nih.gov/37690102/).
 2. Read the [CellProfiler-plugins documentation](https://plugins.cellprofiler.org/).
