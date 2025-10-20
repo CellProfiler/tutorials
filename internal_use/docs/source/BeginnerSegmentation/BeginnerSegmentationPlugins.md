@@ -304,7 +304,7 @@ If for whatever reason this isn't working, move on, but it will save you some ti
 
 ### Grab the RunCellpose plugin
 
-1. Download [the plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/11b46ee7f6eb78f97f784a731c5a1931b66c90d4/active_plugins/runcellpose.py) into a folder on your local computer. As stated above, we strongly suggest a folder that contains ONLY plugins.
+1. Download [the plugin](https://github.com/CellProfiler/CellProfiler-plugins/blob/master/active_plugins/runcellpose.py) into a folder on your local computer. As stated above, we strongly suggest a folder that contains ONLY plugins.
 1. In CellProfiler's File -> Preferences menu, set the `CellProfiler plugins directory` to the folder containing the plugin.
 1. Close and reopen CellProfiler to load the plugin.
 
