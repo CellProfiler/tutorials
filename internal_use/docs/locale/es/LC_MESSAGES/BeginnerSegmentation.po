@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Esteban, 2025
 # Beth Cimini, 2025
+# Esteban, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 10:53+0000\n"
+"POT-Creation-Date: 2025-10-21 11:14+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2025\n"
+"Last-Translator: Esteban, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1002,6 +1002,10 @@ msgid ""
 msgstr ""
 "¿Hay casos en los que cree que la segmentación mediante filtrado y "
 "enmascaramiento funciona mejor?"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:268
+msgid "Screenshot of the Runilastik module"
+msgstr "Captura de pantalla del módulo `Runilastik`"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:275
 msgid "Evaluating segmentations in the Workspace Viewer"
