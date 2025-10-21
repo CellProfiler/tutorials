@@ -261,7 +261,7 @@ Evaluate your prediction in Runilastik across a few image sets using OverlayOutl
 - Are there cases where you think the ilastik model-based segmentation performs better?
 - Are there cases where you think the filtering-and-masking segmentation performs better?
 
-```{figure}./TutorialImages/RunIlastik.png
+```{figure} ./TutorialImages/RunIlastik.png
 :width: 700
 :align: center
 
