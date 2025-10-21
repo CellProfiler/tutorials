@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2024
 # Esteban, 2025
+# Beth Cimini, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-26 23:11+0000\n"
+"POT-Creation-Date: 2025-10-21 10:53+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Esteban, 2025\n"
+"Last-Translator: Beth Cimini, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,64 +24,172 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:1
 msgid ""
-"Interfacing CellProfiler with other software tools via files and plugins"
+"Interfacing CellProfiler with Other Software Tools via Files and Plugins"
 msgstr ""
-"Conectando CellProfiler con otras herramientas de software a través de "
-"archivos y complementos (*plugins*)"
+"Interfaz de CellProfiler con otras herramientas de software mediante "
+"archivos y complementos"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:3
-msgid "Beth Cimini  <br> Broad Institute of MIT and Harvard, Cambridge, MA."
-msgstr "Beth Cimini <br> Broad Institute del MIT y Harvard, Cambridge, MA."
+msgid ""
+"Beth Cimini and Erin Weisbart\\ Imaging Platform, Broad Institute of MIT and"
+" Harvard, Cambridge, MA."
+msgstr ""
+"Beth Cimini y Erin Weisbart\\ Plataforma de imágenes, Instituto Broad del "
+"MIT y Harvard, Cambridge, MA."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:7
-msgid "**Background information**"
-msgstr "**Información de contexto**"
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:6
+msgid "Preparation"
+msgstr "Preparación"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:8
+msgid "Download and install [CellProfiler](https://cellprofiler.org/)."
+msgstr "Descargue e instale [CellProfiler](https://cellprofiler.org/)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:9
-msgid "General background information"
-msgstr "Información general"
-
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:11
 msgid ""
-"This exercise is meant to extend and build upon the Beginner Segmentation "
-"exercise available from [the CellProfiler tutorials "
-"page](tutorials.cellprofiler.org) . Please consult that tutorial for general"
-" information on how to configure CellProfiler as well as information about "
-"the images. It will be generally assumed you understand the modules covered "
-"in that tutorial, including input, object creation, overlays, and saving."
+"Download and install [Docker "
+"Desktop](https://www.docker.com/products/docker-desktop/) (recommended for "
+"less computationally comfortable users) or [Podman "
+"Desktop](https://podman.io) (an alternative to Docker for more "
+"computationally comfortable users)."
 msgstr ""
-"Este ejercicio está orientado a ampliar y desarrollar el ejercicio de "
-"Segmentación para Principiantes disponible en [la página de tutoriales de "
-"CellProfiler](tutorials.cellprofiler.org). Consulta ese tutorial para "
-"obtener información general sobre cómo configurar CellProfiler así como "
-"también información sobre las imágenes. Generalmente se asumirá que "
-"comprendes los módulos cubiertos en ese tutorial, incluidos los módulos de "
-"entrada, la creación de objetos, la superposición de objectos sobre imágenes"
-" y el guardado."
+"Descargue e instale [Docker Desktop](https://www.docker.com/products/docker-"
+"desktop/) (recomendado para usuarios con menos experiencia computacional) o "
+"[Podman Desktop](https://podman.io) (una alternativa a Docker para usuarios "
+"con mayor experiencia computacional)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:13
-msgid "What is this exercise?"
-msgstr "¿En qué consiste este ejercicio?"
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:10
+msgid ""
+"Download at least one RunCellpose Docker and one ilastik Docker from "
+"Dockerhub. This will happen automatically the first time you call a given "
+"Docker from CellProfiler (i.e. run a CellProfiler pipeline that uses the "
+"Docker) but if you are running this tutorial in a workshop setting we "
+"strongly recommend download in advance of the workshop as these are large "
+"files (5-10 GB) and bandwidth is often limited in a workshop setting. In "
+"Docker Desktop or Podman Desktop you can search for containers in the top "
+"search bar (see below). Make sure you select a tag (version) that is "
+"supported by the plugin you are using and then select \"Pull\". We reccomend"
+" `biocontainers/ilastik:1.4.0_cv2` for ilastik and "
+"`cellprofiler/runcellpose_with_pretrained:3.1.2.2` or "
+"`cellprofiler/runcellpose_with_pretrained:4.0.6` for Cellpose."
+msgstr ""
+"Descargue al menos un Docker RunCellpose y un Docker ilastik de Dockerhub. "
+"Esto se realizará automáticamente la primera vez que llame a un Docker desde"
+" CellProfiler (es decir, ejecute un CellProfiler pipeline que use el "
+"Docker). Sin embargo, si está ejecutando este tutorial en un taller, le "
+"recomendamos encarecidamente que lo descargue con antelación, ya que se "
+"trata de archivos grandes (5-10 GB) y el ancho de banda suele ser limitado "
+"en un taller. En Docker Desktop o Podman Desktop, puede buscar contenedores "
+"en la barra de búsqueda superior (ver más abajo). Asegúrese de seleccionar "
+"una etiqueta (versión) compatible con el complemento que esté utilizando y "
+"luego seleccione \"Extraer\". Recomendamos `biocontainers/ilastik:1.4.0_cv2`"
+" para ilastik y `cellprofiler/runcellpose_with_pretrained:3.1.2.2` o "
+"`cellprofiler/runcellpose_with_pretrained:4.0.6` para Cellpose."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:15
 msgid ""
-"There are a number of great software tools available to life scientists "
-"wishing to analyze images these days - [forum.image.sc](forum.image.sc) "
-"alone has more than 60 open-source tools! Sometimes, though, it helps to "
-"have a multi-tool workflow - do one step in Tool A, and then another in Tool"
-" B (and then possibly C, D, etc, but hopefully not!). In this tutorial, "
-"you'll try 3 different ways of accessing work you did in other tools."
+"Download the example images from the Beginner Segmentation Tutorial. [Click "
+"here for "
+"download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip)."
+" (Delete/ignore the pipelines; we will just use the images.)"
 msgstr ""
-"Hay una serie de excelentes herramientas de software disponibles para los "
-"científicos que desean analizar imágenes en estos días: ¡solo "
-"[forum.image.sc](forum.image.sc) tiene más de 60 herramientas de código "
-"abierto! A veces, sin embargo, ayuda tener un flujo de trabajo de múltiples "
-"herramientas: realizar un paso en la Herramienta A y luego otro en la "
-"Herramienta B (y luego posiblemente C, D, etc., ¡pero con suerte no!). En "
-"este tutorial, probarás 3 formas diferentes de acceder al trabajo que "
-"realizaste con otras herramientas."
+"Descarga las imágenes de ejemplo del Tutorial de Segmentación para "
+"Principiantes. [Haz clic aquí para "
+"descargar](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip)."
+" (Elimina o ignora las canalizaciones; solo usaremos las imágenes)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:17
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:18
+msgid ""
+"Download the pipelines/materials for this tutorial. [Click here for "
+"download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip)."
+msgstr ""
+"Descarga las canalizaciones y los materiales para este tutorial. [Haz clic "
+"aquí para "
+"descargar](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip)."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:20
+msgid ""
+"(Optional but recommended) Download and install "
+"[ilastik](https://www.ilastik.org/download)."
+msgstr ""
+"(Opcional pero recomendado) Descargue e instale "
+"[ilastik](https://www.ilastik.org/download)."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:21
+msgid ""
+"(Optional but recommended) Clone (i.e. download whole) the Cellprofiler-"
+"plugins repository. In your terminal type `git clone "
+"https://github.com/CellProfiler/CellProfiler-plugins.git`. Alternatively, "
+"download just the [Runilastik "
+"plugin](https://github.com/CellProfiler/CellProfiler-"
+"plugins/blob/master/active_plugins/runilastik.py) and [RunCellpose "
+"plugin](https://github.com/CellProfiler/CellProfiler-"
+"plugins/blob/master/active_plugins/runcellpose.py) by selecting the "
+"\"Download raw file\" button."
+msgstr ""
+"(Opcional, pero recomendado) Clona (es decir, descarga el repositorio "
+"completo) de complementos de Cellprofiler. En tu terminal, escribe `git "
+"clone https://github.com/CellProfiler/CellProfiler-plugins.git`. Como "
+"alternativa, descarga solo el complemento Runilastik y el complemento "
+"RunCellpose seleccionando el botón \"Descargar archivo sin procesar\"."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:29
+msgid "Search in Docker Desktop for your desired container"
+msgstr "Busque en Docker Desktop el contenedor deseado"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:32
+msgid "Background information"
+msgstr "Información de fondo"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:34
+msgid "General background information"
+msgstr "Información general"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:36
+msgid ""
+"This exercise is meant to extend and build upon the Beginner Segmentation "
+"exercise available from [the CellProfiler tutorials "
+"page](tutorials.cellprofiler.org). Please consult that tutorial for general "
+"information on how to configure CellProfiler as well as information about "
+"the images. It will be generally assumed you understand the modules covered "
+"in that tutorial, including input, object creation, overlays, and saving."
+msgstr ""
+"Este ejercicio pretende ampliar y desarrollar el ejercicio de Segmentación "
+"para Principiantes, disponible en la página de tutoriales de CellProfiler "
+"(tutorials.cellprofiler.org). Consulte dicho tutorial para obtener "
+"información general sobre cómo configurar CellProfiler como pocillo, así "
+"como información sobre las imágenes. Se asumirá que comprende los módulos "
+"que se tratan en dicho tutorial, incluyendo la entrada, la creación de "
+"objetos, las superposiciones y el guardado."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:40
+msgid "What is this exercise?"
+msgstr "¿En qué consiste este ejercicio?"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:42
+msgid ""
+"While CellProfiler is an image analysis tool itself, it also serves as a "
+"workflow manager that can interact with other tools, automatically passing "
+"data back and forth so that you can effectively use other tools within a "
+"single CellProfiler pipeline. This means in a hypothetical pipeline you have"
+" have CellProfiler do steps 1 and 2, Tool A do step 3, Tool B do step 4, and"
+" CellProfiler do step 5 all while configuring Tools A and B within "
+"CellProfiler and without having to handle data import or export from other "
+"tools. In this tutorial, you'll explore 3 different ways of accessing work "
+"done in other tools:"
+msgstr ""
+"Si bien CellProfiler es una herramienta de análisis de imágenes, también "
+"funciona como un gestor de flujo de trabajo que puede interactuar con otras "
+"herramientas, intercambiando datos automáticamente para que pueda usarlas "
+"eficazmente dentro de un mismo CellProfiler pipeline. Esto significa que, en"
+" un hipotético pipeline, CellProfiler debe ejecutar los pasos 1 y 2, la "
+"Herramienta A el 3, la Herramienta B el 4 y CellProfiler el 5, todo ello "
+"mientras configura las Herramientas A y B dentro de CellProfiler y sin tener"
+" que gestionar la importación o exportación de datos desde otras "
+"herramientas. En este tutorial, explorará tres maneras diferentes de acceder"
+" al trabajo realizado en otras herramientas:"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:46
 msgid ""
 "Loading masks created by other segmentation tools (in this case, "
 "[Cellpose](https://www.cellpose.org/), but the same strategy works for many "
@@ -91,7 +199,7 @@ msgstr ""
 "caso, [Cellpose](https://www.cellpose.org/), pero la misma estrategia "
 "funciona para muchas herramientas que usan este formato)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:18
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:47
 msgid ""
 "Accessing [ilastik](https://www.ilastik.org/) to use a trained pixel "
 "classification model via CellProfiler's plugins system."
@@ -100,7 +208,7 @@ msgstr ""
 "clasificación de píxeles entrenado a través del sistema de complementos de "
 "CellProfiler."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:19
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:48
 msgid ""
 "Running Cellpose in CellProfiler via CellProfiler's plugins system and a "
 "Docker container."
@@ -108,21 +216,25 @@ msgstr ""
 "Ejecutando Cellpose en CellProfiler a través del sistema de complementos de "
 "CellProfiler y un contenedor Docker."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:21
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:50
 msgid "Plugins"
 msgstr "Complementos (*plugins*)"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:23
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:52
 msgid ""
-"While CellProfiler doesn't have as many plugins as, say, Fiji, it does have "
-"many for you to try!  You can visit plugins.cellprofiler.org to learn more. "
-"To quote from that site:"
+"CellProfiler has a number of plugins that act like modules within a "
+"pipeline. Plugins are available [on "
+"Github](https://github.com/CellProfiler/CellProfiler-plugins). Read more "
+"about them in [CellProfiler plugins documentation](plugins.cellprofiler.org)"
+" to learn more. To quote from that site:"
 msgstr ""
-"Si bien CellProfiler no tiene tantos complementos como, por ejemplo, Fiji, "
-"¡tiene muchos que puedes probar! Puede visitar plugins.cellprofiler.org para"
-" obtener más información. Citando ese sitio:"
+"CellProfiler cuenta con varios complementos que actúan como módulos dentro "
+"de un pipeline. Los complementos están disponibles en Github "
+"(https://github.com/CellProfiler/CellProfiler-plugins). Para más "
+"información, consulte la documentación de los complementos de CellProfiler "
+"(plugins.cellprofiler.org). Para citar el campo:"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:26
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:57
 msgid ""
 "Plugins advance the capabilities of CellProfiler but are not officially "
 "supported in the same way as modules. A module may be in CellProfiler-"
@@ -132,23 +244,23 @@ msgstr ""
 "mantenidos oficialmente de la misma manera que los módulos. Un módulo puede "
 "estar en CellProfiler-plugins en lugar del propio CellProfiler porque:"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:27
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:60
 msgid "it is under active development"
 msgstr "está en desarrollo activo"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:28
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:61
 msgid "it has a niche audience"
 msgstr "tiene una audiencia de nicho"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:29
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:62
 msgid "it is not documented to CellProfiler’s standards"
 msgstr "no está documentado según los estándares de CellProfiler"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:30
-msgid "it only works with certain version of CellProfiler"
-msgstr "sólo funciona con cierta versión de CellProfiler"
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:63
+msgid "it only works with certain versions of CellProfiler"
+msgstr "Sólo funciona con ciertas versiones de CellProfiler"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:31
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:64
 msgid ""
 "it requires extra libraries or other dependencies we are unable or unwilling"
 " to require for CellProfiler"
@@ -156,31 +268,31 @@ msgstr ""
 "requiere bibliotecas adicionales u otras dependencias que no podemos o no "
 "queremos requerir para CellProfiler"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:32
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:65
 msgid "it has been contributed by a community member"
 msgstr "ha sido aportado por un miembro de la comunidad"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:35
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:68
 msgid ""
 "While that documentation has instructions for [installing "
 "plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-"
 "plugins-without-dependencies), in step 2 it suggests downloading all of the "
-"CellProfiler plugins; this isn't a bad thing to do, but you can download "
-"individual plugins from GitHub with the website button below as well or "
-"instead."
+"CellProfiler plugins. This isn't a bad thing to do, but you can download "
+"individual plugins from GitHub with the website button below as well or by "
+"using GitHub's \"Download Raw Files\" button."
 msgstr ""
-"Si bien esa documentación tiene instrucciones para [instalar "
-"complementos](https://plugins.cellprofiler.org/using_plugins.html#installing-"
-"plugins- without-dependencies), en el Ejercicio 2 sugiere descargar todos "
-"los complementos de CellProfiler. Esto no está mal, pero también (o en lugar"
-" de ello) puedes descargar complementos individuales desde la web de GitHub "
-"usando el botón que se muestra en la figura."
+"Si bien esa documentación incluye instrucciones para [instalar "
+"plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-"
+"plugins-without-dependencies), en el paso 2 se sugiere descargar todos los "
+"plugins de CellProfiler. Esto es recomendable, pero puedes descargar plugins"
+" individuales desde GitHub con el botón del sitio web a continuación: "
+"pocillo o usando el botón \"Descargar archivos RAW\" de GitHub."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:40
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:74
 msgid "GitHub's \"Download Raw Files\" button"
 msgstr "Botón \"Descargar archivos sin formato\" de GitHub"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:45
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:79
 msgid ""
 "We strongly recommend making a dedicated folder to store your CellProfiler "
 "plugins, as loading can be slow if there are a lot of other miscellaneous "
@@ -191,105 +303,97 @@ msgstr ""
 "otros archivos en la misma ubicación (por ejemplo, si se encuentran en la "
 "carpeta Descargas)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:48
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:82
 msgid "Docker Desktop"
 msgstr "Docker Desktop"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:50
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:84
 msgid ""
-"In Exercise 3 (and for Windows users, optionally Excercise 2 as well), we "
-"want to access software that we either don't want to install locally because"
-" it's painful if you're not pretty comfortable in Python (Cellpose) or that "
-"we CAN install locally but may not play nicely with other tools' "
-"multiprocessing setup (ilastik)."
-msgstr ""
-"En el Ejercicio 3 (y para usuarios de Windows, opcionalmente también en el "
-"Ejercicio 2), queremos acceder a software que, o bien no queremos instalar "
-"localmente porque es complicado si uno no está cómodo usando Python "
-"(Cellpose), o bien que PODEMOS instalar localmente pero probablemente no "
-"funcione bien con la configuración de multiprocesamiento de otras "
-"herramientas (Ilastik)."
-
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:52
-msgid ""
-"Computer scientists will often use software **containers** to ship tools or "
-"data that are hard to install - "
-"[here](https://journals.sagepub.com/doi/10.1177/25152459211017853) is a good"
-" introduction and overview for non-computer scientists. You can think of "
-"containers as \"a pre-configured operating system in a box\". Because they "
-"come to you pre-configured, installation of any software happens once-and-"
-"only-once (by the creator of the container, not by you), and should stay "
-"working for long after ie the latest Mac upgrade breaks a certain older "
-"software installation. Groups like "
+"In our tutorial, we want to access software that we can't or don't want to "
+"install onto our local computer. (Deep learning tools like Cellpose are "
+"often very difficult to install and ilastik may not play nicely with other "
+"tools' multiprocessing setup.) To circumvent these issues, we use "
+"**containers**. Computer scientists will often use software **containers** "
+"to ship tools or data that are hard to install - here is a good "
+"[introduction and overview to "
+"containers](https://journals.sagepub.com/doi/10.1177/25152459211017853) for "
+"non-computer scientists. You can think of containers as \"a pre-configured "
+"operating system in a box\". Because they come to you pre-configured, "
+"installation of any software happens once-and-only-once (by the creator of "
+"the container, not by you), and should stay working for a long time. (e.g. "
+"You don't have to worry about an upgrade to your laptop breaking a certain "
+"older software you have installed on it.) Groups like "
 "[biocontainers](https://biocontainers.pro/) have already containerized many "
 "of the tools you know and love. There are a number of types of software "
 "containers, but one of the most common is called a **Docker** container."
 msgstr ""
-"Los científicos informáticos suelen utilizar **contenedores** (*containers*)"
-" de software para enviar herramientas o datos que son difíciles de instalar."
-" [En este "
-"vínculo](https://journals.sagepub.com/doi/10.1177/25152459211017853) puedes "
-"encontrar una buena introducción y descripción general de **contenedores** "
-"para no expertos. Puedes pensar en los contenedores como \"un sistema "
-"operativo preconfigurado en una caja\". Debido a que vienen preconfigurados,"
-" la instalación de cualquier software se realiza una sola vez (por parte del"
-" creador del contenedor, no por ti) y debería seguir funcionando por mucho "
-"tiempo después de que, por ejemplo, la última actualización de Mac rompa una"
-" cierta instalación previa del software. Grupos como "
-"[biocontainers](https://biocontainers.pro/) ya han incluido en contenedores "
-"muchas de las herramientas que ya conoces y amas. Hay varios tipos de "
-"contenedores de software, pero uno de los más son los llamados contenedores "
+"En nuestro tutorial, queremos acceder a software que no podemos o no "
+"queremos instalar en nuestro ordenador local. (Las herramientas de "
+"aprendizaje profundo como Cellpose suelen ser muy difíciles de instalar y es"
+" posible que ilastik no funcione correctamente con la configuración de "
+"multiprocesamiento de otras herramientas). Para solucionar estos problemas, "
+"utilizamos **contenedores**. Los informáticos suelen utilizar "
+"**contenedores** de software para enviar herramientas o datos difíciles de "
+"instalar. Aquí hay una buena [introducción y descripción general de los "
+"contenedores](https://journals.sagepub.com/doi/10.1177/25152459211017853) "
+"para quienes no son informáticos. Los contenedores son como un sistema "
+"operativo preconfigurado en una caja. Dado que vienen preconfigurados, la "
+"instalación de cualquier software se realiza una sola vez (por el creador "
+"del contenedor, no por ti) y debería funcionar durante mucho tiempo. (Por "
+"ejemplo, no tienes que preocuparte de que una actualización de tu portátil "
+"dañe algún software antiguo que tengas instalado). Grupos como "
+"[biocontainers](https://biocontainers.pro/) ya han contenedorizado muchas de"
+" las herramientas que conoces y te encantan. Existen varios tipos de "
+"contenedores de software, pero uno de los más comunes se llama contenedor "
 "**Docker**."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:54
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:94
 msgid ""
 "Most life scientists aren't aware of or don't use containers, especially "
-"because typical usage involves accessing them via your terminal. But Docker "
-"doesn't have to mean terminal! There are [containers that spit out "
-"interactive websites for you to use](https://github.com/COBA-"
-"NIH/docker_gradio_demo), and CellProfiler has plugins that are specifically "
-"set up to call other tools that live (and are executed) inside Docker "
-"containers."
+"because typical usage involves accessing them via your terminal. But you can"
+" use Docker without using a terminal! CellProfiler has plugins that are "
+"specifically set up to call other tools that live (and are executed) inside "
+"Docker containers."
 msgstr ""
-"La mayoría de las personas que trabajan en Ciencias de la Vida no conocen "
-"los contenedores o no los utilizan, especialmente porque el uso típicamente "
-"implica acceder a ellos a través de una terminal. ¡Pero Docker no "
-"necesariamente implica usar la terminal! Hay [contenedores que generan "
-"sitios web interactivos para que los uses](https://github.com/COBA-"
-"NIH/docker_gradio_demo), y CellProfiler tiene complementos que están "
-"específicamente configurados para llamar a otras herramientas que viven (y "
-"se ejecutan) dentro de contenedores Docker."
+"La mayoría de los biólogos desconocen o no usan contenedores, sobre todo "
+"porque su uso habitual implica acceder a ellos mediante la terminal. ¡Pero "
+"puedes usar Docker sin usar una terminal! CellProfiler tiene plugins "
+"configurados específicamente para llamar a otras herramientas que residen (y"
+" se ejecutan) dentro de contenedores Docker."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:56
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:98
 msgid ""
 "To do this, CellProfiler needs to have the infrastructure for Docker "
-"containers up and running, which you can give it by installing a free "
-"program called [**Docker Desktop**](https://www.docker.com/products/docker-"
+"containers up and running, which you can give it by installing a program "
+"called [**Docker Desktop**](https://www.docker.com/products/docker-"
 "desktop/). You don't need to make an account to use it, but you probably "
-"will need to reboot your computer after installation is complete. Then, "
-"whenever you want to use a Docker-calling plugin in CellProfiler, you simply"
-" must make sure that Docker Desktop is open and running, CellProfiler will "
-"take care of everything else!"
+"will need to reboot your computer after installation is complete. [Podman "
+"Desktop](https://podman.io) is an alternative to Docker that CellProfiler "
+"also supports for more computationally comfortable users. Then, whenever you"
+" want to use a Docker-calling plugin in CellProfiler, you simply must make "
+"sure that Docker Desktop (or Podman Desktop) is open and running and "
+"CellProfiler will take care of everything else!"
 msgstr ""
-"Para hacer esto, CellProfiler necesita tener la infraestructura para "
-"contenedores Docker en funcionamiento, lo cual puedes brindarle instalando "
-"un programa gratuito llamado [**Docker "
-"Desktop**](https://www.docker.com/products/docker-desktop/). No necesitas "
-"crear una cuenta para usarlo, pero probablemente necesitarás reiniciar tu "
-"computadora una vez completada la instalación. Luego, siempre que desees "
-"utilizar un complemento que llame a Docker en CellProfiler, simplemente "
-"debes asegurarse de que Docker Desktop esté abierto y ejecutándose, "
-"¡CellProfiler se encargará de todo lo demás!"
+"Para ello, CellProfiler necesita tener la infraestructura para contenedores "
+"Docker en funcionamiento. Esto se puede conseguir instalando un programa "
+"llamado [**Docker Desktop**](https://www.docker.com/products/docker-"
+"desktop/). No es necesario crear una cuenta para usarlo, pero probablemente "
+"deba reiniciar el equipo una vez finalizada la instalación. [Podman "
+"Desktop](https://podman.io) es una alternativa a Docker que CellProfiler "
+"también admite para usuarios con mayor experiencia computacional. Luego, "
+"siempre que desee usar un complemento que invoque Docker en CellProfiler, "
+"simplemente asegúrese de que Docker Desktop (o Podman Desktop) esté abierto "
+"y en ejecución, y CellProfiler se encargará de todo lo demás."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:62
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:107
 msgid ""
 "The Docker Desktop interface for Mac. Containers can be searched for in the "
-"top search bar!"
+"top search bar."
 msgstr ""
-"La interfaz de Docker Desktop para Mac. ¡Los contenedores se pueden buscar "
-"en la barra de búsqueda superior!"
+"La interfaz de Docker Desktop para Mac. Los contenedores se pueden buscar en"
+" la barra de búsqueda superior."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:66
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:111
 msgid ""
 "Anytime you're installing a program that can run other programs, you must of"
 " course be careful. Dockers give you access to a huge variety of tools that "
@@ -302,12 +406,12 @@ msgstr ""
 "instalar (o de instalar juntas), pero ten cuidado de ejecutar sólo "
 "contenedores que reconozcas o en los que confíes."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:69
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:115
 msgid "**Exercise 1: Importing masks from another segmentation tool**"
 msgstr ""
 "**Ejercicio 1: Importar máscaras desde otra herramienta de segmentación**"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:71
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:117
 msgid ""
 "In this exercise, we will be loading in *label masks* (sometimes also called"
 " *label matrices*) made in Cellpose. Simply, a label mask is an image in "
@@ -316,20 +420,19 @@ msgid ""
 "is a commonly used format by many tools that do object segmentation (though "
 "unsuitable for applications where you have overlapping objects). Since many "
 "tools (including CellProfiler) can make these masks, CellProfiler has the "
-"ability to read them in and automatically detect them as objects."
+"ability to read them in and automatically detect the objects in them."
 msgstr ""
-"En este ejercicio, cargaremos *máscaras etiquetadas* o *label masks* (a "
-"veces también llamadas *matrices de etiquetas*, *label matrices*) generadas "
-"en Cellpose. Brevemente, una máscara marca es una imagen en la que todos los"
-" píxeles del fondo tienen un valor de 0, todos los píxeles del objeto 1 "
-"tienen un valor de 1, todos los píxeles del objeto 2 tener un valor de 2, "
-"etc. Es un formato comúnmente utilizado por muchas herramientas que realizan"
-" segmentación de objetos (aunque no es adecuado para aplicaciones donde hay "
-"objetos superpuestos). Dado que muchas herramientas (incluida CellProfiler) "
-"pueden crear estas máscaras, CellProfiler tiene la capacidad de leerlas y "
-"detectarlas automáticamente como objetos."
+"En este ejercicio, cargaremos máscaras marca (a veces también llamadas "
+"matrices marca) creadas en Cellpose. En resumen, una máscara marca es una "
+"imagen en la que todos los píxeles de fondo tienen un valor de 0, todos los "
+"píxeles del objeto 1 tienen un valor de 1, todos los píxeles del objeto 2 "
+"tienen un valor de 2, etc. Es un formato común en muchas herramientas de "
+"segmentación de objetos (aunque no es adecuado para aplicaciones con objetos"
+" superpuestos). Dado que muchas herramientas (incluido CellProfiler) pueden "
+"crear estas máscaras, CellProfiler tiene la capacidad de leerlas y detectar "
+"automáticamente los objetos que contienen."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:73
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:122
 msgid ""
 "We've used Cellpose 2.2.2 to generate nuclear masks from the DNA images and "
 "cell masks from the ActinGolgi images."
@@ -338,11 +441,11 @@ msgstr ""
 "las imágenes del canal de ADN y máscaras de células a partir del canal "
 "ActinGolgi."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:75
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:124
 msgid "Only if you are curious - how did we make these label masks?"
 msgstr "Solo si tienes curiosidad: ¿cómo hicimos estas máscaras etiquetadas?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:76
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:126
 msgid ""
 "Cellpose was installed in a conda environment according to the [official "
 "instructions](https://github.com/MouseLand/cellpose?tab=readme-ov-"
@@ -354,7 +457,7 @@ msgstr ""
 "file#installation) para la instalación con la interfaz gráfica (GUI). El "
 "software se inició en ese entorno conda usando el comando \"cellpose\"."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:78
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:129
 msgid ""
 "Nuclear masks were made by dragging each DNA image into the GUI, selecting "
 "the 'nuclei' model with default settings, and then saving them individually "
@@ -368,11 +471,11 @@ msgstr ""
 "(Mac) *Ctl+N* (Windows). Como solo había 10 imágenes y las teclas de acceso "
 "rápido estaban disponibles, esto no llevó demasiado tiempo."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:84
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:135
 msgid "Nuclei segmented in the Cellpose GUI"
 msgstr "Núcleos segmentados en la interfaz gráfica de Cellpose"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:87
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:138
 msgid ""
 "Cell masks were made by navigating into the image folder and then running "
 "the command below; this requires some knowledge of the [Cellpose command "
@@ -385,7 +488,7 @@ msgstr ""
 "Cellpose](https://cellpose.readthedocs.io/en/latest/cli.html) pero es mucho "
 "más fácil para procesar una gran cantidad de imágenes."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:89
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:140
 msgid ""
 "`python -m cellpose --dir . --img_filter Ch4 --pretrained_model cyto2 "
 "--diameter 40 --save_png --verbose`"
@@ -393,15 +496,15 @@ msgstr ""
 "`python -m pose celular --dir . --img_filter Ch4 --pretrained_model cyto2 "
 "--diameter 40 --save_png --verbose`"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:95
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:146
 msgid "Command line execution of Cellpose"
 msgstr "Ejecución de Cellpose desde la línea de comando"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:98
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:149
 msgid "Loading the label masks into CellProfiler"
 msgstr "Cargando las máscaras etiquetadas en CellProfiler"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:100
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:151
 msgid ""
 "Open up a clean copy of CellProfiler (or run File -> New Project) and drag "
 "`bonus_1_import_masks.cppipe` into the pipeline panel."
@@ -409,7 +512,7 @@ msgstr ""
 "Abre una copia limpia de CellProfiler (o ejecuta File -> New Project) y "
 "arrastra `bonus_1_import_masks.cppipe` al panel de flujo de trabajo."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:101
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:152
 msgid ""
 "Drag the `images_Illum-corrected` subfolder from the main Beginner "
 "Segmentation exercise and also the `cellpose_masks_cells` subfolder from "
@@ -420,49 +523,76 @@ msgstr ""
 "`cellpose_masks_cells` de este ejercicio. **No arrastres a la carpeta "
 "`cellpose_masks_nuclei`.**"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:102
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid ""
 "Put CellProfiler into TestMode <img "
-"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, open the eye "
-"icon <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> next to "
-"OverlayOutlines, and then hit <img src=\"./TutorialImages/Step.png\" "
-"width=\"120\"/> 3 times to create a classical segmentation and compare it "
-"with the Cellpose-generated version. You can check the settings in the "
+"src=\"./TutorialImages/startTestMode.png\" width=\"120\" alt=\"Start Test "
+"Mode Button\"/>, open the eye icon <img src=\"./TutorialImages/EyeOpen.png\""
+" width=\"20\" alt=\"Eye Icon\"/> next to OverlayOutlines, and then hit the "
+"step button <img src=\"./TutorialImages/Step.png\" width=\"120\" alt=\"Step "
+"Button\"/> 3 times to create a classical segmentation and compare it with "
+"the Cellpose-generated version. You can check the settings in the "
 "OverlayOutlines module to see which outline color corresponds to which "
 "segmentation in the output."
 msgstr ""
-"Coloca CellProfiler en Modo de Prueba (TestMode) <img "
-"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, abre el ícono "
-"del ojo <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> junto a "
-"OverlayOutlines y luego presiona  <img src=\"./TutorialImages/Step.png\" "
-"width=\"120\"/> 3 veces para crear una segmentación clásica y compararla con"
-" la versión generada por Cellpose. Puedes verificar la configuración en el "
-"módulo OverlayOutlines para ver qué color de contorno corresponde a qué "
-"segmentación en la salida."
+"Ponga CellProfiler en modo de prueba <img "
+"src=\"./TutorialImages/startTestMode.png\" width=\"120\" alt=\"Start Test "
+"Mode Button\"/>, abra el icono del ojo <img "
+"src=\"./TutorialImages/EyeOpen.png\" width=\"20\" alt=\"Eye Icon\"/> junto a"
+" OverlayOutlines y, a continuación, pulse el botón de paso <img "
+"src=\"./TutorialImages/Step.png\" width=\"120\" alt=\"Step Button\"/> tres "
+"veces para crear una segmentación clásica y compararla con la versión "
+"generada por Cellpose. Puede consultar la configuración en el módulo "
+"OverlayOutlines para ver qué color de contorno corresponde a cada "
+"segmentación en el resultado."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:103
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
+msgid "Start Test Mode Button"
+msgstr "Botón de inicio del modo de prueba"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
+msgid "Eye Icon"
+msgstr "Icono de ojo"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
+msgid "Step Button"
+msgstr "Botón de paso"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:154
 msgid ""
-"Optionally, open the Workspace Viewer using <img "
-"src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\"/> to create easily "
-"on-the-fly customizable overlays."
+"Optionally, open the Workspace Viewer using the View Workspace button <img "
+"src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\" alt=\"View "
+"Workspace Button\"/> to create easily on-the-fly customizable overlays."
 msgstr ""
-"Opcionalmente, abre el Visor de Espacio de Trabajo (Workspace Viewer) usando"
-" <img src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\"/> para crear "
-"superposiciones fácilmente personalizables sobre la marcha."
+"Opcionalmente, abra el Visor del espacio de trabajo usando el botón Ver "
+"espacio de trabajo <img src=\"./TutorialImages/ViewWorkspace.png\" "
+"width=\"120\" alt=\"View Workspace Button\"/> para crear fácilmente "
+"superposiciones personalizables sobre la marcha."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:104
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:154
+msgid "View Workspace Button"
+msgstr "Botón Ver espacio de trabajo"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:155
 msgid ""
-"Hit <img src=\"./TutorialImages/NextImageSet.png\" width=\"120\"/> and "
-"repeat a couple of times to examine the segmentations on more images."
+"Hit the Next Image Set button<img src=\"./TutorialImages/NextImageSet.png\" "
+"width=\"120\" alt=\"Next Image Set button\"/> and repeat a couple of times "
+"to examine the segmentations on more images."
 msgstr ""
-"Presiona <img src=\"./TutorialImages/NextImageSet.png\" width=\"120\"/> y "
-"repite un par de veces para examinar las segmentaciones en más imágenes."
+"Presione el botón Siguiente conjunto de imágenes<img "
+"src=\"./TutorialImages/NextImageSet.png\" width=\"120\" alt=\"Next Image Set"
+" button\"/> y repita un par de veces para examinar las segmentaciones en más"
+" imágenes."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:106
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:155
+msgid "Next Image Set button"
+msgstr "Botón Siguiente conjunto de imágenes"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:157
 msgid "Question for you"
 msgstr "Una pregunta para ti"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:107
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:158
 msgid ""
 "Are there cases where you think classical segmentation typically performs "
 "better? Where Cellpose performs better?"
@@ -470,19 +600,19 @@ msgstr ""
 "¿Hay casos en los que crees que la segmentación clásica suele funcionar "
 "mejor? ¿Dónde funciona mejor Cellpose?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:114
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:165
 msgid "Visualization of images and objects in the Workspace Viewer"
 msgstr "Visualización de imágenes y objetos en el Workspace Viewer."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:116
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:168
 msgid "Reverse engineer how this worked"
 msgstr "Haz ingeniería reversa cómo funcionó esto"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:117
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:170
 msgid "Open the NamesAndTypes module."
 msgstr "Abre el módulo NamesAndTypes."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:118
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:171
 msgid ""
 "Scroll down in NamesAndTypes to find the entry that adds the masks - is "
 "there any setting you notice about it that is different than for the other "
@@ -492,7 +622,7 @@ msgstr ""
 " las máscaras. ¿Observas alguna configuración que sea diferente a la de las "
 "otras imágenes?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:119
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:172
 msgid ""
 "Find the entry in NamesAndTypes that has 2 rules the image has to pass, not "
 "just one - do you understand why that is?"
@@ -500,13 +630,13 @@ msgstr ""
 "Busca la entrada en NamesAndTypes que tiene 2 reglas que la imagen debe "
 "pasar, no solo una. ¿Entiendes por qué?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:121
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:174
 msgid "Bonus-to-the-Bonus - add the provided nuclear segmentations as well"
 msgstr ""
 "Para créditos extra: agrega tembién las segmentaciones nucleares "
 "proporcionadas."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:122
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:176
 msgid ""
 "Drag and drop the `cellpose_masks_nuclei` folder in the Images module to add"
 " the nuclear masks to the image list."
@@ -514,7 +644,7 @@ msgstr ""
 "Arrastra y suelta la carpeta `cellpose_masks_nuclei` en el módulo Images "
 "para agregar las máscaras nucleares a la lista de imágenes."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:123
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:177
 msgid ""
 "Go to the NamesAndTypes module and configure it so both kinds of masks can "
 "be loaded (hint: there's a duplicate button you can use to make a second "
@@ -524,7 +654,7 @@ msgstr ""
 "tipos de máscaras (pista: hay un botón *Duplicate* que puedes usar para "
 "hacer una segunda copia de un canal)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:124
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:179
 msgid ""
 "You'll probably have to modify the existing settings for loading the cell "
 "masks by changing its rule or adding a second rule. Do you understand "
@@ -534,28 +664,29 @@ msgstr ""
 "las máscaras celulares cambiando su regla o agregando una segunda regla. "
 "¿Entiendes cómo/por qué?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:126
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:181
 msgid "**Exercise 2: Running ilastik locally or from a Docker container**"
 msgstr ""
 "**Ejercicio 2: Ejecutar ilastik localmente o desde un contenedor Docker**"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:128
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:183
 msgid ""
 "Classical segmentation requires the thing you care about in an image be "
 "bright and every single other pixel dark(er). If you have a good clean "
 "fluorescent signal for the thing you care about, great! If not, you may need"
-" to resort to some tricks."
+" to resort to some tricks, or use another tool such as a pixel classifier."
 msgstr ""
-"La segmentación clásica requiere que lo que nos interesa en una imagen sea "
-"brillante y que todos los demás píxeles sean (más) oscuros. Si tienes una "
-"buena señal fluorescente para lo que te importa, ¡genial! Si no es así, es "
-"posible que tengas que recurrir a algunos trucos."
+"La segmentación clásica requiere que el elemento que te interesa en una "
+"imagen sea brillante y que todos los demás píxeles sean más oscuros. Si "
+"tienes una señal fluorescente clara y nítida para el elemento que te "
+"interesa, ¡genial! Si no, quizás tengas que recurrir a algunos trucos o usar"
+" otra herramienta, como un clasificador de píxeles."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:130
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:187
 msgid ""
-"One such trick is to train a classifier on a pixel-by-pixel basis to say "
+"A pixel classifier is a classifier trained on a pixel-by-pixel basis to say "
 "\"here is what I think is the likelihood that this is a pixel you want to "
-"end up in your segmentation\"; this classifier then ends up creating for "
+"end up in your segmentation\". This classifier then ends up creating for "
 "each  pixel a *probability value* that corresponds to how likely it thinks "
 "it is you want to segment that pixel. If your classifier is good, that will "
 "give you an image where the pixels you care about are high-probability "
@@ -564,44 +695,42 @@ msgid ""
 "computer scientists will sometimes refer to it as **\"Semantic "
 "Segmentation\"**."
 msgstr ""
-"Uno de esos trucos consiste en entrenar un clasificador píxel por píxel para"
-" que diga \"esta es la probabilidad que estimo de que este sea un píxel que "
-"deseas que termine incluido en tu segmentación\"; luego, este clasificador "
-"termina creando para cada píxel un *valor de probabilidad* que corresponde a"
-" la probabilidad de que desee segmentar ese píxel. Si tu clasificador es "
-"bueno, obtendrás una imagen en la que los píxeles que te interesan tienen "
-"una alta probabilidad (brillantes) y el resto tienen una baja probabilidad "
-"(oscuros). ¡Eso es exactamente lo que queremos! Los científicos biológicos "
-"tienden a llamar a esto **\"Clasificación de píxeles\"**; Los informáticos a"
-" veces se refieren a ella como **\"Segmentación semántica\"**."
+"Un clasificador de píxeles se entrena píxel por píxel para indicar: \"Esta "
+"es la probabilidad que creo que tiene este píxel en tu segmentación\". Este "
+"clasificador crea para cada píxel un *valor de probabilidad* que corresponde"
+" a la probabilidad de segmentarlo. Si tu clasificador es bueno, obtendrás "
+"una imagen donde los píxeles que te interesan tienen alta probabilidad "
+"(brillantes) y el resto tiene baja probabilidad (oscuros). ¡Eso es justo lo "
+"que buscamos! Los biólogos suelen llamar a esto **\"Clasificación de "
+"Píxeles\"**; los informáticos a veces lo llaman **\"Segmentación "
+"Semántica\"**."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:132
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:193
 msgid ""
-"There are a few popular Fiji plugins for doing this, including Weka "
-"Trainable Segmentation and Labkit, and you should absolutely use them if "
-"they work better for you! We tend to use ilastik, because it makes it easy "
-"to automate creating a classifier from a very small number of images and "
-"then bulk-applying it to many others in \"Batch Processing\" mode. You can "
-"check out a tutorial we have written for running ilastik, and *then* "
-"CellProfiler at "
-"[tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (look for "
-"Pixel-based Classification)."
+"We like to use ilastik for pixel classification because it makes it easy to "
+"automate creating a classifier from a very small number of images and then "
+"bulk-applying it to many others in \"Batch Processing\" mode. You can check "
+"out a tutorial we have written for running ilastik, and *then* CellProfiler "
+"at [tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (look "
+"for Pixel-based Classification). Fiji has a few popular plugins for pixel "
+"classification, including Weka Trainable Segmentation and Labkit, and you "
+"should absolutely use them if they work better for you!"
 msgstr ""
-"Hay algunos complementos populares de Fiji para hacer esto, incluidos Weka "
-"Trainable Segmentation y Labkit, ¡y definitivamente deberías usarlos si "
-"funcionan mejor para ti! Solemos usar ilastik porque facilita la "
-"automatización de la creación de clasificadores a partir de una cantidad muy"
-" pequeña de imágenes y luego su aplicación masiva a muchas otras en el modo "
-"\"Batch Processing\" o \"Procesamiento en Lotes\". Puedes consultar un "
-"tutorial que hemos escrito para ejecutar ilastik y *luego* CellProfiler en "
+"Nos gusta usar ilastik para la clasificación de píxeles porque facilita la "
+"automatización de la creación de un clasificador a partir de un número muy "
+"reducido de imágenes y su posterior aplicación masiva a muchas otras en modo"
+" de procesamiento por lotes. Puedes consultar un tutorial que hemos escrito "
+"para ejecutar ilastik y, posteriormente, CellProfiler en "
 "[tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (busca "
-"\"Clasificación basada en píxeles\")."
+"\"Clasificación basada en píxeles\"). Fiji cuenta con algunos plugins "
+"populares para la clasificación de píxeles, como Weka Trainable Segmentation"
+" y Labkit, y sin duda deberías usarlos si te funcionan mejor."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:138
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:201
 msgid "ilastik's Batch Processing mode"
 msgstr "Modo de procesamiento en lotes de ilastik"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:141
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:204
 msgid ""
 "Why do two steps though, when you can do one instead? In this tutorial we'll"
 " take a pre-trained ilastik classifer and run it inside our CellProfiler "
@@ -612,20 +741,21 @@ msgstr ""
 "dentro de nuestro pipeline de CellProfiler, para poder encontrar y medir "
 "objetos, todo en un solo paso."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:143
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:206
 msgid ""
-"You will need either ilastik or Docker Desktop installed on your computer "
-"for this exercise. If ilastik, make sure it is CLOSED, if Docker Desktop, "
-"make sure it is OPEN. We recommend installing ilastik because it is a good "
-"and helpful tool, and will allow you to do this exercise's bonus challenge."
+"You will need either ilastik or Docker Desktop (or Podman Desktop) installed"
+" on your computer for this exercise. If using ilastik, make sure it is "
+"CLOSED. If using Docker Desktop (or Podman Desktop), make sure it is OPEN. "
+"We recommend installing ilastik because it is a good and helpful tool and "
+"will allow you to do this exercise's bonus challenge."
 msgstr ""
-"Necesitarás ilastik o Docker Desktop instalado en tu computadora para este "
-"ejercicio. Si usas ilastik, asegúrate de que esté CERRADO, si es Docker "
-"Desktop, asegúrate de que esté ABIERTO al momento de ejecutar el pipeline. "
-"Recomendamos instalar ilastik porque es una herramienta buena y útil y te "
+"Necesitará tener ilastik o Docker Desktop (o Podman Desktop) instalado en su"
+" computadora para este ejercicio. Si usa ilastik, asegúrese de que esté "
+"CERRADO. Si usa Docker Desktop (o Podman Desktop), asegúrese de que esté "
+"ABIERTO. Recomendamos instalar ilastik, ya que es una herramienta útil y le "
 "permitirá realizar el desafío adicional de este ejercicio."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:146
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:212
 msgid ""
 "If you are on Windows, execute RunIlastik in Local mode (working on an "
 "installed copy of ilastik, rather than a copy inside a Docker file), this "
@@ -644,67 +774,76 @@ msgstr ""
 " que deseas ejecutar más adelante, aún puede usar ilastik en un proceso de "
 "dos pasos y/o usar ilastik Dockerizado."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:149
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:215
 msgid "Only if you are curious - how did we train the classifier?"
 msgstr "Sólo si tienes curiosidad: ¿cómo entrenamos al clasificador?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:151
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:217
 msgid ""
 "This classifer was made in ilastik 1.4.1b5 by training on 4 images "
 "(A14_site1, E18_site1, D16_site1, and C12_site1) in which we labeled just "
 "two classes: one class for nucleoli (yellow in the figure below), and one "
-"class for every other part of the image (blue in the imagebelow). One COULD "
-"have made more classes, but this, in practice, worked."
+"class for every other part of the image (blue in the imag ebelow). One COULD"
+" have made more classes, but this worked for our purposes."
 msgstr ""
-"Este clasificador se creó en ilastik 1.4.1b5 entrenando en 4 imágenes "
-"(A14_site1, E18_site1, D16_site1 y C12_site1) en las que etiquetamos solo "
-"dos clases: una clase para nucléolos (amarilla en la figura siguiente) y una"
-" clase para el resto de la imagen (azul en la imagen de abajo). PODRÍAMOS "
-"haber hecho más clases, cierto, pero esta manera funciona bien para nuestro "
-"objetivo."
+"Este clasificador se creó en ilastik 1.4.1b5 mediante entrenamiento con 4 "
+"imágenes (A14_sitio1, E18_sitio1, D16_sitio1 y C12_sitio1), en las que "
+"etiquetamos solo dos clases: una para los nucléolos (en amarillo en la "
+"figura inferior) y otra para cada parte de la imagen (en azul en la imagen "
+"inferior). Se podrían haber creado más clases, pero esto funcionó para "
+"nuestros propósitos."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:157
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:224
 msgid "Screenshot of this ilastik classifer"
 msgstr "Captura de pantalla de nuestro clasificador de Ilastik."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:160
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:227
 msgid ""
 "When using ilastik for fluorescence microscopy, you will likely get the best"
 " performance if you **keep your annotations extremely minimal** - the "
 "classifier you're going to use was trained by using 31 total pixels of "
 "annotation across the 4 images (13 pixels of annotation inside nucleoli, and"
-" 18 pixels outside of them); no image had more than 14 pixels annotated in "
+" 18 pixels outside of them). No image had more than 14 pixels annotated in "
 "total. We strongly suggest you make your classifiers one pixel at a time, "
 "doing point annotations! Resist the urge to draw squiggly lines all over the"
-" image! This feels counterintuitive but we promise it's true."
+" image! This feels counterintuitive but we promise it's true. Learn more "
+"about using ilastik in the Ask Erin, Dear Beth video podcast [Intro to Pixel"
+" Classification in ilastik - Episode 11](https://youtu.be/XwjZpAHZ9SM) and "
+"[How to Train a Pixel Classifier - Episode "
+"13](https://youtu.be/0cLZVKUJGNw)."
 msgstr ""
-"Cuando utilices ilastik para microscopía de fluorescencia, probablemente "
-"obtendrás el mejor rendimiento si **mantienes tus anotaciones al mínimo**: "
-"el clasificador que va a utilizar se entrenó utilizando un total de 31 "
-"píxeles de anotaciones en las 4 imágenes (13 píxeles de anotación dentro de "
-"los nucléolos, y 18 píxeles fuera de ellos); ninguna imagen tenía más de 14 "
-"píxeles anotados en total. Te recomendamos encarecidamente que crees tus "
-"clasificadores un píxel a la vez, haciendo anotaciones puntuales. ¡Resiste "
+"Al usar ilastik para microscopía de fluorescencia, probablemente obtendrá el"
+" mejor rendimiento si **mantiene sus anotaciones extremadamente mínimas**: "
+"el clasificador que va a usar se entrenó utilizando 31 píxeles totales de "
+"anotación en las 4 imágenes (13 píxeles de anotación dentro de los nucléolos"
+" y 18 píxeles fuera de ellos). Ninguna imagen tenía más de 14 píxeles "
+"anotados en total. ¡Le recomendamos encarecidamente que haga sus "
+"clasificadores un píxel a la vez, haciendo anotaciones de puntos! ¡Resista "
 "la tentación de dibujar líneas onduladas por toda la imagen! Esto parece "
-"contradictorio, pero prometemos que es cierto."
+"contradictorio, pero le prometemos que es cierto. Obtenga más información "
+"sobre el uso de ilastik en el podcast de video Ask Erin, Dear Beth "
+"[Introducción a la clasificación de píxeles en ilastik - Episodio "
+"11](https://youtu.be/XwjZpAHZ9SM) y [Cómo entrenar un clasificador de "
+"píxeles - Episodio 13](https://youtu.be/0cLZVKUJGNw)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:162
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:234
 msgid "Grab the Runilastik plugin"
 msgstr "Habilitar el complemento Runilastik"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:163
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:236
 msgid ""
-"Download [the plugin](https://github.com/CellProfiler/CellProfiler-"
+"Download [the Runilastik "
+"plugin](https://github.com/CellProfiler/CellProfiler-"
 "plugins/blob/master/active_plugins/runilastik.py) into a folder on your "
 "local computer. As stated above, we strongly suggest a folder that contains "
 "ONLY plugins."
 msgstr ""
-"Descarga [el complemento](https://github.com/CellProfiler/CellProfiler-"
-"plugins/blob/master/active_plugins/runilastik.py) en una carpeta en tu "
-"computadora local. Como se indicó anteriormente, recomendamos fuertemente "
-"que lo guardes una carpeta que contenga SÓLO complementos."
+"Descarga el plugin Runilastik (https://github.com/CellProfiler/CellProfiler-"
+"plugins/blob/master/active_plugins/runilastik.py) en una carpeta de tu "
+"ordenador. Como se mencionó anteriormente, te recomendamos usar una carpeta "
+"que contenga únicamente plugins."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:164
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:238
 msgid ""
 "In CellProfiler's File -> Preferences menu (CellProfiler -> Preferences in "
 "Mac), set the `CellProfiler plugins directory` to the folder containing the "
@@ -715,20 +854,35 @@ msgstr ""
 "CellProfiler` (`CellProfiler Plugins Directory`) en la carpeta que contiene "
 "el complemento."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:165
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:223
-msgid "Close and reopen CellProfiler to load the plugin."
-msgstr "Cierra y vuelve a abrir CellProfiler para cargar el complemento."
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:239
+msgid "Close and reopen CellProfiler in order to be able to load the plugin."
+msgstr ""
+"Cierre y vuelva a abrir CellProfiler para poder cargar el complemento."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:167
-msgid "Load the classifier and evaluate it"
-msgstr "Cargar el clasificador y evaluarlo."
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:241
+msgid "Load the Classifier"
+msgstr "Cargar el clasificador"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:168
-msgid "Drag `bonus_2_ilastik.cppipe` into the pipeline panel."
-msgstr "Arrastra el archivo `bonus_2_ilastik.cppipe` al panel de pipeline."
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:244
+msgid ""
+"If using Docker, the very first time you execute the Runilastik module, it "
+"will need to download a ~5GB file, which may be slow depending on your "
+"internet connection (unless you downloaded it in preparation as we suggest "
+"above). You only need to do this step once, however!"
+msgstr ""
+"Si usa Docker, la primera vez que ejecute el módulo Runilastik, deberá "
+"descargar un archivo de aproximadamente 5 GB, lo cual puede ser lento "
+"dependiendo de su conexión a internet (a menos que lo haya descargado como "
+"preparación, como sugerimos anteriormente). Sin embargo, ¡solo necesita "
+"realizar este paso una vez!"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:169
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:248
+msgid ""
+"Drag `bonus_2_ilastik.cppipe` into the pipeline panel to load the pipeline."
+msgstr ""
+"Arrastre `bonus_2_ilastik.cppipe` al panel pipeline para cargar pipeline."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:249
 msgid ""
 "Drag the `images_Illum-corrected` subfolder from the main exercise into the "
 "Images panel."
@@ -736,123 +890,151 @@ msgstr ""
 "Arrastra la subcarpeta `images_Illum-corrected` desde el ejercicio principal"
 " al panel Imágenes."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:170
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:250
 msgid ""
 "Open the RunIlastik module, set the path to your project file "
-"(`NucleoliDetection.ilp`) and then also:"
+"(`NucleoliDetection.ilp`)."
 msgstr ""
-"Abre el módulo RunIlastik, establece la ruta a su archivo de proyecto "
-"(`NucleoliDetection.ilp`) y luego también:"
+"Abra el módulo RunIlastik, establezca la ruta a su archivo de proyecto "
+"(`NucleoliDetection.ilp`)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:171
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:251
 msgid ""
-"ilastik-installed (recommended): set the path to your local installation of "
-"ilastik."
+"If you have ilastik installed on your machine you can set the path to your "
+"local installation of ilastik. Otherwise, change \"Runilatik in a "
+"container\" to \"Docker\"."
 msgstr ""
-"ilastik-instalado (recomendado): establece la ruta a tu instalación local de"
-" ilastik."
+"Si tiene ilastik instalado en su equipo, puede configurar la ruta a su "
+"instalación local. De lo contrario, cambie \"Runilatik en un contenedor\" a "
+"\"Docker\"."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:172
-msgid "Docker-installed: change the top setting from Local to Docker."
-msgstr ""
-"Instalado en Docker: cambie la configuración superior de Local a Docker."
-
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:174
-msgid ""
-"Put CellProfiler into TestMode <img "
-"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, open the eye "
-"icons <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> next to "
-"Runilastik and OverlayOutlines, and then hit <img "
-"src=\"./TutorialImages/Run.png\" width=\"120\"/>. You can check the settings"
-" in the OverlayOutlines module to see which outline color corresponds to "
-"which segmentation in the output."
-msgstr ""
-"Coloca CellProfiler en Modo de Prueba (TestMode) <img "
-"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, abre los íconos "
-"de ojo <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> junto a "
-"`Runilastik` y `OverlayOutlines`, y luego presiona <img "
-"src=\"./TutorialImages/Run.png\" width=\"120\"/>. Puedes verificar la "
-"configuración en el módulo `OverlayOutlines` para ver qué color de contorno "
-"corresponde a qué segmentación en la salida."
-
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:175
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
 msgid ""
 "You may wish to put a pause <img src=\"./TutorialImages/Pause.png\" "
-"width=\"50\"/> next to SaveImages, or uncheck it <img "
-"src=\"./TutorialImages/InactivatedModule.png\" width=\"50\"/>, to keep it "
-"from saving images, but that's up to you."
+"width=\"20\" alt=\"Pause\"/> next to SaveImages, or uncheck it <img "
+"src=\"./TutorialImages/InactivatedModule.png\" width=\"20\" "
+"alt=\"Unchecked\"/>, to keep it from saving images while you are exploring "
+"this pipeline."
 msgstr ""
-"Si lo deseas, puedes poner una pausa <img src=\"./TutorialImages/Pause.png\""
-" width=\"50\"/> junto a `SaveImages`, o desmarcarlo <img "
-"src=\"./TutorialImages/InactivatedModule.png\" width=\"50\"/>, para evitar "
-"que guarde imágenes."
+"Es posible que desees poner una pausa <img "
+"src=\"./TutorialImages/Pause.png\" width=\"20\" alt=\"Pause\"/> junto a "
+"SaveImages, o desmarcarla <img "
+"src=\"./TutorialImages/InactivatedModule.png\" width=\"20\" "
+"alt=\"Unchecked\"/>, para evitar que guarde imágenes mientras exploras este "
+"pipeline."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:178
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
+msgid "Unchecked"
+msgstr "Desenfrenado"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 msgid ""
-"If using Docker, the very first time you execute the Runilastik module, it "
-"will need to download a ~5GB file, which may be slow depending on your "
-"internet connection. You only need to do this step once, however!"
+"Put CellProfiler into TestMode by pressing the Start Test Mode button <img "
+"src=\"./TutorialImages/startTestMode.png\" width=\"120\" alt=\"Start Test "
+"Mode\"/>, open the eye icons <img src=\"./TutorialImages/EyeOpen.png\" "
+"width=\"20\" alt=\"Eye Open icon\"/> next to Runilastik and OverlayOutlines,"
+" and then hit the Run button <img src=\"./TutorialImages/Run.png\" "
+"width=\"120\" alt=\"Run\"/>. You can check the settings in the "
+"OverlayOutlines module to see which outline color corresponds to which "
+"segmentation in the output."
 msgstr ""
-"Si usas Docker, la primera vez que ejecutes el módulo `Runilastik`, deberás "
-"descargar un archivo de ~5 GB, que puede ser lento dependiendo de tu "
-"conexión a Internet. ¡Sin embargo, solo necesitas realizar este paso una "
-"vez!"
+"Active CellProfiler en modo de prueba pulsando el botón Iniciar modo de "
+"prueba <img src=\"./TutorialImages/startTestMode.png\" width=\"120\" "
+"alt=\"Start Test Mode\"/>, abra los iconos de ojo <img "
+"src=\"./TutorialImages/EyeOpen.png\" width=\"20\" alt=\"Eye Open icon\"/> "
+"junto a Runilastik y OverlayOutlines, y luego pulse el botón Ejecutar <img "
+"src=\"./TutorialImages/Run.png\" width=\"120\" alt=\"Run\"/>. Puede "
+"consultar la configuración en el módulo OverlayOutlines para ver qué color "
+"de contorno corresponde a cada segmentación en la salida."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:181
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
+msgid "Start Test Mode"
+msgstr "Iniciar modo de prueba"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
+msgid "Eye Open icon"
+msgstr "Icono de ojo abierto"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
+msgid "Run"
+msgstr "Correr"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:255
+msgid "Evaluate the Classifier"
+msgstr "Evaluar el clasificador"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:257
 msgid ""
-"Evaluate your prediction in Runilastik across a few image sets - how well "
-"does it perform? Does it perform worse on images it wasn't trained on?"
+"Evaluate your prediction in Runilastik across a few image sets using "
+"OverlayOutlines and/or the WorkspaceViewer"
 msgstr ""
-"Evalúa tu predicción en `Runilastik` a través de algunos conjuntos de "
-"imágenes: ¿cómo tan bien funciona? ¿Funciona peor en imágenes en las que no "
-"fue entrenado?"
+"Evalúe su predicción en Runilastik en algunos conjuntos de imágenes "
+"utilizando OverlayOutlines y/o WorkspaceViewer"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:187
-msgid "Screenshot of the Runilastik module"
-msgstr "Captura de pantalla del módulo `Runilastik`"
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:259
+msgid "How well does it perform?"
+msgstr "¿Cómo funciona pocillo?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:190
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:260
+msgid "Does it perform worse on images it wasn't trained on?"
+msgstr "¿Tiene un peor rendimiento en imágenes en las que no fue entrenado?"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:261
 msgid ""
-"Evaluate your segmentations across a few image sets using OverlayOutlines "
-"and/or the WorkspaceViewer - are there cases where you think the ilastik "
-"model-based segmentation performs better? The filtering-and-masking "
-"segmentation?"
+"Are there cases where you think the ilastik model-based segmentation "
+"performs better?"
 msgstr ""
-"Evalúa tus segmentaciones en algunos conjuntos de imágenes utilizando "
-"`OverlayOutlines` y/o la herramienta `WorkspaceViewer`. ¿Hay casos en los "
-"que crees que la segmentación basada en modelos de ilastik funciona mejor? "
-"¿Y la segmentación de filtrado y enmascaramiento?"
+"¿Hay casos en los que cree que la segmentación basada en el modelo ilastik "
+"funciona mejor?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:196
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:262
+msgid ""
+"Are there cases where you think the filtering-and-masking segmentation "
+"performs better?"
+msgstr ""
+"¿Hay casos en los que cree que la segmentación mediante filtrado y "
+"enmascaramiento funciona mejor?"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:275
 msgid "Evaluating segmentations in the Workspace Viewer"
 msgstr "Evaluación de segmentaciones en el `WorkspaceViewer`"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:200
-msgid "Bonus-to-the-Bonus - train your own ilastik model"
-msgstr "Bonus del bonus: entrena tu propio modelo en ilastik!"
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:278
+msgid "Bonus-to-the-Bonus - Train your own ilastik model"
+msgstr "Bono a bono: entrena tu propio modelo ilastik"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:202
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:280
 msgid ""
 "Based on your evaluations above, can you identify some places where "
-"additional training might help fix some issues in the ilastik model?"
+"additional training might help fix some issues in the ilastik model? (To do "
+"this, you will need ilastik downloaded on your computer.)"
 msgstr ""
-"Según tus evaluaciones anteriores, ¿puedes identificar algunos lugares donde"
-" entrenamiento adicional podría ayudar a solucionar algunos problemas en el "
-"modelo ilastik?"
+"Con base en sus evaluaciones anteriores, ¿podría identificar algunos "
+"aspectos donde una capacitación adicional podría ayudar a solucionar algunos"
+" problemas del modelo ilastik? (Para ello, necesitará tener ilastik "
+"descargado en su computadora)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:204
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:283
 msgid "Open `NucleoliDetection.ilp` in ilastik."
 msgstr "Abre el archivo `NucleoliDetection.ilp` en ilastik."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:205
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:284
 msgid "Navigate to the `Training` tab."
 msgstr "Ve a la pestaña \"Training\"."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:206
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:285
 msgid "Turn `LiveUpdate` on."
 msgstr "Activa \"Live Update\"."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:207
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:286
 msgid ""
 "Pick an image you think needed some help and add (a very small number of "
 "single-pixel) annotations. Did things get better or worse?"
@@ -861,7 +1043,7 @@ msgstr ""
 "cantidad muy pequeña de anoteciones de un solo píxel!). ¿Las cosas mejoraron"
 " o empeoraron?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:208
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:288
 msgid ""
 "Add some very large annotations (a long, squiggly line, for example) to one "
 "image, then switch images in order to prove to yourself large annotations "
@@ -874,7 +1056,7 @@ msgstr ""
 "lugar de ayudar (si deseas rescatar tu clasificador, regresa y usa la "
 "herramienta de borrador para eliminar estas anotaciones grandes!)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:209
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:289
 msgid ""
 "If you think you've sufficiently improved the prediction, save this model "
 "and return to CellProfiler. Did it help in the cases where you thought it "
@@ -884,40 +1066,35 @@ msgstr ""
 "modelo y regresa a CellProfiler. ¿Ayudó en los casos en los que pensabas que"
 " ayudaría?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:211
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:292
 msgid "**Exercise 3: Running Cellpose from a Docker container**"
 msgstr "**Ejercicio 3: Ejecutar Cellpose desde un contenedor Docker**"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:213
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:294
 msgid ""
 "RunCellpose is by far our most popular plugin, simply because a) Cellpose is"
 " awesome! and b) `conda` installing software when you aren't very "
 "computationally comfortable isn't. You can use the plugin in either of two "
 "modes - using a local `conda` or `python` installation that contains both "
-"CellProfiler and Cellpose, OR using Docker. The run time with Docker is "
-"substantially slower (about a minute more per image, in our testing), but if"
-" installation would take you a long time and be frustrating, in this sense "
-"you can \"trade\" your personal hands-on frustration time for time where "
-"CellProfiler is running on your computer (but you aren't there). For many "
-"people, this is a good trade!"
+"CellProfiler and Cellpose in the same environment, OR using Docker. The "
+"module is quite a bit slower running Cellpose in Docker but this is a "
+"worthwhile trade-off to the challenge and frustration of installation for "
+"many people!"
 msgstr ""
-"RunCellpose es, con mucho, nuestro complemento más popular, simplemente "
-"porque a) ¡Cellpose es genial! y b) instalar software usando `conda` cuando "
-"no te sientes muy cómodo usando la l[inea de comando, no lo es. Puede usar "
-"el complemento en de dos modos diferentes: usando una instalación local "
-"`conda` o `python` que contenga tanto CellProfiler como Cellpose o usando "
-"Docker. El tiempo de ejecución con Docker es sustancialmente más lento "
-"(alrededor de un minuto más por imagen, en nuestras pruebas), pero si la "
-"instalación te llevaría mucho tiempo y sería frustrante, en este sentido "
-"puedes \"intercambiar\" tu tiempo de frustración personal tiempo de "
-"ejecución de CellProfiler en tu computadora (mientras, tú puedes hacer otra "
-"cosa!). ¡Para muchas personas, este es un buen intercambio!"
+"RunCellpose es, sin duda, nuestro plugin más popular, simplemente porque a) "
+"Cellpose es genial y b) instalar software con `conda` cuando no se tiene "
+"mucha experiencia computacional no lo es. Se puede usar el plugin de dos "
+"maneras: con una instalación local de `conda` o `python` que contenga "
+"CellProfiler y Cellpose en el mismo entorno, o con Docker. El módulo es "
+"bastante más lento al ejecutar Cellpose en Docker, pero para muchos, es una "
+"buena compensación por el desafío y la frustración que supone la "
+"instalación."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:215
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:298
 msgid "Start Docker Desktop"
 msgstr "Iniciar el Docker Desktop"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:216
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:300
 msgid ""
 "If you have not already installed Docker Desktop from the link above, please"
 " do so! This may involve rebooting your computer."
@@ -925,42 +1102,40 @@ msgstr ""
 "Si aún no has instalado Docker Desktop desde el enlace anterior, ¡hazlo "
 "ahora! Esto puede implicar reiniciar tu computadora."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:217
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:301
 msgid "Start Docker Desktop."
 msgstr "Inicia Docker Desktop."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:218
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:302
 msgid ""
 "Optional but strongly recommended - once Docker Desktop opens, use the "
-"search functionality to search `Cellpose` and look for the "
-"`cellprofiler/runcellpose_with_pretrained` model and pull it. If for "
-"whatever reason this isn't working, move on, but it will save you some time "
-"later."
+"search functionality to search `Cellpose` and look for a "
+"`cellprofiler/runcellpose_with_pretrained` model and pull it (if you have "
+"not already done so). If for whatever reason this isn't working, move on, "
+"but it will save you some time later."
 msgstr ""
-"Opcional pero muy recomendable: una vez que se abra Docker Desktop, usa la "
-"función de búsqueda para buscar `Cellpose` y busca el modelo "
-"`cellprofiler/runcellpose_with_pretrained` y extráelo. Si por alguna razón "
-"esto no funciona, sigue adelante con el ejercicio, pero est te ahorrará "
+"Opcional, pero muy recomendable: una vez abierto Docker Desktop, usa la "
+"función de búsqueda para buscar \"Cellpose\" y encontrar un modelo "
+"\"cellprofiler/runcellpose_with_pretrained\" y obténlo (si aún no lo has "
+"hecho). Si por alguna razón esto no funciona, continúa, pero te ahorrará "
 "tiempo más adelante."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:220
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:305
 msgid "Grab the RunCellpose plugin"
 msgstr "Toma el complemento `RunCellpose`"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:221
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:307
 msgid ""
 "Download [the plugin](https://github.com/CellProfiler/CellProfiler-"
-"plugins/blob/11b46ee7f6eb78f97f784a731c5a1931b66c90d4/active_plugins/runcellpose.py)"
-" into a folder on your local computer. As stated above, we strongly suggest "
-"a folder that contains ONLY plugins."
+"plugins/blob/master/active_plugins/runcellpose.py) into a folder on your "
+"local computer. As stated above, we strongly suggest a folder that contains "
+"ONLY plugins."
 msgstr ""
-"Descarga [el complemento](https://github.com/CellProfiler/CellProfiler-"
-"plugins/blob/11b46ee7f6eb78f97f784a731c5a1931b66c90d4/active_plugins/runcellpose.py)"
-" en una carpeta en tu computadora. Como se indicó anteriormente, "
-"recomendamos fuertemente guardarlo una carpeta que contenga SÓLO "
-"complementos."
+"Descarga el plugin en una carpeta de tu ordenador. Como se mencionó "
+"anteriormente, te recomendamos usar una carpeta que contenga únicamente "
+"plugins."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:222
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:308
 msgid ""
 "In CellProfiler's File -> Preferences menu, set the `CellProfiler plugins "
 "directory` to the folder containing the plugin."
@@ -969,15 +1144,33 @@ msgstr ""
 "Complementos de CellProfiler (CellProfiler plugins directory) en la carpeta "
 "que contiene el complemento."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:225
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:309
+msgid "Close and reopen CellProfiler to load the plugin."
+msgstr "Cierra y vuelve a abrir CellProfiler para cargar el complemento."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:311
 msgid "Load the pipeline and evaluate segmentation"
 msgstr "Carga pipeline y evalúa la segmentación"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:226
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:314
+msgid ""
+"If using Docker, the very first time you execute the RunCellpose module, it "
+"will need to download a ~5GB-10GB file (depending on the verison of "
+"Cellpose), which may be slow depending on your internet connection (unless "
+"you downloaded it in preparation as we suggest above). You only need to do "
+"this step once, however!"
+msgstr ""
+"Si usa Docker, la primera vez que ejecute el módulo RunCellpose, deberá "
+"descargar un archivo de entre 5 y 10 GB (según la versión de Cellpose), lo "
+"cual puede ser lento según su conexión a internet (a menos que lo haya "
+"descargado como preparación, como sugerimos anteriormente). Sin embargo, "
+"¡solo necesita realizar este paso una vez!"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:318
 msgid "Drag `bonus_3_cellpose.cppipe` into the pipeline panel."
 msgstr "Arrastra `bonus_3_cellpose.cppipe` al panel de pipeline."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:227
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:319
 msgid ""
 "Drag the `images_Illum-corrected` subfolder from the main exercise into the "
 "Images module"
@@ -985,45 +1178,31 @@ msgstr ""
 "Arrastra la subcarpeta `images_Illum-corrected` desde el ejercicio principal"
 " al módulo `Images`."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:228
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
 msgid ""
 "Put CellProfiler into TestMode <img "
-"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, open the eye "
-"icons <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> next to "
-"RunCellpose and OverlayOutlines, and then hit <img "
-"src=\"./TutorialImages/Run.png\" width=\"120\"/>"
+"src=\"./TutorialImages/startTestMode.png\" width=\"120\" alt=\"Start Test "
+"Mode button\"/>, open the eye icons <img "
+"src=\"./TutorialImages/EyeOpen.png\" width=\"20\" alt=\"Open Eye icon\"/> "
+"next to RunCellpose and OverlayOutlines, and then hit Run <img "
+"src=\"./TutorialImages/Run.png\" width=\"120\" alt=\"Run\"/>"
 msgstr ""
-"Coloca CellProfiler en Modo de Prueba <img "
-"src=\"./TutorialImages/startTestMode.png\" width=\"120\"/>, abre los íconos "
-"de ojos <img src=\"./TutorialImages/EyeOpen.png\" width=\"50\"/> junto a "
-"`RunCellpose` y `OverlayOutlines`, y luego presiona <img "
-"src=\"./TutorialImages/Run.png\" width=\"120\"/>"
+"Ponga CellProfiler en modo de prueba <img "
+"src=\"./TutorialImages/startTestMode.png\" width=\"120\" alt=\"Start Test "
+"Mode button\"/>, abra los íconos de ojos <img "
+"src=\"./TutorialImages/EyeOpen.png\" width=\"20\" alt=\"Open Eye icon\"/> "
+"junto a RunCellpose y OverlayOutlines, y luego presione Ejecutar <img "
+"src=\"./TutorialImages/Run.png\" width=\"120\" alt=\"Run\"/>"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:229
-msgid ""
-"You may wish to put a pause next to SaveImages, or uncheck it, to keep it "
-"from saving images, but that's up to you"
-msgstr ""
-"Si lo deseas, puedes poner una pausa junto a `SaveImages`, o desmarcarlo, "
-"para evitar que guarde imágenes."
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
+msgid "Start Test Mode button"
+msgstr "Botón Iniciar modo de prueba"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:232
-msgid ""
-"If you didn't already pull the container in the Docker Desktop section "
-"above, the very first time you hit the RunCellpose module, it will need to "
-"download a ~13GB file, which may be slow depending on your connection. You "
-"only need to do this step once however!"
-msgstr ""
-"Si aún no extrajiste el contenedor en la sección anterior (Docker Desktop), "
-"la primera vez que ejecutes el módulo `RunCellpose`, deberás descargar un "
-"archivo de ~13 GB,lo cual puede ser lento dependiendo de tu conexión a "
-"internet. ¡Sin embargo, solo necesitas realizar este paso una vez!"
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
+msgid "Open Eye icon"
+msgstr "Icono de ojo abierto"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:239
-msgid "The output of the RunCellpose module"
-msgstr "La salida del módulo `RunCellpose`"
-
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:242
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
 msgid ""
 "As before, using OverlayOutlines and/or the WorkspaceViewer, evaluate "
 "segmentation on a few images. Where is CellProfiler doing better, and where "
@@ -1033,25 +1212,33 @@ msgstr ""
 "segmentación en algunas imágenes. ¿Dónde le está yendo mejor a CellProfiler "
 "y dónde le está yendo mejor a Cellpose?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:243
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid ""
-"Use the <img src=\"./TutorialImages/Info.png\" width=\"35\"> button to learn"
-" more about the different parameters you can pass to Cellpose (we don't "
-"offer all of them, but many!) - how does tweaking these affect your output? "
-"How about changing the model you're using, and/or the image you're "
-"segmenting?"
+"Use the Info <img src=\"./TutorialImages/Info.png\" width=\"35\" "
+"alt=\"Info\"/> button to learn more about the different parameters you can "
+"pass to Cellpose (we don't offer all of them, but many!) - how does tweaking"
+" these affect your output? How about changing the model you're using, and/or"
+" the image you're segmenting?"
 msgstr ""
-"Utiliza el botón <img src=\"./TutorialImages/Info.png\" width=\"35\"> para "
-"obtener más información sobre los diferentes parámetros que puedes pasarle a"
-" Cellpose (¡no los ofrecemos todos, pero sí muchos!). ¿Cómo afecta cambiar "
-"estos parámetros al resultado? ? ¿Qué tal cambiar el modelo que estás usando"
-" y/o la imagen que estás segmentando?"
+"Usa el botón de información <img src=\"./TutorialImages/Info.png\" "
+"width=\"35\" alt=\"Info\"/> para obtener más información sobre los "
+"diferentes parámetros que puedes pasar a Cellpose (no los ofrecemos todos, "
+"¡pero sí muchos!). ¿Cómo afecta ajustarlos a tu resultado? ¿Qué tal si "
+"cambias el modelo que usas o la imagen que segmentas?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:245
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
+msgid "Info"
+msgstr "Información"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:329
+msgid "The output of the RunCellpose module"
+msgstr "La salida del módulo `RunCellpose`"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:332
 msgid "Bonus-to-the-Bonus 1 - test on a more varied data set"
 msgstr "Bonus del bonus 1: prueba con un conjunto de datos más variado"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:247
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:334
 msgid ""
 "The data we gave you in this exercise was all very clean, and all from the "
 "negative control wells of this experiment. The [folder linked "
@@ -1069,7 +1256,7 @@ msgstr ""
 "fíjate cómo funcionan los dos tipos de segmentación en diferentes "
 "condiciones."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:340
 msgid ""
 "A broader range of phenotypes can be harder to consistently account for in "
 "conducting segmentation."
@@ -1077,7 +1264,7 @@ msgstr ""
 "Una gama más amplia de fenotipos puede resultar más difícil de tener en "
 "cuenta de manera consistente al realizar la segmentación."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:256
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:344
 msgid ""
 "You’re encouraged to explore the performance in some random images on your "
 "own (you can do this from the `Test` menu with the `Random Image Set` "
@@ -1093,11 +1280,11 @@ msgstr ""
 "pocillos: A08, A12, B12, B18, C7, D6, D19, D22, E3. Puedes seleccionarlos "
 "con `Test` -> `Choose Image Set`"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:259
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:348
 msgid "Bonus-to-the-Bonus 2 - improve Cellpose segmentation"
 msgstr "Bonus del Bonus 2: mejora la segmentación de Cellpose"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:261
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:350
 msgid ""
 "Based on your evaluations above, can you identify some places where "
 "additional training might help fix some issues in the Cellpose model? If you"
@@ -1113,11 +1300,11 @@ msgstr ""
 "instrucciones de instalación oficiales), abre Cellpose con algunas de las "
 "imágenes `Ch1` y fíjate si puedes entrenar un modelo que funcione mejor."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:263
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:353
 msgid "Bonus-to-the-Bonus 3 - test your classical segmentation skills"
 msgstr "Bonus del Bonus 3: prueba tus habilidades de segmentación clásica"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:265
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:355
 msgid ""
 "The classical segmentation parameters provided here are based on expert "
 "tuning from a very experienced CellProfiler user - how close can you get? "
@@ -1136,27 +1323,42 @@ msgstr ""
 " se diferencian? ¿Entiendes por qué se pueden haber elegido algunas de estas"
 " configuraciones?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:267
-msgid "What next? Want to know more about CellProfliler plugins and modules?"
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:360
+msgid "What next? Want to know more about CellProfiler plugins and modules?"
 msgstr ""
-"¿Qué sigue? ¿Quieres saber más sobre los complementos y módulos de "
-"CellProfliler?"
+"¿Qué sigue? ¿Quieres saber más sobre los plugins y módulos de CellProfiler?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:268
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:362
 msgid ""
 "Read the [CellProfiler-plugins "
-"paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)"
+"paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
 msgstr ""
-"Lee el [paper de complementos de "
-"CellProfiler](https://pubmed.ncbi.nlm.nih.gov/37690102/)"
+"Lea el [documento sobre los complementos de "
+"CellProfiler](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:269
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:363
+msgid ""
+"Read the [CellProfiler-plugins "
+"documentation](https://plugins.cellprofiler.org/)."
+msgstr ""
+"Lea la [documentación de complementos de CellProfiler] "
+"(https://plugins.cellprofiler.org/)."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:364
 msgid ""
 "Watch this [video](https://www.youtube.com/watch?v=fgF_YueM1b8) to learn how"
-" to write a module"
+" to write a module."
 msgstr ""
 "Mira este [video](https://www.youtube.com/watch?v=fgF_YueM1b8) para aprender"
-" a escribir tu propio complemento!"
+" a escribir un módulo."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:365
+msgid ""
+"Watch this [Ask Erin Dear Beth video podcast](https://youtu.be/31iK-ETKtFM) "
+"to learn more about plugins."
+msgstr ""
+"Mire este [video podcast Pregúntele a Erin Dear Beth](https://youtu.be/31iK-"
+"ETKtFM) para obtener más información sobre los complementos."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:2
 msgid "Beginner segmentation and organelle analysis:"
