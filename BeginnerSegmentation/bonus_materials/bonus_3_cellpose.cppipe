@@ -81,7 +81,7 @@ RunCellpose:[module_num:5|svn_version:'Unknown'|variable_revision_number:6|show_
     Select the input image:OrigDNA
     Rescale images before running Cellpose:No
     Run CellPose in docker or local python environment:Docker
-    Select Cellpose docker image:cellprofiler/runcellpose_with_pretrained:0.1
+    Select Cellpose docker image:cellprofiler/runcellpose_with_pretrained:2.3.2
     Expected object diameter:30
     Detection mode:nuclei
     Name the output object:RunCellpose
