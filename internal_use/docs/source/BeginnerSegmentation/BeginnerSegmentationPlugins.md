@@ -11,7 +11,7 @@ Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA.
 This will happen automatically the first time you call a given Docker from CellProfiler (i.e. run a CellProfiler pipeline that uses the Docker) but if you are running this tutorial in a workshop setting we strongly recommend download in advance of the workshop as these are large files (5-10 GB) and bandwidth is often limited in a workshop setting.
 In Docker Desktop or Podman Desktop you can search for containers in the top search bar (see below).
 Make sure you select a tag (version) that is supported by the plugin you are using and then select "Pull".
-We reccomend `biocontainers/ilastik:1.4.0_cv2` for ilastik and `cellprofiler/runcellpose_with_pretrained:3.1.2.2` or `cellprofiler/runcellpose_with_pretrained:4.0.6` for Cellpose.
+We recommend `biocontainers/ilastik:1.4.0_cv2` for ilastik and `cellprofiler/runcellpose_with_pretrained:3.1.2.2` for Cellpose.
 1. Download the example images from the Beginner Segmentation Tutorial.
 [Click here for download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip).
 (Delete/ignore the pipelines; we will just use the images.)
@@ -265,7 +265,7 @@ Evaluate your prediction in Runilastik across a few image sets using OverlayOutl
 :width: 700
 :align: center
 
-Screenshot of the Runilastik module 
+Screenshot of the Runilastik module
 ```
 
 ```{figure} ./TutorialImages/WorkspaceViewerilastik.png
@@ -311,13 +311,15 @@ If for whatever reason this isn't working, move on, but it will save you some ti
 ### Load the pipeline and evaluate segmentation
 
 ```{note}
-If using Docker, the very first time you execute the RunCellpose module, it will need to download a ~5GB-10GB file (depending on the verison of Cellpose), which may be slow depending on your internet connection (unless you downloaded it in preparation as we suggest above).
+If using Docker/Podman, the very first time you execute the RunCellpose module, it will need to download a ~5GB-10GB file (depending on the verison of Cellpose), which may be slow depending on your internet connection (unless you downloaded it in preparation as we suggest above).
 You only need to do this step once, however!
 ```
 
 1. Drag `bonus_3_cellpose.cppipe` into the pipeline panel.
 1. Drag the `images_Illum-corrected` subfolder from the main exercise into the Images module
-1. Put CellProfiler into TestMode <img src="./TutorialImages/startTestMode.png" width="120" alt="Start Test Mode button"/>, open the eye icons <img src="./TutorialImages/EyeOpen.png" width="20" alt="Open Eye icon"/> next to RunCellpose and OverlayOutlines, and then hit Run <img src="./TutorialImages/Run.png" width="120" alt="Run"/>
+1. Put CellProfiler into TestMode <img src="./TutorialImages/startTestMode.png" width="120" alt="Start Test Mode button"/>
+1. If using Docker/Podman, and if you've already pre-downloaded a container, ensure that the `Select Cellpose Docker image` setting in the `RunCellpose` module matches the container you already downloaded.
+1. Open the eye icons <img src="./TutorialImages/EyeOpen.png" width="20" alt="Open Eye icon"/> next to RunCellpose and OverlayOutlines, and then hit Run <img src="./TutorialImages/Run.png" width="120" alt="Run"/>
 1. You may wish to put a pause <img src="./TutorialImages/Pause.png" width="20" alt="Pause"/> next to SaveImages, or uncheck it <img src="./TutorialImages/InactivatedModule.png" width="20" alt="Unchecked"/>, to keep it from saving images while you are exploring this pipeline.
 1. As before, using OverlayOutlines and/or the WorkspaceViewer, evaluate segmentation on a few images. Where is CellProfiler doing better, and where is Cellpose doing better?
 1. Use the Info <img src="./TutorialImages/Info.png" width="35" alt="Info"/> button to learn more about the different parameters you can pass to Cellpose (we don't offer all of them, but many!) - how does tweaking these affect your output? How about changing the model you're using, and/or the image you're segmenting?
