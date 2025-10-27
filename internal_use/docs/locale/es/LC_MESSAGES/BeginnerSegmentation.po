@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2025
 # Esteban, 2025
+# Beth Cimini, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 11:14+0000\n"
+"POT-Creation-Date: 2025-10-27 00:08+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Esteban, 2025\n"
+"Last-Translator: Beth Cimini, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,23 +68,22 @@ msgid ""
 "files (5-10 GB) and bandwidth is often limited in a workshop setting. In "
 "Docker Desktop or Podman Desktop you can search for containers in the top "
 "search bar (see below). Make sure you select a tag (version) that is "
-"supported by the plugin you are using and then select \"Pull\". We reccomend"
+"supported by the plugin you are using and then select \"Pull\". We recommend"
 " `biocontainers/ilastik:1.4.0_cv2` for ilastik and "
-"`cellprofiler/runcellpose_with_pretrained:3.1.2.2` or "
-"`cellprofiler/runcellpose_with_pretrained:4.0.6` for Cellpose."
+"`cellprofiler/runcellpose_with_pretrained:3.1.2.2` for Cellpose."
 msgstr ""
-"Descargue al menos un Docker RunCellpose y un Docker ilastik de Dockerhub. "
-"Esto se realizará automáticamente la primera vez que llame a un Docker desde"
-" CellProfiler (es decir, ejecute un CellProfiler pipeline que use el "
-"Docker). Sin embargo, si está ejecutando este tutorial en un taller, le "
-"recomendamos encarecidamente que lo descargue con antelación, ya que se "
+"Descargue al menos un Docker de RunCellpose y un Docker de ilastik desde "
+"Dockerhub. Esto se realizará automáticamente la primera vez que llame a un "
+"Docker desde CellProfiler (es decir, ejecute un CellProfiler pipeline que "
+"use el Docker). Sin embargo, si está ejecutando este tutorial en un taller, "
+"le recomendamos encarecidamente que lo descargue con antelación, ya que se "
 "trata de archivos grandes (5-10 GB) y el ancho de banda suele ser limitado "
 "en un taller. En Docker Desktop o Podman Desktop, puede buscar contenedores "
 "en la barra de búsqueda superior (ver más abajo). Asegúrese de seleccionar "
 "una etiqueta (versión) compatible con el complemento que esté utilizando y "
 "luego seleccione \"Extraer\". Recomendamos `biocontainers/ilastik:1.4.0_cv2`"
-" para ilastik y `cellprofiler/runcellpose_with_pretrained:3.1.2.2` o "
-"`cellprofiler/runcellpose_with_pretrained:4.0.6` para Cellpose."
+" para ilastik y `cellprofiler/runcellpose_with_pretrained:3.1.2.2` para "
+"Cellpose."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:15
 msgid ""
@@ -909,7 +908,7 @@ msgstr ""
 "\"Docker\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid ""
 "You may wish to put a pause <img src=\"./TutorialImages/Pause.png\" "
 "width=\"20\" alt=\"Pause\"/> next to SaveImages, or uncheck it <img "
@@ -925,12 +924,12 @@ msgstr ""
 "pipeline."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid "Pause"
 msgstr "Pausa"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid "Unchecked"
 msgstr "Desenfrenado"
 
@@ -963,7 +962,7 @@ msgid "Eye Open icon"
 msgstr "Icono de ojo abierto"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
 msgid "Run"
 msgstr "Correr"
 
@@ -1158,17 +1157,17 @@ msgstr "Carga pipeline y evalúa la segmentación"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:314
 msgid ""
-"If using Docker, the very first time you execute the RunCellpose module, it "
-"will need to download a ~5GB-10GB file (depending on the verison of "
-"Cellpose), which may be slow depending on your internet connection (unless "
-"you downloaded it in preparation as we suggest above). You only need to do "
-"this step once, however!"
+"If using Docker/Podman, the very first time you execute the RunCellpose "
+"module, it will need to download a ~5GB-10GB file (depending on the verison "
+"of Cellpose), which may be slow depending on your internet connection "
+"(unless you downloaded it in preparation as we suggest above). You only need"
+" to do this step once, however!"
 msgstr ""
-"Si usa Docker, la primera vez que ejecute el módulo RunCellpose, deberá "
-"descargar un archivo de entre 5 y 10 GB (según la versión de Cellpose), lo "
-"cual puede ser lento según su conexión a internet (a menos que lo haya "
-"descargado como preparación, como sugerimos anteriormente). Sin embargo, "
-"¡solo necesita realizar este paso una vez!"
+"Si usa Docker/Podman, la primera vez que ejecute el módulo RunCellpose, "
+"deberá descargar un archivo de entre 5 y 10 GB (según la versión de "
+"Cellpose), lo cual puede ser lento según su conexión a internet (a menos que"
+" lo haya descargado como preparación, como sugerimos anteriormente). Sin "
+"embargo, ¡solo necesita realizar este paso una vez!"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:318
 msgid "Drag `bonus_3_cellpose.cppipe` into the pipeline panel."
@@ -1186,27 +1185,42 @@ msgstr ""
 msgid ""
 "Put CellProfiler into TestMode <img "
 "src=\"./TutorialImages/startTestMode.png\" width=\"120\" alt=\"Start Test "
-"Mode button\"/>, open the eye icons <img "
-"src=\"./TutorialImages/EyeOpen.png\" width=\"20\" alt=\"Open Eye icon\"/> "
-"next to RunCellpose and OverlayOutlines, and then hit Run <img "
-"src=\"./TutorialImages/Run.png\" width=\"120\" alt=\"Run\"/>"
+"Mode button\"/>"
 msgstr ""
-"Ponga CellProfiler en modo de prueba <img "
+"Coloque CellProfiler en TestMode <img "
 "src=\"./TutorialImages/startTestMode.png\" width=\"120\" alt=\"Start Test "
-"Mode button\"/>, abra los íconos de ojos <img "
-"src=\"./TutorialImages/EyeOpen.png\" width=\"20\" alt=\"Open Eye icon\"/> "
-"junto a RunCellpose y OverlayOutlines, y luego presione Ejecutar <img "
-"src=\"./TutorialImages/Run.png\" width=\"120\" alt=\"Run\"/>"
+"Mode button\"/>"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
 msgid "Start Test Mode button"
 msgstr "Botón Iniciar modo de prueba"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
+msgid ""
+"If using Docker/Podman, and if you've already pre-downloaded a container, "
+"ensure that the `Select Cellpose Docker image` setting in the `RunCellpose` "
+"module matches the container you already downloaded."
+msgstr ""
+"Si usa Docker/Podman y ya ha descargado previamente un contenedor, asegúrese"
+" de que la configuración «Seleccionar imagen Docker de Cellpose» en el "
+"módulo «RunCellpose» coincida con el contenedor que ya ha descargado."
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
+msgid ""
+"Open the eye icons <img src=\"./TutorialImages/EyeOpen.png\" width=\"20\" "
+"alt=\"Open Eye icon\"/> next to RunCellpose and OverlayOutlines, and then "
+"hit Run <img src=\"./TutorialImages/Run.png\" width=\"120\" alt=\"Run\"/>"
+msgstr ""
+"Abra los íconos de ojos <img src=\"./TutorialImages/EyeOpen.png\" "
+"width=\"20\" alt=\"Open Eye icon\"/> junto a RunCellpose y OverlayOutlines, "
+"y luego presione Ejecutar <img src=\"./TutorialImages/Run.png\" "
+"width=\"120\" alt=\"Run\"/>"
+
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
 msgid "Open Eye icon"
 msgstr "Icono de ojo abierto"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:324
 msgid ""
 "As before, using OverlayOutlines and/or the WorkspaceViewer, evaluate "
 "segmentation on a few images. Where is CellProfiler doing better, and where "
@@ -1216,7 +1230,7 @@ msgstr ""
 "segmentación en algunas imágenes. ¿Dónde le está yendo mejor a CellProfiler "
 "y dónde le está yendo mejor a Cellpose?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:325
 msgid ""
 "Use the Info <img src=\"./TutorialImages/Info.png\" width=\"35\" "
 "alt=\"Info\"/> button to learn more about the different parameters you can "
@@ -1230,19 +1244,19 @@ msgstr ""
 "¡pero sí muchos!). ¿Cómo afecta ajustarlos a tu resultado? ¿Qué tal si "
 "cambias el modelo que usas o la imagen que segmentas?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:325
 msgid "Info"
 msgstr "Información"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:329
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:331
 msgid "The output of the RunCellpose module"
 msgstr "La salida del módulo `RunCellpose`"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:332
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:334
 msgid "Bonus-to-the-Bonus 1 - test on a more varied data set"
 msgstr "Bonus del bonus 1: prueba con un conjunto de datos más variado"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:334
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:336
 msgid ""
 "The data we gave you in this exercise was all very clean, and all from the "
 "negative control wells of this experiment. The [folder linked "
@@ -1260,7 +1274,7 @@ msgstr ""
 "fíjate cómo funcionan los dos tipos de segmentación en diferentes "
 "condiciones."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:340
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:342
 msgid ""
 "A broader range of phenotypes can be harder to consistently account for in "
 "conducting segmentation."
@@ -1268,7 +1282,7 @@ msgstr ""
 "Una gama más amplia de fenotipos puede resultar más difícil de tener en "
 "cuenta de manera consistente al realizar la segmentación."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:344
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:346
 msgid ""
 "You’re encouraged to explore the performance in some random images on your "
 "own (you can do this from the `Test` menu with the `Random Image Set` "
@@ -1284,11 +1298,11 @@ msgstr ""
 "pocillos: A08, A12, B12, B18, C7, D6, D19, D22, E3. Puedes seleccionarlos "
 "con `Test` -> `Choose Image Set`"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:348
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:350
 msgid "Bonus-to-the-Bonus 2 - improve Cellpose segmentation"
 msgstr "Bonus del Bonus 2: mejora la segmentación de Cellpose"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:350
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:352
 msgid ""
 "Based on your evaluations above, can you identify some places where "
 "additional training might help fix some issues in the Cellpose model? If you"
@@ -1304,11 +1318,11 @@ msgstr ""
 "instrucciones de instalación oficiales), abre Cellpose con algunas de las "
 "imágenes `Ch1` y fíjate si puedes entrenar un modelo que funcione mejor."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:353
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:355
 msgid "Bonus-to-the-Bonus 3 - test your classical segmentation skills"
 msgstr "Bonus del Bonus 3: prueba tus habilidades de segmentación clásica"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:355
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:357
 msgid ""
 "The classical segmentation parameters provided here are based on expert "
 "tuning from a very experienced CellProfiler user - how close can you get? "
@@ -1327,12 +1341,12 @@ msgstr ""
 " se diferencian? ¿Entiendes por qué se pueden haber elegido algunas de estas"
 " configuraciones?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:360
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:362
 msgid "What next? Want to know more about CellProfiler plugins and modules?"
 msgstr ""
 "¿Qué sigue? ¿Quieres saber más sobre los plugins y módulos de CellProfiler?"
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:362
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:364
 msgid ""
 "Read the [CellProfiler-plugins "
 "paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
@@ -1340,7 +1354,7 @@ msgstr ""
 "Lea el [documento sobre los complementos de "
 "CellProfiler](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:363
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:365
 msgid ""
 "Read the [CellProfiler-plugins "
 "documentation](https://plugins.cellprofiler.org/)."
@@ -1348,7 +1362,7 @@ msgstr ""
 "Lea la [documentación de complementos de CellProfiler] "
 "(https://plugins.cellprofiler.org/)."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:364
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:366
 msgid ""
 "Watch this [video](https://www.youtube.com/watch?v=fgF_YueM1b8) to learn how"
 " to write a module."
@@ -1356,7 +1370,7 @@ msgstr ""
 "Mira este [video](https://www.youtube.com/watch?v=fgF_YueM1b8) para aprender"
 " a escribir un módulo."
 
-#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:365
+#: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:367
 msgid ""
 "Watch this [Ask Erin Dear Beth video podcast](https://youtu.be/31iK-ETKtFM) "
 "to learn more about plugins."
