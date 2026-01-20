@@ -247,7 +247,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:98
 msgid "The second pulls Plate metadata from the image folder"
-msgstr "O segundo extrai os metadados do Plate da pasta de imagens"
+msgstr "O segundo extrai os metadados da placa (Plate) da pasta de imagens"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:99
 msgid ""
