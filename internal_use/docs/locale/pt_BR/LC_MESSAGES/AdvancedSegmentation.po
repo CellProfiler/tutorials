@@ -536,7 +536,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:205
 msgid "6. **IdentifySecondaryObjects- Cells**"
-msgstr "6. **IdentificarSecondaryObjects-Células**"
+msgstr "6. **IdentificarSecondaryObjects - Células**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:207
 msgid ""
