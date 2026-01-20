@@ -603,7 +603,7 @@ msgid ""
 "Go to Test->Choose Image Set to bring up a list of the images in your "
 "experiment."
 msgstr ""
-"Vá para Test-&gt;Choose Image Set para exibir uma lista das imagens em seu "
+"Vá em “Test > Choose Image Set” para abrir uma lista das imagens do seu "
 "experimento."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:229
