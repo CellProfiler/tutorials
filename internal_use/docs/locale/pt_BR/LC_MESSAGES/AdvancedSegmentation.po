@@ -616,10 +616,9 @@ msgid ""
 "chemical was used in each well of the experiment. You may click on the "
 "column to sort the whole table by the values in it if you so desire."
 msgstr ""
-"Observe a coluna intitulada \"Image_Metadata_SOURCE_COMPOUND_NAME\" para ver"
-" qual produto químico foi usado em cada poço do experimento. Você pode "
-"clicar na coluna para classificar a tabela inteira pelos valores nela "
-"contidos, se desejar."
+"Observe a coluna intitulada “Image_Metadata_SOURCE_COMPOUND_NAME” para ver "
+"qual composto foi usado em cada poço do experimento. Se desejar, clique na "
+"coluna para ordenar a tabela inteira pelos valores dessa coluna."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:237
 msgid ""
