@@ -508,8 +508,8 @@ msgid ""
 "Create objects called Nuclei by segmenting on the Hoechst channel. Hit "
 "‘Step’ to run the module. How does your segmentation look?"
 msgstr ""
-"Crie objetos chamados Nuclei segmentando no canal Hoechst. Pressione "
-"\"Step\" para executar o módulo. Qual é a aparência de sua segmentação?"
+"Crie objetos com o nome “Nuclei” segmentando a partir do canal Hoechst. "
+"Pressione “Step” para executar o módulo. Como ficou a sua segmentação?"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:197
 msgid ""
