@@ -543,7 +543,7 @@ msgid ""
 "**After** the IdentifyPrimaryObjects module but **before** the "
 "EnhanceOrSuppressFeatures module, add an IdentifySecondaryObjects module."
 msgstr ""
-"**Depois do módulo IdentifyPrimaryObjects, mas antes do módulo "
+"**Depois** do módulo IdentifyPrimaryObjects, mas **antes** do módulo "
 "EnhanceOrSuppressFeatures, adicione um módulo IdentifySecondaryObjects."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:210
