@@ -368,8 +368,8 @@ msgid ""
 "set matching’ as ‘Order’."
 msgstr ""
 "Como há apenas um conjunto de funções de correção de iluminação para cada "
-"placa inteira, os conjuntos de imagens não podem ser simplesmente "
-"construídos usando \"Image set matching\" como \"Order\"."
+"placa, os conjuntos de imagens não podem ser simplesmente construídos usando"
+" \"Image set matching\" como \"Order\"."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:135
 msgid ""
