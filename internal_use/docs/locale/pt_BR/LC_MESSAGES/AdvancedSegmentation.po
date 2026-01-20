@@ -126,7 +126,8 @@ msgstr ""
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:55
 msgid "*Figure 2: Examples of varied nuclei found in this data set.*"
 msgstr ""
-"*Figura 2: Exemplos de núcleos variados encontrados nesse conjunto de dados."
+"*Figura 2: Exemplos da diversidade de núcleos encontrados nesse conjunto de "
+"dados."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:58
 msgid ""
