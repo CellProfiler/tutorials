@@ -787,8 +787,8 @@ msgstr ""
 "para sobrepor os nucléolos identificados à imagem original do Syto, para "
 "confirmar que a segmentação não apenas corresponde à imagem “SytoNuclei” "
 "(com realce de speckles), mas também parece precisa na imagem não "
-"processada. Isso não é necessário, mas pode ser uma boa checagem de "
-"consistência (sanity check)."
+"processada. Isso não é necessário, mas pode ser uma boa checagem de sanidade"
+" (sanity check)."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:306
 msgid ""
