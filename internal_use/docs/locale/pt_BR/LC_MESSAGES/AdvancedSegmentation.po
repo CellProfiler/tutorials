@@ -730,7 +730,7 @@ msgid ""
 "Look at the output from each to see how the image is transformed to aid in "
 "segmentation."
 msgstr ""
-"Os próximos três módulos têm a ver com a criação dos objetos Nucléolos. "
+"Os próximos três módulos têm a ver com a criação dos objetos Nucleoli. "
 "Observe a saída de cada um deles para ver como a imagem é transformada para "
 "ajudar na segmentação."
 
