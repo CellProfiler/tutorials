@@ -718,7 +718,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:270
 msgid "**Segment Nucleoli inside the Nuclei**"
-msgstr "**Segmentar Nucléolos dentro dos Núcleos**"
+msgstr "**Segmentação dos Nucléolos dentro dos Núcleos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:272
 msgid "9. **Examine the steps used to segment the Nucleoli**"
