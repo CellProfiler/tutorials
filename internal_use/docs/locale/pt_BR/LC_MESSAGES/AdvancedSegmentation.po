@@ -141,7 +141,7 @@ msgstr ""
 "menores da imagem segmentando organelas dentro das células e dos núcleos. "
 "Também será mostrado como usar o RelateObjects para que você possa estudar "
 "as contagens médias, as distâncias e as medidas das organelas menores dentro"
-" de seus objetos maiores."
+" de seus objetos maiores (parent)."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:64
 msgid "**Materials necessary for this exercise:**"
