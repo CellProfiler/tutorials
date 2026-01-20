@@ -377,7 +377,7 @@ msgid ""
 "constructed"
 msgstr ""
 "Role até a parte inferior da seção \"NamesAndTypes\" para ver como os "
-"conjuntos de imagens são construídos"
+"conjuntos de imagens são construídos."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:138
 msgid "‘Image set matching’ is set to ‘Metadata’"
