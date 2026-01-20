@@ -439,8 +439,8 @@ msgstr ""
 msgid ""
 "Enter test mode and hit ‘Step’ to run the CorrectIlluminationApply module."
 msgstr ""
-"Entre no modo de teste e pressione \"Step\" para executar o módulo "
-"CorrectIlluminationApply."
+"Entre no modo de teste clicando em \"Start Test Mode\" e depois em \"Step\" "
+"para executar o módulo CorrectIlluminationApply."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:167
 msgid ""
