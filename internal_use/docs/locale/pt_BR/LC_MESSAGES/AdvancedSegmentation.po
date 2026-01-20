@@ -833,8 +833,8 @@ msgid ""
 "As you saw above with the Nucleoli example, mask the image via Objects, and "
 "use the Cytoplasm objects to create the mask."
 msgstr ""
-"Como você viu acima com o exemplo dos nucléolos, mascare a imagem por meio "
-"de objetos e use o objeto Citoplasm para criar a máscara."
+"Como você viu acima no exemplo dos nucléolos, mascare a imagem via “Objects”"
+" e use os objetos “Cytoplasm” para criar a máscara."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:325
 msgid ""
