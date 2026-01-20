@@ -559,7 +559,7 @@ msgid ""
 "For the purposes of this exercise, you need not worry about excluding cell "
 "bodies that touch the edge of the image."
 msgstr ""
-"Para este exercício, não é necessário excluir citoplasmas que tocam a borda "
+"Para este exercício não é necessário excluir citoplasmas que tocam a borda "
 "da imagem."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:214
