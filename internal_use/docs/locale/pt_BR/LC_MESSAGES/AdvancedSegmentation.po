@@ -483,7 +483,7 @@ msgstr "**Segmentação de Núcleos, Células e Citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
 msgid "5. **IdentifyPrimaryObjects- Nuclei**"
-msgstr "5. **IdentificarPrimaryObjects- Núcleos**"
+msgstr "5. **IdentificarPrimaryObjects - Núcleos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:190
 msgid ""
