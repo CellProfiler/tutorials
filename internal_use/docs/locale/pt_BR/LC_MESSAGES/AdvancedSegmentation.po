@@ -820,9 +820,9 @@ msgid ""
 "RelateObjects modules, add a MaskImage module (from the Image Processing "
 "module category)."
 msgstr ""
-"**Depois do módulo IdentifyPrimaryObjects para nucléolos, mas antes dos "
-"módulos RelateObjects, adicione um módulo MaskImage (da categoria de módulo "
-"de processamento de imagens)."
+"**Depois** do módulo IdentifyPrimaryObjects para nucléolos, mas **antes** "
+"dos módulos RelateObjects, adicione um módulo MaskImage (da categoria de "
+"módulo de processamento de imagens)."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:320
 msgid "Call your output image ‘MaskedMito’."
