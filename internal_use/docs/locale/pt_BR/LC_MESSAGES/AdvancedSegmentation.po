@@ -385,7 +385,7 @@ msgstr "'Image set matching' está definido como 'Metadata'"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:139
 msgid "Each image channel is set to ‘Plate->Well->Site’."
-msgstr "Cada canal de imagem é definido como \"Plate-&gt;Well-&gt;Site\"."
+msgstr "Cada canal de imagem é definido como \"Plate->Well->Site\"."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:140
 msgid ""
