@@ -804,7 +804,7 @@ msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
 msgid "10. **Mask the Mito image by the Cytoplasm object**"
-msgstr "10. **Mascarar a imagem do Mito pelo objeto Citoplasma**"
+msgstr "10. **Mascarar a imagem do Mito pelo objeto Citoplasm**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:313
 msgid ""
