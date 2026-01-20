@@ -410,7 +410,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:153
 msgid "*Figure 3: A section of the ‘Image set matching’ dialog.*"
-msgstr "*Figura 3: Uma seção da caixa de diálogo \"Image set matching\"."
+msgstr "Figura 3: Uma seção da janela “Image set matching”."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:155
 msgid "**Illumination correction**"
