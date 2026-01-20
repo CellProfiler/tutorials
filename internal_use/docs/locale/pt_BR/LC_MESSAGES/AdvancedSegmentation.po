@@ -703,7 +703,7 @@ msgid ""
 "**After** the IdentifySecondaryObjects module but **before** the "
 "EnhanceOrSuppressFeatures module, add an IdentifyTertiaryObjects module."
 msgstr ""
-"**Após o módulo IdentifySecondaryObjects, mas antes do módulo "
+"**Após** o módulo IdentifySecondaryObjects, mas **antes** do módulo "
 "EnhanceOrSuppressFeatures, adicione um módulo IdentifyTertiaryObjects."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:267
