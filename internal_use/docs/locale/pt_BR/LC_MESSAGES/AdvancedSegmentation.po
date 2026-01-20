@@ -280,8 +280,8 @@ msgid ""
 "Set the ‘Default Input Folder’ to the location of ‘20585_AE.csv’ within the "
 "exercise folder"
 msgstr ""
-"Defina a \"Default Input Folder\" (Pasta de entrada padrão) como o local de "
-"\"20585_AE.csv\" na pasta de exercícios"
+"Defina a  pasta do exercício, que contém o arquivo \"20585_AE.csv\", como "
+"pasta de entrada padrão (Default Input Folder)."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:109
 msgid ""
