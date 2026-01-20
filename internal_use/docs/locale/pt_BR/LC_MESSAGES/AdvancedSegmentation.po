@@ -263,8 +263,9 @@ msgid ""
 "Input Folder, which we must therefore configure."
 msgstr ""
 "A quarta etapa de extração de metadados exige que você informe ao "
-"CellProfiler o local do arquivo CSV.  Ele o está procurando na Default Input"
-" Folder (Pasta de entrada padrão) do CellProfiler, que deve ser configurada."
+"CellProfiler o local do arquivo CSV.  Ele inicialmente procura na pasta de "
+"entrada padrão (Default Input Folder) do CellProfiler, que deve ser "
+"configurada."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:106
 msgid ""
