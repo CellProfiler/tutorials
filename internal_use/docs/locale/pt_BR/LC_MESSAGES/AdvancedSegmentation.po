@@ -328,7 +328,7 @@ msgid ""
 msgstr ""
 "O mapeamento de canais aqui é um pouco mais complicado do que qualquer coisa"
 " com que tenhamos trabalhado antes - temos um único conjunto de imagens de "
-"correção de iluminação que mapeia cada poço e local.  Podemos usar os "
+"correção de iluminação que mapeia cada poço e sítio.  Podemos usar os "
 "metadados que extraímos no último módulo para tornar essa associação "
 "possível."
 
