@@ -864,9 +864,9 @@ msgid ""
 "add an IdentifyPrimary Objects module to identify Mitochondria from your "
 "MaskedMito image."
 msgstr ""
-"**Após o módulo MaskImage, mas antes dos módulos RelateObjects, adicione um "
-"módulo IdentifyPrimary Objects para identificar as mitocôndrias da imagem "
-"MaskedMito."
+"**Após** o módulo MaskImage, mas **antes** dos módulos RelateObjects, "
+"adicione um módulo IdentifyPrimary Objects para identificar as mitocôndrias "
+"da imagem MaskedMito."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:344
 msgid ""
