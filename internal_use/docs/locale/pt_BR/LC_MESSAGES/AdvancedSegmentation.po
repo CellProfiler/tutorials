@@ -551,8 +551,8 @@ msgid ""
 "Create an object called Cells that is seeded on the Nuclei primary objects "
 "that you just created; use the Ph_golgi image."
 msgstr ""
-"Crie um objeto chamado Cells que seja semeado nos objetos primários Nuclei "
-"que você acabou de criar; use a imagem Ph_golgi."
+"Crie um objeto chamado Cells, iniciado a partir do objeto primário Nuclei "
+"que você acabou de criar, usando a imagem Ph_golgi."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:212
 msgid ""
