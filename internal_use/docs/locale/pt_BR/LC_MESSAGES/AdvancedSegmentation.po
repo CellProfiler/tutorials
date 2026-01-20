@@ -155,9 +155,9 @@ msgid ""
 "treatment information has also been included."
 msgstr ""
 "Essas 1200 imagens (240 sítios em 5 canais) representam 120 poços de uma "
-"única placa de 384 poços, tratados com DMSO ou com uma variedade de "
-"compostos bioativos. Um arquivo CSV contendo informações sobre o tratamento "
-"medicamentoso associado também foi incluído."
+"única placa de 384 poços, tratados com DMSO (mock/veículo) ou com uma "
+"variedade de compostos bioativos. Também foi incluído um arquivo CSV "
+"contendo as informações associadas aos tratamentos com os fármacos."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:71
 msgid ""
