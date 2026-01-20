@@ -800,7 +800,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:309
 msgid "**Segment the Mitochondria inside the Cytoplasm**"
-msgstr "**Segmentar as mitocôndrias dentro do citoplasma**"
+msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
 msgid "10. **Mask the Mito image by the Cytoplasm object**"
