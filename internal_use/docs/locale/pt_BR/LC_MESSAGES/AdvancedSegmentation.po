@@ -490,7 +490,7 @@ msgid ""
 "Next we'll take a first pass at identifying nuclei and cells in our initial "
 "image."
 msgstr ""
-"Em seguida, faremos uma primeira tentativa de identificar núcleos e células "
+"Em seguida, faremos uma primeira análise para identificar núcleos e células "
 "em nossa imagem inicial."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:192
