@@ -296,8 +296,8 @@ msgid ""
 "If you like, examine the CSV and how the ‘Match file and image’ settings are"
 " configured:"
 msgstr ""
-"Se desejar, examine o CSV e como as configurações de \"Match file and "
-"image\" estão definidas:"
+"Se desejar, examine o arquivo CSV e como as configurações de \"Match file "
+"and image\" estão definidas:"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:113
 msgid ""
