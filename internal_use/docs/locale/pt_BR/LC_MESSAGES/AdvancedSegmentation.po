@@ -199,7 +199,7 @@ msgid ""
 msgstr ""
 "Arraste e solte o arquivo \"BBBC022_Analysis_Start.cppipe\" na caixa "
 "\"Analysis modules\". Deverão aparecer 7 módulos, e quase todos eles "
-"mostrarão erros. **Esse é o comportamento esperado."
+"mostrarão erros. **Esse é o comportamento esperado.**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:84
 msgid ""
