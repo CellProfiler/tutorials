@@ -459,8 +459,8 @@ msgid ""
 "regions for nearly all images."
 msgstr ""
 "Essas funções foram criadas pela média e suavização de todas as 3456 imagens"
-" dessa placa, indicando que a imagem capturada é consistentemente mais "
-"escura nessas regiões em quase todas as imagens."
+" desta placa, o que indica que as imagens adquiridas são consistentemente "
+"mais escuras nessas regiões em quase todas as imagens."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:175
 msgid ""
