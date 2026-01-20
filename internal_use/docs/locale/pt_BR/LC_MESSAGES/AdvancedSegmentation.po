@@ -118,9 +118,9 @@ msgid ""
 "is not always straightforward, so examining your segmentation across a wide "
 "range of images will be necessary."
 msgstr ""
-"Este exercício lhe dará prática para encontrar parâmetros de segmentação que"
-" serão robustos em qualquer variabilidade que possa existir em sua amostra. "
-"Isso nem sempre é simples, portanto, será necessário examinar sua "
+"Este exercício vai lhe dar prática para encontrar parâmetros de segmentação "
+"que serão robustos em qualquer variabilidade que possa existir em sua "
+"amostra. Isso nem sempre é simples, portanto, será necessário examinar sua "
 "segmentação em uma ampla gama de imagens."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:55
