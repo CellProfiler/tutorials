@@ -242,8 +242,8 @@ msgid ""
 "The first pulls Well, Site, and Channel metadata from all of the image files"
 " except for the illumination correction functions"
 msgstr ""
-"A primeira extrai metadados de Well, Site e Channel de todos os arquivos de "
-"imagem, exceto das funções de correção de iluminação"
+"A primeira extrai metadados do poço (Well), sítio (Site) e canal (Channel) "
+"de todos os arquivos de imagem, exceto das funções de correção de iluminação"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:98
 msgid "The second pulls Plate metadata from the image folder"
