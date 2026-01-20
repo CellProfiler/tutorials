@@ -165,9 +165,9 @@ msgid ""
 "CellProfiler, preferably after completing the Translocation tutorial or a "
 "similar introductory exercise."
 msgstr ""
-"Além disso, espera-se que você esteja familiarizado com o CellProfiler, de "
-"preferência após concluir o tutorial Translocation ou um exercício "
-"introdutório semelhante."
+"Além disso, espera-se que você já tenha familiaridade geral com o "
+"CellProfiler, de preferência após concluir o tutorial de Translocation ou "
+"algum exercício introdutório semelhante."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:75
 msgid "**Input images and configure metadata**"
