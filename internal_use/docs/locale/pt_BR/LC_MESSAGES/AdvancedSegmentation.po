@@ -851,7 +851,8 @@ msgstr ""
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:334
 msgid ""
 "*Figure 7: The MaskedMito image contains only the regions of interest.*"
-msgstr "*Figura 7: A imagem MaskedMito contém apenas as regiões de interesse."
+msgstr ""
+"*Figura 7: A imagem MaskedMito contendo apenas as regiões de interesse."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:338
 msgid "12. **IdentifyPrimaryObjects- Mitochondria**"
