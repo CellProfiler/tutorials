@@ -304,8 +304,8 @@ msgid ""
 "Image_Metadata_PlateID (from the spreadsheet) is matched to Plate (extracted"
 " from the folder name by the second extraction step)"
 msgstr ""
-"Image_Metadata_PlateID (da planilha) é correspondido a Plate (extraído do "
-"nome da pasta pela segunda etapa de extração)"
+"Image_Metadata_PlateID (da planilha) corresponde a Plate (extraído do nome "
+"da pasta pela segunda etapa de extração)"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:114
 msgid ""
