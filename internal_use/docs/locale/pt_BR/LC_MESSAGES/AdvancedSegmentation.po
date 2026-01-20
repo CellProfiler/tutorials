@@ -288,8 +288,8 @@ msgid ""
 "Return to the ‘Metadata’ module and press ‘Update’. You should now see a "
 "number of columns in the Metadata window."
 msgstr ""
-"Volte ao módulo \"Metadata\" e pressione \"Update\" (Atualizar). Agora você "
-"deve ver várias colunas na janela Metadados."
+"Volte ao módulo \"Metadata\" e pressione atualizar (Update). Agora você deve"
+" ver várias colunas na janela Metadados."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:111
 msgid ""
