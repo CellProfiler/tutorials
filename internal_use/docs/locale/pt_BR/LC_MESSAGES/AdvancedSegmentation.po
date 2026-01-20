@@ -253,7 +253,8 @@ msgstr "O segundo extrai os metadados da placa (Plate) da pasta de imagens"
 msgid ""
 "The third pulls Plate metadata from the illumination correction functions"
 msgstr ""
-"O terceiro extrai metadados de placa das funções de correção de iluminação"
+"O terceiro extrai metadados de placa (Plate) das funções de correção de "
+"iluminação"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:102
 msgid ""
