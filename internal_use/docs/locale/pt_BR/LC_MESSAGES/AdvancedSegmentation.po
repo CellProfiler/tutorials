@@ -392,7 +392,7 @@ msgid ""
 "Each illumination correction function is set to ‘Plate->(None)->(None)’"
 msgstr ""
 "Cada função de correção de iluminação é definida como "
-"\"Plate-&gt;(None)-&gt;(None)"
+"\"Plate->(None)->(None)"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:143
 msgid ""
