@@ -795,8 +795,8 @@ msgid ""
 "*Figure 6: Enhancing the Syto image allows you to isolate nucleoli against "
 "the nucleoplasmic background signal.*"
 msgstr ""
-"*Figura 6: O aprimoramento da imagem Syto permite isolar os nucléolos em "
-"relação ao sinal de fundo do nucleoplasma."
+"*Figura 6: O realce da imagem Syto permite isolar os nucléolos em relação ao"
+" sinal de fundo do nucleoplasma.*"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:309
 msgid "**Segment the Mitochondria inside the Cytoplasm**"
