@@ -479,7 +479,7 @@ msgstr "*Figura 4: Aplicação das funções de correção de iluminação."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
 msgid "**Segmenet Nuclei, Cells and Cytoplasm**"
-msgstr "**Núcleos, células e citoplasma segmentados**"
+msgstr "**Segmentação de Núcleos, células e citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
 msgid "5. **IdentifyPrimaryObjects- Nuclei**"
