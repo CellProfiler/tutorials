@@ -243,7 +243,7 @@ msgid ""
 "supported in the same way as modules. A module may be in CellProfiler-"
 "plugins instead of CellProfiler itself because:"
 msgstr ""
-"Os plug-ins aprimoram os recursos do CellProfiler, mas não são oficialmente "
+"Os plugins aprimoram os recursos do CellProfiler, mas não são oficialmente "
 "suportados da mesma forma que os módulos. Um módulo pode estar em plugins do"
 " CellProfiler em vez do próprio CellProfiler porque:"
 
