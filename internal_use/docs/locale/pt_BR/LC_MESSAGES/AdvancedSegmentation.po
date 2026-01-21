@@ -856,7 +856,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:338
 msgid "12. **IdentifyPrimaryObjects- Mitochondria**"
-msgstr "12. **IdentifyPrimaryObjects - mitocôndrias**"
+msgstr "12. **IdentifyPrimaryObjects - Mitocôndrias**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:340
 msgid ""
