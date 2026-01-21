@@ -161,8 +161,8 @@ msgstr ""
 "CellProfiler](tutorials.cellprofiler.org). Consulte esse tutorial para obter"
 " informações gerais sobre como configurar o CellProfiler, bem como "
 "informações sobre as imagens. Em geral, presume-se que você tenha "
-"compreendido os módulos abordados nesse tutorial, incluindo entrada, criação"
-" de objetos, sobreposições e salvamento."
+"compreendido os módulos abordados nesse tutorial, incluindo entrada de "
+"dados, criação de objetos, sobreposições (overlays) e salvamento."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:40
 msgid "What is this exercise?"
