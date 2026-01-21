@@ -110,7 +110,7 @@ msgid ""
 "(Optional but recommended) Download and install "
 "[ilastik](https://www.ilastik.org/download)."
 msgstr ""
-"(Opcional, mas recomendado) Baixe e instale "
+"(Opcional, mas recomendado) Baixe e instale o "
 "[ilastik](https://www.ilastik.org/download)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:21
