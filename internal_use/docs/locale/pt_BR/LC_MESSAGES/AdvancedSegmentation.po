@@ -955,8 +955,8 @@ msgid ""
 "using the **ExportToDatabase**."
 msgstr ""
 "Para usar as ferramentas de visualização de dados e aprendizado de máquina "
-"no CellProfiler Analyst, as medições precisarão ser salvas em um banco de "
-"dados usando **ExportToDatabase**."
+"no CellProfiler Analyst, as medições devem ser salvas em um banco de dados "
+"usando **ExportToDatabase**."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:381
 msgid ""
