@@ -925,9 +925,9 @@ msgid ""
 " possible, but that isn’t necessary here; however, do make sure every object"
 " gets at least some measurements."
 msgstr ""
-"Em um experimento típico de Cell Painting, você adicionaria o maior número "
-"possível de medições, mas isso não é necessário aqui; no entanto, "
-"certifique-se de que cada objeto receba pelo menos algumas medições."
+"Em um experimento típico de Cell Painting, costuma-se adicionar o máximo "
+"possível de medições, mas isso não é necessário aqui; ainda assim, garanta "
+"que cada objeto tenha pelo menos algumas medições associadas."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:369
 msgid ""
