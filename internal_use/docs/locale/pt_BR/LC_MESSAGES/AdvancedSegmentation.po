@@ -1040,7 +1040,8 @@ msgstr ""
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:427
 msgid "**Relate Nucleoli and Mitochondria to their respective nuclei/cells**"
 msgstr ""
-"**Relacione Nucléolos e Mitocôndrias com seus respectivos núcleos/células**"
+"**Relacionando Nucléolos e Mitocôndrias com seus respectivos "
+"núcleos/células**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
 msgid "14. Examine the settings of RelateObjects"
