@@ -1073,7 +1073,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:440
 msgid "**Perform the analysis on ALL the images**"
-msgstr "**Realize a análise em TODAS as imagens**"
+msgstr "**Realizando a análise em TODAS as imagens**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:442
 msgid "15. **Run the pipeline (optional)**"
