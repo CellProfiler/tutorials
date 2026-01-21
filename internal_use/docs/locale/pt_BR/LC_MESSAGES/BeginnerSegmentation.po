@@ -216,12 +216,12 @@ msgid ""
 "Running Cellpose in CellProfiler via CellProfiler's plugins system and a "
 "Docker container."
 msgstr ""
-"Executando Cellpose no CellProfiler por meio do sistema de plug-ins do "
+"Executando Cellpose no CellProfiler por meio do sistema de plugins do "
 "CellProfiler e de um contêiner Docker."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:50
 msgid "Plugins"
-msgstr "Plug-ins"
+msgstr "Plugins"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:52
 msgid ""
