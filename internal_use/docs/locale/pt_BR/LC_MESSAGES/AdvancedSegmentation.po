@@ -1053,9 +1053,10 @@ msgid ""
 "find two RelateObjects modules. One relates Nucleoli to Nuclei, while the "
 "other relates Mitochondria to Cells."
 msgstr ""
-"**Depois** dos módulos Measurement e antes** dos módulos Export, você deverá"
-" encontrar dois módulos RelateObjects. Um deles relaciona Nucléolos a "
-"Núcleos, enquanto o outro relaciona Mitocôndrias a Células."
+"**Depois** dos módulos de Medição e **antes** dos módulos de Exportação, "
+"você deverá encontrar dois módulos RelateObjects. Um deles relaciona os "
+"Nucléolos aos Núcleos, enquanto o outro relaciona as Mitocôndrias às "
+"Células."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:434
 msgid ""
