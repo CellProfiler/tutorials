@@ -133,7 +133,7 @@ msgstr ""
 "plugins/blob/master/active_plugins/runilastik.py) e o [plugin "
 "RunCellpose](https://github.com/CellProfiler/CellProfiler-"
 "plugins/blob/master/active_plugins/runcellpose.py) selecionando o botão "
-"\"Baixar arquivo bruto\"."
+"\"Download raw file\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:29
 msgid "Search in Docker Desktop for your desired container"
