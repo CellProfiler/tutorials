@@ -908,7 +908,7 @@ msgid ""
 "Some suggested modules to add- MeasureObjectSizeShape, "
 "MeasureObjectIntensity, MeasureGranularity, MeasureObjectNeighbors."
 msgstr ""
-"Alguns módulos sugeridos para adicionar: MeasureObjectSizeShape, "
+"Algumas sugestões de módulos para adicionar: MeasureObjectSizeShape, "
 "MeasureObjectIntensity, MeasureGranularity, MeasureObjectNeighbors."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:362
