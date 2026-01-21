@@ -1045,7 +1045,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
 msgid "14. Examine the settings of RelateObjects"
-msgstr "14. Examine as configurações de RelateObjects"
+msgstr "14. Examine as configurações em RelateObjects"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:431
 msgid ""
