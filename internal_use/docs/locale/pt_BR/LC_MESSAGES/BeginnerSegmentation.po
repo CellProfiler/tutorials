@@ -568,9 +568,10 @@ msgid ""
 "Workspace Button\"/> to create easily on-the-fly customizable overlays."
 msgstr ""
 "Opcionalmente, abra o Visualizador do Espaço de Trabalho usando o botão "
-"Exibir Espaço de Trabalho <img src=\"./TutorialImages/ViewWorkspace.png\" "
-"width=\"120\" alt=\"View Workspace Button\"/> para criar sobreposições "
-"personalizáveis facilmente e em tempo real."
+"Exibir Espaço de Trabalho, clicando em <img "
+"src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\" alt=\"View "
+"Workspace Button\"/>, para criar sobreposições personalizáveis facilmente e "
+"em tempo real."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:154
 msgid "View Workspace Button"
