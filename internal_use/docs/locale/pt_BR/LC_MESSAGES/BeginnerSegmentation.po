@@ -288,8 +288,8 @@ msgstr ""
 "plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-"
 "plugins-without-dependencies), na etapa 2 ela sugere baixar todos os plugins"
 " do CellProfiler. Isso não é algo ruim, mas você também pode baixar plugins "
-"individuais do GitHub usando o botão do site abaixo ou o botão \"Baixar "
-"Arquivos Raw\" do GitHub."
+"individuais do GitHub usando o botão do site abaixo ou o botão \"Download "
+"Raw Files\" do GitHub."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:74
 msgid "GitHub's \"Download Raw Files\" button"
