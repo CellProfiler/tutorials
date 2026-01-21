@@ -1033,9 +1033,9 @@ msgid ""
 "individual tables for each object, you will only be able to examine one "
 "object at a time in CellProfiler Analyst.*"
 msgstr ""
-"*Figura 9: O símbolo de aviso avisa que como você optou por criar tabelas "
-"individuais para cada objeto, você só poderá examinar um objeto por vez no "
-"CellProfiler Analyst.*"
+"Figura 9: O símbolo de aviso indica que, como você optou por criar tabelas "
+"individuais para cada objeto, só será possível examinar um objeto por vez no"
+" CellProfiler Analyst."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:427
 msgid "**Relate Nucleoli and Mitochondria to their respective nuclei/cells**"
