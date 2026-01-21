@@ -34,8 +34,8 @@ msgid ""
 "Beth Cimini and Erin Weisbart\\ Imaging Platform, Broad Institute of MIT and"
 " Harvard, Cambridge, MA."
 msgstr ""
-"Beth Cimini e Erin Weisbart\\ Plataforma de imagens, Broad Institute do MIT "
-"e Harvard, Cambridge, MA."
+"Beth Cimini e Erin Weisbart\\ Imaging Platform, Broad Institute of MIT and "
+"Harvard, Cambridge, MA."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:6
 msgid "Preparation"
