@@ -963,8 +963,8 @@ msgid ""
 "Add a module **ExportToDatabase** located under the module *“File "
 "Processing” category*"
 msgstr ""
-"Adicione um módulo **ExportToDatabase** localizado na categoria *“File "
-"Processing” do módulo*"
+"Adicione o módulo ExportToDatabase, localizado na categoria “File "
+"Processing”."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:383
 msgid ""
