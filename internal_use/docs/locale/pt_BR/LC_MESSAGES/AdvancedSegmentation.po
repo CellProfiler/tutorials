@@ -946,7 +946,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:376
 msgid "**Export data**"
-msgstr "**Exportar dados**"
+msgstr "**Exportanto os dados**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:377
 msgid ""
