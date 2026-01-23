@@ -830,7 +830,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:234
 msgid "Grab the Runilastik plugin"
-msgstr "Pegue o plugin Runilastik"
+msgstr "Baixe o plugin Runilastik"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:236
 msgid ""
