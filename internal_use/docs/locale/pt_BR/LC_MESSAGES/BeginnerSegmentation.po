@@ -956,7 +956,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 msgid "Start Test Mode"
-msgstr "Iniciar modo de teste"
+msgstr "Iniciar modo de teste (Test Mode)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 msgid "Eye Open icon"
