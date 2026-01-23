@@ -1371,8 +1371,8 @@ msgid ""
 "Watch this [Ask Erin Dear Beth video podcast](https://youtu.be/31iK-ETKtFM) "
 "to learn more about plugins."
 msgstr ""
-"Assista a este [podcast de vídeo Ask Erin Dear Beth](https://youtu.be/31iK-"
-"ETKtFM) para saber mais sobre plugins."
+"Assista a este [podcast Ask Erin Dear Beth](https://youtu.be/31iK-ETKtFM) "
+"para saber mais sobre plugins."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:2
 msgid "Beginner segmentation and organelle analysis:"
