@@ -932,7 +932,7 @@ msgstr "Pausa"
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid "Unchecked"
-msgstr "Não verificado"
+msgstr "Desmarcar"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 msgid ""
