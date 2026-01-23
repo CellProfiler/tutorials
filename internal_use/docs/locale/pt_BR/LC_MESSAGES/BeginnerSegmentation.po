@@ -842,8 +842,8 @@ msgid ""
 msgstr ""
 "Baixe [o plugin Runilastik](https://github.com/CellProfiler/CellProfiler-"
 "plugins/blob/master/active_plugins/runilastik.py) em uma pasta no seu "
-"computador local. Como mencionado acima, recomendamos fortemente uma pasta "
-"que contenha SOMENTE plugins."
+"computador. Como mencionado acima, recomendamos fortemente uma pasta que "
+"contenha SOMENTE plugins."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:238
 msgid ""
