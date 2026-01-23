@@ -965,7 +965,7 @@ msgstr "Ícone de olho aberto"
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
 msgid "Run"
-msgstr "Correr"
+msgstr "Exacutar (Run)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:255
 msgid "Evaluate the Classifier"
