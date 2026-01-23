@@ -1200,10 +1200,9 @@ msgid ""
 "ensure that the `Select Cellpose Docker image` setting in the `RunCellpose` "
 "module matches the container you already downloaded."
 msgstr ""
-"Se estiver usando Docker/Podman e se você já tiver pré-baixado um contêiner,"
-" certifique-se de que a configuração `Selecionar imagem do Docker do "
-"Cellpose` no módulo `RunCellpose` corresponda ao contêiner que você já "
-"baixou."
+"Se você estiver usando Docker/Podman e já tiver baixado uma imagem, "
+"certifique-se de que a opção `Select Cellpose Docker image`  no módulo "
+"`RunCellpose` corresponda à imagem que você já baixou."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
 msgid ""
