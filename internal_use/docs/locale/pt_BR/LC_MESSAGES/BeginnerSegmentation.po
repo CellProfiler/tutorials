@@ -1192,7 +1192,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:320
 msgid "Start Test Mode button"
-msgstr "Botão Iniciar modo de teste"
+msgstr "Botão Iniciar modo de teste (Start Test Mode)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:321
 msgid ""
