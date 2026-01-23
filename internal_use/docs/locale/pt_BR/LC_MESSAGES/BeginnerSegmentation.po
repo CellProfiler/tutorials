@@ -1000,7 +1000,7 @@ msgid ""
 "Are there cases where you think the filtering-and-masking segmentation "
 "performs better?"
 msgstr ""
-"Há casos em que você acha que a segmentação de filtragem e mascaramento tem "
+"Há casos em que você acha que a segmentação usando filtros e máscara tem "
 "melhor desempenho?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:268
