@@ -1347,8 +1347,8 @@ msgid ""
 "Read the [CellProfiler-plugins "
 "paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
 msgstr ""
-"Leia o [artigo sobre plug-ins "
-"CellProfiler](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
+"Leia o artigo [CellProfiler-"
+"plugins](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:365
 msgid ""
