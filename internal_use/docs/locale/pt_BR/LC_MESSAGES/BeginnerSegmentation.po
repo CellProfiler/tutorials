@@ -861,7 +861,7 @@ msgstr "Feche e reabra o CellProfiler para poder carregar o plugin."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:241
 msgid "Load the Classifier"
-msgstr "Carregar o Classificador"
+msgstr "Carregue o Classificador"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:244
 msgid ""
