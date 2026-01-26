@@ -445,7 +445,7 @@ msgid ""
 "Name the output *erodedResizedNuclei*."
 msgstr ""
 "Redimensione essas sementes usando o módulo **ResizeObjects** com um fator "
-"de *2*. Nomeie o resultado como *erodedResizedNuclei*."
+"de *2*. Nomeie a saída como *erodedResizedNuclei*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:200
 msgid ""
