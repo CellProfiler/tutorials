@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:35
 msgid "Highlight the **Metadata** module."
-msgstr "Destaque o módulo **Metadados**."
+msgstr "Selecione o módulo **Metadados**."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:37
 msgid "Enter the following regular expression:"
