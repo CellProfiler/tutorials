@@ -200,8 +200,9 @@ msgid ""
 "The actual units do not matter, rather their relative proportion. The "
 "numbers are unitless and therefore the decimal place does not matter."
 msgstr ""
-"As unidades reais não importam, mas sim sua proporção relativa. Os números "
-"não têm unidade e, portanto, a casa decimal não importa."
+"As unidades reais não importam; o que importa é a proporção relativa entre "
+"elas. Os números são adimensionais e, portanto, a posição da vírgula (casa "
+"decimal) não faz diferença."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:61
 msgid ""
