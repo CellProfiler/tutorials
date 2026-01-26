@@ -155,7 +155,7 @@ msgstr "Selecione o módulo **NamesAndTypes**."
 #: ../../source/3d-monolayer/3D_Monolayer.md:46
 msgid "Assign a name to “Images matching rules”."
 msgstr ""
-"Atribua um nome a \"Images matching rules\" (Regras de correspondência de "
+"Dê um nome para “Image matching rules” (regras de correspondência de "
 "imagens)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:48
