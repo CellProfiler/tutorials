@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Beth Cimini, 2024
+# Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-20 17:17-0400\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2024\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:2
 msgid "Analysis of noisy 3D nuclei"
-msgstr "Análise de núcleos 3D barulhentos"
+msgstr "Análise de núcleos 3D em imagens com ruído"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:3
 msgid ""
