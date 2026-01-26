@@ -250,9 +250,8 @@ msgid ""
 "images with filters and various image processing methods will improve the "
 "results."
 msgstr ""
-"Antes de tentar segmentar as células nas imagens, o pré-processamento das "
-"imagens com filtros e vários métodos de processamento de imagens melhorará "
-"os resultados."
+"Antes de tentar segmentar as células, fazer um pré-processamento com filtros"
+" e outros métodos de processamento de imagem pode melhorar os resultados."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:83
 msgid ""
