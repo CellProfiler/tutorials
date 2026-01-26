@@ -212,8 +212,8 @@ msgid ""
 msgstr ""
 "Em \"Select the rule criteria\", crie uma regra para identificar uma imagem "
 "pela sua cor/canal. Por exemplo, usando os metadados que você acabou de "
-"extrair: `Metadata → Does → Have ChannelNumber matching → 0` corresponderia "
-"à primeira imagem."
+"extrair: `Metadata -> Does -> Have ChannelNumber matching -> 0` "
+"corresponderia à primeira imagem."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:66
 msgid ""
