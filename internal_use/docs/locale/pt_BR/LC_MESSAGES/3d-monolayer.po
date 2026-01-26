@@ -555,9 +555,9 @@ msgid ""
 "Name the output *ResizedClosedMonolayer*."
 msgstr ""
 "Adicione um módulo **Resize** para redimensionar o Monolayer fechado de "
-"volta ao tamanho original, *fator de redimensionamento* de *4* para X e Y "
-"(mantenha um fator de *1,0* para Z). Nomeie a saída como "
-"*ResizedClosedMonolayer*."
+"volta ao tamanho original, ajustar o fator de redimensionamento, *Resizing "
+"factor* para *4*, e para X e Y (mantenha um fator de *1,0* para Z). Nomeie a"
+" saída como *ResizedClosedMonolayer*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:278
 msgid ""
