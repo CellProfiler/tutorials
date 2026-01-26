@@ -69,9 +69,9 @@ msgid ""
 "Analysis YouTube page at <https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-"
 "skay7Q>."
 msgstr ""
-"Tutoriais em vídeo úteis estão disponíveis na página do YouTube do Center "
-"for Open Bioimage Analysis em <https://www.youtube.com/channel/UC_id9sE-"
-"vu_i30Bd-skay7Q>."
+"Vídeo tutoriais bastante úteis estão disponíveis na página do YouTube do "
+"Center for Open Bioimage Analysis: "
+"<https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q>."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:11
 msgid ""
