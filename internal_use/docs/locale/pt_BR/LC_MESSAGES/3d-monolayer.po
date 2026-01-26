@@ -353,7 +353,7 @@ msgid ""
 "to over-segmentation of the nuclei. Choose a size of *20*."
 msgstr ""
 "Adicione um módulo **RemoveHoles**. Esse módulo implementa um algoritmo que "
-"removerá pequenos orifícios dentro do núcleo. Quaisquer buracos restantes "
+"removerá pequenos buracos dentro do núcleo. Quaisquer buracos restantes "
 "contribuirão para a segmentação excessiva dos núcleos. Escolha um tamanho de"
 " *20*."
 
