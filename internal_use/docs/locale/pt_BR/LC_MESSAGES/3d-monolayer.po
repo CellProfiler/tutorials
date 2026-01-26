@@ -628,7 +628,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:321
 msgid "Making measurements"
-msgstr "Como fazer medições"
+msgstr "Realizando as medições"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:323
 msgid ""
