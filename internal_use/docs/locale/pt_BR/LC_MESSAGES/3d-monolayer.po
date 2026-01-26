@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:28
 msgid "Importing data in CellProfiler"
-msgstr "Importação de dados no CellProfiler"
+msgstr "Importando os dados no CellProfiler"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:30
 msgid "Highlight the **Images** module."
