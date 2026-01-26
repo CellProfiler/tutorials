@@ -80,8 +80,8 @@ msgid ""
 "following link: <https://bbbc.broadinstitute.org/BBBC034>."
 msgstr ""
 "Este tutorial apresenta imagens de células-tronco pluripotentes induzidas "
-"por humanos do Allen Institute of Cell Science. Mais detalhes estão "
-"disponíveis no seguinte link: <https://bbbc.broadinstitute.org/BBBC034>."
+"humanas (hiPSCs) do Allen Institute of Cell Science. Mais detalhes estão "
+"disponíveis neste link: [BBBC034](https://bbbc.broadinstitute.org/BBBC034)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:15
 msgid "Organizing and importing images"
