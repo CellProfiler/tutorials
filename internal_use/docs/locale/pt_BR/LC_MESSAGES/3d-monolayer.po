@@ -421,7 +421,7 @@ msgstr ""
 "Vamos começar encolhendo os núcleos para deixá-los mais “parecidos com "
 "sementes”, adicionando um módulo **ErodeObjects**. Use o elemento "
 "estruturante *ball* com tamanho 5. Selecione “Yes” na opção “Prevent object "
-"removal” (Impedir remoção de objetos) para evitar perder qualquer núcleo."
+"removal” para evitar perder qualquer núcleo."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:181
 msgid ""
