@@ -108,8 +108,8 @@ msgid ""
 "CellProfiler can be used to convert from other file formats to individual "
 "TIFF files for each channel using the **SaveImages** module."
 msgstr ""
-"O CellProfiler pode ser usado para converter de outros formatos de arquivo "
-"em arquivos TIFF individuais para cada canal usando o módulo **SaveImages**."
+"O CellProfiler pode ser usado para converter outros formatos de arquivo em "
+"arquivos TIFF individuais (um por canal), usando o módulo  **SaveImages**."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:28
 msgid "Importing data in CellProfiler"
