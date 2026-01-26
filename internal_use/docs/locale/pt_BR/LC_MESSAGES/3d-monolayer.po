@@ -652,7 +652,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:337
 msgid "Creating visuals"
-msgstr "Criação de recursos visuais"
+msgstr "Criando visualizações da segmentação"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:339
 msgid ""
