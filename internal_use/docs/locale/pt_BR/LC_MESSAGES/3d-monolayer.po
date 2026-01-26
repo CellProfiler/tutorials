@@ -698,7 +698,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:367
 msgid "Export measurements"
-msgstr "Exportar medições"
+msgstr "Exportando as medições"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:369
 msgid ""
