@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:15
 msgid "Organizing and importing images"
-msgstr "Organização e importação de imagens"
+msgstr "Organizando e importando as imagens"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:17
 msgid "Z-stacks as TIFFs"
