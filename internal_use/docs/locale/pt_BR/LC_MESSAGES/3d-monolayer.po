@@ -144,9 +144,9 @@ msgid ""
 "suggest you copy this expression so accidental spelling errors or extra "
 "spaces don't affect the metadata extraction"
 msgstr ""
-"Esta expressão regular analisará os nomes dos arquivos e organizará os "
-"dados. Sugerimos que você copie esta expressão para que erros ortográficos "
-"acidentais ou espaços extras não afetem a extração de metadados"
+"Esta expressão regular vai analisar os nomes dos arquivos e organizar os "
+"dados. Recomendamos que você a copie e cole, para que erros de digitação "
+"acidentais ou espaços extras não atrapalhem a extração de metadados."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:44
 msgid "Highlight the **NamesAndTypes** module."
