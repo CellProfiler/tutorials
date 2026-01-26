@@ -312,9 +312,10 @@ msgstr ""
 "melhor as bordas do que outros filtros de suavização, como o filtro "
 "Gaussiano. Para as imagens de exemplo, escolha um tamanho de filtro de *5*. "
 "Esse valor foi escolhido empiricamente: é menor que o diâmetro de um núcleo "
-"típico; é pequeno o suficiente para não juntar núcleos entre si, mas grande "
-"o bastante para evitar que os núcleos sejam subdivididos em fragmentos. "
-"Nomeie a saída como *MedianFiltDNA*."
+"típico; é pequeno o suficiente para não juntar núcleos entre si (under-"
+"segmentation), mas grande o bastante para evitar que os núcleos sejam "
+"subdivididos em fragmentos (over-segmentation). Nomeie a saída como "
+"*MedianFiltDNA*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:119
 msgid "Segmentation"
