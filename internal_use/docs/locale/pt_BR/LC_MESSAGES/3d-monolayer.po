@@ -508,10 +508,10 @@ msgid ""
 "during the Watershed segmentation. Choose a size of *20*. Name the output "
 "*MembInvertRemoveHoles*."
 msgstr ""
-"Adicione um módulo **RemoveHoles** para remover os pequenos orifícios na "
+"Adicione um módulo **RemoveHoles** para remover os pequenos buracos na "
 "segmentação do interior da célula. Isso ajuda a evitar que as células sejam "
-"divididas durante a segmentação do Watershed. Escolha um tamanho de *20*. "
-"Nomeie a saída como *MembInvertRemoveHoles*."
+"divididas durante a segmentação do módulo Watershed. Escolha um tamanho de "
+"*20*. Nomeie a saída como *MembInvertRemoveHoles*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:246
 msgid ""
