@@ -31,8 +31,8 @@ msgid ""
 "**Tutorial for the Association of Biomolecular Research Facilities - Ligh "
 "Microscopy Research Group (ABRF/LMRG)**"
 msgstr ""
-"**Tutorial para a Associação de Instalações de Pesquisa Biomolecular - Grupo"
-" de Pesquisa em Microscopia de Luz (ABRF/LMRG)**"
+"**Tutorial para a Association of Biomolecular Research Facilities - Ligh "
+"Microscopy Research Group (ABRF/LMRG)**"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:5
 msgid "**Proposal:**"
