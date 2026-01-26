@@ -210,10 +210,9 @@ msgid ""
 "example, using the Metadata you just extracted - `Metadata -> Does -> Have "
 "ChannelNumber matching -> 0` would match the first image."
 msgstr ""
-"Crie “critérios de regras” para identificar uma imagem por sua cor/canal. "
-"Por exemplo, usar os metadados que você acabou de extrair - `Metadados -> "
-"Faz -> Possui correspondência de ChannelNumber -> 0` corresponderia à "
-"primeira imagem."
+"Crie um “rule criteria” para identificar uma imagem pela sua cor/canal. Por "
+"exemplo, usando os metadados que você acabou de extrair: `Metadata → Does → "
+"Have ChannelNumber matching → 0` corresponderia à primeira imagem."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:66
 msgid ""
