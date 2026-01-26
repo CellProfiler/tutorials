@@ -45,7 +45,8 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:9
 msgid "Centroid location in microns (um) for each nucleus: x, y, and z c"
-msgstr "Localização do centroide em mícrons (um) para cada núcleo: x, y e z c"
+msgstr ""
+"Localização do centroide em micrômetros (µm) para cada núcleo: x, y e z."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:10
 msgid "Coordinates listed in separate columns. Labels x, y, and z."
