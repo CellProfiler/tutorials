@@ -57,10 +57,10 @@ msgid ""
 "same folder as this tutorial. To load the pipeline, simply drag the file to "
 "the left panel on the CellProfiler window."
 msgstr ""
-"Este tutorial o guiará pela criação de um pipeline de análise completo. Se "
-"desejar, você também pode encontrar uma versão final de um pipeline "
+"Este tutorial vai te guiar na criação de um pipeline de análise completo. Se"
+" quiser, você também pode encontrar uma versão final de um pipeline "
 "semelhante no arquivo *3d_monolayer_final.cppipe*, que deve estar na mesma "
-"pasta que este tutorial. Para carregar o pipeline, basta arrastar o arquivo "
+"pasta deste tutorial. Para carregar o pipeline, basta arrastar o arquivo "
 "para o painel esquerdo da janela do CellProfiler."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:8
