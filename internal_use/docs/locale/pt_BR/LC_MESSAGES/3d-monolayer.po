@@ -4,7 +4,6 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Mario Costa Cruz, 2024
 # Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
 # 
@@ -89,7 +88,7 @@ msgstr "Organizando e importando as imagens"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:17
 msgid "Z-stacks as TIFFs"
-msgstr "Série Z como TIFFs"
+msgstr "Pilha Z (Z-stack) em TIFF"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:19
 msgid ""
