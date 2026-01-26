@@ -117,7 +117,7 @@ msgstr "Importando os dados no CellProfiler"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:30
 msgid "Highlight the **Images** module."
-msgstr "Destaque o módulo **Imagens**."
+msgstr "Selecione o módulo **Imagens**."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:32
 msgid ""
