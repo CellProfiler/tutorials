@@ -592,10 +592,11 @@ msgid ""
 "does not need to be inverted. Note that the planes on the bottom and top of "
 "the z-stack are black in the masked image. Name the output *MembMasked*."
 msgstr ""
-"Adicione um módulo **MaskImage**. Você usará uma *Imagem* como máscara (a "
+"Adicione um módulo **MaskImage**. Você usará uma *Image* como máscara (a "
 "imagem MonolayerMask gerada na etapa anterior). Nesse caso, a máscara não "
 "precisa ser invertida. Observe que os planos na parte inferior e superior da"
-" pilha z são pretos na imagem mascarada. Nomeie a saída como *MembMasked*."
+" pilha z (z-stack) são pretos na  imagem com máscara aplicada. Nomeie a "
+"saída como *MembMasked*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:299
 msgid ""
