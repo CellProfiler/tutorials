@@ -581,9 +581,9 @@ msgid ""
 "(part of the monolayer), while the regions above and below are primarily "
 "black (not part of the monolayer)."
 msgstr ""
-"Observe que a maioria dos planos médios da pilha deve ser completamente "
-"branca (parte da monocamada), enquanto as regiões acima e abaixo são "
-"principalmente pretas (não fazem parte da monocamada)."
+"Observe que a maioria dos planos centrais da pilha (stack) deve estar "
+"completamente branca (parte da monocamada), enquanto as regiões acima e "
+"abaixo devem estar principalmente pretas (fora da monocamada)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:289
 msgid ""
