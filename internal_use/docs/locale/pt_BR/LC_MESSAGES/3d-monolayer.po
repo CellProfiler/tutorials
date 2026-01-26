@@ -369,7 +369,7 @@ msgstr ""
 "Adicione um módulo **Watershed*. Esse módulo implementa o algoritmo "
 "watershed, que segmenta os núcleos. Defina Footprint = *10* e Downsample by "
 "= *2*. A subamostragem reduz o tempo de processamento e diminui o ruído. "
-"Para saber mais sobre o algoritmo watershed, consulte [este post do "
+"Para saber mais sobre o algoritmo watershed, consulte [este post do blog do "
 "MATLAB](https://www.mathworks.com/company/newsletters/articles/the-"
 "watershed-transform-strategies-for-image-segmentation.html)."
 
