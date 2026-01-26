@@ -545,7 +545,7 @@ msgid ""
 "resides. Name the output *ClosedDownsizedMonolayer*."
 msgstr ""
 "Adicione um módulo **Closing**. Escolha um tamanho de *17* para misturar o "
-"sinal. O resultado deve se parecer com uma nuvem de sinal onde reside a "
+"sinal. O resultado deve ser parecido com uma nuvem de sinal onde reside a "
 "monocamada. Nomeie o resultado como *ClosedDownsizedMonolayer*."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:271
