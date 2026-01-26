@@ -183,9 +183,9 @@ msgid ""
 "size” (x,y,z). You can also record this metadata when collecting your own "
 "images"
 msgstr ""
-"Perto do final dos metadados, você encontrará as informações sobre o "
-"\"Tamanho do voxel\" (x,y,z). Você também pode registrar esses metadados ao "
-"coletar suas próprias imagens"
+"Perto do final dos metadados, você encontrará as informações sobre o tamanho"
+" do voxel em \"Voxel size\" (x,y,z). Você também pode anotar esses metadados"
+" ao adquirir suas próprias imagens."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:55
 msgid ""
