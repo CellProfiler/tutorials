@@ -645,10 +645,10 @@ msgid ""
 "these measurements, be careful to measure the original images, not rescaled "
 "images."
 msgstr ""
-"Adicione os módulos de medição desejados. Por exemplo, você pode optar por "
+"Adicione os módulos de medição desejados. Por exemplo, você pode escolher "
 "**MeasureObjectIntensity** e/ou **MeasureObjectSizeShape**. Ao aplicar essas"
-" medições, tenha cuidado para medir as imagens originais, não as imagens "
-"redimensionadas."
+" medições, tenha cuidado para realizar as medidas nas imagens originais, não"
+" as imagens reescalonadas."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:337
 msgid "Creating visuals"
