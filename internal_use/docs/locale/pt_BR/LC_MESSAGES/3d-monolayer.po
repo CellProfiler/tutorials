@@ -724,4 +724,4 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:378
 msgid "Thank you for completing the 3d monolayer tutorial!"
-msgstr "Obrigado por concluir o tutorial de monocamada 3d!"
+msgstr "Obrigado por concluir o tutorial de monocamada em 3D!"
