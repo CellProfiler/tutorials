@@ -461,7 +461,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:209
 msgid "Transform the membrane channel into cytoplasm signal"
-msgstr "Transformar o canal da membrana em sinal do citoplasma"
+msgstr "Transformando o canal de membrana em sinal de citoplasma"
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:211
 msgid ""
