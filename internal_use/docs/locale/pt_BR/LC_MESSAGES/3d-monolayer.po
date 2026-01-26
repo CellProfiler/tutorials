@@ -150,7 +150,7 @@ msgstr ""
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:44
 msgid "Highlight the **NamesAndTypes** module."
-msgstr "Destaque o módulo **NamesAndTypes**."
+msgstr "Selecione o módulo **NamesAndTypes**."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:46
 msgid "Assign a name to “Images matching rules”."
