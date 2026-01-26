@@ -174,7 +174,8 @@ msgid ""
 "and go to Image > Show Info… (or use Ctrl + I)"
 msgstr ""
 "Você pode encontrar essas informações nos metadados da imagem. Abra a imagem"
-" no Fiji e vá para Image &gt; Show Info... (ou use Ctrl + I)"
+" no Fiji e vá em Image > Show Info… (ou use Cmd + I no macOS, ou Ctrl + I no"
+" Windows)."
 
 #: ../../source/3d-monolayer/3D_Monolayer.md:53
 msgid ""
