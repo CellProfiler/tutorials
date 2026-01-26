@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:10
 msgid "Coordinates listed in separate columns. Labels x, y, and z."
-msgstr "Coordenadas listadas em colunas separadas. Rótulos x, y e z."
+msgstr "Coordenadas listadas em colunas separadas, com os rótulos x, y e z."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:11
 msgid "Integrated Intensity. Label intensity."
