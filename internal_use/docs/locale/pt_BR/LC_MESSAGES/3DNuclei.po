@@ -151,8 +151,8 @@ msgstr ""
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:53
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
 msgstr ""
-"Process as 3D: Yes Selecionando \"Yes\", os arquivos serão carregados como "
-"volumes"
+"Na configuração \"Process as 3D:\" selecione \"Yes\", os arquivos serão "
+"carregados como volumes"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:55
 msgid ""
