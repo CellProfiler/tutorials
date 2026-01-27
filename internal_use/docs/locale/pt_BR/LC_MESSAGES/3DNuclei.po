@@ -74,8 +74,8 @@ msgid ""
 "Four different z-stack images that vary in their signal-to-noise ratio and "
 "the clustering of their nuclei in 3D cell culture."
 msgstr ""
-"Quatro imagens diferentes de pilha z que variam em sua relação sinal-ruído e"
-" no agrupamento de seus núcleos em cultura de células 3D."
+"Quatro imagens z-stack diferentes que variam em sua relação sinal-ruído e no"
+" agrupamento de seus núcleos em cultura de células 3D."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:20
 msgid "Voxel dimensions: 0.124x0.124x0.200 um"
