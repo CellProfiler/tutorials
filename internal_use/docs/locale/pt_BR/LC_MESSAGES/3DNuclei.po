@@ -55,7 +55,7 @@ msgstr "Coordenadas listadas em colunas separadas, rotuladas x, y e z."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:11
 msgid "Integrated Intensity. Label intensity."
-msgstr "Intensidade integrada. Intensidade do rótulo."
+msgstr "Intensidade integrada, rotulada *intensity*."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:12
 msgid "Volume in cubic microns (um^3). Label volume."
