@@ -990,4 +990,4 @@ msgstr "O núcleo foi segmentado, medido e exportado."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:431
 msgid "**The End**"
-msgstr "**O fim**"
+msgstr "**Terminamos**"
