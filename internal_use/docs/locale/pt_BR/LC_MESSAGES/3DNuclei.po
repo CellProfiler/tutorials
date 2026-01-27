@@ -144,8 +144,9 @@ msgid ""
 "Assign a name to: All images This is the simplest choice and the appropriate"
 " one because we have only one kind of image."
 msgstr ""
-"Atribuir um nome a: Todas as imagens Esta é a escolha mais simples e "
-"adequada porque temos apenas um tipo de imagem."
+"Na configuração “Assign a name to:”, escolha “All images” para aplicar a "
+"nomeação a todas as imagens.  Esta é a escolha mais simples e adequada "
+"porque temos apenas um tipo de imagem."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:53
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
