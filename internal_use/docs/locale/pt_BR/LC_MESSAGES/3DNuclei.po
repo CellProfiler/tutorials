@@ -106,7 +106,7 @@ msgid ""
 "File->Import->Pipeline from File…"
 msgstr ""
 "Carregue o arquivo de pipeline (.cppipe). Arraste e solte o arquivo ou vá "
-"para File-&gt;Import-&gt;Pipeline from File..."
+"para File->Import->Pipeline from File..."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:38
 msgid ""
