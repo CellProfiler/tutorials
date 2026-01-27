@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:43
 msgid "Highlight the **NamesAndTypes** module."
-msgstr "Destaque o módulo **NamesAndTypes**."
+msgstr "Selecione o módulo **NamesAndTypes**."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:46
 msgid ""
