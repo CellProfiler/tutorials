@@ -238,7 +238,9 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:98
 msgid "Select the input image: Nuclei (from **NamesAndTypes** module),"
-msgstr "Selecione a imagem de entrada: Núcleos (do módulo **NamesAndTypes**),"
+msgstr ""
+"Selecione a imagem de entrada (Select the input image): Nuclei (ou no nome "
+"que você atribuiu no  módulo **NamesAndTypes**),"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:99
 msgid "Name the output image: GaussianFilter,"
