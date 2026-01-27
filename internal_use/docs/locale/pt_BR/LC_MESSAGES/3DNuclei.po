@@ -204,8 +204,9 @@ msgid ""
 " segment the nuclei in these images, conditioning the images with filters "
 "and various image processing methods will improve segmentation results."
 msgstr ""
-"Antes de tentar segmentar os núcleos nessas imagens, condicionar as imagens "
-"com filtros e vários métodos de processamento de imagens melhorará os "
+"O conjunto de imagens fornecido apresenta variação na relação sinal-ruído. "
+"Antes de tentar segmentar os núcleos nessas imagens, é recomendável aplicar "
+"filtros e outras etapas de pré-processamento, pois isso melhora os "
 "resultados da segmentação."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:86
