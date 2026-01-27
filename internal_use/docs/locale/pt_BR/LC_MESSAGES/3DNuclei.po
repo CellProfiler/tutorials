@@ -304,7 +304,7 @@ msgstr "Nomear a imagem de saída: ReduceNoise"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:127
 msgid "Size: 5"
-msgstr "Tamanho: 5"
+msgstr "Size: 5"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:128
 msgid "Distance: 2"
