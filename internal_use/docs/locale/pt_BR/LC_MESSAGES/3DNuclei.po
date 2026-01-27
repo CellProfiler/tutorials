@@ -160,8 +160,7 @@ msgid ""
 "modules that handle 3D images as volumes."
 msgstr ""
 "Preencha os campos de “Relative Pixel Spacing”. Essa calibração é importante"
-" porque influencia os módulos que processam imagens 3D como um volume (e não"
-" como fatias independentes)."
+" porque influencia os módulos que processam imagens 3D como um volume."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:58
 msgid ""
