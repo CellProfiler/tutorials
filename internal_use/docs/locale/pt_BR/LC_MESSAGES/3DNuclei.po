@@ -168,9 +168,9 @@ msgid ""
 " um in z. To run the calibration file please change the relative pixel "
 "spacing to 1x1x1 um."
 msgstr ""
-"O espaçamento relativo de pixels foi fornecido e é de 0,124 um em x e y e "
-"0,200 um em z. Para executar o arquivo de calibração, altere o espaçamento "
-"relativo de pixels para 1x1x1 um."
+"O espaçamento relativo de pixels, Relative Pixel Spacing, fornecido é 0,124 "
+"µm em x e y, e 0,200 µm em z. Para executar o arquivo de calibração, altere "
+"temporariamente esse valor para 1 × 1 × 1 µm."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:62
 msgid ""
