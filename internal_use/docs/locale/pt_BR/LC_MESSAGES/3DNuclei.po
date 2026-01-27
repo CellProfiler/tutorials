@@ -59,7 +59,7 @@ msgstr "Intensidade integrada, rotulada *intensity*."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:12
 msgid "Volume in cubic microns (um^3). Label volume."
-msgstr "Volume em mícrons cúbicos (um^3). Volume do rótulo."
+msgstr "Volume (em micrômetros cúbicos, µm^3), rotulado *volume*."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:13
 msgid "3D volume image of your segmented image"
