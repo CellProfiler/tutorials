@@ -312,7 +312,7 @@ msgstr "Distance: 2"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:129
 msgid "Cut-off distance: 0.2"
-msgstr "Distância de corte: 0.2"
+msgstr "Cut-off distance: 0.2"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:136
 msgid ""
