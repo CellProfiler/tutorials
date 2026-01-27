@@ -178,9 +178,9 @@ msgid ""
 "For example, use the name \"Nuclei\", \"DNA\", “DAPI” or something else that"
 " will remind you what the image is."
 msgstr ""
-"Atribua às imagens “nomes de variáveis” que descrevam o conteúdo da imagem. "
-"Por exemplo, use o nome “Núcleos”, “DNA”, “DAPI” ou qualquer outro que irá "
-"lembrá-lo do que é a imagem."
+"Atribua às imagens nomes descritivos que indiquem o conteúdo da imagem. Por "
+"exemplo: \"Núcleos\", \"DNA\", “DAPI”, ou outro nome que ajude você a "
+"reconhecer rapidamente o que aquela imagem representa."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:63
 msgid "Hit the \"update\" button to populate"
