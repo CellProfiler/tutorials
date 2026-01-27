@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:63
 msgid "Hit the \"update\" button to populate"
-msgstr "Pressione o botão \"atualizar\" para preencher"
+msgstr "Clique em “Update” para preencher os campos automaticamente."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:71
 msgid ""
