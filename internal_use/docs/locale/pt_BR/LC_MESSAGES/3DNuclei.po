@@ -308,7 +308,7 @@ msgstr "Size: 5"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:128
 msgid "Distance: 2"
-msgstr "Distância: 2"
+msgstr "Distance: 2"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:129
 msgid "Cut-off distance: 0.2"
