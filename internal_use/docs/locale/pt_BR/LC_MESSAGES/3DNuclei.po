@@ -986,7 +986,7 @@ msgstr "**Parabéns!**"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:428
 msgid "The nucleus has been segmented, measured and exported."
-msgstr "O núcleo foi segmentado, medido e exportado."
+msgstr "O núcleo foi segmentado, as medidas foram realizadas e exportadas."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:431
 msgid "**The End**"
