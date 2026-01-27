@@ -191,8 +191,8 @@ msgid ""
 "This analysis pipeline can be divided into three main parts: Image "
 "processing,segmentation and measurement/export."
 msgstr ""
-"Este pipeline de análise pode ser dividido em três partes principais: "
-"Processamento de imagens, segmentação e medição/exportação."
+"Este pipeline de análise pode ser dividido em três etapas principais: "
+"processamento de imagens, segmentação e medição/exportação."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:79
 msgid "**Image processing:**"
