@@ -63,7 +63,7 @@ msgstr "Volume (em micrômetros cúbicos, µm^3), rotulado *volume*."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:13
 msgid "3D volume image of your segmented image"
-msgstr "Imagem de volume 3D de sua imagem segmentada"
+msgstr "Imagem volumétrica 3D do resultado da segmentação."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:15
 msgid "**Input:**"
