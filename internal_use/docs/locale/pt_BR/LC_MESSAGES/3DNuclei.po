@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:20
 msgid "Voxel dimensions: 0.124x0.124x0.200 um"
-msgstr "Dimensões do voxel: 0,124x0,124x0,200 um"
+msgstr "Dimensões do voxel: 0,124x0,124x0,200 µm"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:22
 msgid "Calibration Image: Voxel dimensions: 1x1x1 um"
