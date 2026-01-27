@@ -289,8 +289,8 @@ msgid ""
 "**NOTE** This module is quite time consuming, don't worry if it takes "
 "several seconds to run."
 msgstr ""
-"**NOTA** Este módulo consome bastante tempo, não se preocupe se demorar "
-"vários segundos para ser executado."
+"**NOTA** Este módulo consome bastante tempo, não se preocupe se demorar um "
+"pouco para ser executado."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:125
 msgid ""
