@@ -91,7 +91,7 @@ msgstr "**Importando dados no CellProfiler**"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:26
 msgid "Highlight the **Images** module."
-msgstr "Destaque o módulo **Imagens**."
+msgstr "Selecione o módulo **Imagens**."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:28
 msgid ""
