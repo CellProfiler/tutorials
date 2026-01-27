@@ -222,7 +222,7 @@ msgstr ""
 "**Dica:** você pode selecionar diferentes conjuntos de imagens. Para isso "
 "você pode clicar no botão <img src=\"images/NextImageSet.png\" "
 "width=\"150\"/> ou ir para a aba principal, clicar na aba de teste e "
-"escolher outro conjunto de imagens <span class='notranslate'><br></ período>"
+"escolher outro conjunto de imagens<br>."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:97
 msgid ""
