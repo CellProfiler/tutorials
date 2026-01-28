@@ -387,7 +387,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:169
 msgid "Select the input image: ReduceNoise (from **ReduceNoise** module)"
-msgstr "em Select the input image: escolha o método **ReduceNoise**"
+msgstr "em 'Select the input image:' escolha o método **ReduceNoise**"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:170
 msgid "Name the output image: Threshold"
