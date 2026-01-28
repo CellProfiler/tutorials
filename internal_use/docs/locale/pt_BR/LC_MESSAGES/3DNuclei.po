@@ -327,8 +327,8 @@ msgid ""
 "The 1st icon from the left lets you reset the view back to the original "
 "view."
 msgstr ""
-"O primeiro ícone da esquerda permite que você redefina a visualização de "
-"volta à visualização original."
+"O primeiro ícone à esquerda permite redefinir a visualização para a "
+"visualização original."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:147
 msgid ""
