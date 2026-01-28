@@ -351,8 +351,8 @@ msgid ""
 "The 5th icon lets you change the view by zooming, by dragging and drawing a "
 "box to zoom in on."
 msgstr ""
-"O quinto ícone permite que você altere a visualização por meio do zoom, "
-"arrastando e desenhando uma caixa para aumentar o zoom."
+"O quinto ícone permite que você altere o zoom, arrastando e desenhando uma "
+"caixa na área em que deseja ampliar."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:161
 msgid "**Segmentation**"
