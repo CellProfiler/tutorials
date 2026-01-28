@@ -296,7 +296,8 @@ msgstr ""
 msgid ""
 "Select the output image: GaussianFilter (from **GaussianFilter** module)."
 msgstr ""
-"Selecione a imagem de saída: GaussianFilter (do módulo **GaussianFilter**)."
+"Em 'Select the output image:' selecione GaussianFilter (from "
+"**GaussianFilter**)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:126
 msgid "Name the output image: ReduceNoise"
