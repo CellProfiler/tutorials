@@ -305,7 +305,7 @@ msgstr "Em 'Name the output image:' escreva 'ReduceNoise'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:127
 msgid "Size: 5"
-msgstr "Size: 5"
+msgstr "em 'Size:' escreva '5'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:128
 msgid "Distance: 2"
