@@ -335,8 +335,8 @@ msgid ""
 "The 2nd and 3rd icons let you step backwards and forwards through any "
 "changes you made to the view."
 msgstr ""
-"O segundo e o terceiro ícones permitem que você retroceda e avance nas "
-"alterações feitas na visualização."
+"O segundo e o terceiro ícones permitem que você volte e avance pelas "
+"alterações que você fez na visualização."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:150
 msgid ""
