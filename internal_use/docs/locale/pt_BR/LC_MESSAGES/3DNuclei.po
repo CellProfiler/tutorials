@@ -343,8 +343,8 @@ msgid ""
 "The 4th icon lets you change the view by moving in any direction in the "
 "display, by clicking and dragging."
 msgstr ""
-"O quarto ícone permite que você altere a visualização movendo-se em qualquer"
-" direção na tela, clicando e arrastando."
+"O quarto ícone permite que você altere a visualização, movendo-a em qualquer"
+" direção na tela ao clicar e arrastar."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:153
 msgid ""
