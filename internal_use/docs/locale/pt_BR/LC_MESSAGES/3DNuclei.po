@@ -984,7 +984,7 @@ msgstr "Em ‘Data to export:’ selecione ‘RealsizeNuclei’."
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:405
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:411
 msgid "Use the object name for the file name?: No"
-msgstr "Usar o nome do objeto para o nome do arquivo: Não"
+msgstr "Em ‘Use the object name for the file name?:’ selecione ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:407
 msgid "File name: Nuclei.csv"
