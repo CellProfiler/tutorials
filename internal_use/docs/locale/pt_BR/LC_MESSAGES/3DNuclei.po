@@ -446,7 +446,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:179
 msgid "Threshold correction factor: 1"
-msgstr "Fator de correção do limiar: 1"
+msgstr "Em ‘Threshold correction factor:’ escreva ‘1’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:191
 msgid ""
