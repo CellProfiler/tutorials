@@ -816,7 +816,9 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:328
 msgid "When to save: Every cycle (Save every image set)"
-msgstr "Quando salvar: Every cycle (Salvar cada conjunto de imagens)"
+msgstr ""
+"Em ‘When to save:’ selecione ‘Every cycle’ (salva a cada conjunto de "
+"imagens)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:329
 msgid "Record the file and path information to the saved image?: No"
