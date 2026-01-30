@@ -637,7 +637,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:274
 msgid "Calculate the Zernike features: No"
-msgstr "Calcular os recursos de Zernike: Não"
+msgstr "Em 'Calculate the Zernike features:'selecione 'No'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:275
 msgid "Calculate the advanced features: No"
