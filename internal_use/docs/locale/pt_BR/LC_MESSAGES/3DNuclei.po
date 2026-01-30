@@ -924,7 +924,7 @@ msgstr "Em ‘Representation of Nan/Inf:’ selecione ‘NaN’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:380
 msgid "Select the measurements to export: Yes"
-msgstr "Selecione as medidas a serem exportadas: Sim"
+msgstr "Em ‘Select the measurements to export:’ selecione ‘Yes’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:382
 msgid "Press the button to select measurements:"
