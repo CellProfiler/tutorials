@@ -775,8 +775,8 @@ msgid ""
 "Text to append to the image name: Overlay (just add Overlay in the end of "
 "your original image file name)"
 msgstr ""
-"Texto a ser anexado ao nome da imagem: Sobreposição (basta adicionar "
-"Sobreposição no final do nome do arquivo de imagem original)"
+"Em ‘Text to append to the image name:’ escreva ‘Overlay’ (isso adiciona "
+"‘Overlay’ ao final do nome original do arquivo de imagem)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:323
 msgid ""
