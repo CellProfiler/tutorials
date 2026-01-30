@@ -893,7 +893,7 @@ msgstr "Em ‘Select the column delimiter:’ selecione ‘Comma (\",\")'."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:366
 msgid "Output file location: Default Output Folder"
-msgstr "Local do arquivo de saída: Pasta de saída padrão"
+msgstr "Em ‘Output file location:’ selecione ‘Default Output Folder’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:368
 msgid "Add a prefix to file names: Yes"
