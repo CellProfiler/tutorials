@@ -928,7 +928,9 @@ msgstr "Em ‘Select the measurements to export:’ selecione ‘Yes’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:382
 msgid "Press the button to select measurements:"
-msgstr "Pressione o botão para selecionar medidas:"
+msgstr ""
+"Clique no botão ‘Press the button to select measurements:’  para selecionar "
+"as medidas."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:384
 msgid "RealsizeNuclei:"
