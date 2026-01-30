@@ -943,7 +943,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:389
 msgid "Intensity: IntegratedIntensity"
-msgstr "Intensidade: IntegratedIntensity"
+msgstr "Clique em 'Intensidade:' e selecione 'IntegratedIntensity'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:391
 msgid "Calculate the per-image mean values for object measurements?:No"
