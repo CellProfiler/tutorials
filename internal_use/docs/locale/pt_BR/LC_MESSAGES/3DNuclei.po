@@ -499,7 +499,9 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:198
 msgid "Downsample: 3 (reduce processing time without losing data)."
-msgstr "Downsample: 3 (reduz o tempo de processamento sem perder dados)."
+msgstr ""
+"Em ‘Downsample:’ escreva ‘3’ (reduz o tempo de processamento sem perder "
+"dados)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:210
 msgid ""
