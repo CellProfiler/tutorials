@@ -394,7 +394,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:170
 msgid "Name the output image: Threshold"
-msgstr "Em 'Name the output image:' escolha 'Threshold'"
+msgstr "Em 'Name the output image:' selecione 'Threshold'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:171
 msgid ""
@@ -402,7 +402,7 @@ msgid ""
 "because our background is relatively uniform after the image processing "
 "steps of this pipeline)."
 msgstr ""
-"Em 'Threshold strategy:' escolha 'Global' (escolhemos uma estratégia de "
+"Em 'Threshold strategy:' selecione 'Global' (escolhemos uma estratégia de "
 "limite global aqui porque nosso background é relativamente uniforme após as "
 "etapas de processamento de imagem deste pipeline)."
 
