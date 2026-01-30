@@ -768,7 +768,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:321
 msgid "Append a suffix to the image file name?: Yes"
-msgstr "Acrescentar um sufixo ao nome do arquivo de imagem: Sim"
+msgstr "Em ‘Append a suffix to the image file name?:’ selecione ‘Yes’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:322
 msgid ""
