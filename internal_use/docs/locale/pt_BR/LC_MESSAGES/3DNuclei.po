@@ -889,7 +889,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:364
 msgid "Select the column delimiter: Comma (“,”)"
-msgstr "Selecione o delimitador de coluna: Vírgula (\",\")"
+msgstr "Em ‘Select the column delimiter:’ selecione ‘Comma (\",\")'."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:366
 msgid "Output file location: Default Output Folder"
