@@ -763,8 +763,8 @@ msgid ""
 "Select image name for file prefix: Nuclei (select the original image name "
 "from NamesAndTypes module)"
 msgstr ""
-"Selecione o nome da imagem para o prefixo do arquivo: Núcleos (selecione o "
-"nome da imagem original no módulo NamesAndTypes)"
+"Em ‘Select image name for file prefix:’ selecione ‘Nuclei’ (selecione o nome"
+" da imagem original no módulo ‘NamesAndTypes’)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:321
 msgid "Append a suffix to the image file name?: Yes"
