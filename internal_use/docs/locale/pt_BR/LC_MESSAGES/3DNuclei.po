@@ -645,7 +645,7 @@ msgstr "Em 'Calculate the advanced features:' selecione 'No'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:287
 msgid "**Creating visuals**"
-msgstr "**Criação de recursos visuais**"
+msgstr "**Criando de recursos visuais**"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:289
 msgid ""
