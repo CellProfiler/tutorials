@@ -402,9 +402,9 @@ msgid ""
 "because our background is relatively uniform after the image processing "
 "steps of this pipeline)."
 msgstr ""
-"Estratégia de limite: Global (escolhemos uma estratégia de limite global "
-"aqui porque nosso plano de fundo é relativamente uniforme após as etapas de "
-"processamento de imagem deste pipeline)."
+"Em 'Threshold strategy:' escolha 'Global' (escolhemos uma estratégia de "
+"limite global aqui porque nosso background é relativamente uniforme após as "
+"etapas de processamento de imagem deste pipeline)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:172
 msgid ""
