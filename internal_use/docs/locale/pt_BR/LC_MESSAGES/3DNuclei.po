@@ -979,7 +979,7 @@ msgstr "Exportar todos os tipos de medição?"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:403
 msgid "Data to export: RealsizeNuclei"
-msgstr "Dados a serem exportados: RealsizeNuclei"
+msgstr "Em ‘Data to export:’ selecione ‘RealsizeNuclei’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:405
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:411
