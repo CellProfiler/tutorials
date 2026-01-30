@@ -696,7 +696,9 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:305
 msgid "Input: RescaleIntensityNuclei (from **RescaleIntensity** module)"
-msgstr "Entrada: RescaleIntensityNuclei (do módulo **RescaleIntensity**)"
+msgstr ""
+"Em 'Input:' selecione 'RescalelntensityNuclei' (do módulo "
+"**RescaleIntensity**)"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:306
 msgid "Name the output image: OverlayObjects"
