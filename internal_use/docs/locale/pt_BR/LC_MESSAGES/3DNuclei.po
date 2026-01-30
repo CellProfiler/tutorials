@@ -910,14 +910,13 @@ msgstr "Em ‘Overwrite existing files without warning:’ selecione ‘No’."
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:374
 msgid "Add image metadata columns to your object data file: No"
 msgstr ""
-"Adicione colunas de metadados de imagem ao seu arquivo de dados do objeto: "
-"Não"
+"Em ‘Add image metadata columns to your object data file:’ selecione ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:376
 msgid "Add image file and folder names to your object data file: No"
 msgstr ""
-"Adicione nomes de arquivos de imagem e pastas ao seu arquivo de dados do "
-"objeto: Não"
+"Em ‘Add image file and folder names to your object data file:’ selecione "
+"‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:378
 msgid "Representation of Nan/Inf: NaN"
