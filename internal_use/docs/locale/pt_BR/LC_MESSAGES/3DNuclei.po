@@ -601,8 +601,8 @@ msgid ""
 "Select images to measure: Nuclei (original image from **NamesAndTypes** "
 "module)"
 msgstr ""
-"Selecione imagens para medir: Núcleos (imagem original do módulo "
-"**NamesAndTypes**)"
+"Em ‘Select images to measure:’ selecione ‘Nuclei’ (imagem original do módulo"
+" **NamesAndTypes**)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:255
 msgid ""
