@@ -901,7 +901,7 @@ msgstr "Em ‘Add a prefix to file names:’ selecione ‘Yes’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:370
 msgid "Filename prefix: MyExpt\\_"
-msgstr "Prefixo do nome do arquivo: MyExpt\\_"
+msgstr "Em ‘Filename prefix:’ escreva ‘MyExpt\\_'."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:372
 msgid "Overwrite existing files without warning: No"
