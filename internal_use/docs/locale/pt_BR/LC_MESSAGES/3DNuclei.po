@@ -992,7 +992,9 @@ msgstr "Em ‘File name:’ escreva ‘Nuclei.csv’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:409
 msgid "Data to export: Experiment"
-msgstr "Em ‘Data to export:’ selecione ‘Experiment’."
+msgstr ""
+"Clique em ‘Add another data set’, em ‘Use the object name for the file "
+"name?’ selecione ‘No’ e em ‘Data to export:’ selecione ‘Experiment’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:413
 msgid "File name: Metadata.csv"
