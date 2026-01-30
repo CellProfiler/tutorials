@@ -947,7 +947,9 @@ msgstr "Clique em 'Intensidade:' e selecione 'IntegratedIntensity'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:391
 msgid "Calculate the per-image mean values for object measurements?:No"
-msgstr "Calcular os valores médios por imagem para medições de objetos?"
+msgstr ""
+"Em ‘Calculate the per-image mean values for object measurements?:’ selecione"
+" ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:393
 msgid "Calculate the per-image median values for object measurements?:No"
