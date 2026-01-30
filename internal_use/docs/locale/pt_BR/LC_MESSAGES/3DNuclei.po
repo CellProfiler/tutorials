@@ -967,7 +967,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:397
 msgid "Output file location:Default Output Folder|"
-msgstr "Localização do arquivo de saída:Pasta de saída padrão|"
+msgstr "Em ‘Output file location:’ selecione ‘Default Output Folder’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:399
 msgid "Create a GenePattern GCT file?:No"
