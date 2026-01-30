@@ -741,7 +741,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:317
 msgid "Select the type of image to save: Image"
-msgstr "Selecione o tipo de imagem a ser salva: Imagem"
+msgstr "Em ‘Select the type of image to save:’ selecione ‘Image’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:318
 msgid ""
