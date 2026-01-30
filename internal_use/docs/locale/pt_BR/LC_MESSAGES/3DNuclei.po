@@ -835,8 +835,8 @@ msgid ""
 "**ConvertObjectsToImage** module. Transform objects in image (provide a 3D "
 "volume image of the segmented image)"
 msgstr ""
-"Módulo **ConvertObjectsToImage**. Transformar objetos em imagem (fornecer "
-"uma imagem de volume 3D da imagem segmentada)"
+"**ConvertObjectsToImage**. Este módulo transforma objetos em uma imagem "
+"(gera uma imagem de volume 3D a partir do objeto segmentado)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:339
 msgid ""
