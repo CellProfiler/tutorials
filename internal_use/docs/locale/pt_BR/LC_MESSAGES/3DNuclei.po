@@ -560,9 +560,8 @@ msgid ""
 "modules from the **Measurements** category. This study is asking for 3 "
 "particular measurements:"
 msgstr ""
-"Agora que os núcleos foram segmentados, as medições podem ser feitas usando "
-"módulos da categoria **Measurements**. Este estudo está solicitando 3 "
-"medições específicas:"
+"Agora que os núcleos foram segmentados, as medidas podem ser feitas usando "
+"módulos **Measurements**. Este estudo fará 3 medidas específicas:"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:240
 msgid "Centroid location (x, y and z)"
