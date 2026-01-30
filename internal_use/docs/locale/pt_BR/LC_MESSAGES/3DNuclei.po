@@ -309,7 +309,7 @@ msgstr "em 'Size:' escreva '5'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:128
 msgid "Distance: 2"
-msgstr "Distance: 2"
+msgstr "Em 'Distance:' escreva '2'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:129
 msgid "Cut-off distance: 0.2"
@@ -389,7 +389,7 @@ msgstr ""
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:169
 msgid "Select the input image: ReduceNoise (from **ReduceNoise** module)"
 msgstr ""
-"em 'Select the input image:' escolha o método **ReduceNoise** (from "
+"em 'Select the input image:' selecione o método **ReduceNoise** (from "
 "ReduceNoise)"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:170
