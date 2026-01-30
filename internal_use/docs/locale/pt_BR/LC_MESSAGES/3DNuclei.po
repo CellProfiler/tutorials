@@ -702,7 +702,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:306
 msgid "Name the output image: OverlayObjects"
-msgstr "Nomeie a imagem de saída: OverlayObjects"
+msgstr "Em 'Name the output image:' selecione 'OverlayObjects'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:307
 msgid "Objects: RealsizeNuclei (from **DilateObjects** module)"
