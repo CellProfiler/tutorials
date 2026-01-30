@@ -453,8 +453,8 @@ msgid ""
 "**Watershed** module. This module is used to separate different objects in "
 "an image, which in this case will assign which nuclei."
 msgstr ""
-"Módulo **Bacia Hidrográfica**. Este módulo é utilizado para separar "
-"diferentes objetos em uma imagem, que neste caso atribuirá quais núcleos."
+"**Watershed**. Este módulo é usado para separar diferentes objetos em uma "
+"imagem; neste caso, para separar quais pixels pertencem a cada núcleo."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:192
 msgid "Use advanced settings: No"
