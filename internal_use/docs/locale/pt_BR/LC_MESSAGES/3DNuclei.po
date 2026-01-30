@@ -797,7 +797,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:325
 msgid "Save with lossless compression: Yes"
-msgstr "Salvar com compactação sem perdas: Sim"
+msgstr "Em ‘Save with lossless compression:’ selecione ‘Yes’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:326
 msgid ""
