@@ -938,7 +938,9 @@ msgstr "Clique em 'RealsizeNuclei:'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:386
 msgid "AreaShape: Center: X, Y and Z"
-msgstr "AreaShape: Center: X, Y e Z"
+msgstr ""
+"Clique em 'AreaShape:' depois em 'Center:' e clique nas três opções: 'X, Y e"
+" Z'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:389
 msgid "Intensity: IntegratedIntensity"
