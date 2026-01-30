@@ -714,8 +714,8 @@ msgid ""
 "Opacity: 0.3 (Increase this value to decrease the transparency of the "
 "colorized object labels)."
 msgstr ""
-"Opacidade: 0,3 (aumente este valor para diminuir a transparência dos rótulos"
-" dos objetos coloridos)."
+"Em 'Opacity:' escreva '0,3' (aumente este valor para diminuir a "
+"transparência dos rótulos dos objetos coloridos)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:315
 msgid ""
