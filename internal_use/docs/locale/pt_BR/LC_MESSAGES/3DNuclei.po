@@ -422,8 +422,9 @@ msgid ""
 "Two-class or three-class thresholding: Three classes (separate three major "
 "pixel levels \\[foreground, mid-level and   background\\])."
 msgstr ""
-"Limiar de duas ou três classes: Três classes (separe três níveis principais "
-"de pixel [primeiro plano, nível médio e plano de fundo\\])."
+"Em 'Two-class or three-class thresholding:' selecione 'Three classes' "
+"(separa pixels em três níveis: \\[primeiro plano, nível intermediário e "
+"background\\])."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:175
 msgid ""
