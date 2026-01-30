@@ -178,8 +178,8 @@ msgid ""
 "Exercise I: Using the CellProfiler software to identify features and obtain "
 "measurements from cellular images."
 msgstr ""
-"Exercício I: Uso do software CellProfiler para identificar características e"
-" obter medições de imagens celulares."
+"Exercício I: Usando o CellProfiler para identificar features e extrair "
+"medições de imagens celulares."
 
 #: ../../source/Translocation/Translocation.md:79
 msgid ""
