@@ -538,8 +538,9 @@ msgid ""
 "Structuring element: Octahedron (Size: 1) (dilate the objects using an "
 "octahedron profile with a size of 1)."
 msgstr ""
-"Elemento estruturante: Octaedro (Tamanho: 1) (dilate os objetos utilizando "
-"um perfil octaedro de tamanho 1)."
+"Em ‘Structuring element:’ selecione ‘Octahedron’ e em ‘Size:’ selecione ‘1’ "
+"(dilata os objetos usando um elemento estruturante em forma de octaedro com "
+"tamanho 1)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:232
 msgid ""
