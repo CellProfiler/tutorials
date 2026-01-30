@@ -792,8 +792,8 @@ msgid ""
 "Image bit depth: 8-bit integer (this bit depth is easily read outside Cell "
 "Profiler)"
 msgstr ""
-"Profundidade de bits da imagem: número inteiro de 8 bits (essa profundidade "
-"de bits é facilmente lida fora do Cell Profiler)"
+"Em ‘Image bit depth:’ selecione ‘8-bit integer’ (essa profundidade de bits é"
+" facilmente lida fora do CellProfiler)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:325
 msgid "Save with lossless compression: Yes"
