@@ -690,9 +690,9 @@ msgid ""
 "on the image. We recommend overlaying onto rescaled images,which will be "
 "easier to visualize outside of CellProfiler."
 msgstr ""
-"Módulo **OverlayObjects**. Este módulo sobrepõe os objetos como máscaras "
-"coloridas na imagem. Recomendamos a sobreposição em imagens redimensionadas,"
-" que serão mais fáceis de visualizar fora do CellProfiler."
+"**OverlayObjects**. Este módulo sobrepõe os objetos como máscaras coloridas "
+"sobre a imagem. Recomendamos sobrepor sobre imagens reescaladas, pois elas "
+"ficam mais fáceis de visualizar fora do CellProfiler."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:305
 msgid "Input: RescaleIntensityNuclei (from **RescaleIntensity** module)"
