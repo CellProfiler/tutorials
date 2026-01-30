@@ -609,8 +609,9 @@ msgid ""
 "Select objects to measure: RealsizeNuclei (from **DilateObjects** module) to"
 " have all the intensity measurements from the object."
 msgstr ""
-"Selecione objetos para medir: RealsizeNuclei (do módulo **DilateObjects**) "
-"para ter todas as medidas de intensidade do objeto."
+"Abaixo, em ‘Select objects to measure:’ selecione ‘RealsizeNuclei’ (do "
+"módulo **DilateObjects**), para obter todas as medidas de intensidade do "
+"objeto."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:262
 msgid ""
