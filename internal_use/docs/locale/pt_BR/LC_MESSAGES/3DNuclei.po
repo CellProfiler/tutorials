@@ -669,9 +669,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:291
 msgid "Name the output image: RescaleIntensityNuclei"
-msgstr ""
-"Nomear a imagem de saída: RescaleIntensityNuclei (Redimensionar a "
-"intensidade dos núcleos)"
+msgstr "Em 'Name the output image:'escolha 'RescaleIntensityNuclei''"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:292
 msgid ""
