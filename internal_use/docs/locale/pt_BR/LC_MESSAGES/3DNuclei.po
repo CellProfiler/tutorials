@@ -934,7 +934,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:384
 msgid "RealsizeNuclei:"
-msgstr "RealsizeNuclei:"
+msgstr "Clique em 'RealsizeNuclei:'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:386
 msgid "AreaShape: Center: X, Y and Z"
