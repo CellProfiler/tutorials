@@ -855,7 +855,7 @@ msgstr "Em ‘Select the color format:’ selecione ‘Grayscale’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:348
 msgid "**Export measurements**"
-msgstr "**Medidas de exportação**"
+msgstr "**Exportando as medidas**"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:350
 msgid ""
