@@ -107,7 +107,7 @@ msgstr ""
 "Neste exercício, pretendemos: (1) determinar a dose mais baixa possível "
 "necessária para observar este efeito, e (2) otimizar a análise de imagens "
 "nas quais FOXO1A é citoplasmática versus nuclear, a fim de separar controles"
-" positivos e controles negativos como melhor possível."
+" positivos e controles negativos da melhor forma possível."
 
 #: ../../source/Translocation/Translocation.md:46
 msgid "**Materials necessary for this exercise:**"
