@@ -975,7 +975,7 @@ msgstr "Em ‘Create a GenePattern GCT file?:’ selecione ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:401
 msgid "Export all measurement types?:No"
-msgstr "Exportar todos os tipos de medição?"
+msgstr "Em ‘Export all measurement types?:’ selecione ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:403
 msgid "Data to export: RealsizeNuclei"
