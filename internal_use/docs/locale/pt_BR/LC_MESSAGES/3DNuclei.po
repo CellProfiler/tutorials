@@ -953,7 +953,9 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:393
 msgid "Calculate the per-image median values for object measurements?:No"
-msgstr "Calcular os valores medianos por imagem para medições de objetos?"
+msgstr ""
+"Em ‘Calculate the per-image median values for object measurements?:’ "
+"selecione ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:395
 msgid ""
