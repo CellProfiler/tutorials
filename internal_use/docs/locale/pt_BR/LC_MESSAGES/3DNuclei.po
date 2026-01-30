@@ -828,7 +828,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:330
 msgid "Create subfolders in the output folder: No"
-msgstr "Criar subpastas na pasta de saída: Não"
+msgstr "Em 'Create subfolders in the output folder:' selecione 'No'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:337
 msgid ""
