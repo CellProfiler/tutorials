@@ -847,7 +847,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:340
 msgid "Name the output image: NucleiObjects3D"
-msgstr "Nomeie a imagem de saída: NucleiObjects3D"
+msgstr "Em ‘Name the output image:’ escreva ‘NucleiObjects3D’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:341
 msgid "Select the color format: Grayscale"
