@@ -663,7 +663,9 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:290
 msgid "Select the input image image: Nuclei (from **NamesAndTypes** module)"
-msgstr "Selecione a imagem de entrada: Núcleos (do módulo **NamesAndTypes**)"
+msgstr ""
+"Em 'Select the input image image:' selecione 'Nuclei' (do módulo "
+"**NamesAndTypes**)"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:291
 msgid "Name the output image: RescaleIntensityNuclei"
