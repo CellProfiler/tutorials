@@ -783,8 +783,9 @@ msgid ""
 "Saved file format: tiff (tiff is a lossless format, but you can choose "
 "others depending on what you need to do with this images)"
 msgstr ""
-"Formato de arquivo salvo: tiff (tiff é um formato sem perdas, mas você pode "
-"escolher outros dependendo do que precisa fazer com essas imagens)"
+"Em ‘Saved file format:’ selecione ‘tiff’ (tiff é um formato sem perdas, mas "
+"você pode escolher outros dependendo do que precisa fazer com essas "
+"imagens)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:324
 msgid ""
