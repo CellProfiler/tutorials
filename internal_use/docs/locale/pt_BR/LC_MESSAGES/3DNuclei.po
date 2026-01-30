@@ -632,7 +632,7 @@ msgid ""
 "Select object sets to measure: RealsizeNuclei (from **DilateObjects** "
 "module)"
 msgstr ""
-"Selecione conjuntos de objetos para medir: RealsizeNuclei (do módulo "
+"Em 'Select object sets to measure:' selecione 'RealsizeNuclei' (do módulo "
 "**DilateObjects**)"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:274
