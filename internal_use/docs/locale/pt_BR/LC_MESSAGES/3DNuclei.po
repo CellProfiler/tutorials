@@ -842,7 +842,7 @@ msgstr ""
 msgid ""
 "Select the input objects: RealsizeNuclei (from **DilateObjects** module)"
 msgstr ""
-"Selecione os objetos de entrada: RealsizeNuclei (do módulo "
+"Em ‘Select the input objects:’ selecione ‘RealsizeNuclei’ (do módulo "
 "**DilateObjects**)"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:340
