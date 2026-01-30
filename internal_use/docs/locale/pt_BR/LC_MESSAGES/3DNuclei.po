@@ -458,7 +458,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:192
 msgid "Use advanced settings: No"
-msgstr "Usar configurações avançadas: Não"
+msgstr "Em ‘Use advanced settings:’ selecione ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:193
 msgid "Select the input image: Threshold (from **Threshold** module)"
