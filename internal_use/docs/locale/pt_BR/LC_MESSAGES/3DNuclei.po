@@ -244,7 +244,8 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:99
 msgid "Name the output image: GaussianFilter,"
-msgstr "Nomear a imagem de saída: GaussianFilter,"
+msgstr ""
+"Nomear a imagem de saída em 'Name the output image:' como 'GaussianFilter',"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:100
 msgid "Sigma: 1 (larger sigmas induce more blurring)."
