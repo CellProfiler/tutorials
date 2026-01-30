@@ -517,7 +517,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:215
 msgid "**DilateObjects** module. This module dilates your objects and"
-msgstr "Módulo **DilateObjects**. Esse módulo dilata seus objetos e"
+msgstr "**DilateObjects**. Esse módulo dilata os objetos e"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:217
 msgid ": smooths the edges."
