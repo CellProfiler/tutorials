@@ -468,7 +468,7 @@ msgstr ""
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:194
 msgid "Name the output object: Watershed"
-msgstr "Nomeie o objeto de saída: Watershed (bacia hidrográfica)"
+msgstr "Em ‘Name the output object:’ escreva ‘Watershed’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:195
 msgid ""
