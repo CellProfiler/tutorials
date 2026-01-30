@@ -851,7 +851,7 @@ msgstr "Em ‘Name the output image:’ escreva ‘NucleiObjects3D’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:341
 msgid "Select the color format: Grayscale"
-msgstr "Selecione o formato de cor: Escala de cinza"
+msgstr "Em ‘Select the color format:’ selecione ‘Grayscale’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:348
 msgid "**Export measurements**"
