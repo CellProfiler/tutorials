@@ -77,9 +77,9 @@ msgstr ""
 "transporte da proteína FOXO1A do núcleo de volta para o citoplasma (Fig. 1)."
 " Marcar a FOXO1A com GFP nos permite visualizar sua localização subcelular. "
 "O objetivo de desenvolver triagens baseadas em imagens desse tipo é ajudar "
-"na busca por fármacos desconhecidos que tenham o mesmo efeito da wortmannina"
-" sobre a localização subcelular da FOXO1A (e, portanto, possam ser possíveis"
-" tratamentos para pacientes com osteossarcoma), mas que apresentem menos "
+"na busca por fármacos que tenham o mesmo efeito da wortmannina sobre a "
+"localização subcelular da FOXO1A (e, portanto, possam ser possíveis "
+"tratamentos para pacientes com osteossarcoma), mas que apresentem menos "
 "efeitos colaterais do que os fármacos já conhecidos."
 
 #: ../../source/Translocation/Translocation.md:31
