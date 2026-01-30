@@ -823,7 +823,8 @@ msgstr ""
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:329
 msgid "Record the file and path information to the saved image?: No"
 msgstr ""
-"Registre as informações do arquivo e do caminho para a imagem salva? Não"
+"Em ‘Record the file and path information to the saved image?:’ selecione "
+"‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:330
 msgid "Create subfolders in the output folder: No"
