@@ -755,8 +755,8 @@ msgid ""
 "Select method for constructing file names: From image filename (use this "
 "option to avoid reassignment of your images)"
 msgstr ""
-"Selecione o método para construir nomes de arquivos: Do nome do arquivo da "
-"imagem (use esta opção para evitar a reatribuição de suas imagens)"
+"Em ‘Select method for constructing file names:’ selecione ‘From image "
+"filename’ (use esta opção para evitar a reatribuição das suas imagens)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:320
 msgid ""
