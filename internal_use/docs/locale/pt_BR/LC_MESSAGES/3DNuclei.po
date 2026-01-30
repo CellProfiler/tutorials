@@ -412,9 +412,9 @@ msgid ""
 " can adapt to changes in lighting conditions between images (in this case we"
 " have images with different pixel intensities)."
 msgstr ""
-"Método de limite: Otsu (método de limite calculado automaticamente porque "
-"pode se adaptar às mudanças nas condições de iluminação entre as imagens "
-"(neste caso temos imagens com diferentes intensidades de pixel)."
+"Em 'Translated by MT:' selecione 'Otsu' (método de threshold calculado "
+"automaticamente, que se adapta a variações de iluminação entre as imagens; "
+"aqui, as imagens têm intensidades de pixel diferentes)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:173
 msgid ""
