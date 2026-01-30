@@ -804,8 +804,8 @@ msgid ""
 "Output file location: Default Output Folder (or create a new folder just for"
 " this images)"
 msgstr ""
-"Local do arquivo de saída: Pasta de saída padrão (ou crie uma nova pasta "
-"apenas para essas imagens)"
+"Em ‘Output file location:’ selecione ‘Default Output Folder’ (ou crie uma "
+"nova pasta apenas para essas imagens)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:327
 msgid ""
