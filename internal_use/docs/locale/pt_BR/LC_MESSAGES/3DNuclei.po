@@ -431,8 +431,8 @@ msgid ""
 "Assign pixels in the middle intensity: Background (the middle : intensity "
 "pixels levels are noise in these images)."
 msgstr ""
-"Atribua pixels na intensidade média: Fundo (os níveis de pixels de "
-"intensidade média são ruído nessas imagens)."
+"Em ‘Assign pixels in the middle intensity:’ selecione ‘Background’ (os "
+"pixels de intensidade intermediária são ruído nessas imagens)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:177
 msgid ""
