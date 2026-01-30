@@ -747,8 +747,8 @@ msgstr "Em ‘Select the type of image to save:’ selecione ‘Image’."
 msgid ""
 "Select the image to save: OverlayObjects (from **OverlayObjects** module)"
 msgstr ""
-"Selecione a imagem para salvar: OverlayObjects (do módulo "
-"**OverlayObjects**)"
+"Em ‘Select the image to save:’ selecione ‘OverlayObjects’ (do módulo "
+"**OverlayObjects**)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:319
 msgid ""
