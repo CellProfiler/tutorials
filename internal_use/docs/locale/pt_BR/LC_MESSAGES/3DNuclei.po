@@ -313,7 +313,7 @@ msgstr "Em 'Distance:' escreva '2'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:129
 msgid "Cut-off distance: 0.2"
-msgstr "Cut-off distance: 0.2"
+msgstr "Em 'Cut-off distance:' escreva '0.2'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:136
 msgid ""
