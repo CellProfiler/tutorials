@@ -440,9 +440,9 @@ msgid ""
 "resulting objects, by removing jagged edges caused by   noise in the "
 "acquired image)."
 msgstr ""
-"Escala de suavização de limite: 1,5 (A suavização melhora a uniformidade dos"
-" objetos resultantes, removendo bordas irregulares causadas por ruído na "
-"imagem adquirida)."
+"Em ‘Threshold smoothing scale:’ escreva ‘1.5’ (a suavização melhora a "
+"uniformidade dos objetos resultantes, removendo bordas irregulares causadas "
+"por ruído na imagem adquirida)."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:179
 msgid "Threshold correction factor: 1"
