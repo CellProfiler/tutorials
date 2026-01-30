@@ -706,7 +706,8 @@ msgstr "Em 'Name the output image:' selecione 'OverlayObjects'"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:307
 msgid "Objects: RealsizeNuclei (from **DilateObjects** module)"
-msgstr "Objetos: RealsizeNuclei (do módulo **DilateObjects**)"
+msgstr ""
+"Em 'Objects:' selecione 'RealsizeNuclei' (do módulo **DilateObjects**)"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:308
 msgid ""
