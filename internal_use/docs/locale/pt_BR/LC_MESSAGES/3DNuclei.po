@@ -905,7 +905,7 @@ msgstr "Em ‘Filename prefix:’ escreva ‘MyExpt\\_'."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:372
 msgid "Overwrite existing files without warning: No"
-msgstr "Substitui arquivos existentes sem aviso: Não"
+msgstr "Em ‘Overwrite existing files without warning:’ selecione ‘No’."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:374
 msgid "Add image metadata columns to your object data file: No"
