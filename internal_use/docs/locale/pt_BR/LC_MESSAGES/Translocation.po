@@ -1224,9 +1224,7 @@ msgstr "Para os canais"
 
 #: ../../source/Translocation/Translocation.md:491
 msgid "“Set the image to be colored red” set to “Leave this black”."
-msgstr ""
-"\"Set the image to be colored red\" (Definir a imagem para ser colorida de "
-"vermelho) definido como \"Leave this black\" (Deixar preto)."
+msgstr "Em “Set the image to be colored red”, selecione “Leave this black”."
 
 #: ../../source/Translocation/Translocation.md:492
 msgid "“Set the image to be colored green” set to “rawGFP”."
