@@ -805,9 +805,10 @@ msgid ""
 " nearest primary object, and the local intensity in the GFP image."
 msgstr ""
 "Por padrão, os objetos secundários são identificados com o método "
-"Propagation, que define os limites das células \"crescendo\" para fora dos "
-"objetos primários, ou seja, os núcleos, e levando em conta a distância do "
-"objeto primário mais próximo e a intensidade local na imagem GFP."
+"‘Propagation’, que define os limites celulares “crescendo” para fora a "
+"partir dos objetos primários; ou seja, os núcleos, e levando em conta tanto "
+"a distância até o objeto primário mais próximo quanto a intensidade local na"
+" imagem de GFP."
 
 #: ../../source/Translocation/Translocation.md:327
 msgid ""
