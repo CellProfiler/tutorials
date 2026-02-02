@@ -493,9 +493,9 @@ msgid ""
 "from its neighbors."
 msgstr ""
 "No canto superior direito: Uma imagem colorida dos objetos identificados e "
-"rotulados, intitulada com o nome do objeto (neste caso, \"Núcleos\"). "
-"Observe que as cores em si são arbitrárias, destinadas a distinguir cada "
-"objeto identificado de seus vizinhos."
+"rotulados, intitulada com o nome do objeto (neste caso, “Nuclei”). Observe "
+"que as cores em si são arbitrárias, destinadas a distinguir cada objeto "
+"identificado de seus vizinhos."
 
 #: ../../source/Translocation/Translocation.md:193
 msgid ""
