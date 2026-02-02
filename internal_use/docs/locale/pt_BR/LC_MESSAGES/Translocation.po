@@ -1024,8 +1024,8 @@ msgid ""
 "In this module, select “rawGFP” in the \"Select images to measure\" box, by "
 "checking the box next to it."
 msgstr ""
-"Nesse módulo, selecione \"rawGFP\" na caixa \"Select images to measure\" "
-"(Selecionar imagens para medir), marcando a caixa ao lado dela."
+"Nesse módulo, selecione “rawGFP” na caixa “Select images to measure”, "
+"marcando a caixa ao lado dela."
 
 #: ../../source/Translocation/Translocation.md:413
 msgid "Select “Nuclei” and \"Cytoplasm\" from the \"Select objects to measure\" box."
