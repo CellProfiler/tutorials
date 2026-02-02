@@ -1307,9 +1307,7 @@ msgstr "Em “How to outline”, deixar o padrão (Inner)."
 #: ../../source/Translocation/Translocation.md:513
 msgid ""
 "For “Select objects to display” select “Nuclei” from the dropdown menu."
-msgstr ""
-"Em \"Select objects to display\" (Selecionar objetos para exibição), "
-"selecione \"Nuclei\" (Núcleos) no menu suspenso."
+msgstr "Em “Select objects to display”, selecionar “Nuclei”."
 
 #: ../../source/Translocation/Translocation.md:515
 msgid ""
