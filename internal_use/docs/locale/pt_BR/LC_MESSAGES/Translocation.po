@@ -1077,8 +1077,7 @@ msgid ""
 " to measure” box."
 msgstr ""
 "Em “Select where to measure correlation”, selecione “Within objects” e, em "
-"seguida, selecione “Nuclei” e “Cytoplasm” na caixa “Select objects to "
-"measure”."
+"seguida, em “Select objects to measure”, selecione “Nuclei” e “Cytoplasm”."
 
 #: ../../source/Translocation/Translocation.md:431
 msgid ""
