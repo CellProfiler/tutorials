@@ -1298,9 +1298,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:511
 msgid "The “Outline display mode” dropdown menu should be left at “Color”."
-msgstr ""
-"O menu suspenso \"Outline display mode\" (Modo de exibição de contorno) deve"
-" ser deixado em \"Color\" (Cor)."
+msgstr "Em “Outline display mode”, selecione “Color”."
 
 #: ../../source/Translocation/Translocation.md:512
 msgid "“How to outline” can be left at the default (Inner)."
