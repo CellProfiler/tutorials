@@ -1084,8 +1084,8 @@ msgid ""
 "For \"Method for Costes thresholding\", choose *\"Faster\"* from the drop-"
 "down list to reduce analysis time."
 msgstr ""
-"Em \"Method for Costes thresholding\", escolha *\"Faster \"* na lista "
-"suspensa para reduzir o tempo de análise."
+"Em “Method for Costes thresholding”, escolha *“Faster”* na lista suspensa "
+"para reduzir o tempo de análise."
 
 #: ../../source/Translocation/Translocation.md:434
 msgid ""
