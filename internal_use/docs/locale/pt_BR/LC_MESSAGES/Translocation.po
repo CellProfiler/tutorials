@@ -746,7 +746,7 @@ msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"35\"/> "
 "e adicione o módulo *IdentifySecondaryObjects*, que está localizado na "
 "categoria do módulo *“Object Processing”.* Adicione-o ao pipeline clicando "
-"no <img src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/> botão."
+"no botão <img src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/> ."
 
 #: ../../source/Translocation/Translocation.md:302
 msgid ""
