@@ -1181,7 +1181,8 @@ msgid ""
 "7. **Creating an image with your cell and nuclear outlines on it "
 "(optional)**"
 msgstr ""
-"7. **Criando uma imagem com sua célula e contornos nucleares (opcional)**"
+"7. **Criando uma imagem com os contornos das células e dos núcleos "
+"(opcional)**"
 
 #: ../../source/Translocation/Translocation.md:475
 msgid ""
