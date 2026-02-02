@@ -482,8 +482,8 @@ msgid ""
 "Upper left: The raw image, titled as “Input image, cycle #” plus the image "
 "number"
 msgstr ""
-"Superior esquerdo: A imagem bruta, intitulada como \"Input image, cycle #\" "
-"mais o número da imagem"
+"No canto superior esquerdo: A imagem bruta, intitulada como \"Input image, "
+"cycle #\" mais o número da imagem"
 
 #: ../../source/Translocation/Translocation.md:189
 msgid ""
