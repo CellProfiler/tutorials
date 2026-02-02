@@ -825,8 +825,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:337
 msgid "*Figure 4: Example module display window for IdentifySecondaryObjects*"
 msgstr ""
-"*Figura 4: Exemplo de janela de exibição do módulo para "
-"IdentificarSecondaryObjects*"
+"*Figura 4: Exemplo de janela de exibição do módulo IdentifySecondaryObjects*"
 
 #: ../../source/Translocation/Translocation.md:340
 msgid ""
