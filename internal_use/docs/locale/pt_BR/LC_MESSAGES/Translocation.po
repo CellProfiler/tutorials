@@ -1352,9 +1352,8 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"35\"/> "
 "e adicione o módulo **SaveImages** localizado na categoria do módulo "
-"*“Processamento de arquivo”**.* Adicione-o ao pipeline clicando no botão "
-"<span botão class='notranslate'><img "
-"src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/></span>."
+"*“Processamento de arquivo”*. Adicione-o ao pipeline clicando no botão <img "
+"src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:527
 msgid "For “Select the type of image to save”, select “Image”."
