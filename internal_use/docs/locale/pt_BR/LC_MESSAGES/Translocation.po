@@ -1200,7 +1200,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:481
 msgid "**Creation of a color image to display the segmentation:**"
-msgstr "**Criação de uma imagem colorida para exibir a segmentação:**"
+msgstr "**Criando uma imagem colorida para exibir a segmentação:**"
 
 #: ../../source/Translocation/Translocation.md:483
 msgid ""
