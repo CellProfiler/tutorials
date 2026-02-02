@@ -375,9 +375,9 @@ msgid ""
 "Input module panel; this module allows you to assign a meaningful name to "
 "each image by which other modules will refer to it."
 msgstr ""
-"Clique no módulo **NamesAndTypes**, que é o terceiro módulo no painel Módulo"
-" de entrada; este módulo permite atribuir um nome significativo a cada "
-"imagem pelo qual outros módulos se referirão a ela."
+"Selecione o módulo **NamesAndTypes**, que é o terceiro módulo no painel "
+"Input modules; esse módulo permite atribuir um nome significativo a cada "
+"imagem, que será usado pelos outros módulos para se referirem a ela."
 
 #: ../../source/Translocation/Translocation.md:151
 msgid ""
