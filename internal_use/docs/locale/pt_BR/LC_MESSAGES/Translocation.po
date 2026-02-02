@@ -342,7 +342,7 @@ msgid ""
 "number of columns in the Metadata window."
 msgstr ""
 "Retorne ao módulo **Metadata** e pressione ‘Update’, na parte inferior do "
-"painel. Agora você deve ver várias colunas na janela Metadados."
+"painel. Agora você deve ver várias colunas na janela ‘Metadata’."
 
 #: ../../source/Translocation/Translocation.md:136
 msgid ""
