@@ -758,9 +758,7 @@ msgstr "Em “Select the input image”, selecione \"rawGFP\" na lista suspensa.
 msgid ""
 "For the “Select input objects” setting, select “Nuclei” from the drop-down "
 "list."
-msgstr ""
-"Na configuração \"Select input objects\" (Selecionar objetos de entrada), "
-"selecione \"Nuclei\" (Núcleos) na lista suspensa."
+msgstr "Em \"Select input objects\", selecione \"Nuclei\" na lista suspensa."
 
 #: ../../source/Translocation/Translocation.md:308
 msgid ""
