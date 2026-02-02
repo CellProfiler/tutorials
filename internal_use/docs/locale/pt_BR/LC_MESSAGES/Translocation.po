@@ -912,8 +912,8 @@ msgid ""
 "In this module, for the “Select the larger identified objects” module "
 "setting, select “Cells” from the drop-down list."
 msgstr ""
-"Nesse módulo, para a configuração do módulo “Select the larger identified "
-"objects”, selecione “Cells” na lista suspensa."
+"Nesse módulo, em “Select the larger identified objects”, selecione “Cells” "
+"na lista suspensa."
 
 #: ../../source/Translocation/Translocation.md:370
 msgid ""
