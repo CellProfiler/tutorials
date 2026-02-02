@@ -857,8 +857,8 @@ msgstr ""
 msgid ""
 "Change the “Select method…” setting from “Propagation” to “Distance-N.”"
 msgstr ""
-"Altere a configuração \"Select method...\" (Selecionar método...) de "
-"\"Propagation\" (Propagação) para \"Distance-N\" (Distância-N)."
+"Altere a configuração “Select method...”  de “Propagation” para "
+"“Distance-N”."
 
 #: ../../source/Translocation/Translocation.md:353
 msgid ""
