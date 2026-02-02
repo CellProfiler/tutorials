@@ -394,7 +394,7 @@ msgid ""
 "Click the “Update” button below the divider to display a table that shows "
 "each channel pair matched up for the 26 wells in the assay."
 msgstr ""
-"Clique no botão \"Update\" (Atualizar) abaixo do divisor para exibir uma "
+"Clique no botão \"Update\", na parte inferior do painel, para exibir uma "
 "tabela que mostra cada par de canais combinados para os 26 poços do ensaio."
 
 #: ../../source/Translocation/Translocation.md:157
