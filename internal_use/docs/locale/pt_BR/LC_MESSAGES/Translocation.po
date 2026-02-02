@@ -1122,7 +1122,7 @@ msgid ""
 "For the “Name the output measurement,” enter the “IntensityRatio” as a "
 "descriptive name."
 msgstr ""
-"Para \"Nomear a medição de saída\", digite \"IntensityRatio\" como um nome "
+"Em “Name the output measurement”, escreva “IntensityRatio” como um nome "
 "descritivo."
 
 #: ../../source/Translocation/Translocation.md:448
