@@ -572,8 +572,8 @@ msgid ""
 "*Figure 3: A zoomed-in view of the display window for "
 "IdentifyPrimaryObjects*"
 msgstr ""
-"*Figura 3: Uma visualização ampliada da janela de exibição do "
-"IdentifyPrimaryObjects"
+"*Figura 3: Visão ampliada ampliada da janela de exibição do "
+"IdentifyPrimaryObjects*"
 
 #: ../../source/Translocation/Translocation.md:232
 msgid "3. **Improve identification of primary objects**"
