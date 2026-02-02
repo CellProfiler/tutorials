@@ -1314,8 +1314,8 @@ msgid ""
 "“Select outline color” can be left as red or set to some other contrasting "
 "color."
 msgstr ""
-"\"Select outline color\" (Selecionar cor do contorno) pode ser deixado como "
-"vermelho ou definido como alguma outra cor contrastante."
+"Em “Select outline color”, mantenha “red” ou selecione outra cor que "
+"contraste com a imagem."
 
 #: ../../source/Translocation/Translocation.md:517
 msgid ""
