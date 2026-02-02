@@ -752,9 +752,7 @@ msgstr ""
 msgid ""
 "For the “Select the input image” module setting, select “rawGFP” from the "
 "drop-down list."
-msgstr ""
-"Para a configuração do módulo “Select the input image”, selecione \"rawGFP\""
-" na lista suspensa."
+msgstr "Em “Select the input image”, selecione \"rawGFP\" na lista suspensa."
 
 #: ../../source/Translocation/Translocation.md:305
 msgid ""
