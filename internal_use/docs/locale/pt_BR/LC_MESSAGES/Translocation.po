@@ -483,7 +483,7 @@ msgid ""
 "number"
 msgstr ""
 "Superior esquerdo: A imagem bruta, intitulada como \"Input image, cycle #\" "
-"(Imagem de entrada, ciclo nº) mais o número da imagem"
+"mais o número da imagem"
 
 #: ../../source/Translocation/Translocation.md:189
 msgid ""
