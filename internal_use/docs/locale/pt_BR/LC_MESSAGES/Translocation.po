@@ -305,7 +305,7 @@ msgid ""
 "**Metadata** module."
 msgstr ""
 "Ao terminar, clique no botão “Enviar” para usar esta expressão no módulo "
-"**Metadados**."
+"**Metadata**."
 
 #: ../../source/Translocation/Translocation.md:123
 msgid ""
