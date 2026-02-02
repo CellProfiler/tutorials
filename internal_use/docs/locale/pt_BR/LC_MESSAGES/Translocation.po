@@ -442,9 +442,10 @@ msgid ""
 "2 below."
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/Step.png\" width=\"120\"/> "
-"abaixo do painel do pipeline para avançar em cada módulo do pipeline, um por"
-" um. Ao passar pelo módulo **IdentifyPrimaryObjects**, uma janela de "
-"exibição do módulo aparecerá semelhante à mostrada na Figura 2 abaixo."
+"abaixo do painel do pipeline para avançar pelos módulo do pipeline, um por "
+"um. Ao passar pelo módulo **IdentifyPrimaryObjects**, garanta que o ícone do"
+" olho ao lado do módulo esteja aberto; assim, uma janela de exibição do "
+"módulo aparecerá, semelhante à mostrada na Figura 2 abaixo."
 
 #: ../../source/Translocation/Translocation.md:174
 msgid "*Figure 2: Example module display window for IdentifyPrimaryObjects.*"
