@@ -548,8 +548,8 @@ msgid ""
 "The 4th icon lets you change the view by moving in any direction in the "
 "display, by clicking and dragging."
 msgstr ""
-"O quarto ícone permite que você altere a visualização movendo-se em qualquer"
-" direção na tela, clicando e arrastando."
+"O 4º ícone permite mudar a visualização movendo a imagem em qualquer "
+"direção, clicando e arrastando."
 
 #: ../../source/Translocation/Translocation.md:219
 msgid ""
