@@ -989,7 +989,7 @@ msgid ""
 msgstr ""
 "O CellProfiler consegue medir muitas características celulares e, neste "
 "exercício, poderíamos pedir para ele medir todas e depois deixar que a "
-"ferramenta de classificação decida quais features são mais úteis. No "
+"ferramenta de classificação decida quais atributos são mais úteis. No "
 "entanto, neste exercício, vamos usar três das medidas disponíveis."
 
 #: ../../source/Translocation/Translocation.md:403
