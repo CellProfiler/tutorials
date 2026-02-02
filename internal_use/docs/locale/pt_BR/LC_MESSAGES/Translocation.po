@@ -1302,7 +1302,7 @@ msgstr "Em “Outline display mode”, selecione “Color”."
 
 #: ../../source/Translocation/Translocation.md:512
 msgid "“How to outline” can be left at the default (Inner)."
-msgstr "\"How to outline\" pode ser deixado como padrão (Inner)."
+msgstr "Em “How to outline”, deixar o padrão (Inner)."
 
 #: ../../source/Translocation/Translocation.md:513
 msgid ""
