@@ -1285,8 +1285,8 @@ msgid ""
 "The “Select image on which to display outlines” should be set to the "
 "“GFPandDNA” image we created in the last step."
 msgstr ""
-"A opção \"Select image on which to display outlines\" deve ser definida como"
-" a imagem \"GFPandDNA\" que criamos na última etapa."
+"Em “Select image on which to display outlines”, selecione “GFPandDNA”, a "
+"imagem que criamos no passo anterior."
 
 #: ../../source/Translocation/Translocation.md:509
 msgid ""
