@@ -1135,7 +1135,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:451
 msgid "For the numerator measurement:"
-msgstr "Para a medição do numerador:"
+msgstr "Para determinar o numerador:"
 
 #: ../../source/Translocation/Translocation.md:453
 msgid ""
