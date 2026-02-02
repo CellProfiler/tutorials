@@ -953,7 +953,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:383
 msgid "*Figure 5: Example module display window for IdentifyTertiaryObjects*"
 msgstr ""
-"*Figura 5: Exemplo de janela de exibição do módulo para "
+"*Figura 5: Exemplo de janela de exibição do módulo "
 "IdentifiqueTertiaryObjects*"
 
 #: ../../source/Translocation/Translocation.md:386
