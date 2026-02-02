@@ -732,9 +732,8 @@ msgid ""
 "you can now find the entire cell using **IdentifySecondaryObjects** module."
 msgstr ""
 "Agora que você confirmou, visualmente, que as configurações fornecidas neste"
-" exercício permitem a identificação e segmentação dos núcleos, agora você "
-"pode encontrar a célula inteira usando o módulo "
-"**IdentifySecondaryObjects**."
+" exercício permitem identificar e segmentar dos núcleos, você pode agora "
+"identificar a célula inteira usando o módulo **IdentifySecondaryObjects**."
 
 #: ../../source/Translocation/Translocation.md:298
 msgid ""
