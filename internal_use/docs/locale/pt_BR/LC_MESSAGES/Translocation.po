@@ -1152,9 +1152,8 @@ msgid ""
 "measurement” category. A “Measurement” drop-down box will subsequently "
 "appear underneath."
 msgstr ""
-"Selecione \"Intensity\" (Intensidade) no menu suspenso da categoria \"Select"
-" the numerator measurement\" (Selecione a medida do numerador). Uma caixa "
-"suspensa \"Measurement\" (Medição) aparecerá em seguida."
+"Em “Select the numerator measurement” selecione “Intensity”. Em seguida, em "
+"“Measurement” selecione a medida que aparecer na lista."
 
 #: ../../source/Translocation/Translocation.md:459
 #: ../../source/Translocation/Translocation.md:470
