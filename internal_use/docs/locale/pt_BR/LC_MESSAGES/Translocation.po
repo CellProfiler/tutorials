@@ -994,7 +994,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:403
 msgid "**Measurement of pixel intensity of GFP in nuclei and cytoplasm:**"
-msgstr "**Medindo a correlação entre o GFP nuclear e o DNA nuclear:**"
+msgstr "**Medindo a intensidade de pixel do GFP no núcleo e citoplasma:**"
 
 #: ../../source/Translocation/Translocation.md:404
 msgid ""
