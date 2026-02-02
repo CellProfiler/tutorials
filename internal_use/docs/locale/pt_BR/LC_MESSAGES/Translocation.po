@@ -261,9 +261,9 @@ msgid ""
 "module panel; this module allows you to provide information about the drug "
 "dosages and location on the plate."
 msgstr ""
-"Clique no módulo **Metadados**, que é o segundo módulo no painel Módulo de "
-"entrada; este módulo permite fornecer informações sobre as dosagens dos "
-"medicamentos e localização na placa."
+"Clique no módulo **Metadata**, que é o segundo módulo no painel 'Input "
+"modules'; esse módulo permite fornecer informações sobre as doses dos "
+"compostos e a localização na placa."
 
 #: ../../source/Translocation/Translocation.md:109
 msgid ""
