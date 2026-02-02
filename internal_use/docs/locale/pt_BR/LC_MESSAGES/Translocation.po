@@ -288,8 +288,8 @@ msgid ""
 "A new dialog box will appear to assist in comparing the entered regular "
 "expression against an example image filename."
 msgstr ""
-"Uma nova caixa de diálogo será exibida para ajudar a comparar a expressão "
-"regular inserida com um exemplo de nome de arquivo de imagem."
+"Uma nova janela vai aparecer para ajudar a comparar a expressão regular "
+"digitada com um exemplo de nome de arquivo de imagem."
 
 #: ../../source/Translocation/Translocation.md:117
 msgid ""
