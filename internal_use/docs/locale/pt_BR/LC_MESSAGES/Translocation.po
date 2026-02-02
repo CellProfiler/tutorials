@@ -1090,8 +1090,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:434
 msgid ""
 "**Measurement of the ratio of GFP in cytoplasm to GFP in nuclei:** Since"
-msgstr ""
-"**Medição da proporção de GFP no citoplasma para GFP nos núcleos:** Desde"
+msgstr "**Medindo a razão do GFP no citoplasma em relação ao GFP no núcleo:**"
 
 #: ../../source/Translocation/Translocation.md:435
 msgid ""
