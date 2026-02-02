@@ -1032,7 +1032,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:415
 msgid "**Measurement of the correlation of GFP in nuclei to DNA in nuclei:**"
-msgstr "**Medição da correlação de GFP nos núcleos com DNA nos núcleos:**"
+msgstr "**Medindo a correlação entre o GFP nuclear e o DNA nuclear:**"
 
 #: ../../source/Translocation/Translocation.md:416
 msgid ""
