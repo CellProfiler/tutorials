@@ -516,8 +516,8 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:199
 msgid "Lower right: A table of module setting values and statistics"
 msgstr ""
-"No canto inferior direito: Uma tabela de valores de configuração do módulo e"
-" estatísticas"
+"No canto inferior direito: uma tabela com os valores das configurações do "
+"módulo e estatísticas."
 
 #: ../../source/Translocation/Translocation.md:201
 msgid ""
