@@ -281,7 +281,7 @@ msgid ""
 "to the right of the text box labeled “Regular expression”."
 msgstr ""
 "Clique no ícone <img src=\"./TutorialImages/ReGexCheck.png\"  width=\"35\"/>"
-" à direita da caixa de texto chamada “Expressão regular”."
+" à direita da caixa de texto chamada “Regular expression”."
 
 #: ../../source/Translocation/Translocation.md:115
 msgid ""
