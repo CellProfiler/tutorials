@@ -1232,9 +1232,7 @@ msgstr "Em “Set the image to be colored green”, selecione “rawGFP”."
 
 #: ../../source/Translocation/Translocation.md:493
 msgid "“Set the image to be colored blue” set to “rawDNA”."
-msgstr ""
-"\"Set the image to be colored blue\" (Definir a imagem para ser colorida em "
-"azul) definido como \"rawDNA\"."
+msgstr "Em “Set the image to be colored blue”, selecione “rawDNA”."
 
 #: ../../source/Translocation/Translocation.md:495
 msgid "“Name the output image” can be set to “GFPandDNA” ."
