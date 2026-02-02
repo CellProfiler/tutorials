@@ -1236,9 +1236,7 @@ msgstr "Em “Set the image to be colored blue”, selecione “rawDNA”."
 
 #: ../../source/Translocation/Translocation.md:495
 msgid "“Name the output image” can be set to “GFPandDNA” ."
-msgstr ""
-"\"Name the output image\" (Nomear a imagem de saída) pode ser definido como "
-"\"GFPandDNA\"."
+msgstr "Em “Name the output image”, escreva “GFPandDNA”."
 
 #: ../../source/Translocation/Translocation.md:497
 msgid "“Relative weight”s for each of the channels can be left at 1."
