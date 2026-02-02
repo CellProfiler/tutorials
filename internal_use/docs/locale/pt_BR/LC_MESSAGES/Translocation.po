@@ -532,16 +532,16 @@ msgid ""
 "The 1st icon from the left lets you reset the view back to the original "
 "view."
 msgstr ""
-"O primeiro ícone da esquerda permite que você redefina a visualização de "
-"volta à visualização original."
+"O 1º ícone da esquerda permite que você redefina a visualização de volta à "
+"visualização original."
 
 #: ../../source/Translocation/Translocation.md:213
 msgid ""
 "The 2nd and 3rd icons let you step backwards and forwards through any "
 "changes you made to the view."
 msgstr ""
-"O segundo e o terceiro ícones permitem que você retroceda e avance nas "
-"alterações feitas na visualização."
+"O 2º e o 3º ícones permitem que você retroceda e avance nas alterações "
+"feitas na visualização."
 
 #: ../../source/Translocation/Translocation.md:216
 msgid ""
