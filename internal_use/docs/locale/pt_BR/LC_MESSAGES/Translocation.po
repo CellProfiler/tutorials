@@ -1278,9 +1278,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:506
 msgid "“Display outlines on a blank image” should be set to “No”."
-msgstr ""
-"A opção \"Exibir contornos em uma imagem em branco\" deve ser definida como "
-"\"Não\"."
+msgstr "Em “Display outlines on a blank image”, escolha “No”."
 
 #: ../../source/Translocation/Translocation.md:507
 msgid ""
