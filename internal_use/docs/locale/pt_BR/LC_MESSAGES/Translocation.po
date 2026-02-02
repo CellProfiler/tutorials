@@ -1027,7 +1027,8 @@ msgstr "Em em “Select images to measure”, marque a caixa “rawGFP”."
 
 #: ../../source/Translocation/Translocation.md:413
 msgid "Select “Nuclei” and \"Cytoplasm\" from the \"Select objects to measure\" box."
-msgstr "Em “Select objects to measure”, selecione “Nuclei” e “Cytoplasm”."
+msgstr ""
+"Em “Select objects to measure”, marque as caixas “Nuclei” e “Cytoplasm”."
 
 #: ../../source/Translocation/Translocation.md:415
 msgid "**Measurement of the correlation of GFP in nuclei to DNA in nuclei:**"
