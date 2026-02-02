@@ -793,8 +793,9 @@ msgid ""
 " using the module settings (Fig. 4)."
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/Step.png\" width=\"120\"/> para "
-"executar o módulo e ver os resultados da identificação do objeto secundário "
-"usando as configurações do módulo (Fig. 4)."
+"executar o módulo e ver, garanta que o olho esteja aberto, os resultados da "
+"identificação do objeto secundário usando as configurações do módulo (Fig. "
+"4)."
 
 #: ../../source/Translocation/Translocation.md:322
 msgid ""
