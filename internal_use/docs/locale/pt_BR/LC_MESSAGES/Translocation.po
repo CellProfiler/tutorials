@@ -936,9 +936,9 @@ msgid ""
 "Enable the ‘Shrink smaller object prior to subtraction?’ option; this will "
 "ensure that all of your Cytoplasm objects have an area of at least 1 pixel."
 msgstr ""
-"Ative a opção \"Shrink smaller object prior to subtraction?\" (Encolher "
-"objeto menor antes da subtração?); isso garantirá que todos os seus objetos "
-"de citoplasma tenham uma área de pelo menos 1 pixel."
+"Ative a opção “Shrink smaller object prior to subtraction?”; isso garantirá "
+"que todos os seus objetos de citoplasma tenham uma área de pelo menos 1 "
+"pixel."
 
 #: ../../source/Translocation/Translocation.md:377
 msgid ""
