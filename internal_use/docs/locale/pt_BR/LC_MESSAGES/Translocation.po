@@ -865,8 +865,8 @@ msgid ""
 "Change the setting “Number of pixels by which to expand…” that appears "
 "underneath to 10 pixels."
 msgstr ""
-"Altere a configuração \"Number of pixels by which to expand...\" (Número de "
-"pixels para expandir...) que aparece abaixo para 10 pixels."
+"Em “Number of pixels by which to expand...”, escreva '10', valor da "
+"distância em pixels."
 
 #: ../../source/Translocation/Translocation.md:355
 msgid ""
