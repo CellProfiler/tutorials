@@ -614,8 +614,8 @@ msgid ""
 "We can figure out why the thresholding method is overly lenient by looking "
 "closer at the original image."
 msgstr ""
-"Podemos descobrir por que o método de limiarização é excessivamente brando "
-"observando mais de perto a imagem original."
+"Podemos entender por que o método de cálculo do threshold está permissivo "
+"demais ao observar mais de perto a imagem original."
 
 #: ../../source/Translocation/Translocation.md:249
 msgid ""
