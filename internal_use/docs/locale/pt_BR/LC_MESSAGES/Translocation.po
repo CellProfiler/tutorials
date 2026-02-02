@@ -1211,9 +1211,8 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"35\"/> "
 "e adicione o módulo **GrayToColor** localizado na categoria do módulo "
-"*“Image Processing”**.* Adicione-o ao pipeline clicando no botão <span botão"
-" class='notranslate'><img src=\"./TutorialImages/AddToPipeline.png\"  "
-"width=\"160\"/></span>."
+"*“Image Processing”*. Adicione-o ao pipeline clicando no botão <img "
+"src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:487
 msgid "For the “Select a color scheme”, leave the setting at “RGB”."
