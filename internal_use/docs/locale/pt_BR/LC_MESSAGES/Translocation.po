@@ -690,8 +690,8 @@ msgid ""
 "Click the **IdentifyPrimaryObjects** setting labeled “Two-class or three-"
 "class thresholding?” and select “Three classes.”"
 msgstr ""
-"Clique na configuração **IdentifyPrimaryObjects** chamada “Limite de duas ou"
-" três classes?” e selecione “Três aulas”."
+"Clique na configuração **IdentifyPrimaryObjects**. Em “Two-class or three-"
+"class thresholding?” selecione “Three classes”."
 
 #: ../../source/Translocation/Translocation.md:282
 msgid ""
