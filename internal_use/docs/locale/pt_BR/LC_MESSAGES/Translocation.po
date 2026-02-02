@@ -1114,9 +1114,8 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"35\"/> "
 "e adicione o módulo **CalculateMath** localizado na categoria do módulo "
-"*“Data Tools”**.* Adicione-o ao pipeline clicando no botão <span botão "
-"class='notranslate'><img src=\"./TutorialImages/AddToPipeline.png\"  "
-"width=\"160\"/></span>."
+"*“Data Tools”**.* Adicione-o ao pipeline clicando no botão <img "
+"src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:445
 msgid ""
