@@ -1322,9 +1322,8 @@ msgid ""
 "Click the “Add another outline” button, then repeat the previous 3 steps for"
 " “Cells”; you should select a different color for the outlines."
 msgstr ""
-"Clique no botão \"Add another outline\" (Adicionar outro contorno) e repita "
-"as três etapas anteriores para \"Cells\" (Células); você deve selecionar uma"
-" cor diferente para os contornos."
+"Clique no botão “Add another outline” e repita os 3 passos anteriores para "
+"“Cells”; selecione uma cor diferente para os contornos."
 
 #: ../../source/Translocation/Translocation.md:521
 msgid "**Saving the overlay image:**"
