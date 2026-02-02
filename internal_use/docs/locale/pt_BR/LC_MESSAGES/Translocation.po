@@ -402,8 +402,8 @@ msgid ""
 "2. **Identifying the nuclei as the “primary objects” that you will       "
 "analyze**"
 msgstr ""
-"2. **Identificando os núcleos como os “objetos primários” que você "
-"analisará**"
+"2. **Identificando os núcleos como os “objetos primários” que você irá "
+"analisar**"
 
 #: ../../source/Translocation/Translocation.md:159
 msgid ""
