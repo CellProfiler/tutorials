@@ -698,8 +698,8 @@ msgid ""
 "Click the <img src=\"./TutorialImages/Step.png\" width=\"120\"/> button "
 "again to see the result from your new settings."
 msgstr ""
-"Clique no botão <img src=\"./TutorialImages/Step.png\" width=\"120\"/> "
-"novamente para ver o resultado das novas configurações."
+"Clique novamente no botão <img src=\"./TutorialImages/Step.png\" "
+"width=\"120\"/>  para ver o resultado das novas configurações."
 
 #: ../../source/Translocation/Translocation.md:284
 msgid "Adjust the \"Threshold correction factor\" to 1."
