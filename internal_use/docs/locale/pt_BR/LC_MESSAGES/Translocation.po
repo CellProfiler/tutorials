@@ -1240,7 +1240,7 @@ msgstr "Em “Name the output image”, escreva “GFPandDNA”."
 
 #: ../../source/Translocation/Translocation.md:497
 msgid "“Relative weight”s for each of the channels can be left at 1."
-msgstr "Em “Relative weight” para ambos os canais deixe '1.0'."
+msgstr "Em “Relative weights”, para ambos os canais, mantenha “1.0”."
 
 #: ../../source/Translocation/Translocation.md:499
 msgid "**Overlaying the outlines onto the color image:**"
