@@ -577,7 +577,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:232
 msgid "3. **Improve identification of primary objects**"
-msgstr "3. **Melhorar a identificação de objetos primários**"
+msgstr "3. **Melhorando a identificação de objetos primários**"
 
 #: ../../source/Translocation/Translocation.md:234
 msgid ""
