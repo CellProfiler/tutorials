@@ -904,9 +904,8 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"40\"/> "
 "e adicione o módulo **IdentifyTertiaryObjects** localizado na categoria do "
-"módulo *“Object Processing”.* Adicione-o ao pipeline clicando em <span "
-"class= Botão 'notranslate'><img src=\"./TutorialImages/AddToPipeline.png\" "
-"width=\"160\"/></span>."
+"módulo *“Object Processing”.* Adicione-o ao pipeline clicando no botão<img "
+"src=\"./TutorialImages/AddToPipeline.png\" width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:369
 msgid ""
