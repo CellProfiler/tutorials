@@ -1216,9 +1216,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:487
 msgid "For the “Select a color scheme”, leave the setting at “RGB”."
-msgstr ""
-"Em \"Select a color scheme\" (Selecionar um esquema de cores), deixe a "
-"configuração em \"RGB\"."
+msgstr "Em “Select a color scheme”, deixe em “RGB”."
 
 #: ../../source/Translocation/Translocation.md:489
 msgid "For the channels"
