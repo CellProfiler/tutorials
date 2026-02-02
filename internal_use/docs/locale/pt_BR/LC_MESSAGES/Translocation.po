@@ -271,8 +271,8 @@ msgid ""
 "information about the plate, well, site, and channel of each image by "
 "parsing the file name."
 msgstr ""
-"A primeira extração configurada para você no módulo **Metadados** extrai "
-"informações sobre a placa, poço, local e canal de cada imagem analisando o "
+"A primeira extração configurada para você no módulo **Metadata** extrai "
+"informações sobre a placa, poço, sítio e canal de cada imagem analisando o "
 "nome do arquivo."
 
 #: ../../source/Translocation/Translocation.md:113
