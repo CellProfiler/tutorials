@@ -450,7 +450,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:174
 msgid "*Figure 2: Example module display window for IdentifyPrimaryObjects.*"
 msgstr ""
-"*Figura 2: Exemplo de janela de exibição do módulo para "
+"*Figura 2: Exemplo de janela de exibição do módulo "
 "IdentifiquePrimaryObjects.*"
 
 #: ../../source/Translocation/Translocation.md:177
