@@ -1169,7 +1169,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:462
 msgid "For the denominator measurement:"
-msgstr "Para a medição do denominador:"
+msgstr "Para determinar o denominador:"
 
 #: ../../source/Translocation/Translocation.md:464
 msgid ""
