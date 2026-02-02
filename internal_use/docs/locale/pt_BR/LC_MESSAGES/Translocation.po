@@ -1057,9 +1057,8 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\" width=\"35\"/> e"
 " adicione o módulo **MeasureColocalization** localizado na categoria do "
-"módulo *“Measurement”.* Adicione-o ao pipeline clicando no botão <span "
-"class=' botão notranslate'><img src=\"./TutorialImages/AddToPipeline.png\"  "
-"width=\"160\"/></span>."
+"módulo *“Measurement”.* Adicione-o ao pipeline clicando no botão <img "
+"src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:425
 msgid ""
