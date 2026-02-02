@@ -386,8 +386,8 @@ msgid ""
 " are assigned \"rawDNA\"."
 msgstr ""
 "Observe como as imagens são atribuídas aos canais: as imagens que contêm "
-"\"w1\" em seu nome de arquivo são atribuídas ao nome \"rawGFP\", enquanto "
-"aquelas com \"w2\" são atribuídas a \"rawDNA\"."
+"“w1” em seu nome de arquivo são atribuídas ao nome “rawGFP”, enquanto "
+"aquelas com “w2” são atribuídas a “rawDNA”."
 
 #: ../../source/Translocation/Translocation.md:154
 msgid ""
