@@ -1327,7 +1327,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:521
 msgid "**Saving the overlay image:**"
-msgstr "**Salvando a imagem com sobreposição:**"
+msgstr "**Salvando a imagem com a sobreposição de contornos:**"
 
 #: ../../source/Translocation/Translocation.md:522
 msgid ""
