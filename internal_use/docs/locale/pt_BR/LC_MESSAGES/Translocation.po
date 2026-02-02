@@ -1029,9 +1029,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:413
 msgid "Select “Nuclei” and \"Cytoplasm\" from the \"Select objects to measure\" box."
-msgstr ""
-"Selecione \"Nuclei\" (Núcleos) e \"Cytoplasm\" (Citoplasma) na caixa "
-"\"Select objects to measure\" (Selecionar objetos para medir)."
+msgstr "Em “Select objects to measure”, selecione “Nuclei” e “Cytoplasm”."
 
 #: ../../source/Translocation/Translocation.md:415
 msgid "**Measurement of the correlation of GFP in nuclei to DNA in nuclei:**"
