@@ -960,8 +960,8 @@ msgstr ""
 msgid ""
 "6. **Measuring the cells’ characteristics (i.e. the “object features”)**"
 msgstr ""
-"6. **Medindo as características das células (ou seja, as “características do"
-" objeto”)**"
+"6. **Medindo as características das células (ou seja, os “atributos dos "
+"objetos”)**"
 
 #: ../../source/Translocation/Translocation.md:388
 msgid ""
