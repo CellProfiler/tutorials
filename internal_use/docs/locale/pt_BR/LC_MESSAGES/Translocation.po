@@ -1130,8 +1130,8 @@ msgid ""
 "Since we calculating a ratio of two measures, select “Divide” from the drop-"
 "down for the “Operation” setting."
 msgstr ""
-"Como estamos calculando uma proporção de duas medidas, selecione \"Divide\" "
-"(Dividir) no menu suspenso da configuração \"Operation\" (Operação)."
+"Como estamos calculando uma proporção de duas medidas, selecione “Divide” no"
+" menu suspenso da configuração “Operation”."
 
 #: ../../source/Translocation/Translocation.md:451
 msgid "For the numerator measurement:"
