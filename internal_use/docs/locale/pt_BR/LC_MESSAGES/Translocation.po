@@ -703,9 +703,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:284
 msgid "Adjust the \"Threshold correction factor\" to 1."
-msgstr ""
-"Ajuste o \"Threshold correction factor\" (Fator de correção do limite) para "
-"1."
+msgstr "Ajuste o “Threshold correction factor”  para 1."
 
 #: ../../source/Translocation/Translocation.md:286
 msgid ""
