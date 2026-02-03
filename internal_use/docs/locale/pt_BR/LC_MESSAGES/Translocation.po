@@ -1633,8 +1633,8 @@ msgid ""
 " your hard drive."
 msgstr ""
 "Como lembrete, este banco de dados atualmente contém os dados de medidas "
-"obtidos de todas as 26 imagens e caminhos para a localização dessas imagens "
-"no seu disco rígido."
+"obtidos de todas as 26 imagens e os caminhos para a localização dessas "
+"imagens no seu disco rígido."
 
 #: ../../source/Translocation/Translocation.md:633
 msgid ""
