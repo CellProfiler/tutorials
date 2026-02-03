@@ -1577,8 +1577,8 @@ msgid ""
 "The pipeline will run beginning with the first of 26 images. This full run "
 "may take a few minutes."
 msgstr ""
-"O pipeline será executado a partir da primeira das 26 imagens. Essa execução"
-" completa pode levar alguns minutos."
+"O pipeline será executado a partir da primeira das 26 imagens. A execução "
+"completa pode levar alguns minutos."
 
 #: ../../source/Translocation/Translocation.md:616
 msgid ""
