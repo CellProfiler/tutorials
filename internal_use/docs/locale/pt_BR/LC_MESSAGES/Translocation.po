@@ -1586,9 +1586,9 @@ msgid ""
 "from the experiment, and classify the cells exposed to each drug condition "
 "by their phenotype (FOXO1A-GFP subcellular localization)"
 msgstr ""
-"Exercício II: Usar o software CellProfiler Analyst para visualizar os dados "
-"do experimento e classificar as células expostas a cada condição de droga "
-"por seu fenótipo (localização subcelular de FOXO1A-GFP)"
+"Exercício II: Usando o CellProfiler Analyst para visualizar os dados do "
+"experimento e classificar as células expostas a cada condição de tratamento "
+"de acordo com o fenótipo (localização subcelular do FOXO1A-GFP)."
 
 #: ../../source/Translocation/Translocation.md:618
 msgid ""
