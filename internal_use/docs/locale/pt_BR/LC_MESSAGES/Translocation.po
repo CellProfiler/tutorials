@@ -1551,8 +1551,8 @@ msgid ""
 "Save your pipeline by selecting *File > Save Project As…*, give the pipeline"
 " a name and save it to your Desktop."
 msgstr ""
-"Salve o pipeline selecionando *Arquivo &gt; Salvar projeto como...*, dê um "
-"nome ao pipeline e salve-o na área de trabalho."
+"Salve o seu pipeline selecionando *“File > Save Project As…”*, dê um nome ao"
+" pipeline e salve-o na sua área de trabalho (Desktop)."
 
 #: ../../source/Translocation/Translocation.md:606
 msgid ""
