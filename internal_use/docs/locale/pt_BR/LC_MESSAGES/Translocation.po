@@ -1658,7 +1658,7 @@ msgstr ""
 "O CPA oferece várias ferramentas para visualizar os dados e explorá-los. Se "
 "os seus dados vieram de uma placa com múltiplos poços, como a placa de 96 "
 "poços deste ensaio de translocação, uma das ferramentas de visualização mais"
-" úteis é o formato de layout da placa (plate layout)."
+" úteis é o formato de 'plate layout'."
 
 #: ../../source/Translocation/Translocation.md:643
 msgid ""
