@@ -1677,7 +1677,7 @@ msgstr ""
 "onde suas imagens se originaram. Os quadrados coloridos representam poços "
 "para os quais há dados de medidas; os poços com um X indicam que não há "
 "medidas. Observe que 26 dos 96 poços têm dados associados. Passe o mouse "
-"sobre alguns poços para ver uma caixa de dica (tool-tip) aparecer, mostrando"
+"sobre alguns poços para ver uma caixa de dica “tool-tip” aparecer, mostrando"
 " o valor real de cada poço."
 
 #: ../../source/Translocation/Translocation.md:652
