@@ -1372,9 +1372,8 @@ msgid ""
 "For “Select method for constructing file names”, keep it set at “From image "
 "filename”."
 msgstr ""
-"Em \"Select method for constructing file names\" (Selecionar método para "
-"construir nomes de arquivos), mantenha-o definido como \"From image "
-"filename\" (A partir do nome do arquivo da imagem)."
+"Em “Select method for constructing file names”, mantenha como “From image "
+"filename”."
 
 #: ../../source/Translocation/Translocation.md:532
 msgid "For “Select image name for file prefix”, select the “rawGFP” image."
