@@ -1357,9 +1357,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:527
 msgid "For “Select the type of image to save”, select “Image”."
-msgstr ""
-"Em \"Select the type of image to save\" (Selecionar o tipo de imagem a ser "
-"salva), selecione \"Image\" (Imagem)."
+msgstr "Em “Select the type of image to save”, selecione “Image”."
 
 #: ../../source/Translocation/Translocation.md:528
 msgid ""
