@@ -1432,16 +1432,16 @@ msgid ""
 "informs the user that measurements produced in Test mode are not written to "
 "the database. This is normal behavior and does not indicate an error."
 msgstr ""
-"Observe que enquanto estiver no modo de teste, o módulo **ExportToDatabase**"
-" terá um sinal de aviso amarelo no painel do pipeline e texto destacado em "
-"amarelo nas configurações do módulo. Manter o mouse sobre o texto destacado "
-"em amarelo informa ao usuário que as medições produzidas no modo Teste não "
-"são gravadas no banco de dados. Este é um comportamento normal e não indica "
-"um erro."
+"Note que enquanto estiver no modo ‘Test mode’ , o módulo "
+"**ExportToDatabase** mostrará um ícone de aviso amarelo no painel do "
+"pipeline e texto destacado em amarelo nas configurações do módulo. Ao passar"
+" o mouse sobre o texto destacado, o CellProfiler informa que as medidas "
+"geradas no ‘Test mode’ não são gravadas no banco de dados. Esse "
+"comportamento é normal e não indica um erro."
 
 #: ../../source/Translocation/Translocation.md:557
 msgid "Select “Database type” as “SQLite.”"
-msgstr "Selecione \"Tipo de banco de dados\" como \"SQLite\"."
+msgstr "Selecione “Database type” como \"SQLite\"."
 
 #: ../../source/Translocation/Translocation.md:559
 msgid ""
