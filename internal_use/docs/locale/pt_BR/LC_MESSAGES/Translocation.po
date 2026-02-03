@@ -1364,8 +1364,8 @@ msgid ""
 "For “Select the image to save”, select your “CellAndNucleiOverlay” image you"
 " just created."
 msgstr ""
-"Em \"Select the image to save\" (Selecionar a imagem para salvar), selecione"
-" a imagem \"CellAndNucleiOverlay\" que você acabou de criar."
+"Em “Select the image to save”, selecione a imagem “CellAndNucleiOverlay” que"
+" você acabou de criar."
 
 #: ../../source/Translocation/Translocation.md:530
 msgid ""
