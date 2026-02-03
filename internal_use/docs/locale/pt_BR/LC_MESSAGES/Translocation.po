@@ -1453,15 +1453,15 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:562
 msgid "For “Which objects should be used for locations?”, select “Nuclei”."
-msgstr "Em Which objects should be used for locations?”, escolha “Nuclei”."
+msgstr "Em Which objects should be used for locations?”, selecione “Nuclei”."
 
 #: ../../source/Translocation/Translocation.md:564
 msgid "For “Select the plate type”, choose “96.”"
-msgstr "Em “Select the plate type”, escolha “96”."
+msgstr "Em “Select the plate type”, selecione “96”."
 
 #: ../../source/Translocation/Translocation.md:566
 msgid "For “Select the plate metadata,” choose “Plate.”"
-msgstr "Em “Select the plate metadata,” escolha “Plate.”"
+msgstr "Em “Select the plate metadata,” selecione “Plate.”"
 
 #: ../../source/Translocation/Translocation.md:568
 msgid "For “Select the well metadata,” choose “Well.”"
