@@ -1480,9 +1480,9 @@ msgid ""
 msgstr ""
 "Em “Write image thumbnails directly to database?”, selecione “Yes”. Em "
 "seguida, aparecerá o menu “Select the images for which you want to save "
-"thumbnails”; nele, selecione “rawDNA” e “rawGFP” (para selecionar mais de "
-"uma opção, use Ctrl+clique no Windows ou Command+clique no Mac). Mantenha as"
-" demais configurações nos valores padrão."
+"thumbnails”; nele, selecione “rawDNA” e “rawGFP”. Para selecionar mais de "
+"uma opção, use Ctrl+clique (no Windows) ou Command+clique (no Mac). Mantenha"
+" as demais configurações nos valores padrão."
 
 #: ../../source/Translocation/Translocation.md:578
 msgid ""
