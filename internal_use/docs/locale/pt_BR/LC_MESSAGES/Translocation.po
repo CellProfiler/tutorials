@@ -1398,7 +1398,7 @@ msgstr "Todas as outras configurações podem ser mantidas nos valores padrão."
 
 #: ../../source/Translocation/Translocation.md:539
 msgid "8. **Exporting the measurements to a database**"
-msgstr "8. **Exportando as medições para um banco de dados**"
+msgstr "8. **Exportando as medidas para um banco de dados**"
 
 #: ../../source/Translocation/Translocation.md:541
 msgid ""
