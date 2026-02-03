@@ -1469,9 +1469,7 @@ msgstr "Em “Select the well metadata,” selecione “Well.”"
 
 #: ../../source/Translocation/Translocation.md:570
 msgid "For “Output file location”, select “Default Output Folder”."
-msgstr ""
-"Em \"Output file location\" (Local do arquivo de saída), selecione \"Default"
-" Output Folder\" (Pasta de saída padrão)."
+msgstr "Em “Output file location”, selecione “Default Output Folder”."
 
 #: ../../source/Translocation/Translocation.md:572
 msgid ""
