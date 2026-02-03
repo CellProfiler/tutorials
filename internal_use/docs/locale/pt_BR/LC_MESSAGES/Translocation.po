@@ -1465,9 +1465,7 @@ msgstr "Em “Select the plate metadata,” selecione “Plate.”"
 
 #: ../../source/Translocation/Translocation.md:568
 msgid "For “Select the well metadata,” choose “Well.”"
-msgstr ""
-"Em \"Select the well metadata\" (Selecionar os metadados do poço), escolha "
-"\"Well\" (Poço)."
+msgstr "Em “Select the well metadata,” selecione “Well.”"
 
 #: ../../source/Translocation/Translocation.md:570
 msgid "For “Output file location”, select “Default Output Folder”."
