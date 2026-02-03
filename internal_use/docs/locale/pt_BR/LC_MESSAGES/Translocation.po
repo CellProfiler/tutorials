@@ -1559,8 +1559,8 @@ msgid ""
 "To analyze all images, click “Analyze images” button in the lower right "
 "corner of the CellProfiler interface."
 msgstr ""
-"Para analisar todas as imagens, clique no botão \"Analyze images\" (Analisar"
-" imagens) no canto inferior direito da interface do CellProfiler."
+"Para analisar todas as imagens, clique no botão “Analyze images” o segundo "
+"botão no canto inferior esquerdo da interface do CellProfiler."
 
 #: ../../source/Translocation/Translocation.md:609
 msgid ""
