@@ -1509,8 +1509,8 @@ msgid ""
 "Exit Test Mode by clicking the “Exit Test Mode” button at the bottom-left of"
 " the CellProfiler interface."
 msgstr ""
-"Saia do modo de teste clicando no botão \"Exit Test Mode\" (Sair do modo de "
-"teste) na parte inferior esquerda da interface do CellProfiler."
+"Saia do ‘Test mode’ clicando no botão “Exit Test Mode”, no canto inferior "
+"esquerdo da interface do CellProfiler."
 
 #: ../../source/Translocation/Translocation.md:588
 msgid ""
