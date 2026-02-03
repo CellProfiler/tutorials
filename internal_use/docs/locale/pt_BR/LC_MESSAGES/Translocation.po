@@ -1389,8 +1389,8 @@ msgid ""
 "Give the “Text to append to the image name” a descriptive name; “\\_Overlay”"
 " is appropriate."
 msgstr ""
-"Dê ao \"Texto a ser anexado ao nome da imagem\" um nome descritivo; "
-"\"\\_Overlay\" é apropriado."
+"Em “Text to append to the image name”, escreva um nome descritivo; "
+"“_Overlay” é apropriado."
 
 #: ../../source/Translocation/Translocation.md:537
 msgid "All the other settings may be left at their default values."
