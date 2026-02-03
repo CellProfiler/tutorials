@@ -1453,9 +1453,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:562
 msgid "For “Which objects should be used for locations?”, select “Nuclei”."
-msgstr ""
-"Em \"Which objects should be used for locations?\" (Quais objetos devem ser "
-"usados para localizações?), selecione \"Nuclei\" (Núcleos)."
+msgstr "Em Which objects should be used for locations?”, escolha “Nuclei”."
 
 #: ../../source/Translocation/Translocation.md:564
 msgid "For “Select the plate type”, choose “96.”"
