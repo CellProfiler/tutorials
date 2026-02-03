@@ -1421,9 +1421,8 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"35\"/> "
 "e adicione o módulo **ExportToDatabase** localizado na categoria do módulo "
-"*“Processamento de arquivo”.* Adicione-o ao pipeline clicando em <span "
-"class= Botão 'notranslate'><img src=\"./TutorialImages/AddToPipeline.png\"  "
-"width=\"160\"/></span>."
+"*“File Processing”*. Adicione-o ao pipeline clicando em <img "
+"src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:550
 msgid ""
