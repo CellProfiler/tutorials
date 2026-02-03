@@ -1448,8 +1448,8 @@ msgid ""
 "Check the box labeled “Create a CellProfiler Analyst properties file.” A "
 "number of new settings will subsequently appear underneath."
 msgstr ""
-"Marque a caixa “Create a CellProfiler Analyst properties file”. Em seguida, "
-"várias novas configurações aparecerão abaixo."
+"Em “Create a CellProfiler Analyst properties file”, selecione “Yes”. Em "
+"seguida, várias novas configurações aparecerão abaixo."
 
 #: ../../source/Translocation/Translocation.md:562
 msgid "For “Which objects should be used for locations?”, select “Nuclei”."
