@@ -1570,8 +1570,7 @@ msgid ""
 msgstr ""
 "(Somente Windows) Pode aparecer uma caixa de alerta de segurança do Windows "
 "solicitando permissão de acesso à rede para o CellProfiler.exe. Marque a "
-"caixa \"Private networks\" (Redes privadas) e clique em \"Allow access\" "
-"(Permitir acesso)."
+"caixa “Private networks” e clique em “Allow access”."
 
 #: ../../source/Translocation/Translocation.md:613
 msgid ""
