@@ -1382,9 +1382,7 @@ msgstr "Em “Select image name for file prefix”, selecione a imagem “rawGFP
 #: ../../source/Translocation/Translocation.md:533
 msgid ""
 "Change the “Append a suffix to the image file name?” radio buttons to “Yes”."
-msgstr ""
-"Altere os botões de opção \"Append a suffix to the image file name?\" "
-"(Anexar um sufixo ao nome do arquivo de imagem?) para \"Yes\" (Sim)."
+msgstr "Em “Append a suffix to the image file name?”, selecione “Yes”."
 
 #: ../../source/Translocation/Translocation.md:535
 msgid ""
