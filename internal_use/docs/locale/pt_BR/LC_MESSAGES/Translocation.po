@@ -1377,9 +1377,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:532
 msgid "For “Select image name for file prefix”, select the “rawGFP” image."
-msgstr ""
-"Em \"Select image name for file prefix\" (Selecionar nome da imagem para o "
-"prefixo do arquivo), selecione a imagem \"rawGFP\"."
+msgstr "Em “Select image name for file prefix”, selecione a imagem “rawGFP”."
 
 #: ../../source/Translocation/Translocation.md:533
 msgid ""
