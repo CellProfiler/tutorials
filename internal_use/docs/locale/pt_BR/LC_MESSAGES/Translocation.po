@@ -2658,9 +2658,8 @@ msgid ""
 "Visit the Scientific Community Image Forum at <https://forum.image.sc/> to "
 "find answers to common questions and ask for help if needed."
 msgstr ""
-"Visite o Fórum de Imagens da Comunidade Científica em "
-"<https://forum.image.sc/> para encontrar respostas para perguntas comuns e "
-"pedir ajuda, se necessário."
+"Visite o Scientific Community Image Forum em <https://forum.image.sc/> para "
+"encontrar respostas para perguntas comuns e pedir ajuda, se necessário."
 
 #: ../../source/Translocation/Translocation.md:1062
 msgid ""
