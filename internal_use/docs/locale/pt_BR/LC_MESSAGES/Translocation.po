@@ -2165,7 +2165,7 @@ msgid ""
 "Open the *Plate Viewer* and double-click on well A01, in order to open an "
 "image from the negative controls."
 msgstr ""
-"Abra o *Plate Viewer* e clique duas vezes no poço A01 para abrir uma imagem "
+"Abra o *“Plate Viewer”* e dê duplo clique no poço A01 para abrir uma imagem "
 "dos controles negativos."
 
 #: ../../source/Translocation/Translocation.md:866
