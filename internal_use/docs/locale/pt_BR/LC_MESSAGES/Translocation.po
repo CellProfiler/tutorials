@@ -2285,9 +2285,8 @@ msgid ""
 "drop-down box labeled “random” in the fetch controls. Select “positive” from"
 " the drop-down list."
 msgstr ""
-"Altere o número ao lado da palavra \"Fetch\" de \"20\" para \"5\". Clique na"
-" caixa suspensa rotulada \"random\" (aleatório) nos controles de busca. "
-"Selecione \"positive\" (positivo) na lista suspensa."
+"Em “Fetch”, altere o número de “20” para “5”. Em seguida, no menu suspenso "
+"“random” (na seção de controles de fetch), selecione “positive”."
 
 #: ../../source/Translocation/Translocation.md:912
 msgid ""
