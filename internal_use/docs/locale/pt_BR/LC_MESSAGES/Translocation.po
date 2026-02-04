@@ -2191,7 +2191,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:898
 #: ../../source/Translocation/Translocation.md:928
 msgid "Click the “Train classifier” button."
-msgstr "Clique no botão \"Train classifier\" (Treinar classificador)."
+msgstr "Clique no botão \"Train classifier\"."
 
 #: ../../source/Translocation/Translocation.md:874
 msgid ""
