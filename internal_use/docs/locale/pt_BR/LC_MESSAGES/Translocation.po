@@ -1692,7 +1692,7 @@ msgstr ""
 "A codificação de cores inicial representa o índice da imagem, uma medida "
 "apenas de organização que não é relevante para o nível de análise deste "
 "exercício. Em *Measurements*, selecione *“Image_Metadata_Dose”* para "
-"visualizar as concentrações do composto adicionadas a cada poço. Em "
+"visualizar as concentrações dos compostos adicionadas a cada poço. Em "
 "particular, observe o seguinte:"
 
 #: ../../source/Translocation/Translocation.md:659
