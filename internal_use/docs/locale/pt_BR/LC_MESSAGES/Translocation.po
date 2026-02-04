@@ -2503,9 +2503,9 @@ msgid ""
 "select “*pEnriched_positive”* from the *Measurement* drop-down list in order"
 " to view the enrichment scores in the plate layout."
 msgstr ""
-"Abra uma nova ferramenta Plate Viewer na janela principal do CPA. No Plate "
-"Viewer, selecione “*pEnriched_sensitive”* na lista suspensa *Measurement* "
-"para visualizar as pontuações de enriquecimento no layout da placa."
+"Abra uma nova ferramenta “Plate Viewer” na janela principal do CPA. No Plate"
+" Viewer, em *“Measurement”*, selecione *“pEnriched_positive”* para "
+"visualizar os enrichment scores no layout da placa."
 
 #: ../../source/Translocation/Translocation.md:1003
 msgid ""
