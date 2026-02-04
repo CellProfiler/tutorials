@@ -2414,15 +2414,15 @@ msgid ""
 "column (“ImageNumber”) to display the corresponding image for the top-"
 "scoring well."
 msgstr ""
-"Clique duas vezes no asterisco na primeira linha à esquerda da primeira "
-"coluna (\"ImageNumber\") para exibir a imagem correspondente ao poço de "
-"maior pontuação."
+"Clique duas vezes no asterisco na primeira linha, à esquerda da primeira "
+"coluna (“ImageNumber”), para abrir a imagem correspondente ao poço com o "
+"maior score."
 
 #: ../../source/Translocation/Translocation.md:968
 msgid "*Figure 9: Hit table showing the cell counts and enrichment scores.*"
 msgstr ""
-"*Figura 9: Tabela de acertos mostrando as contagens de células e as "
-"pontuações de enriquecimento."
+"*Figura 9: “Hit table” mostrando as contagens de células e os enrichment "
+"scores.*"
 
 #: ../../source/Translocation/Translocation.md:971
 msgid ""
