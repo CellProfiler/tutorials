@@ -1932,7 +1932,7 @@ msgstr ""
 "Boosting” e clique no botão “Train Classifier”. Se, no primeiro lote de 20 "
 "células selecionadas aleatoriamente, você não conseguiu colocar 5 células "
 "claramente positivas e 5 claramente negativas nos respectivos bins, clique "
-"em “Fetch!” novamente até ter células suficientes, pelo menos 5 em cada bin."
+"em “Fetch!” novamente até classificar pelo menos 5 em cada bin."
 
 #: ../../source/Translocation/Translocation.md:763
 msgid ""
