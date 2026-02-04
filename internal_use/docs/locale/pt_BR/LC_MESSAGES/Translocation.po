@@ -2464,8 +2464,8 @@ msgid ""
 "Select Plate Viewer from the CPA interface, then choose “\\*OTHER TABLE\\*” "
 "from “Data source.”"
 msgstr ""
-"Selecione Plate Viewer na interface CPA e, em seguida, escolha \"\\*OTHER "
-"TABLE\\*\" em \"Data source\" (Fonte de dados)."
+"Na interface do CPA, abra o “Plate Viewer” e, em “Data source”, selecione "
+"“\\*OTHER TABLE\\*”."
 
 #: ../../source/Translocation/Translocation.md:988
 msgid "When prompted to select a table, choose “HitTable.”"
