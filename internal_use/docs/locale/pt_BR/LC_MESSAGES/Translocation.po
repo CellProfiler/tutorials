@@ -2430,10 +2430,9 @@ msgid ""
 "reference or to make changes later; do so by going to *File > Save Training "
 "Set* or *File > Save Classifier Model*"
 msgstr ""
-"Você também pode salvar o conjunto de treinamento e/ou o modelo do "
-"classificador para referência futura ou para fazer alterações mais tarde; "
-"para isso, acesse *File &gt; Save Training Set* ou *File &gt; Save "
-"Classifier Model*"
+"Você também pode salvar o seu “training set” e o modelo do classificador "
+"para consultar depois ou fazer alterações no futuro; para isso, vá em *File "
+"> Save Training Set* ou em *File > Save Classifier Model*."
 
 #: ../../source/Translocation/Translocation.md:975
 msgid "7. **Saving the scores to the measurement database for visualization**"
