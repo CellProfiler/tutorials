@@ -1716,7 +1716,7 @@ msgid ""
 "Row E, columns 2-11: Nine doses of 2-fold dilutions of Wortmannin, "
 "increasing from left to right."
 msgstr ""
-"Linha E, colunas 2-11: Nove doses de diluições de 2 vezes de Wortmannin, "
+"Linha E, colunas 2-11: nove doses de diluições seriadas 1:2 de Wortmannin, "
 "aumentando da esquerda para a direita."
 
 #: ../../source/Translocation/Translocation.md:671
