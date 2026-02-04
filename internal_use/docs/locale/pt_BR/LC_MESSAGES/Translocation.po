@@ -1980,9 +1980,9 @@ msgid ""
 "Classifier window. This text contains the rules CPA found based on the "
 "training set you provided to it."
 msgstr ""
-"Leia o texto que agora está localizado na caixa de texto na metade superior "
-"da janela Classificador. Esse texto contém as regras que a CPA encontrou com"
-" base no conjunto de treinamento que você forneceu a ela."
+"Leia o texto que agora aparece na caixa de texto na metade superior da "
+"janela do “Classifier”. Esse texto contém as regras que o CPA encontrou com "
+"base no “training set” que você forneceu."
 
 #: ../../source/Translocation/Translocation.md:783
 msgid ""
