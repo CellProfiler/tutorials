@@ -2054,9 +2054,9 @@ msgid ""
 "you’ve classified so far. How accurate is your classification after adding "
 "only a few cells to your training set?"
 msgstr ""
-"Pressione o botão “Evaluate” para gerar uma matriz de confusão para as "
-"células que você classificou até agora. Quão precisa está a sua "
-"classificação após adicionar apenas algumas células ao seu “training set”?"
+"Clique em “Evaluate” para gerar uma matriz de confusão para as células que "
+"você classificou até agora. Quão precisa está a sua classificação após "
+"adicionar apenas algumas células ao seu “training set”?"
 
 #: ../../source/Translocation/Translocation.md:813
 msgid ""
