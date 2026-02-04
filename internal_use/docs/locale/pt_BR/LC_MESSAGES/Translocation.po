@@ -1709,7 +1709,7 @@ msgid ""
 "Wortmannin"
 msgstr ""
 "Coluna 1, linhas E-H e coluna 12, linhas A-D: Controles positivos, ou seja, "
-"150 nM de Wortmannin"
+"150 nM de Wortmannin."
 
 #: ../../source/Translocation/Translocation.md:663
 msgid ""
