@@ -1701,7 +1701,7 @@ msgid ""
 "i.e., no drug added"
 msgstr ""
 "Coluna 1, linhas A-D, coluna 12, linhas E-H e poço E02: Controles negativos,"
-" ou seja, sem adição de medicamento"
+" ou seja, sem adição de compostos."
 
 #: ../../source/Translocation/Translocation.md:661
 msgid ""
