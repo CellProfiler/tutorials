@@ -1802,7 +1802,7 @@ msgid ""
 "Do not close the Plate Viewer tool, as you will be referring to it later in "
 "the exercise."
 msgstr ""
-"Não feche a ferramenta Plate Viewer, pois você fará referência a ela mais "
+"Não feche a ferramenta 'Plate Viewer', pois você fará referência a ela mais "
 "tarde no exercício."
 
 #: ../../source/Translocation/Translocation.md:704
