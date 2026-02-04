@@ -2477,9 +2477,9 @@ msgid ""
 "matching columns in order to link the table of hits to the table of image "
 "measurements, by doing the following:"
 msgstr ""
-"No próximo prompt, selecione \"per-well\" (por poço) como o tipo de tabela. "
-"Em seguida, selecione as colunas correspondentes para vincular a tabela de "
-"ocorrências à tabela de medidas de imagem, fazendo o seguinte:"
+"Na próxima janela, selecione “per-well” como o tipo de tabela. Em seguida, "
+"selecione as colunas correspondentes para vincular a tabela de hits à tabela"
+" de medidas de imagem, fazendo o seguinte:"
 
 #: ../../source/Translocation/Translocation.md:994
 msgid ""
