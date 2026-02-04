@@ -2295,25 +2295,25 @@ msgid ""
 "are positive cells based on the current set of rules. Refine your training "
 "set by doing the following:"
 msgstr ""
-"Clique no botão \"Fetch!\" (Buscar!) para recuperar amostras do que o "
-"computador acha que são células positivas com base no conjunto atual de "
-"regras. Refine seu conjunto de treinamento fazendo o seguinte:"
+"Clique no botão “Fetch!” para buscar amostras do que o computador considera "
+"células positivas, com base no conjunto atual de regras. Refine o seu "
+"“training set” fazendo o seguinte:"
 
 #: ../../source/Translocation/Translocation.md:916
 msgid ""
 "If positive cells are correctly fetched (true positives), drag and drop them"
 " into the positive bin."
 msgstr ""
-"Se as células positivas forem obtidas corretamente (positivos verdadeiros), "
-"arraste-as e solte-as no compartimento positivo."
+"Se células positivas forem buscadas corretamente (verdadeiros positivos), "
+"arraste e solte-as no bin “positive”."
 
 #: ../../source/Translocation/Translocation.md:918
 msgid ""
 "If negative cells are incorrectly fetched (false positives), drag and drop "
 "them into the negative bin."
 msgstr ""
-"Se as células negativas forem buscadas incorretamente (falsos positivos), "
-"arraste-as e solte-as no compartimento negativo."
+"Se células negativas forem buscadas incorretamente (falsos positivos), "
+"arraste e solte-as no bin “negative”."
 
 #: ../../source/Translocation/Translocation.md:921
 msgid ""
