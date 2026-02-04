@@ -1989,8 +1989,8 @@ msgid ""
 "Each rule is in the form an “IF” statement evaluating whether a measurement "
 "is greater than some value."
 msgstr ""
-"Cada regra tem a forma de uma instrução \"IF\" que avalia se uma medida é "
-"maior que algum valor."
+"Cada regra está no formato de uma instrução “IF”, avaliando se uma medida é "
+"maior do que um determinado valor."
 
 #: ../../source/Translocation/Translocation.md:785
 msgid ""
