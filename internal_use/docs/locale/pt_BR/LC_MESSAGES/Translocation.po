@@ -2437,7 +2437,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:975
 msgid "7. **Saving the scores to the measurement database for visualization**"
 msgstr ""
-"7. **Salvar as pontuações no banco de dados de medição para visualização**"
+"7. **Salvando os scores no banco de dados de medidas para visualização**"
 
 #: ../../source/Translocation/Translocation.md:977
 msgid ""
@@ -2445,9 +2445,9 @@ msgid ""
 " back to the measurement database, so that they can be visualized using "
 "CPA’s tools."
 msgstr ""
-"Agora que pontuamos nosso experimento com sucesso, salvaremos as pontuações "
-"no banco de dados de medições, para que possam ser visualizadas usando as "
-"ferramentas da CPA."
+"Agora que pontuamos o experimento com sucesso, vamos salvar os scores de "
+"volta no banco de dados de medidas, para que eles possam ser visualizados "
+"usando as ferramentas do CPA."
 
 #: ../../source/Translocation/Translocation.md:981
 msgid ""
