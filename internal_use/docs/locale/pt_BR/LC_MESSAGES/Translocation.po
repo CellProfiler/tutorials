@@ -1810,8 +1810,8 @@ msgid ""
 "2. **Using the Classifier function of CPA to distinguish the cells’ "
 "FOXO1A-GFP subcellular localization phenotypes**"
 msgstr ""
-"2. **Usando a função classificadora do CPA para distinguir os fenótipos de "
-"localização subcelular FOXO1A-GFP das células**"
+"2. **Usando a função “Classifier” do CPA para distinguir os fenótipos de "
+"localização subcelular do FOXO1A-GFP nas células**"
 
 #: ../../source/Translocation/Translocation.md:706
 msgid ""
