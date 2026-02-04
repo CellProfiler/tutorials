@@ -2215,8 +2215,8 @@ msgid ""
 "From the image that opens, click “Classify” from the menu, then “Classify "
 "Image”."
 msgstr ""
-"Na imagem que se abre, clique em \"Classify\" (Classificar) no menu e, em "
-"seguida, em \"Classify Image\" (Classificar imagem)."
+"Na imagem que se abre, clique em “Classify” na barra de menu e, em seguida, "
+"em “Classify Image”."
 
 #: ../../source/Translocation/Translocation.md:883
 msgid ""
