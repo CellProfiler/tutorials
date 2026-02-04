@@ -2457,7 +2457,7 @@ msgid ""
 msgstr ""
 "Selecione a janela “Hit table” e, na barra de menu, clique em “File” e "
 "depois em “Save table to database”. Quando for solicitado um nome, escreva "
-"“HitTable”. Quando solicitado, selecione “save permanently”."
+"“HitTable”. Quando solicitado, selecione “Store permanently”."
 
 #: ../../source/Translocation/Translocation.md:985
 msgid ""
