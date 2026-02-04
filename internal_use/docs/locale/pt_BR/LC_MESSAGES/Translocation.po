@@ -1732,8 +1732,8 @@ msgid ""
 "Select “*Image_Count_Nuclei”* from the *Measurement* drop-down to show the "
 "nuclei count for each image."
 msgstr ""
-"Selecione “*Image_Count_Nuclei”* no menu suspenso *Measurement* para mostrar"
-" a contagem de núcleos de cada imagem."
+"Em “Measurement”, selecione “Image_Count_Nuclei” para mostrar a contagem de "
+"núcleos em cada imagem."
 
 #: ../../source/Translocation/Translocation.md:677
 msgid ""
