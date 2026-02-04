@@ -1953,8 +1953,8 @@ msgid ""
 "We refer to this set of positive and negative cells you have assembled as "
 "the “training set.”"
 msgstr ""
-"Chamamos esse conjunto de células positivas e negativas que você reuniu de "
-"“training set” (conjunto de treinamento)."
+"Chamamos esse conjunto de células positivas e negativas que você classificou"
+" de “training set” (conjunto de treinamento)."
 
 #: ../../source/Translocation/Translocation.md:772
 msgid ""
