@@ -2286,7 +2286,8 @@ msgid ""
 " the drop-down list."
 msgstr ""
 "Em “Fetch”, altere o número de “20” para “5”. Em seguida, no menu suspenso "
-"“random” (na seção de controles de fetch), selecione “positive”."
+"ao lado, mude a seleção de “random” para “positive” (na seção de controles "
+"de fetch)."
 
 #: ../../source/Translocation/Translocation.md:912
 msgid ""
