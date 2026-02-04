@@ -2557,8 +2557,8 @@ msgid ""
 "From the “x-axis” row, select “*Per_image*” and “*Image_Metadata_Dose*” from"
 " the drop-down lists. Choose “*log*” from the “Scale” drop-down."
 msgstr ""
-"Na linha “eixo x”, selecione “*Per_image*” e “*Image_Metadata_Dose*” nas "
-"listas suspensas. Escolha “*log*” no menu suspenso “Escala”."
+"Na linha “x-axis”, selecione “*Per_image*” e “*Image_Metadata_Dose*” nas "
+"listas suspensas. Escolha “*log*” no menu suspenso “Scale”."
 
 #: ../../source/Translocation/Translocation.md:1022
 msgid ""
