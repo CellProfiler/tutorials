@@ -2232,10 +2232,9 @@ msgid ""
 " of each class on the image. On Windows computers this will also show which "
 "color corresponds to which class."
 msgstr ""
-"Clique no botão \"Show controls &gt;&gt;\" (Mostrar controles &gt;&gt;) na "
-"parte inferior para revelar as contagens totais de cada classe na imagem. Em"
-" computadores Windows, isso também mostrará qual cor corresponde a qual "
-"classe."
+"Clique no botão “Show controls >>”, na parte inferior, para exibir as "
+"contagens totais de cada classe na imagem. Em computadores com Windows, isso"
+" também mostra qual cor corresponde a cada classe."
 
 #: ../../source/Translocation/Translocation.md:889
 msgid ""
