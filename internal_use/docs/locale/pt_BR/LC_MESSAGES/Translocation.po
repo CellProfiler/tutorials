@@ -1870,9 +1870,9 @@ msgid ""
 " hovers over it. The cell that falls under this dot is the cell to “drag & "
 "drop” which will be used for classification."
 msgstr ""
-"Um pequeno ponto é exibido no centro de cada imagem em miniatura quando o "
-"mouse passa sobre ela. A célula que estiver sob esse ponto é a célula a ser "
-"\"arrastada e solta\", que será usada para classificação."
+"Um pequeno ponto aparece no centro de cada miniatura quando você passa o "
+"mouse sobre ela. A célula que estiver sob esse ponto é a célula que você "
+"deve “arrastar e soltar” e que será usada para a classificação."
 
 #: ../../source/Translocation/Translocation.md:729
 msgid ""
