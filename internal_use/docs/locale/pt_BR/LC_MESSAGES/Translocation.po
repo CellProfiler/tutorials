@@ -1724,8 +1724,8 @@ msgid ""
 "*Figure 6: The Plate Viewer visualization tool illustrating the drug dosages"
 " applied to the plate.*"
 msgstr ""
-"*Figura 6: A ferramenta de visualização Plate Viewer ilustrando as dosagens "
-"de medicamento aplicadas à placa."
+"*Figura 6: Ferramenta de visualização 'Plate Viewer' mostrando as doses do "
+"composto aplicadas à placa.*"
 
 #: ../../source/Translocation/Translocation.md:675
 msgid ""
