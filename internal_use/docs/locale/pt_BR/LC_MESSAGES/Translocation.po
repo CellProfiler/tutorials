@@ -2018,10 +2018,9 @@ msgid ""
 "would expect to be the most significant one to use in distinguishing the "
 "phenotypes?"
 msgstr ""
-"Perguntas a serem consideradas: (1) Qual é a medida mais importante que "
-"aparece em suas regras de classificação? (2) A medida mais importante é "
-"aquela que você esperaria que fosse a mais significativa a ser usada para "
-"distinguir os fenótipos?"
+"Perguntas para refletir: (1) Qual é a medida que aparece no topo das suas "
+"regras de classificação? (2) Essa medida é a que você esperaria que fosse a "
+"mais importante para distinguir os fenótipos?"
 
 #: ../../source/Translocation/Translocation.md:797
 msgid ""
