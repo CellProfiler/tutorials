@@ -2390,8 +2390,8 @@ msgid ""
 "score."
 msgstr ""
 "Uma janela “Hit table” vai aparecer, contendo os scores resumidos para cada "
-"imagem (Figura 9). Nela, é reportada a contagem total de células, bem como o"
-" número de células positivas e negativas classificadas. A última coluna "
+"imagem (Fig. 9). Nela, é reportada a contagem total de células, bem como o "
+"número de células positivas e negativas classificadas. A última coluna "
 "mostra o enrichment score."
 
 #: ../../source/Translocation/Translocation.md:955
