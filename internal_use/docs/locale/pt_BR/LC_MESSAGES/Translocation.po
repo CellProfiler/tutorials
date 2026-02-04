@@ -2649,7 +2649,7 @@ msgid ""
 msgstr ""
 "Baixe CellProfiler e CellProfiler Analyst nos links “Download” em "
 "[https://cellprofiler.org/](https://cellprofiler.org/) e "
-"[https://cellprofileranalyst.org/](https://cellprofileranalyst. org/) e "
+"[https://cellprofileranalyst.org/](https://cellprofileranalyst.org/) e "
 "instale de acordo com as instruções da página de download. Esta página da "
 "web também fornece tutoriais e exemplos de pipelines."
 
