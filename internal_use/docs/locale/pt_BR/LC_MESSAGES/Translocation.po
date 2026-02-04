@@ -2183,9 +2183,9 @@ msgid ""
 "sample), dropping the cells into the positive bin. Do this for 5 positive "
 "cells."
 msgstr ""
-"Repita as duas etapas acima para A12 (um poço que contém uma amostra de "
-"controle positivo), colocando as células no compartimento positivo. Faça "
-"isso para 5 células positivas."
+"Repita as duas etapas acima para A12 (um poço que contém o controle "
+"positivo), colocando as células no compartimento positivo. Faça isso para 5 "
+"células positivas."
 
 #: ../../source/Translocation/Translocation.md:872
 #: ../../source/Translocation/Translocation.md:898
