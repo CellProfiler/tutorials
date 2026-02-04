@@ -1970,9 +1970,9 @@ msgid ""
 "the measurements (and the cutoff values the measurements need to have) in "
 "order to distinguish the positive from the negative phenotypes."
 msgstr ""
-"As regras de classificação que você examinará a seguir são a maneira de a "
-"CPA definir as medidas (e os valores de corte que as medidas precisam ter) "
-"para distinguir os fenótipos positivos dos negativos."
+"As regras de classificação que você verá abaixo são a forma do CPA definir "
+"quais medidas (e quais valores de corte essas medidas precisam ter) para "
+"distinguir o fenótipo positivo do fenótipo negativo."
 
 #: ../../source/Translocation/Translocation.md:779
 msgid ""
