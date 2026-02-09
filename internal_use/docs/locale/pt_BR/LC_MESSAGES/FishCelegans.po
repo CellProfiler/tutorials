@@ -155,8 +155,8 @@ msgid ""
 "Assign a name to: All images This is the simplest choice and the appropriate"
 " one because we have only one kind of image."
 msgstr ""
-"Em “Assign a name to:”, selecione “All images” (esta é a opção mais simples "
-"e a mais adequada, pois temos apenas um tipo de imagem)."
+"Em “Assign a name to:”, selecione “All images”, esta é a opção mais simples "
+"e a mais adequada, pois temos apenas um tipo de imagem."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:60
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
