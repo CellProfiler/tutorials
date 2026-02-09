@@ -41,8 +41,7 @@ msgstr "**Proposta:**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:9
 msgid "Segment the objects in a fluorescence z-stack image and provide:"
-msgstr ""
-"Segmentar objetos em uma imagem de fluorescência em z-stack e fornecer:"
+msgstr "Segmente os objetos em uma imagem de fluorescência em z-stack e gere:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:11
 msgid ""
