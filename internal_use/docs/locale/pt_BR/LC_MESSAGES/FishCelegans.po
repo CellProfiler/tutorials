@@ -629,7 +629,8 @@ msgstr ""
 msgid ""
 "Threshold correction factor: 1.2 (adjust the threshold to be more strict)"
 msgstr ""
-"Fator de correção de limite: 1,2 (ajuste o limite para ser mais rigoroso)"
+"Em “Threshold correction factor:”, escreva “1.2” (ajusta o threshold para "
+"ficar mais rigoroso)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:274
 msgid "Lower and upper bounds on threshold: 0, 1.0 (default)"
