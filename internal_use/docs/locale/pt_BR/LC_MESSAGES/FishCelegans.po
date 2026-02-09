@@ -467,7 +467,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:205
 msgid "Multiply the second image by: 1.0"
-msgstr "Multiplique a segunda imagem por: 1.0"
+msgstr "Em “Multiply the second image by”, escreva “1.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:212
 msgid ""
