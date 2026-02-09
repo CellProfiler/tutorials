@@ -604,20 +604,20 @@ msgid ""
 "Averaging method: Median (This is a good choice if the spot density is "
 "variable or high)."
 msgstr ""
-"Em “Averaging method:”, selecione “Median” (é uma boa escolha quando a "
+"Em “Averaging method”, selecione “Median” (é uma boa escolha quando a "
 "densidade de spots varia ou é alta)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:270
 msgid "Variance method: Standard deviation"
-msgstr "Em “Variance method:”, selecione “Standard deviation”."
+msgstr "Em “Variance method”, selecione “Standard deviation”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:271
 msgid ""
 "\\# of deviations: 8 (value to multiply the calculated variance. Adding "
 "several deviations raises the threshold well above the average)."
 msgstr ""
-"\\# de desvios: 8 (valor para multiplicar a variância calculada. Adicionar "
-"vários desvios aumenta o limite bem acima da média)."
+"Em “\\# of deviations”, escreva “8” (valor que multiplica a variância "
+"calculada; adicionar vários desvios eleva o threshold bem acima da média)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:272
 msgid ""
