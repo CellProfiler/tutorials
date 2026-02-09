@@ -1083,7 +1083,9 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:464
 msgid "Calculate the per-image mean values for object measurements?:No"
-msgstr "Calcular os valores médios por imagem para medições de objetos?"
+msgstr ""
+"Em “Calculate the per-image mean values for object measurements?”, selecione"
+" “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:466
 msgid "Calculate the per-image median values for object measurements?:No"
