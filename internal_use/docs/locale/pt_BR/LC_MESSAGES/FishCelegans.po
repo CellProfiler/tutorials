@@ -880,7 +880,7 @@ msgstr "Módulo **SaveImages**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:389
 msgid "Select the type of image to save: Image"
-msgstr "Selecione o tipo de imagem a ser salva: Imagem"
+msgstr "Em “Select the type of image to save”, selecione “Image”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:390
 msgid ""
