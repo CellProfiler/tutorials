@@ -49,8 +49,8 @@ msgid ""
 "Centroid location in microns (um) for each spot: x, y, and z coordinates "
 "listed in separate columns. Labels x, y, and z."
 msgstr ""
-"Localização centróide em mícrons (um) para cada ponto: coordenadas x, y e z "
-"listadas em colunas separadas. Rótulos x, y e z."
+"Localização do centróide em micrômetros (µm) para cada spot: coordenadas x, "
+"y e z listadas em colunas separadas. Rotule as colunas como x, y e z."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:12
 msgid "Integrated Intensity. Label intensity."
