@@ -455,7 +455,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:202
 msgid "Measurement: MedianIntensity"
-msgstr "Medição: MedianIntensity"
+msgstr "Em “Measurement:”, selecione “MedianIntensity”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:203
 msgid ""
