@@ -972,7 +972,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:410
 msgid "Name the output image: SpotImage"
-msgstr "Nomeie a imagem de saída: SpotImage"
+msgstr "Em “Name the output image”, escreva “SpotImage”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:411
 msgid "Select the color format: Grayscale"
