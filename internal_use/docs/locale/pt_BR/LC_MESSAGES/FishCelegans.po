@@ -872,7 +872,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:376
 msgid "Select outline color: Red (Default)."
-msgstr "Selecione a cor do contorno: Vermelho (padrão)."
+msgstr "Em “Select outline color”, mantenha “Red” (padrão)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:387
 msgid "**SaveImages** module."
