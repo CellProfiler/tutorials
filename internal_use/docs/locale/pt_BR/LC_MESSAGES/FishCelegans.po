@@ -847,7 +847,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:371
 msgid "Display outlines on a blank image: No"
-msgstr "Exibir contornos em uma imagem em branco: Não"
+msgstr "Em “Display outlines on a blank image:”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:372
 msgid ""
