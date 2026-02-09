@@ -729,7 +729,8 @@ msgstr "Em “Maximum number of seeds:”, mantenha “-1” (padrão, sem limit
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:303
 msgid "Structuring element for seed dilation: Octahedron (Size: 1)"
 msgstr ""
-"Elemento de estruturação para dilatação de sementes: Octaedro (Tamanho: 1)"
+"Em “Structuring element for seed dilation:”, selecione “Octahedron” e, em "
+"“Size:”, escreva “1”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:315
 msgid "**Measure and export data**"
