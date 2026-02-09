@@ -1120,7 +1120,7 @@ msgstr "Em “Data to export”, selecione “Spots”."
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:478
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:484
 msgid "Use the object name for the file name?: No"
-msgstr "Usar o nome do objeto para o nome do arquivo: Não"
+msgstr "Em “Use the object name for the file name?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:480
 msgid "File name: Spots.csv"
