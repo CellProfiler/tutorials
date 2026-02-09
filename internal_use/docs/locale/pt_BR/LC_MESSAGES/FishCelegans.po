@@ -169,8 +169,8 @@ msgid ""
 "Populate the fields for “Relative Pixel Spacing”. This calibration affects "
 "modules that handle 3D images as volumes."
 msgstr ""
-"Preencha os campos para “Espaçamento relativo de pixels”. Esta calibração "
-"afeta módulos que tratam imagens 3D como volumes."
+"Preencha os campos de “Relative Pixel Spacing”. Essa calibração afeta os "
+"módulos que tratam imagens 3D como volumes."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:63
 msgid ""
