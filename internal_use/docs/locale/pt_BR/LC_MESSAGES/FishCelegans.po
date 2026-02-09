@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:68
 msgid "Hit the \"Update\" button to populate"
-msgstr "Clique no botão \"Atualizar\" para preencher"
+msgstr "Clique no botão \"Atualizar\" para preencher."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:75
 msgid ""
