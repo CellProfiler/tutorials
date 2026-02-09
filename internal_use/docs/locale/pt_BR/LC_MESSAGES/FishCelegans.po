@@ -462,8 +462,8 @@ msgid ""
 "Image: MaskWorm (the image you choose in the **MeasureImageIntensity** "
 "module)"
 msgstr ""
-"Imagem: MaskWorm (a imagem que você escolhe no módulo "
-"**MeasureImageIntensity**)"
+"Em “Image:”, selecione “MaskWorm” (a imagem escolhida no módulo "
+"**MeasureImageIntensity**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:205
 msgid "Multiply the second image by: 1.0"
