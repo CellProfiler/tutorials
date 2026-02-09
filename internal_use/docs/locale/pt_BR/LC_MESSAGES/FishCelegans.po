@@ -308,14 +308,14 @@ msgid ""
 "image, because we used a gaussian filter module before this module, it’s not"
 " necessary to smooth the image prior to the threshold)."
 msgstr ""
-"Em “Threshold smoothing scale:”, escreva “0.0” (a suavização melhora a "
+"Em “Threshold smoothing scale”, escreva “0.0” (a suavização melhora a "
 "uniformidade dos objetos resultantes, removendo bordas irregulares causadas "
 "por ruído; como usamos um módulo de filtro Gaussiano antes deste, não é "
 "necessário suavizar a imagem antes de aplicar o limiar)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:126
 msgid "Threshold correction factor: 1"
-msgstr "Fator de correção do limiar: 1"
+msgstr "Em “Threshold correction factor”, escreva 1. "
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:128
 msgid ""
