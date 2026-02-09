@@ -495,8 +495,8 @@ msgid ""
 "The 2nd and 3rd icons let you step backwards and forwards through any "
 "changes you made to the view."
 msgstr ""
-"O segundo e o terceiro ícones permitem que você retroceda e avance nas "
-"alterações feitas na visualização."
+"O 2º e o 3º ícones permitem voltar e avançar pelas mudanças que você fez na "
+"visualização."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:228
 msgid ""
