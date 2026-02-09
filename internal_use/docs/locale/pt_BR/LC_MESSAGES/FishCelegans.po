@@ -423,7 +423,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:191
 msgid "Name the output image: ImageAfterMath"
-msgstr "Em “Name the output image:”, escreva “ImageAfterMath”."
+msgstr "Em “Name the output image”, escreva “ImageAfterMath”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:193
 msgid "Image or measurement?: Image"
@@ -432,12 +432,11 @@ msgstr "Em “Image or measurement?”, selecione “Image”."
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:195
 msgid "Select the first image: MaskWorm (from **MaskImage** module)"
 msgstr ""
-"Em “Select the first image:”, selecione “MaskWorm” (do módulo "
-"**MaskImage**)."
+"Em “Select the first image”, selecione “MaskWorm” (do módulo **MaskImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:197
 msgid "Multiply the first image by: 1.0"
-msgstr "Em “Multiply the first image by:”, escreva “1.0”."
+msgstr "Em “Multiply the first image by”, escreva “1.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:199
 msgid "Image or measurement?: Measurement"
