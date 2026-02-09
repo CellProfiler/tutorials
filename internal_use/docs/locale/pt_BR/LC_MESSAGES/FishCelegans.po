@@ -787,8 +787,8 @@ msgid ""
 "Select objects to measure: Spots (from **Watershed** module) to have all the"
 " intensity measurements from the object."
 msgstr ""
-"Selecione objetos para medir: Spots (do módulo **Bacia Hidrográfica**) para "
-"ter todas as medidas de intensidade do objeto."
+"Em “Select objects to measure”, selecione “Spots” (do módulo **Watershed**) "
+"para obter todas as medidas de intensidade do objeto."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:341
 msgid ""
