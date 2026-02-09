@@ -1017,11 +1017,11 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:436
 msgid "Select the column delimiter: Comma (“,”)"
-msgstr "Em “Select the column delimiter:”, selecione “Comma” (“,”)."
+msgstr "Em “Select the column delimiter”, selecione “Comma” (“,”)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:438
 msgid "Output file location: Default Output Folder"
-msgstr "Em “Output file location:”, selecione “Default Output Folder”."
+msgstr "Em “Output file location”, selecione “Default Output Folder”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:440
 msgid "Add a prefix to file names: Yes"
