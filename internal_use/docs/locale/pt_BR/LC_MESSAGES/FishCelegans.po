@@ -472,7 +472,7 @@ msgstr "Em “Multiply the second image by”, escreva “1.0”."
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:212
 msgid ""
 "The resulting image shows just the spots without the background of the worm."
-msgstr "A imagem resultante mostra apenas as manchas sem o fundo do verme."
+msgstr "A imagem resultante mostra apenas os spots, sem o fundo do worm."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:215
 msgid ""
