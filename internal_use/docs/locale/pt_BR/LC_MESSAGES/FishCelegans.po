@@ -589,8 +589,8 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:267
 msgid "Lower outliner fraction: 0.05 (discard this fraction of dim objects)."
 msgstr ""
-"Em “Lower outlier fraction:”, escreva “0.05” (descarta essa fração de "
-"objetos mais fracos)."
+"Em “Lower outlier fraction:”, escreva “0.05” (descarta esta fração dos "
+"pixels/regiões menos intensos)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:268
 msgid ""
