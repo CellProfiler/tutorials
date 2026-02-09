@@ -536,7 +536,7 @@ msgid ""
 msgstr ""
 "Em “Rescaling method:”, selecione “Stretch each image to use the full "
 "intensity range” (encontra os valores mínimo e máximo na parte não mascarada"
-" da imagem, ou na imagem inteira, se não houver máscara, e reescala os "
+" da imagem — ou na imagem inteira, se não houver máscara — e reescala os "
 "pixels para que o mínimo tenha intensidade 0 e o máximo tenha intensidade "
 "1)."
 
