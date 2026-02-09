@@ -1017,7 +1017,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:436
 msgid "Select the column delimiter: Comma (“,”)"
-msgstr "Selecione o delimitador de coluna: Vírgula (\",\")"
+msgstr "Em “Select the column delimiter:”, selecione “Comma” (“,”)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:438
 msgid "Output file location: Default Output Folder"
