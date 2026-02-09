@@ -1124,7 +1124,7 @@ msgstr "Em “Use the object name for the file name?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:480
 msgid "File name: Spots.csv"
-msgstr "Nome do arquivo: Spots.csv"
+msgstr "Em “File name”, escreva “Spots.csv”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:482
 msgid "Data to export: Experiment"
