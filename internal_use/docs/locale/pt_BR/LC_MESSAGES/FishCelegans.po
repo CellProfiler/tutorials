@@ -635,7 +635,7 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:274
 msgid "Lower and upper bounds on threshold: 0, 1.0 (default)"
 msgstr ""
-"Em “Lower and upper bounds on threshold:”, mantenha “0, 1.0” (padrão)."
+"Em “Lower and upper bounds on threshold:”, mantenha “0”,\\ e “1.0” (padrão)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:286
 msgid "**Watershed** module."
