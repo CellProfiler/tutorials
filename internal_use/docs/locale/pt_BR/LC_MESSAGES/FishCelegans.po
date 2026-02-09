@@ -646,8 +646,8 @@ msgid ""
 "This module is used to separate different objects in an image, which in this"
 " case will segment the nuclei."
 msgstr ""
-"Este módulo é utilizado para separar diferentes objetos em uma imagem, que "
-"neste caso irá segmentar os núcleos."
+"Este módulo é usado para separar diferentes objetos em uma imagem; neste "
+"caso, ele vai segmentar os núcleos."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:290
 msgid "Use advanced settings: Yes"
