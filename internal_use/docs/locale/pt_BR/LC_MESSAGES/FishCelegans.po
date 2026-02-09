@@ -596,8 +596,8 @@ msgstr ""
 msgid ""
 "Upper outliner fraction: 0.05 (discard this fraction of bright objects)."
 msgstr ""
-"Fração do contorno superior: 0,05 (descarte esta fração de objetos "
-"brilhantes)."
+"Em “Upper outlier fraction:”, escreva “0.05” (descarta esta fração dos "
+"pixels/regiões mais intensos)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:269
 msgid ""
