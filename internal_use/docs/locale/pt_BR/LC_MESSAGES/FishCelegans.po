@@ -266,7 +266,7 @@ msgid ""
 "to zero (black) and above the value to one (white)."
 msgstr ""
 "**Threshold** . Este módulo produz uma imagem binária, ou preto e branco, "
-"com base em um limiar que pode ser pré-selecionado ou calculado "
+"com base em um threshold que pode ser pré-selecionado ou calculado "
 "automaticamente usando um dos vários métodos. Depois que o valor do limiar é"
 " determinado, o módulo Threshold define as intensidades de pixel abaixo "
 "desse valor como zero (preto) e acima desse valor como um (branco)."
@@ -275,11 +275,12 @@ msgstr ""
 msgid ""
 "Select the input image: GaussianFilter (from **GaussianFilter** module)"
 msgstr ""
-"Selecione a imagem de entrada: GaussianFilter (do módulo **GaussianFilter**)"
+"Em “Select the input image”, selecione “GaussianFilter” (do módulo "
+"**GaussianFilter**)"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:122
 msgid "Name the output image: Threshold"
-msgstr "Nomeie a imagem de saída: Threshold (Limiar)"
+msgstr "Em “Name the output image”, escreva Threshold."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:123
 msgid ""
