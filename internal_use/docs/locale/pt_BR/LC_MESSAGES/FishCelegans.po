@@ -1144,4 +1144,4 @@ msgstr "exportados."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:496
 msgid "**End**"
-msgstr "**Fim"
+msgstr "**Fim**"
