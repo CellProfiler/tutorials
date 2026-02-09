@@ -297,9 +297,9 @@ msgid ""
 "Threshold method: Minimum-Cross-Entropy (analyze the intensity distribution "
 "probability using the image histogram and define foreground and background)"
 msgstr ""
-"Método de limite: Entropia Cruzada Mínima (analisar a probabilidade de "
-"distribuição de intensidade usando o histograma da imagem e definir primeiro"
-" e segundo plano)"
+"Em “Threshold method”,  escolha “Minimum-Cross-Entropy” (analisa a "
+"distribuição de intensidades usando o histograma da imagem e define primeiro"
+" plano e plano de fundo)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:125
 msgid ""
