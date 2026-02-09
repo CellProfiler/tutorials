@@ -829,7 +829,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:356
 msgid "Name the output image: RescaleIntensityFish"
-msgstr "Em “Name the output image:”, escreva “RescaleIntensityFish”."
+msgstr "Em “Name the output image”, escreva “RescaleIntensityFish”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:369
 msgid "**OverlayOutlines** module."
