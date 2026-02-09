@@ -1048,7 +1048,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:450
 msgid "Representation of Nan/Inf: NaN"
-msgstr "Em “Representation of Nan/Inf:”, selecione “NaN”."
+msgstr "Em “Representation of Nan/Inf”, selecione “NaN”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:452
 msgid "Select the measurements to export: Yes"
