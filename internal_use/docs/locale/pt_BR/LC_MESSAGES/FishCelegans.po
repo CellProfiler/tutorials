@@ -907,7 +907,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:393
 msgid "Append a suffix to the image file name?: No"
-msgstr "Acrescentar um sufixo ao nome do arquivo de imagem: Não"
+msgstr "Em “Append a suffix to the image file name?:”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:394
 msgid ""
