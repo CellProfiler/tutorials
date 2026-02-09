@@ -91,7 +91,7 @@ msgstr "**Arquivo de calibração**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:27
 msgid "Voxel dimensions: 1x1x1 um"
-msgstr "Dimensões do voxel: 1x1x1 um"
+msgstr "Dimensões do voxel: 1x1x1 µm"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:29
 msgid "**FishPipeline** - (4 min)"
