@@ -254,8 +254,8 @@ msgid ""
 "In this part of the pipeline we want to identify the worm and not the spots,"
 " so we added a Threshold module to segment the worm."
 msgstr ""
-"Nessa parte do pipeline, queremos identificar o worm e não os pontos, por "
-"isso adicionamos um módulo Threshold para segmentar o worm."
+"Nesta parte do pipeline, queremos identificar o worm e não os spots; por "
+"isso, adicionamos um módulo Threshold para segmentar o worm."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:120
 msgid ""
