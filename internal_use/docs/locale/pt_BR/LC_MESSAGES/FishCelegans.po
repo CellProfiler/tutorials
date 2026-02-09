@@ -863,7 +863,7 @@ msgstr "Em “Outline display mode:”, selecione “Color”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:374
 msgid "How to outline: Outer"
-msgstr "Como fazer o esboço: Externo"
+msgstr "Em “How to outline:”, selecione “Outer”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:375
 msgid "Select objects to display: Spots (from **Watershed** module)"
