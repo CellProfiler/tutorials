@@ -701,7 +701,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:296
 msgid "Declump method: Intensity"
-msgstr "Método Declump: Intensidade"
+msgstr "Em “Declump method:”, selecione “Intensity”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:297
 msgid "Reference Image: MaskWorm (from **MaskImage** module)"
