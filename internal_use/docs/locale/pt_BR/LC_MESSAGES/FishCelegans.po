@@ -369,11 +369,13 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:161
 msgid "Select the input image: fish (from **NamesAndTypes** module)"
-msgstr "Selecione a imagem de entrada: fish (do módulo **NamesAndTypes**)"
+msgstr ""
+"Em “Select the input image:”, selecione “fish” (do módulo "
+"**NamesAndTypes**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:162
 msgid "Name the output image: MaskWorm"
-msgstr "Nomeie a imagem de saída: MaskWorm"
+msgstr "Em “Name the output image:”, escreva “MaskWorm”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:163
 msgid "Use objects or an image as a mask?: Image"
