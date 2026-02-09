@@ -288,9 +288,9 @@ msgid ""
 "because the out of worm background is relatively unifom after the gaussian "
 "filter)."
 msgstr ""
-"Estratégia de limite: Global (escolhemos uma estratégia de limite global "
-"aqui porque o fundo fora do worm é relativamente uniforme após o filtro "
-"gaussiano)."
+"Em “Threshold strategy”, escolha “Global” (escolhemos uma estratégia de "
+"threshold global aqui porque o fundo fora do worm é relativamente uniforme "
+"após o filtro gaussiano)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:124
 msgid ""
