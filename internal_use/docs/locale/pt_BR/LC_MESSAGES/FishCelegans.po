@@ -1029,11 +1029,11 @@ msgstr "Em “Add a prefix to file names”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:442
 msgid "Filename prefix: FISH"
-msgstr "Em “Filename prefix:”, escreva “FISH”."
+msgstr "Em “Filename prefix”, escreva “FISH”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:444
 msgid "Overwrite existing files without warning: No"
-msgstr "Em “Overwrite existing files without warning:”, selecione “No”."
+msgstr "Em “Overwrite existing files without warning”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:446
 msgid "Add image metadata columns to your object data file: No"
