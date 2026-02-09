@@ -57,7 +57,7 @@ msgstr "Intensidade integrada. Rotule como intensity."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:13
 msgid "3D volume image of your segmented image"
-msgstr "Imagem de volume 3D de sua imagem segmentada"
+msgstr "Imagem de volume 3D da imagem segmentada."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:14
 msgid ""
