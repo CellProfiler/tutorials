@@ -335,7 +335,7 @@ msgid ""
 "the worm to be removed in the following steps."
 msgstr ""
 "Módulo **DilateObjects**. O objetivo desta primeira etapa do pipeline é "
-"remover o fundo e o ruído das imagens sem perder informação; por isso, "
+"remover o background e o ruído das imagens sem perder informação; por isso, "
 "dilatar o objeto ajuda a evitar que regiões encostadas na borda do worm "
 "sejam removidas nos próximos passos."
 
