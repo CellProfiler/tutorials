@@ -868,7 +868,7 @@ msgstr "Em “How to outline:”, selecione “Outer”."
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:375
 msgid "Select objects to display: Spots (from **Watershed** module)"
 msgstr ""
-"Selecione os objetos a serem exibidos: Spots (do módulo **Watershed**)"
+"Em “Select objects to display”, selecione “Spots” (do módulo **Watershed**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:376
 msgid "Select outline color: Red (Default)."
