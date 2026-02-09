@@ -1029,7 +1029,7 @@ msgstr "Em “Add a prefix to file names”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:442
 msgid "Filename prefix: FISH"
-msgstr "Prefixo do nome do arquivo: FISH"
+msgstr "Em “Filename prefix:”, escreva “FISH”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:444
 msgid "Overwrite existing files without warning: No"
