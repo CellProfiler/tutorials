@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:52
 msgid "Highlight the **NameAndType** module."
-msgstr "Destaque o módulo **NameAndType**."
+msgstr "Selecione o módulo **NameAndType**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:54
 msgid ""
