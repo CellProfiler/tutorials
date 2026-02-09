@@ -352,9 +352,9 @@ msgid ""
 "Structuring element: Ball (Size: 3) ( dilate the objects using a ball shape "
 "with size of 3)."
 msgstr ""
-"Em “Structuring element:”, selecione “Ball” e, em “Size:”, escreva “3” "
-"(dilata os objetos usando um elemento estruturante em forma de esfera com "
-"tamanho 3)."
+"Em “Structuring element”, selecione “Ball” e, em “Size”, escreva “3” (dilata"
+" os objetos usando um elemento estruturante em forma de esfera com tamanho "
+"3)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:156
 msgid ""
@@ -370,12 +370,11 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:161
 msgid "Select the input image: fish (from **NamesAndTypes** module)"
 msgstr ""
-"Em “Select the input image:”, selecione “fish” (do módulo "
-"**NamesAndTypes**)."
+"Em “Select the input image”, selecione “fish” (do módulo **NamesAndTypes**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:162
 msgid "Name the output image: MaskWorm"
-msgstr "Em “Name the output image:”, escreva “MaskWorm”."
+msgstr "Em “Name the output image”, escreva “MaskWorm”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:163
 msgid "Use objects or an image as a mask?: Image"
@@ -384,13 +383,13 @@ msgstr "Em “Use objects or an image as a mask?”, selecione “Image”."
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:164
 msgid "Select image for mask: DilateImage (from **DilateImage** module)"
 msgstr ""
-"Em “Select image for mask:”, selecione “DilateImage” (do módulo "
+"Em “Select image for mask”, selecione “DilateImage” (do módulo "
 "**DilateImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:165
 msgid "Invert mask?: No (select the worm and not the background)"
 msgstr ""
-"Em “Invert mask?:”, selecione “No” (para selecionar o worm, e não o fundo)."
+"Em “Invert mask?”, selecione “No” (para selecionar o worm, e não o fundo)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:172
 msgid ""
