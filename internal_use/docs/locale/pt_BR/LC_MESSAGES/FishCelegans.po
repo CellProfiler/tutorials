@@ -246,8 +246,8 @@ msgid ""
 "can vary depending on the Image set chosen."
 msgstr ""
 "Clique no botão <img src=\"media/Step.png\" width=\"120\"/> e uma nova "
-"janela aparecerá com uma imagem resultante que deverá ser semelhante a esta."
-" A imagem pode variar dependendo do conjunto de imagens escolhido."
+"janela vai aparecer com uma imagem resultante que deverá ser semelhante a "
+"esta. A imagem pode variar dependendo do conjunto de imagens escolhido."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:117
 msgid ""
