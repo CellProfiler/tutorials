@@ -1060,7 +1060,7 @@ msgstr "Clique no botão “Press button to select measurements”:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:456
 msgid "Spots:"
-msgstr "Pontos:"
+msgstr "Clique em “Spots”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:458
 msgid "Intensity: IntegratedIntensity"
