@@ -701,15 +701,15 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:296
 msgid "Declump method: Intensity"
-msgstr "Em “Declump method:”, selecione “Intensity”."
+msgstr "Em “Declump method”, selecione “Intensity”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:297
 msgid "Reference Image: MaskWorm (from **MaskImage** module)"
-msgstr "Imagem de referência: MaskWorm (do módulo **MaskImage**)"
+msgstr "Em “Reference Image”, selecione “MaskWorm” (do módulo **MaskImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:298
 msgid "Segmentation distance transform smoothing factor: 0"
-msgstr "Fator de suavização da transformação da distância de segmentação: 0"
+msgstr "Em “Segmentation distance transform smoothing factor”, escreva “0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:299
 msgid "Minimum distance between seeds: 1"
