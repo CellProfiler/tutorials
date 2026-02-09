@@ -959,7 +959,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:401
 msgid "Create subfolders in the output folder: No"
-msgstr "Criar subpastas na pasta de saída: Não"
+msgstr "Em “Create subfolders in the output folder”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:407
 msgid "**ConvertObjectsToImage** module."
