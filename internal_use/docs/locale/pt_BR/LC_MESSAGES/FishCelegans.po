@@ -734,7 +734,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:315
 msgid "**Measure and export data**"
-msgstr "**Medir e exportar dados**"
+msgstr "**Medindo e exportando os dados**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:317
 msgid ""
