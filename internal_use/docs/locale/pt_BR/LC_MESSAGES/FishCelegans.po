@@ -78,8 +78,8 @@ msgid ""
 "Four different z-stack images that vary in their signal-to-noise ratio and "
 "the clustering of their objects of FISH staining in *C. elegans*."
 msgstr ""
-"Quatro imagens diferentes em z-stack que variam em sua relação sinal/ruído e"
-" no agrupamento de seus objetos de coloração FISH em *C. elegans*."
+"Quatro imagens z-stack diferentes, que variam na relação sinal-ruído e no "
+"agrupamento dos objetos de marcação por FISH em *C. elegans*."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:22
 msgid "Voxel dimensions: 0.162x0.162x0.200 um"
