@@ -323,7 +323,7 @@ msgid ""
 "the image, the pixel intensities will appear in the bottom bar of the "
 "display window."
 msgstr ""
-"**Dica:** para ver as intensidades de pixel em uma imagem aberta, mova o "
+"**Dica:** para ver as intensidades de um pixel em uma imagem aberta, mova o "
 "mouse sobre a imagem; as intensidades de pixel aparecerão na barra inferior "
 "da janela de exibição."
 
