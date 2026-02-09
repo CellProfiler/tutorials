@@ -479,8 +479,8 @@ msgid ""
 "Tip: The image tools on the top toolbar may be helpful to see the details on"
 " your image/objects:"
 msgstr ""
-"Dica: As ferramentas de imagem na barra de ferramentas superior podem ser "
-"úteis para ver os detalhes de suas imagens/objetos:"
+"Dica: as ferramentas de imagem na barra superior podem ajudar a ver os "
+"detalhes da sua imagem/objetos:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:222
 msgid ""
