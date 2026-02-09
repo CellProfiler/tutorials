@@ -935,15 +935,15 @@ msgid ""
 "Output file location: Default Output Folder (or create a new folder just for"
 " this images)"
 msgstr ""
-"Em “Output file location:”, selecione “Default Output Folder” (ou crie uma "
+"Em “Output file location”, selecione “Default Output Folder” (ou crie uma "
 "nova pasta apenas para essas imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:398
 msgid ""
 "Overwrite existing files without warning?: No (prevent file overwritten)"
 msgstr ""
-"Substituir arquivos existentes sem aviso?: Não (evitar a substituição de "
-"arquivos)"
+"Em “Overwrite existing files without warning?”, selecione “No” (evita "
+"sobrescrever arquivos existentes)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:399
 msgid "When to save: Every cycle (Save every image set)"
