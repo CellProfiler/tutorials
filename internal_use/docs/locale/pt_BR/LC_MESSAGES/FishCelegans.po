@@ -967,7 +967,8 @@ msgstr "Módulo **ConvertObjectsToImage**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:409
 msgid "Select the input objects: Spots (from Watershed module)"
-msgstr "Selecione os objetos de entrada: Spots (do módulo Watershed)"
+msgstr ""
+"Em “Select the input objects”, selecione “Spots” (do módulo Watershed)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:410
 msgid "Name the output image: SpotImage"
