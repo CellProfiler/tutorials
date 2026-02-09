@@ -403,8 +403,8 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:180
 msgid "Select images to measure: MaskWorm (from **MaskImage** module)"
 msgstr ""
-"Em “Select images to measure:”, selecione “MaskWorm” (do módulo "
-"**MaskImage**)."
+"Selecione o módulo “Measurelmagelntensity”. Em “Select images to measure:”, "
+"selecione “MaskWorm” (do módulo **MaskImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:181
 msgid "Measure the intensity only from areas enclosed by objects: No"
