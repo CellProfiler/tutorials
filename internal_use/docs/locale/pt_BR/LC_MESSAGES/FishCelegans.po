@@ -545,8 +545,8 @@ msgid ""
 "The resulting image looks the same, but the pixel value differs between "
 "images."
 msgstr ""
-"A imagem resultante tem a mesma aparência, mas o valor do pixel difere entre"
-" as imagens."
+"A imagem resultante parece a mesma, mas os valores de pixel diferem entre as"
+" imagens."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:256
 msgid "**Segmentation**"
