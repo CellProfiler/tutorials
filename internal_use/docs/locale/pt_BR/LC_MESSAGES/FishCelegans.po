@@ -103,7 +103,7 @@ msgstr "**Importando dados no CellProfiler**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:34
 msgid "Highlight the **Images** module."
-msgstr "Destaque o módulo **Imagens**."
+msgstr "Selecione o módulo **Imagens**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:36
 msgid ""
