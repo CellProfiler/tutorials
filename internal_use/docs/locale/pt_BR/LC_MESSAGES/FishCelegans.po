@@ -948,14 +948,14 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:399
 msgid "When to save: Every cycle (Save every image set)"
 msgstr ""
-"Em “When to save:”, selecione “Every cycle” (salva a cada conjunto de "
+"Em “When to save”, selecione “Every cycle” (salva a cada conjunto de "
 "imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:400
 msgid "Record the file and path information to the saved image?: No"
 msgstr ""
-"Em “When to save:”, selecione “Every cycle” (salva a cada conjunto de "
-"imagens)."
+"Em “Record the file and path information to the saved image?”, selecione "
+"“No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:401
 msgid "Create subfolders in the output folder: No"
