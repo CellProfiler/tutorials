@@ -161,8 +161,8 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:60
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
 msgstr ""
-"Process as 3D: Yes Selecionando \"Yes\", os arquivos serão carregados como "
-"volumes"
+"Em “Process as 3D:”, selecione “Yes”, selecionar “Yes” carregará os arquivos"
+" como volumes."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:61
 msgid ""
