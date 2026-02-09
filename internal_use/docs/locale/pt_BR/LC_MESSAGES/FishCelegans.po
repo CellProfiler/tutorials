@@ -1038,7 +1038,7 @@ msgstr "Em “Overwrite existing files without warning”, selecione “No”."
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:446
 msgid "Add image metadata columns to your object data file: No"
 msgstr ""
-"Em “Add image metadata columns to your object data file:”, selecione “No”."
+"Em “Add image metadata columns to your object data file”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:448
 msgid "Add image file and folder names to your object data file: No"
