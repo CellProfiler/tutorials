@@ -716,7 +716,7 @@ msgstr "Em “Minimum distance between seeds:”, escreva “1”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:300
 msgid "Minimum absolute internal distance: 0.0"
-msgstr "Distância interna mínima absoluta: 0.0"
+msgstr "Em “Minimum absolute internal distance”, escreva “0.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:301
 msgid "Pixels from border to exclude: 0 (Default)"
