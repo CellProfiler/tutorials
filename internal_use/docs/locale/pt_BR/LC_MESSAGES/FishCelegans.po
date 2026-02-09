@@ -557,7 +557,7 @@ msgid ""
 "After removing the worm background on different image sets we can start the "
 "segmentation process."
 msgstr ""
-"Depois de remover o fundo de minhoca em diferentes conjuntos de imagens, "
+"Depois de remover o fundo do worm nos diferentes conjuntos de imagens, "
 "podemos iniciar o processo de segmentação."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:261
