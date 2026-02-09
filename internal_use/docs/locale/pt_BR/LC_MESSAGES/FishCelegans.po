@@ -1056,7 +1056,7 @@ msgstr "Selecione as medidas a serem exportadas: Sim"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:454
 msgid "Press button to select measurements:"
-msgstr "Pressione o botão para selecionar as medições:"
+msgstr "Clique no botão “Press button to select measurements”:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:456
 msgid "Spots:"
