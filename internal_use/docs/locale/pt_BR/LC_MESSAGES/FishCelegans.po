@@ -841,8 +841,8 @@ msgid ""
 "overlaying onto rescaled images, which will be easier to visualize outside "
 "of CellProfiler."
 msgstr ""
-"Este módulo coloca contornos de objetos sobre uma imagem desejada. "
-"Recomendamos a sobreposição em imagens redimensionadas, que serão mais "
+"Este módulo sobrepõe os contornos dos objetos em uma imagem escolhida. "
+"Recomendamos sobrepor em imagens redimensionadas, pois elas ficam mais "
 "fáceis de visualizar fora do CellProfiler."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:371
