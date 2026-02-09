@@ -1069,7 +1069,7 @@ msgid "Intensity: IntegratedIntensity"
 msgstr ""
 "Clique no “>” ao lado de “Intensity” para expandir o menu. Em seguida, "
 "selecione a caixa “IntegratedIntensity” e clique no “>” ao lado de para "
-"expandir o menu."
+"expandir o menu. Garanta que a caixa “fish” esteja selecionada."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:460
 msgid "Location"
