@@ -449,9 +449,9 @@ msgid ""
 "the measurement is used for the operand for all of the pixels of the other "
 "operand’s image)."
 msgstr ""
-"Categoria: Intensidade (Selecione uma medida feita na imagem. O valor da "
-"medida é utilizado como operando para todos os pixels da imagem do outro "
-"operando)."
+"Em “Category:”, selecione “Intensity” (seleciona uma medida feita na imagem;"
+" o valor dessa medida é usado como operando para todos os pixels da imagem "
+"do outro operando)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:202
 msgid "Measurement: MedianIntensity"
