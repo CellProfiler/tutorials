@@ -124,8 +124,8 @@ msgid ""
 "**Note**: The pipeline should populate all information needed, but it’s "
 "always a good practice to check if everything is fine."
 msgstr ""
-"**Observação**: O pipeline deve preencher todas as informações necessárias, "
-"mas é sempre uma boa prática verificar se está tudo bem."
+"**Nota**: o pipeline deve preencher todas as informações necessárias, mas é "
+"sempre uma boa prática verificar se está tudo certo."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:50
 msgid ""
