@@ -1128,7 +1128,7 @@ msgstr "Em “File name”, escreva “Spots.csv”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:482
 msgid "Data to export: Experiment"
-msgstr "Dados a serem exportados: Experimento"
+msgstr "Em “Data to export”, selecione “Experiment”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:486
 msgid "File name: Metadata.csv"
