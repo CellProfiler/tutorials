@@ -116,8 +116,8 @@ msgid ""
 "Load the pipeline file (.cppipe). Drag-and-Drop the file or go to "
 "File->Import->Pipeline from File."
 msgstr ""
-"Carregue o arquivo do pipeline (.cppipe). Arraste e solte o arquivo ou vá "
-"para Arquivo->Importar->Pipeline do arquivo."
+"Carregue o arquivo do pipeline (.cppipe). Arraste e solte o arquivo na "
+"janela do CellProfiler ou vá para Arquivo->Importar->Pipeline do arquivo."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:46
 msgid ""
