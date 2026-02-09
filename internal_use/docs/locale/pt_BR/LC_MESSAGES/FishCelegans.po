@@ -49,7 +49,7 @@ msgid ""
 "listed in separate columns. Labels x, y, and z."
 msgstr ""
 "Localização do centróide em micrômetros (µm) para cada spot: coordenadas x, "
-"y e z listadas em colunas separadas. Rotule as colunas como x, y e z."
+"y e z em colunas separadas. Rotule como x, y e z."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:12
 msgid "Integrated Intensity. Label intensity."
