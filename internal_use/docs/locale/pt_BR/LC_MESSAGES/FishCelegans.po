@@ -854,8 +854,8 @@ msgid ""
 "Select image on which to display outlines: RescaleIntensityFish (from "
 "**RescaleIntensity** module)"
 msgstr ""
-"Selecione a imagem na qual exibir os contornos: RescaleIntensityFish (do "
-"módulo **RescaleIntensity**)"
+"Em “Select image on which to display outlines:”, selecione "
+"“RescaleIntensityFish” (do módulo **RescaleIntensity**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:373
 msgid "Outline display mode: Color"
