@@ -441,7 +441,7 @@ msgstr "Em “Multiply the first image by:”, escreva “1.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:199
 msgid "Image or measurement?: Measurement"
-msgstr "Imagem ou medição?: Medição"
+msgstr "Em “Image or measurement?”, selecione “Measurement”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:201
 msgid ""
