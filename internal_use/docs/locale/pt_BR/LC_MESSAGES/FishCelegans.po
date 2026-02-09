@@ -651,12 +651,13 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:290
 msgid "Use advanced settings: Yes"
-msgstr "Usar configurações avançadas: Sim"
+msgstr "Em “Use advanced settings:”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:291
 msgid "Select the input image: ThresholdSpots (from the **Threshold** module)"
 msgstr ""
-"Selecione a imagem de entrada: ThresholdSpots (do módulo **Threshold**)"
+"Em “Select the input image:”, selecione “ThresholdSpots” (do módulo "
+"**Threshold**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:292
 msgid "Name the output object: Spots"
