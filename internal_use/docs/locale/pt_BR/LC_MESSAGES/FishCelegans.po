@@ -188,9 +188,9 @@ msgid ""
 "For example, use the name \"FISH\" or \"Worm\" or something else that will "
 "remind you what the image is."
 msgstr ""
-"Atribua às imagens “nomes de variáveis” que descrevam o conteúdo da imagem. "
-"Por exemplo, use o nome “FISH” ou “Worm” ou qualquer outro nome que o lembre"
-" do que é a imagem."
+"Em \"Name to assign these images\", atribua um nome que descreva o conteúdo "
+"da imagem. Por exemplo, use o nome “FISH” ou “Worm” ou qualquer outro nome "
+"que o lembre do que é a imagem."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:68
 msgid "Hit the \"Update\" button to populate"
