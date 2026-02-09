@@ -562,12 +562,13 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:261
 msgid "Add a **Threshold** module."
-msgstr "Adicione um módulo **Limite**."
+msgstr "Adicione um módulo **Threshold**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:263
 msgid "Select the input image: ReduceNoise (from **ReduceNoise** module)"
 msgstr ""
-"Selecione a imagem de entrada: ReduceNoise (do módulo **ReduceNoise**)"
+"Em “Select the input image:”, selecione “ReduceNoise” (do módulo "
+"**ReduceNoise**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:264
 msgid "Name the output image: ThresholdSpots"
