@@ -427,7 +427,7 @@ msgstr "Em “Name the output image:”, escreva “ImageAfterMath”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:193
 msgid "Image or measurement?: Image"
-msgstr "Imagem ou medição: Imagem"
+msgstr "Em “Image or measurement?”, selecione “Image”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:195
 msgid "Select the first image: MaskWorm (from **MaskImage** module)"
