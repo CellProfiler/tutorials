@@ -65,9 +65,9 @@ msgid ""
 "[here](https://drive.google.com/file/d/10Y3er22JJAVUjtivFoP0fxJRAz9ma057/view?usp=sharing)."
 "   (save as LastName_FirstName_ImageName.csv)"
 msgstr ""
-"Baixe o modelo CSV "
+"Baixe o arquivo CSV "
 "[aqui](https://drive.google.com/file/d/10Y3er22JJAVUjtivFoP0fxJRAz9ma057/view?usp=sharing)."
-" (salvar como Sobrenome_PrimeiroNome_ImageName.csv)"
+" (salve como Sobrenome_PrimeiroNome_ImageName.csv)"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:17
 msgid "**Input:**"
