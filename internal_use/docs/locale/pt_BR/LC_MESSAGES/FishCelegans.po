@@ -1043,8 +1043,8 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:448
 msgid "Add image file and folder names to your object data file: No"
 msgstr ""
-"Adicione nomes de arquivos de imagem e pastas ao seu arquivo de dados do "
-"objeto: Não"
+"Em “Add image file and folder names to your object data file:”, selecione "
+"“No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:450
 msgid "Representation of Nan/Inf: NaN"
