@@ -384,7 +384,8 @@ msgstr "Em “Use objects or an image as a mask?”, selecione “Image”."
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:164
 msgid "Select image for mask: DilateImage (from **DilateImage** module)"
 msgstr ""
-"Selecione a imagem para a máscara: DilateImage (do módulo **DilateImage**)"
+"Em “Select image for mask:”, selecione “DilateImage” (do módulo "
+"**DilateImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:165
 msgid "Invert mask?: No (select the worm and not the background)"
