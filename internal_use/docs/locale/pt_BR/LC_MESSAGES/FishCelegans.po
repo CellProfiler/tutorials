@@ -724,13 +724,13 @@ msgstr "Em “Pixels from border to exclude”, mantenha “0” (padrão)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:302
 msgid "Maximum number of seeds: -1 (Default no limit)"
-msgstr "Em “Maximum number of seeds:”, mantenha “-1” (padrão, sem limite)."
+msgstr "Em “Maximum number of seeds”, mantenha “-1” (padrão, sem limite)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:303
 msgid "Structuring element for seed dilation: Octahedron (Size: 1)"
 msgstr ""
-"Em “Structuring element for seed dilation:”, selecione “Octahedron” e, em "
-"“Size:”, escreva “1”."
+"Em “Structuring element for seed dilation”, selecione “Octahedron” e, em "
+"“Size”, escreva “1”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:315
 msgid "**Measure and export data**"
