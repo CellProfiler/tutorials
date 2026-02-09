@@ -408,7 +408,9 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:181
 msgid "Measure the intensity only from areas enclosed by objects: No"
-msgstr "Meça a intensidade somente em áreas cercadas por objetos: Não"
+msgstr ""
+"Em “Measure the intensity only from areas enclosed by objects:”, selecione "
+"“No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:182
 msgid "Calculate custom percentiles: No"
