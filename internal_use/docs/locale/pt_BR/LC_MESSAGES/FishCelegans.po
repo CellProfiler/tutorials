@@ -124,7 +124,7 @@ msgid ""
 "**Note**: The pipeline should populate all information needed, but it’s "
 "always a good practice to check if everything is fine."
 msgstr ""
-"**Nota**: o pipeline deve preencher todas as informações necessárias, mas é "
+"**Nota:** o pipeline deve preencher todas as informações necessárias, mas é "
 "sempre uma boa prática verificar se está tudo certo."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:50
@@ -155,14 +155,14 @@ msgid ""
 "Assign a name to: All images This is the simplest choice and the appropriate"
 " one because we have only one kind of image."
 msgstr ""
-"Em “Assign a name to:”, selecione “All images”, esta é a opção mais simples "
-"e a mais adequada, pois temos apenas um tipo de imagem."
+"Em “Assign a name to”, selecione “All images”, esta é a opção mais simples e"
+" a mais adequada, pois temos apenas um tipo de imagem."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:60
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
 msgstr ""
-"Em “Process as 3D:”, selecione “Yes”, selecionar “Yes” carregará os arquivos"
-" como volumes."
+"Em “Process as 3D”, selecione “Yes”, selecionar “Yes” carregará os arquivos "
+"como volumes."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:61
 msgid ""
