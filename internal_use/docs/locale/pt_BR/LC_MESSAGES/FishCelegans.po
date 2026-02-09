@@ -1073,10 +1073,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:460
 msgid "Location"
-msgstr ""
-"Clique no “>” ao lado de “Location” para expandir o menu. Em seguida, "
-"selecione a caixa “Center” e clique no “>” ao lado de para expandir o menu. "
-"Garanta que as caixas “X”, “Y” e “Z” estejam selecionadas."
+msgstr "Clique no “>” ao lado de “Location” para expandir o menu. "
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:462
 msgid "Center: X, Y and Z"
