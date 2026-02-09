@@ -742,9 +742,9 @@ msgid ""
 "modules from the **Measurements** category. This study is asking for two "
 "particular measurements:"
 msgstr ""
-"Agora que os pontos foram segmentados, as medições podem ser feitas usando "
-"os módulos da categoria **Measurements**. Este estudo está solicitando duas "
-"medições específicas:"
+"Agora que os spots foram segmentados, as medidas podem ser feitas usando "
+"módulos da categoria **Measurements**. Este estudo solicita duas medidas "
+"específicas:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:321
 msgid "Centroid location (x, y and z)"
