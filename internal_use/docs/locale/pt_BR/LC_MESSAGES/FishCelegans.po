@@ -923,12 +923,12 @@ msgid ""
 "Image bit depth: 8-bit integer (this bit depth is easily read outside Cell "
 "Profiler)"
 msgstr ""
-"Em “Image bit depth:”, selecione “8-bit integer” (essa profundidade de bits "
-"é facilmente lida fora do CellProfiler)."
+"Em “Image bit depth”, selecione “8-bit integer” (essa profundidade de bits é"
+" facilmente lida fora do CellProfiler)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:396
 msgid "Save with lossless compression: Yes"
-msgstr "Em “Save with lossless compression:”, selecione “Yes”."
+msgstr "Em “Save with lossless compression”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:397
 msgid ""
