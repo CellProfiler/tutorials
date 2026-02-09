@@ -914,8 +914,8 @@ msgid ""
 "Saved file format: tiff (tiff is a lossless format, but you can choose "
 "others depending on what you need to do with this images)"
 msgstr ""
-"Em “Saved file format”, selecione “tiff” (tiff é um formato lossless, no "
-"qual a compactação não altera a qualidade da imagem, mas você pode escolher "
+"Em “Saved file format”, selecione “tiff” (tiff é um formato lossless, em que"
+" a compactação não altera a qualidade da imagem; mas você pode escolher "
 "outros dependendo do que pretende fazer com essas imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:395
