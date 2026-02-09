@@ -847,14 +847,14 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:371
 msgid "Display outlines on a blank image: No"
-msgstr "Em “Display outlines on a blank image:”, selecione “No”."
+msgstr "Em “Display outlines on a blank image”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:372
 msgid ""
 "Select image on which to display outlines: RescaleIntensityFish (from "
 "**RescaleIntensity** module)"
 msgstr ""
-"Em “Select image on which to display outlines:”, selecione "
+"Em “Select image on which to display outlines”, selecione "
 "“RescaleIntensityFish” (do módulo **RescaleIntensity**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:373
