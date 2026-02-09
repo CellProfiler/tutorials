@@ -886,7 +886,8 @@ msgstr "Em “Select the type of image to save”, selecione “Image”."
 msgid ""
 "Select the image to save: SpotsOverlay (from **OverlayOutlines** module)"
 msgstr ""
-"Selecione a imagem para salvar: SpotsOverlay (do módulo **OverlayOutlines**)"
+"Em “Select the image to save”, selecione “SpotsOverlay” (do módulo "
+"**OverlayOutlines**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:391
 msgid ""
