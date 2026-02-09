@@ -414,7 +414,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:182
 msgid "Calculate custom percentiles: No"
-msgstr "Em “Calculate custom percentiles:”, selecione “No”."
+msgstr "Em “Calculate custom percentiles”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:189
 msgid "Operation: Subtract"
