@@ -639,7 +639,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:286
 msgid "**Watershed** module."
-msgstr "Módulo **Bacia Hidrográfica**."
+msgstr "Módulo **Watershed**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:288
 msgid ""
