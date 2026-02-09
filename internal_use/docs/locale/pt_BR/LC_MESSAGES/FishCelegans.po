@@ -202,7 +202,7 @@ msgid ""
 "processing,Segmentation and Measurement/export."
 msgstr ""
 "Este pipeline pode ser dividido em três partes principais: Processamento de "
-"imagens, Segmentação e Medição/exportação."
+"imagem, Segmentação e Realizando Medidas/Exportando os dados."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:82
 msgid "**Image processing:**"
