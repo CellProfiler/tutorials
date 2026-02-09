@@ -622,8 +622,8 @@ msgid ""
 "Threshold smoothing scale: 0 (the objects are too small, smoothing before "
 "the threshold results in a larger object)"
 msgstr ""
-"Escala de suavização de limite: 0 (os objetos são muito pequenos, a "
-"suavização antes do limite resulta em um objeto maior)"
+"Em “Threshold smoothing scale:”, escreva “0” (os objetos são muito pequenos;"
+" suavizar antes do limiar faz com que o objeto fique maior)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:273
 msgid ""
