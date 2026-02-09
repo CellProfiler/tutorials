@@ -902,12 +902,12 @@ msgid ""
 "Select image name for file prefix: fish (select the original image name from"
 " NamesAndTypes module)"
 msgstr ""
-"Em “Select image name for file prefix:”, selecione “fish” (selecione o nome "
+"Em “Select image name for file prefix”, selecione “fish” (selecione o nome "
 "da imagem original no módulo NamesAndTypes)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:393
 msgid "Append a suffix to the image file name?: No"
-msgstr "Em “Append a suffix to the image file name?:”, selecione “No”."
+msgstr "Em “Append a suffix to the image file name?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:394
 msgid ""
