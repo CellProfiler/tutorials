@@ -1025,7 +1025,7 @@ msgstr "Em “Output file location:”, selecione “Default Output Folder”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:440
 msgid "Add a prefix to file names: Yes"
-msgstr "Adicionar um prefixo aos nomes de arquivos: Sim"
+msgstr "Em “Add a prefix to file names”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:442
 msgid "Filename prefix: FISH"
