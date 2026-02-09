@@ -669,7 +669,7 @@ msgid ""
 "process so the markers and other inputs for the algorithm will be "
 "automatically generated based on the footprint size)."
 msgstr ""
-"Em “Generate from:”, selecione “Distance” (como não temos marcadores para "
+"Em “Generate from”, selecione “Distance” (como não temos marcadores para "
 "guiar a segmentação, os marcadores e outras entradas do algoritmo serão "
 "gerados automaticamente com base no tamanho do footprint)."
 
