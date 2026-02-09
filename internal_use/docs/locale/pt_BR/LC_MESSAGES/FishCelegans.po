@@ -235,9 +235,9 @@ msgid ""
 "main tab, hit the test tab and choose another image set  <br>"
 msgstr ""
 "**Dica:** você pode selecionar diferentes conjuntos de imagens. Para isso "
-"você pode clicar no botão “Test” e em “Choose Image Set” <img "
-"src=\"media/NextImageSet.png\" width=\"150\"/> ou vá na aba principal, "
-"clique em “Next Image Set” para ir para o próximo set de imagens. <br>"
+"você pode clicar no botão “Test” e depois em “Choose Image Set” <img "
+"src=\"media/NextImageSet.png\" width=\"150\"/>; ou na aba principal, clique "
+"em “Next Image Set” para ir para o próximo conjunto de imagens. <br>"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:110
 msgid ""
