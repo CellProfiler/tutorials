@@ -976,7 +976,7 @@ msgstr "Em “Name the output image”, escreva “SpotImage”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:411
 msgid "Select the color format: Grayscale"
-msgstr "Em “Select the color format:”, selecione “Grayscale”."
+msgstr "Em “Select the color format”, selecione “Grayscale”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:418
 msgid "**Export measurements**"
