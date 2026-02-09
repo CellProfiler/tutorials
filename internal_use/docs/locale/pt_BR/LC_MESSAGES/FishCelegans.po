@@ -389,7 +389,8 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:165
 msgid "Invert mask?: No (select the worm and not the background)"
-msgstr "Inverter máscara? Não (selecione a minhoca e não o plano de fundo)"
+msgstr ""
+"Em “Invert mask?:”, selecione “No” (para selecionar o worm, e não o fundo)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:172
 msgid ""
