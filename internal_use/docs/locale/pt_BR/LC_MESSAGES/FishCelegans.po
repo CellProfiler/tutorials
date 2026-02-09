@@ -583,8 +583,8 @@ msgid ""
 "Threshold method: Robust Background (This method can be helpful if the "
 "majority of the image is background)."
 msgstr ""
-"Método de limite: fundo robusto (este método pode ser útil se a maior parte "
-"da imagem for de fundo)."
+"Em “Threshold method:”, selecione “Robust Background” (esse método pode ser "
+"útil quando a maior parte da imagem é background)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:267
 msgid "Lower outliner fraction: 0.05 (discard this fraction of dim objects)."
