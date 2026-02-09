@@ -1132,7 +1132,7 @@ msgstr "Em “Data to export”, selecione “Experiment”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:486
 msgid "File name: Metadata.csv"
-msgstr "Nome do arquivo: Metadata.csv"
+msgstr "Em “File name”, escreva “Metadata.csv”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:493
 msgid "**Congratulations!** The spots have been segmented, measured and"
