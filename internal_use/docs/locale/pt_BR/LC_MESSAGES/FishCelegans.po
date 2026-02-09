@@ -379,7 +379,7 @@ msgstr "Em “Name the output image:”, escreva “MaskWorm”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:163
 msgid "Use objects or an image as a mask?: Image"
-msgstr "Usar objetos ou uma imagem como máscara? Imagem"
+msgstr "Em “Use objects or an image as a mask?”, selecione “Image”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:164
 msgid "Select image for mask: DilateImage (from **DilateImage** module)"
