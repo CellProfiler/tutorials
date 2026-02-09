@@ -948,13 +948,14 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:399
 msgid "When to save: Every cycle (Save every image set)"
 msgstr ""
-"Em “Overwrite existing files without warning?:”, selecione “No” (evita "
-"sobrescrever arquivos existentes)."
+"Em “When to save:”, selecione “Every cycle” (salva a cada conjunto de "
+"imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:400
 msgid "Record the file and path information to the saved image?: No"
 msgstr ""
-"Registre as informações do arquivo e do caminho para a imagem salva? Não"
+"Em “When to save:”, selecione “Every cycle” (salva a cada conjunto de "
+"imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:401
 msgid "Create subfolders in the output folder: No"
