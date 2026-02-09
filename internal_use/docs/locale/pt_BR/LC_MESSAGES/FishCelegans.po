@@ -437,7 +437,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:197
 msgid "Multiply the first image by: 1.0"
-msgstr "Multiplique a primeira imagem por: 1.0"
+msgstr "Em “Multiply the first image by:”, escreva “1.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:199
 msgid "Image or measurement?: Measurement"
