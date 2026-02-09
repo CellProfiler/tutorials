@@ -572,7 +572,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:264
 msgid "Name the output image: ThresholdSpots"
-msgstr "Nomeie a imagem de saída: ThresholdSpots"
+msgstr "Em “Name the output image:”, escreva “ThresholdSpots”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:265
 msgid "Threshold strategy: Global"
