@@ -914,17 +914,17 @@ msgid ""
 "Saved file format: tiff (tiff is a lossless format, but you can choose "
 "others depending on what you need to do with this images)"
 msgstr ""
-"Em “Saved file format”, selecione “tiff” (tiff é um formato sem perdas, mas "
-"você pode escolher outros dependendo do que precisa fazer com essas "
-"imagens)."
+"Em “Saved file format”, selecione “tiff” (tiff é um formato lossless, no "
+"qual a compactação não altera a qualidade da imagem, mas você pode escolher "
+"outros dependendo do que pretende fazer com essas imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:395
 msgid ""
 "Image bit depth: 8-bit integer (this bit depth is easily read outside Cell "
 "Profiler)"
 msgstr ""
-"Profundidade de bits da imagem: número inteiro de 8 bits (essa profundidade "
-"de bits é facilmente lida fora do Cell Profiler)"
+"Em “Image bit depth:”, selecione “8-bit integer” (essa profundidade de bits "
+"é facilmente lida fora do CellProfiler)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:396
 msgid "Save with lossless compression: Yes"
