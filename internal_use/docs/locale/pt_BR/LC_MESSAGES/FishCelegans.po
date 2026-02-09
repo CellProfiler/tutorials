@@ -928,7 +928,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:396
 msgid "Save with lossless compression: Yes"
-msgstr "Salvar com compactação sem perdas: Sim"
+msgstr "Em “Save with lossless compression:”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:397
 msgid ""
