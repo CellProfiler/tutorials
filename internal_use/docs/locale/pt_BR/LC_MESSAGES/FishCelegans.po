@@ -1140,7 +1140,7 @@ msgstr "**Parabéns!** Os spots foram segmentados, medidos e"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:494
 msgid "exported."
-msgstr "exportado."
+msgstr "exportados."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:496
 msgid "**End**"
