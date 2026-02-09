@@ -720,7 +720,7 @@ msgstr "Em “Minimum absolute internal distance”, escreva “0.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:301
 msgid "Pixels from border to exclude: 0 (Default)"
-msgstr "Em “Pixels from border to exclude:”, mantenha “0” (padrão)."
+msgstr "Em “Pixels from border to exclude”, mantenha “0” (padrão)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:302
 msgid "Maximum number of seeds: -1 (Default no limit)"
