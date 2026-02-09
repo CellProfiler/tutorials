@@ -1077,7 +1077,9 @@ msgstr "Clique no “>” ao lado de “Location” para expandir o menu. "
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:462
 msgid "Center: X, Y and Z"
-msgstr "Centro: X, Y e Z"
+msgstr ""
+"Em seguida, selecione a caixa “Center” e clique no “>” ao lado de para "
+"expandir o menu. Garanta que as caixas “X”, “Y” e “Z” estejam selecionadas."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:464
 msgid "Calculate the per-image mean values for object measurements?:No"
