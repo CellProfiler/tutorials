@@ -1107,7 +1107,7 @@ msgstr "Em “Output file location”, selecione “Default Output Folder”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:472
 msgid "Create a GenePattern GCT file?:No"
-msgstr "Criar um arquivo GenePattern GCT?:Não"
+msgstr "Em “Create a GenePattern GCT file?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:474
 msgid "Export all measurement types?:No"
