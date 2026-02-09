@@ -796,9 +796,9 @@ msgid ""
 "objects and at this point we cannot choose which measurement, so the module "
 "will extract all intensity features possible."
 msgstr ""
-"**Nota:** Os módulos de medição fornecerão vários recursos para objetos "
-"identificados e, nesse momento, não podemos escolher qual medição, portanto,"
-" o módulo extrairá todos os recursos de intensidade possíveis."
+"**Nota:** os módulos de medida fornecem várias features para os objetos "
+"identificados e, neste ponto, não é possível escolher quais medidas extrair;"
+" portanto, o módulo vai extrair todas as features de intensidade possíveis."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:350
 msgid "**Creating visuals**"
