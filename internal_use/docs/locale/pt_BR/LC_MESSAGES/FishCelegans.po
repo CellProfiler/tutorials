@@ -1115,7 +1115,7 @@ msgstr "Em “Export all measurement types?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:476
 msgid "Data to export: Spots"
-msgstr "Dados a serem exportados: Pontos"
+msgstr "Em “Data to export”, selecione “Spots”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:478
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:484
