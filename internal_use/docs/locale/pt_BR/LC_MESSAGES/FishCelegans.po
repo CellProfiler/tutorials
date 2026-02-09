@@ -1067,8 +1067,8 @@ msgstr ""
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:458
 msgid "Intensity: IntegratedIntensity"
 msgstr ""
-"Clique em “Intensity”, e expanda o menu. Em seguida, garanta que "
-"“IntegratedIntensity” esteja selecionado e clique para expandir."
+"Clique no “>” em “Intensity” para expandir o menu. Em seguida, selecione "
+"“IntegratedIntensity” clique para expandir."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:460
 msgid "Location"
