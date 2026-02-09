@@ -824,7 +824,8 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:355
 msgid "Selecting the input image image: fish (from **NamesAndTypes** module)"
-msgstr "Selecionando a imagem de entrada: fish (do módulo **NamesAndTypes**)"
+msgstr ""
+"Em “Select the input image”, selecione “fish” (do módulo **NamesAndTypes**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:356
 msgid "Name the output image: RescaleIntensityFish"
