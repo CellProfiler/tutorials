@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:22
 msgid "Voxel dimensions: 0.162x0.162x0.200 um"
-msgstr "Dimensões do voxel: 0,162x0,162x0,200 um"
+msgstr "Dimensões do voxel: 0,162 × 0,162 × 0,200 µm"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:25
 msgid "**Calibration file**"
