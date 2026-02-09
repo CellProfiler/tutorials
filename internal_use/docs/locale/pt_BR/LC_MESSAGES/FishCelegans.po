@@ -65,7 +65,7 @@ msgid ""
 "[here](https://drive.google.com/file/d/10Y3er22JJAVUjtivFoP0fxJRAz9ma057/view?usp=sharing)."
 "   (save as LastName_FirstName_ImageName.csv)"
 msgstr ""
-"Baixe o arquivo CSV "
+"Baixe o arquivo CSV que será usado como modelo "
 "[aqui](https://drive.google.com/file/d/10Y3er22JJAVUjtivFoP0fxJRAz9ma057/view?usp=sharing)."
 " (salve como Sobrenome_PrimeiroNome_ImageName.csv)"
 
