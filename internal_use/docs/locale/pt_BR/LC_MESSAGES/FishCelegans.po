@@ -859,7 +859,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:373
 msgid "Outline display mode: Color"
-msgstr "Modo de exibição de contorno: Colorido"
+msgstr "Em “Outline display mode:”, selecione “Color”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:374
 msgid "How to outline: Outer"
