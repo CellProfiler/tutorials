@@ -431,7 +431,9 @@ msgstr "Em “Image or measurement?”, selecione “Image”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:195
 msgid "Select the first image: MaskWorm (from **MaskImage** module)"
-msgstr "Selecione a primeira imagem: MaskWorm (do módulo **MaskImage**)"
+msgstr ""
+"Em “Select the first image:”, selecione “MaskWorm” (do módulo "
+"**MaskImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:197
 msgid "Multiply the first image by: 1.0"
