@@ -1098,8 +1098,8 @@ msgid ""
 "Calculate the per-image standard deviation values for object "
 "measurements?:No"
 msgstr ""
-"Calcular os valores de desvio padrão por imagem para medições de "
-"objetos?:Não"
+"Em “Calculate the per-image standard deviation values for object "
+"measurements?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:470
 msgid "Output file location:Default Output Folder|"
