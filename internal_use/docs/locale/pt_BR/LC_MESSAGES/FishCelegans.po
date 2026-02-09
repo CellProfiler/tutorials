@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:12
 msgid "Integrated Intensity. Label intensity."
-msgstr "Intensidade integrada. Intensidade do rótulo."
+msgstr "Intensidade integrada. Rotule como intensity."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:13
 msgid "3D volume image of your segmented image"
