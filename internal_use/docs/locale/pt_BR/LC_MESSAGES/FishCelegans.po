@@ -418,7 +418,7 @@ msgstr "Em “Calculate custom percentiles”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:189
 msgid "Operation: Subtract"
-msgstr "Operação: Subtrair"
+msgstr "Selecione o módulo “ImageMath”. Em “Operation”, selecione “Subtract”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:191
 msgid "Name the output image: ImageAfterMath"
