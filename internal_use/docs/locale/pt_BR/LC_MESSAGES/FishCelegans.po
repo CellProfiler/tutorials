@@ -876,7 +876,7 @@ msgstr "Em “Select outline color”, mantenha “Red” (padrão)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:387
 msgid "**SaveImages** module."
-msgstr "Módulo **SalvarImagens**."
+msgstr "Módulo **SaveImages**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:389
 msgid "Select the type of image to save: Image"
