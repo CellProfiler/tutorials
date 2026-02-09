@@ -576,7 +576,7 @@ msgstr "Em “Name the output image:”, escreva “ThresholdSpots”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:265
 msgid "Threshold strategy: Global"
-msgstr "Estratégia de limiar: Global"
+msgstr "Em “Threshold strategy:”, selecione “Global”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:266
 msgid ""
