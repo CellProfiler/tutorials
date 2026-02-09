@@ -895,7 +895,7 @@ msgid ""
 "option to avoid reassignment of your images)"
 msgstr ""
 "Em “Select method for constructing file names:”, selecione “From image "
-"filename” (use esta opção para evitar a renomeação das suas imagens)."
+"filename” (use esta opção para evitar renomear suas imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:392
 msgid ""
