@@ -397,8 +397,8 @@ msgid ""
 "The resulting image looks the same as the original image, but the pixels out"
 " the worm has a value of 0."
 msgstr ""
-"A imagem resultante tem a mesma aparência da imagem original, mas os pixels "
-"fora do worm têm um valor 0."
+"A imagem resultante parece igual à imagem original, mas os pixels fora do "
+"worm têm valor 0."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:180
 msgid "Select images to measure: MaskWorm (from **MaskImage** module)"
