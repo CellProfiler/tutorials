@@ -1103,7 +1103,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:470
 msgid "Output file location:Default Output Folder|"
-msgstr "Localização do arquivo de saída:Pasta de saída padrão|"
+msgstr "Em “Output file location”, selecione “Default Output Folder”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:472
 msgid "Create a GenePattern GCT file?:No"
