@@ -1,0 +1,16 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: CellProfiler Tutorial
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - name: 'Imaging Platform, Broad Institute'
+    city: 'Cambridge, MA'
+repository-code: 'https://github.com/CellProfiler/tutorials'
+url: 'https://tutorials.cellprofiler.org/'
+abstract: CellProfiler tutorial pipelines and images
+license: BSD-3-Clause
