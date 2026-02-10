@@ -54,10 +54,10 @@ msgid ""
 msgstr ""
 "A análise de imagens de alta qualidade depende de ter imagens de alta "
 "qualidade para analisar, o conhecido princípio **“lixo entra, lixo sai”** "
-"(*‘Garbage in, garbage out’*). Se o seu conjunto de imagens for pequeno, é "
+"(*‘garbage in, garbage out’*). Se o seu conjunto de imagens for pequeno, é "
 "simples fazer uma curadoria e remover imagens fora de foco ou que contenham "
-"detritos que possam atrapalhar a segmentação. Em um high-content screen com "
-"dezenas ou centenas de milhares de imagens, isso é praticamente impossível."
+"artefatos que possam atrapalhar a segmentação. Em um high-content screen com"
+" dezenas ou centenas de milhares de imagens, isso é praticamente impossível."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:19
 msgid ""
