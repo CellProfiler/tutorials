@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Beth Cimini, 2024
+# Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-15 11:33-0400\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2024\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +30,7 @@ msgstr "Controle de qualidade de imagem usando aprendizado de máquina"
 msgid ""
 "***A computer exercise using CellProfiler & CellProfiler Analyst software***"
 msgstr ""
-"***Um exercício de computador usando o software CellProfiler e CellProfiler "
+"***Um tutorial prático usando os softwares CellProfiler e CellProfiler "
 "Analyst***"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:6
