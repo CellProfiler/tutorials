@@ -176,9 +176,8 @@ msgid ""
 "You will get an error popup – ‘No prior instances of objectgroup were "
 "defined. Are you sure you want to continue?’ Hit ‘Yes’."
 msgstr ""
-"Você receberá um pop-up de erro - 'Não foram definidas instâncias anteriores"
-" do grupo de objetos. Tem certeza de que deseja continuar?\". Pressione "
-"\"Yes\" (Sim)."
+"Vai aparecer uma janela de erro: “No prior instances of objectgroup were "
+"defined. Are you sure you want to continue?”. Clique em “Yes”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:69
 msgid ""
