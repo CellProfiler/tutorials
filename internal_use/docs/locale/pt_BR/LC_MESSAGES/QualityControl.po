@@ -137,9 +137,9 @@ msgid ""
 "ways. This will allow us to do machine learning to use the measurements to "
 "identify the good images from the bad."
 msgstr ""
-"Para fazer o controle de qualidade, precisamos primeiro medir as imagens de "
-"várias maneiras. Isso nos permitirá fazer o aprendizado de máquina para usar"
-" as medições e identificar as imagens boas das ruins."
+"Para fazer o controle de qualidade, primeiro precisamos medir as imagens de "
+"várias formas. Isso permitirá usar aprendizado de máquina e, a partir dessas"
+" medidas, identificar as imagens boas e separá-las das ruins."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:55
 msgid ""
