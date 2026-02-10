@@ -155,9 +155,9 @@ msgid ""
 "Three modules should appear- two copies of ‘MeasureImageQuality’ and one "
 "**ExportToDatabase** module."
 msgstr ""
-"Arraste e solte o arquivo ‘BBBC022_QC.cppipe’ na caixa ‘Módulos de análise’."
-" Três módulos devem aparecer - duas cópias de ‘MeasureImageQuality’ e um "
-"módulo **ExportToDatabase**."
+"Arraste e solte o arquivo “BBBC022_QC.cppipe” na caixa “Analysis modules”. "
+"Três módulos devem aparecer: duas cópias de “MeasureImageQuality” e um "
+"módulo ExportToDatabase."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:61
 msgid ""
