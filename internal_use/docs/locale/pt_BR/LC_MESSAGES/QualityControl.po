@@ -193,10 +193,9 @@ msgid ""
 " should be created- a .db database file, a .properties text file, and a "
 ".workspace text file."
 msgstr ""
-"pipelinepipelinepipelineO pipeline deve levar cerca de 10 a 15 minutos para "
-"ser executado. No final, três arquivos devem ser criados: um arquivo de "
-"banco de dados .db, um arquivo de texto .properties e um arquivo de texto "
-".workspace."
+"O pipeline deve levar cerca de 10–15 minutos para executar. Ao final, três "
+"arquivos devem ser criados: um arquivo de banco de dados “.db”, um arquivo "
+"de texto “.properties” e um arquivo de texto “.workspace”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:76
 msgid "2. **Examine the QC pipeline (~15 minutes)**"
