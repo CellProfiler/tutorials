@@ -179,8 +179,7 @@ msgid ""
 "spacing to 1x1x1 um."
 msgstr ""
 "O espaçamento relativo de pixels fornecido é de 0,162 µm em x e y e 0,200 µm"
-" em z. Para executar o arquivo de calibração, altere o espaçamento relativo "
-"de pixels para 1 × 1 × 1 µm."
+" em z. "
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:67
 msgid ""
