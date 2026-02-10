@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:10
 msgid "**Background information:**"
-msgstr "**Informações sobre o histórico:**"
+msgstr "**Informações gerais:**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:12
 msgid ""
