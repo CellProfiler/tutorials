@@ -164,8 +164,8 @@ msgid ""
 "Drag and drop the ‘BBBC022_20585_AE’ folder into the ‘File list’ box. It "
 "should automatically populate."
 msgstr ""
-"Arraste e solte a pasta \"BBBC022_20585_AE\" na caixa \"Lista de arquivos\"."
-" Ela deverá ser preenchida automaticamente."
+"Arraste e solte a pasta “BBBC022_20585_AE” na caixa “File list”. A lista "
+"deve ser preenchida automaticamente."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:64
 msgid "Hit the Analyze Images button."
