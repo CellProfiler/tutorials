@@ -169,7 +169,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:64
 msgid "Hit the Analyze Images button."
-msgstr "Pressione o botão Analyze Images (Analisar imagens)."
+msgstr "Clique no botão “Analyze Images”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:66
 msgid ""
