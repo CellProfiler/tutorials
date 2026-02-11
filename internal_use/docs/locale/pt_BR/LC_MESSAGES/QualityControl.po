@@ -232,8 +232,8 @@ msgid ""
 "The images are matched to their channels by metadata and grouped by Plate, "
 "Well, and Site"
 msgstr ""
-"As imagens são combinadas com seus canais por metadados e agrupadas por "
-"placa, poço e local"
+"As imagens são associadas aos seus canais com base nos metadados e agrupadas"
+" por “Plate”, “Well” e “Site”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:93
 msgid "**Groups**"
