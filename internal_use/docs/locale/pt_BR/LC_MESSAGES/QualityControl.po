@@ -313,9 +313,9 @@ msgid ""
 " or add to previously existing data, and what the names of the tables will "
 "be."
 msgstr ""
-"**Criação do banco de dados**: essas opções determinam que tipo de banco de "
-"dados será criado (neste caso, SQLite), se o CellProfiler deve sobrescrever "
-"ou adicionar dados existentes anteriormente e quais serão os nomes das "
+"**Criação do banco de dados**: essas opções definem que tipo de banco de "
+"dados será criado (SQLite, neste caso), se o CellProfiler deve sobrescrever "
+"ou adicionar dados a um banco já existente e quais serão os nomes das "
 "tabelas."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:127
