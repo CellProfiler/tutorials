@@ -19,8 +19,6 @@ and the clustering of their nuclei in 3D cell culture.
 
 Voxel dimensions: 0.124x0.124x0.200 um
 
-Calibration Image: Voxel dimensions: 1x1x1 um
-
 ## **Importing data in CellProfiler**
 
 1. Highlight the **Images** module.
@@ -56,8 +54,7 @@ always a good practice to check if everything is fine.
 
 
 >The relative pixel spacing was provided and is 0.124 um in x and y and
-0.200 um in z. To run the calibration file please change the relative
-pixel spacing to 1x1x1 um.
+0.200 um in z.
 
 6. Assign the images “variable names” that describe the contents in the image. For example, use the name "Nuclei", "DNA", “DAPI” or something else that will remind you what the image is.
 7. Hit the "update" button to populate
