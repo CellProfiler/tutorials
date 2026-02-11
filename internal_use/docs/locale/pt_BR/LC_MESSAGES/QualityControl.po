@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:118
 msgid "**ExportToDatabase**"
-msgstr "**Exportar para banco de dados**"
+msgstr "**ExportToDatabase**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:120
 msgid ""
