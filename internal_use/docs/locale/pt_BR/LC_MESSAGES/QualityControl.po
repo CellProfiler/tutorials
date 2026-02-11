@@ -220,8 +220,8 @@ msgid ""
 "Plate, well, site, and channel information is being extracted from the file "
 "and folder names"
 msgstr ""
-"As informações de placa, poço, local e canal estão sendo extraídas dos nomes"
-" de arquivos e pastas"
+"As informações de placa, poço, sítio e canal estão sendo extraídas dos nomes"
+" dos arquivos e das pastas."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:88
 msgid "**NamesAndTypes**"
