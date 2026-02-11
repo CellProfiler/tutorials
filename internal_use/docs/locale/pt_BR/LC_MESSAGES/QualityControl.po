@@ -241,7 +241,7 @@ msgstr "**Groups**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:95
 msgid "This module is not used"
-msgstr "Esse módulo não é usado"
+msgstr "Esse módulo não será usado."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:97
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:106
