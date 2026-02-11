@@ -225,7 +225,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:88
 msgid "**NamesAndTypes**"
-msgstr "**NomesETipos**"
+msgstr "**NamesAndTypes**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:90
 msgid ""
