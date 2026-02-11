@@ -246,7 +246,7 @@ msgstr "Esse módulo não será usado."
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:97
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:106
 msgid "**MeasureImageQuality**"
-msgstr "**Medir a qualidade da imagem**"
+msgstr "**MeasureImageQuality**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:99
 msgid ""
