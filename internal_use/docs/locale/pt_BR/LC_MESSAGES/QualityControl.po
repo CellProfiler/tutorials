@@ -303,7 +303,7 @@ msgid ""
 "This module has 4 main parts, separated by breaks (<img "
 "src=\"./TutorialImages/Inline3.png\" width=\"200\">)"
 msgstr ""
-"Este módulo possui 4 partes principais, separadas por quebras (<img "
+"Este módulo possui 4 partes principais, separadas por partes (<img "
 "src=\"./TutorialImages/Inline3.png\" width=\"200\">)"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:122
