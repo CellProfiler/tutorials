@@ -237,7 +237,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:93
 msgid "**Groups**"
-msgstr "**Grupos**"
+msgstr "**Groups**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:95
 msgid "This module is not used"
