@@ -290,7 +290,7 @@ msgid ""
 "random; it corresponds to the methods used to segment nuclei and cell bodies"
 " in the corresponding analysis pipeline."
 msgstr ""
-"A escolha dessas duas imagens e desses dois métodos de limiarização não foi "
+"A escolha dessas duas imagens e desses dois métodos de thresholding não foi "
 "aleatória; ela corresponde aos métodos usados para segmentar núcleos e "
 "corpos celulares no pipeline de análise correspondente."
 
