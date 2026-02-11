@@ -207,10 +207,9 @@ msgid ""
 "make sure you understand the various parts. You will probably find it "
 "easiest to open a second CellProfiler window and open the pipeline in it."
 msgstr ""
-"Enquanto o pipeline estiver em execução, reserve algum tempo para examiná-lo"
-" e certificar-se de que entendeu as várias partes. Você provavelmente achará"
-" mais fácil abrir uma segunda janela do CellProfiler e abrir o pipeline "
-"nela."
+"Enquanto o pipeline estiver rodando, aproveite para revisar o pipeline e "
+"garantir que você entende as diferentes partes. Provavelmente, será mais "
+"fácil abrir uma segunda janela do CellProfiler e abrir o pipeline nela."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:83
 msgid "**Metadata**"
