@@ -561,8 +561,8 @@ msgid ""
 "*Figure 2: Using the PlateViewer tool to find features that may be good "
 "markers of poor quality images.*"
 msgstr ""
-"*Figura 2: Uso da ferramenta PlateViewer para encontrar recursos que podem "
-"ser bons marcadores de imagens de baixa qualidade."
+"*Figura 2: Usando a ferramenta “PlateViewer” para encontrar features que "
+"podem ser bons marcadores de imagens de baixa qualidade.*"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:236
 msgid ""
