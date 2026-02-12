@@ -647,8 +647,9 @@ msgid ""
 "For each of the blur or threshold gates in your Gate Inspector, copy the "
 "text followed by the word `OR`; as an example if your first gate was:"
 msgstr ""
-"Para cada uma das portas de desfoque ou limite em seu Gate Inspector, copie "
-"o texto seguido da palavra `OR`; por exemplo, se o seu primeiro portão foi:"
+"Para cada gate de foco (blur) ou de limiar (threshold) no seu “Gate "
+"Inspector”, copie o texto seguido da palavra 'OR'; por exemplo, se o seu "
+"primeiro gate for:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:275
 msgid "Edit your SQL statement to read:"
