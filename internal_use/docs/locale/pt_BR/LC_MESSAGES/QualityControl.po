@@ -341,8 +341,8 @@ msgid ""
 "What color to assign each channel in the image display tools in CellProfiler"
 " Analyst"
 msgstr ""
-"Que cor atribuir a cada canal nas ferramentas de exibição de imagem do "
-"CellProfiler Analyst"
+"Definir qual cor atribuir a cada canal nas ferramentas de visualização de "
+"imagens do CellProfiler Analyst."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:136
 msgid "That you are classifying ‘Image’s, not objects"
