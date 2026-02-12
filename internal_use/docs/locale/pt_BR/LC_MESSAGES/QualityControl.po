@@ -787,8 +787,8 @@ msgid ""
 "Fetch 50 random images from ‘experiment’, then 25 each from ‘Blurry’ and "
 "‘Saturated’"
 msgstr ""
-"Obtenha 50 imagens aleatórias de 'experiment', depois 25 de 'Blurry' e "
-"'Saturated'"
+"Busque 50 imagens aleatórias em “experiment” e, em seguida, 25 imagens em "
+"“Blurry” e 25 em “Saturated”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:334
 msgid ""
