@@ -983,8 +983,8 @@ msgid ""
 "Set ‘Flag is based on’ to ‘Rules’ and provide the path and file information "
 "to your rules text file."
 msgstr ""
-"Defina \"Flag is based on\" como \"Rules\" e forneça o caminho e as "
-"informações do arquivo de texto das regras."
+"Em “Flag is based on”, selecione “Rules” e informe o caminho e o nome do "
+"arquivo do seu arquivo de regras (“.txt”)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:411
 msgid ""
