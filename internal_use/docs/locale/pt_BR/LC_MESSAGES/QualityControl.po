@@ -598,8 +598,8 @@ msgstr ""
 "Agora que criamos gates ao redor das imagens de baixa qualidade, precisamos "
 "convertê-los em filtros para que possamos acessá-los na ferramenta "
 "“Classifier”. Esse processo não será necessário em versões futuras do "
-"CellProfiler Analyst, mas saber como manipular o arquivo “.properties” é uma"
-" habilidade útil."
+"CellProfiler Analyst, mas saber como manipular o arquivo “.properties” pode "
+"ser útil."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:249
 msgid ""
