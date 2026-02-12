@@ -584,7 +584,7 @@ msgstr ""
 msgid ""
 "5. **Create filters based on the cutoffs you’ve determined (~10 minutes)**"
 msgstr ""
-"5. **Crie filtros com base nos limites que você determinou (cerca de 10 "
+"5. **Criar filtros com base nos valores de corte que você determinou (~10 "
 "minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:244
