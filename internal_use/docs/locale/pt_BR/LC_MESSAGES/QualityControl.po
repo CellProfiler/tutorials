@@ -332,8 +332,9 @@ msgid ""
 "Setting the plate type to 384, and stating that the Image_Metadata_Plate and"
 " Image_Metadata_Well determine which plate and well to assign each image to"
 msgstr ""
-"Definir o tipo de placa como 384 e declarar que Image_Metadata_Plate e "
-"Image_Metadata_Well determinam a qual placa e poço atribuir cada imagem"
+"Definir o tipo de placa como 384 e indicar que “Image_Metadata_Plate” e "
+"“Image_Metadata_Well” determinam a qual placa e poço cada imagem será "
+"atribuída."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:134
 msgid ""
