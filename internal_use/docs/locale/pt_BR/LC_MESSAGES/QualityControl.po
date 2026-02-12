@@ -459,8 +459,8 @@ msgid ""
 "channel)."
 msgstr ""
 "No menu suspenso “gate”, selecione “CREATE NEW GATE” e dê um nome para ele "
-"(por exemplo, “HighSat_ER”, para outliers altos no gráfico de saturação do "
-"canal de ER)."
+"(por exemplo, “HighSat_ER”, para outliers no alto do gráfico de saturação do"
+" canal de ER)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:186
 msgid ""
