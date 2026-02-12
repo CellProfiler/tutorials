@@ -714,9 +714,9 @@ msgid ""
 "values are too high, it’s the minimum value, for gates on values that are "
 "too low it’s the maximum value)"
 msgstr ""
-"Determinar qual é o ponto de corte importante para cada porta (ou seja, para"
-" uma porta em que os valores são muito altos, é o valor mínimo; para portas "
-"com valores muito baixos, é o valor máximo)"
+"Determine qual é o valor de corte importante para cada gate (isto é: em um "
+"gate onde os valores estão altos demais, o corte é o valor mínimo; em gates "
+"onde os valores estão baixos demais, o corte é o valor máximo)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:308
 msgid ""
