@@ -449,8 +449,8 @@ msgid ""
 "For some or all of the graphs (preferably at least two of each type), "
 "examine the shape of the data. Are there obvious outliers present?"
 msgstr ""
-"Para alguns ou todos os gráficos (de preferência, pelo menos dois de cada "
-"tipo), examine a forma dos dados. Há outliers óbvios presentes?"
+"Em alguns ou em todos os gráficos (de preferência, pelo menos dois de cada "
+"tipo), observe o padrão dos dados. Existem outliers evidentes?"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:182
 msgid ""
