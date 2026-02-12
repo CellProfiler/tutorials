@@ -734,9 +734,9 @@ msgid ""
 "Enter each important cutoff from the blur or threshold gates, selecting ‘Add"
 " column’ after each and changing the separator statement to OR"
 msgstr ""
-"Digite cada valor de corte importante dos gates de foco (blur) ou de limiar "
-"(threshold). Após cada um, clique em “Add column” e mude o separador para "
-"“OR”."
+"Digite cada valor de corte importante dos gates de foco (*blur*) ou de "
+"limiar (*threshold*). Após cada um, clique em “Add column” e mude o "
+"separador para “OR”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:311
 msgid ""
