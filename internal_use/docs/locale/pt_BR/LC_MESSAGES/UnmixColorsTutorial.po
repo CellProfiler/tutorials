@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:33
 msgid "**Goals of this exercise:**"
-msgstr "**Objetivos deste exercício"
+msgstr "**Objetivos deste exercício**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:35
 msgid ""
