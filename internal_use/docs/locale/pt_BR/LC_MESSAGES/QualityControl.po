@@ -897,8 +897,8 @@ msgid ""
 "Reopen the BBBC022_QC pipeline for reference, either in a separate "
 "CellProfiler window or in a text editor."
 msgstr ""
-"Reabra o pipeline BBBC022_QC para referência, em uma janela separada do "
-"CellProfiler ou em um editor de texto."
+"Reabra o pipeline “BBBC022_QC” como referência, seja em uma segunda janela "
+"do CellProfiler ou em um editor de texto."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:375
 msgid ""
