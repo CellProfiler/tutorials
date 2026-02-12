@@ -422,8 +422,8 @@ msgid ""
 "Analyst by double-clicking the icon <img "
 "src=\"./TutorialImages/CPAlogo.png\" width=\"35\">."
 msgstr ""
-"Assim que o pipeline for concluído, feche o CellProfiler e inicie o "
-"CellProfiler Analyst clicando duas vezes no ícone <img "
+"Depois que o pipeline terminar, feche o CellProfiler e abra o CellProfiler "
+"Analyst dando duplo clique no ícone <img "
 "src=\"./TutorialImages/CPAlogo.png\" width=\"35\">."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:171
