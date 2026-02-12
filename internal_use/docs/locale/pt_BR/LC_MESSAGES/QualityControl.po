@@ -325,7 +325,7 @@ msgid ""
 "such as"
 msgstr ""
 "**Criação do arquivo de propriedades CPA**: essas opções predefinem alguns "
-"parâmetros para o CellProfiler Analyst para facilitar seu uso, como"
+"parâmetros para o CellProfiler Analyst para facilitar seu uso, como:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:131
 msgid ""
