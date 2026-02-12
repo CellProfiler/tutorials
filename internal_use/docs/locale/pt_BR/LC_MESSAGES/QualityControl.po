@@ -653,7 +653,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:275
 msgid "Edit your SQL statement to read:"
-msgstr "Edite sua instrução SQL para ler:"
+msgstr "Edite a sua instrução SQL para ficar assim:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:281
 msgid ""
