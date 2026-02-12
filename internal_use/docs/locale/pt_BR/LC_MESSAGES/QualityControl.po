@@ -946,7 +946,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:393
 msgid "Add the **FlagImage** module from the ‘Data Tools’ category."
-msgstr "Adicione o módulo **FlagImage** da categoria ‘Ferramentas de dados’."
+msgstr "Adicione o módulo **FlagImage** da categoria “Data Tools”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:395
 msgid "Leave the flag category as ‘Metadata’, and the name as ‘QCFlag’"
