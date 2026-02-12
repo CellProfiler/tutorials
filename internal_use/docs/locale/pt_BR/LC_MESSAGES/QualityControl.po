@@ -705,8 +705,8 @@ msgid ""
 "Copy the text of the relevant gates into a text editor so that you can "
 "access it later."
 msgstr ""
-"Copie o texto das portas relevantes em um editor de texto para poder acessá-"
-"lo posteriormente."
+"Copie o texto dos gates relevantes para um editor de texto, para poder "
+"acessá-lo depois."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:307
 msgid ""
