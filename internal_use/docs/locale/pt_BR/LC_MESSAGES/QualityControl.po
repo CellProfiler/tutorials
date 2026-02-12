@@ -906,7 +906,7 @@ msgid ""
 "button to open the ‘Add modules’ window"
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\" width=\"40\"> "
-"para abrir a janela ‘Adicionar módulos’"
+"para abrir a janela “Add modules”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:377
 msgid ""
