@@ -992,10 +992,9 @@ msgid ""
 "images- this is 2 if you kept the default bins and dragged bad images to the"
 " ‘Negative’ bin."
 msgstr ""
-"Defina o número da classe como qualquer classe em seu conjunto de regras que"
-" represente as imagens ruins - esse número será 2 se você mantiver os "
-"compartimentos padrão e arrastar as imagens ruins para o compartimento "
-"\"Negativo\"."
+"Em “Class number”, selecione a classe que, no seu conjunto de regras, "
+"representa as imagens ruins — isso é “2” se você manteve os bins padrão e "
+"arrastou as imagens ruins para o bin “Negative”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:415
 msgid "Save your pipeline."
