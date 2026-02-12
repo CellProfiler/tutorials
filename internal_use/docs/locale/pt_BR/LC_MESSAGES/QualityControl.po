@@ -428,7 +428,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:171
 msgid "Load the properties file you’ve just created."
-msgstr "Carregue o arquivo de propriedades que você acabou de criar."
+msgstr "Carregue o arquivo “.properties” que você acabou de criar."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:173
 msgid ""
