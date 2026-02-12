@@ -478,9 +478,8 @@ msgid ""
 "The top one will open each of these images in a separate window. This is "
 "generally easiest if only a small number of images (\\<5) are in the gate."
 msgstr ""
-"O de cima abrirá cada uma dessas imagens em uma janela separada. Geralmente,"
-" isso é mais fácil se apenas um pequeno número de imagens (\\<5) estiver no "
-"portão."
+"A opção de cima abre cada uma dessas imagens em uma janela separada. Isso "
+"costuma ser mais fácil quando há poucas imagens (\\<5) dentro do gate."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:194
 msgid ""
