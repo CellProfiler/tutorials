@@ -831,8 +831,8 @@ msgid ""
 "You will likely have to use more than 5 rules to get good classification- "
 "try setting this number to 25"
 msgstr ""
-"Você provavelmente terá que usar mais de 5 regras para obter uma boa "
-"classificação - tente definir esse número como 25"
+"Você provavelmente vai precisar usar mais do que 5 regras para obter uma boa"
+" classificação — tente definir esse número como 25."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:350
 msgid ""
