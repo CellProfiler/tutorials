@@ -868,7 +868,7 @@ msgstr ""
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
 msgid "7. **Add quality control steps to an analysis pipeline (~15 minutes)**"
 msgstr ""
-"7. **Adicione etapas de controle de qualidade a um pipeline de análise "
+"7. **Adicionar etapas de controle de qualidade a um pipeline de análise "
 "(cerca de 15 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:364
