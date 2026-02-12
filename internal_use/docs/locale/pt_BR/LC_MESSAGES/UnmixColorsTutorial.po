@@ -24,9 +24,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:2
 msgid "UnmixColors module tutorial"
-msgstr ""
-"O módulo UnmixColors cria imagens separadas para cada corante em imagens com"
-" coloração histológica."
+msgstr "Tutorial do módulo UnmixColors"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:4
 msgid ""
