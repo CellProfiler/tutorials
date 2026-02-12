@@ -543,8 +543,8 @@ msgid ""
 "A good candidate measurement will be relatively constant within most of the "
 "wells but have a small number of outliers (Fig 2)."
 msgstr ""
-"Uma boa medição candidata será relativamente constante na maioria dos poços,"
-" mas terá um pequeno número de valores discrepantes (Fig. 2)."
+"Uma boa medida candidata tende a ser relativamente constante na maior parte "
+"dos poços, mas apresentar um pequeno número de outliers (Fig 2)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:224
 msgid ""
