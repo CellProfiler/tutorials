@@ -640,9 +640,7 @@ msgstr "Abra o arquivo “.properties” em um editor de texto."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:261
 msgid "In the Image Filters section, create a new line and begin it with"
-msgstr ""
-"Na seção Image Filters (Filtros de imagem), crie uma nova linha e inicie-a "
-"com"
+msgstr "Na seção “Image Filters”, crie uma nova linha e comece com:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:267
 msgid ""
