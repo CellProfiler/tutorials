@@ -552,9 +552,9 @@ msgid ""
 "images from that well.  If one or both seem very aberrant, you may wish to "
 "look at this measurement further."
 msgstr ""
-"Quando você tiver um bom candidato, clique duas vezes em um poço com "
-"aberrações para abrir as imagens desse poço.  Se um ou ambos parecerem muito"
-" aberrantes, talvez você queira examinar melhor essa medição."
+"Depois que você encontrar uma boa medida candidata, dê duplo clique em um "
+"poço outlier para abrir as imagens daquele poço. Se uma ou ambas parecerem "
+"bem aberrantes, vale a pena investigar essa medida com mais detalhe."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:233
 msgid ""
