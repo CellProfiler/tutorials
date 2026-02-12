@@ -722,8 +722,8 @@ msgstr ""
 msgid ""
 "Open the filter creation dialog by selecting ‘filter’->’CREATE NEW FILTER’"
 msgstr ""
-"Abra a caixa de diálogo de criação de filtro selecionando "
-"'filter'-&gt;'CREATE NEW FILTER'"
+"Abra a janela de criação de filtro selecionando “filter > CREATE NEW "
+"FILTER”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:309
 msgid "Name your filter Blurry"
