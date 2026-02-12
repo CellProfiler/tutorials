@@ -678,8 +678,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:294
 msgid "Save and close the properties file, then re-open CPA."
-msgstr ""
-"Salve e feche o arquivo de propriedades e, em seguida, abra novamente o CPA."
+msgstr "Salve e feche o arquivo “.properties” e, em seguida, reabra o CPA."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:296
 msgid "**Create the filters inside CPA (NOT recommended)**"
