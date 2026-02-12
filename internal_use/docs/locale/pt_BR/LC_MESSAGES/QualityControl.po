@@ -636,7 +636,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:260
 msgid "Open the properties file in a text editor."
-msgstr "Abra o arquivo de propriedades em um editor de texto."
+msgstr "Abra o arquivo “.properties” em um editor de texto."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:261
 msgid "In the Image Filters section, create a new line and begin it with"
