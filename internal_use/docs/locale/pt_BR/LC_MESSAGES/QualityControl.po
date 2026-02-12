@@ -494,7 +494,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:204
 msgid "*Figure 1: Examining the objects inside a gate.*"
-msgstr "*Figura 1: Examinando os objetos dentro de um portão."
+msgstr "*Figura 1: Examinando os objetos dentro de um gate.*"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:207
 msgid ""
