@@ -33,8 +33,8 @@ msgid ""
 "The **UnmixColors** module creates separate images per dye stain for "
 "histologically stained images."
 msgstr ""
-"O módulo **UnmixColors** cria imagens separadas por coloração de corante "
-"para imagens coradas histologicamente."
+"O módulo **UnmixColors** cria imagens separadas para cada corante em imagens"
+" com coloração histológica."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:7
 msgid ""
