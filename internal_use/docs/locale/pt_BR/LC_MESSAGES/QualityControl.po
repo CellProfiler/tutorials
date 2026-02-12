@@ -743,8 +743,8 @@ msgid ""
 "Create a filter named Saturated containing the important cutoffs from the "
 "saturation gates"
 msgstr ""
-"Crie um filtro chamado Saturated (Saturado) contendo os cortes importantes "
-"das portas de saturação"
+"Crie um filtro chamado “Saturated” contendo os valores de corte importantes "
+"dos gates de saturação."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:317
 msgid "*Figure 3: Creating filters inside CPA*"
