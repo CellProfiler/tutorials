@@ -631,8 +631,8 @@ msgid ""
 "From whatever graph you happen to have open, open the Gate Inspector by "
 "calling ‘gate’-> ’MANAGE GATES’."
 msgstr ""
-"Em qualquer gráfico que você tenha aberto, abra o Gate Inspector chamando "
-"'gate'-&gt; 'MANAGE GATES'."
+"Na barra de menu, clique em “gate” e depois em “MANAGE GATES” para abrir o "
+"“Gate Inspector” (a partir de qualquer gráfico que você estiver com aberto)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:260
 msgid "Open the properties file in a text editor."
