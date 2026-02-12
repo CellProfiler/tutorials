@@ -673,8 +673,8 @@ msgid ""
 "Repeat for the saturated gates, again omitting the last OR, following the "
 "statement"
 msgstr ""
-"Repita o procedimento para as portas saturadas, omitindo novamente o último "
-"OR, seguindo a instrução"
+"Repita o processo para os gates de saturação, novamente omitindo o último "
+"'OR', seguindo a instrução:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:294
 msgid "Save and close the properties file, then re-open CPA."
