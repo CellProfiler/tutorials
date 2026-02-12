@@ -346,7 +346,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:136
 msgid "That you are classifying ‘Image’s, not objects"
-msgstr "Que você está classificando 'Imagens', não objetos"
+msgstr "Indicar que você está classificando “Images”, e não objetos."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:138
 msgid ""
