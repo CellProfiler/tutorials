@@ -727,7 +727,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:309
 msgid "Name your filter Blurry"
-msgstr "Dê um nome ao seu filtro Blurry"
+msgstr "Em “Name”, escreva “Blurry”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:310
 msgid ""
