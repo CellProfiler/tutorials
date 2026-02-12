@@ -755,8 +755,8 @@ msgid ""
 "6. **Create classifier rules to distinguish good from bad images (~30 "
 "minutes)**"
 msgstr ""
-"6. **Crie regras de classificação para distinguir imagens boas de imagens "
-"ruins (cerca de 30 minutos)**"
+"6. **Criar regras de classificação para distinguir imagens boas de imagens "
+"ruins (~30 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
 msgid ""
