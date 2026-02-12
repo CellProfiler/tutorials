@@ -515,8 +515,8 @@ msgid ""
 "4. **Optional- use the PlateViewer tool to check for other features to gate "
 "on (~10 minutes)**"
 msgstr ""
-"4. **Opcional - use a ferramenta PlateViewer para verificar outros recursos "
-"para ativar (cerca de 10 minutos)**"
+"4. **Opcional — use a ferramenta “PlateViewer” para verificar outras "
+"features para criar gates (~10 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
 msgid ""
