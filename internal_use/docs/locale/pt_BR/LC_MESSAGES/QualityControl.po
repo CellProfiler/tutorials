@@ -950,7 +950,7 @@ msgstr "Adicione o módulo **FlagImage** da categoria “Data Tools”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:395
 msgid "Leave the flag category as ‘Metadata’, and the name as ‘QCFlag’"
-msgstr "Deixe a categoria da bandeira como \"Metadata\" e o nome como \"QCFlag"
+msgstr "Mantenha “flag category” como “Metadata” e o nome como “QCFlag”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:397
 msgid ""
