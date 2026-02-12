@@ -810,9 +810,9 @@ msgid ""
 "are out of focus, have debris, contain the well edge, etc), but stick to two"
 " bins for this experiment."
 msgstr ""
-"Em um experimento maior, você pode decidir adicionar mais compartimentos "
-"(para imagens fora de foco, com detritos, com a borda do poço, etc.), mas "
-"mantenha dois compartimentos para este experimento."
+"Em um experimento maior, você poderia optar por criar mais bins (por "
+"exemplo, para imagens fora de foco, com detritos, contendo a borda do poço "
+"etc.), mas, neste exercício, use apenas dois bins."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:343
 msgid ""
