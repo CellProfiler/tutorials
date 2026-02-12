@@ -524,9 +524,9 @@ msgid ""
 "distinguish good images from bad images, feel free to explore the feature "
 "set more thoroughly."
 msgstr ""
-"Se você quiser ver se consegue encontrar recursos adicionais que possam "
-"distinguir imagens boas de imagens ruins, fique à vontade para explorar o "
-"conjunto de recursos mais detalhadamente."
+"Se você quiser tentar encontrar features adicionais que possam distinguir "
+"imagens boas de imagens ruins, fique à vontade para explorar o conjunto de "
+"features com mais profundidade."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:219
 msgid ""
