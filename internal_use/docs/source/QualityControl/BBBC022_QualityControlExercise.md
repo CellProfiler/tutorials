@@ -211,7 +211,7 @@ in later steps.
   different/smaller subset or delete it altogether by using the Gate
   Inspector (‘gate’-> ‘MANAGE GATES’).
 
-## 4. **Optional- use the PlateViewer tool to check for other features to gate on (~10 minutes)**
+## 4. **Optional — use the PlateViewer tool to check for other features to gate on (~10 minutes)**
 
 If you want to see if you can find additional features that might distinguish good
 images from bad images, feel free to explore the feature set more thoroughly.
