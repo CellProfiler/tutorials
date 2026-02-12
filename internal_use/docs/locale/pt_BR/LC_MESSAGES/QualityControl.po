@@ -608,8 +608,8 @@ msgid ""
 "two ways to do this:"
 msgstr ""
 "Quando você achar que já examinou gráficos suficientes, é hora de criar "
-"filtros com base nos portões que você determinou que contêm imagens ruins. "
-"Há duas maneiras de fazer isso:"
+"filtros com base nos gates que você determinou que contêm imagens ruins. "
+"Existem duas maneiras de fazer isso:"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:253
 msgid ""
