@@ -889,8 +889,8 @@ msgid ""
 "Reopen CellProfiler, then open the BBBC022_Analysis pipeline (provided or "
 "available as part of the \"AdvancedSegmentation\" tutorial)."
 msgstr ""
-"Reabra o CellProfiler e, em seguida, abra o pipeline BBBC022_Analysis "
-"(fornecido ou disponível como parte do tutorial \"AdvancedSegmentation\")."
+"Reabra o CellProfiler e, em seguida, abra o pipeline “BBBC022_Analysis” "
+"(fornecido ou disponível como parte do tutorial “AdvancedSegmentation”)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:372
 msgid ""
