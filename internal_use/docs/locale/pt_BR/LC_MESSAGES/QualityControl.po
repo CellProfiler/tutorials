@@ -958,10 +958,9 @@ msgid ""
 " as something more descriptive, such as ‘QCDebris’, since you’d have a "
 "different flag name for each bin in your classifier."
 msgstr ""
-"Se você tivesse criado muitos compartimentos em sua classificação, definiria"
-" esse nome como algo mais descritivo, como \"QCDebris\", já que você teria "
-"um nome de sinalizador diferente para cada compartimento em seu "
-"classificador."
+"Se você tivesse criado muitos bins na classificação, você usaria um nome "
+"mais descritivo aqui, como “QCDebris”, já que teria um nome de flag "
+"diferente para cada bin do classificador."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:401
 msgid "Leave the ‘Skip image set if flagged?’ setting at no"
