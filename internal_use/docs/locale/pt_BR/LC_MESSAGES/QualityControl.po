@@ -534,9 +534,9 @@ msgid ""
 "random or just use the arrow keys to scroll up and down through the "
 "measurements."
 msgstr ""
-"A ferramenta PlateViewer e escolha algumas medições do ImageQuality "
-"aleatoriamente ou use as teclas de seta para percorrer as medições para cima"
-" e para baixo."
+"Abra a ferramenta “PlateViewer” e escolha algumas medidas de “ImageQuality” "
+"aleatoriamente ou simplesmente use as setas do teclado para percorrer as "
+"medidas para cima e para baixo."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:222
 msgid ""
