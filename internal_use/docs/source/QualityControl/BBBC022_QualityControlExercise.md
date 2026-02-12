@@ -204,7 +204,7 @@ in later steps.
 *Figure 1: Examining the objects inside a gate.*
 ```
 
-- Look at some of the images inside the gate ( you may need to click
+- Look at some of the images inside the gate (you may need to click
   ‘Show controls’ to adjust the zoom, contrast stretch, etc). Are they
   in focus, and are they free of bright debris? If they seem all or
   mostly like they’re high quality, adjust the gate to look at a
