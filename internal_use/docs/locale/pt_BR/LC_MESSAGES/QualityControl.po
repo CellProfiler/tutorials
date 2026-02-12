@@ -383,8 +383,8 @@ msgid ""
 "3. **Open the CellProfiler Analyst workspace and determine reasonable "
 "parameter cutoffs (~20 minutes)**"
 msgstr ""
-"3. **Abra o espaço de trabalho do CellProfiler Analyst e determine limites "
-"razoáveis de parâmetros (cerca de 20 minutos)**"
+"3. **Abra o workspace do CellProfiler Analyst e defina valores de corte "
+"razoáveis para os parâmetros (cerca de 20 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
 msgid ""
