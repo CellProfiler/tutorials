@@ -660,8 +660,9 @@ msgid ""
 "```**DO NOT hit enter**``` or otherwise add new lines between the different "
 "measurments; the statement must be one continuous line in order to work."
 msgstr ""
-"```**NÃO pressione enter**``` ou adicione novas linhas entre as diferentes "
-"medições; a instrução deve ser uma linha contínua para funcionar."
+"```**NÃO pressione enter**``` nem adicione quebras de linha entre as "
+"diferentes medidas; a instrução deve ficar em uma única linha contínua para "
+"funcionar."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:285
 msgid "Omit the `OR` after your last gate measurement."
