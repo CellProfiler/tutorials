@@ -862,8 +862,8 @@ msgid ""
 "Save your training set for future reference if desired, then close "
 "CellProfiler Analyst."
 msgstr ""
-"Salve seu conjunto de treinamento para referência futura, se desejar, e "
-"feche o CellProfiler Analyst."
+"Se desejar, salve o seu “training set” para referência futura e, em seguida,"
+" feche o CellProfiler Analyst."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
 msgid "7. **Add quality control steps to an analysis pipeline (~15 minutes)**"
