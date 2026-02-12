@@ -1,0 +1,960 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Imaging Platform
+# This file is distributed under the same license as the cellprofiler-tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Beth Cimini, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cellprofiler-tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"PO-Revision-Date: 2023-12-13 22:27+0000\n"
+"Last-Translator: Beth Cimini, 2026\n"
+"Language-Team: Arabic (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:3
+msgid "Image quality control using machine learning"
+msgstr "مراقبة جودة الصورة باستخدام التعلم الآلي"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:4
+msgid ""
+"***A computer exercise using CellProfiler & CellProfiler Analyst software***"
+msgstr ""
+"***تمرين على الكمبيوتر باستخدام برنامج CellProfiler وCellProfiler Analyst***"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:6
+msgid ""
+"**Beth Cimini**  <br> **Broad Institute of MIT and Harvard, Cambridge, MA**"
+msgstr ""
+"**بيث سيميني** <br> **معهد برود التابع لمعهد ماساتشوستس للتكنولوجيا وجامعة "
+"هارفارد، كامبريدج، ماساتشوستس**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:10
+msgid "**Background information:**"
+msgstr "**معلومات أساسية:**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:12
+msgid ""
+"High-quality image analysis relies on having high-quality images to analyze;"
+" the so-called **‘Garbage in, garbage out’** principle. If your image set is"
+" small it is straightforward to curate it and remove images that are not in "
+"focus or that contain debris that might disrupt segmentation. In a high "
+"content screen containing tens or hundreds of thousands of images, this is "
+"essentially impossible."
+msgstr ""
+"يعتمد تحليل الصور عالي الجودة على جودة الصور المراد تحليلها، وهو ما يُعرف "
+"بمبدأ \"مدخلات رديئة، مخرجات رديئة\". إذا كانت مجموعة الصور صغيرة، فمن السهل"
+" تنقيحها وإزالة الصور غير الواضحة أو التي تحتوي على شوائب قد تعيق عملية "
+"التجزئة. أما في شاشة ذات محتوى عالٍ تضم عشرات أو مئات الآلاف من الصور، فيصبح"
+" ذلك شبه مستحيل."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:19
+msgid ""
+"The images in this experiment come from the [Broad Bioimage Benchmark "
+"Collection](https://data.broadinstitute.org/bbbc/BBBC022/). They are 240 of "
+"69,120 fields of U2OS cells treated with a panel of 1600 known bioactive "
+"compounds and imaged in five channels for a so-called CellPainting assay- "
+"see Gustafsdottir et al, 2013 for more information. Given the large size of "
+"this experiment, it was necessary to come up with an automated quality "
+"control method."
+msgstr ""
+"الصور المستخدمة في هذه التجربة مأخوذة من مجموعة Broad Bioimage Benchmark "
+"Collection (https://data.broadinstitute.org/bbbc/BBBC022/). وهي عبارة عن 240"
+" صورة من أصل 69120 حقلاً لخلايا U2OS المعالجة بمجموعة من 1600 مركب حيوي "
+"معروف، وتم تصويرها في خمس قنوات لما يُعرف باختبار CellPainting (انظر "
+"Gustafsdottir et al, 2013 لمزيد من المعلومات). ونظرًا لحجم هذه التجربة "
+"الكبير، كان من الضروري ابتكار طريقة آلية لمراقبة الجودة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:27
+msgid ""
+"To learn more about machine learning for image quality control, please see "
+"Bray et al 2012 and references therein."
+msgstr ""
+"لمعرفة المزيد عن التعلم الآلي للتحكم في جودة الصورة، يرجى الاطلاع على Bray "
+"et al 2012 والمراجع الواردة فيه."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:30
+msgid "Goals of this exercise:"
+msgstr "أهداف هذا التمرين:"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:32
+msgid ""
+"This exercise will teach you how to measure aspects of image quality with "
+"CellProfiler and how to use the machine learning tools in CPA to create "
+"robust rules to distinguish low-quality images. It additionally will show "
+"you how to incorporate these rules into an image analysis pipeline so that "
+"they may guide your downstream data analysis."
+msgstr ""
+"سيعلمك هذا التمرين كيفية قياس جوانب جودة الصورة باستخدام CellProfiler، "
+"وكيفية استخدام أدوات التعلم الآلي في CPA لإنشاء قواعد قوية لتمييز الصور "
+"منخفضة الجودة. كما سيوضح لك كيفية دمج هذه القواعد في مسار تحليل الصور لتوجيه"
+" تحليل البيانات اللاحق."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:38
+msgid "Materials necessary for this exercise:"
+msgstr "المواد اللازمة لهذا التمرين:"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:40
+msgid ""
+"These 1200 images (240 sites in 5 channels) represent 120 wells from a "
+"single 384 well plate, either mock treated with DMSO or treated with a "
+"variety of bioactive compounds."
+msgstr ""
+"تمثل هذه الصور الـ 1200 (240 موقعًا في 5 قنوات) 120 بئرًا من لوحة واحدة "
+"تحتوي على 384 بئرًا، إما معالجة بشكل وهمي باستخدام DMSO أو معالجة بمجموعة "
+"متنوعة من المركبات النشطة بيولوجيًا."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:44
+msgid ""
+"It is additionally expected that you are generally familiar with the tools "
+"in CellProfiler and CellProfiler Analyst, preferably after completing the "
+"Translocation tutorial or a similar introductory exercise."
+msgstr ""
+"ومن المتوقع أيضًا أن تكون على دراية عامة بالأدوات الموجودة في CellProfiler و"
+" CellProfiler Analyst، ويفضل أن يكون ذلك بعد إكمال البرنامج التعليمي الخاص "
+"بالانتقال أو تمرين تمهيدي مماثل."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:49
+msgid "1. **Start the provided QC pipeline on the BBBC022 dataset**"
+msgstr "1. **ابدأ عملية مراقبة الجودة المقدمة على مجموعة بيانات BBBC022**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:51
+msgid ""
+"In order to do quality control, we need to first measure the images in many "
+"ways. This will allow us to do machine learning to use the measurements to "
+"identify the good images from the bad."
+msgstr ""
+"لضمان جودة الصور، نحتاج أولاً إلى قياسها بطرق متعددة. سيمكننا ذلك من استخدام"
+" تقنيات التعلم الآلي لتمييز الصور الجيدة عن الرديئة باستخدام هذه القياسات."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:55
+msgid ""
+"Start CellProﬁler by double-clicking the desktop icon: <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\" width=\"40\">"
+msgstr ""
+"ابدأ تشغيل CellProfiler بالنقر المزدوج على أيقونة سطح المكتب: <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\" width=\"40\">"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:57
+msgid ""
+"Drag and drop the ‘BBBC022_QC.cppipe’ file into the ‘Analysis modules’ box. "
+"Three modules should appear- two copies of ‘MeasureImageQuality’ and one "
+"**ExportToDatabase** module."
+msgstr ""
+"اسحب ملف \"BBBC022_QC.cppipe\" وأفلته في مربع \"وحدات التحليل\". ستظهر ثلاث "
+"وحدات: نسختان من \"MeasureImageQuality\" ووحدة واحدة **ExportToDatabase**."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:61
+msgid ""
+"Drag and drop the ‘BBBC022_20585_AE’ folder into the ‘File list’ box. It "
+"should automatically populate."
+msgstr ""
+"اسحب مجلد \"BBBC022_20585_AE\" وأفلته في مربع \"قائمة الملفات\". سيتم ملؤه "
+"تلقائيًا."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:64
+msgid "Hit the Analyze Images button."
+msgstr "اضغط على زر تحليل الصور."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:66
+msgid ""
+"You will get an error popup – ‘No prior instances of objectgroup were "
+"defined. Are you sure you want to continue?’ Hit ‘Yes’."
+msgstr ""
+"ستظهر لك نافذة منبثقة بها رسالة خطأ – \"لم يتم تعريف أي مثيلات سابقة لمجموعة"
+" الكائنات. هل أنت متأكد من رغبتك في المتابعة؟\" اضغط على \"نعم\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:69
+msgid ""
+"This is due to the fact that there are no objects defined in the pipeline. "
+"It will not affect the final results."
+msgstr ""
+"يرجع ذلك إلى عدم وجود كائنات مُعرّفة في مسار المعالجة. ولن يؤثر ذلك على "
+"النتائج النهائية."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:72
+msgid ""
+"The pipeline should take about 10-15 minutes to run. At the end, three files"
+" should be created- a .db database file, a .properties text file, and a "
+".workspace text file."
+msgstr ""
+"يستغرق تشغيل خط الأنابيب حوالي 10-15 دقيقة. في النهاية، سيتم إنشاء ثلاثة "
+"ملفات: ملف قاعدة بيانات بامتداد .db، وملف نصي بامتداد .properties، وملف نصي "
+"بامتداد .workspace."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:76
+msgid "2. **Examine the QC pipeline (~15 minutes)**"
+msgstr "2. **فحص مسار مراقبة الجودة (حوالي 15 دقيقة)**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:78
+msgid ""
+"While the pipeline is running, take some time to look over the pipeline and "
+"make sure you understand the various parts. You will probably find it "
+"easiest to open a second CellProfiler window and open the pipeline in it."
+msgstr ""
+"أثناء تشغيل خط الأنابيب، خصص بعض الوقت لمراجعته والتأكد من فهمك لأجزائه "
+"المختلفة. قد تجد أنه من الأسهل فتح نافذة ثانية لبرنامج CellProfiler وفتح خط "
+"الأنابيب فيها."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:83
+msgid "**Metadata**"
+msgstr "**البيانات الوصفية**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:85
+msgid ""
+"Plate, well, site, and channel information is being extracted from the file "
+"and folder names"
+msgstr ""
+"يتم استخراج معلومات اللوحة والبئر والموقع والقناة من أسماء الملفات والمجلدات"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:88
+msgid "**NamesAndTypes**"
+msgstr "**الأسماء والأنواع**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:90
+msgid ""
+"The images are matched to their channels by metadata and grouped by Plate, "
+"Well, and Site"
+msgstr ""
+"تتم مطابقة الصور مع قنواتها بواسطة البيانات الوصفية وتجميعها حسب اللوحة "
+"والبئر والموقع"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:93
+msgid "**Groups**"
+msgstr "**المجموعات**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:95
+msgid "This module is not used"
+msgstr "هذه الوحدة غير مستخدمة"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:97
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:106
+msgid "**MeasureImageQuality**"
+msgstr "**قياس جودة الصورة**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:99
+msgid ""
+"‘Include the image rescaling value?’, ‘Calculate intensity metrics?’, and "
+"‘Calculate saturation metrics?’ are all set to yes. Open the help <img "
+"src=\"./TutorialImages/Info.png\" width=\"35\"> button to read about the "
+"measurements exported by each of these options."
+msgstr ""
+"تم ضبط جميع الخيارات التالية على \"هل تريد تضمين قيمة إعادة تحجيم الصورة؟\" "
+"و\"هل تريد حساب مقاييس الشدة؟\" و\"هل تريد حساب مقاييس التشبع؟\". افتح زر "
+"المساعدة <img src=\"./TutorialImages/Info.png\" width=\"35\"> للاطلاع على "
+"معلومات حول القياسات التي يتم تصديرها بواسطة كل خيار من هذه الخيارات."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:102
+msgid ""
+"‘Calculate blur metrics?’ is set to yes and given multiple spatial scales- "
+"2, 5, 10, and 20 pixels. Open the help <img "
+"src=\"./TutorialImages/Info.png\" width=\"35\"> button to read about the "
+"different methods used to determine whether an image is in focus."
+msgstr ""
+"تم ضبط خيار \"حساب مقاييس التمويه؟\" على \"نعم\" مع تحديد مقاييس مكانية "
+"متعددة: 2، 5، 10، و20 بكسل. افتح زر المساعدة <img "
+"src=\"./TutorialImages/Info.png\" width=\"35\"> للاطلاع على الطرق المختلفة "
+"المستخدمة لتحديد ما إذا كانت الصورة واضحة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:108
+msgid ""
+"In this second image **MeasureImageQuality** module, automatic thresholds "
+"are calculated for the ‘OrigHoechst’ and ‘OrigPh_golgi’ images using "
+"specific threshold metrics. Read about why by opening the help <img "
+"src=\"./TutorialImages/Info.png\" width=\"35\"> button."
+msgstr ""
+"في وحدة **قياس جودة الصورة** الثانية، يتم حساب عتبات تلقائية لصورتي "
+"\"OrigHoechst\" و\"OrigPh_golgi\" باستخدام مقاييس عتبة محددة. اقرأ المزيد عن"
+" السبب بالضغط على زر المساعدة <img src=\"./TutorialImages/Info.png\" "
+"width=\"35\">."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:113
+msgid ""
+"The choice of these two images and these two thresholding methods was not "
+"random; it corresponds to the methods used to segment nuclei and cell bodies"
+" in the corresponding analysis pipeline."
+msgstr ""
+"لم يكن اختيار هاتين الصورتين وهاتين الطريقتين لتحديد العتبة عشوائيًا؛ بل "
+"يتوافق مع الطرق المستخدمة لتقسيم النوى وأجسام الخلايا في مسار التحليل "
+"المقابل."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:118
+msgid "**ExportToDatabase**"
+msgstr "**تصدير إلى قاعدة البيانات**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:120
+msgid ""
+"This module has 4 main parts, separated by breaks (<img "
+"src=\"./TutorialImages/Inline3.png\" width=\"200\">)"
+msgstr ""
+"تحتوي هذه الوحدة على 4 أجزاء رئيسية، مفصولة بفواصل (<img "
+"src=\"./TutorialImages/Inline3.png\" width=\"200\">)"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:122
+msgid ""
+"**Creation of the database**: these options determine what kind of database "
+"will be created (SQLite in this case), whether CellProfiler should overwrite"
+" or add to previously existing data, and what the names of the tables will "
+"be."
+msgstr ""
+"**إنشاء قاعدة البيانات**: تحدد هذه الخيارات نوع قاعدة البيانات التي سيتم "
+"إنشاؤها (SQLite في هذه الحالة)، وما إذا كان يجب على CellProfiler الكتابة فوق"
+" البيانات الموجودة مسبقًا أو الإضافة إليها، وما هي أسماء الجداول."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:127
+msgid ""
+"**Creation of the CPA properties file**: these options pre-set some "
+"parameters for CellProfiler Analyst to help make it easier for you to use "
+"such as"
+msgstr ""
+"**إنشاء ملف خصائص CPA**: تقوم هذه الخيارات بضبط بعض المعلمات مسبقًا لبرنامج "
+"CellProfiler Analyst لتسهيل استخدامه، مثل:"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:131
+msgid ""
+"Setting the plate type to 384, and stating that the Image_Metadata_Plate and"
+" Image_Metadata_Well determine which plate and well to assign each image to"
+msgstr ""
+"ضبط نوع اللوحة على 384، وتحديد أن Image_Metadata_Plate و Image_Metadata_Well"
+" يحددان اللوحة والبئر اللذين سيتم تخصيص كل صورة لهما"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:134
+msgid ""
+"What color to assign each channel in the image display tools in CellProfiler"
+" Analyst"
+msgstr ""
+"ما هو اللون الذي يجب تعيينه لكل قناة في أدوات عرض الصور في برنامج "
+"CellProfiler Analyst؟"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:136
+msgid "That you are classifying ‘Image’s, not objects"
+msgstr "أنك تصنف \"الصور\"، وليس الأشياء."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:138
+msgid ""
+"**Creation of the CPA workspace file**: instead of having to explore all the"
+" parameters at random to find features that separate good images from bad "
+"images, these options allow you to auto-create graphs for the features that "
+"are likely to be the most important. Here we’ve pre-populated 12 graphs for "
+"you- 10 scatter plots and 2 histograms."
+msgstr ""
+"**إنشاء ملف مساحة عمل CPA**: بدلاً من استكشاف جميع المعلمات عشوائيًا للعثور "
+"على الميزات التي تميز الصور الجيدة عن السيئة، تتيح لك هذه الخيارات إنشاء "
+"رسوم بيانية تلقائيًا للميزات التي يُرجح أن تكون الأكثر أهمية. لقد قمنا هنا "
+"بتعبئة 12 رسمًا بيانيًا مسبقًا لك - 10 مخططات مبعثرة ومخططان تكراريان."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:145
+msgid ""
+"**CellProfiler specific adjustments**: besides determining the location of "
+"the output database, most of these options deal with how CellProfiler should"
+" treat the objects it identifies (should it calculate means/medians/standard"
+" deviations for all of them, should it combine their measurements into a "
+"single table, etc). As we are not identifying any objects, we don’t need to "
+"worry about these."
+msgstr ""
+"**تعديلات خاصة بـ CellProfiler**: بالإضافة إلى تحديد موقع قاعدة بيانات "
+"الإخراج، تتعلق معظم هذه الخيارات بكيفية تعامل CellProfiler مع الكائنات التي "
+"يحددها (هل يجب عليه حساب المتوسطات/الوسائط/الانحرافات المعيارية لجميعها، وهل"
+" يجب عليه دمج قياساتها في جدول واحد، إلخ). وبما أننا لا نحدد أي كائنات، فلا "
+"داعي للقلق بشأن هذه التعديلات."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:153
+msgid ""
+"3. **Open the CellProfiler Analyst workspace and determine reasonable "
+"parameter cutoffs (~20 minutes)**"
+msgstr ""
+"3. **افتح مساحة عمل محلل CellProfiler وحدد حدود المعلمات المعقولة (حوالي 20 "
+"دقيقة)**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
+msgid ""
+"In the first step of the quality control pipeline, we'll look at graphs of "
+"how various measurements are distributed in the population.  This allows us "
+"to get a sense of what the \"normal\" values are for each parameter.  We'll "
+"set gates around the \"abnormal\" values for later usage.  You can feel free"
+" to graph and examine additional parameters as well if you are interested in"
+" exploring the dataset."
+msgstr ""
+"في الخطوة الأولى من عملية مراقبة الجودة، سنستعرض رسومًا بيانية توضح توزيع "
+"القياسات المختلفة في العينة. يتيح لنا ذلك فهم القيم \"الطبيعية\" لكل مُعامل."
+" سنحدد نطاقات حول القيم \"الشاذة\" لاستخدامها لاحقًا. يمكنك أيضًا رسم ودراسة"
+" مُعاملات إضافية إذا كنت ترغب في استكشاف مجموعة البيانات."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:162
+msgid ""
+"First-pass identification of the abnormal images is important since they are"
+" hopefully going to be rare in our overall dataset.  By identifying as many "
+"abnormal images as possible in this and the next step, we'll hopefully have "
+"a large and robust enough training set that we can train a good classifier "
+"in later steps."
+msgstr ""
+"يُعدّ تحديد الصور الشاذة في المرحلة الأولى أمرًا بالغ الأهمية، إذ من المتوقع"
+" أن تكون نادرة في مجموعة البيانات الإجمالية. ومن خلال تحديد أكبر عدد ممكن من"
+" الصور الشاذة في هذه المرحلة والمرحلة التالية، نأمل أن نحصل على مجموعة "
+"بيانات تدريبية كبيرة وقوية بما يكفي لتدريب مُصنِّف جيد في المراحل اللاحقة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:168
+msgid ""
+"Once your pipeline has finished, close CellProfiler and start CellProfiler "
+"Analyst by double-clicking the icon <img "
+"src=\"./TutorialImages/CPAlogo.png\" width=\"35\">."
+msgstr ""
+"بمجرد انتهاء خط الأنابيب الخاص بك، أغلق CellProfiler وابدأ CellProfiler "
+"Analyst بالنقر المزدوج على الأيقونة <img "
+"src=\"./TutorialImages/CPAlogo.png\" width=\"35\">."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:171
+msgid "Load the properties file you’ve just created."
+msgstr "قم بتحميل ملف الخصائص الذي أنشأته للتو."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:173
+msgid ""
+"Go to File-> Load Workspace. 12 graphs should be created – 5 scatter plots "
+"about focus (ImageNumber vs ImageQuality_PowerLogLogSlope), 5 scatter plots "
+"about oversaturation (ImageQuality_StdIntensity vs "
+"ImageQuality_PercentMaximal), and 2 histograms showing the automatic "
+"thresholds calculated for the nuclei and cell channels."
+msgstr ""
+"انتقل إلى ملف -> تحميل مساحة العمل. يجب إنشاء 12 رسمًا بيانيًا - 5 مخططات "
+"مبعثرة حول التركيز (رقم الصورة مقابل جودة الصورة_قوة لوغاريتم ميل "
+"لوغاريتمي)، و5 مخططات مبعثرة حول التشبع الزائد (جودة الصورة_شدة قياسية مقابل"
+" جودة الصورة_النسبة المئوية القصوى)، و2 رسم بياني يوضح العتبات التلقائية "
+"المحسوبة لقنوات النوى والخلايا."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:179
+msgid ""
+"For some or all of the graphs (preferably at least two of each type), "
+"examine the shape of the data. Are there obvious outliers present?"
+msgstr ""
+"بالنسبة لبعض أو كل الرسوم البيانية (ويفضل أن يكون اثنان على الأقل من كل "
+"نوع)، افحص شكل البيانات. هل توجد قيم متطرفة واضحة؟"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:182
+msgid ""
+"In the ‘gate’ dropdown, select CREATE NEW GATE and give it a name (like "
+"‘HighSat_ER’ for high outliers in the oversaturation graph of the ER "
+"channel)."
+msgstr ""
+"في القائمة المنسدلة \"البوابة\"، حدد إنشاء بوابة جديدة وقم بإعطائها اسمًا "
+"(مثل \"HighSat_ER\" للقيم الشاذة العالية في الرسم البياني للتشبع الزائد "
+"لقناة ER)."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:186
+msgid ""
+"Draw your gate, then right-click (PC)/Command-click (Mac) to bring up a "
+"window. You should see two options named ‘Show images in gate’ (one or both "
+"of these will be renamed in the next CPA release for the sake of clarity)"
+msgstr ""
+"ارسم بوابتك، ثم انقر بزر الماوس الأيمن (على نظام ويندوز) أو انقر مع الضغط "
+"على مفتاح Command (على نظام ماك) لفتح نافذة. ستجد خيارين باسم \"عرض الصور في"
+" البوابة\" (سيتم تغيير اسم أحدهما أو كليهما في الإصدار القادم من برنامج CPA "
+"لتوضيح الأمر)."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:191
+msgid ""
+"The top one will open each of these images in a separate window. This is "
+"generally easiest if only a small number of images (\\<5) are in the gate."
+msgstr ""
+"سيؤدي الخيار العلوي إلى فتح كل صورة من هذه الصور في نافذة منفصلة. ويكون هذا "
+"أسهل عمومًا إذا كان عدد الصور في البوابة صغيرًا (أقل من 5)."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:194
+msgid ""
+"The bottom one will open a thumbnail viewer with thumbnails of each image; "
+"you can then double click on the thumbnail to open the full image. This is "
+"much faster when there are a lot of images inside the gate."
+msgstr ""
+"سيؤدي النقر على الزر السفلي إلى فتح نافذة عرض الصور المصغرة، حيث يمكنك النقر"
+" المزدوج على الصورة المصغرة لعرض الصورة كاملة. هذه الطريقة أسرع بكثير عند "
+"وجود عدد كبير من الصور داخل البوابة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:204
+msgid "*Figure 1: Examining the objects inside a gate.*"
+msgstr "*الشكل 1: فحص الأشياء الموجودة داخل البوابة.*"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:207
+msgid ""
+"Look at some of the images inside the gate ( you may need to click ‘Show "
+"controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, and"
+" are they free of bright debris? If they seem all or mostly like they’re "
+"high quality, adjust the gate to look at a different/smaller subset or "
+"delete it altogether by using the Gate Inspector (‘gate’-> ‘MANAGE GATES’)."
+msgstr ""
+"ألقِ نظرة على بعض الصور داخل البوابة (قد تحتاج إلى النقر على \"إظهار عناصر "
+"التحكم\" لضبط التكبير/التصغير، وتباين الصورة، وما إلى ذلك). هل هي واضحة، "
+"وخالية من الشوائب الساطعة؟ إذا بدت جميعها أو معظمها بجودة عالية، فقم بتعديل "
+"البوابة لعرض مجموعة فرعية مختلفة/أصغر، أو احذفها تمامًا باستخدام \"مُفتش "
+"البوابة\" (البوابة -> \"إدارة البوابات\")."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
+msgid ""
+"4. **Optional- use the PlateViewer tool to check for other features to gate "
+"on (~10 minutes)**"
+msgstr ""
+"4. **اختياري - استخدم أداة PlateViewer للتحقق من وجود ميزات أخرى لتفعيلها "
+"(حوالي 10 دقائق)**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
+msgid ""
+"If you want to see if you can find additional features that might "
+"distinguish good images from bad images, feel free to explore the feature "
+"set more thoroughly."
+msgstr ""
+"إذا كنت ترغب في معرفة ما إذا كان بإمكانك العثور على ميزات إضافية قد تميز "
+"الصور الجيدة عن الصور السيئة، فلا تتردد في استكشاف مجموعة الميزات بشكل أكثر "
+"شمولاً."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:219
+msgid ""
+"The PlateViewer tool and either choose a few ImageQuality measurements at "
+"random or just use the arrow keys to scroll up and down through the "
+"measurements."
+msgstr ""
+"استخدم أداة PlateViewer، ثم اختر بعض قياسات جودة الصورة عشوائيًا أو استخدم "
+"مفاتيح الأسهم للتمرير لأعلى ولأسفل عبر القياسات."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:222
+msgid ""
+"A good candidate measurement will be relatively constant within most of the "
+"wells but have a small number of outliers (Fig 2)."
+msgstr ""
+"سيكون القياس المرشح الجيد ثابتًا نسبيًا داخل معظم الآبار ولكنه يحتوي على عدد"
+" قليل من القيم الشاذة (الشكل 2)."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:224
+msgid ""
+"Once you have a good candidate, double click on an outlier well to open the "
+"images from that well.  If one or both seem very aberrant, you may wish to "
+"look at this measurement further."
+msgstr ""
+"بمجرد تحديد مرشح مناسب، انقر نقراً مزدوجاً على البئر الشاذ لفتح الصور من ذلك"
+" البئر. إذا بدا أحد البئرين أو كلاهما شاذاً للغاية، فقد ترغب في إلقاء نظرة "
+"فاحصة على هذا القياس."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:233
+msgid ""
+"*Figure 2: Using the PlateViewer tool to find features that may be good "
+"markers of poor quality images.*"
+msgstr ""
+"*الشكل 2: استخدام أداة PlateViewer للعثور على الميزات التي قد تكون مؤشرات "
+"جيدة على رداءة جودة الصور.*"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:236
+msgid ""
+"Once you have a measurement you'd like to gate based on, open that Histogram"
+" or the Scatter Plot tools and graph all the cells based on that (if you're "
+"using the Scatter Plot tool, you may wish to graph your chosen feature on "
+"the Y-axis vs ImageNumber on the X-axis as in the Workspace plots, but feel "
+"free to play around). If you find a gate that seems logical to make, proceed"
+" as in Step 3."
+msgstr ""
+"بمجرد حصولك على القياس الذي ترغب في استخدامه لتحديد النطاق، افتح أداة الرسم "
+"البياني (الهيستوغرام) أو أداة الرسم البياني المبعثر، وارسم جميع الخلايا "
+"بناءً على هذا القياس (إذا كنت تستخدم أداة الرسم البياني المبعثر، فقد ترغب في"
+" رسم الميزة التي اخترتها على المحور الرأسي (Y) مقابل رقم الصورة على المحور "
+"الأفقي (X) كما هو الحال في رسومات مساحة العمل، ولكن لا تتردد في التجربة). "
+"إذا وجدت نطاقًا يبدو منطقيًا، فتابع كما في الخطوة 3."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:242
+msgid ""
+"5. **Create filters based on the cutoffs you’ve determined (~10 minutes)**"
+msgstr ""
+"5. **أنشئ فلاتر بناءً على الحدود الزمنية التي حددتها (حوالي 10 دقائق)**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:244
+msgid ""
+"Now that we've created gates around our poor quality images, we need to "
+"convert them into filters so that we can access them in the Classifier tool."
+"  This process will be unnecessary in later versions of CellProfiler "
+"Analyst, but knowing how to manipulate the properties file is a worthwhile "
+"skill."
+msgstr ""
+"بعد أن أنشأنا بوابات حول صورنا ذات الجودة الرديئة، نحتاج إلى تحويلها إلى "
+"مرشحات لنتمكن من الوصول إليها في أداة التصنيف. لن تكون هذه العملية ضرورية في"
+" الإصدارات اللاحقة من برنامج CellProfiler Analyst، ولكن معرفة كيفية التعامل "
+"مع ملف الخصائص مهارة قيّمة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:249
+msgid ""
+"When you feel like you’ve examined enough graphs, it’s time to create "
+"filters based on the gates you’ve determined contain bad images. There are "
+"two ways to do this:"
+msgstr ""
+"عندما تشعر أنك قد فحصت عددًا كافيًا من الرسوم البيانية، فقد حان الوقت لإنشاء"
+" مرشحات بناءً على البوابات التي حددت أنها تحتوي على صور غير مرغوب فيها. هناك"
+" طريقتان للقيام بذلك:"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:253
+msgid ""
+"**Edit the properties file manually (recommended):** <br> This method has "
+"the advantage that the filters you create are permanent; they won’t be lost "
+"when you close and re-open CPA. It does however require you to edit the "
+"properties file, and potentially requires you to troubleshoot what’s wrong "
+"with the SQL call if you type it in incorrectly."
+msgstr ""
+"**تعديل ملف الخصائص يدويًا (مُوصى به):** <br> تتميز هذه الطريقة بأن عوامل "
+"التصفية التي تُنشئها دائمة؛ فلن تُفقد عند إغلاق برنامج CPA وإعادة فتحه. مع "
+"ذلك، فهي تتطلب منك تعديل ملف الخصائص، وقد تتطلب منك أيضًا استكشاف أخطاء "
+"استدعاء SQL وإصلاحها في حال إدخاله بشكل خاطئ."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:259
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:305
+msgid ""
+"From whatever graph you happen to have open, open the Gate Inspector by "
+"calling ‘gate’-> ’MANAGE GATES’."
+msgstr ""
+"من أي رسم بياني مفتوح لديك، افتح مدقق البوابات عن طريق استدعاء \"gate\"-> "
+"\"MANAGE GATES\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:260
+msgid "Open the properties file in a text editor."
+msgstr "افتح ملف الخصائص في محرر نصوص."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:261
+msgid "In the Image Filters section, create a new line and begin it with"
+msgstr "في قسم فلاتر الصور، أنشئ سطرًا جديدًا وابدأه بـ"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:267
+msgid ""
+"For each of the blur or threshold gates in your Gate Inspector, copy the "
+"text followed by the word `OR`; as an example if your first gate was:"
+msgstr ""
+"لكل بوابة من بوابات التمويه أو العتبة في نافذة فحص البوابات، انسخ النص "
+"متبوعًا بكلمة \"أو\"؛ على سبيل المثال، إذا كانت بوابتك الأولى هي:"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:275
+msgid "Edit your SQL statement to read:"
+msgstr "عدّل عبارة SQL الخاصة بك لتصبح كالتالي:"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:281
+msgid ""
+"```**DO NOT hit enter**``` or otherwise add new lines between the different "
+"measurments; the statement must be one continuous line in order to work."
+msgstr ""
+"```**لا تضغط على زر الإدخال**``` أو تضيف أسطرًا جديدة بين القياسات المختلفة؛"
+" يجب أن يكون البيان سطرًا واحدًا متصلًا لكي يعمل."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:285
+msgid "Omit the `OR` after your last gate measurement."
+msgstr "احذف كلمة \"أو\" بعد قياس البوابة الأخير."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:287
+msgid ""
+"Repeat for the saturated gates, again omitting the last OR, following the "
+"statement"
+msgstr ""
+"كرر العملية للبوابات المشبعة، مع حذف عملية OR الأخيرة مرة أخرى، بعد العبارة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:294
+msgid "Save and close the properties file, then re-open CPA."
+msgstr "احفظ ملف الخصائص وأغلقه، ثم أعد فتح برنامج CPA."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:296
+msgid "**Create the filters inside CPA (NOT recommended)**"
+msgstr "**أنشئ الفلاتر داخل CPA (غير مستحسن)**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:298
+msgid ""
+"This method does not require you to manually edit the properties file, but "
+"when filtering based on multiple features it takes longer to set up, cannot "
+"be edited, and would need to be repeated every time you closed and re-opened"
+" CellProfiler Analyst. It is therefore not recommended for use in this "
+"tutorial, but is presented in case you cannot or will not edit the "
+"properties file."
+msgstr ""
+"لا تتطلب هذه الطريقة تعديل ملف الخصائص يدويًا، ولكن عند التصفية بناءً على "
+"عدة خصائص، يستغرق الإعداد وقتًا أطول، ولا يمكن تعديله، ويتطلب تكراره في كل "
+"مرة تغلق فيها برنامج CellProfiler Analyst وتعيد فتحه. لذلك، لا يُنصح "
+"باستخدامها في هذا الشرح، ولكن تم تقديمها في حال تعذر عليك أو لم ترغب في "
+"تعديل ملف الخصائص."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:306
+msgid ""
+"Copy the text of the relevant gates into a text editor so that you can "
+"access it later."
+msgstr ""
+"انسخ نص البوابات ذات الصلة إلى محرر نصوص حتى تتمكن من الوصول إليه لاحقًا."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:307
+msgid ""
+"Determine which is the important cutoff for each gate (ie for a gate where "
+"values are too high, it’s the minimum value, for gates on values that are "
+"too low it’s the maximum value)"
+msgstr ""
+"حدد القيمة الحدية المهمة لكل بوابة (أي بالنسبة للبوابة التي تكون فيها القيم "
+"مرتفعة جدًا، فهي القيمة الدنيا، وبالنسبة للبوابات التي تكون فيها القيم "
+"منخفضة جدًا، فهي القيمة القصوى)."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:308
+msgid ""
+"Open the filter creation dialog by selecting ‘filter’->’CREATE NEW FILTER’"
+msgstr "افتح مربع حوار إنشاء الفلتر عن طريق تحديد \"فلتر\" -> \"إنشاء فلتر جديد\""
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:309
+msgid "Name your filter Blurry"
+msgstr "سمِّ فلترك \"ضبابي\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:310
+msgid ""
+"Enter each important cutoff from the blur or threshold gates, selecting ‘Add"
+" column’ after each and changing the separator statement to OR"
+msgstr ""
+"أدخل كل قيمة قطع مهمة من بوابات التمويه أو العتبة، وحدد \"إضافة عمود\" بعد "
+"كل قيمة، ثم غيّر عبارة الفصل إلى \"أو\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:311
+msgid ""
+"Create a filter named Saturated containing the important cutoffs from the "
+"saturation gates"
+msgstr "أنشئ مرشحًا باسم \"مشبع\" يحتوي على قيم القطع المهمة من بوابات التشبع."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:317
+msgid "*Figure 3: Creating filters inside CPA*"
+msgstr "*الشكل 3: إنشاء عوامل تصفية داخل CPA*"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:320
+msgid ""
+"6. **Create classifier rules to distinguish good from bad images (~30 "
+"minutes)**"
+msgstr ""
+"6. **إنشاء قواعد تصنيف لتمييز الصور الجيدة عن الصور السيئة (حوالي 30 "
+"دقيقة)**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
+msgid ""
+"Creating gates based on the 12 measurements we graphed has helped us "
+"identify some low quality images so far, but we are not utilizing the rest "
+"of our measurements and we can't be certain we've found them all.  By "
+"creating a machine learning classifier we can find features that correlate "
+"well with bad images in our experiment and increase our likelihood of "
+"identifying additional low quality images."
+msgstr ""
+"لقد ساعدنا إنشاء بوابات بناءً على القياسات الاثني عشر التي رسمناها بيانيًا "
+"في تحديد بعض الصور منخفضة الجودة حتى الآن، لكننا لا نستفيد من بقية القياسات،"
+" ولا يمكننا التأكد من أننا عثرنا عليها جميعًا. من خلال إنشاء مصنف للتعلم "
+"الآلي، يمكننا إيجاد خصائص ترتبط ارتباطًا وثيقًا بالصور الرديئة في تجربتنا، "
+"مما يزيد من احتمالية تحديد المزيد من الصور منخفضة الجودة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:329
+msgid ""
+"Open the Classifier tool (<img src=\"./TutorialImages/Inline5.png\" "
+"width=\"40\">, 2nd on left)."
+msgstr ""
+"افتح أداة التصنيف (<img src=\"./TutorialImages/Inline5.png\" width=\"40\">، "
+"الثاني من اليسار)."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:331
+msgid ""
+"Fetch 50 random images from ‘experiment’, then 25 each from ‘Blurry’ and "
+"‘Saturated’"
+msgstr ""
+"قم بجلب 50 صورة عشوائية من \"التجربة\"، ثم 25 صورة من كل من \"الضبابية\" "
+"و\"المشبعة\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:334
+msgid ""
+"Create a good classifier by dragging images to the positive and negative "
+"bins and training with the Fast Gentle Boosting classifier. If needed feel "
+"free to refer to the Translocation tutorial instructions for reminders of "
+"how to fetch more images, check the confusion matrix of your classifier, "
+"etc."
+msgstr ""
+"أنشئ مصنفًا جيدًا عن طريق سحب الصور إلى خانات الصور الموجبة والسالبة "
+"وتدريبها باستخدام مصنف Fast Gentle Boosting. إذا لزم الأمر، يمكنك الرجوع إلى"
+" تعليمات برنامج Translocation التعليمي للتذكير بكيفية جلب المزيد من الصور، "
+"والتحقق من مصفوفة الارتباك الخاصة بالمصنف، وما إلى ذلك."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:340
+msgid ""
+"In a larger experiment, you might decide to add more bins (for images that "
+"are out of focus, have debris, contain the well edge, etc), but stick to two"
+" bins for this experiment."
+msgstr ""
+"في تجربة أكبر، قد تقرر إضافة المزيد من الصناديق (للصور غير الواضحة، أو التي "
+"تحتوي على حطام، أو التي تحتوي على حافة البئر، وما إلى ذلك)، ولكن التزم "
+"بصندوقين لهذه التجربة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:343
+msgid ""
+"Don’t only fetch additional images from your filtered sets, make sure to "
+"pull some from ‘Random’ as well, since your gates may not contain every bad "
+"image in the experiment and since you want a robust set of good-quality "
+"images for your positive bin."
+msgstr ""
+"لا تكتفِ بجلب صور إضافية من مجموعاتك المفلترة، بل تأكد من سحب بعضها من "
+"\"Random\" أيضًا، لأن بواباتك قد لا تحتوي على كل صورة سيئة في التجربة ولأنك "
+"تريد مجموعة قوية من الصور ذات الجودة الجيدة لصندوقك الإيجابي."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:347
+msgid ""
+"You will likely have to use more than 5 rules to get good classification- "
+"try setting this number to 25"
+msgstr ""
+"من المحتمل أن تحتاج إلى استخدام أكثر من 5 قواعد للحصول على تصنيف جيد - حاول "
+"ضبط هذا الرقم على 25"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:350
+msgid ""
+"When you’re happy with your classifier (this is a small experiment, so "
+"perfect classification will not be possible, but aim for >60% accuracy in "
+"each bin at least), examine the rules created by using ‘Advanced’->’Edit "
+"rules…’."
+msgstr ""
+"عندما تكون راضيًا عن المصنف الخاص بك (هذه تجربة صغيرة، لذا لن يكون التصنيف "
+"المثالي ممكنًا، ولكن حاول تحقيق دقة >60% في كل فئة على الأقل)، افحص القواعد "
+"التي تم إنشاؤها باستخدام \"متقدم\" -> \"تحرير القواعد...\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:355
+msgid ""
+"Remove any rules that DO NOT have to do with ImageQuality (like ‘GroupIndex,"
+" etc), then copy the remainder Into a text editor and save as a ‘.txt’ file."
+" Keep the text file open for now."
+msgstr ""
+"قم بإزالة أي قواعد لا تتعلق بجودة الصورة (مثل \"GroupIndex\" وما إلى ذلك)، "
+"ثم انسخ الباقي إلى محرر نصوص واحفظه كملف بامتداد \".txt\". أبقِ الملف النصي "
+"مفتوحًا في الوقت الحالي."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:359
+msgid ""
+"Save your training set for future reference if desired, then close "
+"CellProfiler Analyst."
+msgstr ""
+"احفظ مجموعة التدريب الخاصة بك للرجوع إليها مستقبلاً إذا رغبت في ذلك، ثم أغلق"
+" برنامج CellProfiler Analyst."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
+msgid "7. **Add quality control steps to an analysis pipeline (~15 minutes)**"
+msgstr "7. **إضافة خطوات مراقبة الجودة إلى مسار التحليل (حوالي 15 دقيقة)**"
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:364
+msgid ""
+"If you have time, you can add the list of rules you identified in your "
+"machine learning classifier to the CellProfiler pipeline that corresponds to"
+" this data set.  This can be valuable to do in processing your own large "
+"datasets, especially if time or computational power is at a premium."
+msgstr ""
+"إذا كان لديك متسع من الوقت، يمكنك إضافة قائمة القواعد التي حددتها في مصنف "
+"التعلم الآلي إلى مسار CellProfiler الخاص بمجموعة البيانات هذه. قد يكون هذا "
+"مفيدًا عند معالجة مجموعات البيانات الكبيرة الخاصة بك، خاصةً إذا كان الوقت أو"
+" القدرة الحاسوبية محدودين."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:369
+msgid ""
+"Reopen CellProfiler, then open the BBBC022_Analysis pipeline (provided or "
+"available as part of the \"AdvancedSegmentation\" tutorial)."
+msgstr ""
+"أعد فتح CellProfiler، ثم افتح مسار BBBC022_Analysis (المقدم أو المتاح كجزء "
+"من البرنامج التعليمي \"AdvancedSegmentation\")."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:372
+msgid ""
+"Reopen the BBBC022_QC pipeline for reference, either in a separate "
+"CellProfiler window or in a text editor."
+msgstr ""
+"أعد فتح مسار BBBC022_QC للرجوع إليه، إما في نافذة CellProfiler منفصلة أو في "
+"محرر نصوص."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:375
+msgid ""
+"Click on the <img src=\"./TutorialImages/AddModule.png\" width=\"40\"> "
+"button to open the ‘Add modules’ window"
+msgstr ""
+"انقر على زر <img src=\"./TutorialImages/AddModule.png\" width=\"40\"> لفتح "
+"نافذة \"إضافة وحدات\""
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:377
+msgid ""
+"If your rule set contains any rules based on ‘ImageQuality_Threshold’, add "
+"two **MeasureImageQuality** modules (from the ‘Measurement’ category) to the"
+" very top of your pipeline, otherwise add one."
+msgstr ""
+"إذا كانت مجموعة القواعد الخاصة بك تحتوي على أي قواعد تستند إلى "
+"\"ImageQuality_Threshold\"، فأضف وحدتين **MeasureImageQuality** (من فئة "
+"\"القياس\") إلى أعلى مسار المعالجة الخاص بك، وإلا فأضف واحدة فقط."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:382
+msgid ""
+"Configure the **MeasureImageQuality** module(s) so that they’ll provide all "
+"the measurements specified in your rules file; you can refer to the settings"
+" in the QC pipeline and/or the rules file to determine which these are."
+msgstr ""
+"قم بتكوين وحدة **MeasureImageQuality** بحيث توفر جميع القياسات المحددة في "
+"ملف القواعد الخاص بك؛ يمكنك الرجوع إلى الإعدادات في مسار مراقبة الجودة و/أو "
+"ملف القواعد لتحديد أي منها."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:387
+msgid ""
+"For measurements that end in a number, like "
+"‘Image_ImageQuality_Correlation_OrigER_10’, the number refers to the "
+"‘Spatial scale for blur measurements’ scale specified. You started by "
+"measuring the blur at 4 scales, but you may or may not need all of them "
+"based on the rules selected."
+msgstr ""
+"بالنسبة للقياسات التي تنتهي برقم، مثل "
+"\"Image_ImageQuality_Correlation_OrigER_10\"، يشير الرقم إلى مقياس \"القياس "
+"المكاني لقياسات التشويش\" المحدد. لقد بدأت بقياس التشويش عند 4 مقاييس، ولكن "
+"قد تحتاج أو لا تحتاج إلى جميعها بناءً على القواعد المختارة."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:393
+msgid "Add the **FlagImage** module from the ‘Data Tools’ category."
+msgstr "أضف وحدة **FlagImage** من فئة \"أدوات البيانات\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:395
+msgid "Leave the flag category as ‘Metadata’, and the name as ‘QCFlag’"
+msgstr "اترك فئة العلم على أنها \"البيانات الوصفية\"، والاسم على أنه \"QCFlag\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:397
+msgid ""
+"If you had created many bins in your classification, you would set this name"
+" as something more descriptive, such as ‘QCDebris’, since you’d have a "
+"different flag name for each bin in your classifier."
+msgstr ""
+"إذا كنت قد أنشأت العديد من الفئات في تصنيفك، فستقوم بتعيين هذا الاسم على أنه"
+" شيء أكثر وصفًا، مثل \"QCDebris\"، نظرًا لأنه سيكون لديك اسم علامة مختلف لكل"
+" فئة في المصنف الخاص بك."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:401
+msgid "Leave the ‘Skip image set if flagged?’ setting at no"
+msgstr "اترك خيار \"تخطي مجموعة الصور إذا تم وضع علامة عليها؟\" على \"لا\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:403
+msgid ""
+"Your classifier probably wasn’t incredibly accurate, so setting this to "
+"‘yes’ might result in throwing out real data while still not excluding all "
+"the bad images. Nevertheless, if you had far more images than you felt you "
+"needed you *could* set this to yes."
+msgstr ""
+"ربما لم يكن مصنفك دقيقًا للغاية، لذا فإن ضبط هذا الخيار على \"نعم\" قد يؤدي "
+"إلى استبعاد بيانات حقيقية مع عدم استبعاد جميع الصور غير الصحيحة. مع ذلك، إذا"
+" كان لديك عدد كبير من الصور يفوق حاجتك، فيمكنك ضبط هذا الخيار على \"نعم\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:408
+msgid ""
+"Set ‘Flag is based on’ to ‘Rules’ and provide the path and file information "
+"to your rules text file."
+msgstr ""
+"قم بتعيين \"Flag is based on\" إلى \"Rules\" وقم بتوفير مسار ومعلومات الملف "
+"لملف نص القواعد الخاص بك."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:411
+msgid ""
+"Set the Class number to whatever class in your rule set represents the bad "
+"images- this is 2 if you kept the default bins and dragged bad images to the"
+" ‘Negative’ bin."
+msgstr ""
+"قم بتعيين رقم الفئة إلى أي فئة في مجموعة القواعد الخاصة بك تمثل الصور السيئة"
+" - وهذا هو 2 إذا احتفظت بالصناديق الافتراضية وسحبت الصور السيئة إلى صندوق "
+"\"السلبية\"."
+
+#: ../../source/QualityControl/BBBC022_QualityControlExercise.md:415
+msgid "Save your pipeline."
+msgstr "احفظ مسار البيانات الخاص بك."
