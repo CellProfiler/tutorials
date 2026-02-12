@@ -93,8 +93,8 @@ msgid ""
 "This module is adapted from the ImageJ plugin, Colour_Deconvolution.java "
 "written by A.C. Ruifrok, whose paper forms the basis for this code."
 msgstr ""
-"Este módulo foi adaptado do plug-in do ImageJ, Colour_Deconvolution.java, "
-"escrito por A.C. Ruifrok, cujo artigo forma a base para este código."
+"Este módulo foi adaptado do plugin do ImageJ “Colour_Deconvolution.java”, "
+"escrito por A.C. Ruifrok, cujo artigo serve de base para este código."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:33
 msgid "**Goals of this exercise:**"
