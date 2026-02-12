@@ -619,12 +619,11 @@ msgid ""
 "properties file, and potentially requires you to troubleshoot what’s wrong "
 "with the SQL call if you type it in incorrectly."
 msgstr ""
-"**Edite o arquivo de propriedades manualmente (recomendado):** <br> Este "
+"**Editar o arquivo “.properties” manualmente (recomendado):** <br> este "
 "método tem a vantagem de que os filtros criados são permanentes; eles não "
-"serão perdidos quando você fechar e reabrir o CPA. No entanto, exige que "
-"você edite o arquivo de propriedades e, potencialmente, exige que você "
-"solucione o que há de errado com a chamada SQL se você digitá-la "
-"incorretamente."
+"serão perdidos quando você fechar e reabrir o CPA. Por outro lado, ele exige"
+" editar o arquivo “.properties” e pode exigir que você resolva problemas no "
+"comando SQL caso digite algo incorretamente."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:259
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:305
