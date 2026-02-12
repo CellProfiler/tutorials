@@ -964,7 +964,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:401
 msgid "Leave the ‘Skip image set if flagged?’ setting at no"
-msgstr "Deixe a configuração \"Skip image set if flagged?\" em não"
+msgstr "Em “Skip image set if flagged?:”, selecione “No”."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:403
 msgid ""
