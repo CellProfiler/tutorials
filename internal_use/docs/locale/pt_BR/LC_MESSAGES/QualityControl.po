@@ -458,9 +458,9 @@ msgid ""
 "‘HighSat_ER’ for high outliers in the oversaturation graph of the ER "
 "channel)."
 msgstr ""
-"No menu suspenso \"gate\" (porta), selecione CREATE NEW GATE (criar nova "
-"porta) e dê a ela um nome (como \"HighSat_ER\" para outliers altos no "
-"gráfico de supersaturação do canal ER)."
+"No menu suspenso “gate”, selecione “CREATE NEW GATE” e dê um nome para ele "
+"(por exemplo, “HighSat_ER”, para outliers altos no gráfico de saturação do "
+"canal de ER)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:186
 msgid ""
