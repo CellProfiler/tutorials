@@ -666,7 +666,7 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:285
 msgid "Omit the `OR` after your last gate measurement."
-msgstr "Omita o `OR` após a última medição do portão."
+msgstr "Não inclua o 'OR' após a última medida do gate."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:287
 msgid ""
