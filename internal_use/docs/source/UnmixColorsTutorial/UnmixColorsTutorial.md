@@ -38,8 +38,7 @@ absorbance in the Custom mode.
 
 ## **Materials necessary for this exercise:**
 
-- Histopathological image of parathyroid adenoma. Hematoxylin and eosin
-  : stain in a slide.
+- Histopathological image of parathyroid adenoma. Hematoxylin and eosin: stain in a slide.
 
 **Example 1:** Parathyroid Adenoma
 <br>
