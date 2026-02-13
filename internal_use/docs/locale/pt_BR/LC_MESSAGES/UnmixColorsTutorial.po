@@ -353,7 +353,7 @@ msgid ""
 "last option Clear File List)"
 msgstr ""
 "1\\. Limpe a lista de arquivos (clique com o botão direito dentro da caixa "
-"de arquivos -> clique na última opção Limpar lista de arquivos)"
+"de arquivos e selecione a última opção, “Clear File List”)."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:182
 msgid "Drag and drop the Example 2 image."
