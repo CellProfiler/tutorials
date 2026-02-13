@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:73
 msgid "Hit the **\"update\"** button to populate"
-msgstr "Clique no botão **\"atualizar\"** para preencher"
+msgstr "Clique no botão **“update”** para preencher"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:80
 msgid "The **UnmixColors module:**"
