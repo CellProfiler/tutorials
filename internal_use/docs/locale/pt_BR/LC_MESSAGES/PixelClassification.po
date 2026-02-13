@@ -251,7 +251,7 @@ msgstr "Abra a janela **Feature Selection** e adicione todas as features."
 
 #: ../../source/PixelClassification/PixelClassification.md:115
 msgid "Open the **Training** window."
-msgstr "Abra a janela **Treinamento**."
+msgstr "Abra a janela **Training**."
 
 #: ../../source/PixelClassification/PixelClassification.md:116
 msgid ""
