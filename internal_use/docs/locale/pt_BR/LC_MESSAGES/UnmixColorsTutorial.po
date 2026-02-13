@@ -153,7 +153,7 @@ msgstr "Em “Assign a name to:”, selecione “All images”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:68
 msgid "Select the image type: Color image"
-msgstr "Selecione o tipo de imagem: Imagem colorida"
+msgstr "Em “Select the image type:”, selecione “Color image”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:70
 msgid ""
