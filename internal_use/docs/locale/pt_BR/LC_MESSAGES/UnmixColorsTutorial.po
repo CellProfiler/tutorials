@@ -289,8 +289,8 @@ msgid ""
 "The 5th icon lets you change the view by zooming, by dragging and drawing a "
 "box to zoom in on."
 msgstr ""
-"O quinto ícone permite que você altere a visualização por meio do zoom, "
-"arrastando e desenhando uma caixa para aumentar o zoom."
+"O 5º ícone permite aplicar zoom, clicando e arrastando para desenhar uma "
+"caixa na área que você quer ampliar."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:149
 msgid "Zoom in on the image in order to see the quality of the separation."
