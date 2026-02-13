@@ -247,7 +247,7 @@ msgstr ""
 
 #: ../../source/PixelClassification/PixelClassification.md:114
 msgid "Open the **Feature Selection** window and add all features."
-msgstr "Abra a janela **Seleção de recursos** e adicione todos os recursos."
+msgstr "Abra a janela **Feature Selection** e adicione todas as features."
 
 #: ../../source/PixelClassification/PixelClassification.md:115
 msgid "Open the **Training** window."
