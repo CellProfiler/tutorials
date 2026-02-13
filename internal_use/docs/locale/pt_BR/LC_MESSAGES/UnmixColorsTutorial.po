@@ -340,8 +340,8 @@ msgid ""
 "**Now let’s try another example of the same type of tissue and staining "
 "(Example 2 image):**"
 msgstr ""
-"**Agora vamos tentar outro exemplo do mesmo tipo de tecido e coloração "
-"(imagem do Exemplo 2):**"
+"**Agora vamos testar outro exemplo do mesmo tipo de tecido e coloração "
+"(imagem “Example 2”):**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:177
 msgid "Please go back to your **Images** Module"
