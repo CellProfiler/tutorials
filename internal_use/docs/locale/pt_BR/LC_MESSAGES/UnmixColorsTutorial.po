@@ -149,7 +149,7 @@ msgstr "Selecione o módulo **NameAndType**."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:66
 msgid "Assign a name to: All images"
-msgstr "Atribuir um nome a: Todas as imagens"
+msgstr "Em “Assign a name to:”, selecione “All images”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:68
 msgid "Select the image type: Color image"
