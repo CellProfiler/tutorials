@@ -89,7 +89,7 @@ msgid ""
 "Now, let’s take a look at how ilastik can be used together with "
 "CellProfiler!"
 msgstr ""
-"Agora, vamos dar uma olhada em como o ilastik pode ser usado junto com o "
+"Agora, vamos ver como o ilastik pode ser usado em conjunto com o "
 "CellProfiler!"
 
 #: ../../source/PixelClassification/PixelClassification.md:47
