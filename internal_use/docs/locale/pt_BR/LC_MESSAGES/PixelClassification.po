@@ -388,8 +388,8 @@ msgstr ""
 #: ../../source/PixelClassification/PixelClassification.md:176
 msgid "Note that you're producing a two channel image (Color Image)."
 msgstr ""
-"Observe que você está produzindo uma imagem de dois canais (imagem "
-"colorida)."
+"Observe que você está gerando uma imagem com dois canais (uma “Color "
+"Image”)."
 
 #: ../../source/PixelClassification/PixelClassification.md:178
 msgid "III. Segmenting probabilities with CellProfiler"
