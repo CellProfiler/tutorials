@@ -234,8 +234,8 @@ msgid ""
 "Zoom-in far enough that the grid is no longer visible. This will speed up "
 "the *Live Update*."
 msgstr ""
-"Aumente o zoom o suficiente para que a grade não seja mais visível. Isso "
-"acelerará a *Live Update*."
+"Aproxime (zoom) o suficiente para que a grade não fique mais visível. Isso "
+"vai acelerar o *Live Update*."
 
 #: ../../source/PixelClassification/PixelClassification.md:111
 msgid ""
