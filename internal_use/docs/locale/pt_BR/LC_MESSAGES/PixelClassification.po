@@ -364,7 +364,7 @@ msgstr "Altere **Transpose to Axis Order** para `cyx`."
 
 #: ../../source/PixelClassification/PixelClassification.md:173
 msgid "Change **Format** to `tiff`."
-msgstr "Altere **Formato** para `tiff`."
+msgstr "Altere **Format** para `tiff`."
 
 #: ../../source/PixelClassification/PixelClassification.md:174
 msgid ""
