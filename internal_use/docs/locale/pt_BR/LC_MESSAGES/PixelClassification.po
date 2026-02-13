@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../source/PixelClassification/PixelClassification.md:47
 msgid "I. The DIC conundrum"
-msgstr "I. O enigma DIC"
+msgstr "I. O desafio das imagens DIC"
 
 #: ../../source/PixelClassification/PixelClassification.md:49
 msgid ""
