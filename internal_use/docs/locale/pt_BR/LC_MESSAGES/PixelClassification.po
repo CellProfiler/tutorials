@@ -451,8 +451,8 @@ msgid ""
 "Run the pipeline and review the segmentation.  How robustly did it perform "
 "on different images?"
 msgstr ""
-"Execute o pipeline e analise a segmentação.  Qual foi a robustez do "
-"desempenho em diferentes imagens?"
+"Execute o pipeline e revise a segmentação. Quão robusta ela foi em "
+"diferentes imagens?"
 
 #: ../../source/PixelClassification/PixelClassification.md:192
 msgid ""
