@@ -416,9 +416,9 @@ msgid ""
 "While we encourage you to do this step yourself in FIJI, we do provide "
 "reference images you can try (UnmixColorsTutorial/CustomReferenceImages/)"
 msgstr ""
-"Embora recomendemos que você realize essa etapa por conta própria no FIJI, "
-"fornecemos imagens de referência que você pode experimentar "
-"(UnmixColorsTutorial/CustomReferenceImages/)"
+"Embora incentivemos você a fazer esta etapa no FIJI, fornecemos imagens de "
+"referência que você pode usar para testar "
+"(UnmixColorsTutorial/CustomReferenceImages/)."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:228
 msgid "CellProfiler can then use this to estimate your RGB absorbance."
