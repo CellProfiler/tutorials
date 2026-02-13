@@ -342,7 +342,7 @@ msgstr ""
 
 #: ../../source/PixelClassification/PixelClassification.md:166
 msgid "Export the probability maps"
-msgstr "Exportar os mapas de probabilidade"
+msgstr "Exportando os mapas de probabilidade"
 
 #: ../../source/PixelClassification/PixelClassification.md:168
 msgid "When satisfied with the results, export the probability maps."
