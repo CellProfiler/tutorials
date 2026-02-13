@@ -152,7 +152,7 @@ msgstr ""
 
 #: ../../source/PixelClassification/PixelClassification.md:72
 msgid "Run the pipeline and take note of the output."
-msgstr "Execute o pipeline e anote o resultado."
+msgstr "Execute o pipeline e observe a imagem de saída."
 
 #: ../../source/PixelClassification/PixelClassification.md:79
 msgid "II. Pixel-based classification with Ilastik"
