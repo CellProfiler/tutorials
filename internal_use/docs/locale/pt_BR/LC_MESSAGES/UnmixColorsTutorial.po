@@ -136,7 +136,7 @@ msgstr "**Importando dados no CellProfiler**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:56
 msgid "Highlight the **Images** module."
-msgstr "Destaque o módulo **Imagens**."
+msgstr "Selecione o módulo **Imagens**."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:57
 msgid "Drag-and-drop the Example 1 image only into the Images module window."
