@@ -476,9 +476,9 @@ msgid ""
 " color deconvolution.” Analytical & Quantitative Cytology & Histology, 23: "
 "291-299."
 msgstr ""
-"Ruifrok AC, Johnston DA. (2001) \"Quantification of histochemical staining "
-"by color deconvolution.\" Analytical &amp; Quantitative Cytology &amp; "
-"Histology, 23: 291-299."
+"Ruifrok AC, Johnston DA. (2001) “Quantification of histochemical staining by"
+" color deconvolution.” Analytical & Quantitative Cytology & Histology, 23: "
+"291–299."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:257
 msgid "**Images sources:**"
