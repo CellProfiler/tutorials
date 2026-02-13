@@ -106,9 +106,9 @@ msgid ""
 "UnmixColors module using reference absorbances and calculate your absorbance"
 " in the Custom mode."
 msgstr ""
-"Neste exercício, vamos orientá-lo a separar amostras coradas por meio do "
-"módulo UnmixColors usando absorbâncias de referência e calcular sua "
-"absorbância no modo Custom (Personalizado)."
+"Neste exercício, vamos guiar você a separar amostras coradas usando o módulo"
+" UnmixColors com absorbâncias de referência e a calcular suas próprias "
+"absorbâncias no modo “Custom”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:39
 msgid "**Materials necessary for this exercise:**"
