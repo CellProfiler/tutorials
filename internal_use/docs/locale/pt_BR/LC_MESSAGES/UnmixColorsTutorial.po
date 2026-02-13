@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:97
 msgid "Name the output image as Hematoxylin"
-msgstr "Nomeie a imagem de saída como Hematoxilina"
+msgstr "Em “Name the output image as”, escreva “Hematoxylin”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:98
 msgid "Choose the Stain as Hematoxylin"
