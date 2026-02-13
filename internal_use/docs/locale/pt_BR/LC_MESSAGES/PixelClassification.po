@@ -356,9 +356,7 @@ msgstr "Abra a janela **Prediction Export**."
 
 #: ../../source/PixelClassification/PixelClassification.md:171
 msgid "Click the **Choose Export Settings** window."
-msgstr ""
-"Clique na janela **Choose Export Settings** (Escolher configurações de "
-"exportação)."
+msgstr "Clique na janela **Choose Export Settings**."
 
 #: ../../source/PixelClassification/PixelClassification.md:172
 msgid "Change **Transpose to Axis Order** to `cyx`."
