@@ -352,7 +352,7 @@ msgstr ""
 
 #: ../../source/PixelClassification/PixelClassification.md:170
 msgid "Open the **Prediction Export** window."
-msgstr "Abra a janela **Exportação de previsão**."
+msgstr "Abra a janela **Prediction Export**."
 
 #: ../../source/PixelClassification/PixelClassification.md:171
 msgid "Click the **Choose Export Settings** window."
