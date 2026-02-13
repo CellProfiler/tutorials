@@ -257,8 +257,8 @@ msgid ""
 "**Tip: The image tools on the top toolbar may be helpful to see the details "
 "on your image/objects:**"
 msgstr ""
-"**Dica: as ferramentas de imagem na barra de ferramentas superior podem ser "
-"úteis para ver os detalhes de sua imagem/objetos:**"
+"**Dica: as ferramentas de imagem na barra superior podem ajudar a ver os "
+"detalhes da sua imagem/objetos:**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:137
 msgid ""
