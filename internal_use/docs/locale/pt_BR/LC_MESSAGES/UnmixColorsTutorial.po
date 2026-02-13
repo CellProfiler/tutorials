@@ -207,7 +207,7 @@ msgstr "Clique em “Add another stain”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:100
 msgid "Name this new output image as Eosin"
-msgstr "Nomeie essa nova imagem de saída como Eosin"
+msgstr "Em “Name the output image as”, escreva “Eosin”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:101
 msgid "Choose the Stain as Eosin"
