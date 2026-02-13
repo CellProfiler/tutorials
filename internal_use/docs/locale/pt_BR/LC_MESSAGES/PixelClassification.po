@@ -393,7 +393,7 @@ msgstr ""
 
 #: ../../source/PixelClassification/PixelClassification.md:178
 msgid "III. Segmenting probabilities with CellProfiler"
-msgstr "III. Segmentação de probabilidades com o CellProfiler"
+msgstr "III. Segmentando probabilidades com o CellProfiler"
 
 #: ../../source/PixelClassification/PixelClassification.md:180
 msgid ""
