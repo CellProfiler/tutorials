@@ -218,8 +218,8 @@ msgid ""
 "**Tip: Use the <img src=\"images/info.png\" width=\"40\"/> to learn more or "
 "if you have questions.**"
 msgstr ""
-"**Dica: use <img src=\"images/info.png\" width=\"40\"/> para saber mais ou "
-"se tiver dúvidas.**"
+"**Dica: use o botão <img src=\"images/info.png\" width=\"40\"/> para saber "
+"mais ou se tiver dúvidas.**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:110
 msgid ""
