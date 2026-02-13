@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:64
 msgid "Highlight the **NameAndType** module."
-msgstr "Destaque o módulo **NameAndType**."
+msgstr "Selecione o módulo **NameAndType**."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:66
 msgid "Assign a name to: All images"
