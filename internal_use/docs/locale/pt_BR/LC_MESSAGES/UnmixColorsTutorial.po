@@ -482,7 +482,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:257
 msgid "**Images sources:**"
-msgstr "**Fontes de imagens:**"
+msgstr "**Fonte de imagens:**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:259
 msgid ""
