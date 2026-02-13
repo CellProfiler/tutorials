@@ -321,7 +321,7 @@ msgid ""
 "Change the Hematoxylin stain for Feulgen Stain and the Eosin Stain for "
 "Azocarmine."
 msgstr ""
-"Troque o corante “Hematoxylin” por “Feulgen Stain” e o corante “Eosin” por "
+"Troque o corante “Hematoxylin” por “Feulgen” e o corante “Eosin” por "
 "“Azocarmine”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:165
