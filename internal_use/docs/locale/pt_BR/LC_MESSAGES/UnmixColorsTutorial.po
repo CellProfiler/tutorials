@@ -451,9 +451,8 @@ msgid ""
 "**Note:** If the resulting image doesn’t match your expectation you can try "
 "again using other regions to estimate your RGB absorbance."
 msgstr ""
-"**Nota:** Nota: se a imagem resultante não corresponder ao que você espera, "
-"você pode tentar novamente usando outras regiões para estimar a absorbância "
-"RGB."
+"**Nota:** se a imagem resultante não corresponder ao que você espera, você "
+"pode tentar novamente usando outras regiões para estimar a absorbância RGB."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:247
 msgid "**Congratulations, you finished the Unmix Colors Tutorial.**"
