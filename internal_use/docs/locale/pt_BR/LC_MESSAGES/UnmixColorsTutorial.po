@@ -203,7 +203,7 @@ msgstr "Em “Stain”, selecione “Hematoxylin”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:99
 msgid "Add another stain"
-msgstr "Adicionar outra mancha"
+msgstr "Clique em “Add another stain”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:100
 msgid "Name this new output image as Eosin"
