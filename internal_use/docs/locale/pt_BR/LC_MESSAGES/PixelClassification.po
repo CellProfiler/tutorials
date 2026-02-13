@@ -186,7 +186,8 @@ msgstr ""
 "consiga fazer essa distinção automaticamente em um conjunto de imagens. O "
 "ilastik oferece uma interface para rotular, marcar e identificar os objetos "
 "de interesse dentro de uma imagem. Essas anotações formam o que, em "
-"aprendizado de máquina, chamamos de training set (conjunto de treinamento)."
+"aprendizado de máquina, chamamos de *training set* (conjunto de "
+"treinamento)."
 
 #: ../../source/PixelClassification/PixelClassification.md:94
 msgid "Annotation with 2 Labels"
