@@ -422,7 +422,8 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:228
 msgid "CellProfiler can then use this to estimate your RGB absorbance."
-msgstr "O CellProfiler pode então usar isso para estimar sua absorbância RGB."
+msgstr ""
+"O CellProfiler pode então usar essas imagens para estimar a absorbância RGB."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:230
 msgid ""
