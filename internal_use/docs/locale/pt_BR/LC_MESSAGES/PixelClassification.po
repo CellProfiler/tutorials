@@ -147,8 +147,8 @@ msgid ""
 "Add the **Threshold** module to the pipeline. Select the image name (which "
 "should be 'DNA by default')."
 msgstr ""
-"Adicione o módulo **Threshold** ao pipeline. Selecione o nome da imagem (que"
-" deve ser \"DNA por padrão\")."
+"Adicione o módulo **Threshold** ao pipeline. Em “Select the input image:”, "
+"selecione o nome da imagem (por padrão, “DNA”)."
 
 #: ../../source/PixelClassification/PixelClassification.md:72
 msgid "Run the pipeline and take note of the output."
