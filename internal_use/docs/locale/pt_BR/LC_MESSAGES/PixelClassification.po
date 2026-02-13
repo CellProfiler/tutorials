@@ -360,7 +360,7 @@ msgstr "Clique na janela **Choose Export Settings**."
 
 #: ../../source/PixelClassification/PixelClassification.md:172
 msgid "Change **Transpose to Axis Order** to `cyx`."
-msgstr "Altere **Transpor para ordem do eixo** para `cyx`."
+msgstr "Altere **Transpose to Axis Order** para `cyx`."
 
 #: ../../source/PixelClassification/PixelClassification.md:173
 msgid "Change **Format** to `tiff`."
