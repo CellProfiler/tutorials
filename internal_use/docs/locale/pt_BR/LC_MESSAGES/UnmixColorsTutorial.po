@@ -364,8 +364,8 @@ msgid ""
 "Hit run to run your two **UnmixColors** modules to try to separate the "
 "hematoxylin from the eosin staining in this new example."
 msgstr ""
-"Pressione run para executar seus dois módulos **UnmixColors** para tentar "
-"separar a coloração de hematoxilina da coloração de eosina nesse novo "
+"Clique em “Run” para executar os dois módulos e **UnmixColors** tentar "
+"separar a coloração de hematoxilina da coloração de eosina neste novo "
 "exemplo."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:193
