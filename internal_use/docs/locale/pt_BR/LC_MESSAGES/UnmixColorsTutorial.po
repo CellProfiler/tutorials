@@ -328,8 +328,8 @@ msgstr ""
 msgid ""
 "**(!) Remember to rename the output images to stay Hematoxylin and Eosin**"
 msgstr ""
-"**(!) Lembre-se de renomear as imagens de saída para ficarem Hematoxilina e "
-"Eosina**"
+"**(!) Lembre-se de manter os nomes das imagens de saída como “Hematoxylin” e"
+" “Eosin”.**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:167
 msgid "Observe the difference between the first and the second separation."
