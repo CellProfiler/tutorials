@@ -430,8 +430,8 @@ msgid ""
 " files was cho, remember to **Select the image type** as **Color Image** for"
 " .tiff files."
 msgstr ""
-"No módulo NamesAndTypes, configure os arquivos “.png” como “phase” e os "
-"arquivos “.tiff” como “cho”. Lembre-se de, em “Select the image type:”, "
+"No módulo **NamesAndTypes**, configure os arquivos “.png” como “phase” e os "
+"arquivos “.tiff” como “cho”. Lembre-se de, em **Select the image type:**, "
 "selecionar “Color image” para os arquivos “.tiff”."
 
 #: ../../source/PixelClassification/PixelClassification.md:189
