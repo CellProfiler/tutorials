@@ -345,7 +345,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:177
 msgid "Please go back to your **Images** Module"
-msgstr "Volte para seu módulo **Imagens**"
+msgstr "Volte para o módulo **Images**."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:179
 msgid ""
