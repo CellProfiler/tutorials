@@ -294,7 +294,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:149
 msgid "Zoom in on the image in order to see the quality of the separation."
-msgstr "Amplie a imagem para ver a qualidade da separação."
+msgstr "Aproxime a imagem (zoom) para avaliar a qualidade da separação."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:156
 msgid ""
