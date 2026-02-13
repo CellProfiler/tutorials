@@ -443,8 +443,8 @@ msgid ""
 "After estimating both Stains you can now test the color separation using the"
 " Test Mode."
 msgstr ""
-"Depois de estimar ambas as manchas, você pode testar a separação de cores "
-"usando o modo de teste."
+"Depois de estimar os dois “Stains”, você pode testar a separação de cores "
+"usando o “Test Mode”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:244
 msgid ""
