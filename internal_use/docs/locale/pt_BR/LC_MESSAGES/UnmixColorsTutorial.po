@@ -314,7 +314,7 @@ msgid ""
 "in your pipeline."
 msgstr ""
 "Por exemplo, você pode clicar com o botão direito no módulo **UnmixColors** "
-"e duplicá-lo em seu pipeline."
+"e selecionar “Duplicate” para duplicá-lo no pipeline."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:163
 msgid ""
