@@ -258,8 +258,8 @@ msgid ""
 "Click the **+** button of the Training window to add a label. Add two labels"
 " named *background* and *CHO*."
 msgstr ""
-"Clique no botão **+** da janela Treinamento para adicionar um rótulo. "
-"Adicione dois rótulos chamados *background* e *CHO*."
+"Na janela Training, clique no botão **+** para adicionar um rótulo. Adicione"
+" dois rótulos chamados *background* e *CHO*."
 
 #: ../../source/PixelClassification/PixelClassification.md:118
 msgid ""
