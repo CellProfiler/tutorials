@@ -357,7 +357,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:182
 msgid "Drag and drop the Example 2 image."
-msgstr "Arraste e solte a imagem do Exemplo 2."
+msgstr "Arraste e solte a imagem “Example 2”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:184
 msgid ""
