@@ -199,7 +199,7 @@ msgstr "Em “Name the output image as”, escreva “Hematoxylin”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:98
 msgid "Choose the Stain as Hematoxylin"
-msgstr "Em “Choose the Stain as”, selecione “Hematoxylin”."
+msgstr "Em “Stain”, selecione “Hematoxylin”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:99
 msgid "Add another stain"
