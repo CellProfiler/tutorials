@@ -456,7 +456,7 @@ msgstr ""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:247
 msgid "**Congratulations, you finished the Unmix Colors Tutorial.**"
-msgstr "**Parabéns, você terminou o tutorial Unmix Colors."
+msgstr "**Parabéns, você concluiu o tutorial do UnmixColors.\""
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:249
 msgid "**References:**"
