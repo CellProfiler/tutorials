@@ -266,8 +266,8 @@ msgid ""
 "Using the paint brush tool, label pixels (one at a time) for each class "
 "until you are satisfied with the segmentation."
 msgstr ""
-"Usando a ferramenta pincel, rotule os pixels (um de cada vez) para cada "
-"classe até ficar satisfeito com a segmentação."
+"rótuloUsando a ferramenta pincel, rotule os pixels (um de cada vez) para "
+"cada classe até ficar satisfeito com a segmentação."
 
 #: ../../source/PixelClassification/PixelClassification.md:121
 msgid ""
