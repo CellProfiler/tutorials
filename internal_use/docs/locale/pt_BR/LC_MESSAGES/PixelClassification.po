@@ -191,7 +191,7 @@ msgstr ""
 
 #: ../../source/PixelClassification/PixelClassification.md:94
 msgid "Annotation with 2 Labels"
-msgstr "Anotação com 2 rótulos"
+msgstr "Anotação com 2 rótulos."
 
 #: ../../source/PixelClassification/PixelClassification.md:96
 msgid "Open ilastik"
