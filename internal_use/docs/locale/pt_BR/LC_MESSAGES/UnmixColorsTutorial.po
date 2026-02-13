@@ -141,8 +141,7 @@ msgstr "Selecione o módulo **Images**."
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:57
 msgid "Drag-and-drop the Example 1 image only into the Images module window."
 msgstr ""
-"Arraste e solte a imagem do Exemplo 1 somente na janela do módulo Images "
-"(Imagens)."
+"Arraste e solte apenas a imagem “Example 1” na janela do módulo Images."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:64
 msgid "Highlight the **NameAndType** module."
