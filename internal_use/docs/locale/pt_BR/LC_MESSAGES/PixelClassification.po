@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Beth Cimini, 2024
+# Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-15 11:33-0400\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2024\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,16 +54,17 @@ msgid ""
 "raw intensity many [classical image processing tecnhiques] can be foiled; "
 "DIC images of cells are a common biological example."
 msgstr ""
-"CellProfiler é capaz de segmentação precisa e confiável de células, "
+"O CellProfiler é capaz de segmentar células com precisão e confiabilidade "
 "utilizando uma ampla coleção de métodos clássicos de processamento de "
-"imagem. Leia a documentação no módulo [IdentifyPrimaryObjects], por exemplo,"
-" para ter uma ideia disso, por exemplo, limite, desagregação e bacia "
-"hidrográfica. No entanto, apesar dos muitos problemas que o CellProfiler "
-"pode resolver prontamente, certos tipos de imagens são particularmente "
-"desafiadores. Por exemplo, quando os objetos biologicamente relevantes são "
-"definidos mais pela textura e pelo contexto do que pela intensidade bruta, "
-"muitas [técnicas clássicas de processamento de imagem] podem ser frustradas;"
-" Imagens DIC de células são um exemplo biológico comum."
+"imagens. Consulte, por exemplo, a documentação do módulo "
+"[IdentifyPrimaryObjects] para ter uma noção desses métodos (por exemplo, "
+"limiarização, declumping e watershed). No entanto, apesar dos muitos "
+"problemas que o CellProfiler consegue resolver com facilidade, certos tipos "
+"de imagens são particularmente desafiadores. Por exemplo, quando os objetos "
+"biologicamente relevantes são definidos mais por textura e contexto do que "
+"pela intensidade bruta, muitas [técnicas clássicas de processamento de "
+"imagens] podem falhar; imagens DIC de células são um exemplo biológico "
+"comum."
 
 #: ../../source/PixelClassification/PixelClassification.md:36
 msgid ""
