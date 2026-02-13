@@ -242,8 +242,8 @@ msgid ""
 "Begin by labeling pixels for two classes: a background class and a CHO cell "
 "class."
 msgstr ""
-"Comece rotulando os pixels para duas classes: uma classe de fundo e uma "
-"classe de células CHO."
+"Comece rotulando pixels para duas classes: uma classe de fundo "
+"(*background*) e uma classe de célula CHO."
 
 #: ../../source/PixelClassification/PixelClassification.md:114
 msgid "Open the **Feature Selection** window and add all features."
