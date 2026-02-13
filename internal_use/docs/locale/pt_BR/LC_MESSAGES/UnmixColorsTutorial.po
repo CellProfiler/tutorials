@@ -211,7 +211,7 @@ msgstr "Em “Name the output image as”, escreva “Eosin”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:101
 msgid "Choose the Stain as Eosin"
-msgstr "Escolha a coloração como Eosina"
+msgstr "Em “Stain”, selecione “Eosin”."
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:103
 msgid ""
