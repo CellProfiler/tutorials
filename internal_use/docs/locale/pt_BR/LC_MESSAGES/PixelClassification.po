@@ -102,9 +102,9 @@ msgid ""
 " The goal will be to identify individual Chinese Hamster Ovary (CHO) cells "
 "and the regions they occupy."
 msgstr ""
-"Considere segmentar imagens DIC, como aquelas do conjunto de imagens "
-"[BBBC030]. O objetivo será identificar células individuais do ovário do "
-"hamster chinês (CHO) e as regiões que ocupam."
+"Considere segmentar imagens DIC, como as do conjunto [BBBC030]. O objetivo "
+"será identificar células individuais de ovário de hamster chinês (CHO) e as "
+"regiões que elas ocupam."
 
 #: ../../source/PixelClassification/PixelClassification.md:58
 msgid ""
