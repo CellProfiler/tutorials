@@ -405,8 +405,8 @@ msgstr ""
 "As imagens de mapa de probabilidade geradas no ilastik podem então ser "
 "processadas no CellProfiler para identificar e medir os objetos CHO nas "
 "imagens DIC. Os mapas de probabilidade são imagens em tons de cinza e podem "
-"ser tratados como se fossem o resultado de uma “coloração” (stain) para as "
-"células."
+"ser tratados como se fossem o resultado de uma “coloração” (*stain*) para as"
+" células."
 
 #: ../../source/PixelClassification/PixelClassification.md:185
 msgid "Open CellProfiler."
