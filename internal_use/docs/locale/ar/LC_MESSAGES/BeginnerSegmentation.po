@@ -221,10 +221,9 @@ msgid ""
 "about them in [CellProfiler plugins documentation](plugins.cellprofiler.org)"
 " to learn more. To quote from that site:"
 msgstr ""
-"يحتوي CellProfiler على عدد من وحدات الملحقات الإضافية التي تعمل كوحدات نمطية"
-" ضمن مسار معالجة البيانات. تتوفر هذه الوحدات على GitHub. يمكنك الاطلاع على "
-"المزيد من المعلومات عنها في وثائق CellProfiler.cellprofiler.org. (مقتبس من "
-"الموقع المذكور)."
+"يحتوي CellProfiler على عدة ملحقات إضافية التي تعمل كوحدات نمطية ضمن مسار "
+"التحليل. تتوفر هذه الوحدات على GitHub. يمكنك الاطلاع على المزيد من المعلومات"
+" عنها في وثائق CellProfiler.cellprofiler.org. (مقتبس من الموقع المذكور)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:57
 msgid ""
