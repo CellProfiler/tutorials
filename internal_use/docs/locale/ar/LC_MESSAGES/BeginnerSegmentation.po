@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:50
 msgid "Plugins"
-msgstr "الإضافات"
+msgstr "الملحقات الإضافية"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:52
 msgid ""
