@@ -198,8 +198,9 @@ msgid ""
 "Accessing [ilastik](https://www.ilastik.org/) to use a trained pixel "
 "classification model via CellProfiler's plugins system."
 msgstr ""
-"الوصول إلى [ilastik](https://www.ilastik.org/) لاستخدام نموذج تصنيف البكسل "
-"المدرب عبر نظام المكونات الإضافية لـ CellProfiler."
+" كيفية الوصول إلى [ilastik](https://www.ilastik.org/) لاستخدام نموذج مدرب "
+"مسبقًا لتصنيف البكسلات ( pixel classification model) عبر الملحقات الإضافية "
+"لـ CellProfiler."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:48
 msgid ""
