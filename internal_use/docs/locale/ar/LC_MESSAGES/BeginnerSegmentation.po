@@ -97,7 +97,7 @@ msgid ""
 "Download the pipelines/materials for this tutorial. [Click here for "
 "download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip)."
 msgstr ""
-"قم بتنزيل ملفات/مواد هذا الدرس التعليمي. [انقر هنا "
+"قم بتنزيل ملفات و مواد هذا الدرس التعليمي. [انقر هنا "
 "للتنزيل](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:20
