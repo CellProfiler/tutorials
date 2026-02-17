@@ -52,9 +52,8 @@ msgid ""
 "computationally comfortable users)."
 msgstr ""
 "قم بتنزيل وتثبيت [Docker Desktop](https://www.docker.com/products/docker-"
-"desktop/) (موصى به للمستخدمين الأقل خبرة في الحوسبة) أو [Podman "
-"Desktop](https://podman.io) (بديل لـ Docker للمستخدمين الأكثر خبرة في "
-"الحوسبة)."
+"desktop/) (موصى به للمستخدمين الأقل خبرة تقنيًا) أو [Podman "
+"Desktop](https://podman.io) (بديل لـ Docker للمستخدمين الأكثر خبرة تقنيًا)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:10
 msgid ""
