@@ -189,8 +189,8 @@ msgid ""
 "[Cellpose](https://www.cellpose.org/), but the same strategy works for many "
 "tools which use this format)."
 msgstr ""
-"تحميل الأقنعة التي تم إنشاؤها بواسطة أدوات التجزئة الأخرى (في هذه الحالة، "
-"[Cellpose](https://www.cellpose.org/)، ولكن نفس الاستراتيجية تعمل مع العديد "
+"هنا مثال تحميل أقنعة (masks) تم إنشاؤها بواسطة أدوات تجزئة أخرى (في هذه "
+"الحالة، [Cellpose](https://www.cellpose.org/)، ولكن نفس الفكرة تصلح للعديد "
 "من الأدوات التي تستخدم هذا التنسيق)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:47
