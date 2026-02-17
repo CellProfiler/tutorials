@@ -87,9 +87,10 @@ msgid ""
 "download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip)."
 " (Delete/ignore the pipelines; we will just use the images.)"
 msgstr ""
-"حمّل الصور النموذجية من دليل تجزئة الصور للمبتدئين. [انقر هنا "
+"حمّل الصور النموذجية من دليل تجزئة الصور للمبتدئين (Beginner Segmentation). "
+"[انقر هنا "
 "للتحميل](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip)."
-" (احذف/تجاهل مسارات المعالجة؛ سنستخدم الصور فقط.)"
+" (احذف/تجاهل مسارات المعالجة (pipelines) الموجودة لأننا سنستخدم الصور فقط.)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:18
 msgid ""
