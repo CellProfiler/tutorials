@@ -32,8 +32,8 @@ msgid ""
 "Beth Cimini and Erin Weisbart\\ Imaging Platform, Broad Institute of MIT and"
 " Harvard, Cambridge, MA."
 msgstr ""
-"بيث سيميني وإيرين وايزبارت، منصة التصوير، معهد برود التابع لمعهد ماساتشوستس "
-"للتكنولوجيا وجامعة هارفارد، كامبريدج، ماساتشوستس."
+"Beth Cimini and Erin Weisbart\\ Imaging Platform, Broad Institute of MIT and"
+" Harvard, Cambridge, MA."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:6
 msgid "Preparation"
