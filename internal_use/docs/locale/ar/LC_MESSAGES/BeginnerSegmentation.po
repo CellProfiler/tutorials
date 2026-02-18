@@ -460,7 +460,7 @@ msgstr ""
 "تم إنشاء أقنعة الخلايا عن طريق الانتقال إلى مجلد الصور ثم تشغيل الأمر أدناه؛"
 " وهذا يتطلب بعض المعرفة بـ [صيغة سطر أوامر "
 "Cellpose](https://cellpose.readthedocs.io/en/latest/cli.html) ولكنه أسهل "
-"بكثير بالنسبة لعدد كبير من الصور."
+"بكثير عند وجود عدد كبير من الصور."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:140
 msgid ""
