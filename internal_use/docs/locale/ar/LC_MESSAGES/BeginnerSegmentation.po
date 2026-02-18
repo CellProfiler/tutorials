@@ -520,7 +520,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid "Start Test Mode Button"
-msgstr "زر بدء وضع الاختبار"
+msgstr "زر بدء وضع الاختبار (Test Mode)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid "Eye Icon"
