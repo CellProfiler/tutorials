@@ -589,8 +589,8 @@ msgid ""
 "there any setting you notice about it that is different than for the other "
 "images?"
 msgstr ""
-"قم بالتمرير لأسفل في قسم \"الأسماء والأنواع\" للعثور على الإدخال الذي يضيف "
-"الأقنعة - هل هناك أي إعداد تلاحظه يختلف عن الصور الأخرى؟"
+"قم بالتمرير للأسفل في وحدة \"NamesAndTypes\" للعثور على الإدخال المسؤول عن "
+"إضافة الأقنعة - هل هناك أي إعداد تلاحظه يختلف عن الصور الأخرى؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:172
 msgid ""
