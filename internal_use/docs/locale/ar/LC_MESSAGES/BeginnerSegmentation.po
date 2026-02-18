@@ -419,7 +419,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:124
 msgid "Only if you are curious - how did we make these label masks?"
-msgstr "فقط إذا كنت فضوليًا - كيف صنعنا هذه الأقنعة ذات الملصقات؟"
+msgstr "فقط إذا لديك فضول - كيف صنعنا أقنعة الأجسام التصنيفية (label masks)؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:126
 msgid ""
