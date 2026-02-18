@@ -573,7 +573,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:165
 msgid "Visualization of images and objects in the Workspace Viewer"
-msgstr "عرض الصور والأشياء في عارض مساحة العمل"
+msgstr "عرض الصور الأجسام المفحوصة في عارض مساحة العمل (Workspace Viewer)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:168
 msgid "Reverse engineer how this worked"
