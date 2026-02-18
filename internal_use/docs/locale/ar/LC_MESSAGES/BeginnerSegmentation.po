@@ -237,7 +237,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:60
 msgid "it is under active development"
-msgstr "وهو قيد التطوير النشط"
+msgstr "لا يزال قيد التطوير حاليًا"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:61
 msgid "it has a niche audience"
