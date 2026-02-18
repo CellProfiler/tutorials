@@ -524,7 +524,7 @@ msgstr "زر بدء وضع الاختبار (Test Mode)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid "Eye Icon"
-msgstr "رمز العين"
+msgstr "أيقونة العين"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid "Step Button"
