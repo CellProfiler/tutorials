@@ -551,7 +551,7 @@ msgid ""
 "width=\"120\" alt=\"Next Image Set button\"/> and repeat a couple of times "
 "to examine the segmentations on more images."
 msgstr ""
-"اضغط على زر مجموعة الصور التالية <img "
+"اضغط على زر مجموعة الصور التالية (Next Image Set) <img "
 "src=\"./TutorialImages/NextImageSet.png\" width=\"120\" alt=\"Next Image Set"
 " button\"/> وكرر ذلك عدة مرات لفحص التجزئة على المزيد من الصور."
 
