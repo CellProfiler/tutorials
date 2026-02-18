@@ -557,7 +557,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:155
 msgid "Next Image Set button"
-msgstr "زر تعيين الصورة التالية"
+msgstr "زر مجموعة الصور التالية (Next Image Set)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:157
 msgid "Question for you"
