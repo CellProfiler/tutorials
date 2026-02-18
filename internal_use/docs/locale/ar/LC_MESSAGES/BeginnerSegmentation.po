@@ -543,7 +543,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:154
 msgid "View Workspace Button"
-msgstr "زر عرض مساحة العمل"
+msgstr "زر عرض مساحة العمل (View Workspace)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:155
 msgid ""
