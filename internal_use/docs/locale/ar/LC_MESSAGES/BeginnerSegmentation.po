@@ -361,9 +361,9 @@ msgstr ""
 "ويمكنك توفيرها له بتثبيت برنامج Docker Desktop. لا تحتاج إلى إنشاء حساب "
 "لاستخدامه، ولكن قد تحتاج إلى إعادة تشغيل جهاز الكمبيوتر بعد اكتمال التثبيت. "
 "يُعد Podman Desktop بديلاً لـ Docker يدعمه CellProfiler أيضًا للمستخدمين ذوي"
-" الخبرة الحاسوبية الأكبر. بعد ذلك، عندما ترغب في استخدام إضافة Docker في "
-"CellProfiler، ما عليك سوى التأكد من أن Docker Desktop (أو Podman Desktop) "
-"مفتوح ويعمل، وسيتولى CellProfiler باقي الأمور!"
+" الخبرة الحاسوبية الأكبر. بعد ذلك، عندما ترغب في استخدام إضافات تحتاج Docker"
+" في CellProfiler، ما عليك سوى التأكد من أن Docker Desktop (أو Podman "
+"Desktop) مفتوح ويعمل، وسيتولى CellProfiler باقي الأمور تلقائيًا!"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:107
 msgid ""
