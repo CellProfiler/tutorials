@@ -581,7 +581,7 @@ msgstr "قم بتحليل كيفية عمل ذلك."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:170
 msgid "Open the NamesAndTypes module."
-msgstr "افتح وحدة الأسماء والأنواع."
+msgstr "افتح وحدة NamesAndTypes."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:171
 msgid ""
