@@ -448,7 +448,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:135
 msgid "Nuclei segmented in the Cellpose GUI"
-msgstr "تم تقسيم النوى في واجهة المستخدم الرسومية لبرنامج Cellpose"
+msgstr "تم تقسيم النوى عبر واجهة المستخدم الرسومية (GUI) لبرنامج Cellpose"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:138
 msgid ""
