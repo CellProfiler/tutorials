@@ -597,8 +597,8 @@ msgid ""
 "Find the entry in NamesAndTypes that has 2 rules the image has to pass, not "
 "just one - do you understand why that is?"
 msgstr ""
-"ابحث عن المدخل في NamesAndTypes الذي يحتوي على قاعدتين يجب أن تستوفيهما "
-"الصورة، وليس قاعدة واحدة فقط - هل تفهم السبب؟"
+"ابحث عن المدخل في NamesAndTypes الذي يتطلب  أن الصورة تستوفي قاعدتين "
+"(rules)، وليس قاعدة واحدة فقط - هل تفهم السبب لذلك؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:174
 msgid "Bonus-to-the-Bonus - add the provided nuclear segmentations as well"
