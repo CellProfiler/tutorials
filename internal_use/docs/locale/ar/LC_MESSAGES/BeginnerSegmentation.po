@@ -279,7 +279,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:74
 msgid "GitHub's \"Download Raw Files\" button"
-msgstr "زر \"تنزيل الملفات الخام\" في GitHub"
+msgstr "زر \"تنزيل الملفات الخام\" (Download Raw Files) في GitHub"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:79
 msgid ""
