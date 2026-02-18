@@ -256,8 +256,8 @@ msgid ""
 "it requires extra libraries or other dependencies we are unable or unwilling"
 " to require for CellProfiler"
 msgstr ""
-"يتطلب ذلك مكتبات إضافية أو تبعيات أخرى لا نستطيع أو لا نرغب في طلبها لبرنامج"
-" CellProfiler"
+"يتطلب ذلك مكتبات برمجية إضافية أو تبعيات أخرى لا نستطيع أو لا نرغب في "
+"إضافاتها لمت لبرنامج CellProfiler"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:65
 msgid "it has been contributed by a community member"
