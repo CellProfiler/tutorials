@@ -241,7 +241,7 @@ msgstr "لا يزال قيد التطوير حاليًا"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:61
 msgid "it has a niche audience"
-msgstr "لديها جمهور متخصص"
+msgstr "تستهدف شريحة متخصصة من المستخدمين"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:62
 msgid "it is not documented to CellProfiler’s standards"
