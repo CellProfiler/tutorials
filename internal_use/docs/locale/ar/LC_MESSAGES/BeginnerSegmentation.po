@@ -414,8 +414,8 @@ msgid ""
 "We've used Cellpose 2.2.2 to generate nuclear masks from the DNA images and "
 "cell masks from the ActinGolgi images."
 msgstr ""
-"لقد استخدمنا Cellpose 2.2.2 لإنشاء أقنعة نووية من صور الحمض النووي وأقنعة "
-"خلوية من صور الأكتين جولجي."
+"لقد استخدمنا Cellpose 2.2.2 لإنشاء أقنعة نووية من صور الDNA وأقنعة خلوية من "
+"صور الActinGolgi."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:124
 msgid "Only if you are curious - how did we make these label masks?"
