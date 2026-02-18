@@ -568,8 +568,8 @@ msgid ""
 "Are there cases where you think classical segmentation typically performs "
 "better? Where Cellpose performs better?"
 msgstr ""
-"هل هناك حالات تعتقد فيها أن التجزئة التقليدية تؤدي أداءً أفضل عادةً؟ وحالات "
-"أخرى يكون فيها أداء Cellpose أفضل؟"
+"هل هناك حالات تعتقد فيها أن التجزئة التقليدية تنتج أداءً أفضل؟ وحالات أخرى "
+"يكون فيها أداء Cellpose أفضل؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:165
 msgid "Visualization of images and objects in the Workspace Viewer"
