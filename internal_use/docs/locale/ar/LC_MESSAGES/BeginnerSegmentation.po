@@ -476,7 +476,7 @@ msgstr "تنفيذ Cellpose عبر سطر الأوامر"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:149
 msgid "Loading the label masks into CellProfiler"
-msgstr "تحميل أقنعة التصنيفات في برنامج CellProfiler"
+msgstr "تحميل أقنعة التصنيفات (label masks) في CellProfiler"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:151
 msgid ""
