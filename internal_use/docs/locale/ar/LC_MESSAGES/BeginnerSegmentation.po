@@ -288,8 +288,8 @@ msgid ""
 "files around (such if they sit in the Downloads folder, for example)."
 msgstr ""
 "نوصي بشدة بإنشاء مجلد مخصص لتخزين ملحقات CellProfiler الخاصة بك، حيث يمكن أن"
-" يكون التحميل بطيئًا إذا كان هناك الكثير من الملفات المتنوعة الأخرى (على "
-"سبيل المثال، إذا كانت موجودة في مجلد التنزيلات)."
+" يكون الاستيراد بطيئًا إذا كان هناك الكثير من الملفات المتنوعة الأخرى (على "
+"سبيل المثال، إذا كانت موجودة في مجلد التنزيلات العامة)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:82
 msgid "Docker Desktop"
