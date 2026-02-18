@@ -387,7 +387,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:115
 msgid "**Exercise 1: Importing masks from another segmentation tool**"
-msgstr "**التمرين 1: استيراد الأقنعة من أداة تجزئة أخرى**"
+msgstr "**التمرين 1: استيراد الأقنعة (masks) من أداة تجزئة أخرى**"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:117
 msgid ""
