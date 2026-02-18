@@ -693,7 +693,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:201
 msgid "ilastik's Batch Processing mode"
-msgstr "وضع المعالجة الدفعية في إيلاستيك"
+msgstr "وضع المعالجة الدفعية (Batch Processing Mode) في ilastik"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:204
 msgid ""
