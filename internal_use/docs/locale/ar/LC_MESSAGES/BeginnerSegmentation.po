@@ -293,7 +293,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:82
 msgid "Docker Desktop"
-msgstr "سطح مكتب Docker"
+msgstr "Docker Desktop"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:84
 msgid ""
