@@ -628,7 +628,7 @@ msgid ""
 "masks by changing its rule or adding a second rule. Do you understand "
 "how/why?"
 msgstr ""
-"ربما ستحتاج إلى تعديل الإعدادات الحالية لتحميل أقنعة الخلايا عن طريق تغيير "
+"ربما ستحتاج إلى تعديل الإعدادات الحالية لاستيراد أقنعة الخلايا عبر تغيير "
 "القاعدة أو إضافة قاعدة ثانية. هل تفهم كيف ولماذا؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:181
