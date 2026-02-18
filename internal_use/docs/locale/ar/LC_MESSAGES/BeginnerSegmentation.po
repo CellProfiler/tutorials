@@ -483,8 +483,8 @@ msgid ""
 "Open up a clean copy of CellProfiler (or run File -> New Project) and drag "
 "`bonus_1_import_masks.cppipe` into the pipeline panel."
 msgstr ""
-"افتح نسخة نظيفة من CellProfiler (أو قم بتشغيل File -> New Project) واسحب "
-"`bonus_1_import_masks.cppipe` إلى لوحة خط الأنابيب."
+"افتح نسخة جديدة من CellProfiler (أو قم بتشغيل File -> New Project) واسحب "
+"وأفلِت `bonus_1_import_masks.cppipe` إلى لوحة مسارات المعالجة."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:152
 msgid ""
