@@ -429,8 +429,8 @@ msgid ""
 "in that conda environment using the command `cellpose`."
 msgstr ""
 "تم تثبيت Cellpose في بيئة conda وفقًا للتعليمات الرسمية للتثبيت باستخدام "
-"واجهة المستخدم الرسومية. تم تشغيل البرنامج في بيئة conda باستخدام الأمر "
-"`cellpose`."
+"واجهة المستخدم الرسومية (GUI). تم تشغيل البرنامج في بيئة conda باستخدام "
+"الأمر `cellpose` في سطر الأوامر."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:129
 msgid ""
