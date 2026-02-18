@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:65
 msgid "it has been contributed by a community member"
-msgstr "تمت المساهمة بها من قبل أحد أعضاء المجتمع"
+msgstr "تمت المساهمة بها من قبل أحد أعضاء المجتمع العلمي في مجال تحليل الصور"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:68
 msgid ""
