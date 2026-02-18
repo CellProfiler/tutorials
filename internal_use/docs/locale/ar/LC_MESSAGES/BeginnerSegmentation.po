@@ -231,9 +231,9 @@ msgid ""
 "supported in the same way as modules. A module may be in CellProfiler-"
 "plugins instead of CellProfiler itself because:"
 msgstr ""
-"تُحسّن الإضافات إمكانيات CellProfiler، لكنها لا تحظى بدعم رسمي مماثل للوحدات"
-" النمطية. قد توجد الوحدة النمطية في مجلد CellProfiler-plugins بدلاً من "
-"CellProfiler نفسه للأسباب التالية:"
+"الملحقات الإضافية تُحسّن إمكانيات CellProfiler، لكنها لا تحظى بدعم رسمي "
+"مماثل للوحدات النمطية (modules). بعض الوحدات النمطية قد توجد في مجلد "
+"CellProfiler-plugins بدلاً من CellProfiler نفسه للأسباب التالية:"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:60
 msgid "it is under active development"
