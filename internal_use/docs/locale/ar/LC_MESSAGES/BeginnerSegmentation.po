@@ -536,9 +536,10 @@ msgid ""
 "src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\" alt=\"View "
 "Workspace Button\"/> to create easily on-the-fly customizable overlays."
 msgstr ""
-"اختيارياً، افتح عارض مساحة العمل باستخدام زر عرض مساحة العمل <img "
-"src=\"./TutorialImages/ViewWorkspace.png\" width=\"120\" alt=\"View "
-"Workspace Button\"/> لإنشاء طبقات قابلة للتخصيص بسهولة أثناء التنقل."
+"اختيارياً، افتح عارض مساحة العمل (Workspace) باستخدام زر عرض مساحة العمل "
+"(View Workspace) <img src=\"./TutorialImages/ViewWorkspace.png\" "
+"width=\"120\" alt=\"View Workspace Button\"/> لإنشاء طبقات قابلة للتخصيص "
+"بسهولة أثناء التنقل."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:154
 msgid "View Workspace Button"
