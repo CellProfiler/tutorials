@@ -602,7 +602,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:174
 msgid "Bonus-to-the-Bonus - add the provided nuclear segmentations as well"
-msgstr "إضافة إلى ذلك، أضف تقسيمات النواة المتوفرة أيضًا."
+msgstr "إضافة إلى ذلك، أضف تجزئة المتوفرة للنوى أيضًا."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:176
 msgid ""
