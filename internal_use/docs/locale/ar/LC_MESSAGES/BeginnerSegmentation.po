@@ -492,9 +492,9 @@ msgid ""
 "Segmentation exercise and also the `cellpose_masks_cells` subfolder from "
 "this exercise. *Do not drag in the `cellpose_masks_nuclei` folder.*"
 msgstr ""
-"اسحب المجلد الفرعي `images_Illum-corrected` من تمرين تجزئة الصور للمبتدئين "
-"الرئيسي، وكذلك المجلد الفرعي `cellpose_masks_cells` من هذا التمرين. *لا تسحب"
-" المجلد `cellpose_masks_nuclei`.*"
+"اسحب وأفلِت المجلد الفرعي `images_Illum-corrected` من تمرين تجزئة الصور "
+"للمبتدئين الرئيسي، وكذلك المجلد الفرعي `cellpose_masks_cells` من هذا "
+"التمرين. *لا تسحب المجلد `cellpose_masks_nuclei`.*"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid ""
