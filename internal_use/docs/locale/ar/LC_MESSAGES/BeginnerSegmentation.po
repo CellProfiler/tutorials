@@ -245,7 +245,7 @@ msgstr "تستهدف شريحة متخصصة من المستخدمين"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:62
 msgid "it is not documented to CellProfiler’s standards"
-msgstr "لم يتم توثيق ذلك وفقًا لمعايير CellProfiler"
+msgstr "لم يتم توثيق (دليل الاستخدام) ذلك وفقًا لمعايير CellProfiler"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:63
 msgid "it only works with certain versions of CellProfiler"
