@@ -528,7 +528,7 @@ msgstr "أيقونة العين"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid "Step Button"
-msgstr "زر الدخول"
+msgstr "زر الخطوة (step)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:154
 msgid ""
