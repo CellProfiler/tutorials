@@ -618,8 +618,9 @@ msgid ""
 "be loaded (hint: there's a duplicate button you can use to make a second "
 "copy of a channel!)"
 msgstr ""
-"انتقل إلى وحدة NamesAndTypes وقم بتهيئتها بحيث يمكن تحميل كلا النوعين من "
-"الأقنعة (تلميح: يوجد زر تكرار يمكنك استخدامه لإنشاء نسخة ثانية من القناة!)."
+"انتقل إلى وحدة NamesAndTypes وقم بتهيئتها بحيث يمكن استيراد كلا النوعين من "
+"الأقنعة (تلميح: يوجد زر تكرار (duplicate) يمكنك استخدامه لإنشاء نسخة ثانية "
+"من القناة!)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:179
 msgid ""
