@@ -304,7 +304,7 @@ msgid ""
 "Once finished, click the “Submit” button to use this expression in the "
 "**Metadata** module."
 msgstr ""
-"Ao terminar, clique no botão “Enviar” para usar esta expressão no módulo "
+"Ao terminar, clique no botão “Submit” para usar esta expressão no módulo "
 "**Metadata**."
 
 #: ../../source/Translocation/Translocation.md:123
