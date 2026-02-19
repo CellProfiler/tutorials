@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2026-02-19 20:20+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
 "Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/ar/)\n"
@@ -483,7 +483,7 @@ msgstr "*الشكل 1: فحص الأشياء الموجودة داخل البو�
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:207
 msgid ""
-"Look at some of the images inside the gate ( you may need to click ‘Show "
+"Look at some of the images inside the gate (you may need to click ‘Show "
 "controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, and"
 " are they free of bright debris? If they seem all or mostly like they’re "
 "high quality, adjust the gate to look at a different/smaller subset or "
@@ -497,10 +497,10 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
 msgid ""
-"4. **Optional- use the PlateViewer tool to check for other features to gate "
-"on (~10 minutes)**"
+"4. **Optional — use the PlateViewer tool to check for other features to gate"
+" on (~10 minutes)**"
 msgstr ""
-"4. **اختياري - استخدم أداة PlateViewer للتحقق من وجود ميزات أخرى لتفعيلها "
+"4. **اختياري - استخدم أداة PlateViewer للتحقق من وجود ميزات أخرى للتفعيل "
 "(حوالي 10 دقائق)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
