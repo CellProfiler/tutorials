@@ -314,8 +314,8 @@ msgid ""
 "Input Folder, which we must therefore configure."
 msgstr ""
 "A segunda etapa de extração de metadados exige que você informe ao "
-"CellProfiler o local de um arquivo CSV.  Ele irá procurar na Default Input "
-"Folder (Pasta de entrada padrão) do CellProfiler, que deve ser configurada."
+"CellProfiler o local de um arquivo CSV.  Ele irá procurar na ‘Default Input "
+"Folder’ (Pasta de entrada padrão) do CellProfiler, que deve ser configurada."
 
 #: ../../source/Translocation/Translocation.md:127
 msgid ""
