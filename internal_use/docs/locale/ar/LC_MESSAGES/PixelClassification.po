@@ -1,0 +1,434 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Imaging Platform
+# This file is distributed under the same license as the cellprofiler-tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Beth Cimini, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cellprofiler-tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"PO-Revision-Date: 2023-12-13 22:27+0000\n"
+"Last-Translator: Beth Cimini, 2026\n"
+"Language-Team: Arabic (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: ../../source/PixelClassification/PixelClassification.md:18
+msgid "Pixel-based classification tutorial"
+msgstr "برنامج تعليمي لتصنيف البيانات باستخدام البكسل"
+
+#: ../../source/PixelClassification/PixelClassification.md:20
+msgid "**By Kyle Karhohs, PhD**"
+msgstr "بقلم كايل كارهوس، الحاصل على درجة الدكتوراه"
+
+#: ../../source/PixelClassification/PixelClassification.md:22
+msgid ""
+"(A version of this document containing animated GIFs in maintained online on"
+" our [GitHub])"
+msgstr ""
+"(تتوفر نسخة من هذه الوثيقة تحتوي على صور GIF متحركة على موقعنا الإلكتروني "
+"[GitHub])"
+
+#: ../../source/PixelClassification/PixelClassification.md:24
+msgid "Introducing Ilastik"
+msgstr "نقدم لكم إيلاستيك"
+
+#: ../../source/PixelClassification/PixelClassification.md:26
+msgid ""
+"CellProfiler is capable of accurate and reliable segmentation of cells by "
+"utilizing a broad collection of classical image processing methods. Peruse "
+"the documentation on the [IdentifyPrimaryObjects] module, for example, to "
+"get a sense of these, e.g., thresholding, declumping, and watershed. "
+"However, despite the many problems CellProfiler can readily solve, certain "
+"types of images are particularly challenging. For instance, when the "
+"biologically relevant objects are defined more by texture and context than "
+"raw intensity many [classical image processing tecnhiques] can be foiled; "
+"DIC images of cells are a common biological example."
+msgstr ""
+"يُتيح برنامج CellProfiler إمكانية تجزئة الخلايا بدقة وموثوقية عاليتين، وذلك "
+"باستخدام مجموعة واسعة من أساليب معالجة الصور التقليدية. يُمكنك الاطلاع على "
+"وثائق وحدة [IdentifyPrimaryObjects]، على سبيل المثال، لفهم هذه الأساليب، مثل"
+" تحديد العتبة، وإزالة التكتلات، وتقسيم المستجمعات المائية. مع ذلك، ورغم قدرة"
+" CellProfiler على حلّ العديد من المشكلات بسهولة، إلا أن بعض أنواع الصور "
+"تُشكّل تحديًا خاصًا. فعلى سبيل المثال، عندما تُحدّد الكائنات ذات الأهمية "
+"البيولوجية من خلال الملمس والسياق أكثر من شدة الإضاءة الخام، قد تفشل العديد "
+"من تقنيات معالجة الصور التقليدية؛ وتُعدّ صور الخلايا بتقنية التباين التفاضلي"
+" التداخلي (DIC) مثالًا بيولوجيًا شائعًا على ذلك."
+
+#: ../../source/PixelClassification/PixelClassification.md:36
+msgid ""
+"Thankfully, machine learning, particularly [pixel-based classification] has "
+"yielded powerful techniques that can often solve these challenging cases. "
+"[ilastik] is an open-source tool built for pixel-based classification, and, "
+"when combined with CellProfiler, the range of biology that can be quantified"
+" from images is greatly expanded beyond monocultures of monolayers to "
+"include increased complexity such as tissues, organoids, or [co-cultures]."
+msgstr ""
+"لحسن الحظ، أثمر التعلم الآلي، ولا سيما التصنيف القائم على البكسل، تقنيات "
+"فعّالة قادرة على حلّ هذه الحالات المعقدة في كثير من الأحيان. يُعدّ برنامج "
+"ilastik أداة مفتوحة المصدر مصممة للتصنيف القائم على البكسل، وعند دمجه مع "
+"CellProfiler، يتسع نطاق البيانات البيولوجية التي يمكن قياسها من الصور بشكل "
+"كبير، ليشمل، بالإضافة إلى المزارع الأحادية، أنواعًا أكثر تعقيدًا مثل "
+"الأنسجة، والعضيات، والمزارع المشتركة."
+
+#: ../../source/PixelClassification/PixelClassification.md:44
+msgid ""
+"Now, let’s take a look at how ilastik can be used together with "
+"CellProfiler!"
+msgstr ""
+"والآن، دعونا نلقي نظرة على كيفية استخدام برنامج ilastik مع برنامج "
+"CellProfiler!"
+
+#: ../../source/PixelClassification/PixelClassification.md:47
+msgid "I. The DIC conundrum"
+msgstr "أولاً: معضلة مركز المعلومات الرقمية"
+
+#: ../../source/PixelClassification/PixelClassification.md:49
+msgid ""
+"Consider segmenting DIC images, such as those within the imageset [BBBC030]."
+" The goal will be to identify individual Chinese Hamster Ovary (CHO) cells "
+"and the regions they occupy."
+msgstr ""
+"ضع في اعتبارك تقسيم صور DIC، مثل تلك الموجودة في مجموعة الصور [BBBC030]. "
+"والهدف هو تحديد خلايا مبيض الهامستر الصيني (CHO) الفردية والمناطق التي "
+"تشغلها."
+
+#: ../../source/PixelClassification/PixelClassification.md:58
+msgid ""
+"A straightforward thresholding of this image yields poor results, because "
+"the cells have almost the same pixel intensity values (and sometimes even "
+"darker!) as the background. There is therefore no true foreground for these "
+"cells based solely upon an intensity histogram. Thresholding renders the CHO"
+" cells into moon-like crescents. While these fragments could be useful for "
+"simple cell counting, most metrics of morphology will be inaccurate. Now, "
+"note that there is a module, EnhanceOrSuppressFeatures, that is specifically"
+" capable of transforming DIC images into something that is readily "
+"segmented. But let's pretend for a moment we didn't have that option..."
+msgstr ""
+"يؤدي تطبيق عتبة بسيطة على هذه الصورة إلى نتائج ضعيفة، لأن الخلايا لها قيم "
+"شدة بكسل متقاربة (وأحيانًا أغمق!) من الخلفية. لذا، لا يوجد عنصر أمامي حقيقي "
+"لهذه الخلايا بناءً على مخطط توزيع الشدة فقط. يؤدي تطبيق العتبة إلى تحويل "
+"خلايا CHO إلى أشكال هلالية. مع أن هذه الأجزاء قد تكون مفيدة لعدّ الخلايا "
+"البسيط، إلا أن معظم مقاييس الشكل ستكون غير دقيقة. تجدر الإشارة إلى وجود "
+"وحدة، EnhanceOrSuppressFeatures، قادرة تحديدًا على تحويل صور DIC إلى شكل "
+"يسهل تقسيمه. لكن لنفترض للحظة أننا لا نملك هذا الخيار..."
+
+#: ../../source/PixelClassification/PixelClassification.md:69
+msgid ""
+"Start CellProfiler by double-clicking the desktop icon <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\"  width=\"35\"/>"
+msgstr ""
+"ابدأ تشغيل برنامج CellProfiler بالنقر المزدوج على أيقونة سطح المكتب <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\"  width=\"35\"/>"
+
+#: ../../source/PixelClassification/PixelClassification.md:70
+msgid "Drag-and-drop a BBBC030 image into the **Images** module."
+msgstr "اسحب وأفلت صورة BBBC030 في وحدة **الصور**."
+
+#: ../../source/PixelClassification/PixelClassification.md:71
+msgid ""
+"Add the **Threshold** module to the pipeline. Select the image name (which "
+"should be 'DNA by default')."
+msgstr ""
+"أضف وحدة **Threshold** إلى مسار المعالجة. حدد اسم الصورة (والذي يجب أن يكون "
+"'DNA' افتراضيًا)."
+
+#: ../../source/PixelClassification/PixelClassification.md:72
+msgid "Run the pipeline and take note of the output."
+msgstr "قم بتشغيل خط الأنابيب ولاحظ المخرجات."
+
+#: ../../source/PixelClassification/PixelClassification.md:79
+msgid "II. Pixel-based classification with Ilastik"
+msgstr "ثانيًا: التصنيف القائم على البكسل باستخدام برنامج Ilastik"
+
+#: ../../source/PixelClassification/PixelClassification.md:81
+msgid ""
+"ilastik employs pixel-based classification and complements CellProfiler. The"
+" CHO cells within the DIC image are obvious to the human eye, because we can"
+" discern that each cell is defined by a characteristic combination of light "
+"and dark patterns. These same patterns can be detected with the machine-"
+"learning algorithms within ilastik."
+msgstr ""
+"يستخدم برنامج ilastik تصنيفًا قائمًا على البكسل، وهو مكمل لبرنامج "
+"CellProfiler. تظهر خلايا CHO بوضوح للعين المجردة في صورة DIC، حيث يمكننا "
+"تمييز أن كل خلية تتميز بمزيج فريد من أنماط الضوء والظلام. ويمكن الكشف عن هذه"
+" الأنماط نفسها باستخدام خوارزميات التعلم الآلي في برنامج ilastik."
+
+#: ../../source/PixelClassification/PixelClassification.md:87
+msgid ""
+"The machine-learning implemented by ilastik requires user annotation about "
+"what is background and what is a CHO cell before it can automatically make "
+"this determination across a set of images. ilastik provides a user interface"
+" for labeling, tagging, and identifying the objects of interest within an "
+"image. This annotation creates what is referred to in machine learning as a "
+"training set."
+msgstr ""
+"يتطلب نظام التعلم الآلي المُطبق في ilastik من المستخدم تحديد ما هو خلفية "
+"الصورة وما هي خلية CHO قبل أن يتمكن من إجراء هذا التحديد تلقائيًا عبر مجموعة"
+" من الصور. يوفر ilastik واجهة مستخدم لتصنيف وتحديد العناصر المهمة داخل "
+"الصورة. تُنشئ هذه البيانات ما يُعرف في مجال التعلم الآلي بمجموعة التدريب."
+
+#: ../../source/PixelClassification/PixelClassification.md:94
+msgid "Annotation with 2 Labels"
+msgstr "شرح باستخدام علامتين"
+
+#: ../../source/PixelClassification/PixelClassification.md:96
+msgid "Open ilastik"
+msgstr "افتح إيلاستيك"
+
+#: ../../source/PixelClassification/PixelClassification.md:98
+msgid "Start a *Pixel Classification* project."
+msgstr "ابدأ مشروع *تصنيف البكسل*."
+
+#: ../../source/PixelClassification/PixelClassification.md:100
+msgid ""
+"Load at least several BBBC030 images by drag-and-drop into the **Input "
+"Data** window."
+msgstr ""
+"قم بتحميل عدة صور من نوع BBBC030 على الأقل عن طريق السحب والإفلات في نافذة "
+"**بيانات الإدخال**."
+
+#: ../../source/PixelClassification/PixelClassification.md:102
+msgid ""
+"Now explore the image within the ilastik gui. Here are some shortcuts that "
+"may prove useful are:"
+msgstr ""
+"الآن، استكشف الصورة داخل واجهة المستخدم الرسومية لـ ilastik. إليك بعض "
+"الاختصارات التي قد تكون مفيدة:"
+
+#: ../../source/PixelClassification/PixelClassification.md:105
+msgid "*Ctrl + mouse-wheel* = zoom."
+msgstr "*Ctrl + عجلة الماوس* = تكبير/تصغير."
+
+#: ../../source/PixelClassification/PixelClassification.md:106
+msgid ""
+"The keyboard shortcut *Ctrl-D* will show the grid Ilastik uses to partition "
+"the image for processing."
+msgstr ""
+"سيؤدي اختصار لوحة المفاتيح *Ctrl-D* إلى إظهار الشبكة التي يستخدمها Ilastik "
+"لتقسيم الصورة من أجل المعالجة."
+
+#: ../../source/PixelClassification/PixelClassification.md:108
+msgid ""
+"Zoom-in far enough that the grid is no longer visible. This will speed up "
+"the *Live Update*."
+msgstr ""
+"قم بتكبير الشاشة حتى تختفي الشبكة. سيؤدي ذلك إلى تسريع عملية التحديث "
+"المباشر."
+
+#: ../../source/PixelClassification/PixelClassification.md:111
+msgid ""
+"Begin by labeling pixels for two classes: a background class and a CHO cell "
+"class."
+msgstr "ابدأ بتصنيف البكسلات لفئتين: فئة الخلفية وفئة خلية CHO."
+
+#: ../../source/PixelClassification/PixelClassification.md:114
+msgid "Open the **Feature Selection** window and add all features."
+msgstr "افتح نافذة **تحديد الميزات** وأضف جميع الميزات."
+
+#: ../../source/PixelClassification/PixelClassification.md:115
+msgid "Open the **Training** window."
+msgstr "افتح نافذة **التدريب**."
+
+#: ../../source/PixelClassification/PixelClassification.md:116
+msgid ""
+"Click the **+** button of the Training window to add a label. Add two labels"
+" named *background* and *CHO*."
+msgstr ""
+"انقر على زر **+** في نافذة التدريب لإضافة تصنيف. أضف تصنيفين باسم *الخلفية* "
+"و *تشو*."
+
+#: ../../source/PixelClassification/PixelClassification.md:118
+msgid ""
+"Using the paint brush tool, label pixels (one at a time) for each class "
+"until you are satisfied with the segmentation."
+msgstr ""
+"باستخدام أداة فرشاة الطلاء، قم بتسمية البكسلات (واحدة تلو الأخرى) لكل فئة "
+"حتى ترضى عن عملية التجزئة."
+
+#: ../../source/PixelClassification/PixelClassification.md:121
+msgid ""
+"We recommend creating labels for each class one pixel at a time, rather than"
+" by making scribbles, to minimize the chance of [over-fitting], i.e. too "
+"much information about any given area can cause classification to do poorly "
+"in other slightly-dissimilar areas. To label one pixel at a time, we’ll need"
+" to zoom in far enough to resolve the individual pixels in the image. The "
+"image below shows how closely we must view individual cells before the "
+"pixels of the image become clear."
+msgstr ""
+"نوصي بإنشاء تصنيفات لكل فئة بكسلًا تلو الآخر، بدلًا من رسم خطوط عشوائية، "
+"لتقليل احتمالية [التخصيص الزائد]، أي أن كثرة المعلومات حول منطقة معينة قد "
+"تؤدي إلى ضعف التصنيف في مناطق أخرى مختلفة قليلًا. لتصنيف بكسل واحد في كل "
+"مرة، سنحتاج إلى تكبير الصورة بدرجة كافية لرؤية البكسلات الفردية بوضوح. توضح "
+"الصورة أدناه مدى دقة التكبير المطلوبة لرؤية الخلايا الفردية قبل أن تصبح "
+"بكسلات الصورة واضحة."
+
+#: ../../source/PixelClassification/PixelClassification.md:134
+msgid ""
+"Using a brush size of 1, we click a single pixel from each class: one within"
+" a single CHO cell and the other in the surrounding background. In the next "
+"image, the annotation color of the CHO cell is yellow and the annotation "
+"color of the background is green. Activating *Live Update* reveals the "
+"segmentation looks similar to the results from thresholding. This outcome is"
+" promising considering this classification was determined by 1 feature and 1"
+" pixel each for the *CHO* and *background* labels."
+msgstr ""
+"باستخدام حجم فرشاة 1، ننقر على بكسل واحد من كل فئة: واحد داخل خلية CHO واحدة"
+" والآخر في الخلفية المحيطة. في الصورة التالية، لون خلية CHO أصفر ولون "
+"الخلفية أخضر. يُظهر تفعيل *التحديث المباشر* أن التجزئة تبدو مشابهة لنتائج "
+"تحديد العتبة. هذه النتيجة واعدة بالنظر إلى أن هذا التصنيف تم تحديده بواسطة "
+"ميزة واحدة وبكسل واحد لكل من فئتي *CHO* و*الخلفية*."
+
+#: ../../source/PixelClassification/PixelClassification.md:147
+msgid ""
+"Adding more labels, one pixel at a time, we continue to refine the "
+"segmentation. Toggling the *Segmentation* and *Uncertainty* views provides "
+"real-time feedback that can guide the labeling process. Areas of high "
+"uncertainty will be aqua-blue, so annotating those areas will be most "
+"beneficial to training the program which pixels belong to which class. You "
+"should also view the predicted segmentation, and annotate pixels that are "
+"not currently segmented properly."
+msgstr ""
+"بإضافة المزيد من التصنيفات، بكسلًا تلو الآخر، نواصل تحسين عملية التجزئة. "
+"يوفر تبديل عرضي *التجزئة* و*عدم اليقين* ملاحظات فورية تُساعد في توجيه عملية "
+"التصنيف. ستظهر المناطق ذات عدم اليقين العالي باللون الأزرق الفاتح، لذا فإن "
+"إضافة تعليقات توضيحية إلى هذه المناطق ستكون مفيدة جدًا لتدريب البرنامج على "
+"تحديد البكسلات التي تنتمي إلى كل فئة. يُنصح أيضًا بمعاينة التجزئة المتوقعة، "
+"وإضافة تعليقات توضيحية إلى البكسلات التي لم يتم تجزئتها بشكل صحيح."
+
+#: ../../source/PixelClassification/PixelClassification.md:160
+msgid ""
+"Continue until it seems that additional labels do not change the results, or"
+" a subset of the pixels begin “flipping” between CHO cell and background, or"
+" until you've labeled ~20 pixels in your original region. Check and label "
+"other cells in the image, as well as in other images, to make sure the "
+"diversity in your experiment is represented in the training set."
+msgstr ""
+"استمر حتى يبدو أن إضافة تصنيفات إضافية لا تُغير النتائج، أو حتى تبدأ مجموعة "
+"فرعية من البكسلات بالتحول بين خلايا CHO والخلفية، أو حتى تُصنّف حوالي 20 "
+"بكسلًا في منطقتك الأصلية. تحقق من الخلايا الأخرى في الصورة، وكذلك في صور "
+"أخرى، وصنّفها للتأكد من أن التنوع في تجربتك ممثل في مجموعة التدريب."
+
+#: ../../source/PixelClassification/PixelClassification.md:166
+msgid "Export the probability maps"
+msgstr "تصدير خرائط الاحتمالات"
+
+#: ../../source/PixelClassification/PixelClassification.md:168
+msgid "When satisfied with the results, export the probability maps."
+msgstr "عند الرضا عن النتائج، قم بتصدير خرائط الاحتمالات."
+
+#: ../../source/PixelClassification/PixelClassification.md:170
+msgid "Open the **Prediction Export** window."
+msgstr "افتح نافذة **تصدير التوقعات**."
+
+#: ../../source/PixelClassification/PixelClassification.md:171
+msgid "Click the **Choose Export Settings** window."
+msgstr "انقر على نافذة **اختيار إعدادات التصدير**."
+
+#: ../../source/PixelClassification/PixelClassification.md:172
+msgid "Change **Transpose to Axis Order** to `cyx`."
+msgstr "قم بتغيير **نقل إلى ترتيب المحور** إلى `cyx`."
+
+#: ../../source/PixelClassification/PixelClassification.md:173
+msgid "Change **Format** to `tiff`."
+msgstr "قم بتغيير **Format** إلى `tiff`."
+
+#: ../../source/PixelClassification/PixelClassification.md:174
+msgid ""
+"Close the export settings dialog box and click the **Export All** button."
+msgstr "أغلق مربع حوار إعدادات التصدير وانقر على زر **تصدير الكل**."
+
+#: ../../source/PixelClassification/PixelClassification.md:175
+msgid ""
+"If you did not initially load all the images into ilastik and wish to create"
+" predictions for them all now, go to the **Batch Processing** window, select"
+" the remaining unpredicted images and hit **Process all files**.  This will "
+"take a couple of minutes on most computers."
+msgstr ""
+"إذا لم تقم بتحميل جميع الصور في برنامج ilastik في البداية وترغب في إنشاء "
+"تنبؤات لها جميعًا الآن، فانتقل إلى نافذة **المعالجة الدفعية**، وحدد الصور "
+"المتبقية غير المتوقعة، ثم انقر على **معالجة جميع الملفات**. سيستغرق هذا بضع "
+"دقائق على معظم أجهزة الكمبيوتر."
+
+#: ../../source/PixelClassification/PixelClassification.md:176
+msgid "Note that you're producing a two channel image (Color Image)."
+msgstr "لاحظ أنك تقوم بإنتاج صورة ثنائية القنوات (صورة ملونة)."
+
+#: ../../source/PixelClassification/PixelClassification.md:178
+msgid "III. Segmenting probabilities with CellProfiler"
+msgstr "ثالثًا: تقسيم الاحتمالات باستخدام CellProfiler"
+
+#: ../../source/PixelClassification/PixelClassification.md:180
+msgid ""
+"The probability map images created with ilastik can then be processed by "
+"CellProfiler to identify and measure the CHO objects within the DIC images. "
+"The probability map images are grayscale images and can be treated as if "
+"they were the result of a “stain” for the cells."
+msgstr ""
+"يمكن معالجة صور خريطة الاحتمالية المُنشأة باستخدام برنامج ilastik بواسطة "
+"برنامج CellProfiler لتحديد وقياس أجسام CHO داخل صور DIC. صور خريطة "
+"الاحتمالية هي صور رمادية اللون، ويمكن التعامل معها كما لو كانت ناتجة عن "
+"\"صبغة\" للخلايا."
+
+#: ../../source/PixelClassification/PixelClassification.md:185
+msgid "Open CellProfiler."
+msgstr "افتح برنامج CellProfiler."
+
+#: ../../source/PixelClassification/PixelClassification.md:186
+msgid "Load the *pixel_based_classification.cpppipe* pipeline file."
+msgstr "قم بتحميل ملف خط الأنابيب *pixel_based_classification.cpppipe*."
+
+#: ../../source/PixelClassification/PixelClassification.md:187
+msgid ""
+"Add the exported probability images AND their matching original images to "
+"the **Images** module."
+msgstr ""
+"أضف صور الاحتمالات المصدرة وصورها الأصلية المطابقة إلى وحدة **الصور**."
+
+#: ../../source/PixelClassification/PixelClassification.md:188
+msgid ""
+"In the **NamesAndTypes** module, setup the .png files as phase and the .tiff"
+" files was cho, remember to **Select the image type** as **Color Image** for"
+" .tiff files."
+msgstr ""
+"في وحدة **الأسماء والأنواع**، قم بإعداد ملفات .png كـ phase وملفات .tiff كـ "
+"cho، وتذكر أن **تحدد نوع الصورة** كـ **صورة ملونة** لملفات .tiff."
+
+#: ../../source/PixelClassification/PixelClassification.md:189
+msgid ""
+"In the **ColortoGray** module, convert just one channel (Red or Green) to "
+"Gray, you should choose red to gray if your first class in Ilastik was the "
+"cell, if your background was the first, convert just the green channel to "
+"gray and name as choSegmented."
+msgstr ""
+"في وحدة **ColortoGray**، قم بتحويل قناة واحدة فقط (الأحمر أو الأخضر) إلى "
+"اللون الرمادي، يجب عليك اختيار اللون الأحمر إلى الرمادي إذا كانت فئتك الأولى"
+" في Ilastik هي الخلية، وإذا كانت الخلفية هي الأولى، فقم بتحويل القناة "
+"الخضراء فقط إلى اللون الرمادي وقم بتسميتها باسم choSegmented."
+
+#: ../../source/PixelClassification/PixelClassification.md:190
+msgid ""
+"Run the pipeline and review the segmentation.  How robustly did it perform "
+"on different images?"
+msgstr ""
+"قم بتشغيل خط المعالجة وراجع عملية التجزئة. ما مدى كفاءتها على الصور "
+"المختلفة؟"
+
+#: ../../source/PixelClassification/PixelClassification.md:192
+msgid ""
+"We have now transformed the patterns and texture of intensity in the DIC "
+"image into an image where the intensity reflects the likelihood that a given"
+" pixel belongs to a cell. The image below demonstrates how the "
+"IdentifyPrimaryObjects module successfully segments all the CHO cells."
+msgstr ""
+"لقد قمنا الآن بتحويل أنماط وكثافة الإضاءة في صورة DIC إلى صورة تعكس فيها "
+"الكثافة احتمالية انتماء بكسل معين إلى خلية. توضح الصورة أدناه كيف نجحت وحدة "
+"IdentifyPrimaryObjects في تقسيم جميع خلايا CHO."
