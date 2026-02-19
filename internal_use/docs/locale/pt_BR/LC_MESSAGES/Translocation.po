@@ -297,7 +297,7 @@ msgid ""
 "text match the color of the corresponding portion in the Test text below."
 msgstr ""
 "Você verá que a cor dos textos “Plate”, “Well”, “Site” e “ChannelNumber” "
-"corresponde à cor da parte equivalente no campo Test text abaixo."
+"corresponde à cor da parte equivalente no campo ‘Test text’ abaixo."
 
 #: ../../source/Translocation/Translocation.md:120
 msgid ""
