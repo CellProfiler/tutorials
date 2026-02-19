@@ -89,13 +89,13 @@ msgid ""
 "Wortmannin treated cells.  <br> Green: **GFP**, Magenta: **DNA**.*"
 msgstr ""
 "*Figura 1: Exemplos de localização FOXO1A-GFP. <u>**Esquerda:**</u> "
-"Localização citoplasmática em células não tratadas. <u>**Certo:**</u> "
+"Localização citoplasmática em células não tratadas. <u>**Direita:**</u> "
 "Localização nuclear em células tratadas com Wortmannin. <br> Verde: **GFP**,"
 " Magenta: **DNA**.*"
 
 #: ../../source/Translocation/Translocation.md:39
 msgid "**Goals of this exercise:**"
-msgstr "**Objetivos deste exercício"
+msgstr "Objetivos deste exercício"
 
 #: ../../source/Translocation/Translocation.md:41
 msgid ""
