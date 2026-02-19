@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:6
 msgid "Preparation"
-msgstr "Preparação"
+msgstr "Antes de começar"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:8
 msgid "Download and install [CellProfiler](https://cellprofiler.org/)."
