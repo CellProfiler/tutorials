@@ -714,10 +714,10 @@ msgid ""
 "We recommend installing ilastik because it is a good and helpful tool and "
 "will allow you to do this exercise's bonus challenge."
 msgstr ""
-"ستحتاج إلى تثبيت إما ilastik أو Docker Desktop (أو Podman Desktop) على جهاز "
-"الكمبيوتر الخاص بك لإتمام هذا التمرين. إذا كنت تستخدم ilastik، فتأكد من "
+"ستحتاج إلى وجود إما ilastik أو Docker Desktop (أو Podman Desktop) مُثبَّت "
+"مسبقًا على جهازك لإتمام هذا التمرين. إذا كنت تستخدم ilastik، فتأكد من "
 "إغلاقه. أما إذا كنت تستخدم Docker Desktop (أو Podman Desktop)، فتأكد من "
-"تشغيله. نوصي بتثبيت ilastik لأنه أداة جيدة ومفيدة، وستُمكّنك من إتمام التحدي"
+"تشغيله. نوصي بتثبيت ilastik لأنه أداة جيدة ومفيدة، وستُمكّنك من إتمام النشاط"
 " الإضافي لهذا التمرين."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:212
