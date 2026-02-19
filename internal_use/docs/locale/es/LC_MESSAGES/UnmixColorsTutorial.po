@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2024
+# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2026-02-19 20:20+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2024\n"
+"Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -115,47 +115,47 @@ msgstr "**Materiales necesarios para este ejercicio:**"
 
 #: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:41
 msgid ""
-"Histopathological image of parathyroid adenoma. Hematoxylin and eosin : "
-"stain in a slide."
+"Histopathological image of parathyroid adenoma. Hematoxylin and eosin: stain"
+" in a slide."
 msgstr ""
-"Imagen histopatológica de adenoma de paratiroides. Hematoxilina y eosina: "
-"tinción en un portaobjetos."
+"Imagen histopatológica de adenoma paratiroideo. Tinción de hematoxilina y "
+"eosina en portaobjetos."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:44
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:43
 msgid "**Example 1:** Parathyroid Adenoma <br>"
 msgstr "**Ejemplo 1:** Adenoma de paratiroides <br>"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:49
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:48
 msgid "**Example 2:** Parathyroid Adenoma <br>"
 msgstr "**Ejemplo 2:** Adenoma de paratiroides <br>"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:54
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:53
 msgid "**Importing data in CellProfiler**"
 msgstr "**Importación de datos en CellProfiler**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:56
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:55
 msgid "Highlight the **Images** module."
 msgstr "Seleccione el módulo **Imágenes**."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:57
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:56
 msgid "Drag-and-drop the Example 1 image only into the Images module window."
 msgstr ""
 "Arrastre y suelte sólo la imagen del Ejemplo 1 en la ventana del módulo "
 "Imágenes."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:64
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:63
 msgid "Highlight the **NameAndType** module."
 msgstr "Resalte el módulo **NombreYTipo**."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:66
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:65
 msgid "Assign a name to: All images"
 msgstr "Asignar un nombre a: Todas las imágenes"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:68
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:67
 msgid "Select the image type: Color image"
 msgstr "Seleccione el tipo de imagen: Imagen en color"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:70
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:69
 msgid ""
 "Assign the images “variable names” that describe the contents in the : "
 "image. For example, use the name \"HE\" or \"Hematoxylin-Eosin\" or   "
@@ -165,15 +165,15 @@ msgstr ""
 "la imagen. Por ejemplo, utilice el nombre \"HE\" o \"Hematoxilina-eosina\" o"
 " algo más que le recuerde cuál es la imagen."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:73
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:72
 msgid "Hit the **\"update\"** button to populate"
 msgstr "Pulsa el botón **\"actualizar\"** para completar"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:80
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:79
 msgid "The **UnmixColors module:**"
 msgstr "El módulo **UnmixColors:**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:82
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:81
 msgid ""
 "Add the **UnmixColor** module to the pipeline. Double click or right click "
 "on the white rectangular area below Groups or click the **+** button in "
@@ -185,7 +185,7 @@ msgstr ""
 "botón **+** frente a Ajustar módulos, esto abrirá la ventana Agregar "
 "módulos, busque el módulo **UnmixColors** y haga doble clic en él."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:95
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:94
 msgid ""
 "Select the input color image: HE (or whatever the name you give for : your "
 "images in **NamesAndTypes** module)"
@@ -193,27 +193,27 @@ msgstr ""
 "Seleccione la imagen en color de entrada: HE (o cualquiera que sea el nombre"
 " que le dé: sus imágenes en el módulo **NamesAndTypes**)"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:97
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:96
 msgid "Name the output image as Hematoxylin"
 msgstr "Nombre la imagen de salida como Hematoxilina"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:98
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:97
 msgid "Choose the Stain as Hematoxylin"
 msgstr "Elija la tinción como Hematoxilina"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:99
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:98
 msgid "Add another stain"
 msgstr "Añadir otra mancha"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:100
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:99
 msgid "Name this new output image as Eosin"
 msgstr "Nombre esta nueva imagen de salida como Eosin"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:101
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:100
 msgid "Choose the Stain as Eosin"
 msgstr "Elija la tinción como Eosina"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:103
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:102
 msgid ""
 "**Tip: Use the <img src=\"images/info.png\" width=\"40\"/> to learn more or "
 "if you have questions.**"
@@ -221,7 +221,7 @@ msgstr ""
 "**Consejo: utiliza <img src=\"images/info.png\" width=\"40\"/> para obtener "
 "más información o si tienes preguntas.**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:110
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:109
 msgid ""
 "Hit the <img src=\"images/StartTestMode.png\" width=\"120\"/> (left bottom "
 "of the window) and test your **UnmixColor** module pressing the <img "
@@ -235,7 +235,7 @@ msgstr ""
 "resultado del módulo **UnmixColors** debería aparecer y mostrarle una imagen"
 " de hematoxilina (núcleo) y una imagen de eosina (citoplasma)."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:118
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:117
 msgid ""
 "**Note:** If there are other cells/components that you also want to separate"
 " by color, choose the stain that most closely resembles the color you want. "
@@ -251,7 +251,7 @@ msgstr ""
 " El botón <img src=\"images/info.png\" width=\"40\"/> a la derecha de Stain "
 "puede ayudarle a elegir el Stain correcto."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:129
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:128
 msgid ""
 "**Tip: The image tools on the top toolbar may be helpful to see the details "
 "on your image/objects:**"
@@ -259,14 +259,14 @@ msgstr ""
 "**Consejo: Las herramientas de imagen de la barra de herramientas superior "
 "pueden ser útiles para ver los detalles de tu imagen/objetos:**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:137
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:136
 msgid ""
 "The 1st icon from the left lets you reset the view back to the original "
 "view."
 msgstr ""
 "El primer icono de la izquierda le permite restablecer la vista original."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:140
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:139
 msgid ""
 "The 2nd and 3rd icons let you step backwards and forwards through any "
 "changes you made to the view."
@@ -274,7 +274,7 @@ msgstr ""
 "Los iconos 2 y 3 le permiten retroceder y avanzar por los cambios realizados"
 " en la vista."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:143
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:142
 msgid ""
 "The 4th icon lets you change the view by moving in any direction in the "
 "display, by clicking and dragging."
@@ -282,7 +282,7 @@ msgstr ""
 "El 4º icono te permite cambiar la vista moviéndote en cualquier dirección de"
 " la pantalla, haciendo clic y arrastrando."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:146
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:145
 msgid ""
 "The 5th icon lets you change the view by zooming, by dragging and drawing a "
 "box to zoom in on."
@@ -290,11 +290,11 @@ msgstr ""
 "El 5º icono te permite cambiar la vista haciendo zoom, arrastrando y "
 "dibujando un recuadro para ampliar."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:149
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:148
 msgid "Zoom in on the image in order to see the quality of the separation."
 msgstr "Amplíe la imagen para ver la calidad de la separación."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:156
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:155
 msgid ""
 "Most of the time the Stain settings does a good job with the standard Stain,"
 " but If you are not happy with your results you can try different "
@@ -306,7 +306,7 @@ msgstr ""
 "diferentes combinaciones de tintes para que coincida con la estructura/color"
 " que desea segmentar más tarde."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:161
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:160
 msgid ""
 "For example you can right-click the **UnmixColors** module and Duplicate it "
 "in your pipeline."
@@ -314,7 +314,7 @@ msgstr ""
 "Por ejemplo, puede hacer clic derecho en el módulo **UnmixColors** y "
 "duplicarlo en su pipeline."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:163
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:162
 msgid ""
 "Change the Hematoxylin stain for Feulgen Stain and the Eosin Stain for "
 "Azocarmine."
@@ -322,18 +322,18 @@ msgstr ""
 "Cambie la tinción de hematoxilina por tinción de Feulgen y la tinción de "
 "eosina por azocarmina."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:165
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:164
 msgid ""
 "**(!) Remember to rename the output images to stay Hematoxylin and Eosin**"
 msgstr ""
 "**(!) Recuerde cambiar el nombre de las imágenes de salida para que "
 "permanezcan como Hematoxilina y Eosina**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:167
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:166
 msgid "Observe the difference between the first and the second separation."
 msgstr "Observa la diferencia entre la primera y la segunda separación."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:174
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:173
 msgid ""
 "**Now let’s try another example of the same type of tissue and staining "
 "(Example 2 image):**"
@@ -341,11 +341,11 @@ msgstr ""
 "**Probemos ahora con otro ejemplo del mismo tipo de tejido y tinción (imagen"
 " del ejemplo 2):**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:177
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:176
 msgid "Please go back to your **Images** Module"
 msgstr "Vuelva a su módulo **Imágenes**."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:179
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:178
 msgid ""
 "1\\. Clear the file list (Right click inside the file box -> click in the "
 "last option Clear File List)"
@@ -353,11 +353,11 @@ msgstr ""
 "1\\. Borre la lista de archivos (haga clic derecho dentro del cuadro de "
 "archivos -> haga clic en la última opción Borrar lista de archivos)"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:182
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:181
 msgid "Drag and drop the Example 2 image."
 msgstr "Arrastre y suelte la imagen del Ejemplo 2."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:184
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:183
 msgid ""
 "Hit run to run your two **UnmixColors** modules to try to separate the "
 "hematoxylin from the eosin staining in this new example."
@@ -365,11 +365,11 @@ msgstr ""
 "Pulse run para ejecutar sus dos módulos **UnmixColors** para intentar "
 "separar la hematoxilina de la tinción de eosina en este nuevo ejemplo."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:193
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:192
 msgid "**Common issues and troubleshooting:**"
 msgstr "**Problemas comunes y solución de problemas:**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:195
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:194
 msgid ""
 "Sometimes the same kind of tissue stained in different days or acquired in "
 "different illumination conditions will produce different patterns of "
@@ -382,7 +382,7 @@ msgstr ""
 "separación adecuada de la tinción, incluso en portaobjetos de tejidos "
 "similares teñidos con los mismos colorantes."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:200
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:199
 msgid ""
 "If this happens, you can try other combinations, or choose the custom Stain "
 "option. In this case there are two options, input the RGB absorbance values "
@@ -397,7 +397,7 @@ msgstr ""
 "presente una de sus manchas (región que contiene el color de absorbancia de "
 "interés, púrpura y rosa en esta imagen)."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:212
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:211
 msgid ""
 "If you choose the second option, we suggest you make the cropped absorbance "
 "images in FIJI. (Open your image in FIJI, zoom in the region of interest and"
@@ -410,7 +410,7 @@ msgstr ""
 "manchas \\[en este caso, una región violeta y otra rosa\\] y guarde estas "
 "imágenes);"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:218
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:217
 msgid ""
 "While we encourage you to do this step yourself in FIJI, we do provide "
 "reference images you can try (UnmixColorsTutorial/CustomReferenceImages/)"
@@ -419,12 +419,12 @@ msgstr ""
 "proporcionamos imágenes de referencia que puedes probar "
 "(UnmixColorsTutorial/CustomReferenceImages/)"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:228
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:227
 msgid "CellProfiler can then use this to estimate your RGB absorbance."
 msgstr ""
 "CellProfiler puede entonces utilizar esto para estimar su absorbancia RGB."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:230
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:229
 msgid ""
 "Inside the **UnmixColors** module when you choose the **Custom Stain** "
 "option a new option will appear, the ‘Estimate absorbance from image’ "
@@ -438,7 +438,7 @@ msgstr ""
 " absorbancia RGB. Cell Profiler calculará automáticamente la absorbancia por"
 " usted."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:236
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:235
 msgid ""
 "After estimating both Stains you can now test the color separation using the"
 " Test Mode."
@@ -446,7 +446,7 @@ msgstr ""
 "Después de estimar ambas manchas, ahora puede probar la separación de "
 "colores usando el modo de prueba."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:244
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:243
 msgid ""
 "**Note:** If the resulting image doesn’t match your expectation you can try "
 "again using other regions to estimate your RGB absorbance."
@@ -455,15 +455,15 @@ msgstr ""
 "intentarlo de nuevo utilizando otras regiones para estimar su absorbancia "
 "RGB."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:247
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:246
 msgid "**Congratulations, you finished the Unmix Colors Tutorial.**"
 msgstr "**Felicitaciones, terminaste el Tutorial de Desmezclar Colores."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:249
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:248
 msgid "**References:**"
 msgstr "**Referencias:**"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:251
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:250
 msgid ""
 "<https://cellprofiler-"
 "manual.s3.amazonaws.com/CellProfiler-4.2.1/modules/imageprocessing.html>"
@@ -471,7 +471,7 @@ msgstr ""
 "<https://cellprofiler-"
 "manual.s3.amazonaws.com/CellProfiler-4.2.1/modules/imageprocessing.html>"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:253
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:252
 msgid ""
 "Ruifrok AC, Johnston DA. (2001) “Quantification of histochemical staining by"
 " color deconvolution.” Analytical & Quantitative Cytology & Histology, 23: "
@@ -481,11 +481,11 @@ msgstr ""
 "by color deconvolution\". Analytical &amp; Quantitative Cytology &amp; "
 "Histology, 23: 291-299."
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:257
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:256
 msgid "**Images sources:**"
 msgstr "**Fuentes de las imágenes"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:259
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:258
 msgid ""
 "**Example 1**: Parathyroid Adenoma 6 by euthman.jpg ([CC "
 "2.0](https://creativecommons.org/licenses/by/2.0/), 1148 x 765 pixels, file "
@@ -497,7 +497,7 @@ msgstr ""
 "tamaño de archivo: 441 KB, "
 "<https://www.flickr.com/photos/euthman/4703621316/in/photolist-8aDhKf>)"
 
-#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:264
+#: ../../source/UnmixColorsTutorial/UnmixColorsTutorial.md:263
 msgid ""
 "**Example 2**: Parathyroid_adenoma_histopathology\\_(2).jpg ‎([CC "
 "3.0-SA](https://creativecommons.org/licenses/by-sa/3.0/deed.en), 600 × 452 "
