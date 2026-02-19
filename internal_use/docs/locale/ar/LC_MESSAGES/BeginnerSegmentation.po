@@ -758,7 +758,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:224
 msgid "Screenshot of this ilastik classifer"
-msgstr "لقطة شاشة لهذا المصنف المرن"
+msgstr "لقطة شاشة لهذا المصنف من Ilastik"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:227
 msgid ""
