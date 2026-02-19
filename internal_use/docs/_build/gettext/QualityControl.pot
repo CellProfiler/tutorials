@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2026-02-19 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -238,11 +238,11 @@ msgid "*Figure 1: Examining the objects inside a gate.*"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:207
-msgid "Look at some of the images inside the gate ( you may need to click ‘Show controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, and are they free of bright debris? If they seem all or mostly like they’re high quality, adjust the gate to look at a different/smaller subset or delete it altogether by using the Gate Inspector (‘gate’-> ‘MANAGE GATES’)."
+msgid "Look at some of the images inside the gate (you may need to click ‘Show controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, and are they free of bright debris? If they seem all or mostly like they’re high quality, adjust the gate to look at a different/smaller subset or delete it altogether by using the Gate Inspector (‘gate’-> ‘MANAGE GATES’)."
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
-msgid "4. **Optional- use the PlateViewer tool to check for other features to gate on (~10 minutes)**"
+msgid "4. **Optional — use the PlateViewer tool to check for other features to gate on (~10 minutes)**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
