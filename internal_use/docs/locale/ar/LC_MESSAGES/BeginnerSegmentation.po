@@ -702,8 +702,9 @@ msgid ""
 "pipeline, so we can find and measure objects all in one step."
 msgstr ""
 "لماذا نقوم بخطوتين بينما يمكننا القيام بخطوة واحدة فقط؟ في هذا الدرس "
-"التعليمي، سنستخدم مصنف ilastik المدرب مسبقًا ونشغله داخل مسار CellProfiler "
-"الخاص بنا، حتى نتمكن من العثور على الكائنات وقياسها في خطوة واحدة."
+"التعليمي، سنستخدم مصنف ilastik المدرب مسبقًا ونشغله داخل مسار المعالجة في "
+"CellProfiler، حتى نتمكن من العثور على الأجسام المطلوبة وقياسها في خطوة "
+"واحدة."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:206
 msgid ""
