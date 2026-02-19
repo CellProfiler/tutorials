@@ -280,7 +280,8 @@ msgid ""
 "to the right of the text box labeled “Regular expression”."
 msgstr ""
 "Clique no ícone <img src=\"./TutorialImages/ReGexCheck.png\"  width=\"35\"/>"
-" à direita da caixa de texto chamada “Regular expression”."
+" à direita da caixa de texto chamada “Regular expression to extract from "
+"file name”."
 
 #: ../../source/Translocation/Translocation.md:115
 msgid ""
