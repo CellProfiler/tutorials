@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
+# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2026-02-19 20:20+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
+"Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -498,25 +498,27 @@ msgstr "*Figura 1: Examinando os objetos dentro de um gate.*"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:207
 msgid ""
-"Look at some of the images inside the gate ( you may need to click ‘Show "
+"Look at some of the images inside the gate (you may need to click ‘Show "
 "controls’ to adjust the zoom, contrast stretch, etc). Are they in focus, and"
 " are they free of bright debris? If they seem all or mostly like they’re "
 "high quality, adjust the gate to look at a different/smaller subset or "
 "delete it altogether by using the Gate Inspector (‘gate’-> ‘MANAGE GATES’)."
 msgstr ""
-"Observe algumas das imagens dentro do gate (talvez seja necessário clicar em"
-" “Show controls” para ajustar zoom, contraste, etc.). Elas estão em foco e "
-"livres de debris brilhantes? Se parecer que todas (ou a maioria) são de alta"
-" qualidade, ajuste o gate para olhar um subconjunto diferente/menor ou "
-"exclua-o usando o “Gate Inspector” (em “gate” > “MANAGE GATES”)."
+"Observe algumas das imagens dentro do portal (talvez seja necessário clicar "
+"em \"Mostrar controles\" para ajustar o zoom, o contraste, etc.). Elas estão"
+" em foco e livres de detritos brilhantes? Se todas ou a maioria parecerem de"
+" alta qualidade, ajuste o portal para visualizar um subconjunto "
+"diferente/menor ou exclua-o completamente usando o Inspetor de Portais "
+"(\"portal\" -> \"GERENCIAR PORTÕES\")."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
 msgid ""
-"4. **Optional- use the PlateViewer tool to check for other features to gate "
-"on (~10 minutes)**"
+"4. **Optional — use the PlateViewer tool to check for other features to gate"
+" on (~10 minutes)**"
 msgstr ""
-"4. **Opcional — use a ferramenta “PlateViewer” para verificar outras "
-"features para criar gates (~10 minutos)**"
+"4. **Opcional — utilize a ferramenta PlateViewer para verificar outras "
+"características a serem consideradas no controle de disparo (aproximadamente"
+" 10 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
 msgid ""
