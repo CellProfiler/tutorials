@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Beth Cimini, 2024
+# Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-15 11:33-0400\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2024\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,15 +24,16 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:2
 msgid "FISH analysis in *C. elegans*"
-msgstr "Análise FISH em *C. elegante*"
+msgstr ""
+"Análise por FISH (hibridização in situ por fluorescência) em *C. elegans*"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:4
 msgid ""
 "**Tutorial for the Association of Biomolecular Research Facilities - Ligh "
 "Microscopy Research Group (ABRF/LMRG)**"
 msgstr ""
-"**Tutorial para a Associação de Instalações de Pesquisa Biomolecular - Grupo"
-" de Pesquisa em Microscopia de Luz (ABRF/LMRG)**"
+"**Tutorial desenvolvido para a Association of Biomolecular Research "
+"Facilities - Ligh Microscopy Research Group (ABRF/LMRG)****"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:7
 msgid "**Proposal:**"
@@ -39,24 +41,23 @@ msgstr "**Proposta:**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:9
 msgid "Segment the objects in a fluorescence z-stack image and provide:"
-msgstr ""
-"Segmentar os objetos em uma imagem de fluorescência em z-stack e fornecer:"
+msgstr "Segmente os objetos em uma imagem de fluorescência em z-stack e gere:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:11
 msgid ""
 "Centroid location in microns (um) for each spot: x, y, and z coordinates "
 "listed in separate columns. Labels x, y, and z."
 msgstr ""
-"Localização centróide em mícrons (um) para cada ponto: coordenadas x, y e z "
-"listadas em colunas separadas. Rótulos x, y e z."
+"Localização do centróide em micrômetros (µm) para cada spot: coordenadas x, "
+"y e z em colunas separadas. Rotule como x, y e z."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:12
 msgid "Integrated Intensity. Label intensity."
-msgstr "Intensidade integrada. Intensidade do rótulo."
+msgstr "Intensidade integrada. Rotule como intensity."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:13
 msgid "3D volume image of your segmented image"
-msgstr "Imagem de volume 3D de sua imagem segmentada"
+msgstr "Imagem de volume 3D da imagem segmentada."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:14
 msgid ""
@@ -64,9 +65,9 @@ msgid ""
 "[here](https://drive.google.com/file/d/10Y3er22JJAVUjtivFoP0fxJRAz9ma057/view?usp=sharing)."
 "   (save as LastName_FirstName_ImageName.csv)"
 msgstr ""
-"Baixe o modelo CSV "
+"Baixe o arquivo CSV que será usado como modelo "
 "[aqui](https://drive.google.com/file/d/10Y3er22JJAVUjtivFoP0fxJRAz9ma057/view?usp=sharing)."
-" (salvar como Sobrenome_PrimeiroNome_ImageName.csv)"
+" (salve como Sobrenome_PrimeiroNome_ImageName.csv)"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:17
 msgid "**Input:**"
@@ -77,12 +78,12 @@ msgid ""
 "Four different z-stack images that vary in their signal-to-noise ratio and "
 "the clustering of their objects of FISH staining in *C. elegans*."
 msgstr ""
-"Quatro imagens diferentes em z-stack que variam em sua relação sinal/ruído e"
-" no agrupamento de seus objetos de coloração FISH em *C. elegans*."
+"Quatro imagens z-stack diferentes, que variam na relação sinal-ruído e no "
+"agrupamento dos objetos de marcação por FISH em *C. elegans*."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:22
 msgid "Voxel dimensions: 0.162x0.162x0.200 um"
-msgstr "Dimensões do voxel: 0,162x0,162x0,200 um"
+msgstr "Dimensões do voxel: 0,162 × 0,162 × 0,200 µm"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:25
 msgid "**Calibration file**"
@@ -90,7 +91,7 @@ msgstr "**Arquivo de calibração**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:27
 msgid "Voxel dimensions: 1x1x1 um"
-msgstr "Dimensões do voxel: 1x1x1 um"
+msgstr "Dimensões do voxel: 1 × 1 × 1 µm"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:29
 msgid "**FishPipeline** - (4 min)"
@@ -102,7 +103,7 @@ msgstr "**Importando dados no CellProfiler**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:34
 msgid "Highlight the **Images** module."
-msgstr "Destaque o módulo **Imagens**."
+msgstr "Selecione o módulo **Imagens**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:36
 msgid ""
@@ -115,16 +116,16 @@ msgid ""
 "Load the pipeline file (.cppipe). Drag-and-Drop the file or go to "
 "File->Import->Pipeline from File."
 msgstr ""
-"Carregue o arquivo do pipeline (.cppipe). Arraste e solte o arquivo ou vá "
-"para Arquivo->Importar->Pipeline do arquivo."
+"Carregue o arquivo do pipeline (.cppipe). Arraste e solte o arquivo na "
+"janela do CellProfiler ou vá para Arquivo->Importar->Pipeline do arquivo."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:46
 msgid ""
 "**Note**: The pipeline should populate all information needed, but it’s "
 "always a good practice to check if everything is fine."
 msgstr ""
-"**Observação**: O pipeline deve preencher todas as informações necessárias, "
-"mas é sempre uma boa prática verificar se está tudo bem."
+"**Nota:** o pipeline deve preencher todas as informações necessárias, mas é "
+"sempre uma boa prática verificar se está tudo certo."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:50
 msgid ""
@@ -136,7 +137,7 @@ msgstr ""
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:52
 msgid "Highlight the **NameAndType** module."
-msgstr "Destaque o módulo **NameAndType**."
+msgstr "Selecione o módulo **NameAndType**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:54
 msgid ""
@@ -144,32 +145,32 @@ msgid ""
 "modules in the analysis pipeline will refer to it. This module will also let"
 " you define an image stack that should be processed as a whole 3D volume."
 msgstr ""
-"O módulo **NamesAndTypes** dá a cada imagem um nome significativo pelo qual "
-"os módulos no pipeline de análise se referirão a ela. Esse módulo também "
-"permite que você defina uma pilha de imagens que deve ser processada como um"
-" volume 3D inteiro."
+"O módulo **NamesAndTypes** atribui a cada imagem um nome significativo, que "
+"será usado pelos módulos do pipeline de análise para se referirem a ela. "
+"Esse módulo também permite definir uma imagem stack que deve ser processada "
+"como um volume 3D completo."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:59
 msgid ""
 "Assign a name to: All images This is the simplest choice and the appropriate"
 " one because we have only one kind of image."
 msgstr ""
-"Atribuir um nome a: Todas as imagens Esta é a escolha mais simples e "
-"adequada porque temos apenas um tipo de imagem."
+"Em “Assign a name to”, selecione “All images”, esta é a opção mais simples e"
+" a mais adequada, pois temos apenas um tipo de imagem."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:60
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
 msgstr ""
-"Process as 3D: Yes Selecionando \"Yes\", os arquivos serão carregados como "
-"volumes"
+"Em “Process as 3D”, selecione “Yes”, selecionar “Yes” carregará os arquivos "
+"como volumes."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:61
 msgid ""
 "Populate the fields for “Relative Pixel Spacing”. This calibration affects "
 "modules that handle 3D images as volumes."
 msgstr ""
-"Preencha os campos para “Espaçamento relativo de pixels”. Esta calibração "
-"afeta módulos que tratam imagens 3D como volumes."
+"Preencha os campos de “Relative Pixel Spacing”. Essa calibração afeta os "
+"módulos que tratam imagens 3D como volumes."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:63
 msgid ""
@@ -177,9 +178,8 @@ msgid ""
 " um in z. To run the calibration file please change the relative pixel "
 "spacing to 1x1x1 um."
 msgstr ""
-"O espaçamento relativo de pixels foi fornecido e é de 0,162 um em x e y e "
-"0,200 um em z. Para executar o arquivo de calibração, altere o espaçamento "
-"relativo de pixels para 1x1x1 um."
+"O espaçamento relativo de pixels fornecido é de 0,162 µm em x e y e 0,200 µm"
+" em z. "
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:67
 msgid ""
@@ -187,13 +187,13 @@ msgid ""
 "For example, use the name \"FISH\" or \"Worm\" or something else that will "
 "remind you what the image is."
 msgstr ""
-"Atribua às imagens “nomes de variáveis” que descrevam o conteúdo da imagem. "
-"Por exemplo, use o nome “FISH” ou “Worm” ou qualquer outro nome que o lembre"
-" do que é a imagem."
+"Em \"Name to assign these images\", atribua um nome que descreva o conteúdo "
+"da imagem. Por exemplo, use o nome “FISH” ou “Worm” ou qualquer outro nome "
+"que o lembre do que é a imagem."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:68
 msgid "Hit the \"Update\" button to populate"
-msgstr "Clique no botão \"Atualizar\" para preencher"
+msgstr "Clique no botão \"Atualizar\" para preencher as informações."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:75
 msgid ""
@@ -201,7 +201,7 @@ msgid ""
 "processing,Segmentation and Measurement/export."
 msgstr ""
 "Este pipeline pode ser dividido em três partes principais: Processamento de "
-"imagens, Segmentação e Medição/exportação."
+"imagem, Segmentação e Realizando Medidas/Exportando os dados."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:82
 msgid "**Image processing:**"
@@ -216,13 +216,12 @@ msgid ""
 "background from the original image. These modules should normalize the "
 "images making the segmentation process work through all image sets."
 msgstr ""
-"O processamento de imagens é usado para preparar a imagem para uma "
-"segmentação correta. Nesse caso, temos imagens com diferentes relações "
-"sinal-ruído (SNR) e um importante sinal de fundo do verme. Primeiro, "
-"criaremos uma imagem de máscara do verme e a usaremos para remover o ruído e"
-" o fundo da imagem original. Esses módulos devem normalizar as imagens, "
-"fazendo com que o processo de segmentação funcione em todos os conjuntos de "
-"imagens."
+"O processamento de imagem é usado para preparar a imagem para uma "
+"segmentação correta. Neste caso, temos imagens com diferentes relações "
+"sinal-ruído (SNR) e um alto sinal de fundo proveniente do worm. Primeiro, "
+"vamos criar uma máscara do worm e usá-la para remover ruído e fundo da "
+"imagem original. Esses módulos devem normalizar as imagens, permitindo que o"
+" processo de segmentação funcione em todo o conjunto de imagens."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:91
 msgid "Hit the <img src=\"media/StartTestMode.png\" width=\"120\"/> button."
@@ -235,9 +234,9 @@ msgid ""
 "main tab, hit the test tab and choose another image set  <br>"
 msgstr ""
 "**Dica:** você pode selecionar diferentes conjuntos de imagens. Para isso "
-"você pode clicar no botão <img src=\"media/NextImageSet.png\" "
-"width=\"150\"/> ou ir para a aba principal, clicar na aba de teste e "
-"escolher outro conjunto de imagens <br>"
+"você pode clicar no botão “Test” e depois em “Choose Image Set” <img "
+"src=\"media/NextImageSet.png\" width=\"150\"/>; ou na aba principal, clique "
+"em “Next Image Set” para ir para o próximo conjunto de imagens. <br>"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:110
 msgid ""
@@ -246,16 +245,16 @@ msgid ""
 "can vary depending on the Image set chosen."
 msgstr ""
 "Clique no botão <img src=\"media/Step.png\" width=\"120\"/> e uma nova "
-"janela aparecerá com uma imagem resultante que deverá ser semelhante a esta."
-" A imagem pode variar dependendo do conjunto de imagens escolhido."
+"janela vai aparecer com uma imagem resultante que deverá ser semelhante a "
+"esta. A imagem pode variar dependendo do conjunto de imagens escolhido."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:117
 msgid ""
 "In this part of the pipeline we want to identify the worm and not the spots,"
 " so we added a Threshold module to segment the worm."
 msgstr ""
-"Nessa parte do pipeline, queremos identificar o worm e não os pontos, por "
-"isso adicionamos um módulo Threshold para segmentar o worm."
+"Nesta parte do pipeline, queremos identificar o worm e não os spots; por "
+"isso, adicionamos um módulo Threshold para segmentar o worm."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:120
 msgid ""
@@ -265,21 +264,22 @@ msgid ""
 "determined, the Threshold module will set pixel intensities below the value "
 "to zero (black) and above the value to one (white)."
 msgstr ""
-"Módulo **Limite**. Este módulo produz uma imagem binária ou em preto e "
-"branco com base em um limite que pode ser pré-selecionado ou calculado "
-"automaticamente usando um dos vários métodos. Depois que o valor limite for "
-"determinado, o módulo Threshold definirá as intensidades de pixel abaixo do "
-"valor para zero (preto) e acima do valor para um (branco)."
+"**Threshold** . Este módulo produz uma imagem binária, ou preto e branco, "
+"com base em um threshold que pode ser pré-selecionado ou calculado "
+"automaticamente usando um dos vários métodos. Depois que o valor do limiar é"
+" determinado, o módulo Threshold define as intensidades de pixel abaixo "
+"desse valor como zero (preto) e acima desse valor como um (branco)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:121
 msgid ""
 "Select the input image: GaussianFilter (from **GaussianFilter** module)"
 msgstr ""
-"Selecione a imagem de entrada: GaussianFilter (do módulo **GaussianFilter**)"
+"Em “Select the input image”, selecione “GaussianFilter” (do módulo "
+"**GaussianFilter**)"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:122
 msgid "Name the output image: Threshold"
-msgstr "Nomeie a imagem de saída: Threshold (Limiar)"
+msgstr "Em “Name the output image”, escreva Threshold."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:123
 msgid ""
@@ -287,18 +287,18 @@ msgid ""
 "because the out of worm background is relatively unifom after the gaussian "
 "filter)."
 msgstr ""
-"Estratégia de limite: Global (escolhemos uma estratégia de limite global "
-"aqui porque o fundo fora do worm é relativamente uniforme após o filtro "
-"gaussiano)."
+"Em “Threshold strategy”, escolha “Global” (escolhemos uma estratégia de "
+"threshold global aqui porque o fundo fora do worm é relativamente uniforme "
+"após o filtro gaussiano)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:124
 msgid ""
 "Threshold method: Minimum-Cross-Entropy (analyze the intensity distribution "
 "probability using the image histogram and define foreground and background)"
 msgstr ""
-"Método de limite: Entropia Cruzada Mínima (analisar a probabilidade de "
-"distribuição de intensidade usando o histograma da imagem e definir primeiro"
-" e segundo plano)"
+"Em “Threshold method”,  escolha “Minimum-Cross-Entropy” (analisa a "
+"distribuição de intensidades usando o histograma da imagem e define primeiro"
+" plano e plano de fundo)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:125
 msgid ""
@@ -307,14 +307,14 @@ msgid ""
 "image, because we used a gaussian filter module before this module, it’s not"
 " necessary to smooth the image prior to the threshold)."
 msgstr ""
-"Escala de suavização de limite: 0,0 (A suavização melhora a uniformidade dos"
-" objetos resultantes, removendo bordas irregulares causadas por ruído na "
-"imagem adquirida, pois usamos um módulo de filtro gaussiano antes deste "
-"módulo, não é necessário suavizar a imagem antes do limite) ."
+"Em “Threshold smoothing scale”, escreva “0.0” (a suavização melhora a "
+"uniformidade dos objetos resultantes, removendo bordas irregulares causadas "
+"por ruído; como usamos um módulo de filtro Gaussiano antes deste, não é "
+"necessário suavizar a imagem antes de aplicar o limiar)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:126
 msgid "Threshold correction factor: 1"
-msgstr "Fator de correção do limiar: 1"
+msgstr "Em “Threshold correction factor”, escreva 1. "
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:128
 msgid ""
@@ -322,9 +322,9 @@ msgid ""
 "the image, the pixel intensities will appear in the bottom bar of the "
 "display window."
 msgstr ""
-"**Dica:** Para visualizar as intensidades de pixel em uma imagem aberta, "
-"mova o mouse sobre a imagem, e as intensidades de pixel aparecerão na barra "
-"inferior da janela de exibição."
+"**Dica:** para ver as intensidades de um pixel em uma imagem aberta, mova o "
+"mouse sobre a imagem; as intensidades de pixel aparecerão na barra inferior "
+"da janela de exibição."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:142
 msgid ""
@@ -333,26 +333,27 @@ msgid ""
 "information, so dilate the object will prevent objects touching the edge of "
 "the worm to be removed in the following steps."
 msgstr ""
-"Módulo **DilateObjects**. O objetivo desta primeira parte do pipeline é "
-"remover o fundo e o ruído das imagens sem remover informações, portanto "
-"dilatar o objeto evitará que objetos toquem a borda do worm a serem "
-"removidos nas etapas seguintes."
+"Módulo **DilateObjects**. O objetivo desta primeira etapa do pipeline é "
+"remover o background e o ruído das imagens sem perder informação; por isso, "
+"dilatar o objeto ajuda a evitar que regiões encostadas na borda do worm "
+"sejam removidas nos próximos passos."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:147
 msgid "Select the input object: Threshold"
-msgstr "Selecione o objeto de entrada: Limite"
+msgstr "Em “Select the input object”, selecione “Threshold”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:148
 msgid "Name the output object: DilateImage"
-msgstr "Nomeie o objeto de saída: DilateImage"
+msgstr "Em “Name the output object”, escreva “DilateImage”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:149
 msgid ""
 "Structuring element: Ball (Size: 3) ( dilate the objects using a ball shape "
 "with size of 3)."
 msgstr ""
-"Elemento estruturante: Bola (Tamanho: 3) (dilatar os objetos utilizando um "
-"formato de bola com tamanho 3)."
+"Em “Structuring element”, selecione “Ball” e, em “Size”, escreva “3” (dilata"
+" os objetos usando um elemento estruturante em forma de esfera com tamanho "
+"3)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:156
 msgid ""
@@ -360,76 +361,84 @@ msgid ""
 "image (based on previously identified objects or a binary image) so they are"
 " ignored by subsequent mask-respecting modules in the pipeline."
 msgstr ""
-"Módulo **MaskImage**. Este módulo ocultará as partes fora do worm de uma "
-"imagem (com base em objetos previamente identificados ou em uma imagem "
-"binária) para que sejam ignoradas pelos módulos subsequentes que respeitam a"
-" máscara no pipeline."
+"**MaskImage**. Este módulo mascara as regiões fora do worm na imagem (com "
+"base em objetos previamente identificados ou em uma imagem binária), para "
+"que elas sejam ignoradas pelos módulos seguintes do pipeline que respeitam "
+"máscara."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:161
 msgid "Select the input image: fish (from **NamesAndTypes** module)"
-msgstr "Selecione a imagem de entrada: fish (do módulo **NamesAndTypes**)"
+msgstr ""
+"Em “Select the input image”, selecione “fish” (do módulo **NamesAndTypes**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:162
 msgid "Name the output image: MaskWorm"
-msgstr "Nomeie a imagem de saída: MaskWorm"
+msgstr "Em “Name the output image”, escreva “MaskWorm”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:163
 msgid "Use objects or an image as a mask?: Image"
-msgstr "Usar objetos ou uma imagem como máscara? Imagem"
+msgstr "Em “Use objects or an image as a mask?”, selecione “Image”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:164
 msgid "Select image for mask: DilateImage (from **DilateImage** module)"
 msgstr ""
-"Selecione a imagem para a máscara: DilateImage (do módulo **DilateImage**)"
+"Em “Select image for mask”, selecione “DilateImage” (do módulo "
+"**DilateImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:165
 msgid "Invert mask?: No (select the worm and not the background)"
-msgstr "Inverter máscara? Não (selecione a minhoca e não o plano de fundo)"
+msgstr ""
+"Em “Invert mask?”, selecione “No” (para selecionar o worm, e não o fundo)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:172
 msgid ""
 "The resulting image looks the same as the original image, but the pixels out"
 " the worm has a value of 0."
 msgstr ""
-"A imagem resultante tem a mesma aparência da imagem original, mas os pixels "
-"fora do worm têm um valor 0."
+"A imagem resultante parece igual à imagem original, mas os pixels fora do "
+"worm têm valor 0."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:180
 msgid "Select images to measure: MaskWorm (from **MaskImage** module)"
 msgstr ""
-"Selecione as imagens a serem medidas: MaskWorm (do módulo **MaskImage**)"
+"Selecione o módulo **Measurelmagelntensity**. Em “Select images to measure”,"
+" selecione “MaskWorm” (do módulo **MaskImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:181
 msgid "Measure the intensity only from areas enclosed by objects: No"
-msgstr "Meça a intensidade somente em áreas cercadas por objetos: Não"
+msgstr ""
+"Em “Measure the intensity only from areas enclosed by objects”, selecione "
+"“No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:182
 msgid "Calculate custom percentiles: No"
-msgstr "Calcular percentis personalizados: Não"
+msgstr "Em “Calculate custom percentiles”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:189
 msgid "Operation: Subtract"
-msgstr "Operação: Subtrair"
+msgstr ""
+"Selecione o módulo **ImageMath**. Em “Operation”, selecione “Subtract”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:191
 msgid "Name the output image: ImageAfterMath"
-msgstr "Nomear a imagem de saída: ImageAfterMath"
+msgstr "Em “Name the output image”, escreva “ImageAfterMath”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:193
 msgid "Image or measurement?: Image"
-msgstr "Imagem ou medição: Imagem"
+msgstr "Em “Image or measurement?”, selecione “Image”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:195
 msgid "Select the first image: MaskWorm (from **MaskImage** module)"
-msgstr "Selecione a primeira imagem: MaskWorm (do módulo **MaskImage**)"
+msgstr ""
+"Em “Select the first image”, selecione “MaskWorm” (do módulo **MaskImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:197
 msgid "Multiply the first image by: 1.0"
-msgstr "Multiplique a primeira imagem por: 1.0"
+msgstr "Em “Multiply the first image by”, escreva “1.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:199
 msgid "Image or measurement?: Measurement"
-msgstr "Imagem ou medição?: Medição"
+msgstr "Em “Image or measurement?”, selecione “Measurement”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:201
 msgid ""
@@ -437,83 +446,82 @@ msgid ""
 "the measurement is used for the operand for all of the pixels of the other "
 "operand’s image)."
 msgstr ""
-"Categoria: Intensidade (Selecione uma medida feita na imagem. O valor da "
-"medida é utilizado como operando para todos os pixels da imagem do outro "
-"operando)."
+"Em “Category:”, selecione “Intensity” (seleciona uma medida feita na imagem;"
+" o valor dessa medida é usado como operando para todos os pixels da imagem "
+"do outro operando)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:202
 msgid "Measurement: MedianIntensity"
-msgstr "Medição: MedianIntensity"
+msgstr "Em “Measurement:”, selecione “MedianIntensity”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:203
 msgid ""
 "Image: MaskWorm (the image you choose in the **MeasureImageIntensity** "
 "module)"
 msgstr ""
-"Imagem: MaskWorm (a imagem que você escolhe no módulo "
-"**MeasureImageIntensity**)"
+"Em “Image:”, selecione “MaskWorm” (a imagem escolhida no módulo "
+"**MeasureImageIntensity**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:205
 msgid "Multiply the second image by: 1.0"
-msgstr "Multiplique a segunda imagem por: 1.0"
+msgstr "Em “Multiply the second image by”, escreva “1.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:212
 msgid ""
 "The resulting image shows just the spots without the background of the worm."
-msgstr "A imagem resultante mostra apenas as manchas sem o fundo do verme."
+msgstr "A imagem resultante mostra apenas os spots, sem o fundo do worm."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:215
 msgid ""
 "Tip: The image tools on the top toolbar may be helpful to see the details on"
 " your image/objects:"
 msgstr ""
-"Dica: As ferramentas de imagem na barra de ferramentas superior podem ser "
-"úteis para ver os detalhes de suas imagens/objetos:"
+"Dica: as ferramentas de imagem na barra superior podem ajudar a ver os "
+"detalhes da sua imagem/objetos:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:222
 msgid ""
 "The 1st icon from the left lets you reset the view back to the original "
 "view."
 msgstr ""
-"O primeiro ícone da esquerda permite que você redefina a visualização de "
-"volta à visualização original."
+"O 1º ícone da esquerda permite redefinir a visualização para a visualização "
+"original."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:225
 msgid ""
 "The 2nd and 3rd icons let you step backwards and forwards through any "
 "changes you made to the view."
 msgstr ""
-"O segundo e o terceiro ícones permitem que você retroceda e avance nas "
-"alterações feitas na visualização."
+"O 2º e o 3º ícones permitem voltar e avançar pelas mudanças que você fez na "
+"visualização."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:228
 msgid ""
 "The 4th icon lets you change the view by moving in any direction in the "
 "display, by clicking and dragging."
 msgstr ""
-"O quarto ícone permite que você altere a visualização movendo-se em qualquer"
-" direção na tela, clicando e arrastando."
+"O 4º ícone permite mover a visualização em qualquer direção, clicando e "
+"arrastando."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:231
 msgid ""
 "The 5th icon lets you change the view by zooming, by dragging and drawing a "
 "box to zoom in on."
 msgstr ""
-"O quinto ícone permite que você altere a visualização por meio do zoom, "
-"arrastando e desenhando uma caixa para aumentar o zoom."
+"O 5º ícone permite aplicar zoom, clicando e arrastando para desenhar uma "
+"caixa na área que você quer ampliar."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:239
 msgid ""
 "Selecting the input image image: ImageAfterMath (from **ImageAfterMath** "
 "module)"
 msgstr ""
-"Selecionando a imagem de entrada: ImageAfterMath (do módulo "
-"**ImageAfterMath**)"
+"Selecione o módulo **Rescaleintensity**. Em “Select the input image:”, "
+"selecione “ImageAfterMath” (do módulo ImageAfterMath)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:240
 msgid "Name the output image: RescaleIntensity"
-msgstr ""
-"Nomeia a imagem de saída: RescaleIntensity (Redimensionar intensidade)"
+msgstr "Em “Name the output image”, escreva “RescaleIntensity”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:241
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:357
@@ -523,19 +531,19 @@ msgid ""
 " whole image if there is no mask) and rescale every pixel so that the "
 "minimum has an intensity of zero and the maximum has an intensity of one)."
 msgstr ""
-"Método de redimensionamento: Estique cada imagem para usar toda a faixa de "
-"intensidade (encontre os valores mínimo e máximo na parte não mascarada da "
-"imagem (ou na imagem inteira, se não houver máscara) e redimensione cada "
-"pixel para que o mínimo tenha uma intensidade zero e o máximo tem "
-"intensidade de um)."
+"Em “Rescaling method”, selecione “Stretch each image to use the full "
+"intensity range” (encontra os valores mínimo e máximo na parte não mascarada"
+" da imagem — ou na imagem inteira, se não houver máscara — e reescala os "
+"pixels para que o mínimo tenha intensidade 0 e o máximo tenha intensidade "
+"1)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:248
 msgid ""
 "The resulting image looks the same, but the pixel value differs between "
 "images."
 msgstr ""
-"A imagem resultante tem a mesma aparência, mas o valor do pixel difere entre"
-" as imagens."
+"A imagem resultante parece a mesma, mas os valores de pixel diferem entre as"
+" imagens."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:256
 msgid "**Segmentation**"
@@ -546,108 +554,113 @@ msgid ""
 "After removing the worm background on different image sets we can start the "
 "segmentation process."
 msgstr ""
-"Depois de remover o fundo de minhoca em diferentes conjuntos de imagens, "
+"Depois de remover o fundo do worm nos diferentes conjuntos de imagens, "
 "podemos iniciar o processo de segmentação."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:261
 msgid "Add a **Threshold** module."
-msgstr "Adicione um módulo **Limite**."
+msgstr "Adicione um módulo **Threshold**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:263
 msgid "Select the input image: ReduceNoise (from **ReduceNoise** module)"
 msgstr ""
-"Selecione a imagem de entrada: ReduceNoise (do módulo **ReduceNoise**)"
+"Em “Select the input image”, selecione “ReduceNoise” (do módulo "
+"**ReduceNoise**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:264
 msgid "Name the output image: ThresholdSpots"
-msgstr "Nomeie a imagem de saída: ThresholdSpots"
+msgstr "Em “Name the output image”, escreva “ThresholdSpots”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:265
 msgid "Threshold strategy: Global"
-msgstr "Estratégia de limiar: Global"
+msgstr "Em “Threshold strategy”, selecione “Global”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:266
 msgid ""
 "Threshold method: Robust Background (This method can be helpful if the "
 "majority of the image is background)."
 msgstr ""
-"Método de limite: fundo robusto (este método pode ser útil se a maior parte "
-"da imagem for de fundo)."
+"Em “Threshold method”, selecione “Robust Background” (esse método pode ser "
+"útil quando a imagem é predominantemente background)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:267
 msgid "Lower outliner fraction: 0.05 (discard this fraction of dim objects)."
 msgstr ""
-"Fração inferior do contorno: 0,05 (descarte esta fração de objetos escuros)."
+"Em “Lower outlier fraction”, escreva “0.05” (descarta esta fração dos "
+"pixels/regiões menos intensos)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:268
 msgid ""
 "Upper outliner fraction: 0.05 (discard this fraction of bright objects)."
 msgstr ""
-"Fração do contorno superior: 0,05 (descarte esta fração de objetos "
-"brilhantes)."
+"Em “Upper outlier fraction”, escreva “0.05” (descarta esta fração dos "
+"pixels/regiões mais intensos)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:269
 msgid ""
 "Averaging method: Median (This is a good choice if the spot density is "
 "variable or high)."
 msgstr ""
-"Método de cálculo da média: Mediana (Esta é uma boa escolha se a densidade "
-"do ponto for variável ou alta)."
+"Em “Averaging method”, selecione “Median” (é uma boa escolha quando a "
+"densidade de spots varia ou é alta)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:270
 msgid "Variance method: Standard deviation"
-msgstr "Método de variância: Desvio padrão"
+msgstr "Em “Variance method”, selecione “Standard deviation”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:271
 msgid ""
 "\\# of deviations: 8 (value to multiply the calculated variance. Adding "
 "several deviations raises the threshold well above the average)."
 msgstr ""
-"\\# de desvios: 8 (valor para multiplicar a variância calculada. Adicionar "
-"vários desvios aumenta o limite bem acima da média)."
+"Em “\\# of deviations”, escreva “8” (valor que multiplica a variância "
+"calculada; adicionar vários desvios eleva o threshold bem acima da média)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:272
 msgid ""
 "Threshold smoothing scale: 0 (the objects are too small, smoothing before "
 "the threshold results in a larger object)"
 msgstr ""
-"Escala de suavização de limite: 0 (os objetos são muito pequenos, a "
-"suavização antes do limite resulta em um objeto maior)"
+"Em “Threshold smoothing scale”, escreva “0” (os objetos são muito pequenos; "
+"suavizar antes do limiar faz com que o objeto fique maior)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:273
 msgid ""
 "Threshold correction factor: 1.2 (adjust the threshold to be more strict)"
 msgstr ""
-"Fator de correção de limite: 1,2 (ajuste o limite para ser mais rigoroso)"
+"Em “Threshold correction factor”, escreva “1.2” (ajusta o threshold para "
+"ficar mais rigoroso)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:274
 msgid "Lower and upper bounds on threshold: 0, 1.0 (default)"
-msgstr "Limites inferior e superior do limite: 0, 1,0 (padrão)"
+msgstr ""
+"Em “Lower and upper bounds on threshold”, mantenha “0” e “1.0” (padrão).“"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:286
 msgid "**Watershed** module."
-msgstr "Módulo **Bacia Hidrográfica**."
+msgstr "Módulo **Watershed**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:288
 msgid ""
 "This module is used to separate different objects in an image, which in this"
 " case will segment the nuclei."
 msgstr ""
-"Este módulo é utilizado para separar diferentes objetos em uma imagem, que "
-"neste caso irá segmentar os núcleos."
+"Este módulo é usado para separar diferentes objetos em uma imagem; neste "
+"caso, ele vai segmentar os núcleos."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:290
 msgid "Use advanced settings: Yes"
-msgstr "Usar configurações avançadas: Sim"
+msgstr "Em “Use advanced settings”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:291
 msgid "Select the input image: ThresholdSpots (from the **Threshold** module)"
 msgstr ""
-"Selecione a imagem de entrada: ThresholdSpots (do módulo **Threshold**)"
+"Em “Select the input image”, selecione “ThresholdSpots” (do módulo "
+"**Threshold**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:292
 msgid "Name the output object: Spots"
-msgstr "Nomeie o objeto de saída: Spots"
+msgstr "Em “Name the output object”, escreva “Spots”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:293
 msgid ""
@@ -655,9 +668,9 @@ msgid ""
 "process so the markers and other inputs for the algorithm will be "
 "automatically generated based on the footprint size)."
 msgstr ""
-"Gerar a partir de: Distância (não temos marcadores para orientar o processo "
-"de segmentação, portanto os marcadores e outras entradas para o algoritmo "
-"serão gerados automaticamente com base no tamanho da pegada)."
+"Em “Generate from”, selecione “Distance” (como não temos marcadores para "
+"guiar a segmentação, os marcadores e outras entradas do algoritmo serão "
+"gerados automaticamente com base no tamanho do footprint)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:294
 msgid ""
@@ -668,58 +681,59 @@ msgid ""
 "objects will be segmented as one. Small footprint can lead to "
 "oversegmenation, this means one nuclei segmented as two or more objects."
 msgstr ""
-"Footprint: 2 (define as dimensões da janela usada para digitalizar a imagem "
-"de entrada em busca de máximos locais, isso criará um máximo local a partir "
-"de uma imagem binária que estará nos centros dos objetos). Uma área grande "
-"irá suprimir máximos locais que estão próximos em um único máximo, de modo "
-"que dois ou mais objetos serão segmentados como um só. A pequena pegada pode"
-" levar à supersegmentação, isto significa um núcleo segmentado como dois ou "
-"mais objetos."
+"Em “Footprint”, escreva “2” (define as dimensões da janela usada para varrer"
+" a imagem de entrada em busca de máximos locais; isso cria máximos locais a "
+"partir da imagem binária, que ficam no centro dos objetos). Um footprint "
+"grande suprime máximos locais muito próximos, juntando-os em um único "
+"máximo, assim, dois ou mais objetos podem ser segmentados como um só núcleo,"
+" undersegmentation. Um footprint pequeno pode levar à oversegmentation, ou "
+"seja, um objeto, núcleo nesse caso, ser segmentado como dois ou mais."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:295
 msgid ""
 "Downsample: 1 (if the factor is 1, the image is not downsampled, the spots "
 "are too small, downsampling will remove objects)."
 msgstr ""
-"Redução da resolução: 1 (se o fator for 1, a imagem não será reduzida, os "
-"pontos são muito pequenos, a redução da resolução removerá objetos)."
+"Em “Downsample”, escreva “1” (com fator 1, a imagem não é reduzida; como os "
+"spots são muito pequenos, fazer downsampling pode remover objetos)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:296
 msgid "Declump method: Intensity"
-msgstr "Método Declump: Intensidade"
+msgstr "Em “Declump method”, selecione “Intensity”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:297
 msgid "Reference Image: MaskWorm (from **MaskImage** module)"
-msgstr "Imagem de referência: MaskWorm (do módulo **MaskImage**)"
+msgstr "Em “Reference Image”, selecione “MaskWorm” (do módulo **MaskImage**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:298
 msgid "Segmentation distance transform smoothing factor: 0"
-msgstr "Fator de suavização da transformação da distância de segmentação: 0"
+msgstr "Em “Segmentation distance transform smoothing factor”, escreva “0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:299
 msgid "Minimum distance between seeds: 1"
-msgstr "Distância mínima entre as sementes: 1"
+msgstr "Em “Minimum distance between seeds”, escreva “1”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:300
 msgid "Minimum absolute internal distance: 0.0"
-msgstr "Distância interna mínima absoluta: 0.0"
+msgstr "Em “Minimum absolute internal distance”, escreva “0.0”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:301
 msgid "Pixels from border to exclude: 0 (Default)"
-msgstr "Pixels da borda a serem excluídos: 0 (Padrão)"
+msgstr "Em “Pixels from border to exclude”, mantenha “0” (padrão)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:302
 msgid "Maximum number of seeds: -1 (Default no limit)"
-msgstr "Número máximo de sementes: -1 (Padrão sem limite)"
+msgstr "Em “Maximum number of seeds”, mantenha “-1” (padrão, sem limite)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:303
 msgid "Structuring element for seed dilation: Octahedron (Size: 1)"
 msgstr ""
-"Elemento de estruturação para dilatação de sementes: Octaedro (Tamanho: 1)"
+"Em “Structuring element for seed dilation”, selecione “Octahedron” e, em "
+"“Size”, escreva “1”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:315
 msgid "**Measure and export data**"
-msgstr "**Medir e exportar dados**"
+msgstr "**Medindo e exportando os dados**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:317
 msgid ""
@@ -727,9 +741,9 @@ msgid ""
 "modules from the **Measurements** category. This study is asking for two "
 "particular measurements:"
 msgstr ""
-"Agora que os pontos foram segmentados, as medições podem ser feitas usando "
-"os módulos da categoria **Measurements**. Este estudo está solicitando duas "
-"medições específicas:"
+"Agora que os spots foram segmentados, as medidas podem ser feitas usando "
+"módulos da categoria **Measurements**. Este estudo solicita duas medidas "
+"específicas:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:321
 msgid "Centroid location (x, y and z)"
@@ -764,16 +778,16 @@ msgid ""
 "Select images to measure: fish (original image from **NamesAndTypes** "
 "module)"
 msgstr ""
-"Selecione imagens para medir: peixes (imagem original do módulo "
-"**NamesAndTypes**)"
+"Em “Select images to measure”, selecione “fish” (imagem original do módulo "
+"**NamesAndTypes**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:334
 msgid ""
 "Select objects to measure: Spots (from **Watershed** module) to have all the"
 " intensity measurements from the object."
 msgstr ""
-"Selecione objetos para medir: Spots (do módulo **Bacia Hidrográfica**) para "
-"ter todas as medidas de intensidade do objeto."
+"Em “Select objects to measure”, selecione “Spots” (do módulo **Watershed**) "
+"para obter todas as medidas de intensidade do objeto."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:341
 msgid ""
@@ -781,9 +795,9 @@ msgid ""
 "objects and at this point we cannot choose which measurement, so the module "
 "will extract all intensity features possible."
 msgstr ""
-"**Nota:** Os módulos de medição fornecerão vários recursos para objetos "
-"identificados e, nesse momento, não podemos escolher qual medição, portanto,"
-" o módulo extrairá todos os recursos de intensidade possíveis."
+"**Nota:** os módulos de medida fornecem várias features para os objetos "
+"identificados e, neste ponto, não é possível escolher quais medidas extrair;"
+" portanto, o módulo vai extrair todas as features de intensidade possíveis."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:350
 msgid "**Creating visuals**"
@@ -801,21 +815,20 @@ msgid ""
 "certain options for this module do not preserve the relative intensities "
 "from image to image."
 msgstr ""
-"Este módulo permite redimensionar a intensidade das imagens de entrada por "
-"qualquer um dos vários métodos. Você deve ter cuidado ao interpretar medidas"
-" de intensidade e textura derivadas de imagens que foram redimensionadas "
-"porque certas opções deste módulo não preservam as intensidades relativas de"
-" imagem para imagem."
+"Este módulo permite redimensionar a intensidade das imagens de entrada "
+"usando diferentes métodos. Tenha cautela ao interpretar medidas de "
+"intensidade e textura derivadas de imagens redimensionadas, pois algumas "
+"opções deste módulo não preservam as intensidades relativas de uma imagem "
+"para outra."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:355
 msgid "Selecting the input image image: fish (from **NamesAndTypes** module)"
-msgstr "Selecionando a imagem de entrada: fish (do módulo **NamesAndTypes**)"
+msgstr ""
+"Em “Select the input image”, selecione “fish” (do módulo **NamesAndTypes**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:356
 msgid "Name the output image: RescaleIntensityFish"
-msgstr ""
-"Nomear a imagem de saída: RescaleIntensityFish (Redimensionar intensidade do"
-" peixe)"
+msgstr "Em “Name the output image”, escreva “RescaleIntensityFish”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:369
 msgid "**OverlayOutlines** module."
@@ -827,120 +840,125 @@ msgid ""
 "overlaying onto rescaled images, which will be easier to visualize outside "
 "of CellProfiler."
 msgstr ""
-"Este módulo coloca contornos de objetos sobre uma imagem desejada. "
-"Recomendamos a sobreposição em imagens redimensionadas, que serão mais "
+"Este módulo sobrepõe os contornos dos objetos em uma imagem escolhida. "
+"Recomendamos sobrepor em imagens redimensionadas, pois elas ficam mais "
 "fáceis de visualizar fora do CellProfiler."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:371
 msgid "Display outlines on a blank image: No"
-msgstr "Exibir contornos em uma imagem em branco: Não"
+msgstr "Em “Display outlines on a blank image”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:372
 msgid ""
 "Select image on which to display outlines: RescaleIntensityFish (from "
 "**RescaleIntensity** module)"
 msgstr ""
-"Selecione a imagem na qual exibir os contornos: RescaleIntensityFish (do "
-"módulo **RescaleIntensity**)"
+"Em “Select image on which to display outlines”, selecione "
+"“RescaleIntensityFish” (do módulo **RescaleIntensity**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:373
 msgid "Outline display mode: Color"
-msgstr "Modo de exibição de contorno: Colorido"
+msgstr "Em “Outline display mode”, selecione “Color”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:374
 msgid "How to outline: Outer"
-msgstr "Como fazer o esboço: Externo"
+msgstr "Em “How to outline”, selecione “Outer”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:375
 msgid "Select objects to display: Spots (from **Watershed** module)"
 msgstr ""
-"Selecione os objetos a serem exibidos: Spots (do módulo **Watershed**)"
+"Em “Select objects to display”, selecione “Spots” (do módulo **Watershed**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:376
 msgid "Select outline color: Red (Default)."
-msgstr "Selecione a cor do contorno: Vermelho (padrão)."
+msgstr "Em “Select outline color”, mantenha “Red” (padrão)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:387
 msgid "**SaveImages** module."
-msgstr "Módulo **SalvarImagens**."
+msgstr "Módulo **SaveImages**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:389
 msgid "Select the type of image to save: Image"
-msgstr "Selecione o tipo de imagem a ser salva: Imagem"
+msgstr "Em “Select the type of image to save”, selecione “Image”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:390
 msgid ""
 "Select the image to save: SpotsOverlay (from **OverlayOutlines** module)"
 msgstr ""
-"Selecione a imagem para salvar: SpotsOverlay (do módulo **OverlayOutlines**)"
+"Em “Select the image to save”, selecione “SpotsOverlay” (do módulo "
+"**OverlayOutlines**)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:391
 msgid ""
 "Select method for constructing file names: From image filename (use this "
 "option to avoid reassignment of your images)"
 msgstr ""
-"Selecione o método para construir nomes de arquivos: Do nome do arquivo da "
-"imagem (use esta opção para evitar a reatribuição de suas imagens)"
+"Em “Select method for constructing file names”, selecione “From image "
+"filename” (use esta opção para evitar renomear suas imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:392
 msgid ""
 "Select image name for file prefix: fish (select the original image name from"
 " NamesAndTypes module)"
 msgstr ""
-"Selecione o nome da imagem para o prefixo do arquivo: fish (selecione o nome"
-" da imagem original no módulo NamesAndTypes)"
+"Em “Select image name for file prefix”, selecione “fish” (selecione o nome "
+"da imagem original no módulo NamesAndTypes)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:393
 msgid "Append a suffix to the image file name?: No"
-msgstr "Acrescentar um sufixo ao nome do arquivo de imagem: Não"
+msgstr "Em “Append a suffix to the image file name?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:394
 msgid ""
 "Saved file format: tiff (tiff is a lossless format, but you can choose "
 "others depending on what you need to do with this images)"
 msgstr ""
-"Formato de arquivo salvo: tiff (tiff é um formato sem perdas, mas você pode "
-"escolher outros dependendo do que precisa fazer com essas imagens)"
+"Em “Saved file format”, selecione “tiff” (tiff é um formato lossless, em que"
+" a compactação não altera a qualidade da imagem; mas você pode escolher "
+"outros dependendo do que pretende fazer com essas imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:395
 msgid ""
 "Image bit depth: 8-bit integer (this bit depth is easily read outside Cell "
 "Profiler)"
 msgstr ""
-"Profundidade de bits da imagem: número inteiro de 8 bits (essa profundidade "
-"de bits é facilmente lida fora do Cell Profiler)"
+"Em “Image bit depth”, selecione “8-bit integer” (essa profundidade de bits é"
+" facilmente lida fora do CellProfiler)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:396
 msgid "Save with lossless compression: Yes"
-msgstr "Salvar com compactação sem perdas: Sim"
+msgstr "Em “Save with lossless compression”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:397
 msgid ""
 "Output file location: Default Output Folder (or create a new folder just for"
 " this images)"
 msgstr ""
-"Local do arquivo de saída: Pasta de saída padrão (ou crie uma nova pasta "
-"apenas para essas imagens)"
+"Em “Output file location”, selecione “Default Output Folder” (ou crie uma "
+"nova pasta apenas para essas imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:398
 msgid ""
 "Overwrite existing files without warning?: No (prevent file overwritten)"
 msgstr ""
-"Substituir arquivos existentes sem aviso?: Não (evitar a substituição de "
-"arquivos)"
+"Em “Overwrite existing files without warning?”, selecione “No” (evita "
+"sobrescrever arquivos existentes)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:399
 msgid "When to save: Every cycle (Save every image set)"
-msgstr "Quando salvar: Every cycle (Salvar cada conjunto de imagens)"
+msgstr ""
+"Em “When to save”, selecione “Every cycle” (salva a cada conjunto de "
+"imagens)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:400
 msgid "Record the file and path information to the saved image?: No"
 msgstr ""
-"Registre as informações do arquivo e do caminho para a imagem salva? Não"
+"Em “Record the file and path information to the saved image?”, selecione "
+"“No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:401
 msgid "Create subfolders in the output folder: No"
-msgstr "Criar subpastas na pasta de saída: Não"
+msgstr "Em “Create subfolders in the output folder”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:407
 msgid "**ConvertObjectsToImage** module."
@@ -948,19 +966,20 @@ msgstr "Módulo **ConvertObjectsToImage**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:409
 msgid "Select the input objects: Spots (from Watershed module)"
-msgstr "Selecione os objetos de entrada: Spots (do módulo Watershed)"
+msgstr ""
+"Em “Select the input objects”, selecione “Spots” (do módulo Watershed)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:410
 msgid "Name the output image: SpotImage"
-msgstr "Nomeie a imagem de saída: SpotImage"
+msgstr "Em “Name the output image”, escreva “SpotImage”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:411
 msgid "Select the color format: Grayscale"
-msgstr "Selecione o formato de cor: Escala de cinza"
+msgstr "Em “Select the color format”, selecione “Grayscale”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:418
 msgid "**Export measurements**"
-msgstr "**Medidas de exportação**"
+msgstr "**Exportando as medida**"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:420
 msgid ""
@@ -971,12 +990,12 @@ msgid ""
 "module in your pipeline. Save the output of the measurement modules using "
 "**ExportToSpreadsheet** or **ExportToDatabase**."
 msgstr ""
-"É uma boa prática colocar todos os módulos de exportação no final de seu "
-"pipeline. O CellProfiler calcula automaticamente os tempos de execução de "
-"cada módulo que foi executado antes do módulo de exportação. Ao colocar os "
-"módulos de exportação no final do pipeline, você terá acesso aos tempos de "
-"execução de cada módulo do pipeline. Salve a saída dos módulos de medição "
-"usando **ExportToSpreadsheet** ou **ExportToDatabase**."
+"É uma boa prática colocar todos os módulos de exportação no final do seu "
+"pipeline. O CellProfiler calcula automaticamente o tempo de execução de cada"
+" módulo que foi executado antes do módulo de exportação. Ao colocar os "
+"módulos de exportação no fim do pipeline, você terá acesso ao tempo de "
+"execução de cada módulo do seu pipeline. Salve a saída dos módulos de medida"
+" usando **ExportToSpreadsheet** ou **ExportToDatabase**."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:428
 msgid "**ExportToSpreadsheet** module."
@@ -989,120 +1008,130 @@ msgid ""
 "measurements to a comma-, tab-, or other character-delimited text format and"
 " save them to the hard drive in one or several files, as requested."
 msgstr ""
-"Este módulo exporta medições para um ou mais arquivos que podem ser abertos "
-"no Excel ou em outros programas de planilhas. Este módulo irá converter as "
-"medições para um formato de texto delimitado por vírgula, tabulação ou outro"
-" caractere e salvá-las no disco rígido em um ou vários arquivos, conforme "
-"solicitado."
+"Este módulo exporta as medidas para um ou mais arquivos que podem ser "
+"abertos no Excel ou em outros programas de planilha. Ele converte as medidas"
+" para um formato de texto delimitado por vírgula, tabulação ou outro "
+"caractere e salva no disco rígido em um ou vários arquivos, conforme "
+"configurado."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:436
 msgid "Select the column delimiter: Comma (“,”)"
-msgstr "Selecione o delimitador de coluna: Vírgula (\",\")"
+msgstr "Em “Select the column delimiter”, selecione “Comma” (“,”)."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:438
 msgid "Output file location: Default Output Folder"
-msgstr "Local do arquivo de saída: Pasta de saída padrão"
+msgstr "Em “Output file location”, selecione “Default Output Folder”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:440
 msgid "Add a prefix to file names: Yes"
-msgstr "Adicionar um prefixo aos nomes de arquivos: Sim"
+msgstr "Em “Add a prefix to file names”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:442
 msgid "Filename prefix: FISH"
-msgstr "Prefixo do nome do arquivo: FISH"
+msgstr "Em “Filename prefix”, escreva “FISH”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:444
 msgid "Overwrite existing files without warning: No"
-msgstr "Substitui arquivos existentes sem aviso: Não"
+msgstr "Em “Overwrite existing files without warning”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:446
 msgid "Add image metadata columns to your object data file: No"
 msgstr ""
-"Adicione colunas de metadados de imagem ao seu arquivo de dados do objeto: "
-"Não"
+"Em “Add image metadata columns to your object data file”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:448
 msgid "Add image file and folder names to your object data file: No"
 msgstr ""
-"Adicione nomes de arquivos de imagem e pastas ao seu arquivo de dados do "
-"objeto: Não"
+"Em “Add image file and folder names to your object data file”, selecione "
+"“No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:450
 msgid "Representation of Nan/Inf: NaN"
-msgstr "Representação de Nan/Inf: NaN"
+msgstr "Em “Representation of Nan/Inf”, selecione “NaN”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:452
 msgid "Select the measurements to export: Yes"
-msgstr "Selecione as medidas a serem exportadas: Sim"
+msgstr "Em “Select the measurements to export”, selecione “Yes”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:454
 msgid "Press button to select measurements:"
-msgstr "Pressione o botão para selecionar as medições:"
+msgstr "Clique no botão “Press button to select measurements”:"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:456
 msgid "Spots:"
-msgstr "Pontos:"
+msgstr ""
+"Na nova janela, expanda as opções clicando no “>”, ele vira “v”, e selecione"
+" na árvore. Clique em “Spots” para expandir o menu."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:458
 msgid "Intensity: IntegratedIntensity"
-msgstr "Intensidade: IntegratedIntensity"
+msgstr ""
+"Clique no “>” ao lado de “Intensity” para expandir o menu. Em seguida, "
+"selecione a caixa “IntegratedIntensity” e clique no “>” ao lado de para "
+"expandir o menu. Garanta que a caixa “fish” esteja selecionada."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:460
 msgid "Location"
-msgstr "Localização"
+msgstr "Clique no “>” ao lado de “Location” para expandir o menu. "
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:462
 msgid "Center: X, Y and Z"
-msgstr "Centro: X, Y e Z"
+msgstr ""
+"Em seguida, selecione a caixa “Center” e clique no “>” ao lado de para "
+"expandir o menu. Garanta que as caixas “X”, “Y” e “Z” estejam selecionadas."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:464
 msgid "Calculate the per-image mean values for object measurements?:No"
-msgstr "Calcular os valores médios por imagem para medições de objetos?"
+msgstr ""
+"Em “Calculate the per-image mean values for object measurements?”, selecione"
+" “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:466
 msgid "Calculate the per-image median values for object measurements?:No"
-msgstr "Calcular os valores medianos por imagem para medições de objetos?"
+msgstr ""
+"Em “Calculate the per-image median values for object measurements?”, "
+"selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:468
 msgid ""
 "Calculate the per-image standard deviation values for object "
 "measurements?:No"
 msgstr ""
-"Calcular os valores de desvio padrão por imagem para medições de "
-"objetos?:Não"
+"Em “Calculate the per-image standard deviation values for object "
+"measurements?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:470
 msgid "Output file location:Default Output Folder|"
-msgstr "Localização do arquivo de saída:Pasta de saída padrão|"
+msgstr "Em “Output file location”, selecione “Default Output Folder”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:472
 msgid "Create a GenePattern GCT file?:No"
-msgstr "Criar um arquivo GenePattern GCT?:Não"
+msgstr "Em “Create a GenePattern GCT file?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:474
 msgid "Export all measurement types?:No"
-msgstr "Exportar todos os tipos de medição?"
+msgstr "Em “Export all measurement types?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:476
 msgid "Data to export: Spots"
-msgstr "Dados a serem exportados: Pontos"
+msgstr "Em “Data to export”, selecione “Spots”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:478
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:484
 msgid "Use the object name for the file name?: No"
-msgstr "Usar o nome do objeto para o nome do arquivo: Não"
+msgstr "Em “Use the object name for the file name?”, selecione “No”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:480
 msgid "File name: Spots.csv"
-msgstr "Nome do arquivo: Spots.csv"
+msgstr "Em “File name”, escreva “Spots.csv”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:482
 msgid "Data to export: Experiment"
-msgstr "Dados a serem exportados: Experimento"
+msgstr "Em “Data to export”, selecione “Experiment”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:486
 msgid "File name: Metadata.csv"
-msgstr "Nome do arquivo: Metadata.csv"
+msgstr "Em “File name”, escreva “Metadata.csv”."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:493
 msgid "**Congratulations!** The spots have been segmented, measured and"
@@ -1110,8 +1139,8 @@ msgstr "**Parabéns!** Os spots foram segmentados, medidos e"
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:494
 msgid "exported."
-msgstr "exportado."
+msgstr "exportados."
 
 #: ../../source/FishCelegans/ABRF_LMRGFish.md:496
 msgid "**End**"
-msgstr "**Fim"
+msgstr "**Fim**"
