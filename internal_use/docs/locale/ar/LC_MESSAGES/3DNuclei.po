@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-20 17:17-0400\n"
+"POT-Creation-Date: 2026-02-19 20:20+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
 "Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/ar/)\n"
@@ -78,23 +78,19 @@ msgid "Voxel dimensions: 0.124x0.124x0.200 um"
 msgstr "أبعاد الفوكسل: 0.124 × 0.124 × 0.200 ميكرومتر"
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:22
-msgid "Calibration Image: Voxel dimensions: 1x1x1 um"
-msgstr "صورة المعايرة: أبعاد الفوكسل: 1×1×1 ميكرومتر"
-
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:24
 msgid "**Importing data in CellProfiler**"
 msgstr "** استيراد البيانات في CellProfiler **"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:26
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:24
 msgid "Highlight the **Images** module."
 msgstr "قم بتمييز وحدة **الصور**."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:28
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:26
 msgid ""
 "Drag-and-drop the images you will analyze into the **Images** module window."
 msgstr "اسحب وأفلت الصور التي ستقوم بتحليلها في نافذة وحدة **الصور**."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:35
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:33
 msgid ""
 "Load the pipeline file (.cppipe). Drag-and-drop the file or go to "
 "File->Import->Pipeline from File…"
@@ -102,7 +98,7 @@ msgstr ""
 "قم بتحميل ملف مسار البيانات (.cppipe). اسحب الملف وأفلته، أو انتقل إلى ملف "
 "-> استيراد -> مسار البيانات من ملف..."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:38
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:36
 msgid ""
 "Note: The pipeline should populate all information needed, but it’s always a"
 " good practice to check if everything is fine."
@@ -110,7 +106,7 @@ msgstr ""
 "ملاحظة: يجب أن يقوم خط الأنابيب بتعبئة جميع المعلومات المطلوبة، ولكن من "
 "الممارسات الجيدة دائمًا التحقق مما إذا كان كل شيء على ما يرام."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:41
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:39
 msgid ""
 "**Tip: Use the <img src=\"images/Info.png\" width=\"40\"/> button to learn "
 "more or if you have questions.**"
@@ -118,11 +114,11 @@ msgstr ""
 "**نصيحة: استخدم زر <img src=\"images/Info.png\" width=\"40\"/> لمعرفة المزيد"
 " أو إذا كانت لديك أسئلة.**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:43
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:41
 msgid "Highlight the **NamesAndTypes** module."
 msgstr "قم بتمييز وحدة **NamesAndTypes**."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:46
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:44
 msgid ""
 "The **NamesAndTypes** module gives each image a meaningful name by which "
 "modules in the analysis pipeline will refer to it. This module will also let"
@@ -132,7 +128,7 @@ msgstr ""
 "في وحدات مسار التحليل. كما تُمكّنك هذه الوحدة من تحديد مجموعة صور تُعالج "
 "كحجم ثلاثي الأبعاد كامل."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:51
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:49
 msgid ""
 "Assign a name to: All images This is the simplest choice and the appropriate"
 " one because we have only one kind of image."
@@ -140,13 +136,13 @@ msgstr ""
 "قم بتعيين اسم لجميع الصور. هذا هو الخيار الأبسط والأكثر ملاءمة لأن لدينا "
 "نوعًا واحدًا فقط من الصور."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:53
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:51
 msgid "Process as 3D: Yes Selecting “Yes” will load the files as volumes"
 msgstr ""
 "المعالجة كثلاثي الأبعاد: نعم. سيؤدي تحديد \"نعم\" إلى تحميل الملفات كوحدات "
 "تخزين."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:55
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:53
 msgid ""
 "Populate the fields for “Relative Pixel Spacing”. This calibration affects "
 "modules that handle 3D images as volumes."
@@ -154,17 +150,15 @@ msgstr ""
 "قم بتعبئة الحقول الخاصة بـ \"المسافة النسبية بين البكسلات\". يؤثر هذا "
 "المعايرة على الوحدات التي تتعامل مع الصور ثلاثية الأبعاد كحجوم."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:58
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:56
 msgid ""
 "The relative pixel spacing was provided and is 0.124 um in x and y and 0.200"
-" um in z. To run the calibration file please change the relative pixel "
-"spacing to 1x1x1 um."
+" um in z."
 msgstr ""
-"تم توفير تباعد البكسل النسبي، وهو 0.124 ميكرومتر في المحورين x و y و 0.200 "
-"ميكرومتر في المحور z. لتشغيل ملف المعايرة، يرجى تغيير تباعد البكسل النسبي "
-"إلى 1×1×1 ميكرومتر."
+"تم توفير المسافة النسبية بين البكسلات وهي 0.124 ميكرومتر في x و y و 0.200 "
+"ميكرومتر في z."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:62
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:59
 msgid ""
 "Assign the images “variable names” that describe the contents in the image. "
 "For example, use the name \"Nuclei\", \"DNA\", “DAPI” or something else that"
@@ -173,11 +167,11 @@ msgstr ""
 "قم بتعيين \"أسماء متغيرة\" للصور تصف محتوياتها. على سبيل المثال، استخدم اسم "
 "\"نوى\" أو \"حمض نووي\" أو \"DAPI\" أو أي اسم آخر يذكرك بمحتوى الصورة."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:63
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:60
 msgid "Hit the \"update\" button to populate"
 msgstr "اضغط على زر \"تحديث\" لملء البيانات"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:71
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:68
 msgid ""
 "This analysis pipeline can be divided into three main parts: Image "
 "processing,segmentation and measurement/export."
@@ -185,11 +179,11 @@ msgstr ""
 "يمكن تقسيم مسار التحليل هذا إلى ثلاثة أجزاء رئيسية: معالجة الصور، والتجزئة، "
 "والقياس/التصدير."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:79
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:76
 msgid "**Image processing:**"
 msgstr "**معالجة الصور:**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:81
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:78
 msgid ""
 "The image set provided varies in signal-to-noise ratio, before attempting to"
 " segment the nuclei in these images, conditioning the images with filters "
@@ -199,11 +193,11 @@ msgstr ""
 "النوى في هذه الصور، فإن تهيئة الصور باستخدام المرشحات وطرق معالجة الصور "
 "المختلفة من شأنه أن يحسن نتائج التقسيم."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:86
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:83
 msgid "Hit the <img src=\"images/StartTestMode.png\" width=\"150\"/> button."
 msgstr "اضغط على زر <img src=\"images/StartTestMode.png\" width=\"150\"/>."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:88
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:85
 msgid ""
 "**Tip:** You can select different image sets. For that you can hit the <img "
 "src=\"images/NextImageSet.png\" width=\"150\"/> button, or you can go to the"
@@ -213,7 +207,7 @@ msgstr ""
 "src=\"images/NextImageSet.png\" width=\"150\"/>، أو انتقل إلى علامة التبويب "
 "الرئيسية، ثم اضغط على علامة تبويب الاختبار، واختر مجموعة صور أخرى <br>."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:97
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:94
 msgid ""
 "**GaussianFilter** module This module will blur the image and remove part of"
 " the noise. Filtering an image with a Gaussian filter can be helpful if the "
@@ -223,19 +217,19 @@ msgstr ""
 " يُعدّ ترشيح الصورة باستخدام مرشح غاوسي مفيدًا إذا كانت إشارة المقدمة مشوشة "
 "أو قريبة من مستوى التشويش."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:98
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:95
 msgid "Select the input image: Nuclei (from **NamesAndTypes** module),"
 msgstr "حدد الصورة المدخلة: النوى (من وحدة **الأسماء والأنواع**)،"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:99
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:96
 msgid "Name the output image: GaussianFilter,"
 msgstr "قم بتسمية الصورة الناتجة: GaussianFilter،"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:100
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:97
 msgid "Sigma: 1 (larger sigmas induce more blurring)."
 msgstr "سيجما: 1 (قيم سيجما الأكبر تؤدي إلى مزيد من التشويش)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:107
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:104
 msgid ""
 "Hit the <img src=\"images/Step.png\" width=\"150\"/> button and a new window"
 " will pop up with a resulting image that should look like this. The image "
@@ -244,7 +238,7 @@ msgstr ""
 "اضغط على زر <img src=\"images/Step.png\" width=\"150\"/>، وستظهر نافذة جديدة"
 " تحتوي على صورة مشابهة لهذه. قد تختلف الصورة حسب مجموعة الصور المختارة."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:116
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:113
 msgid ""
 "The resulting image is still noisy in image set 3 and 4, so we added a "
 "**ReduceNoise** module to perform a non-local mean noise reduction. Instead "
@@ -256,7 +250,7 @@ msgstr ""
 "البكسلات حول بكسل مركزي فقط لإزالة التشويش، كما هو الحال في "
 "**GaussianFilter**."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:121
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:118
 msgid ""
 "**ReduceNoise** module. This module performs non-local means of noise "
 "reduction. This will run a 5x5 pixel patch with a maximal distance of 2 "
@@ -266,7 +260,7 @@ msgstr ""
 "ستعمل على رقعة بحجم 5×5 بكسل بمسافة قصوى تبلغ 2 بكسل للبحث عن رقع مناسبة "
 "لإزالة الضوضاء باستخدام عتبة قطع تبلغ 0.2."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:123
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:120
 msgid ""
 "**NOTE** This module is quite time consuming, don't worry if it takes "
 "several seconds to run."
@@ -274,28 +268,28 @@ msgstr ""
 "**ملاحظة** هذه الوحدة تستغرق وقتاً طويلاً، فلا تقلق إذا استغرق تشغيلها عدة "
 "ثوانٍ."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:125
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:122
 msgid ""
 "Select the output image: GaussianFilter (from **GaussianFilter** module)."
 msgstr "حدد صورة الإخراج: مرشح غاوسي (من وحدة **مرشح غاوسي**)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:126
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:123
 msgid "Name the output image: ReduceNoise"
 msgstr "اسم الصورة الناتجة: تقليل الضوضاء"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:127
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:124
 msgid "Size: 5"
 msgstr "المقاس: 5"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:128
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:125
 msgid "Distance: 2"
 msgstr "المسافة: 2"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:129
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:126
 msgid "Cut-off distance: 0.2"
 msgstr "مسافة القطع: 0.2"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:136
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:133
 msgid ""
 "**Tip: The image tools on the top toolbar may be helpful to see the details "
 "on your image/objects:**"
@@ -303,13 +297,13 @@ msgstr ""
 "**نصيحة: قد تكون أدوات الصور الموجودة في شريط الأدوات العلوي مفيدة لرؤية "
 "تفاصيل صورتك/كائناتك:**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:144
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:141
 msgid ""
 "The 1st icon from the left lets you reset the view back to the original "
 "view."
 msgstr "تتيح لك الأيقونة الأولى من اليسار إعادة ضبط العرض إلى العرض الأصلي."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:147
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:144
 msgid ""
 "The 2nd and 3rd icons let you step backwards and forwards through any "
 "changes you made to the view."
@@ -317,7 +311,7 @@ msgstr ""
 "تتيح لك الأيقونتان الثانية والثالثة الرجوع والتقدم للأمام عبر أي تغييرات "
 "أجريتها على العرض."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:150
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:147
 msgid ""
 "The 4th icon lets you change the view by moving in any direction in the "
 "display, by clicking and dragging."
@@ -325,7 +319,7 @@ msgstr ""
 "تتيح لك الأيقونة الرابعة تغيير طريقة العرض عن طريق التحرك في أي اتجاه على "
 "الشاشة، وذلك بالنقر والسحب."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:153
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:150
 msgid ""
 "The 5th icon lets you change the view by zooming, by dragging and drawing a "
 "box to zoom in on."
@@ -333,11 +327,11 @@ msgstr ""
 "تتيح لك الأيقونة الخامسة تغيير العرض عن طريق التكبير والتصغير، وذلك عن طريق "
 "سحب ورسم مربع للتكبير عليه."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:161
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:158
 msgid "**Segmentation**"
 msgstr "**التجزئة**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:163
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:160
 msgid ""
 "Now all objects on different image sets have similar dispersion patterns so "
 "we can start the segmentation process. **Tip:** To view pixel intensities in"
@@ -349,7 +343,7 @@ msgstr ""
 " مرر مؤشر الماوس فوق الصورة، وستظهر شدة البكسل في الشريط السفلي لنافذة "
 "العرض."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:168
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:165
 msgid ""
 "**Threshold** module. This module produces a binary, or black and white, "
 "image based on a threshold that can be pre-selected or calculated "
@@ -362,15 +356,15 @@ msgstr ""
 "العديدة. بعد تحديد قيمة العتبة، تقوم وحدة العتبة بضبط شدة البكسلات الأقل من "
 "القيمة إلى الصفر (أسود) والأعلى من القيمة إلى واحد (أبيض)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:169
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:166
 msgid "Select the input image: ReduceNoise (from **ReduceNoise** module)"
 msgstr "حدد الصورة المدخلة: تقليل التشويش (من وحدة **تقليل التشويش**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:170
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:167
 msgid "Name the output image: Threshold"
 msgstr "اسم الصورة الناتجة: العتبة"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:171
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:168
 msgid ""
 "Threshold strategy: Global (We choose a global threshold strategy here "
 "because our background is relatively uniform after the image processing "
@@ -379,7 +373,7 @@ msgstr ""
 "استراتيجية العتبة: عالمية (نختار هنا استراتيجية العتبة العالمية لأن خلفيتنا "
 "موحدة نسبيًا بعد خطوات معالجة الصور في هذه السلسلة)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:172
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:169
 msgid ""
 "Threshold method: Otsu (automatically-calculated threshold method because it"
 " can adapt to changes in lighting conditions between images (in this case we"
@@ -389,7 +383,7 @@ msgstr ""
 "التغيرات في ظروف الإضاءة بين الصور (في هذه الحالة لدينا صور ذات شدة بكسل "
 "مختلفة)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:173
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:170
 msgid ""
 "Two-class or three-class thresholding: Three classes (separate three major "
 "pixel levels \\[foreground, mid-level and   background\\])."
@@ -397,7 +391,7 @@ msgstr ""
 "تحديد العتبة بفئتين أو ثلاث فئات: ثلاث فئات (ثلاثة مستويات بكسل رئيسية "
 "منفصلة [الخلفية، المستوى المتوسط، والخلفية])."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:175
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:172
 msgid ""
 "Assign pixels in the middle intensity: Background (the middle : intensity "
 "pixels levels are noise in these images)."
@@ -405,7 +399,7 @@ msgstr ""
 "قم بتعيين البكسلات ذات الكثافة المتوسطة: الخلفية (المستويات المتوسطة: "
 "مستويات البكسلات ذات الكثافة المتوسطة هي ضوضاء في هذه الصور)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:177
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:174
 msgid ""
 "Threshold smoothing scale: 1.5 (Smoothing improves the uniformity of the "
 "resulting objects, by removing jagged edges caused by   noise in the "
@@ -414,11 +408,11 @@ msgstr ""
 "مقياس التنعيم العتبة: 1.5 (يعمل التنعيم على تحسين تجانس الكائنات الناتجة، عن"
 " طريق إزالة الحواف الخشنة الناتجة عن الضوضاء في الصورة الملتقطة)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:179
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:176
 msgid "Threshold correction factor: 1"
 msgstr "عامل تصحيح العتبة: 1"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:191
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:188
 msgid ""
 "**Watershed** module. This module is used to separate different objects in "
 "an image, which in this case will assign which nuclei."
@@ -426,19 +420,19 @@ msgstr ""
 "وحدة **Watershed**. تُستخدم هذه الوحدة لفصل الكائنات المختلفة في الصورة، "
 "والتي ستحدد في هذه الحالة أي النوى."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:192
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:189
 msgid "Use advanced settings: No"
 msgstr "استخدام الإعدادات المتقدمة: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:193
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:190
 msgid "Select the input image: Threshold (from **Threshold** module)"
 msgstr "حدد الصورة المدخلة: العتبة (من وحدة **العتبة**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:194
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:191
 msgid "Name the output object: Watershed"
 msgstr "اسم الكائن الناتج: مستجمع المياه"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:195
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:192
 msgid ""
 "Generate from: Distance (we don’t have markers to guide the segmentation "
 "process so the markers and other inputs for the algorithm will be "
@@ -447,7 +441,7 @@ msgstr ""
 "يتم التوليد من: المسافة (ليس لدينا علامات لتوجيه عملية التجزئة، لذلك سيتم "
 "إنشاء العلامات والمدخلات الأخرى للخوارزمية تلقائيًا بناءً على حجم البصمة)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:196
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:193
 msgid ""
 "Footprint: 10 (define the dimensions of the window used to scan the input "
 "image for local maxima, this will create a local maxima from a binary image "
@@ -462,11 +456,11 @@ msgstr ""
 "وبالتالي يتم تقسيم جسمين أو أكثر كجسم واحد. أما البصمة الصغيرة فقد تؤدي إلى "
 "تجزئة زائدة، أي تقسيم نواة واحدة إلى جسمين أو أكثر)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:198
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:195
 msgid "Downsample: 3 (reduce processing time without losing data)."
 msgstr "تقليل معدل أخذ العينات: 3 (تقليل وقت المعالجة دون فقدان البيانات)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:210
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:207
 msgid ""
 "**Note:** Sometimes the processing and the segmentation steps can shrink or "
 "dilate your original structures. In this pipeline the objects are shrinked "
@@ -477,24 +471,24 @@ msgstr ""
 "الهياكل الأصلية. في هذه العملية، يتم تقليص حجم الكائنات بعد التجزئة، ويمكنك "
 "اختبار ذلك باستخدام صورة ذات حجم كائن معروف."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:215
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:212
 msgid "**DilateObjects** module. This module dilates your objects and"
 msgstr ""
 "وحدة **DilateObjects**. تعمل هذه الوحدة على توسيع الكائنات الخاصة بك و"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:217
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:214
 msgid ": smooths the edges."
 msgstr ": ينعم الحواف."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:218
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:215
 msgid "Select the input object: Watershed (from **Watershed** module)"
 msgstr "حدد عنصر الإدخال: مستجمع المياه (من وحدة **مستجمع المياه**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:219
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:216
 msgid "Name the output object: RealsizeNuclei"
 msgstr "اسم الكائن الناتج: RealsizeNuclei"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:220
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:217
 msgid ""
 "Structuring element: Octahedron (Size: 1) (dilate the objects using an "
 "octahedron profile with a size of 1)."
@@ -502,17 +496,17 @@ msgstr ""
 "عنصر الهيكلة: ثماني الأوجه (الحجم: 1) (قم بتوسيع الكائنات باستخدام شكل ثماني"
 " الأوجه بحجم 1)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:232
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:229
 msgid ""
 "**Note**: The colors are assigned at random and will vary in each run of the"
 " module."
 msgstr "**ملاحظة**: يتم تعيين الألوان بشكل عشوائي وستختلف في كل تشغيل للوحدة."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:234
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:231
 msgid "**Measure and export data**"
 msgstr "**قياس البيانات وتصديرها**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:236
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:233
 msgid ""
 "Now that the nuclei have been segmented, measurements can be made using "
 "modules from the **Measurements** category. This study is asking for 3 "
@@ -521,20 +515,20 @@ msgstr ""
 "بعد تقسيم النوى، يمكن إجراء القياسات باستخدام وحدات من فئة **القياسات**. "
 "تتطلب هذه الدراسة ثلاثة قياسات محددة:"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:240
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:237
 msgid "Centroid location (x, y and z)"
 msgstr "موقع مركز الثقل (س، ص، ع)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:242
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:239
 msgid "Integrated intensity"
 msgstr "الكثافة المتكاملة"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:244
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:387
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:241
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:384
 msgid "Volume"
 msgstr "مقدار"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:246
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:243
 msgid ""
 "In this case we need two modules to extract this information, "
 "**MeasureObjectIntensity** and **MeasureObjectSizeShape** modules."
@@ -542,7 +536,7 @@ msgstr ""
 "في هذه الحالة نحتاج إلى وحدتين لاستخراج هذه المعلومات، وهما وحدتا "
 "**MeasureObjectIntensity** و **MeasureObjectSizeShape**."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:249
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:246
 msgid ""
 "**Note:** When applying these measurements, be careful to measure the "
 "original images, not rescaled or processed images."
@@ -550,18 +544,18 @@ msgstr ""
 "**ملاحظة:** عند تطبيق هذه القياسات، احرص على قياس الصور الأصلية، وليس الصور "
 "التي تم تغيير حجمها أو معالجتها."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:252
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:249
 msgid "**MeasureObjectIntensity** module"
 msgstr "وحدة **قياس شدة الكائن**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:254
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:251
 msgid ""
 "Select images to measure: Nuclei (original image from **NamesAndTypes** "
 "module)"
 msgstr ""
 "حدد الصور المراد قياسها: النوى (الصورة الأصلية من وحدة **الأسماء والأنواع**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:255
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:252
 msgid ""
 "Select objects to measure: RealsizeNuclei (from **DilateObjects** module) to"
 " have all the intensity measurements from the object."
@@ -569,7 +563,7 @@ msgstr ""
 "حدد الكائنات المراد قياسها: RealsizeNuclei (من وحدة **DilateObjects**) "
 "للحصول على جميع قياسات الشدة من الكائن."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:262
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:259
 msgid ""
 "**Note:** The measure modules will provide several features for identified "
 "objects and at this point we cannot choose which measurement, so the module "
@@ -579,11 +573,11 @@ msgstr ""
 "المرحلة لا يمكننا اختيار القياس، لذلك ستقوم الوحدة باستخراج جميع ميزات الشدة"
 " الممكنة."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:271
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:268
 msgid "**MeasureObjectSizeShape module**"
 msgstr "**وحدة قياس حجم وشكل الكائن**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:273
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:270
 msgid ""
 "Select object sets to measure: RealsizeNuclei (from **DilateObjects** "
 "module)"
@@ -591,19 +585,19 @@ msgstr ""
 "حدد مجموعات الكائنات المراد قياسها: RealsizeNuclei (من وحدة "
 "**DilateObjects**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:274
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:271
 msgid "Calculate the Zernike features: No"
 msgstr "احسب خصائص زيرنيكه: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:275
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:272
 msgid "Calculate the advanced features: No"
 msgstr "حساب الميزات المتقدمة: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:287
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:284
 msgid "**Creating visuals**"
 msgstr "**إنشاء الصور المرئية**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:289
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:286
 msgid ""
 "Add the **RescaleIntesity** module to your pipeline. This module lets you "
 "rescale the intensity of the input images by any of several methods. You "
@@ -616,15 +610,15 @@ msgstr ""
 "قياسات الشدة والنسيج المستمدة من الصور التي أُعيد تحجيمها، لأن بعض خيارات "
 "هذه الوحدة لا تحافظ على الشدة النسبية بين الصور."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:290
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:287
 msgid "Select the input image image: Nuclei (from **NamesAndTypes** module)"
 msgstr "حدد صورة الإدخال: النوى (من وحدة **الأسماء والأنواع**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:291
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:288
 msgid "Name the output image: RescaleIntensityNuclei"
 msgstr "اسم الصورة الناتجة: RescaleIntensityNuclei"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:292
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:289
 msgid ""
 "Rescaling method: Stretch each image to use the full intensity range (Find "
 "the minimum and maximum values within the unmasked part of the image (or the"
@@ -636,7 +630,7 @@ msgstr ""
 " لم يكن هناك قناع) وقم بإعادة تحجيم كل بكسل بحيث تكون الكثافة الدنيا صفرًا "
 "والكثافة القصوى واحدًا)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:304
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:301
 msgid ""
 "**OverlayObjects** module. This module overlay the objects as colored masks "
 "on the image. We recommend overlaying onto rescaled images,which will be "
@@ -646,26 +640,26 @@ msgstr ""
 "الصورة. نوصي بتراكبها على صور مُعاد تحجيمها، مما يُسهّل عرضها خارج برنامج "
 "CellProfiler."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:305
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:302
 msgid "Input: RescaleIntensityNuclei (from **RescaleIntensity** module)"
 msgstr "المدخلات: RescaleIntensityNuclei (من وحدة **RescaleIntensity**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:306
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:303
 msgid "Name the output image: OverlayObjects"
 msgstr "قم بتسمية الصورة الناتجة: OverlayObjects"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:307
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:304
 msgid "Objects: RealsizeNuclei (from **DilateObjects** module)"
 msgstr "الكائنات: RealsizeNuclei (من وحدة **DilateObjects**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:308
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:305
 msgid ""
 "Opacity: 0.3 (Increase this value to decrease the transparency of the "
 "colorized object labels)."
 msgstr ""
 "الشفافية: 0.3 (قم بزيادة هذه القيمة لتقليل شفافية تسميات الكائنات الملونة)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:315
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:312
 msgid ""
 "**SaveImages** module. This module saves image or movie files. Because "
 "CellProfiler usually performs many image analysis steps on many groups of "
@@ -686,16 +680,16 @@ msgstr ""
 "الوحدة كمُحوّل لتنسيقات الملفات، وذلك بتحميل الملفات بتنسيقها الأصلي ثم "
 "حفظها بتنسيق بديل."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:317
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:314
 msgid "Select the type of image to save: Image"
 msgstr "حدد نوع الصورة المراد حفظها: صورة"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:318
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:315
 msgid ""
 "Select the image to save: OverlayObjects (from **OverlayObjects** module)"
 msgstr "حدد الصورة المراد حفظها: كائنات التراكب (من وحدة **كائنات التراكب**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:319
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:316
 msgid ""
 "Select method for constructing file names: From image filename (use this "
 "option to avoid reassignment of your images)"
@@ -703,7 +697,7 @@ msgstr ""
 "حدد طريقة إنشاء أسماء الملفات: من اسم ملف الصورة (استخدم هذا الخيار لتجنب "
 "إعادة تعيين صورك)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:320
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:317
 msgid ""
 "Select image name for file prefix: Nuclei (select the original image name "
 "from NamesAndTypes module)"
@@ -711,11 +705,11 @@ msgstr ""
 "حدد اسم الصورة لبادئة الملف: Nuclei (حدد اسم الصورة الأصلي من وحدة "
 "NamesAndTypes)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:321
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:318
 msgid "Append a suffix to the image file name?: Yes"
 msgstr "هل تريد إضافة لاحقة إلى اسم ملف الصورة؟: نعم"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:322
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:319
 msgid ""
 "Text to append to the image name: Overlay (just add Overlay in the end of "
 "your original image file name)"
@@ -723,7 +717,7 @@ msgstr ""
 "النص المراد إضافته إلى اسم الصورة: Overlay (ما عليك سوى إضافة كلمة Overlay "
 "في نهاية اسم ملف الصورة الأصلي)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:323
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:320
 msgid ""
 "Saved file format: tiff (tiff is a lossless format, but you can choose "
 "others depending on what you need to do with this images)"
@@ -731,7 +725,7 @@ msgstr ""
 "صيغة الملف المحفوظ: tiff (صيغة tiff هي صيغة غير مضغوطة، ولكن يمكنك اختيار "
 "صيغ أخرى حسب ما تريد فعله بهذه الصور)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:324
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:321
 msgid ""
 "Image bit depth: 8-bit integer (this bit depth is easily read outside Cell "
 "Profiler)"
@@ -739,11 +733,11 @@ msgstr ""
 "عمق بت الصورة: عدد صحيح 8 بت (يمكن قراءة عمق البت هذا بسهولة خارج برنامج "
 "Cell Profiler)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:325
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:322
 msgid "Save with lossless compression: Yes"
 msgstr "الحفظ باستخدام ضغط بدون فقدان للجودة: نعم"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:326
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:323
 msgid ""
 "Output file location: Default Output Folder (or create a new folder just for"
 " this images)"
@@ -751,24 +745,24 @@ msgstr ""
 "موقع ملف الإخراج: مجلد الإخراج الافتراضي (أو إنشاء مجلد جديد مخصص لهذه الصور"
 " فقط)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:327
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:324
 msgid ""
 "Overwrite existing files without warning?: No (prevent file overwritten)"
 msgstr "هل تريد استبدال الملفات الموجودة دون تحذير؟: لا (منع استبدال الملفات)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:328
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:325
 msgid "When to save: Every cycle (Save every image set)"
 msgstr "متى يتم الحفظ: في كل دورة (حفظ كل مجموعة صور)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:329
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:326
 msgid "Record the file and path information to the saved image?: No"
 msgstr "هل تريد تسجيل معلومات الملف ومسار الصورة المحفوظة؟: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:330
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:327
 msgid "Create subfolders in the output folder: No"
 msgstr "إنشاء مجلدات فرعية في مجلد الإخراج: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:337
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:334
 msgid ""
 "**ConvertObjectsToImage** module. Transform objects in image (provide a 3D "
 "volume image of the segmented image)"
@@ -776,24 +770,24 @@ msgstr ""
 "وحدة **تحويل الكائنات إلى صور**. تحويل الكائنات في الصورة (توفير صورة ثلاثية"
 " الأبعاد للصورة المجزأة)."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:339
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:336
 msgid ""
 "Select the input objects: RealsizeNuclei (from **DilateObjects** module)"
 msgstr "حدد كائنات الإدخال: RealsizeNuclei (من وحدة **DilateObjects**)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:340
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:337
 msgid "Name the output image: NucleiObjects3D"
 msgstr "اسم الصورة الناتجة: NucleiObjects3D"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:341
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:338
 msgid "Select the color format: Grayscale"
 msgstr "حدد تنسيق اللون: تدرج الرمادي"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:348
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:345
 msgid "**Export measurements**"
 msgstr "**قياسات التصدير**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:350
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:347
 msgid ""
 "It’s good practice to place all export modules at the end of your pipeline. "
 "CellProfiler automatically calculates execution times for each module that "
@@ -808,7 +802,7 @@ msgstr ""
 " كل وحدة فيه. احفظ مخرجات وحدات القياس باستخدام **ExportToSpreadsheet** أو "
 "**ExportToDatabase**."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:358
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:355
 msgid ""
 "**ExportToSpreadsheet** module. This module exports measurements into one or"
 " more files that can be opened in Excel or other spreadsheet programs. This "
@@ -821,117 +815,117 @@ msgstr ""
 "هذه الوحدة بتحويل القياسات إلى تنسيق نصي مفصول بفواصل أو علامات جدولة أو أي "
 "تنسيق نصي آخر، وحفظها على القرص الصلب في ملف واحد أو عدة ملفات، حسب الطلب."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:364
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:361
 msgid "Select the column delimiter: Comma (“,”)"
 msgstr "حدد فاصل الأعمدة: الفاصلة (“,”)"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:366
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:363
 msgid "Output file location: Default Output Folder"
 msgstr "موقع ملف الإخراج: مجلد الإخراج الافتراضي"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:368
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:365
 msgid "Add a prefix to file names: Yes"
 msgstr "إضافة بادئة إلى أسماء الملفات: نعم"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:370
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:367
 msgid "Filename prefix: MyExpt\\_"
 msgstr "بادئة اسم الملف: MyExpt_"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:372
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:369
 msgid "Overwrite existing files without warning: No"
 msgstr "الكتابة فوق الملفات الموجودة دون تحذير: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:374
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:371
 msgid "Add image metadata columns to your object data file: No"
 msgstr "أضف أعمدة بيانات تعريف الصورة إلى ملف بيانات الكائن الخاص بك: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:376
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:373
 msgid "Add image file and folder names to your object data file: No"
 msgstr "أضف أسماء ملفات الصور والمجلدات إلى ملف بيانات الكائن الخاص بك: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:378
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:375
 msgid "Representation of Nan/Inf: NaN"
 msgstr "تمثيل نان / المشاة: NaN"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:380
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:377
 msgid "Select the measurements to export: Yes"
 msgstr "حدد القياسات المراد تصديرها: نعم"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:382
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:379
 msgid "Press the button to select measurements:"
 msgstr "اضغط على الزر لاختيار القياسات:"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:384
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:381
 msgid "RealsizeNuclei:"
 msgstr "حجم النواة الحقيقي:"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:386
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:383
 msgid "AreaShape: Center: X, Y and Z"
 msgstr "شكل المنطقة: المركز: س، ص، ع"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:389
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:386
 msgid "Intensity: IntegratedIntensity"
 msgstr "الشدة: الشدة المتكاملة"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:391
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:388
 msgid "Calculate the per-image mean values for object measurements?:No"
 msgstr "هل تريد حساب متوسط قيم قياسات الجسم لكل صورة؟: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:393
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:390
 msgid "Calculate the per-image median values for object measurements?:No"
 msgstr "هل تريد حساب القيم الوسيطة لكل صورة لقياسات الكائن؟: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:395
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:392
 msgid ""
 "Calculate the per-image standard deviation values for object "
 "measurements?:No"
 msgstr "هل تريد حساب قيم الانحراف المعياري لكل صورة لقياسات الجسم؟: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:397
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:394
 msgid "Output file location:Default Output Folder|"
 msgstr "موقع ملف الإخراج: مجلد الإخراج الافتراضي |"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:399
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:396
 msgid "Create a GenePattern GCT file?:No"
 msgstr "إنشاء ملف GenePattern GCT؟: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:401
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:398
 msgid "Export all measurement types?:No"
 msgstr "تصدير جميع أنواع القياسات؟: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:403
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:400
 msgid "Data to export: RealsizeNuclei"
 msgstr "البيانات المراد تصديرها: RealsizeNuclei"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:405
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:411
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:402
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:408
 msgid "Use the object name for the file name?: No"
 msgstr "هل يُستخدم اسم الكائن كاسم للملف؟: لا"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:407
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:404
 msgid "File name: Nuclei.csv"
 msgstr "اسم الملف: Nuclei.csv"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:409
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:406
 msgid "Data to export: Experiment"
 msgstr "البيانات المراد تصديرها: تجربة"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:413
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:410
 msgid "File name: Metadata.csv"
 msgstr "اسم الملف: Metadata.csv"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:420
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:417
 msgid "**Results overview:**"
 msgstr "**نظرة عامة على النتائج:**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:427
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:424
 msgid "**Congratulations!**"
 msgstr "**تهانينا!**"
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:428
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:425
 msgid "The nucleus has been segmented, measured and exported."
 msgstr "تم تقسيم النواة وقياسها وتصديرها."
 
-#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:431
+#: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:428
 msgid "**The End**"
 msgstr "**النهاية**"
