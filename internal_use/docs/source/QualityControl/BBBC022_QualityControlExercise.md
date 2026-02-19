@@ -204,14 +204,14 @@ in later steps.
 *Figure 1: Examining the objects inside a gate.*
 ```
 
-- Look at some of the images inside the gate ( you may need to click
+- Look at some of the images inside the gate (you may need to click
   ‘Show controls’ to adjust the zoom, contrast stretch, etc). Are they
   in focus, and are they free of bright debris? If they seem all or
   mostly like they’re high quality, adjust the gate to look at a
   different/smaller subset or delete it altogether by using the Gate
   Inspector (‘gate’-> ‘MANAGE GATES’).
 
-## 4. **Optional- use the PlateViewer tool to check for other features to gate on (~10 minutes)**
+## 4. **Optional — use the PlateViewer tool to check for other features to gate on (~10 minutes)**
 
 If you want to see if you can find additional features that might distinguish good
 images from bad images, feel free to explore the feature set more thoroughly.

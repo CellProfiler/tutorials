@@ -1,6 +1,6 @@
 CellProfiler Pipeline: http://www.cellprofiler.org
 Version:5
-DateRevision:421
+DateRevision:428
 GitHash:
 ModuleCount:20
 HasImagePlaneDetails:False
@@ -251,7 +251,7 @@ SaveImages:[module_num:19|svn_version:'Unknown'|variable_revision_number:16|show
 ExportToSpreadsheet:[module_num:20|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:Comma (",")
     Add image metadata columns to your object data file?:No
-    Add image file and folder names to your object data file?:Yes
+    Add image file and folder names to your object data file?:No
     Select the measurements to export:Yes
     Calculate the per-image mean values for object measurements?:No
     Calculate the per-image median values for object measurements?:No
