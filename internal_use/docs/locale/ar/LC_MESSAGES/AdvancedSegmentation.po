@@ -1,0 +1,1028 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Imaging Platform
+# This file is distributed under the same license as the cellprofiler-tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Beth Cimini, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cellprofiler-tutorials\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"PO-Revision-Date: 2023-12-13 22:27+0000\n"
+"Last-Translator: Beth Cimini, 2026\n"
+"Language-Team: Arabic (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:2
+msgid "Advanced segmentation and organelle analysis"
+msgstr "التجزئة المتقدمة وتحليل العضيات"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:3
+msgid ""
+"***A computer exercise using the CellProfiler & CellProfiler Analyst "
+"softwares***"
+msgstr ""
+"***تمرين على الكمبيوتر باستخدام برنامجي CellProfiler وCellProfiler "
+"Analyst***"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:5
+msgid ""
+"**Beth Cimini**  <br>  **Broad Institute of MIT and Harvard, Cambridge, MA**"
+msgstr ""
+"**بيث سيميني** <br> **معهد برود التابع لمعهد ماساتشوستس للتكنولوجيا وجامعة "
+"هارفارد، كامبريدج، ماساتشوستس**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:9
+msgid "**Background information:**"
+msgstr "**معلومات أساسية:**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:11
+msgid ""
+"The images in this experiment come from the [Broad Bioimage Benchmark "
+"Collection](https://data.broadinstitute.org/bbbc/BBBC022/). They are 240 of "
+"69,120 fields of U2OS cells treated with a panel of 1600 known bioactive "
+"compounds and imaged in five channels for a so-called Cell Painting assay- "
+"see Gustafsdottir et al, 2013 for more information. The compounds target a "
+"wide range of cell pathways, meaning that some cells and organelles will "
+"have very different morphologies both from each other and from the mock "
+"treated controls. This will give you an opportunity to try to find "
+"segmentation parameters that work across a wide range of conditions."
+msgstr ""
+"الصور المستخدمة في هذه التجربة مأخوذة من مجموعة Broad Bioimage Benchmark "
+"Collection (https://data.broadinstitute.org/bbbc/BBBC022/). وهي عبارة عن 240"
+" صورة من أصل 69120 حقلاً لخلايا U2OS، عولجت بمجموعة من 1600 مركب حيوي معروف،"
+" وصُوّرت في خمس قنوات لما يُعرف باختبار \"تلوين الخلايا\" (انظر "
+"Gustafsdottir et al, 2013 لمزيد من المعلومات). تستهدف هذه المركبات نطاقًا "
+"واسعًا من مسارات الخلية، مما يعني أن بعض الخلايا والعضيات ستختلف في شكلها "
+"اختلافًا كبيرًا، سواء فيما بينها أو عن عينات التحكم المعالجة ظاهريًا. سيتيح "
+"لك هذا فرصةً لمحاولة إيجاد معايير تجزئة فعّالة في ظل ظروف متنوعة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:26
+msgid "*Figure 1: Images and channels from a CellPainting assay.*"
+msgstr "*الشكل 1: صور وقنوات من اختبار CellPainting.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:29
+msgid ""
+"While in the traditional Cell Painting protocol we do not actually segment "
+"out any organelles (other than the nucleus), the large number of stained "
+"compartments make this an excellent set of images to find subcellular "
+"features. Finding the average or count of smaller objects inside a larger "
+"‘parent’ object is a feature of many pipelines and an important skill to "
+"have in setting up a CellProfiler analysis."
+msgstr ""
+"على الرغم من أننا لا نقوم في بروتوكول تلوين الخلايا التقليدي بفصل أي عضيات "
+"(باستثناء النواة)، إلا أن العدد الكبير من الحجيرات المصبوغة يجعل هذه "
+"المجموعة من الصور ممتازة لاكتشاف السمات دون الخلوية. يُعدّ إيجاد متوسط أو "
+"عدد الأجسام الأصغر داخل جسم \"أصلي\" أكبر ميزةً للعديد من برامج التحليل، "
+"ومهارةً أساسيةً لإعداد تحليل CellProfiler."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:36
+msgid ""
+"Cell Painting generally consists of a few simple segmentation steps followed"
+" by adding as many measurement modules as can be reasonably included in a "
+"single pipeline; we have found that by doing this we can measure ~1500 "
+"features of each cell and from that create a ‘morphological profile’ that "
+"can be used to predict interesting biology including drug mechanisms of "
+"action, gene-pathway interactions, and more. See Bray et al 2016 and "
+"citations within for more information."
+msgstr ""
+"تتألف تقنية رسم الخلايا عمومًا من بضع خطوات تجزئة بسيطة، تليها إضافة أكبر "
+"عدد ممكن من وحدات القياس التي يمكن تضمينها في مسار معالجة واحد. وقد وجدنا "
+"أنه من خلال القيام بذلك، يمكننا قياس ما يقارب 1500 سمة لكل خلية، ومن ثم "
+"إنشاء \"ملف تعريف مورفولوجي\" يمكن استخدامه للتنبؤ بخصائص بيولوجية مهمة، بما"
+" في ذلك آليات عمل الأدوية، وتفاعلات الجينات مع المسارات، وغير ذلك. للمزيد من"
+" المعلومات، يُرجى مراجعة دراسة Bray et al 2016 والمراجع المذكورة فيها."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:44
+msgid "**Goals of this exercise:**"
+msgstr "**أهداف هذا التمرين:**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:46
+msgid ""
+"This exercise will give you practice at finding segmentation parameters that"
+" will be robust across whatever variability may exist in your sample. This "
+"is not always straightforward, so examining your segmentation across a wide "
+"range of images will be necessary."
+msgstr ""
+"سيوفر لك هذا التمرين فرصةً للتدرب على إيجاد معايير تجزئة تتسم بالمتانة بغض "
+"النظر عن التباين الموجود في عينتك. وهذا ليس بالأمر السهل دائمًا، لذا سيكون "
+"من الضروري فحص عملية التجزئة عبر نطاق واسع من الصور."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:55
+msgid "*Figure 2: Examples of varied nuclei found in this data set.*"
+msgstr "*الشكل 2: أمثلة على النوى المتنوعة الموجودة في مجموعة البيانات هذه.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:58
+msgid ""
+"This exercise will additionally show you some ways to pull out smaller "
+"features in your image by segmenting organelles within the cells and nuclei."
+" You will also be shown how to use RelateObjects so that you can study the "
+"average counts, distances, and measurements of the smaller organelles inside"
+" their larger parent objects."
+msgstr ""
+"سيوضح لك هذا التمرين أيضًا بعض الطرق لاستخراج التفاصيل الدقيقة في صورتك عن "
+"طريق تقسيم العضيات داخل الخلايا والنوى. كما ستتعلم كيفية استخدام أداة "
+"RelateObjects لدراسة متوسط عدد العضيات الصغيرة والمسافات بينها وقياساتها "
+"داخل الكائنات الأكبر حجمًا."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:64
+msgid "**Materials necessary for this exercise:**"
+msgstr "**المواد اللازمة لهذا التمرين:**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:66
+msgid ""
+"These 1200 images (240 sites in 5 channels) represent 120 wells from a "
+"single 384 well plate, either mock treated with DMSO or treated with a "
+"variety of bioactive compounds. A CSV file containing associated drug "
+"treatment information has also been included."
+msgstr ""
+"تمثل هذه الصور الـ 1200 (240 موقعًا في 5 قنوات) 120 بئرًا من صفيحة واحدة "
+"تحتوي على 384 بئرًا، إما معالجة بمحلول DMSO أو معالجة بمجموعة متنوعة من "
+"المركبات النشطة بيولوجيًا. كما تم تضمين ملف CSV يحتوي على معلومات معالجة "
+"الأدوية ذات الصلة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:71
+msgid ""
+"It is additionally expected that you are generally familiar with "
+"CellProfiler, preferably after completing the Translocation tutorial or a "
+"similar introductory exercise."
+msgstr ""
+"ومن المتوقع أيضًا أن تكون على دراية عامة ببرنامج CellProfiler، ويفضل أن يكون"
+" ذلك بعد إكمال البرنامج التعليمي الخاص بالانتقال أو تمرين تمهيدي مماثل."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:75
+msgid "**Input images and configure metadata**"
+msgstr "**أدخل الصور وقم بتكوين البيانات الوصفية**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:77
+msgid "1. **Load images and metadata**"
+msgstr "1. **تحميل الصور والبيانات الوصفية**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
+msgid ""
+"Start CellProfiler by double-clicking the desktop icon <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\" alt=\"CellProfiler icon\" "
+"width=\"35\"/>"
+msgstr ""
+"ابدأ تشغيل برنامج CellProfiler بالنقر المزدوج على أيقونة سطح المكتب <img "
+"src=\"./TutorialImages/CellProfilerLogo.png\" alt=\"CellProfiler icon\" "
+"width=\"35\"/>"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
+msgid "CellProfiler icon"
+msgstr "أيقونة CellProfiler"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:81
+msgid ""
+"Drag and drop the ‘BBBC022_Analysis_Start.cppipe’ file into the ‘Analysis "
+"modules’ box. 7 modules should pop up, and almost all of them will show "
+"errors. **This is the expected behavior.**"
+msgstr ""
+"اسحب ملف \"BBBC022_Analysis_Start.cppipe\" وأفلته في مربع \"وحدات التحليل\"."
+" ستظهر 7 وحدات، وستظهر أخطاء في معظمها. **هذا هو السلوك المتوقع.**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:84
+msgid ""
+"Drag and drop the ‘BBBC022_20585_AE’ folder into the ‘File list’ box. It "
+"should automatically populate. Notice that illumination correction images "
+"(with a file extension of ‘.npy’) are included in this data set."
+msgstr ""
+"اسحب مجلد \"BBBC022_20585_AE\" وأفلته في مربع \"قائمة الملفات\". سيتم ملؤه "
+"تلقائيًا. لاحظ أن صور تصحيح الإضاءة (بامتداد ملف \".npy\") مُضمنة في مجموعة "
+"البيانات هذه."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:89
+msgid "2. **Import metadata from the CSV**"
+msgstr "2. **استيراد البيانات الوصفية من ملف CSV**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:91
+msgid ""
+"So that we can explore what cells treated with different drugs look like "
+"later in the exercise, we must add this information into CellProfiler from "
+"the CSV. Provided with this exercise is a CSV called ‘20585_AE.csv’ "
+"detailing drug treatment info for each image."
+msgstr ""
+"لكي نتمكن من استكشاف شكل الخلايا المعالجة بأدوية مختلفة لاحقًا في التمرين، "
+"يجب علينا إضافة هذه المعلومات إلى برنامج CellProfiler من ملف CSV. يُرفق بهذا"
+" التمرين ملف CSV باسم \"20585_AE.csv\" يحتوي على تفاصيل معالجة كل صورة "
+"بالأدوية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:94
+msgid ""
+"In the ‘Metadata’ module, three metadata extraction methods should already "
+"be present and fully configured:"
+msgstr ""
+"في وحدة \"البيانات الوصفية\"، يجب أن تكون ثلاث طرق لاستخراج البيانات الوصفية"
+" موجودة بالفعل ومُهيأة بالكامل:"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:96
+msgid ""
+"The first pulls Well, Site, and Channel metadata from all of the image files"
+" except for the illumination correction functions"
+msgstr ""
+"يستخرج البرنامج الأول بيانات التعريف الخاصة بالبئر والموقع والقناة من جميع "
+"ملفات الصور باستثناء وظائف تصحيح الإضاءة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:98
+msgid "The second pulls Plate metadata from the image folder"
+msgstr "أما الثاني فيستخرج بيانات تعريف اللوحة من مجلد الصورة"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:99
+msgid ""
+"The third pulls Plate metadata from the illumination correction functions"
+msgstr "أما الثالث فيستخلص بيانات تعريف اللوحة من وظائف تصحيح الإضاءة"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:102
+msgid ""
+"The fourth metadata extraction step requires you to tell CellProfiler the "
+"location of the CSV file.  It is looking for it in CellProfiler's Default "
+"Input Folder, which we must therefore configure."
+msgstr ""
+"تتطلب خطوة استخراج البيانات الوصفية الرابعة تحديد موقع ملف CSV في برنامج "
+"CellProfiler. يبحث البرنامج عنه في مجلد الإدخال الافتراضي الخاص به، والذي "
+"يجب علينا بالتالي ضبطه."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:106
+msgid ""
+"Select the  <img src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/>"
+" button in the bottom left corner of the screen."
+msgstr ""
+"حدد الزر <img src=\"./TutorialImages/OutputSettings.png\" width=\"120\"/> في"
+" الزاوية السفلية اليسرى من الشاشة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:107
+msgid ""
+"Set the ‘Default Input Folder’ to the location of ‘20585_AE.csv’ within the "
+"exercise folder"
+msgstr ""
+"قم بتعيين \"مجلد الإدخال الافتراضي\" إلى موقع الملف \"20585_AE.csv\" داخل "
+"مجلد التمرين."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:109
+msgid ""
+"Return to the ‘Metadata’ module and press ‘Update’. You should now see a "
+"number of columns in the Metadata window."
+msgstr ""
+"ارجع إلى وحدة \"البيانات الوصفية\" واضغط على \"تحديث\". ستظهر لك الآن عدة "
+"أعمدة في نافذة البيانات الوصفية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:111
+msgid ""
+"If you like, examine the CSV and how the ‘Match file and image’ settings are"
+" configured:"
+msgstr ""
+"إذا رغبت، يمكنك الاطلاع على ملف CSV وكيفية ضبط إعدادات \"مطابقة الملف "
+"والصورة\":"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:113
+msgid ""
+"Image_Metadata_PlateID (from the spreadsheet) is matched to Plate (extracted"
+" from the folder name by the second extraction step)"
+msgstr ""
+"يتم مطابقة Image_Metadata_PlateID (من جدول البيانات) مع Plate (المستخرج من "
+"اسم المجلد بواسطة خطوة الاستخراج الثانية)"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:114
+msgid ""
+"Image_Metadata_CPD_WELL_POSITION (from the spreadsheet) is matched to Well "
+"(extracted from the file name by the first extraction step)"
+msgstr ""
+"يتم مطابقة Image_Metadata_CPD_WELL_POSITION (من جدول البيانات) مع Well "
+"(المستخرج من اسم الملف بواسطة خطوة الاستخراج الأولى)"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:116
+msgid "3. **Examine the channel mappings in NamesAndTypes (optional)**"
+msgstr "3. **افحص تعيينات القنوات في NamesAndTypes (اختياري)**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:118
+msgid ""
+"The channel mapping here is a bit more complicated than anything we've "
+"worked with before- we have a single set of illumination correction images "
+"that map to each and every well and site.  We can use the metadata we "
+"extracted in the last module to make that association possible."
+msgstr ""
+"يُعدّ رسم خرائط القنوات هنا أكثر تعقيدًا من أي شيء عملنا عليه سابقًا، إذ "
+"لدينا مجموعة واحدة من صور تصحيح الإضاءة تُطابق كل بئر وموقع. ويمكننا استخدام"
+" البيانات الوصفية التي استخرجناها في الوحدة السابقة لجعل هذا الربط ممكنًا."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:120
+msgid ""
+"Two different ways of mapping images to channel names are demonstrated here."
+" There are several others, and often you could create several correct "
+"mappings for a given set of images, but these may serve as a helpful example"
+" to refer to in your own work."
+msgstr ""
+"يُعرض هنا طريقتان مختلفتان لربط الصور بأسماء القنوات. توجد طرق أخرى عديدة، "
+"وغالبًا ما يمكنك إنشاء عدة روابط صحيحة لمجموعة معينة من الصور، ولكن هذه "
+"الأمثلة قد تكون مفيدة للاستعانة بها في عملك."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:125
+msgid ""
+"The ‘.tif’ image files are assigned a name by the Metadata extracted in the "
+"previous module (specifically ChannelNumber)"
+msgstr ""
+"يتم تعيين اسم لملفات الصور بصيغة \".tif\" بواسطة البيانات الوصفية المستخرجة "
+"في الوحدة السابقة (وتحديداً رقم القناة)."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:128
+msgid ""
+"The ‘.npy’ illumination correction functions are assigned a name based on a "
+"unique string in the name (such as ‘IllumER’)"
+msgstr ""
+"يتم تعيين اسم لوظائف تصحيح الإضاءة '.npy' بناءً على سلسلة فريدة في الاسم "
+"(مثل 'IllumER')."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:131
+msgid ""
+"As there is only one set of illumination correction functions for each "
+"entire plate, the image sets cannot simply be constructed by using ‘Image "
+"set matching’ as ‘Order’."
+msgstr ""
+"بما أن هناك مجموعة واحدة فقط من وظائف تصحيح الإضاءة لكل لوحة كاملة، فلا يمكن"
+" ببساطة إنشاء مجموعات الصور باستخدام \"مطابقة مجموعة الصور\" كـ \"ترتيب\"."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:135
+msgid ""
+"Scroll to the bottom of the ‘NamesAndTypes’ to see how the image sets are "
+"constructed"
+msgstr "انتقل إلى أسفل قسم \"الأسماء والأنواع\" لمعرفة كيفية إنشاء مجموعات الصور"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:138
+msgid "‘Image set matching’ is set to ‘Metadata’"
+msgstr "تم ضبط \"مطابقة مجموعة الصور\" على \"البيانات الوصفية\"."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:139
+msgid "Each image channel is set to ‘Plate->Well->Site’."
+msgstr "تم ضبط كل قناة صورة على \"لوحة -> بئر -> موقع\"."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:140
+msgid ""
+"Each illumination correction function is set to ‘Plate->(None)->(None)’"
+msgstr "تم ضبط كل وظيفة تصحيح إضاءة على \"لوحة -> (لا شيء) -> (لا شيء)\"."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:143
+msgid ""
+"Metadata based matching can be useful in any circumstance where a larger "
+"group of images needs to be mapped with a smaller one, such as every plate "
+"in an image set having its own illumination correction function or every "
+"movie in a series of timelapse movies being matched to its own unique "
+"cropping mask."
+msgstr ""
+"يمكن أن تكون المطابقة القائمة على البيانات الوصفية مفيدة في أي ظرف يتطلب فيه"
+" الأمر ربط مجموعة أكبر من الصور بمجموعة أصغر، مثل كل لوحة في مجموعة صور "
+"تحتوي على وظيفة تصحيح الإضاءة الخاصة بها أو كل فيلم في سلسلة من أفلام الفاصل"
+" الزمني يتم مطابقته مع قناع الاقتصاص الفريد الخاص به."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:153
+msgid "*Figure 3: A section of the ‘Image set matching’ dialog.*"
+msgstr "*الشكل 3: جزء من مربع حوار \"مطابقة مجموعة الصور\".*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:155
+msgid "**Illumination correction**"
+msgstr "**تصحيح الإضاءة**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:157
+msgid ""
+"4. **Examine the output of the CorrectIlluminationApply module (optional)**"
+msgstr "4. **افحص مخرجات وحدة CorrectIlluminationApply (اختياري)**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:159
+msgid ""
+"Since microscope objectives don't typically have a completely uniform "
+"illumination pattern, applying an illumination correction function can help "
+"make segmentation better and measurements more even by compensating for "
+"this.  Pay close attention to the top of the field of view to see the "
+"greatest effect."
+msgstr ""
+"بما أن عدسات المجهر لا توفر عادةً نمط إضاءة موحدًا تمامًا، فإن تطبيق وظيفة "
+"تصحيح الإضاءة يُحسّن من دقة التجزئة ويجعل القياسات أكثر تجانسًا من خلال "
+"تعويض هذا الخلل. ركّز جيدًا على الجزء العلوي من مجال الرؤية لملاحظة التأثير "
+"الأكبر."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:164
+msgid ""
+"Enter test mode and hit ‘Step’ to run the CorrectIlluminationApply module."
+msgstr ""
+"ادخل إلى وضع الاختبار واضغط على \"خطوة\" لتشغيل وحدة "
+"CorrectIlluminationApply."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:167
+msgid ""
+"Briefly examine the output of the CorrectIlluminationApply module- you can "
+"see that the illumination correction functions show significant "
+"heterogeneity across the field of view."
+msgstr ""
+"قم بفحص مخرجات وحدة CorrectIlluminationApply بإيجاز - يمكنك أن ترى أن وظائف "
+"تصحيح الإضاءة تظهر تباينًا كبيرًا عبر مجال الرؤية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:171
+msgid ""
+"These functions were created by averaging and smoothing all 3456 images from"
+" this plate, indicating the image captured is consistently dimmer in those "
+"regions for nearly all images."
+msgstr ""
+"تم إنشاء هذه الوظائف عن طريق حساب متوسط وتنعيم جميع الصور الـ 3456 من هذه "
+"اللوحة، مما يشير إلى أن الصورة الملتقطة تكون أكثر قتامة باستمرار في تلك "
+"المناطق بالنسبة لجميع الصور تقريبًا."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:175
+msgid ""
+"Also note that while the illumination correction functions for each channel "
+"are similar, they aren’t identical; each channel in your own experiments "
+"should therefore be illumination corrected independently."
+msgstr ""
+"لاحظ أيضًا أنه على الرغم من أن وظائف تصحيح الإضاءة لكل قناة متشابهة، إلا "
+"أنها ليست متطابقة؛ لذلك يجب تصحيح إضاءة كل قناة في تجاربك الخاصة بشكل مستقل."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:183
+msgid "*Figure 4: Application of the illumination correction functions.*"
+msgstr "*الشكل 4: تطبيق وظائف تصحيح الإضاءة.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
+msgid "**Segmenet Nuclei, Cells and Cytoplasm**"
+msgstr "**القطاعات: النوى، والخلايا، والسيتوبلازم**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
+msgid "5. **IdentifyPrimaryObjects- Nuclei**"
+msgstr "5. **تحديد الكائنات الأولية - النوى**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:190
+msgid ""
+"Next we'll take a first pass at identifying nuclei and cells in our initial "
+"image."
+msgstr "بعد ذلك، سنقوم بمحاولة أولية لتحديد النوى والخلايا في صورتنا الأولية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:192
+msgid ""
+"**After** the CorrectIlluminationApply module but **before** any others, add"
+" an IdentifyPrimaryObjects module (from the ‘Object Processing’ module "
+"category)."
+msgstr ""
+"**بعد** وحدة CorrectIlluminationApply ولكن **قبل** أي وحدات أخرى، أضف وحدة "
+"IdentifyPrimaryObjects (من فئة وحدات معالجة الكائنات)."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:195
+msgid ""
+"Create objects called Nuclei by segmenting on the Hoechst channel. Hit "
+"‘Step’ to run the module. How does your segmentation look?"
+msgstr ""
+"أنشئ كائنات تُسمى \"نوى\" عن طريق تقسيمها على قناة هوكست. اضغط على \"خطوة\" "
+"لتشغيل الوحدة. كيف يبدو تقسيمك؟"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:197
+msgid ""
+"Use the magnifying glass at the top of the window to zoom in on an area that"
+" was segmented poorly, then update some of your parameters in "
+"IdentifyPrimaryObjects and hit ‘Step’ to rerun the segmentation."
+msgstr ""
+"استخدم العدسة المكبرة في أعلى النافذة للتكبير على منطقة تم تقسيمها بشكل سيئ،"
+" ثم قم بتحديث بعض المعلمات الخاصة بك في IdentifyPrimaryObjects وانقر فوق "
+"\"خطوة\" لإعادة تشغيل عملية التقسيم."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:200
+msgid ""
+"Adjust the segmentation parameters until you feel you’re ready to move on to"
+" identifying the cells around the nuclei; as you will test the parameters "
+"for robustness later, however, the identification should be good but doesn’t"
+" need to be perfect before you move on."
+msgstr ""
+"اضبط معلمات التجزئة حتى تشعر أنك مستعد للانتقال إلى تحديد الخلايا المحيطة "
+"بالنوى؛ ومع ذلك، بما أنك ستختبر المعلمات للتأكد من متانتها لاحقًا، فيجب أن "
+"يكون التحديد جيدًا ولكنه ليس من الضروري أن يكون مثاليًا قبل أن تنتقل إلى "
+"الخطوة التالية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:205
+msgid "6. **IdentifySecondaryObjects- Cells**"
+msgstr "6. **تحديد الكائنات الثانوية - الخلايا**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:207
+msgid ""
+"**After** the IdentifyPrimaryObjects module but **before** the "
+"EnhanceOrSuppressFeatures module, add an IdentifySecondaryObjects module."
+msgstr ""
+"**بعد** وحدة IdentifyPrimaryObjects ولكن **قبل** وحدة "
+"EnhanceOrSuppressFeatures، أضف وحدة IdentifySecondaryObjects."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:210
+msgid ""
+"Create an object called Cells that is seeded on the Nuclei primary objects "
+"that you just created; use the Ph_golgi image."
+msgstr ""
+"قم بإنشاء كائن يسمى Cells يتم زراعته على الكائنات الأساسية Nuclei التي قمت "
+"بإنشائها للتو؛ استخدم صورة Ph_golgi."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:212
+msgid ""
+"For the purposes of this exercise, you need not worry about excluding cell "
+"bodies that touch the edge of the image."
+msgstr ""
+"لأغراض هذا التمرين، لا داعي للقلق بشأن استبعاد أجسام الخلايا التي تلامس حافة"
+" الصورة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:214
+msgid ""
+"Examine the segmentation and adjust the segmentation parameters until you "
+"feel you’re ready to test them on another image; they need not be perfect "
+"before you move on."
+msgstr ""
+"افحص عملية التجزئة واضبط معلمات التجزئة حتى تشعر بأنك مستعد لاختبارها على "
+"صورة أخرى؛ ليس من الضروري أن تكون مثالية قبل أن تنتقل إلى الخطوة التالية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:218
+msgid ""
+"7. **Test the robustness of your segmentation parameters across multiple "
+"compounds**"
+msgstr "7. **اختبر مدى متانة معايير التجزئة الخاصة بك عبر مركبات متعددة**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:220
+msgid ""
+"It's (relatively!) easy to come up with a good set of segmentation "
+"parameters for a single image or a set of similar images; this data set "
+"however contains images from cells treated with many different classes of "
+"drugs, many of which have very different phenotypes. It's valuable to learn "
+"how to create a set of parameters that can segment cells that display a "
+"variety of morphologies since you may come across a similar problem in your "
+"own experiments!"
+msgstr ""
+"من السهل (نسبيًا!) وضع مجموعة جيدة من معايير التجزئة لصورة واحدة أو مجموعة "
+"من الصور المتشابهة؛ إلا أن هذه المجموعة من البيانات تحتوي على صور لخلايا "
+"مُعالجة بأنواع مختلفة من الأدوية، والتي يتميز العديد منها بأنماط ظاهرية "
+"متباينة. من المهم تعلم كيفية إنشاء مجموعة من المعايير التي تُمكن من تجزئة "
+"الخلايا ذات الأشكال المختلفة، إذ قد تواجه مشكلة مماثلة في تجاربك الخاصة!"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:222
+msgid ""
+"Go to Test->Choose Image Set to bring up a list of the images in your "
+"experiment."
+msgstr "انتقل إلى اختبار -> اختيار مجموعة الصور لعرض قائمة بالصور في تجربتك."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:229
+msgid "*Figure 5: A section of the ‘Choose Image Set’ menu.*"
+msgstr "*الشكل 5: جزء من قائمة \"اختيار مجموعة الصور\".*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:232
+msgid ""
+"Look at the column titled ‘Image_Metadata_SOURCE_COMPOUND_NAME’ to see what "
+"chemical was used in each well of the experiment. You may click on the "
+"column to sort the whole table by the values in it if you so desire."
+msgstr ""
+"انظر إلى العمود المعنون \"اسم المركب المصدر لبيانات الصورة\" لمعرفة المادة "
+"الكيميائية المستخدمة في كل بئر من آبار التجربة. يمكنك النقر على العمود لفرز "
+"الجدول بأكمله حسب القيم الموجودة فيه إذا رغبت في ذلك."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:237
+msgid ""
+"Choose a row where ‘Image_Metadata_SOURCE_COMPOUND_NAME’ is blank- this will"
+" be a mock treated well. Press the ‘OK’ button, then run that image in test "
+"mode for your first 3 modules (through your IdentifySecondaryObjects step). "
+"Examine the output – did your nuclear and cellular segmentation hold up "
+"compared to the first images you looked at? Once your segmentation is good, "
+"try it on one additional mock treated image."
+msgstr ""
+"اختر صفًا يكون فيه حقل \"اسم مركب مصدر بيانات الصورة\" فارغًا - سيمثل هذا "
+"نموذجًا تم التعامل معه بنجاح. اضغط على زر \"موافق\"، ثم شغّل تلك الصورة في "
+"وضع الاختبار لأول 3 وحدات (من خلال خطوة \"تحديد الكائنات الثانوية\"). افحص "
+"الناتج - هل حافظ تجزئة النواة والخلايا على دقتها مقارنةً بالصور الأولى التي "
+"اطلعت عليها؟ بمجرد التأكد من جودة التجزئة، جرّبها على صورة أخرى تم التعامل "
+"معها بنجاح."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:244
+msgid ""
+"Test your segmentation on images from a few different compounds- you may "
+"choose ones you’ve worked with before, random ones, or some combination "
+"therein; if possible avoid using multiple compounds you KNOW have the same "
+"mechanism of action, though it’s alright if they occasionally do. Update "
+"your segmentation parameters until they work well on a few different "
+"compound wells, then go back to a mock treated well to make sure it still "
+"works well there."
+msgstr ""
+"اختبر تجزئة الصور على صور من عدة مركبات مختلفة - يمكنك اختيار مركبات سبق لك "
+"العمل عليها، أو مركبات عشوائية، أو مزيج منهما؛ تجنب قدر الإمكان استخدام "
+"مركبات متعددة تعرف أنها تعمل بنفس آلية العمل، مع أنه لا بأس إن حدث ذلك "
+"أحيانًا. حدّث معايير التجزئة حتى تعمل بشكل جيد على عدة عينات من المركبات "
+"المختلفة، ثم ارجع إلى عينة محاكاة معالجة للتأكد من استمرار عملها بشكل جيد "
+"هناك."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:252
+msgid ""
+"You’re encouraged to explore the compound list on your own, but if you find "
+"yourself consistently ending up with images that look similar you can try "
+"adding images from the following list of wells- A08, A12, B12, B18, C7, D6, "
+"D19, D22, E3"
+msgstr ""
+"نشجعك على استكشاف قائمة المركبات بنفسك، ولكن إذا وجدت نفسك تحصل باستمرار على"
+" صور متشابهة، يمكنك محاولة إضافة صور من قائمة الآبار التالية: A08، A12، B12،"
+" B18، C7، D6، D19، D22، E3"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:256
+msgid ""
+"Some hints on what to play with: \\-  In both IdentifyPrimaryObjects and "
+"IdentifySecondaryObjects adjusting the threshold limits can be a good thing "
+"for when wells are empty, confluent, or have bright debris in them \\-  In "
+"both IdentifyPrimaryObjects and IdentifySecondaryObjects adjusting the "
+"threshold method may lead to better (or worse!) results. \\-  In "
+"IdentifyPrimaryObjects, adjusting the declumping settings (make sure to turn"
+" 'Use advanced settings?' on) will probably be necessary for a robust "
+"segmentation \\-  In IdentifySecondaryObjects, you will want to test the "
+"effects of using the various methods for identifying secondary objects "
+"(Propagation, Watershed-Image, Distance-N, etc) and, if using Propagation, "
+"the regularization factor."
+msgstr ""
+"بعض النصائح حول ما يجب تجربته: - في كل من IdentifyPrimaryObjects و "
+"IdentifySecondaryObjects، قد يكون تعديل حدود العتبة مفيدًا عندما تكون الآبار"
+" فارغة أو متصلة أو تحتوي على رواسب ساطعة. - في كل من IdentifyPrimaryObjects "
+"و IdentifySecondaryObjects، قد يؤدي تعديل طريقة العتبة إلى نتائج أفضل (أو "
+"أسوأ!). - في IdentifyPrimaryObjects، من المحتمل أن يكون تعديل إعدادات إزالة "
+"التكتل (تأكد من تفعيل \"استخدام الإعدادات المتقدمة؟\") ضروريًا للحصول على "
+"تجزئة قوية. - في IdentifySecondaryObjects، ستحتاج إلى اختبار تأثير استخدام "
+"الطرق المختلفة لتحديد الكائنات الثانوية (الانتشار، صورة مستجمعات المياه، "
+"المسافة-N، إلخ)، وفي حالة استخدام الانتشار، عامل التنظيم."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:262
+msgid "8. **IdentifyTertiaryObjects- Cytoplasm**"
+msgstr "8. **تحديد الأجسام الثانوية - السيتوبلازم**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:264
+msgid ""
+"**After** the IdentifySecondaryObjects module but **before** the "
+"EnhanceOrSuppressFeatures module, add an IdentifyTertiaryObjects module."
+msgstr ""
+"**بعد** وحدة IdentifySecondaryObjects ولكن **قبل** وحدة "
+"EnhanceOrSuppressFeatures، أضف وحدة IdentifyTertiaryObjects."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:267
+msgid ""
+"Create an object called Cytoplasm using the Cell and Nuclei objects you’ve "
+"created; ‘Shrink smaller object prior to subtraction?’ should both set to "
+"‘No’."
+msgstr ""
+"قم بإنشاء كائن يسمى السيتوبلازم باستخدام كائنات الخلية والنوى التي قمت "
+"بإنشائها؛ يجب أن يكون خيار \"تقليص الكائن الأصغر قبل الطرح؟\" مضبوطًا على "
+"\"لا\"."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:270
+msgid "**Segment Nucleoli inside the Nuclei**"
+msgstr "**تقسيم النويات داخل النوى**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:272
+msgid "9. **Examine the steps used to segment the Nucleoli**"
+msgstr "9. **افحص الخطوات المستخدمة لتقسيم النويات**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:274
+msgid ""
+"The next 3 modules have to do with the creation of the Nucleoli objects. "
+"Look at the output from each to see how the image is transformed to aid in "
+"segmentation."
+msgstr ""
+"تتعلق الوحدات الثلاث التالية بإنشاء كائنات Nucleoli. انظر إلى مخرجات كل منها"
+" لمعرفة كيفية تحويل الصورة للمساعدة في عملية التجزئة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:278
+msgid ""
+"EnhanceOrSuppressFeatures is a module that helps enhance particular parts of"
+" an image- in this case, punctate objects or ‘Speckles’. By specifying the "
+"feature size, you can enhance different parts of the object. As we are "
+"looking for nucleoli, we apply this to the RNA channel (Syto) image, and "
+"call the output ‘FilteredRNA’. (See Fig 6 below)"
+msgstr ""
+"وحدة EnhanceOrSuppressFeatures تُساعد على تحسين أجزاء مُحددة من الصورة، وفي "
+"هذه الحالة، الأجسام النقطية أو \"البقع\". بتحديد حجم الميزة، يُمكنك تحسين "
+"أجزاء مُختلفة من الجسم. ولأننا نبحث عن النويات، نُطبق هذه الوحدة على صورة "
+"قناة الحمض النووي الريبوزي (Syto)، ونُسمي الناتج \"FilteredRNA\". (انظر "
+"الشكل 6 أدناه)"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:285
+msgid ""
+"MaskImage allows you to create a version of the ‘FilteredRNA’ image called "
+"‘SytoNuclei’ where all of the pixels except the ones you specify are set to "
+"an intensity of 0- in this case, we set to 0 any pixel not inside a nucleus."
+" By doing this, we can decrease the likelihood of detecting the cytoplasmic "
+"RNA dots."
+msgstr ""
+"تتيح لك أداة MaskImage إنشاء نسخة من صورة \"FilteredRNA\" تُسمى "
+"\"SytoNuclei\"، حيث يتم ضبط شدة جميع البكسلات، باستثناء تلك التي تحددها، على"
+" الصفر - في هذه الحالة، نضبط شدة أي بكسل ليس داخل نواة على الصفر. بهذه "
+"الطريقة، يمكننا تقليل احتمالية اكتشاف نقاط الحمض النووي الريبوزي "
+"السيتوبلازمي."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:291
+msgid ""
+"IdentifyPrimaryObjects is used to find the Nucleoli- this is a Primary "
+"object segmentation because we are not using another object as a seed to "
+"grow around, but only segmenting based off the intensity in our ‘SytoNuclei’"
+" image."
+msgstr ""
+"تُستخدم خاصية IdentifyPrimaryObjects للعثور على النوى - وهذا تجزئة للكائنات "
+"الأولية لأننا لا نستخدم كائنًا آخر كبذرة للنمو حوله، ولكننا نقوم بالتجزئة "
+"فقط بناءً على شدة الإضاءة في صورة \"SytoNuclei\" الخاصة بنا."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:296
+msgid ""
+"If you like, you can add an \"OverlayOutlines\" module at this point to "
+"overlay the identified nucleoli on the original Syto image to assure "
+"yourself that the segmentation not only matches the speckle-enhanced "
+"‘SytoNuclei’ image, but also looks accurate on the unprocessed image as "
+"well.  This is not necessary but can be a nice \"sanity check\"."
+msgstr ""
+"إذا رغبت، يمكنك إضافة وحدة \"OverlayOutlines\" في هذه المرحلة لتراكب النويات"
+" المحددة على صورة Syto الأصلية للتأكد من أن التجزئة لا تتطابق فقط مع صورة "
+"\"SytoNuclei\" المحسّنة بالبقع، بل تبدو دقيقة أيضًا على الصورة غير المعالجة."
+" هذا ليس ضروريًا، ولكنه قد يكون بمثابة \"فحص مبدئي\" مفيد."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:306
+msgid ""
+"*Figure 6: Enhancing the Syto image allows you to isolate nucleoli against "
+"the nucleoplasmic background signal.*"
+msgstr ""
+"*الشكل 6: تحسين صورة Syto يسمح لك بعزل النويات عن إشارة الخلفية النووية.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:309
+msgid "**Segment the Mitochondria inside the Cytoplasm**"
+msgstr "**قم بتقسيم الميتوكوندريا داخل السيتوبلازم**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
+msgid "10. **Mask the Mito image by the Cytoplasm object**"
+msgstr "10. **قم بإخفاء صورة الميتوكوندريا بواسطة كائن السيتوبلازم**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:313
+msgid ""
+"Now that you’ve seen an example of how to segment an organelle, you will do "
+"so for Mitochondria in the following steps."
+msgstr ""
+"الآن بعد أن رأيت مثالاً على كيفية تقسيم العضية، ستفعل ذلك للميتوكوندريا في "
+"الخطوات التالية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:316
+msgid ""
+"**After** the IdentifyPrimaryObjects module for Nucleoli but **before** the "
+"RelateObjects modules, add a MaskImage module (from the Image Processing "
+"module category)."
+msgstr ""
+"**بعد** وحدة IdentifyPrimaryObjects الخاصة بـ Nucleoli ولكن **قبل** وحدات "
+"RelateObjects، أضف وحدة MaskImage (من فئة وحدة معالجة الصور)."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:320
+msgid "Call your output image ‘MaskedMito’."
+msgstr "قم بتسمية صورة الإخراج الخاصة بك \"MaskedMito\"."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:322
+msgid ""
+"As you saw above with the Nucleoli example, mask the image via Objects, and "
+"use the Cytoplasm objects to create the mask."
+msgstr ""
+"كما رأيت أعلاه مع مثال النوى، قم بإخفاء الصورة عبر الكائنات، واستخدم كائنات "
+"السيتوبلازم لإنشاء القناع."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:325
+msgid ""
+"You may even experiment with doing a similar EnhanceOrSuppressFeatures step "
+"before the masking as was used for the Nucleoli; you may get greater signal-"
+"to-noise, but possibly at the expense of \"fragmenting\" the Mitochondria "
+"objects in the later identification steps."
+msgstr ""
+"يمكنك حتى تجربة القيام بخطوة EnhanceOrSuppressFeatures مماثلة قبل عملية "
+"الإخفاء كما تم استخدامها للنوى؛ قد تحصل على نسبة إشارة إلى ضوضاء أكبر، ولكن "
+"ربما على حساب \"تجزئة\" كائنات الميتوكوندريا في خطوات التحديد اللاحقة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:334
+msgid ""
+"*Figure 7: The MaskedMito image contains only the regions of interest.*"
+msgstr "*الشكل 7: تحتوي صورة MaskedMito على المناطق ذات الأهمية فقط.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:338
+msgid "12. **IdentifyPrimaryObjects- Mitochondria**"
+msgstr "12. **تحديد الكائنات الأولية - الميتوكوندريا**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:340
+msgid ""
+"**After** your MaskImage module but **before** the RelateObjects modules, "
+"add an IdentifyPrimary Objects module to identify Mitochondria from your "
+"MaskedMito image."
+msgstr ""
+"**بعد** وحدة MaskImage الخاصة بك ولكن **قبل** وحدات RelateObjects، أضف وحدة "
+"IdentifyPrimary Objects لتحديد الميتوكوندريا من صورة MaskedMito الخاصة بك."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:344
+msgid ""
+"You should consider using a wide range of pixel sizes here; 2-20 is a "
+"reasonable first place to start."
+msgstr ""
+"ينبغي عليك التفكير في استخدام نطاق واسع من أحجام البكسل هنا؛ 2-20 هي نقطة "
+"بداية معقولة."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:347
+msgid ""
+"If you did use EnhanceOrSuppressFeatures in the previous step, using "
+"OverlayOutlines to compare the outlines with the original image is a good "
+"idea once again."
+msgstr ""
+"إذا كنت قد استخدمت EnhanceOrSuppressFeatures في الخطوة السابقة، فإن استخدام "
+"OverlayOutlines لمقارنة الخطوط الخارجية بالصورة الأصلية فكرة جيدة مرة أخرى."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:351
+msgid "**Perform Measurements**"
+msgstr "**إجراء القياسات**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:353
+msgid "13. **Add measurement modules to your pipeline**"
+msgstr "13. **أضف وحدات القياس إلى مسار العمل الخاص بك**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:355
+msgid ""
+"**After** your segmentation of the mitochondria but **before** the "
+"RelateObjects modules, add as many object measurement modules as you would "
+"like."
+msgstr ""
+"**بعد** تقسيم الميتوكوندريا ولكن **قبل** وحدات RelateObjects، أضف أكبر عدد "
+"ممكن من وحدات قياس الكائنات كما تريد."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:359
+msgid ""
+"Some suggested modules to add- MeasureObjectSizeShape, "
+"MeasureObjectIntensity, MeasureGranularity, MeasureObjectNeighbors."
+msgstr ""
+"بعض الوحدات المقترحة للإضافة: MeasureObjectSizeShape، "
+"MeasureObjectIntensity، MeasureGranularity، MeasureObjectNeighbors."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:362
+msgid ""
+"Which objects do you think would be valuable to measure with each of these "
+"modules? Which channels would you measure your objects in?"
+msgstr ""
+"ما هي الأشياء التي تعتقد أنها ستكون ذات قيمة لقياسها باستخدام كل وحدة من هذه"
+" الوحدات؟ وما هي القنوات التي ستستخدمها لقياس هذه الأشياء؟"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:365
+msgid ""
+"For a typical Cell Painting experiment you would add as many measurements as"
+" possible, but that isn’t necessary here; however, do make sure every object"
+" gets at least some measurements."
+msgstr ""
+"في تجربة الرسم الخلوي النموذجية، ستضيف أكبر عدد ممكن من القياسات، ولكن هذا "
+"ليس ضروريًا هنا؛ ومع ذلك، تأكد من أن كل كائن يحصل على بعض القياسات على "
+"الأقل."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:369
+msgid ""
+"While MeasureCorrelation, MeasureTexture, and "
+"MeasureObjectIntensityDistribution can produce valuable data for downstream "
+"profiling, they can be memory-intensive and/or slow so should not be added "
+"for this example pipeline in the interest of pipeline run time. "
+"MeasureNeurons is not well suited for this pipeline."
+msgstr ""
+"على الرغم من أن وظائف قياس الارتباط، وقياس النسيج، وقياس توزيع شدة الكائنات "
+"يمكن أن تُنتج بيانات قيّمة لتحليل الأداء اللاحق، إلا أنها قد تستهلك الكثير "
+"من الذاكرة و/أو تكون بطيئة، لذا يُنصح بعدم إضافتها إلى هذا المثال من مسار "
+"المعالجة حرصًا على تقليل وقت التشغيل. كما أن وظيفة قياس الخلايا العصبية غير "
+"مناسبة لهذا المسار."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:376
+msgid "**Export data**"
+msgstr "**تصدير البيانات**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:377
+msgid ""
+"In order to use the data visualization and machine learning tools in "
+"CellProfiler Analyst, the measurements will need to be saved to a database "
+"using the **ExportToDatabase**."
+msgstr ""
+"لاستخدام أدوات تصور البيانات والتعلم الآلي في CellProfiler Analyst، يجب حفظ "
+"القياسات في قاعدة بيانات باستخدام **ExportToDatabase**."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:381
+msgid ""
+"Add a module **ExportToDatabase** located under the module *“File "
+"Processing” category*"
+msgstr ""
+"أضف وحدة **ExportToDatabase** الموجودة ضمن فئة الوحدة *“File Processing”*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:383
+msgid ""
+"**NOTE:**  while in *Test mode*, the **ExportToDatabase** module will have a"
+" yellow warning sign in the pipeline panel and yellow- highlighted text in "
+"the module settings. Holding the mouse over the yellow-highlighted text "
+"informs the user that measurements produced in Test mode are not written to "
+"the database. This is normal behavior and does NOT indicate an error."
+msgstr ""
+"**ملاحظة:** أثناء وضع الاختبار، ستظهر علامة تحذير صفراء في لوحة مسار "
+"البيانات ونص مُظلل باللون الأصفر في إعدادات وحدة **تصدير إلى قاعدة "
+"البيانات**. عند تمرير مؤشر الماوس فوق النص المُظلل، يُعلم المستخدم بأن "
+"القياسات المُنتجة في وضع الاختبار لا تُسجل في قاعدة البيانات. هذا سلوك طبيعي"
+" ولا يُشير إلى وجود خطأ."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:390
+msgid "Set up the module as in the image below:"
+msgstr "قم بإعداد الوحدة كما هو موضح في الصورة أدناه:"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:396
+msgid ""
+"*Figure 8: The ExportToDatabase module.  The yellow warning symbol warns you"
+" that since you've chosen to make individual tables for each object, you "
+"will only be able to examine one object at a time in CellProfiler Analyst.*"
+msgstr ""
+"*الشكل 8: وحدة التصدير إلى قاعدة البيانات. يشير رمز التحذير الأصفر إلى أنه "
+"نظرًا لاختيارك إنشاء جداول منفصلة لكل كائن، فلن تتمكن من فحص سوى كائن واحد "
+"في كل مرة في برنامج CellProfiler Analyst.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:401
+msgid ""
+"Check the box “Write image thumbnails directly to database?” From the list-"
+"box that subsequently appears, select “rawDNA” and “rawGFP”; you can make "
+"multiple selections by using Ctrl-click (Windows) or Command-click (Mac). "
+"Leave the rest of the settings at the default values."
+msgstr ""
+"فعّل خيار \"كتابة الصور المصغرة مباشرةً إلى قاعدة البيانات؟\". من القائمة "
+"التي ستظهر لاحقًا، اختر \"rawDNA\" و\"rawGFP\"؛ يمكنك تحديد خيارات متعددة "
+"باستخدام مفتاح Ctrl مع النقر (في نظام ويندوز) أو مفتاح Command مع النقر (في "
+"نظام ماك). اترك باقي الإعدادات على قيمها الافتراضية."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:408
+msgid ""
+"**NOTE:** Because you have different object counts for some of your "
+"different   types of objects (the counts of Nuclei, Cells, and Cytoplasm "
+"will be   the same, but the counts of Mitochondria and Nucleoli will not "
+"be),   you will not be able to export the objects as a single data table but"
+"   must instead use a different data table for each object. This will   not "
+"affect the actual outcome of the experiment, but will mean that   each "
+"object will get its own properties file and that you can only   look at the "
+"measurement for one object at a time in CellProfiler   Analyst."
+msgstr ""
+"**ملاحظة:** نظرًا لاختلاف عدد العناصر بين أنواع الكائنات المختلفة (سيكون عدد"
+" النوى والخلايا والسيتوبلازم متطابقًا، بينما سيختلف عدد الميتوكوندريا "
+"والنويات)، فلن تتمكن من تصدير الكائنات كجدول بيانات واحد، بل يجب عليك "
+"استخدام جدول بيانات منفصل لكل كائن. لن يؤثر هذا على نتائج التجربة، ولكنه "
+"يعني أن كل كائن سيحصل على ملف خصائص خاص به، ولن تتمكن من عرض قياسات سوى كائن"
+" واحد في كل مرة في برنامج CellProfiler Analyst."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:422
+msgid ""
+"*Figure 9: The  warning symbol warns you that since you've chosen to make "
+"individual tables for each object, you will only be able to examine one "
+"object at a time in CellProfiler Analyst.*"
+msgstr ""
+"*الشكل 9: يشير رمز التحذير إلى أنه نظرًا لاختيارك إنشاء جداول منفصلة لكل "
+"عنصر، فلن تتمكن من فحص سوى عنصر واحد في كل مرة في برنامج CellProfiler "
+"Analyst.*"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:427
+msgid "**Relate Nucleoli and Mitochondria to their respective nuclei/cells**"
+msgstr "**ربط النويات والميتوكوندريا بنوى/خلايا كل منهما على حدة**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
+msgid "14. Examine the settings of RelateObjects"
+msgstr "14. افحص إعدادات RelateObjects"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:431
+msgid ""
+"**After** your Measurement and **before** your Export modules you should "
+"find two RelateObjects modules. One relates Nucleoli to Nuclei, while the "
+"other relates Mitochondria to Cells."
+msgstr ""
+"**بعد** عملية القياس و**قبل** عملية التصدير، ستجد وحدتين من وحدات ربط "
+"الكائنات. إحداهما تربط النوى بالنوى، بينما الأخرى تربط الميتوكوندريا "
+"بالخلايا."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:434
+msgid ""
+"Relating the objects allows you to create per-parent means (ie, for this "
+"cell what is the average size of an individual mitochondrion) and calculate "
+"distances from the child objects to the edge and/or the center of the parent"
+" (ie how far is each nucleolus from the center of the nucleus)."
+msgstr ""
+"تتيح لك عملية ربط الكائنات إنشاء متوسطات لكل أصل (أي، بالنسبة لهذه الخلية ما"
+" هو متوسط حجم الميتوكوندريون الفردي) وحساب المسافات من الكائنات الفرعية إلى "
+"حافة و/أو مركز الأصل (أي ما هي المسافة بين كل نوية ومركز النواة)."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:440
+msgid "**Perform the analysis on ALL the images**"
+msgstr "**قم بإجراء التحليل على جميع الصور**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:442
+msgid "15. **Run the pipeline (optional)**"
+msgstr "15. **تشغيل خط الأنابيب (اختياري)**"
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:444
+msgid ""
+"If you have time and/or if you’d like to play with the data in CellProfiler "
+"Analyst later, exit test mode, close the eyes next to each module, and run "
+"the pipeline"
+msgstr ""
+"إذا كان لديك وقت و/أو إذا كنت ترغب في تجربة البيانات في CellProfiler Analyst"
+" لاحقًا، فاخرج من وضع الاختبار، وأغلق العينين بجوار كل وحدة، وشغّل مسار "
+"البيانات."
+
+#: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:447
+msgid ""
+"The pipeline will create a database called BBBC022.db, containing the output"
+" of all of the measurements you have added to your pipeline"
+msgstr ""
+"ستقوم هذه العملية بإنشاء قاعدة بيانات باسم BBBC022.db، تحتوي على مخرجات جميع"
+" القياسات التي أضفتها إلى خط الأنابيب الخاص بك."
