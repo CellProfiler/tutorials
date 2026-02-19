@@ -740,7 +740,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:215
 msgid "Only if you are curious - how did we train the classifier?"
-msgstr "فقط إذا كنت فضوليًا - كيف قمنا بتدريب المصنف؟"
+msgstr "فقط إذا كان لديك فضول - كيف قمنا بتدريب المصنف؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:217
 msgid ""
