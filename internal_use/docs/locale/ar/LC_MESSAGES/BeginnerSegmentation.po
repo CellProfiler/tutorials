@@ -915,7 +915,7 @@ msgstr "بدء وضع الاختبار (Start Test Mode)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 msgid "Eye Open icon"
-msgstr "أيقونة العين المفتوحة"
+msgstr "أيقونة العين المُفعَّلة"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
