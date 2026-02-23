@@ -963,7 +963,7 @@ msgstr "لقطة شاشة لوحدة Runilastik"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:275
 msgid "Evaluating segmentations in the Workspace Viewer"
-msgstr "تقييم عمليات التجزئة في عارض مساحة العمل"
+msgstr "تقييم التجزئة في عارض مساحة العمل (Workspace Viewer)"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:278
 msgid "Bonus-to-the-Bonus - Train your own ilastik model"
