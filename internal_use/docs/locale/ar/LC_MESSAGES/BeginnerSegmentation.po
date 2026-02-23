@@ -853,7 +853,7 @@ msgid ""
 "Open the RunIlastik module, set the path to your project file "
 "(`NucleoliDetection.ilp`)."
 msgstr ""
-"افتح وحدة RunIlastik، وقم بتعيين المسار إلى ملف مشروعك "
+"افتح وحدة RunIlastik، وقم بتعيين المسار إلى ملف مشروعك الآتي من Ilastik "
 "(`NucleoliDetection.ilp`)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:251
