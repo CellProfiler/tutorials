@@ -887,7 +887,7 @@ msgstr "إيقاف مؤقت"
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid "Unchecked"
-msgstr "غير مدقق"
+msgstr "غير محدد, أي غير مُفعَّل"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 msgid ""
