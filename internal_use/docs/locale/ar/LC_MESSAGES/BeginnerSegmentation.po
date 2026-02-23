@@ -877,7 +877,7 @@ msgstr ""
 "قد ترغب في وضع إيقاف مؤقت <img src=\"./TutorialImages/Pause.png\" "
 "width=\"20\" alt=\"Pause\"/> بجوار SaveImages، أو إلغاء تحديده <img "
 "src=\"./TutorialImages/InactivatedModule.png\" width=\"20\" "
-"alt=\"Unchecked\"/>، لمنعه من حفظ الصور أثناء استكشافك لهذه العملية."
+"alt=\"Unchecked\"/>، لمنعه من حفظ الصور أثناء استكشافك لمسار المعالجة هذا."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
