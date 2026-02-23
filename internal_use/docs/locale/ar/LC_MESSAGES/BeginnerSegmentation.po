@@ -931,8 +931,8 @@ msgid ""
 "Evaluate your prediction in Runilastik across a few image sets using "
 "OverlayOutlines and/or the WorkspaceViewer"
 msgstr ""
-"قم بتقييم توقعاتك في Runilastik عبر عدة مجموعات من الصور باستخدام "
-"OverlayOutlines و/أو WorkspaceViewer"
+"قم بتقييم نتائج Runilastik عبر عدة مجموعات من الصور باستخدام OverlayOutlines"
+" و/أو WorkspaceViewer"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:259
 msgid "How well does it perform?"
