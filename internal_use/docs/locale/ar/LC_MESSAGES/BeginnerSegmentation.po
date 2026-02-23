@@ -940,7 +940,7 @@ msgstr "ما مدى جودة أدائه؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:260
 msgid "Does it perform worse on images it wasn't trained on?"
-msgstr "هل يكون أداؤه أسوأ على الصور التي لم يتم تدريبه عليها؟"
+msgstr "هل أداؤه أسوأ على الصور التي لم يتم تدريبه عليها؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:261
 msgid ""
