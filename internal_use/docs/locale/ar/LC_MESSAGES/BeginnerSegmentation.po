@@ -882,7 +882,7 @@ msgstr ""
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid "Pause"
-msgstr "يوقف"
+msgstr "إيقاف مؤقت"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
