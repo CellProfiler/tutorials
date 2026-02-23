@@ -947,8 +947,7 @@ msgid ""
 "Are there cases where you think the ilastik model-based segmentation "
 "performs better?"
 msgstr ""
-"هل هناك حالات تعتقد فيها أن تجزئة الصور القائمة على نموذج ilastik تؤدي أداءً"
-" أفضل؟"
+"هل هناك حالات تعتقد فيها أن تجزئة الصور بواسطة ilastik تؤدي إلى أداء أفضل؟"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:262
 msgid ""
