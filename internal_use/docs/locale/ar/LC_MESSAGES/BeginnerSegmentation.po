@@ -809,9 +809,8 @@ msgid ""
 "Mac), set the `CellProfiler plugins directory` to the folder containing the "
 "plugin."
 msgstr ""
-"في قائمة ملف -> تفضيلات CellProfiler (CellProfiler -> تفضيلات في نظام "
-"التشغيل Mac)، قم بتعيين \"دليل ملحقات CellProfiler\" إلى المجلد الذي يحتوي "
-"على الملحق."
+"في قائمة File > Preferences (CellProfiler > Preferences في ن، قم بتعيين "
+"\"دليل ملحقات CellProfiler\" إلى المجلد الذي يحتوي على الملحق."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:239
 msgid "Close and reopen CellProfiler in order to be able to load the plugin."
