@@ -920,7 +920,7 @@ msgstr "أيقونة العين المُفعَّلة"
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:322
 msgid "Run"
-msgstr "يجري"
+msgstr "تنفيذ"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:255
 msgid "Evaluate the Classifier"
