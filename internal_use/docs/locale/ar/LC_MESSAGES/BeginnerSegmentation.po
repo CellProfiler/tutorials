@@ -837,7 +837,8 @@ msgstr ""
 msgid ""
 "Drag `bonus_2_ilastik.cppipe` into the pipeline panel to load the pipeline."
 msgstr ""
-"اسحب الملف `bonus_2_ilastik.cppipe` إلى لوحة خط الأنابيب لتحميل خط الأنابيب."
+"اسحب الملف `bonus_2_ilastik.cppipe` إلى لوحة مسارات المعالجة وأفلته لإستيراد"
+" المسار."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:249
 msgid ""
@@ -1119,7 +1120,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:318
 msgid "Drag `bonus_3_cellpose.cppipe` into the pipeline panel."
-msgstr "اسحب الملف `bonus_3_cellpose.cppipe` إلى لوحة خط الأنابيب."
+msgstr "اسحب الملف `bonus_3_cellpose.cppipe` وأفلته في لوحة مسارات المعالجة."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:319
 msgid ""
