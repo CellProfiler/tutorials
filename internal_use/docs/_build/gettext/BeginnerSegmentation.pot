@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 00:08+0000\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -693,7 +693,7 @@ msgid "Start CellProﬁler by double-clicking the desktop icon: <img src=\"./Tut
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:61
-msgid "Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline (.ccpipe or .ccproj files), drag and drop the pipeline file into the left area."
+msgid "Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline (.cppipe or .cpproj files), drag and drop the pipeline file into the left area."
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:64
@@ -745,11 +745,11 @@ msgid "**TIP** you can manually adjust brightness and contrast in the image disp
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:97
-msgid "3. [OPTIONAL STEP] Set up the input modules"
+msgid "**3. [OPTIONAL STEP] Set up the input modules**"
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:99
-msgid "*We suggest you skip this step for now, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline (`segmentation_start.cpipe`).*"
+msgid "*We suggest you skip this step for now, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline (`segmentation_start.cppipe`).*"
 msgstr ""
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:101
