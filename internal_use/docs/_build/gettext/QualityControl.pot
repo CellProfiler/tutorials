@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 20:20+0000\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "It is additionally expected that you are generally familiar with the tool
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:49
-msgid "1. **Start the provided QC pipeline on the BBBC022 dataset**"
+msgid "**1. Start the provided QC pipeline on the BBBC022 dataset**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:51
@@ -101,7 +101,7 @@ msgid "The pipeline should take about 10-15 minutes to run. At the end, three fi
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:76
-msgid "2. **Examine the QC pipeline (~15 minutes)**"
+msgid "**2. Examine the QC pipeline (~15 minutes)**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:78
@@ -190,7 +190,7 @@ msgid "**CellProfiler specific adjustments**: besides determining the location o
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:153
-msgid "3. **Open the CellProfiler Analyst workspace and determine reasonable parameter cutoffs (~20 minutes)**"
+msgid "**3. Open the CellProfiler Analyst workspace and determine reasonable parameter cutoffs (~20 minutes)**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
@@ -242,7 +242,7 @@ msgid "Look at some of the images inside the gate (you may need to click ‘Show
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
-msgid "4. **Optional — use the PlateViewer tool to check for other features to gate on (~10 minutes)**"
+msgid "**4. Optional — use the PlateViewer tool to check for other features to gate on (~10 minutes)**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
@@ -270,7 +270,7 @@ msgid "Once you have a measurement you'd like to gate based on, open that Histog
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:242
-msgid "5. **Create filters based on the cutoffs you’ve determined (~10 minutes)**"
+msgid "**5. Create filters based on the cutoffs you’ve determined (~10 minutes)**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:244
@@ -359,7 +359,7 @@ msgid "*Figure 3: Creating filters inside CPA*"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:320
-msgid "6. **Create classifier rules to distinguish good from bad images (~30 minutes)**"
+msgid "**6. Create classifier rules to distinguish good from bad images (~30 minutes)**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
@@ -403,7 +403,7 @@ msgid "Save your training set for future reference if desired, then close CellPr
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
-msgid "7. **Add quality control steps to an analysis pipeline (~15 minutes)**"
+msgid "**7. Add quality control steps to an analysis pipeline (~15 minutes)**"
 msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:364
