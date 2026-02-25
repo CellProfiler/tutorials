@@ -696,7 +696,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:262
 msgid "**8. IdentifyTertiaryObjects- Cytoplasm**"
-msgstr "**8. Identificar objetos terciários - citoplasma**"
+msgstr "**8. IdentifyTertiaryObjects - Citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:264
 msgid ""
