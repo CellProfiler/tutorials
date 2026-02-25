@@ -1646,8 +1646,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:636
 msgid "**1. Visualizing the measurements in a 96-well plate layout view**"
-msgstr ""
-"**1. Visualizando as medidas em uma vista de layout de placa de 96-poço**"
+msgstr "**1. Visualizando as medições em um layout de placa de 96 poços**"
 
 #: ../../source/Translocation/Translocation.md:638
 msgid ""
