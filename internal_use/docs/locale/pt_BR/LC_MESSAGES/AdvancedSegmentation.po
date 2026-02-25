@@ -893,7 +893,7 @@ msgstr "**Realizando as medidas**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:353
 msgid "**12. Add measurement modules to your pipeline**"
-msgstr "**12. Adicione módulos de medição ao seu pipeline**"
+msgstr "**12. Adicionando módulos de medição ao seu pipeline**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:355
 msgid ""
