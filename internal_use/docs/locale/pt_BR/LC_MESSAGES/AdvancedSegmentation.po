@@ -420,7 +420,8 @@ msgstr "**Correção de iluminação**"
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:157
 msgid ""
 "**4. Examine the output of the CorrectIlluminationApply module (optional)**"
-msgstr "**4. Examine a saída do módulo CorrectIlluminationApply (opcional)**"
+msgstr ""
+"**4. Examinando a saída do módulo CorrectIlluminationApply (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:159
 msgid ""
