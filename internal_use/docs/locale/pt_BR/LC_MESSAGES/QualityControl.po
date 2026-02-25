@@ -521,7 +521,7 @@ msgid ""
 "**4. Optional — use the PlateViewer tool to check for other features to gate"
 " on (~10 minutes)**"
 msgstr ""
-"**4. Opcional — utilize a ferramenta PlateViewer para verificar outras "
+"**4. Opcional — utilizando a ferramenta PlateViewer para verificar outras "
 "características a serem consideradas no processo de seleção (aproximadamente"
 " 10 minutos)**"
 
