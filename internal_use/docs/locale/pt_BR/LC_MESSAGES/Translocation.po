@@ -2527,8 +2527,8 @@ msgid ""
 "**8. Plotting the scoring results, to estimate the lowest dose necessary to "
 "induce FOX1O-GFP translocation**"
 msgstr ""
-"**8. Plotar os resultados da pontuação para estimar a dose mínima necessária"
-" para induzir a translocação de FOX1O-GFP**"
+"**8. Plotando os resultados do score para estimar a menor dose necessária "
+"para induzir a translocação do FOXO1A-GFP**"
 
 #: ../../source/Translocation/Translocation.md:1013
 msgid ""
