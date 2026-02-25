@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Esteban, 2025
-# Beth Cimini, 2025
+# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 00:08+0000\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2025\n"
+"Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1543,13 +1543,12 @@ msgstr ""
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:61
 msgid ""
 "Figure 2: **Main CellProfiler window**. To load images, drag and drop images"
-" into the right area. To load a pipeline (.ccpipe or .ccproj files), drag "
+" into the right area. To load a pipeline (.cppipe or .cpproj files), drag "
 "and drop the pipeline file into the left area."
 msgstr ""
 "Figura 2: **Ventana principal de CellProfiler**. Para cargar imágenes, "
-"arrastra y suelta imágenes en el área derecha. Para cargar un pipeline "
-"(archivos .ccpipe o .ccproj), arrastra y suelta el archivo pipeline en el "
-"área izquierda."
+"arrástrelas y suéltelas en el área derecha. Para cargar un archivo pipeline "
+"(.cppipe o .cpproj), arrástrelo y suéltelo en el área izquierda."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:64
 msgid ""
@@ -1655,18 +1654,18 @@ msgstr ""
 "`'Adjust Contrast'`"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:97
-msgid "3. [OPTIONAL STEP] Set up the input modules"
-msgstr "3. [PASO OPCIONAL] Configura los módulos de entrada"
+msgid "**3. [OPTIONAL STEP] Set up the input modules**"
+msgstr "**3. [PASO OPCIONAL] Configure los módulos de entrada**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:99
 msgid ""
 "*We suggest you skip this step for now, it will not affect the rest of the "
 "pipeline, as these modules have been properly set up in the starting "
-"pipeline (`segmentation_start.cpipe`).*"
+"pipeline (`segmentation_start.cppipe`).*"
 msgstr ""
-"*Te sugerimos que omitas este paso por ahora, no afectará al resto del "
-"pipeline, ya que estos módulos ya han sido configurados correctamente en el "
-"pipeline inicial (`segmentation_start.cpipe`).*"
+"*Le sugerimos que omita este paso por ahora, no afectará al resto de "
+"pipeline, ya que estos módulos se han configurado correctamente en el "
+"pipeline inicial (`segmentation_start.cppipe`).*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:101
 msgid ""
