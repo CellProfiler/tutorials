@@ -1961,8 +1961,8 @@ msgid ""
 "**3. Reviewing the rules that CPA established (based on your training set) "
 "to classify positive and negative cells**"
 msgstr ""
-"**3. Revisar as regras que a CPA estabeleceu (com base no seu conjunto de "
-"treinamento) para classificar células positivo e negativo**"
+"**3. Revisando as regras que o CPA estabeleceu (com base em seu conjunto de "
+"treinamento) para classificar células positivas e negativas**"
 
 #: ../../source/Translocation/Translocation.md:774
 msgid ""
