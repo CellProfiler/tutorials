@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Mario Costa Cruz, 2024
-# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
+# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
+"Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -182,9 +182,9 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:79
 msgid ""
-"1. **Starting CellProfiler and configuring the input data for analysis**"
+"**1. Starting CellProfiler and configuring the input data for analysis**"
 msgstr ""
-"1. **Iniciando o CellProfiler e configurando os dados de entrada para "
+"**1. Iniciando o CellProfiler e configurando os dados de entrada para "
 "análise**"
 
 #: ../../source/Translocation/Translocation.md:81
@@ -280,7 +280,8 @@ msgid ""
 "to the right of the text box labeled “Regular expression”."
 msgstr ""
 "Clique no ícone <img src=\"./TutorialImages/ReGexCheck.png\"  width=\"35\"/>"
-" à direita da caixa de texto chamada “Regular expression”."
+" à direita da caixa de texto chamada “Regular expression to extract from "
+"file name”."
 
 #: ../../source/Translocation/Translocation.md:115
 msgid ""
@@ -296,14 +297,14 @@ msgid ""
 "text match the color of the corresponding portion in the Test text below."
 msgstr ""
 "Você verá que a cor dos textos “Plate”, “Well”, “Site” e “ChannelNumber” "
-"corresponde à cor da parte equivalente no campo Test text abaixo."
+"corresponde à cor da parte equivalente no campo ‘Test text’ abaixo."
 
 #: ../../source/Translocation/Translocation.md:120
 msgid ""
 "Once finished, click the “Submit” button to use this expression in the "
 "**Metadata** module."
 msgstr ""
-"Ao terminar, clique no botão “Enviar” para usar esta expressão no módulo "
+"Ao terminar, clique no botão “Submit” para usar esta expressão no módulo "
 "**Metadata**."
 
 #: ../../source/Translocation/Translocation.md:123
@@ -313,8 +314,8 @@ msgid ""
 "Input Folder, which we must therefore configure."
 msgstr ""
 "A segunda etapa de extração de metadados exige que você informe ao "
-"CellProfiler o local de um arquivo CSV.  Ele irá procurar na Default Input "
-"Folder (Pasta de entrada padrão) do CellProfiler, que deve ser configurada."
+"CellProfiler o local de um arquivo CSV.  Ele irá procurar na ‘Default Input "
+"Folder’ (Pasta de entrada padrão) do CellProfiler, que deve ser configurada."
 
 #: ../../source/Translocation/Translocation.md:127
 msgid ""
@@ -398,10 +399,10 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:157
 msgid ""
-"2. **Identifying the nuclei as the “primary objects” that you will       "
+"**2. Identifying the nuclei as the “primary objects” that you will       "
 "analyze**"
 msgstr ""
-"2. **Identificando os núcleos como “objetos primários” que você irá "
+"**2. Identificar os núcleos como os “objetos primários” que você irá "
 "analisar**"
 
 #: ../../source/Translocation/Translocation.md:159
@@ -575,8 +576,8 @@ msgstr ""
 "IdentifyPrimaryObjects*"
 
 #: ../../source/Translocation/Translocation.md:232
-msgid "3. **Improve identification of primary objects**"
-msgstr "3. **Melhorando a identificação de objetos primários**"
+msgid "**3. Improve identification of primary objects**"
+msgstr "**3. Melhorar a identificação de objetos primários**"
 
 #: ../../source/Translocation/Translocation.md:234
 msgid ""
@@ -718,11 +719,11 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:291
 msgid ""
-"4. **Identifying the cell body as a “secondary object” that you will "
+"**4. Identifying the cell body as a “secondary object” that you will "
 "analyze**"
 msgstr ""
-"4. **Identificando os corpos celulares como “objetos secundários” que você "
-"irá analisar**"
+"**4. Identificar o corpo célula como um “objeto secundário” que você "
+"analisará**"
 
 #: ../../source/Translocation/Translocation.md:293
 msgid ""
@@ -876,8 +877,8 @@ msgstr ""
 "ver o resultado de suas novas configurações."
 
 #: ../../source/Translocation/Translocation.md:357
-msgid "5. **Identifying the cytoplasm as a “tertiary object”**"
-msgstr "5. **Identificando os citoplasmas como “objetos terciários”**"
+msgid "**5. Identifying the cytoplasm as a “tertiary object”**"
+msgstr "**5. Identificação do citoplasma como um “objeto terciário”**"
 
 #: ../../source/Translocation/Translocation.md:359
 msgid ""
@@ -957,10 +958,10 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:386
 msgid ""
-"6. **Measuring the cells’ characteristics (i.e. the “object features”)**"
+"**6. Measuring the cells’ characteristics (i.e. the “object features”)**"
 msgstr ""
-"6. **Medindo as características das células (ou seja, os “atributos dos "
-"objetos”)**"
+"**6. Medição das características do células (ou seja, as “características do"
+" objeto”)**"
 
 #: ../../source/Translocation/Translocation.md:388
 msgid ""
@@ -1177,11 +1178,10 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:473
 msgid ""
-"7. **Creating an image with your cell and nuclear outlines on it "
+"**7. Creating an image with your cell and nuclear outlines on it "
 "(optional)**"
 msgstr ""
-"7. **Criando uma imagem com os contornos das células e dos núcleos "
-"(opcional)**"
+"**7. Criar uma imagem com seu célula e contornos nucleares (opcional)**"
 
 #: ../../source/Translocation/Translocation.md:475
 msgid ""
@@ -1396,8 +1396,8 @@ msgid "All the other settings may be left at their default values."
 msgstr "Todas as outras configurações podem ser mantidas nos valores padrão."
 
 #: ../../source/Translocation/Translocation.md:539
-msgid "8. **Exporting the measurements to a database**"
-msgstr "8. **Exportando as medidas para um banco de dados**"
+msgid "**8. Exporting the measurements to a database**"
+msgstr "**8. Exportando as medições para um banco de dados**"
 
 #: ../../source/Translocation/Translocation.md:541
 msgid ""
@@ -1485,11 +1485,11 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:578
 msgid ""
-"9. **Using the optimized pipeline to automatically analyze all images "
+"**9. Using the optimized pipeline to automatically analyze all images "
 "generated by the screening experiment**"
 msgstr ""
-"9. **Usando o pipeline otimizado para analisar automaticamente todas as "
-"imagens geradas pelo experimento de triagem**"
+"**9. Utilizando o pipeline otimizado para analisar automaticamente todas as "
+"imagens geradas pelo experimento triagem**"
 
 #: ../../source/Translocation/Translocation.md:580
 msgid ""
@@ -1644,8 +1644,9 @@ msgstr ""
 "propriedades para apontar para o novo local do banco de dados."
 
 #: ../../source/Translocation/Translocation.md:636
-msgid "1. **Visualizing the measurements in a 96-well plate layout view**"
-msgstr "1. **Visualizando as medições em um layout de placa de 96 poços**"
+msgid "**1. Visualizing the measurements in a 96-well plate layout view**"
+msgstr ""
+"**1. Visualizando as medidas em uma vista de layout de placa de 96-poço**"
 
 #: ../../source/Translocation/Translocation.md:638
 msgid ""
@@ -1806,11 +1807,11 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:704
 msgid ""
-"2. **Using the Classifier function of CPA to distinguish the cells’ "
+"**2. Using the Classifier function of CPA to distinguish the cells’ "
 "FOXO1A-GFP subcellular localization phenotypes**"
 msgstr ""
-"2. **Usando a função “Classifier” do CPA para distinguir os fenótipos de "
-"localização subcelular do FOXO1A-GFP nas células**"
+"**2. Utilizando a função Classificador do CPA para distinguir os fenótipos "
+"de localização subcelular de FOXO1A-GFP ‘células’**"
 
 #: ../../source/Translocation/Translocation.md:706
 msgid ""
@@ -1957,11 +1958,11 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:772
 msgid ""
-"3. **Reviewing the rules that CPA established (based on your training set) "
+"**3. Reviewing the rules that CPA established (based on your training set) "
 "to classify positive and negative cells**"
 msgstr ""
-"3. **Revisando as regras que o CPA estabeleceu (com base em seu conjunto de "
-"treinamento) para classificar células positivas e negativas**"
+"**3. Revisar as regras que a CPA estabeleceu (com base no seu conjunto de "
+"treinamento) para classificar células positivo e negativo**"
 
 #: ../../source/Translocation/Translocation.md:774
 msgid ""
@@ -2023,9 +2024,10 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:797
 msgid ""
-"4. **Reviewing the accuracy of the classification with the confusion "
+"**4. Reviewing the accuracy of the classification with the confusion "
 "matrix**"
-msgstr "4. **Revisando a precisão da classificação com a matriz de confusão**"
+msgstr ""
+"**4. Analisando a precisão da classificação com a matriz de confusão**"
 
 #: ../../source/Translocation/Translocation.md:799
 msgid ""
@@ -2100,11 +2102,11 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:837
 msgid ""
-"5. **Refining the training set by sorting more “unclassified” cells into the"
+"**5. Refining the training set by sorting more “unclassified” cells into the"
 " “positive” and “negative” bins**"
 msgstr ""
-"5. **Refinando o conjunto de treinamento classificando mais células “não "
-"classificadas” nas caixas “positivas” e “negativas”**"
+"**5. Refinando o conjunto de treinamento, classificando mais ocorrências "
+"“não classificadas” células nas categorias “positivas” e “negativas”**"
 
 #: ../../source/Translocation/Translocation.md:839
 msgid ""
@@ -2358,8 +2360,8 @@ msgstr ""
 "desejado."
 
 #: ../../source/Translocation/Translocation.md:940
-msgid "6. **Classifying all cells in the experiment**"
-msgstr "6. **Classificando todas as células do experimento**"
+msgid "**6. Classifying all cells in the experiment**"
+msgstr "**6. Classificando todos os células no experimento**"
 
 #: ../../source/Translocation/Translocation.md:942
 msgid ""
@@ -2434,9 +2436,9 @@ msgstr ""
 "> Save Training Set* ou em *File > Save Classifier Model*."
 
 #: ../../source/Translocation/Translocation.md:975
-msgid "7. **Saving the scores to the measurement database for visualization**"
+msgid "**7. Saving the scores to the measurement database for visualization**"
 msgstr ""
-"7. **Salvando os scores no banco de dados de medidas para visualização**"
+"**7. Salvar as pontuações no banco de dados de medição para visualização**"
 
 #: ../../source/Translocation/Translocation.md:977
 msgid ""
@@ -2523,11 +2525,11 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:1011
 msgid ""
-"8. **Plotting the scoring results, to estimate the lowest dose necessary to "
+"**8. Plotting the scoring results, to estimate the lowest dose necessary to "
 "induce FOX1O-GFP translocation**"
 msgstr ""
-"8. **Plotando os resultados do score para estimar a menor dose necessária "
-"para induzir a translocação do FOXO1A-GFP**"
+"**8. Plotar os resultados da pontuação para estimar a dose mínima necessária"
+" para induzir a translocação de FOX1O-GFP**"
 
 #: ../../source/Translocation/Translocation.md:1013
 msgid ""
@@ -2596,9 +2598,9 @@ msgstr ""
 "máxima?"
 
 #: ../../source/Translocation/Translocation.md:1036
-msgid "9. **Exporting your classifier for use in a CellProfiler pipeline**"
+msgid "**9. Exporting your classifier for use in a CellProfiler pipeline**"
 msgstr ""
-"9. **Exportando seu classificador para uso em um pipeline CellProfiler**"
+"**9. Exportando seu classificador para uso em um CellProfiler pipeline**"
 
 #: ../../source/Translocation/Translocation.md:1038
 msgid ""
