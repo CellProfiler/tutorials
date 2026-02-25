@@ -722,8 +722,8 @@ msgid ""
 "**4. Identifying the cell body as a “secondary object” that you will "
 "analyze**"
 msgstr ""
-"**4. Identificar o corpo célula como um “objeto secundário” que você "
-"analisará**"
+"**4. Identificando os corpos celulares como “objetos secundários” que você "
+"irá analisar**"
 
 #: ../../source/Translocation/Translocation.md:293
 msgid ""
