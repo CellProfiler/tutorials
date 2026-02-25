@@ -2599,7 +2599,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:1036
 msgid "**9. Exporting your classifier for use in a CellProfiler pipeline**"
 msgstr ""
-"**9. Exportando seu classificador para uso em um CellProfiler pipeline**"
+"**9. Exportando seu classificador para uso em um pipeline CellProfiler**"
 
 #: ../../source/Translocation/Translocation.md:1038
 msgid ""
