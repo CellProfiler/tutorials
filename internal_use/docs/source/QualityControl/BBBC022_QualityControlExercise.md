@@ -46,7 +46,7 @@ tools in CellProfiler and CellProfiler Analyst, preferably after
 completing the Translocation tutorial or a similar introductory
 exercise.
 
-## 1. **Start the provided QC pipeline on the BBBC022 dataset**
+## **1. Start the provided QC pipeline on the BBBC022 dataset**
 
 In order to do quality control, we need to first measure the images in many ways.
 This will allow us to do machine learning to use the measurements to identify the
@@ -73,7 +73,7 @@ good images from the bad.
   three files should be created- a .db database file, a .properties
   text file, and a .workspace text file.
 
-## 2. **Examine the QC pipeline (~15 minutes)**
+## **2. Examine the QC pipeline (~15 minutes)**
 
 - While the pipeline is running, take some time to look over the
   pipeline and make sure you understand the various parts. You will
@@ -150,7 +150,7 @@ good images from the bad.
     table, etc). As we are not identifying any objects, we don’t
     need to worry about these.
 
-## 3. **Open the CellProfiler Analyst workspace and determine reasonable parameter cutoffs (~20 minutes)**
+## **3. Open the CellProfiler Analyst workspace and determine reasonable parameter cutoffs (~20 minutes)**
 
 In the first step of the quality control pipeline, we'll look at graphs of how
 various measurements are distributed in the population.  This allows us to get
@@ -211,7 +211,7 @@ in later steps.
   different/smaller subset or delete it altogether by using the Gate
   Inspector (‘gate’-> ‘MANAGE GATES’).
 
-## 4. **Optional — use the PlateViewer tool to check for other features to gate on (~10 minutes)**
+## **4. Optional — use the PlateViewer tool to check for other features to gate on (~10 minutes)**
 
 If you want to see if you can find additional features that might distinguish good
 images from bad images, feel free to explore the feature set more thoroughly.
@@ -239,7 +239,7 @@ images from bad images, feel free to explore the feature set more thoroughly.
   ImageNumber on the X-axis as in the Workspace plots, but feel free to play around).
   If you find a gate that seems logical to make, proceed as in Step 3.
 
-## 5. **Create filters based on the cutoffs you’ve determined (~10 minutes)**
+## **5. Create filters based on the cutoffs you’ve determined (~10 minutes)**
 
 Now that we've created gates around our poor quality images, we need to convert
 them into filters so that we can access them in the Classifier tool.  This
@@ -317,7 +317,7 @@ presented in case you cannot or will not edit the properties file.
 *Figure 3: Creating filters inside CPA*
 ```
 
-## 6. **Create classifier rules to distinguish good from bad images (~30 minutes)**
+## **6. Create classifier rules to distinguish good from bad images (~30 minutes)**
 
 Creating gates based on the 12 measurements we graphed has helped us identify
 some low quality images so far, but we are not utilizing the rest of our
@@ -359,7 +359,7 @@ low quality images.
 - Save your training set for future reference if desired, then close
   CellProfiler Analyst.
 
-## 7. **Add quality control steps to an analysis pipeline (~15 minutes)**
+## **7. Add quality control steps to an analysis pipeline (~15 minutes)**
 
 If you have time, you can add the list of rules you identified in your machine
 learning classifier to the CellProfiler pipeline that corresponds to this data
