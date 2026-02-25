@@ -280,8 +280,7 @@ msgid ""
 "to the right of the text box labeled “Regular expression”."
 msgstr ""
 "Clique no ícone <img src=\"./TutorialImages/ReGexCheck.png\"  width=\"35\"/>"
-" à direita da caixa de texto chamada “Regular expression to extract from "
-"file name”."
+" à direita da caixa de texto chamada “Regular expression”."
 
 #: ../../source/Translocation/Translocation.md:115
 msgid ""
@@ -297,14 +296,14 @@ msgid ""
 "text match the color of the corresponding portion in the Test text below."
 msgstr ""
 "Você verá que a cor dos textos “Plate”, “Well”, “Site” e “ChannelNumber” "
-"corresponde à cor da parte equivalente no campo ‘Test text’ abaixo."
+"corresponde à cor da parte equivalente no campo Test text abaixo."
 
 #: ../../source/Translocation/Translocation.md:120
 msgid ""
 "Once finished, click the “Submit” button to use this expression in the "
 "**Metadata** module."
 msgstr ""
-"Ao terminar, clique no botão “Submit” para usar esta expressão no módulo "
+"Ao terminar, clique no botão “Enviar” para usar esta expressão no módulo "
 "**Metadata**."
 
 #: ../../source/Translocation/Translocation.md:123
@@ -314,8 +313,8 @@ msgid ""
 "Input Folder, which we must therefore configure."
 msgstr ""
 "A segunda etapa de extração de metadados exige que você informe ao "
-"CellProfiler o local de um arquivo CSV.  Ele irá procurar na ‘Default Input "
-"Folder’ (Pasta de entrada padrão) do CellProfiler, que deve ser configurada."
+"CellProfiler o local de um arquivo CSV.  Ele irá procurar na Default Input "
+"Folder (Pasta de entrada padrão) do CellProfiler, que deve ser configurada."
 
 #: ../../source/Translocation/Translocation.md:127
 msgid ""
