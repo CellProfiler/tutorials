@@ -175,7 +175,7 @@ msgstr "**Inserir imagens e configurar metadados**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:77
 msgid "**1. Load images and metadata**"
-msgstr "**1. Carregar imagens e metadados**"
+msgstr "**1. Carregando imagens e metadados**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
 msgid ""
@@ -317,7 +317,8 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:116
 msgid "**3. Examine the channel mappings in NamesAndTypes (optional)**"
-msgstr "**3. Examine os mapeamentos de canais em NamesAndTypes (opcional)**"
+msgstr ""
+"**3. Examinando os mapeamentos de canais em NamesAndTypes (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:118
 msgid ""
@@ -577,7 +578,7 @@ msgid ""
 "**7. Test the robustness of your segmentation parameters across multiple "
 "compounds**"
 msgstr ""
-"**7. Teste a robustez dos seus parâmetros de segmentação em vários "
+"**7. Testando a robustez dos seus parâmetros de segmentação em vários "
 "compostos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:220
@@ -1046,7 +1047,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
 msgid "**13. Examine the settings of RelateObjects**"
-msgstr "**13. Examine as configurações de RelateObjects**"
+msgstr "**13. Examinando as configurações de RelateObjects**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:431
 msgid ""
