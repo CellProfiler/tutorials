@@ -804,7 +804,8 @@ msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
 msgid "**10. Mask the Mito image by the Cytoplasm object**"
-msgstr "**10. Mascare a imagem da mitocôndria com o objeto citoplasma**"
+msgstr ""
+"**10. Aplicar uma máscara na imagem “Mito” com base no objeto “Cytoplasm”**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:313
 msgid ""
@@ -856,7 +857,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:338
 msgid "**11. IdentifyPrimaryObjects- Mitochondria**"
-msgstr "**11. Identificar objetos primários - Mitocôndrias**"
+msgstr "**11. IdentifyPrimaryObjects - Mitocôndrias**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:340
 msgid ""
@@ -892,7 +893,7 @@ msgstr "**Realizando as medidas**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:353
 msgid "**12. Add measurement modules to your pipeline**"
-msgstr "**12. Adicione módulos de medição ao seu pipeline**"
+msgstr "**12. Adicionando módulos de medição ao seu pipeline**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:355
 msgid ""
