@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 20:20+0000\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
 "Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/ar/)\n"
@@ -124,8 +124,8 @@ msgstr ""
 "بالانتقال أو تمرين تمهيدي مماثل."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:49
-msgid "1. **Start the provided QC pipeline on the BBBC022 dataset**"
-msgstr "1. **ابدأ عملية مراقبة الجودة المقدمة على مجموعة بيانات BBBC022**"
+msgid "**1. Start the provided QC pipeline on the BBBC022 dataset**"
+msgstr "**1. ابدأ تشغيل مسار مراقبة الجودة المقدم على مجموعة بيانات BBBC022**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:51
 msgid ""
@@ -192,8 +192,8 @@ msgstr ""
 "بامتداد .workspace."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:76
-msgid "2. **Examine the QC pipeline (~15 minutes)**"
-msgstr "2. **فحص مسار مراقبة الجودة (حوالي 15 دقيقة)**"
+msgid "**2. Examine the QC pipeline (~15 minutes)**"
+msgstr "**2. فحص مسار مراقبة الجودة (حوالي 15 دقيقة)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:78
 msgid ""
@@ -369,10 +369,10 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:153
 msgid ""
-"3. **Open the CellProfiler Analyst workspace and determine reasonable "
+"**3. Open the CellProfiler Analyst workspace and determine reasonable "
 "parameter cutoffs (~20 minutes)**"
 msgstr ""
-"3. **افتح مساحة عمل محلل CellProfiler وحدد حدود المعلمات المعقولة (حوالي 20 "
+"**3. افتح مساحة عمل محلل CellProfiler وحدد حدود المعلمات المعقولة (حوالي 20 "
 "دقيقة)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
@@ -497,10 +497,10 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
 msgid ""
-"4. **Optional — use the PlateViewer tool to check for other features to gate"
+"**4. Optional — use the PlateViewer tool to check for other features to gate"
 " on (~10 minutes)**"
 msgstr ""
-"4. **اختياري - استخدم أداة PlateViewer للتحقق من وجود ميزات أخرى للتفعيل "
+"**4. اختياري - استخدم أداة PlateViewer للتحقق من وجود ميزات أخرى للتفعيل "
 "(حوالي 10 دقائق)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
@@ -566,9 +566,9 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:242
 msgid ""
-"5. **Create filters based on the cutoffs you’ve determined (~10 minutes)**"
+"**5. Create filters based on the cutoffs you’ve determined (~10 minutes)**"
 msgstr ""
-"5. **أنشئ فلاتر بناءً على الحدود الزمنية التي حددتها (حوالي 10 دقائق)**"
+"**5. أنشئ فلاتر بناءً على الحدود الزمنية التي حددتها (حوالي 10 دقائق)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:244
 msgid ""
@@ -723,10 +723,10 @@ msgstr "*الشكل 3: إنشاء عوامل تصفية داخل CPA*"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:320
 msgid ""
-"6. **Create classifier rules to distinguish good from bad images (~30 "
+"**6. Create classifier rules to distinguish good from bad images (~30 "
 "minutes)**"
 msgstr ""
-"6. **إنشاء قواعد تصنيف لتمييز الصور الجيدة عن الصور السيئة (حوالي 30 "
+"**6. إنشاء قواعد تصنيف لتمييز الصور الجيدة عن الصور السيئة (حوالي 30 "
 "دقيقة)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
@@ -832,8 +832,8 @@ msgstr ""
 " برنامج CellProfiler Analyst."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
-msgid "7. **Add quality control steps to an analysis pipeline (~15 minutes)**"
-msgstr "7. **إضافة خطوات مراقبة الجودة إلى مسار التحليل (حوالي 15 دقيقة)**"
+msgid "**7. Add quality control steps to an analysis pipeline (~15 minutes)**"
+msgstr "7. إضافة خطوات مراقبة الجودة إلى مسار التحليل (حوالي 15 دقيقة)"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:364
 msgid ""
