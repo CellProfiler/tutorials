@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2026
+# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
@@ -875,8 +875,8 @@ msgstr ""
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
 msgid "**7. Add quality control steps to an analysis pipeline (~15 minutes)**"
 msgstr ""
-"**7. Adicionar etapas de controle de qualidade a uma análise pipeline (~15 "
-"minutos)**"
+"**7. Adicionando etapas de controle de qualidade a uma análise pipeline "
+"(cerca de 15 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:364
 msgid ""
