@@ -2105,7 +2105,7 @@ msgid ""
 " “positive” and “negative” bins**"
 msgstr ""
 "**5. Refinando o conjunto de treinamento, classificando mais ocorrências "
-"“não classificadas” células nas categorias “positivas” e “negativas”**"
+"“não classificadas” nas categorias “positivas” e “negativas”**"
 
 #: ../../source/Translocation/Translocation.md:839
 msgid ""
