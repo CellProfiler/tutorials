@@ -481,7 +481,7 @@ msgstr "*Figura 4: Aplicação das funções de correção de iluminação."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
 msgid "**Segment Nuclei, Cells and Cytoplasm**"
-msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
+msgstr "**Segmentando mitocôndrias dentro do citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
 msgid "**5. IdentifyPrimaryObjects- Nuclei**"
