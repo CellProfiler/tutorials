@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
-# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-19 20:20+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2026\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -163,8 +163,9 @@ msgid ""
 "The relative pixel spacing was provided and is 0.124 um in x and y and 0.200"
 " um in z."
 msgstr ""
-"O espaçamento relativo entre pixels foi fornecido e é de 0,124 µm em x e y e"
-" 0,200 µm em z."
+"O espaçamento relativo de pixels, Relative Pixel Spacing, fornecido é 0,124 "
+"µm em x e y, e 0,200 µm em z. Para executar o arquivo de calibração, altere "
+"temporariamente esse valor para 1 × 1 × 1 µm."
 
 #: ../../source/3DNuclei/Nuclei3DTimeConsumingPipeline.md:59
 msgid ""
