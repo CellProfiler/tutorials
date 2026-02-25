@@ -130,8 +130,8 @@ msgstr ""
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:49
 msgid "**1. Start the provided QC pipeline on the BBBC022 dataset**"
 msgstr ""
-"**1. Inicie o controle de qualidade fornecido pipeline no conjunto de dados "
-"BBBC022**"
+"**1. Iniciando o controle de qualidade fornecido pipeline no conjunto de "
+"dados BBBC022**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:51
 msgid ""
