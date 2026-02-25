@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
 "Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/ar/)\n"
@@ -163,8 +163,8 @@ msgid "**Input images and configure metadata**"
 msgstr "**أدخل الصور وقم بتكوين البيانات الوصفية**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:77
-msgid "1. **Load images and metadata**"
-msgstr "1. **تحميل الصور والبيانات الوصفية**"
+msgid "**1. Load images and metadata**"
+msgstr "**1. تحميل الصور والبيانات الوصفية**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
 msgid ""
@@ -200,8 +200,8 @@ msgstr ""
 "البيانات هذه."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:89
-msgid "2. **Import metadata from the CSV**"
-msgstr "2. **استيراد البيانات الوصفية من ملف CSV**"
+msgid "**2. Import metadata from the CSV**"
+msgstr "**2. استيراد البيانات الوصفية من ملف CSV**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:91
 msgid ""
@@ -299,8 +299,8 @@ msgstr ""
 "(المستخرج من اسم الملف بواسطة خطوة الاستخراج الأولى)"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:116
-msgid "3. **Examine the channel mappings in NamesAndTypes (optional)**"
-msgstr "3. **افحص تعيينات القنوات في NamesAndTypes (اختياري)**"
+msgid "**3. Examine the channel mappings in NamesAndTypes (optional)**"
+msgstr "3. افحص تعيينات القنوات في NamesAndTypes (اختياري)"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:118
 msgid ""
@@ -391,8 +391,8 @@ msgstr "**تصحيح الإضاءة**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:157
 msgid ""
-"4. **Examine the output of the CorrectIlluminationApply module (optional)**"
-msgstr "4. **افحص مخرجات وحدة CorrectIlluminationApply (اختياري)**"
+"**4. Examine the output of the CorrectIlluminationApply module (optional)**"
+msgstr "**4. افحص مخرجات وحدة CorrectIlluminationApply (اختياري)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:159
 msgid ""
@@ -447,12 +447,12 @@ msgid "*Figure 4: Application of the illumination correction functions.*"
 msgstr "*الشكل 4: تطبيق وظائف تصحيح الإضاءة.*"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
-msgid "**Segmenet Nuclei, Cells and Cytoplasm**"
-msgstr "**القطاعات: النوى، والخلايا، والسيتوبلازم**"
+msgid "**Segment Nuclei, Cells and Cytoplasm**"
+msgstr "**تقسيم النواة والخلايا والسيتوبلازم**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
-msgid "5. **IdentifyPrimaryObjects- Nuclei**"
-msgstr "5. **تحديد الكائنات الأولية - النوى**"
+msgid "**5. IdentifyPrimaryObjects- Nuclei**"
+msgstr "**5. تحديد الأجسام الأولية - النوى**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:190
 msgid ""
@@ -500,8 +500,8 @@ msgstr ""
 "الخطوة التالية."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:205
-msgid "6. **IdentifySecondaryObjects- Cells**"
-msgstr "6. **تحديد الكائنات الثانوية - الخلايا**"
+msgid "**6. IdentifySecondaryObjects- Cells**"
+msgstr "**6. تحديد الكائنات الثانوية - الخلايا**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:207
 msgid ""
@@ -538,9 +538,9 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:218
 msgid ""
-"7. **Test the robustness of your segmentation parameters across multiple "
+"**7. Test the robustness of your segmentation parameters across multiple "
 "compounds**"
-msgstr "7. **اختبر مدى متانة معايير التجزئة الخاصة بك عبر مركبات متعددة**"
+msgstr "7. اختبر مدى متانة معايير التجزئة الخاصة بك عبر مركبات متعددة."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:220
 msgid ""
@@ -647,8 +647,8 @@ msgstr ""
 "المسافة-N، إلخ)، وفي حالة استخدام الانتشار، عامل التنظيم."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:262
-msgid "8. **IdentifyTertiaryObjects- Cytoplasm**"
-msgstr "8. **تحديد الأجسام الثانوية - السيتوبلازم**"
+msgid "**8. IdentifyTertiaryObjects- Cytoplasm**"
+msgstr "**8. تحديد الأجسام الثالثية - السيتوبلازم**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:264
 msgid ""
@@ -673,8 +673,8 @@ msgid "**Segment Nucleoli inside the Nuclei**"
 msgstr "**تقسيم النويات داخل النوى**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:272
-msgid "9. **Examine the steps used to segment the Nucleoli**"
-msgstr "9. **افحص الخطوات المستخدمة لتقسيم النويات**"
+msgid "**9. Examine the steps used to segment the Nucleoli**"
+msgstr "9. افحص الخطوات المستخدمة لتقسيم النويات."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:274
 msgid ""
@@ -749,8 +749,8 @@ msgid "**Segment the Mitochondria inside the Cytoplasm**"
 msgstr "**قم بتقسيم الميتوكوندريا داخل السيتوبلازم**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
-msgid "10. **Mask the Mito image by the Cytoplasm object**"
-msgstr "10. **قم بإخفاء صورة الميتوكوندريا بواسطة كائن السيتوبلازم**"
+msgid "**10. Mask the Mito image by the Cytoplasm object**"
+msgstr "10. قم بإخفاء صورة الميتوكوندريا بواسطة كائن السيتوبلازم."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:313
 msgid ""
@@ -798,8 +798,8 @@ msgid ""
 msgstr "*الشكل 7: تحتوي صورة MaskedMito على المناطق ذات الأهمية فقط.*"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:338
-msgid "12. **IdentifyPrimaryObjects- Mitochondria**"
-msgstr "12. **تحديد الكائنات الأولية - الميتوكوندريا**"
+msgid "**11. IdentifyPrimaryObjects- Mitochondria**"
+msgstr "**11. تحديد الأجسام الأولية - الميتوكوندريا**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:340
 msgid ""
@@ -832,8 +832,8 @@ msgid "**Perform Measurements**"
 msgstr "**إجراء القياسات**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:353
-msgid "13. **Add measurement modules to your pipeline**"
-msgstr "13. **أضف وحدات القياس إلى مسار العمل الخاص بك**"
+msgid "**12. Add measurement modules to your pipeline**"
+msgstr "**12. أضف وحدات القياس إلى مسار العمل الخاص بك**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:355
 msgid ""
@@ -977,8 +977,8 @@ msgid "**Relate Nucleoli and Mitochondria to their respective nuclei/cells**"
 msgstr "**ربط النويات والميتوكوندريا بنوى/خلايا كل منهما على حدة**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
-msgid "14. Examine the settings of RelateObjects"
-msgstr "14. افحص إعدادات RelateObjects"
+msgid "**13. Examine the settings of RelateObjects**"
+msgstr "**13. افحص إعدادات RelateObjects**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:431
 msgid ""
@@ -1006,8 +1006,8 @@ msgid "**Perform the analysis on ALL the images**"
 msgstr "**قم بإجراء التحليل على جميع الصور**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:442
-msgid "15. **Run the pipeline (optional)**"
-msgstr "15. **تشغيل خط الأنابيب (اختياري)**"
+msgid "**14. Run the pipeline (optional)**"
+msgstr "**14. تشغيل خط الأنابيب (اختياري)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:444
 msgid ""
