@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
+# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 11:33-0400\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
+"Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -174,8 +174,8 @@ msgid "**Input images and configure metadata**"
 msgstr "**Inserir imagens e configurar metadados**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:77
-msgid "1. **Load images and metadata**"
-msgstr "1. **Carregar imagens e metadados**"
+msgid "**1. Load images and metadata**"
+msgstr "**1. Carregar imagens e metadados**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
 msgid ""
@@ -213,8 +213,8 @@ msgstr ""
 "dados."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:89
-msgid "2. **Import metadata from the CSV**"
-msgstr "2. **Importar metadados do CSV**"
+msgid "**2. Import metadata from the CSV**"
+msgstr "**2. Importar metadados do arquivo CSV**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:91
 msgid ""
@@ -316,8 +316,8 @@ msgstr ""
 "do nome do arquivo pela primeira etapa de extração)"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:116
-msgid "3. **Examine the channel mappings in NamesAndTypes (optional)**"
-msgstr "3. **Examine os mapeamentos de canais em NamesAndTypes (opcional)**"
+msgid "**3. Examine the channel mappings in NamesAndTypes (optional)**"
+msgstr "**3. Examine os mapeamentos de canais em NamesAndTypes (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:118
 msgid ""
@@ -418,8 +418,8 @@ msgstr "**Correção de iluminação**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:157
 msgid ""
-"4. **Examine the output of the CorrectIlluminationApply module (optional)**"
-msgstr "4. **Examine a saída do módulo CorrectIlluminationApply (opcional)**"
+"**4. Examine the output of the CorrectIlluminationApply module (optional)**"
+msgstr "**4. Examine a saída do módulo CorrectIlluminationApply (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:159
 msgid ""
@@ -478,12 +478,12 @@ msgid "*Figure 4: Application of the illumination correction functions.*"
 msgstr "*Figura 4: Aplicação das funções de correção de iluminação."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
-msgid "**Segmenet Nuclei, Cells and Cytoplasm**"
-msgstr "**Segmentação de Núcleos, Células e Citoplasma**"
+msgid "**Segment Nuclei, Cells and Cytoplasm**"
+msgstr "**Núcleos Segmentados, células e Citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
-msgid "5. **IdentifyPrimaryObjects- Nuclei**"
-msgstr "5. **IdentificarPrimaryObjects - Núcleos**"
+msgid "**5. IdentifyPrimaryObjects- Nuclei**"
+msgstr "**5. Identificar objetos primários - núcleos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:190
 msgid ""
@@ -535,8 +535,8 @@ msgstr ""
 " precisa ser perfeita antes de prosseguir."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:205
-msgid "6. **IdentifySecondaryObjects- Cells**"
-msgstr "6. **IdentificarSecondaryObjects - Células**"
+msgid "**6. IdentifySecondaryObjects- Cells**"
+msgstr "**6. IdentificarSecondaryObjects- células**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:207
 msgid ""
@@ -574,10 +574,10 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:218
 msgid ""
-"7. **Test the robustness of your segmentation parameters across multiple "
+"**7. Test the robustness of your segmentation parameters across multiple "
 "compounds**"
 msgstr ""
-"7. **Teste a robustez dos seus parâmetros de segmentação em vários "
+"**7. Teste a robustez dos seus parâmetros de segmentação em vários "
 "compostos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:220
@@ -695,8 +695,8 @@ msgstr ""
 "regularization factor."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:262
-msgid "8. **IdentifyTertiaryObjects- Cytoplasm**"
-msgstr "8. **IdentifyTertiaryObjects - Citoplasma**"
+msgid "**8. IdentifyTertiaryObjects- Cytoplasm**"
+msgstr "**8. Identificar objetos terciários - citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:264
 msgid ""
@@ -721,8 +721,8 @@ msgid "**Segment Nucleoli inside the Nuclei**"
 msgstr "**Segmentação dos Nucléolos dentro dos Núcleos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:272
-msgid "9. **Examine the steps used to segment the Nucleoli**"
-msgstr "9. **Examine as etapas usadas para segmentar os nucléolos**"
+msgid "**9. Examine the steps used to segment the Nucleoli**"
+msgstr "**9. Examine as etapas utilizadas para segmentar os nucléolos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:274
 msgid ""
@@ -803,8 +803,8 @@ msgid "**Segment the Mitochondria inside the Cytoplasm**"
 msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
-msgid "10. **Mask the Mito image by the Cytoplasm object**"
-msgstr "10. **Mascarar a imagem do Mito pelo objeto Citoplasm**"
+msgid "**10. Mask the Mito image by the Cytoplasm object**"
+msgstr "**10. Mascare a imagem da mitocôndria com o objeto citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:313
 msgid ""
@@ -855,8 +855,8 @@ msgstr ""
 "*Figura 7: A imagem MaskedMito contendo apenas as regiões de interesse."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:338
-msgid "12. **IdentifyPrimaryObjects- Mitochondria**"
-msgstr "12. **IdentifyPrimaryObjects - Mitocôndrias**"
+msgid "**11. IdentifyPrimaryObjects- Mitochondria**"
+msgstr "**11. Identificar objetos primários - Mitocôndrias**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:340
 msgid ""
@@ -891,8 +891,8 @@ msgid "**Perform Measurements**"
 msgstr "**Realizando as medidas**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:353
-msgid "13. **Add measurement modules to your pipeline**"
-msgstr "13. **Adicione módulos de medição ao seu pipeline**"
+msgid "**12. Add measurement modules to your pipeline**"
+msgstr "**12. Adicione módulos de medição ao seu pipeline**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:355
 msgid ""
@@ -1044,8 +1044,8 @@ msgstr ""
 "núcleos/células**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
-msgid "14. Examine the settings of RelateObjects"
-msgstr "14. Examine as configurações em RelateObjects"
+msgid "**13. Examine the settings of RelateObjects**"
+msgstr "**13. Examine as configurações de RelateObjects**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:431
 msgid ""
@@ -1076,8 +1076,8 @@ msgid "**Perform the analysis on ALL the images**"
 msgstr "**Realizando a análise em TODAS as imagens**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:442
-msgid "15. **Run the pipeline (optional)**"
-msgstr "15. **Execute o pipeline (opcional)**"
+msgid "**14. Run the pipeline (optional)**"
+msgstr "**14. Execute o pipeline (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:444
 msgid ""
