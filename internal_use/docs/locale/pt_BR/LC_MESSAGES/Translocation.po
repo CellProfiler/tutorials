@@ -878,7 +878,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:357
 msgid "**5. Identifying the cytoplasm as a “tertiary object”**"
-msgstr "**5. Identificação do citoplasma como um “objeto terciário”**"
+msgstr "**5. Identificando os citoplasmas como “objetos terciários”**"
 
 #: ../../source/Translocation/Translocation.md:359
 msgid ""
