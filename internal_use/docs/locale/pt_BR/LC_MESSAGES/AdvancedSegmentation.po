@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Marcelo Bispo de Jesus, 2026
 # Beth Cimini, 2026
+# Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2026\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -214,7 +214,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:89
 msgid "**2. Import metadata from the CSV**"
-msgstr "**2. Importar metadados do arquivo CSV**"
+msgstr "**2. Importando metadados do arquivo CSV**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:91
 msgid ""
@@ -479,11 +479,11 @@ msgstr "*Figura 4: Aplicação das funções de correção de iluminação."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
 msgid "**Segment Nuclei, Cells and Cytoplasm**"
-msgstr "**Núcleos Segmentados, células e Citoplasma**"
+msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
 msgid "**5. IdentifyPrimaryObjects- Nuclei**"
-msgstr "**5. Identificar objetos primários - núcleos**"
+msgstr "**5. IdentifyPrimaryObjects - Núcleos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:190
 msgid ""
@@ -536,7 +536,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:205
 msgid "**6. IdentifySecondaryObjects- Cells**"
-msgstr "**6. IdentificarSecondaryObjects- células**"
+msgstr "**6. IdentificarSecondaryObjects - Células**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:207
 msgid ""
@@ -696,7 +696,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:262
 msgid "**8. IdentifyTertiaryObjects- Cytoplasm**"
-msgstr "**8. Identificar objetos terciários - citoplasma**"
+msgstr "**8. IdentifyTertiaryObjects - Citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:264
 msgid ""
