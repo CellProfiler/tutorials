@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
-# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2026\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -130,8 +130,8 @@ msgstr ""
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:49
 msgid "**1. Start the provided QC pipeline on the BBBC022 dataset**"
 msgstr ""
-"**1. Inicie o controle de qualidade fornecido pipeline no conjunto de dados "
-"BBBC022**"
+"**1. Iniciando o controle de qualidade fornecido pipeline no conjunto de "
+"dados BBBC022**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:51
 msgid ""
@@ -202,7 +202,8 @@ msgstr ""
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:76
 msgid "**2. Examine the QC pipeline (~15 minutes)**"
 msgstr ""
-"**2. Examine o controle de qualidade pipeline (aproximadamente 15 minutos)**"
+"**2. Examinando o controle de qualidade pipeline (aproximadamente 15 "
+"minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:78
 msgid ""
@@ -386,8 +387,10 @@ msgid ""
 "**3. Open the CellProfiler Analyst workspace and determine reasonable "
 "parameter cutoffs (~20 minutes)**"
 msgstr ""
-"**3. Abra o espaço de trabalho do CellProfiler Analyst e determine limites "
-"de parâmetros razoáveis (aproximadamente 20 minutos)**"
+"**3. Abrindo o workspace do CellProfiler Analyst e definindo valores de "
+"corte razoáveis para os parâmetros (cerca de 20 minutos)**Abra o workspace "
+"do CellProfiler Analyst e defina valores de corte razoáveis para os "
+"parâmetros (cerca de 20 minutos)"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
 msgid ""
@@ -507,19 +510,18 @@ msgid ""
 "high quality, adjust the gate to look at a different/smaller subset or "
 "delete it altogether by using the Gate Inspector (‘gate’-> ‘MANAGE GATES’)."
 msgstr ""
-"Observe algumas das imagens dentro do portal (talvez seja necessário clicar "
-"em \"Mostrar controles\" para ajustar o zoom, o contraste, etc.). Elas estão"
-" em foco e livres de detritos brilhantes? Se todas ou a maioria parecerem de"
-" alta qualidade, ajuste o portal para visualizar um subconjunto "
-"diferente/menor ou exclua-o completamente usando o Inspetor de Portais "
-"(\"portal\" -> \"GERENCIAR PORTÕES\")."
+"Observe algumas das imagens dentro do gate (talvez seja necessário clicar em"
+" “Show controls” para ajustar zoom, contraste, etc.). Elas estão em foco e "
+"livres de debris brilhantes? Se parecer que todas (ou a maioria) são de alta"
+" qualidade, ajuste o gate para olhar um subconjunto diferente/menor ou "
+"exclua-o usando o “Gate Inspector” (em “gate” > “MANAGE GATES”)."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
 msgid ""
 "**4. Optional — use the PlateViewer tool to check for other features to gate"
 " on (~10 minutes)**"
 msgstr ""
-"**4. Opcional — utilize a ferramenta PlateViewer para verificar outras "
+"**4. Opcional — utilizando a ferramenta PlateViewer para verificar outras "
 "características a serem consideradas no processo de seleção (aproximadamente"
 " 10 minutos)**"
 
@@ -589,8 +591,8 @@ msgstr ""
 msgid ""
 "**5. Create filters based on the cutoffs you’ve determined (~10 minutes)**"
 msgstr ""
-"**5. Crie filtros com base nos limites que você determinou (aproximadamente "
-"10 minutos)**"
+"**5. Criando filtros com base nos limites que você determinou (cerca de 10 "
+"minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:244
 msgid ""
@@ -760,8 +762,8 @@ msgid ""
 "**6. Create classifier rules to distinguish good from bad images (~30 "
 "minutes)**"
 msgstr ""
-"**6. Criar regras de classificação para distinguir imagens boas de ruins "
-"(aproximadamente 30 minutos)**"
+"**6. Criando regras de classificação para distinguir imagens boas de ruins "
+"(cerca de 30 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
 msgid ""
@@ -873,8 +875,8 @@ msgstr ""
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
 msgid "**7. Add quality control steps to an analysis pipeline (~15 minutes)**"
 msgstr ""
-"**7. Adicionar etapas de controle de qualidade a uma análise pipeline (~15 "
-"minutos)**"
+"**7. Adicionando etapas de controle de qualidade a uma análise pipeline "
+"(cerca de 15 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:364
 msgid ""
