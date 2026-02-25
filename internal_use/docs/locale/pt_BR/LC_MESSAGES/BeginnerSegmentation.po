@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Mario Costa Cruz, 2025
-# Beth Cimini, 2025
 # Marcelo Bispo de Jesus, 2026
+# Beth Cimini, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27 00:08+0000\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
+"Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1539,13 +1539,12 @@ msgstr ""
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:61
 msgid ""
 "Figure 2: **Main CellProfiler window**. To load images, drag and drop images"
-" into the right area. To load a pipeline (.ccpipe or .ccproj files), drag "
+" into the right area. To load a pipeline (.cppipe or .cpproj files), drag "
 "and drop the pipeline file into the left area."
 msgstr ""
 "Figura 2: **Janela principal do CellProfiler**. Para carregar imagens, "
-"arraste e solte as imagens na área à direita. Para carregar um pipeline "
-"(arquivos .ccpipe ou .ccproj), arraste e solte o arquivo do pipeline na área"
-" esquerda."
+"arraste e solte-as na área à direita. Para carregar um arquivo pipeline "
+"(.cppipe ou .cpproj), arraste e solte o arquivo pipeline na área à esquerda."
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:64
 msgid ""
@@ -1650,18 +1649,18 @@ msgstr ""
 " imagem clicando com o botão direito sobre ela e indo em `'Adjust Contrast'`"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:97
-msgid "3. [OPTIONAL STEP] Set up the input modules"
-msgstr "3. [ETAPA OPCIONAL] Configurar os módulos de entrada"
+msgid "**3. [OPTIONAL STEP] Set up the input modules**"
+msgstr "**3. [ETAPA OPCIONAL] Configurar os módulos de entrada**"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:99
 msgid ""
 "*We suggest you skip this step for now, it will not affect the rest of the "
 "pipeline, as these modules have been properly set up in the starting "
-"pipeline (`segmentation_start.cpipe`).*"
+"pipeline (`segmentation_start.cppipe`).*"
 msgstr ""
-"*Sugerimos que você pule esta etapa por enquanto, pois ela não afetará o "
-"restante do pipeline, pois esses módulos foram configurados corretamente no "
-"pipeline inicial (`segmentation_start.cpipe`).*"
+"*Sugerimos que você ignore esta etapa por enquanto, pois ela não afetará o "
+"restante do pipeline, já que esses módulos foram configurados corretamente "
+"no pipeline inicial (`segmentation_start.cppipe`).*"
 
 #: ../../source/BeginnerSegmentation/CPbeginner_Segmentation.md:101
 msgid ""
