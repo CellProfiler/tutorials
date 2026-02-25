@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cellprofiler-tutorials\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 20:20+0000\n"
+"POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
 "Last-Translator: Beth Cimini, 2026\n"
 "Language-Team: Spanish (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/es/)\n"
@@ -127,9 +127,9 @@ msgstr ""
 " tutorial Translocation o un ejercicio introductorio similar."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:49
-msgid "1. **Start the provided QC pipeline on the BBBC022 dataset**"
+msgid "**1. Start the provided QC pipeline on the BBBC022 dataset**"
 msgstr ""
-"1. **Inicie el control de calidad proporcionado pipeline en el conjunto de "
+"**1. Inicie el control de calidad proporcionado pipeline en el conjunto de "
 "datos BBBC022**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:51
@@ -199,8 +199,8 @@ msgstr ""
 " un archivo de texto .workspace."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:76
-msgid "2. **Examine the QC pipeline (~15 minutes)**"
-msgstr "2. **Examine el control de calidad pipeline (~15 minutos)**"
+msgid "**2. Examine the QC pipeline (~15 minutes)**"
+msgstr "**2. Examinar el control de calidad pipeline (~15 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:78
 msgid ""
@@ -385,11 +385,12 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:153
 msgid ""
-"3. **Open the CellProfiler Analyst workspace and determine reasonable "
+"**3. Open the CellProfiler Analyst workspace and determine reasonable "
 "parameter cutoffs (~20 minutes)**"
 msgstr ""
-"3. **Abra el espacio de trabajo de CellProfiler Analyst y determine límites "
-"de parámetros razonables (~20 minutos)**"
+"**3. Abra el espacio de trabajo de CellProfiler Analyst y determine los "
+"límites de corte razonables para los parámetros (aproximadamente 20 "
+"minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:155
 msgid ""
@@ -519,11 +520,11 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:214
 msgid ""
-"4. **Optional — use the PlateViewer tool to check for other features to gate"
+"**4. Optional — use the PlateViewer tool to check for other features to gate"
 " on (~10 minutes)**"
 msgstr ""
-"4. **Opcional: use la herramienta PlateViewer para verificar otras "
-"características a tener en cuenta (aproximadamente 10 minutos)**"
+"**4. Opcional: utilice la herramienta PlateViewer para buscar otras "
+"funciones que se puedan activar (aproximadamente 10 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:216
 msgid ""
@@ -590,9 +591,10 @@ msgstr ""
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:242
 msgid ""
-"5. **Create filters based on the cutoffs you’ve determined (~10 minutes)**"
+"**5. Create filters based on the cutoffs you’ve determined (~10 minutes)**"
 msgstr ""
-"5. **Cree filtros según los límites que haya determinado (~10 minutos)**"
+"**5. Crea filtros según los límites que hayas determinado (aproximadamente "
+"10 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:244
 msgid ""
@@ -761,11 +763,11 @@ msgstr "*Figura 3: Creación de filtros dentro de CPA*."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:320
 msgid ""
-"6. **Create classifier rules to distinguish good from bad images (~30 "
+"**6. Create classifier rules to distinguish good from bad images (~30 "
 "minutes)**"
 msgstr ""
-"6. **Cree reglas clasificadoras para distinguir imágenes buenas de malas "
-"(~30 minutos)**"
+"**6. Crear reglas de clasificación para distinguir las imágenes buenas de "
+"las malas (~30 minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:322
 msgid ""
@@ -876,9 +878,9 @@ msgstr ""
 "luego cierre CellProfiler Analyst."
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:362
-msgid "7. **Add quality control steps to an analysis pipeline (~15 minutes)**"
+msgid "**7. Add quality control steps to an analysis pipeline (~15 minutes)**"
 msgstr ""
-"7. **Agregar pasos de control de calidad a un análisis pipeline (~15 "
+"**7. Agregar pasos de control de calidad a un análisis pipeline (~15 "
 "minutos)**"
 
 #: ../../source/QualityControl/BBBC022_QualityControlExercise.md:364
