@@ -2026,8 +2026,7 @@ msgstr ""
 msgid ""
 "**4. Reviewing the accuracy of the classification with the confusion "
 "matrix**"
-msgstr ""
-"**4. Analisando a precisão da classificação com a matriz de confusão**"
+msgstr "**4. Revisando a precisão da classificação com a matriz de confusão**"
 
 #: ../../source/Translocation/Translocation.md:799
 msgid ""
