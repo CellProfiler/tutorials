@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2026
+# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
@@ -1081,7 +1081,7 @@ msgstr "**Realizando a análise em TODAS as imagens**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:442
 msgid "**14. Run the pipeline (optional)**"
-msgstr "**14. Execute o pipeline (opcional)**"
+msgstr "**14. Executando o pipeline (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:444
 msgid ""
