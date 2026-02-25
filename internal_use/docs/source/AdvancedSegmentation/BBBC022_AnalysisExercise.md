@@ -74,7 +74,7 @@ a similar introductory exercise.
 
 ## **Input images and configure metadata**
 
-### 1. **Load images and metadata**
+### **1. Load images and metadata**
 
 - Start CellProfiler by double-clicking the desktop icon <img src="./TutorialImages/CellProfilerLogo.png" alt="CellProfiler icon" width="35"/>
 
@@ -86,7 +86,7 @@ a similar introductory exercise.
   images (with a file extension of ‘.npy’) are included in this data
   set.
 
-### 2. **Import metadata from the CSV**
+### **2. Import metadata from the CSV**
 
 So that we can explore what cells treated with different drugs look like later in the exercise, we must add this information into CellProfiler from the CSV. Provided with this exercise is a CSV called ‘20585_AE.csv’ detailing drug treatment
 info for each image.
@@ -113,7 +113,7 @@ info for each image.
     - Image_Metadata_PlateID (from the spreadsheet) is matched to Plate (extracted from the folder name by the second extraction step)
     - Image_Metadata_CPD_WELL_POSITION (from the spreadsheet) is matched to Well (extracted from the file name by the first extraction step)
 
-### 3. **Examine the channel mappings in NamesAndTypes (optional)**
+### **3. Examine the channel mappings in NamesAndTypes (optional)**
 
 The channel mapping here is a bit more complicated than anything we've worked with before- we have a single set of illumination correction images that map to each and every well and site.  We can use the metadata we extracted in the last module to make that association possible.
 
@@ -154,7 +154,7 @@ The channel mapping here is a bit more complicated than anything we've worked wi
 ```
 ## **Illumination correction**
 
-### 4. **Examine the output of the CorrectIlluminationApply module (optional)**
+### **4. Examine the output of the CorrectIlluminationApply module (optional)**
 
 Since microscope objectives don't typically have a completely uniform illumination
 pattern, applying an illumination correction function can help make segmentation
@@ -183,9 +183,9 @@ to the top of the field of view to see the greatest effect.
 *Figure 4: Application of the illumination correction functions.*
 ```
 
-## **Segmenet Nuclei, Cells and Cytoplasm**
+## **Segment Nuclei, Cells and Cytoplasm**
 
-### 5. **IdentifyPrimaryObjects- Nuclei**
+### **5. IdentifyPrimaryObjects- Nuclei**
 
 Next we'll take a first pass at identifying nuclei and cells in our initial image.
 
@@ -202,7 +202,7 @@ Next we'll take a first pass at identifying nuclei and cells in our initial imag
   the parameters for robustness later, however, the identification
   should be good but doesn’t need to be perfect before you move on.
 
-### 6. **IdentifySecondaryObjects- Cells**
+### **6. IdentifySecondaryObjects- Cells**
 
 - **After** the IdentifyPrimaryObjects module but **before** the
   EnhanceOrSuppressFeatures module, add an IdentifySecondaryObjects
@@ -215,7 +215,7 @@ Next we'll take a first pass at identifying nuclei and cells in our initial imag
   you feel you’re ready to test them on another image; they need not be
   perfect before you move on.
 
-### 7. **Test the robustness of your segmentation parameters across multiple compounds**
+### **7. Test the robustness of your segmentation parameters across multiple compounds**
 
 It's (relatively!) easy to come up with a good set of segmentation parameters for a single image or a set of similar images; this data set however contains images from cells treated with many different classes of drugs, many of which have very different phenotypes. It's valuable to learn how to create a set of parameters that can segment cells that display a variety of morphologies since you may come across a similar problem in your own experiments!
 
@@ -259,7 +259,7 @@ It's (relatively!) easy to come up with a good set of segmentation parameters fo
     \-  In IdentifyPrimaryObjects, adjusting the declumping settings (make sure to turn 'Use advanced settings?' on) will probably be necessary for a robust segmentation
     \-  In IdentifySecondaryObjects, you will want to test the effects of using the various methods for identifying secondary objects (Propagation, Watershed-Image, Distance-N, etc) and, if using Propagation, the regularization factor.
 
-### 8. **IdentifyTertiaryObjects- Cytoplasm**
+### **8. IdentifyTertiaryObjects- Cytoplasm**
 
 - **After** the IdentifySecondaryObjects module but **before** the
   EnhanceOrSuppressFeatures module, add an IdentifyTertiaryObjects
@@ -269,7 +269,7 @@ It's (relatively!) easy to come up with a good set of segmentation parameters fo
 
 ## **Segment Nucleoli inside the Nuclei**
 
-### 9. **Examine the steps used to segment the Nucleoli**
+### **9. Examine the steps used to segment the Nucleoli**
 
 - The next 3 modules have to do with the creation of the Nucleoli
   objects. Look at the output from each to see how the image is
@@ -308,7 +308,7 @@ It's (relatively!) easy to come up with a good set of segmentation parameters fo
 
 ## **Segment the Mitochondria inside the Cytoplasm**
 
-### 10. **Mask the Mito image by the Cytoplasm object**
+### **10. Mask the Mito image by the Cytoplasm object**
 
 Now that you’ve seen an example of how to segment an organelle, you
 will do so for Mitochondria in the following steps.
@@ -335,7 +335,7 @@ will do so for Mitochondria in the following steps.
 ```
 
 
-### 12. **IdentifyPrimaryObjects- Mitochondria**
+### **11. IdentifyPrimaryObjects- Mitochondria**
 
 - **After** your MaskImage module but **before** the RelateObjects
   modules, add an IdentifyPrimary Objects module to identify
@@ -350,7 +350,7 @@ will do so for Mitochondria in the following steps.
 
 ## **Perform Measurements**
 
-### 13. **Add measurement modules to your pipeline**
+### **12. Add measurement modules to your pipeline**
 
 - **After** your segmentation of the mitochondria but **before** the
   RelateObjects modules, add as many object measurement modules as you
@@ -426,7 +426,7 @@ only be able to examine one object at a time in CellProfiler Analyst.*
 
 ## **Relate Nucleoli and Mitochondria to their respective nuclei/cells**
 
-### 14. Examine the settings of RelateObjects
+### **13. Examine the settings of RelateObjects**
 
 - **After** your Measurement and **before** your Export modules you
   should find two RelateObjects modules. One relates Nucleoli to
@@ -439,7 +439,7 @@ only be able to examine one object at a time in CellProfiler Analyst.*
 
 ## **Perform the analysis on ALL the images**
 
-### 15. **Run the pipeline (optional)**
+### **14. Run the pipeline (optional)**
 
 - If you have time and/or if you’d like to play with the data in
   CellProfiler Analyst later, exit test mode, close the eyes next to

@@ -58,7 +58,7 @@ Read through the steps below and follow instructions where stated. Steps where y
 :width: 700
 :align: center
 
- Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline (.ccpipe or .ccproj files), drag and drop the pipeline file into the left area.
+ Figure 2: **Main CellProfiler window**. To load images, drag and drop images into the right area. To load a pipeline (.cppipe or .cpproj files), drag and drop the pipeline file into the left area.
 ```
 
 - Drag and drop the `‘segmentation_start.cppipe’` ﬁle into the `‘Analysis modules’` pane on the left.
@@ -94,9 +94,9 @@ Read through the steps below and follow instructions where stated. Steps where y
   > **TIP** you can manually adjust brightness and contrast in the image display by right-clicking on it and going to `'Adjust Contrast'` 
 
 -------------------------------------------------------------------------------------------------------------------------
-###  3. [OPTIONAL STEP] Set up the input modules
+###  **3. [OPTIONAL STEP] Set up the input modules**
   
-  > *We suggest you skip this step for now, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline (`segmentation_start.cpipe`).*
+  > *We suggest you skip this step for now, it will not affect the rest of the pipeline, as these modules have been properly set up in the starting pipeline (`segmentation_start.cppipe`).*
   
   > *At the end of this tutorial you will find instructions on how to set up the input modules*
 
