@@ -2437,7 +2437,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:975
 msgid "**7. Saving the scores to the measurement database for visualization**"
 msgstr ""
-"**7. Salvar as pontuações no banco de dados de medição para visualização**"
+"**7. Salvando os scores no banco de dados de medidas para visualização**"
 
 #: ../../source/Translocation/Translocation.md:977
 msgid ""
