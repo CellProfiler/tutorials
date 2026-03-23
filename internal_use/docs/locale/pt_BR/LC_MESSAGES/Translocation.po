@@ -343,8 +343,8 @@ msgid ""
 "then select the **Translocation_doses_and_controls.csv** file within."
 msgstr ""
 "Clique na caixa de seleção de arquivo à direita da linha \"Metadata file "
-"name\" e navegue até o local da pasta TranslocationData em seu computador e,"
-" em seguida, selecione o arquivo **Translocation_doses_and_controls.csv** "
+"name\" e navegue até o local da pasta ‘TranslocationData’ em seu computador "
+"e, em seguida, selecione o arquivo **Translocation_doses_and_controls.csv** "
 "dentro dela."
 
 #: ../../source/Translocation/Translocation.md:133
