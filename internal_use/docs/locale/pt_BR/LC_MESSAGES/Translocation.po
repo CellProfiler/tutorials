@@ -132,9 +132,9 @@ msgstr ""
 "(controles positivos), e 10 poços foram usados para criar uma curva dose-"
 "resposta, com concentrações crescentes do fármaco. Além das imagens, é "
 "fornecido um arquivo de texto chamado "
-"“Translocation_doses_and_controls.csv”, contendo informações sobre onde os "
-"poços estavam localizados na placa de 96 poços e como as células foram "
-"tratadas."
+"“Translocation_doses_and_controls.csv”, na pasta `TranslocationData`, "
+"contendo informações sobre onde os poços estavam localizados na placa de 96 "
+"poços e como as células foram tratadas."
 
 #: ../../source/Translocation/Translocation.md:59
 msgid "**Methods to be used in this exercise:**"
