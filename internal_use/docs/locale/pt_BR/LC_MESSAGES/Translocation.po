@@ -263,7 +263,7 @@ msgid ""
 msgstr ""
 "Clique no módulo **Metadata**, que é o segundo módulo no painel 'Input "
 "modules'; esse módulo permite fornecer informações sobre as doses dos "
-"compostos e a localização na placa."
+"compostos e suas localizações na placa."
 
 #: ../../source/Translocation/Translocation.md:109
 msgid ""
