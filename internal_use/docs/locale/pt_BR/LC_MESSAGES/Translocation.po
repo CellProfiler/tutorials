@@ -209,7 +209,7 @@ msgstr ""
 "branco indicada pelo texto “Drop files and folders here”. O painel ‘File "
 "List’ é a interface principal do módulo **Images**, que compila uma lista de"
 " arquivos e/ou pastas que você deseja analisar; esse módulo fica selecionado"
-" no painel de módulos de entrada (**Input** modules), localizado no canto "
+" no painel de módulos de entrada (**Input modules**), localizado no canto "
 "superior esquerdo do CellProfiler."
 
 #: ../../source/Translocation/Translocation.md:90
