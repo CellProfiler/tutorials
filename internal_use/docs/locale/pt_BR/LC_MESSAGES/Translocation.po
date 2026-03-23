@@ -388,7 +388,7 @@ msgid ""
 "each image by which other modules will refer to it."
 msgstr ""
 "Selecione o módulo **NamesAndTypes**, que é o terceiro módulo no painel "
-"Input modules; esse módulo permite atribuir um nome significativo a cada "
+"‘Input modules’; esse módulo permite atribuir um nome significativo a cada "
 "imagem, que será usado pelos outros módulos para se referirem a ela."
 
 #: ../../source/Translocation/Translocation.md:151
