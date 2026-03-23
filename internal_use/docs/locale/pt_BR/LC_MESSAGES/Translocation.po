@@ -376,9 +376,10 @@ msgid ""
 "“Float” as the data type. Leave the remaining metadata at the default “Text”"
 " values."
 msgstr ""
-"Ao lado da configuração “Metadata data type”, selecione “Choose for each”. "
-"Para o metadado “Dose”, selecione “Float” como tipo de dado. Mantenha os "
-"demais metadados com o valor padrão “Text”."
+"Ao lado da configuração “Metadata data type”, verifique se  “Choose for "
+"each” está selecionado. E para o metadado “Dose”, verifique se “Float” está "
+"selecionado como tipo de dado. Mantenha os demais metadados com o valor "
+"padrão “Text”."
 
 #: ../../source/Translocation/Translocation.md:147
 msgid ""
