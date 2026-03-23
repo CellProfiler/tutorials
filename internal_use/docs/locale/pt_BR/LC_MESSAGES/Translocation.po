@@ -253,7 +253,7 @@ msgstr ""
 " selecione ‘Images only’. Em seguida, clique no botão <img "
 "src=\"./TutorialImages/ApplyFilters.png\" width=\"150\"/> para filtrar os "
 "arquivos que não são imagens. Você verá que o arquivo CSV ficará acinzentado"
-" na lista, indicando que ele não será utilizado."
+" na lista, indicando que ele não será considerado na análise."
 
 #: ../../source/Translocation/Translocation.md:105
 msgid ""
