@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:39
 msgid "**Goals of this exercise:**"
-msgstr "Objetivos deste exercício"
+msgstr "**Objetivos deste exercício**"
 
 #: ../../source/Translocation/Translocation.md:41
 msgid ""
