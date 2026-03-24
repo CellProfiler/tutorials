@@ -1076,7 +1076,7 @@ msgid ""
 msgstr ""
 "Nesse módulo, selecione ‘rawGFP’ e ‘rawDNA’ na caixa “Select images to "
 "measure”. Deixe a opção “Set threshold as percentage of maximum intensity "
-"for the images” com o valor padrão de '15.0'."
+"for the images” com o valor padrão de ‘15.0’."
 
 #: ../../source/Translocation/Translocation.md:428
 msgid ""
