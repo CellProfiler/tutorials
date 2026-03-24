@@ -936,7 +936,7 @@ msgid ""
 "For the “Name the tertiary objects to be identified” setting, enter "
 "“Cytoplasm” as a descriptive name for the tertiary objects."
 msgstr ""
-"Em “Name the tertiary objects to be identified”, digite “Cytoplasm” como um "
+"Em “Name the tertiary objects to be identified”, digite ‘Cytoplasm’ como um "
 "nome descritivo para os objetos terciários."
 
 #: ../../source/Translocation/Translocation.md:374
