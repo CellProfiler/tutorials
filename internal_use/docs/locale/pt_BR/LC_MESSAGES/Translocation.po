@@ -476,8 +476,8 @@ msgstr ""
 "contornos coincidam o máximo possível com os limites reais dos núcleos e que"
 " objetos que se tocam sejam separados corretamente. Em outras palavras, você"
 " não quer que o programa divida um único objeto (um núcleo) em vários "
-"objetos, 'oversegmenting', nem que junte vários objetos em um único objeto, "
-"'undersegmenting'."
+"objetos, *oversegmenting*, nem que junte vários objetos em um único objeto, "
+"*undersegmenting*."
 
 #: ../../source/Translocation/Translocation.md:184
 msgid ""
