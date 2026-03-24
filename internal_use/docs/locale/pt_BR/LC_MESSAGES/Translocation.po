@@ -1181,8 +1181,8 @@ msgid ""
 "Select “Object” for the “Select the numerator type,” and select “Cytoplasm” "
 "from the drop-down for the “Select the numerator objects.”"
 msgstr ""
-"Em “Select the numerator type”, selecione “Object”. Em “Select the numerator"
-" objects”, selecione “Cytoplasm”."
+"Em “Select the numerator type”, selecione ‘Object’. Em “Select the numerator"
+" objects”, selecione ‘Cytoplasm’."
 
 #: ../../source/Translocation/Translocation.md:473
 msgid ""
