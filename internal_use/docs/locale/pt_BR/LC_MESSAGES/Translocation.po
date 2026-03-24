@@ -773,7 +773,7 @@ msgid ""
 "For the “Name the objects to be identified” setting, enter “Cells” as a "
 "descriptive name for the secondary objects."
 msgstr ""
-"Em “Name the objects to be identified”, digite “Cells” como um nome "
+"Em “Name the objects to be identified”, digite ‘Cells’ como um nome "
 "descritivo para os objetos secundários."
 
 #: ../../source/Translocation/Translocation.md:311
