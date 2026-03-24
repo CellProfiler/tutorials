@@ -1023,8 +1023,8 @@ msgid ""
 "src=\"./TutorialImages/AddToPipeline.png\" width=\"160\"/> button."
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\" width=\"35\"/> e"
-" adicione o módulo *MeasureObjectIntensity* localizado na categoria do "
-"módulo *“Measurement”.* Adicione-o ao pipeline clicando no botão <img "
+" adicione o módulo **MeasureObjectIntensity** localizado na categoria do "
+"módulo ‘Measurement’. Adicione-o ao pipeline clicando no botão <img "
 "src=\"./TutorialImages/AddToPipeline.png\" width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:411
