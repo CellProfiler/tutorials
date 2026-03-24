@@ -873,7 +873,7 @@ msgid ""
 "Change the setting “Number of pixels by which to expand…” that appears "
 "underneath to 10 pixels."
 msgstr ""
-"Em “Number of pixels by which to expand...”, escreva '10', valor da "
+"Em “Number of pixels by which to expand...”, escreva ‘10’, valor da "
 "distância em pixels."
 
 #: ../../source/Translocation/Translocation.md:355
@@ -912,7 +912,7 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"40\"/> "
 "e adicione o módulo **IdentifyTertiaryObjects** localizado na categoria do "
-"módulo *“Object Processing”.* Adicione-o ao pipeline clicando no botão<img "
+"módulo “Object Processing”. Adicione-o ao pipeline clicando no botão<img "
 "src=\"./TutorialImages/AddToPipeline.png\" width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:369
