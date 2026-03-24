@@ -1150,8 +1150,8 @@ msgid ""
 "Select “Object” for the “Select the numerator type,” and select “Nuclei” "
 "from the drop-down for the “Select the numerator objects.”"
 msgstr ""
-"Em “Select the numerator type”, selecione “Object”. Em seguida, em “Select "
-"the numerator objects”, selecione “Nuclei”."
+"Em “Select the numerator type”, selecione ‘Object’. Em seguida, em “Select "
+"the numerator objects”, selecione ‘Nuclei’."
 
 #: ../../source/Translocation/Translocation.md:456
 #: ../../source/Translocation/Translocation.md:467
