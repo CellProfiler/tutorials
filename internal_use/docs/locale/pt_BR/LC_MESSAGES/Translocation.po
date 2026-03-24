@@ -928,7 +928,7 @@ msgid ""
 "For the “Select the smaller identified objects” setting, select “Nuclei” "
 "from the drop-down list."
 msgstr ""
-"Em “Select the smaller identified objects”, selecione “Nuclei” na lista "
+"Em “Select the smaller identified objects”, selecione ‘Nuclei’ na lista "
 "suspensa."
 
 #: ../../source/Translocation/Translocation.md:372
