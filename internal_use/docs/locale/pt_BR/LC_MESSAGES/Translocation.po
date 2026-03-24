@@ -1170,7 +1170,7 @@ msgid ""
 "“rawGFP” from the “Image” drop-down that appears."
 msgstr ""
 "Em “Measurement”, selecione ‘MeanIntensity’. Em seguida, Em “Image” "
-"selecione ‘rawGFP’."
+"selecione ‘rawDNA’."
 
 #: ../../source/Translocation/Translocation.md:462
 msgid "For the denominator measurement:"
