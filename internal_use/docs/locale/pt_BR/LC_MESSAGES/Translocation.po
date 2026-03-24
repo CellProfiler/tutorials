@@ -791,8 +791,8 @@ msgid ""
 "change it from “Two classes” to “Three classes.” Change the setting “Assign "
 "pixels…” that subsequently appears underneath to “Foreground”"
 msgstr ""
-"Em “Two-class or three-class thresholding?” selecione “Three classes”, em "
-"vez de “Two classes”. Em “Assign pixels…” selecione “Foreground”."
+"Em “Two-class or three-class thresholding?” selecione ‘Three classes’, em "
+"vez de ‘Two classes’. Em “Assign pixels…” selecione ‘Foreground’."
 
 #: ../../source/Translocation/Translocation.md:320
 msgid ""
