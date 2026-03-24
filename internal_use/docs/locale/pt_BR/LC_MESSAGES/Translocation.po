@@ -944,7 +944,7 @@ msgid ""
 "Enable the ‘Shrink smaller object prior to subtraction?’ option; this will "
 "ensure that all of your Cytoplasm objects have an area of at least 1 pixel."
 msgstr ""
-"Selecione ‘Yes’ em “Shrink smaller object prior to subtraction?”; isso "
+"Em “Shrink smaller object prior to subtraction?”, selecione ‘Yes’; isso "
 "garantirá que todos os seus objetos de citoplasma tenham uma área de pelo "
 "menos 1 pixel."
 
