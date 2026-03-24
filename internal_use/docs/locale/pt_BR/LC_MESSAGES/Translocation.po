@@ -1074,7 +1074,7 @@ msgid ""
 "measure\" box. Leave the \"Set threshold as percentage of maximum intensity "
 "for the images\" to the default value of 15.0."
 msgstr ""
-"Nesse módulo, selecione “rawGFP” e “rawDNA” na caixa “Select images to "
+"Nesse módulo, selecione ‘rawGFP’ e ‘rawDNA’ na caixa “Select images to "
 "measure”. Deixe a opção “Set threshold as percentage of maximum intensity "
 "for the images” com o valor padrão de '15.0'."
 
