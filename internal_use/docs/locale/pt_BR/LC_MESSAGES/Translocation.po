@@ -1169,8 +1169,8 @@ msgid ""
 "Select “MeanIntensity” from the “Measurement” drop-down list. Then select "
 "“rawGFP” from the “Image” drop-down that appears."
 msgstr ""
-"Em “Measurement”, selecione “MeanIntensity”. Em seguida, Em “Image” "
-"selecione “rawGFP”."
+"Em “Measurement”, selecione ‘MeanIntensity’. Em seguida, Em “Image” "
+"selecione ‘rawGFP’."
 
 #: ../../source/Translocation/Translocation.md:462
 msgid "For the denominator measurement:"
