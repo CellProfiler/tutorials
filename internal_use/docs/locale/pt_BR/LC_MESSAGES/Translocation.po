@@ -567,7 +567,7 @@ msgid ""
 "box to zoom in on."
 msgstr ""
 "O 5º ícone permite que você altere a visualização por meio do zoom, "
-"arrastando e desenhando uma caixa para aumentar o zoom."
+"arrastando e desenhando uma caixa para ampliar a imagem."
 
 #: ../../source/Translocation/Translocation.md:222
 msgid ""
