@@ -782,8 +782,8 @@ msgid ""
 "Then, click the drop-down next to “Thresholding method to select “Otsu”."
 msgstr ""
 "Em “Select the method to identify the secondary objects”, selecione "
-"“Propagation”. Em “Threshold strategy”, selecione   “Global”. E em "
-"“Thresholding method”, selecione “Otsu”. "
+"‘Propagation’. Em “Threshold strategy”, selecione   ‘Global’. E em "
+"“Thresholding method”, selecione ‘Otsu’. "
 
 #: ../../source/Translocation/Translocation.md:315
 msgid ""
