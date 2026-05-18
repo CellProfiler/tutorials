@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Beth Cimini, 2026
+# Beth Cimini, 2024
 # Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
@@ -175,7 +175,7 @@ msgstr "**Inserir imagens e configurar metadados**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:77
 msgid "**1. Load images and metadata**"
-msgstr "**1. Carregar imagens e metadados**"
+msgstr "**1. Carregando imagens e metadados**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:79
 msgid ""
@@ -317,7 +317,8 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:116
 msgid "**3. Examine the channel mappings in NamesAndTypes (optional)**"
-msgstr "**3. Examine os mapeamentos de canais em NamesAndTypes (opcional)**"
+msgstr ""
+"**3. Examinando os mapeamentos de canais em NamesAndTypes (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:118
 msgid ""
@@ -419,7 +420,8 @@ msgstr "**Correção de iluminação**"
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:157
 msgid ""
 "**4. Examine the output of the CorrectIlluminationApply module (optional)**"
-msgstr "**4. Examine a saída do módulo CorrectIlluminationApply (opcional)**"
+msgstr ""
+"**4. Examinando a saída do módulo CorrectIlluminationApply (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:159
 msgid ""
@@ -479,7 +481,7 @@ msgstr "*Figura 4: Aplicação das funções de correção de iluminação."
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:186
 msgid "**Segment Nuclei, Cells and Cytoplasm**"
-msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
+msgstr "**Segmentando mitocôndrias dentro do citoplasma**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:188
 msgid "**5. IdentifyPrimaryObjects- Nuclei**"
@@ -577,7 +579,7 @@ msgid ""
 "**7. Test the robustness of your segmentation parameters across multiple "
 "compounds**"
 msgstr ""
-"**7. Teste a robustez dos seus parâmetros de segmentação em vários "
+"**7. Testando a robustez dos seus parâmetros de segmentação em vários "
 "compostos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:220
@@ -722,7 +724,7 @@ msgstr "**Segmentação dos Nucléolos dentro dos Núcleos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:272
 msgid "**9. Examine the steps used to segment the Nucleoli**"
-msgstr "**9. Examine as etapas utilizadas para segmentar os nucléolos**"
+msgstr "**9. Examinando as etapas utilizadas para segmentar os nucléolos**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:274
 msgid ""
@@ -805,7 +807,8 @@ msgstr "**Segmentação das mitocôndrias dentro do citoplasma**"
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:311
 msgid "**10. Mask the Mito image by the Cytoplasm object**"
 msgstr ""
-"**10. Aplicar uma máscara na imagem “Mito” com base no objeto “Cytoplasm”**"
+"**10. Aplicando uma máscara na imagem “Mito” com base no objeto "
+"“Cytoplasm”**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:313
 msgid ""
@@ -1046,7 +1049,7 @@ msgstr ""
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:429
 msgid "**13. Examine the settings of RelateObjects**"
-msgstr "**13. Examine as configurações de RelateObjects**"
+msgstr "**13. Examinando as configurações de RelateObjects**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:431
 msgid ""
@@ -1078,7 +1081,7 @@ msgstr "**Realizando a análise em TODAS as imagens**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:442
 msgid "**14. Run the pipeline (optional)**"
-msgstr "**14. Execute o pipeline (opcional)**"
+msgstr "**14. Executando o pipeline (opcional)**"
 
 #: ../../source/AdvancedSegmentation/BBBC022_AnalysisExercise.md:444
 msgid ""
