@@ -5,8 +5,8 @@
 # 
 # Translators:
 # Mario Costa Cruz, 2024
-# Marcelo Bispo de Jesus, 2026
 # Beth Cimini, 2026
+# Marcelo Bispo de Jesus, 2026
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:59+0000\n"
 "PO-Revision-Date: 2023-12-13 22:27+0000\n"
-"Last-Translator: Beth Cimini, 2026\n"
+"Last-Translator: Marcelo Bispo de Jesus, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/center-for-open-bioimage-analysis/teams/169339/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,8 +68,8 @@ msgid ""
 msgstr ""
 "Neste experimento, estamos trabalhando com células humanas de osteossarcoma "
 "U2OS (câncer ósseo), nas quais a proteína Forkhead FOXO1A foi marcada com "
-"GFP (Green Fluorescent Protein, proteína fluorescente verde). Em células em "
-"proliferação, a FOXO1A está localizada no citoplasma; ela se move "
+"GFP (*Green Fluorescent Protein*, proteína fluorescente verde). Em células "
+"em proliferação, a FOXO1A está localizada no citoplasma; ela se move "
 "constantemente para dentro do núcleo, mas é transportada novamente para fora"
 " por proteínas de exportação. Quando a exportação nuclear é inibida, a "
 "FOXO1A se acumula no núcleo. Sabemos que 150 nM de wortmannina (o fármaco "
@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:39
 msgid "**Goals of this exercise:**"
-msgstr "Objetivos deste exercício"
+msgstr "**Objetivos deste exercício**"
 
 #: ../../source/Translocation/Translocation.md:41
 msgid ""
@@ -129,11 +129,12 @@ msgstr ""
 "placa padrão de 96 poços, mas você vai trabalhar com um subconjunto de "
 "apenas 26 dessas imagens: 8 poços foram deixados sem tratamento (controles "
 "negativos), 8 poços foram tratados com a dose máxima do fármaco wortmannina "
-"(controles positivos), e 10 poços foram usados para criar um gradiente de "
-"dose, com concentrações crescentes do fármaco. Além das imagens, é fornecido"
-" um arquivo de texto chamado “Translocation_doses_and_controls.csv”, "
-"contendo informações sobre onde os poços estavam localizados na placa de 96 "
-"poços e como as células foram tratadas."
+"(controles positivos), e 10 poços foram usados para criar uma curva dose-"
+"resposta, com concentrações crescentes do fármaco. Além das imagens, na "
+"pasta `TranslocationData` é fornecido um arquivo de texto chamado "
+"“Translocation_doses_and_controls.csv”, contendo informações sobre onde os "
+"poços estavam localizados na placa de 96 poços e como as células foram "
+"tratadas."
 
 #: ../../source/Translocation/Translocation.md:59
 msgid "**Methods to be used in this exercise:**"
@@ -177,8 +178,8 @@ msgid ""
 "Exercise I: Using the CellProfiler software to identify features and obtain "
 "measurements from cellular images."
 msgstr ""
-"Exercício I: Usando o CellProfiler para identificar features e extrair "
-"medições de imagens celulares."
+"Exercício I: Usando o CellProfiler para identificar features e realizar "
+"medidas a partir das imagens."
 
 #: ../../source/Translocation/Translocation.md:79
 msgid ""
@@ -204,11 +205,21 @@ msgid ""
 " in the **Input** modules panel which is located at the upper-left of "
 "CellProfiler."
 msgstr ""
-"Na interface do CellProfiler, você verá o painel ‘File List’, uma área em "
+"No File Explorer (Windows) ou no Finder (Mac), navegue até a pasta onde você"
+" salvou os arquivos do tutorial. Em seguida, arraste o arquivo de pipeline "
+"“Translocation_start.cppipe” para a barra lateral esquerda do CellProfiler, "
+"na área onde está escrito “Drop a pipeline file here (cppipe or cpproj) or "
+"double-click to add modules”. Depois, na interface do CellProfiler, você "
+"verá o painel “File List”, uma área em branco indicada pelo texto “Drop "
+"files and folders here”. O painel “File List” é a interface principal do "
+"módulo Images, que compila uma lista de arquivos e/ou pastas que você deseja"
+" analisar; esse módulo fica selecionado no painel de módulos de entrada "
+"(Input modules), localizado no canto superior esquerdo do CellProfiler.Na "
+"interface do CellProfiler, você verá o painel ‘File List’, uma área em "
 "branco indicada pelo texto “Drop files and folders here”. O painel ‘File "
 "List’ é a interface principal do módulo **Images**, que compila uma lista de"
 " arquivos e/ou pastas que você deseja analisar; esse módulo fica selecionado"
-" no painel de módulos de entrada (**Input** modules), localizado no canto "
+" no painel de módulos de entrada (**Input modules**), localizado no canto "
 "superior esquerdo do CellProfiler."
 
 #: ../../source/Translocation/Translocation.md:90
@@ -219,7 +230,7 @@ msgid ""
 "click on “BBBC013_A01_s1_w1.tif” and “BBBC013_A12_s1_w1.tif” to see what "
 "examples of negative and positive GFP controls look like, respectively."
 msgstr ""
-"No File Explorer (Windows) ou no Finder (Mac), arraste e solte a pasta "
+"Também da pasta do tutorial, selecione, arraste e solte a pasta "
 "‘TranslocationData’ nesse painel. Os nomes dos arquivos da pasta "
 "‘TranslocationData’ devem aparecer no painel File List. Dê duplo clique em "
 "‘BBBC013_A01_s1_w1.tif’ e em ‘BBBC013_A12_s1_w1.tif’ para ver exemplos de "
@@ -252,7 +263,7 @@ msgstr ""
 " selecione ‘Images only’. Em seguida, clique no botão <img "
 "src=\"./TutorialImages/ApplyFilters.png\" width=\"150\"/> para filtrar os "
 "arquivos que não são imagens. Você verá que o arquivo CSV ficará acinzentado"
-" na lista, indicando que ele não será utilizado."
+" na lista, indicando que ele não será considerado na análise."
 
 #: ../../source/Translocation/Translocation.md:105
 msgid ""
@@ -262,7 +273,7 @@ msgid ""
 msgstr ""
 "Clique no módulo **Metadata**, que é o segundo módulo no painel 'Input "
 "modules'; esse módulo permite fornecer informações sobre as doses dos "
-"compostos e a localização na placa."
+"compostos e suas localizações na placa."
 
 #: ../../source/Translocation/Translocation.md:109
 msgid ""
@@ -304,8 +315,8 @@ msgid ""
 "Once finished, click the “Submit” button to use this expression in the "
 "**Metadata** module."
 msgstr ""
-"Ao terminar, clique no botão “Submit” para usar esta expressão no módulo "
-"**Metadata**."
+"Ao terminar de inspecionar, clique no botão “Submit” para usar esta "
+"expressão no módulo **Metadata**."
 
 #: ../../source/Translocation/Translocation.md:123
 msgid ""
@@ -332,8 +343,8 @@ msgid ""
 "then select the **Translocation_doses_and_controls.csv** file within."
 msgstr ""
 "Clique na caixa de seleção de arquivo à direita da linha \"Metadata file "
-"name\" e navegue até o local da pasta TranslocationData em seu computador e,"
-" em seguida, selecione o arquivo **Translocation_doses_and_controls.csv** "
+"name\" e navegue até o local da pasta ‘TranslocationData’ em seu computador "
+"e, em seguida, selecione o arquivo **Translocation_doses_and_controls.csv** "
 "dentro dela."
 
 #: ../../source/Translocation/Translocation.md:133
@@ -365,9 +376,10 @@ msgid ""
 "“Float” as the data type. Leave the remaining metadata at the default “Text”"
 " values."
 msgstr ""
-"Ao lado da configuração “Metadata data type”, selecione “Choose for each”. "
-"Para o metadado “Dose”, selecione “Float” como tipo de dado. Mantenha os "
-"demais metadados com o valor padrão “Text”."
+"Ao lado da configuração “Metadata data type”, verifique se  “Choose for "
+"each” está selecionado. E para o metadado “Dose”, verifique se “Float” está "
+"selecionado como tipo de dado. Mantenha os demais metadados com o valor "
+"padrão “Text”."
 
 #: ../../source/Translocation/Translocation.md:147
 msgid ""
@@ -376,7 +388,7 @@ msgid ""
 "each image by which other modules will refer to it."
 msgstr ""
 "Selecione o módulo **NamesAndTypes**, que é o terceiro módulo no painel "
-"Input modules; esse módulo permite atribuir um nome significativo a cada "
+"‘Input modules’; esse módulo permite atribuir um nome significativo a cada "
 "imagem, que será usado pelos outros módulos para se referirem a ela."
 
 #: ../../source/Translocation/Translocation.md:151
@@ -394,16 +406,14 @@ msgid ""
 "Click the “Update” button below the divider to display a table that shows "
 "each channel pair matched up for the 26 wells in the assay."
 msgstr ""
-"Clique no botão \"Update\", na parte inferior do painel, para exibir uma "
+"Clique no botão \"Update\", na parte inferior do painel, para popular a "
 "tabela que mostra cada par de canais combinados para os 26 poços do ensaio."
 
 #: ../../source/Translocation/Translocation.md:157
 msgid ""
 "**2. Identifying the nuclei as the “primary objects” that you will       "
 "analyze**"
-msgstr ""
-"**2. Identificar os núcleos como os “objetos primários” que você irá "
-"analisar**"
+msgstr "**2. Identificando os núcleos como “objetos primários”**"
 
 #: ../../source/Translocation/Translocation.md:159
 msgid ""
@@ -415,7 +425,7 @@ msgid ""
 msgstr ""
 "Agora que as entradas e saídas dos módulos estão configuradas, os ajustes "
 "restantes do seu módulo precisam ser adaptados para melhor detectar os "
-"núcleos. A abordagem mais eficiente para isso é usar o “Test mode,”  do "
+"núcleos. A abordagem mais eficiente para isso é usar o “Test mode”,  do "
 "CellProfiler, que permite visualizar os resultados das configurações "
 "escolhidas e ajustá-las conforme necessário."
 
@@ -466,8 +476,8 @@ msgstr ""
 "contornos coincidam o máximo possível com os limites reais dos núcleos e que"
 " objetos que se tocam sejam separados corretamente. Em outras palavras, você"
 " não quer que o programa divida um único objeto (um núcleo) em vários "
-"objetos, 'oversegmenting', nem que junte vários objetos em um único objeto, "
-"'undersegmenting'."
+"objetos, *oversegmenting*, nem que junte vários objetos em um único objeto, "
+"*undersegmenting*."
 
 #: ../../source/Translocation/Translocation.md:184
 msgid ""
@@ -482,8 +492,8 @@ msgid ""
 "Upper left: The raw image, titled as “Input image, cycle #” plus the image "
 "number"
 msgstr ""
-"No canto superior esquerdo: A imagem bruta, intitulada como \"Input image, "
-"cycle #\" mais o número da imagem"
+"No canto superior esquerdo: A imagem bruta, intitulada como “Input image, "
+"cycle #” mais o número da imagem"
 
 #: ../../source/Translocation/Translocation.md:189
 msgid ""
@@ -557,7 +567,7 @@ msgid ""
 "box to zoom in on."
 msgstr ""
 "O 5º ícone permite que você altere a visualização por meio do zoom, "
-"arrastando e desenhando uma caixa para aumentar o zoom."
+"arrastando e desenhando uma caixa para ampliar a imagem."
 
 #: ../../source/Translocation/Translocation.md:222
 msgid ""
@@ -577,7 +587,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:232
 msgid "**3. Improve identification of primary objects**"
-msgstr "**3. Melhorar a identificação de objetos primários**"
+msgstr "**3. Melhorando a identificação dos objetos primários**"
 
 #: ../../source/Translocation/Translocation.md:234
 msgid ""
@@ -628,9 +638,9 @@ msgid ""
 "contrast between low pixel intensities is enhanced and that between high "
 "pixel intensities is reduced."
 msgstr ""
-"Clique com o botão direito no painel “Input image, cycle #” na janela de "
-"exibição do IdentifyPrimaryObjects e selecione “Adjust Contrast”. Em "
-"seguida, selecione “Log normalized” na lista. Você pode ajustar "
+"Clique com o botão direito na image do painel “Input image, cycle #” na "
+"janela de exibição do IdentifyPrimaryObjects e selecione “Adjust Contrast”. "
+"Em seguida, selecione “Log normalized” na lista. Você pode ajustar "
 "“Normalization Factor” e “Maximum Brightness” e selecionar “Apply to all” "
 "para aplicar a configuração a todos os painéis da janela. “Normalization "
 "Factor” aplica uma transformação logarítmica na intensidade da imagem, "
@@ -649,8 +659,8 @@ msgid ""
 msgstr ""
 "A maioria dos métodos de cálculo de threshold assume que existem duas "
 "distribuições de intensidade na imagem: uma correspondente ao primeiro plano"
-" (foreground) e outra ao plano de fundo (background). O objetivo, então, é "
-"encontrar um único valor que separe essas duas distribuições. Existem "
+" (*foreground*) e outra ao plano de fundo (*background*). O objetivo, então,"
+" é encontrar um único valor que separe essas duas distribuições. Existem "
 "diferentes métodos para calcular esse limiar automaticamente. Para saber "
 "mais sobre esses métodos, clique no ícone de interrogação (?) à direita de "
 "“Thresholding method” para abrir a ajuda do CellProfiler."
@@ -721,9 +731,7 @@ msgstr ""
 msgid ""
 "**4. Identifying the cell body as a “secondary object” that you will "
 "analyze**"
-msgstr ""
-"**4. Identificar o corpo célula como um “objeto secundário” que você "
-"analisará**"
+msgstr "**4. Identificando os corpos celulares como “objetos secundários”**"
 
 #: ../../source/Translocation/Translocation.md:293
 msgid ""
@@ -744,28 +752,28 @@ msgid ""
 "width=\"160\"/> button."
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"35\"/> "
-"e adicione o módulo *IdentifySecondaryObjects*, que está localizado na "
-"categoria do módulo *“Object Processing”.* Adicione-o ao pipeline clicando "
-"no botão <img src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/> ."
+"e adicione o módulo “IdentifySecondaryObjects”, que está localizado na "
+"categoria do módulo “Object Processing”. Adicione-o ao pipeline clicando no "
+"botão <img src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/> ."
 
 #: ../../source/Translocation/Translocation.md:302
 msgid ""
 "For the “Select the input image” module setting, select “rawGFP” from the "
 "drop-down list."
-msgstr "Em “Select the input image”, selecione \"rawGFP\" na lista suspensa."
+msgstr "Em “Select the input image”, selecione ‘rawGFP’ na lista suspensa."
 
 #: ../../source/Translocation/Translocation.md:305
 msgid ""
 "For the “Select input objects” setting, select “Nuclei” from the drop-down "
 "list."
-msgstr "Em \"Select input objects\", selecione \"Nuclei\" na lista suspensa."
+msgstr "Em “Select input objects”, selecione ‘Nuclei’ na lista suspensa."
 
 #: ../../source/Translocation/Translocation.md:308
 msgid ""
 "For the “Name the objects to be identified” setting, enter “Cells” as a "
 "descriptive name for the secondary objects."
 msgstr ""
-"Em “Name the objects to be identified”, digite “Cells” como um nome "
+"Em “Name the objects to be identified”, digite ‘Cells’ como um nome "
 "descritivo para os objetos secundários."
 
 #: ../../source/Translocation/Translocation.md:311
@@ -774,8 +782,8 @@ msgid ""
 "Then, click the drop-down next to “Thresholding method to select “Otsu”."
 msgstr ""
 "Em “Select the method to identify the secondary objects”, selecione "
-"“Propagation”. Em “Threshold strategy”, selecione   “Global”. E em "
-"“Thresholding method”, selecione “Otsu”. "
+"‘Propagation’. Em “Threshold strategy”, selecione   ‘Global’. E em "
+"“Thresholding method”, selecione ‘Otsu’. "
 
 #: ../../source/Translocation/Translocation.md:315
 msgid ""
@@ -783,8 +791,8 @@ msgid ""
 "change it from “Two classes” to “Three classes.” Change the setting “Assign "
 "pixels…” that subsequently appears underneath to “Foreground”"
 msgstr ""
-"Em “Two-class or three-class thresholding?” selecione “Three classes”, em "
-"vez de “Two classes”. Em “Assign pixels…” selecione “Foreground”."
+"Em “Two-class or three-class thresholding?” selecione ‘Three classes’, em "
+"vez de ‘Two classes’. Em “Assign pixels…” selecione ‘Foreground’."
 
 #: ../../source/Translocation/Translocation.md:320
 msgid ""
@@ -848,24 +856,24 @@ msgid ""
 "pixels without regard to the underlying fluorescence."
 msgstr ""
 "No entanto, para este ensaio, podemos preferir usar um método de segmentação"
-" que reflita os limites reais das células e não dependa de uma intensidade "
-"que varia de tratamento para tratamento. Vamos analisar o método ‘Distance -"
-" N’, que expande a partir do núcleo um número fixo de pixels, sem considerar"
-" a intensidade de fluorescência."
+" que reflita menos os limites reais das células e mas sim um que não dependa"
+" de uma intensidade que varia de tratamento para tratamento. Vamos analisar "
+"o método ‘Distance - N’, que expande a partir do núcleo um número fixo de "
+"pixels, sem considerar a intensidade de fluorescência."
 
 #: ../../source/Translocation/Translocation.md:351
 msgid ""
 "Change the “Select method…” setting from “Propagation” to “Distance-N.”"
 msgstr ""
-"Altere a configuração “Select method...”  de “Propagation” para “Distance - "
-"N”."
+"Altere a configuração “Select method...”  de ‘Propagation’ para ‘Distance - "
+"N’."
 
 #: ../../source/Translocation/Translocation.md:353
 msgid ""
 "Change the setting “Number of pixels by which to expand…” that appears "
 "underneath to 10 pixels."
 msgstr ""
-"Em “Number of pixels by which to expand...”, escreva '10', valor da "
+"Em “Number of pixels by which to expand...”, escreva ‘10’, valor da "
 "distância em pixels."
 
 #: ../../source/Translocation/Translocation.md:355
@@ -878,7 +886,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:357
 msgid "**5. Identifying the cytoplasm as a “tertiary object”**"
-msgstr "**5. Identificação do citoplasma como um “objeto terciário”**"
+msgstr "**5. Identificando os citoplasmas como “objetos terciários”**"
 
 #: ../../source/Translocation/Translocation.md:359
 msgid ""
@@ -904,7 +912,7 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"40\"/> "
 "e adicione o módulo **IdentifyTertiaryObjects** localizado na categoria do "
-"módulo *“Object Processing”.* Adicione-o ao pipeline clicando no botão<img "
+"módulo “Object Processing”. Adicione-o ao pipeline clicando no botão<img "
 "src=\"./TutorialImages/AddToPipeline.png\" width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:369
@@ -912,7 +920,7 @@ msgid ""
 "In this module, for the “Select the larger identified objects” module "
 "setting, select “Cells” from the drop-down list."
 msgstr ""
-"Nesse módulo, em “Select the larger identified objects”, selecione “Cells” "
+"Nesse módulo, em “Select the larger identified objects”, selecione ‘Cells’ "
 "na lista suspensa."
 
 #: ../../source/Translocation/Translocation.md:370
@@ -920,7 +928,7 @@ msgid ""
 "For the “Select the smaller identified objects” setting, select “Nuclei” "
 "from the drop-down list."
 msgstr ""
-"Em “Select the smaller identified objects”, selecione “Nuclei” na lista "
+"Em “Select the smaller identified objects”, selecione ‘Nuclei’ na lista "
 "suspensa."
 
 #: ../../source/Translocation/Translocation.md:372
@@ -928,7 +936,7 @@ msgid ""
 "For the “Name the tertiary objects to be identified” setting, enter "
 "“Cytoplasm” as a descriptive name for the tertiary objects."
 msgstr ""
-"Em “Name the tertiary objects to be identified”, digite “Cytoplasm” como um "
+"Em “Name the tertiary objects to be identified”, digite ‘Cytoplasm’ como um "
 "nome descritivo para os objetos terciários."
 
 #: ../../source/Translocation/Translocation.md:374
@@ -936,9 +944,9 @@ msgid ""
 "Enable the ‘Shrink smaller object prior to subtraction?’ option; this will "
 "ensure that all of your Cytoplasm objects have an area of at least 1 pixel."
 msgstr ""
-"Ative a opção “Shrink smaller object prior to subtraction?”; isso garantirá "
-"que todos os seus objetos de citoplasma tenham uma área de pelo menos 1 "
-"pixel."
+"Em “Shrink smaller object prior to subtraction?”, selecione ‘Yes’; isso "
+"garantirá que todos os seus objetos de citoplasma tenham uma área de pelo "
+"menos 1 pixel."
 
 #: ../../source/Translocation/Translocation.md:377
 msgid ""
@@ -960,8 +968,8 @@ msgstr ""
 msgid ""
 "**6. Measuring the cells’ characteristics (i.e. the “object features”)**"
 msgstr ""
-"**6. Medição das características do células (ou seja, as “características do"
-" objeto”)**"
+"**6. Medindo as características das células (ou seja, os “atributos dos "
+"objetos”)**"
 
 #: ../../source/Translocation/Translocation.md:388
 msgid ""
@@ -1015,20 +1023,21 @@ msgid ""
 "src=\"./TutorialImages/AddToPipeline.png\" width=\"160\"/> button."
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\" width=\"35\"/> e"
-" adicione o módulo *MeasureObjectIntensity* localizado na categoria do "
-"módulo *“Measurement”.* Adicione-o ao pipeline clicando no botão <img "
+" adicione o módulo **MeasureObjectIntensity** localizado na categoria do "
+"módulo “Measurement”. Adicione-o ao pipeline clicando no botão <img "
 "src=\"./TutorialImages/AddToPipeline.png\" width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:411
 msgid ""
 "In this module, select “rawGFP” in the \"Select images to measure\" box, by "
 "checking the box next to it."
-msgstr "Em em “Select images to measure”, marque a caixa “rawGFP”."
+msgstr ""
+"Em em “Select images to measure”, marque as caixas ‘rawGFP’ e ‘rawDNA’."
 
 #: ../../source/Translocation/Translocation.md:413
 msgid "Select “Nuclei” and \"Cytoplasm\" from the \"Select objects to measure\" box."
 msgstr ""
-"Em “Select objects to measure”, marque as caixas “Nuclei” e “Cytoplasm”."
+"Em “Select objects to measure”, marque as caixas ‘Nuclei’ e ‘Cytoplasm’."
 
 #: ../../source/Translocation/Translocation.md:415
 msgid "**Measurement of the correlation of GFP in nuclei to DNA in nuclei:**"
@@ -1057,7 +1066,7 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\" width=\"35\"/> e"
 " adicione o módulo **MeasureColocalization** localizado na categoria do "
-"módulo *“Measurement”.* Adicione-o ao pipeline clicando no botão <img "
+"módulo “Measurement”. Adicione-o ao pipeline clicando no botão <img "
 "src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:425
@@ -1066,9 +1075,9 @@ msgid ""
 "measure\" box. Leave the \"Set threshold as percentage of maximum intensity "
 "for the images\" to the default value of 15.0."
 msgstr ""
-"Nesse módulo, selecione “rawGFP” e “rawDNA” na caixa “Select images to "
+"Nesse módulo, selecione ‘rawGFP’ e ‘rawDNA’ na caixa “Select images to "
 "measure”. Deixe a opção “Set threshold as percentage of maximum intensity "
-"for the images” com o valor padrão de '15.0'."
+"for the images” com o valor padrão de ‘15.0’."
 
 #: ../../source/Translocation/Translocation.md:428
 msgid ""
@@ -1076,16 +1085,16 @@ msgid ""
 "objects” and then select “Nuclei” and \"Cytoplasm\" from the “Select objects"
 " to measure” box."
 msgstr ""
-"Em “Select where to measure correlation”, selecione “Within objects” e, em "
-"seguida, em “Select objects to measure”, selecione “Nuclei” e “Cytoplasm”."
+"Em “Select where to measure correlation”, selecione ‘Within objects’ e, em "
+"seguida, em “Select objects to measure”, selecione ‘Nuclei’ e ‘Cytoplasm’."
 
 #: ../../source/Translocation/Translocation.md:431
 msgid ""
 "For \"Method for Costes thresholding\", choose *\"Faster\"* from the drop-"
 "down list to reduce analysis time."
 msgstr ""
-"Em “Method for Costes thresholding”, escolha *“Faster”* na lista suspensa "
-"para reduzir o tempo de análise."
+"Em “Method for Costes thresholding”, escolha ‘Faster’ na lista suspensa para"
+" reduzir o tempo de análise."
 
 #: ../../source/Translocation/Translocation.md:434
 msgid ""
@@ -1114,7 +1123,7 @@ msgid ""
 msgstr ""
 "Clique no botão <img src=\"./TutorialImages/AddModule.png\"  width=\"35\"/> "
 "e adicione o módulo **CalculateMath** localizado na categoria do módulo "
-"*“Data Tools”**.* Adicione-o ao pipeline clicando no botão <img "
+"“Data Tools”. Adicione-o ao pipeline clicando no botão <img "
 "src=\"./TutorialImages/AddToPipeline.png\"  width=\"160\"/>."
 
 #: ../../source/Translocation/Translocation.md:445
@@ -1122,7 +1131,7 @@ msgid ""
 "For the “Name the output measurement,” enter the “IntensityRatio” as a "
 "descriptive name."
 msgstr ""
-"Em “Name the output measurement”, escreva “IntensityRatio” como um nome "
+"Em “Name the output measurement”, escreva ‘IntensityRatio’ como um nome "
 "descritivo."
 
 #: ../../source/Translocation/Translocation.md:448
@@ -1131,7 +1140,7 @@ msgid ""
 "down for the “Operation” setting."
 msgstr ""
 "Como estamos calculando a razão entre duas medidas, em “Operation”, "
-"selecione “Divide”."
+"selecione ‘Divide’."
 
 #: ../../source/Translocation/Translocation.md:451
 msgid "For the numerator measurement:"
@@ -1142,8 +1151,8 @@ msgid ""
 "Select “Object” for the “Select the numerator type,” and select “Nuclei” "
 "from the drop-down for the “Select the numerator objects.”"
 msgstr ""
-"Em “Select the numerator type”, selecione “Object”. Em seguida, em “Select "
-"the numerator objects”, selecione “Nuclei”."
+"Em “Select the numerator type”, selecione ‘Object’. Em seguida, em “Select "
+"the numerator objects”, selecione ‘Nuclei’."
 
 #: ../../source/Translocation/Translocation.md:456
 #: ../../source/Translocation/Translocation.md:467
@@ -1152,7 +1161,7 @@ msgid ""
 "measurement” category. A “Measurement” drop-down box will subsequently "
 "appear underneath."
 msgstr ""
-"Em “Select the numerator measurement” selecione “Intensity”. Em seguida, a "
+"Em “Select the numerator measurement” selecione ‘Intensity’. Em seguida, a "
 "opção “Measurement” irá aparecer abaixo."
 
 #: ../../source/Translocation/Translocation.md:459
@@ -1161,8 +1170,8 @@ msgid ""
 "Select “MeanIntensity” from the “Measurement” drop-down list. Then select "
 "“rawGFP” from the “Image” drop-down that appears."
 msgstr ""
-"Em “Measurement”, selecione “MeanIntensity”. Em seguida, Em “Image” "
-"selecione “rawGFP”."
+"Em “Measurement”, selecione ‘MeanIntensity’. Em seguida, Em “Image” "
+"selecione ‘rawDNA’."
 
 #: ../../source/Translocation/Translocation.md:462
 msgid "For the denominator measurement:"
@@ -1173,15 +1182,16 @@ msgid ""
 "Select “Object” for the “Select the numerator type,” and select “Cytoplasm” "
 "from the drop-down for the “Select the numerator objects.”"
 msgstr ""
-"Em “Select the numerator type”, selecione “Object”. Em “Select the numerator"
-" objects”, selecione “Cytoplasm”."
+"Em “Select the numerator type”, selecione ‘Object’. Em “Select the numerator"
+" objects”, selecione ‘Cytoplasm’."
 
 #: ../../source/Translocation/Translocation.md:473
 msgid ""
 "**7. Creating an image with your cell and nuclear outlines on it "
 "(optional)**"
 msgstr ""
-"**7. Criar uma imagem com seu célula e contornos nucleares (opcional)**"
+"**7. Criando uma imagem com os contornos das células e dos núcleos "
+"(opcional)**"
 
 #: ../../source/Translocation/Translocation.md:475
 msgid ""
@@ -1397,7 +1407,7 @@ msgstr "Todas as outras configurações podem ser mantidas nos valores padrão."
 
 #: ../../source/Translocation/Translocation.md:539
 msgid "**8. Exporting the measurements to a database**"
-msgstr "**8. Exportando as medições para um banco de dados**"
+msgstr "**8. Exportando as medidas para um banco de dados**"
 
 #: ../../source/Translocation/Translocation.md:541
 msgid ""
@@ -1488,8 +1498,8 @@ msgid ""
 "**9. Using the optimized pipeline to automatically analyze all images "
 "generated by the screening experiment**"
 msgstr ""
-"**9. Utilizando o pipeline otimizado para analisar automaticamente todas as "
-"imagens geradas pelo experimento triagem**"
+"**9. Usando o pipeline otimizado para analisar automaticamente todas as "
+"imagens geradas pelo experimento de triagem**"
 
 #: ../../source/Translocation/Translocation.md:580
 msgid ""
@@ -1645,8 +1655,7 @@ msgstr ""
 
 #: ../../source/Translocation/Translocation.md:636
 msgid "**1. Visualizing the measurements in a 96-well plate layout view**"
-msgstr ""
-"**1. Visualizando as medidas em uma vista de layout de placa de 96-poço**"
+msgstr "**1. Visualizando as medições em um layout de placa de 96 poços**"
 
 #: ../../source/Translocation/Translocation.md:638
 msgid ""
@@ -1810,8 +1819,8 @@ msgid ""
 "**2. Using the Classifier function of CPA to distinguish the cells’ "
 "FOXO1A-GFP subcellular localization phenotypes**"
 msgstr ""
-"**2. Utilizando a função Classificador do CPA para distinguir os fenótipos "
-"de localização subcelular de FOXO1A-GFP ‘células’**"
+"**2. Usando a função “Classifier” do CPA para distinguir os fenótipos de "
+"localização subcelular do FOXO1A-GFP nas células**"
 
 #: ../../source/Translocation/Translocation.md:706
 msgid ""
@@ -1961,8 +1970,8 @@ msgid ""
 "**3. Reviewing the rules that CPA established (based on your training set) "
 "to classify positive and negative cells**"
 msgstr ""
-"**3. Revisar as regras que a CPA estabeleceu (com base no seu conjunto de "
-"treinamento) para classificar células positivo e negativo**"
+"**3. Revisando as regras que o CPA estabeleceu (com base em seu conjunto de "
+"treinamento) para classificar células positivas e negativas**"
 
 #: ../../source/Translocation/Translocation.md:774
 msgid ""
@@ -2026,8 +2035,7 @@ msgstr ""
 msgid ""
 "**4. Reviewing the accuracy of the classification with the confusion "
 "matrix**"
-msgstr ""
-"**4. Analisando a precisão da classificação com a matriz de confusão**"
+msgstr "**4. Revisando a precisão da classificação com a matriz de confusão**"
 
 #: ../../source/Translocation/Translocation.md:799
 msgid ""
@@ -2106,7 +2114,7 @@ msgid ""
 " “positive” and “negative” bins**"
 msgstr ""
 "**5. Refinando o conjunto de treinamento, classificando mais ocorrências "
-"“não classificadas” células nas categorias “positivas” e “negativas”**"
+"“não classificadas” nas categorias “positivas” e “negativas”**"
 
 #: ../../source/Translocation/Translocation.md:839
 msgid ""
@@ -2438,7 +2446,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:975
 msgid "**7. Saving the scores to the measurement database for visualization**"
 msgstr ""
-"**7. Salvar as pontuações no banco de dados de medição para visualização**"
+"**7. Salvando os scores no banco de dados de medidas para visualização**"
 
 #: ../../source/Translocation/Translocation.md:977
 msgid ""
@@ -2528,8 +2536,8 @@ msgid ""
 "**8. Plotting the scoring results, to estimate the lowest dose necessary to "
 "induce FOX1O-GFP translocation**"
 msgstr ""
-"**8. Plotar os resultados da pontuação para estimar a dose mínima necessária"
-" para induzir a translocação de FOX1O-GFP**"
+"**8. Plotando os resultados do score para estimar a menor dose necessária "
+"para induzir a translocação do FOXO1A-GFP**"
 
 #: ../../source/Translocation/Translocation.md:1013
 msgid ""
@@ -2600,7 +2608,7 @@ msgstr ""
 #: ../../source/Translocation/Translocation.md:1036
 msgid "**9. Exporting your classifier for use in a CellProfiler pipeline**"
 msgstr ""
-"**9. Exportando seu classificador para uso em um CellProfiler pipeline**"
+"**9. Exportando seu classificador para uso em um pipeline CellProfiler**"
 
 #: ../../source/Translocation/Translocation.md:1038
 msgid ""
