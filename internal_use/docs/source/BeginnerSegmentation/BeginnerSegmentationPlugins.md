@@ -33,7 +33,7 @@ Search in Docker Desktop for your desired container
 
 ### General background information
 
-This exercise is meant to extend and build upon the Beginner Segmentation exercise available from [the CellProfiler tutorials page](tutorials.cellprofiler.org).
+This exercise is meant to extend and build upon the Beginner Segmentation exercise available from [the CellProfiler tutorials page](https://tutorials.cellprofiler.org/).
 Please consult that tutorial for general information on how to configure CellProfiler as well as information about the images.
 It will be generally assumed you understand the modules covered in that tutorial, including input, object creation, overlays, and saving.
 
@@ -51,7 +51,7 @@ In this tutorial, you'll explore 3 different ways of accessing work done in othe
 
 CellProfiler has a number of plugins that act like modules within a pipeline.
 Plugins are available [on Github](https://github.com/CellProfiler/CellProfiler-plugins).
-Read more about them in [CellProfiler plugins documentation](plugins.cellprofiler.org) to learn more.
+Read more about them in [CellProfiler plugins documentation](https://plugins.cellprofiler.org/) to learn more.
 To quote from that site:
 
 >Plugins advance the capabilities of CellProfiler but are not officially supported in the same way as modules.

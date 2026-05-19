@@ -35,7 +35,7 @@ Versión en Español
 <a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_ES.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
 
 Versão em português:
-<a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_PT.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"></a>
+<a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
 
 ## Advanced Segmentation
 
@@ -65,6 +65,10 @@ En español:
 
 <a href="https://github.com/CellProfiler/tutorials/raw/master/Translocation/Archive_ES.zip" target="_blank"><img src="assets/img/download-button-es.png" alt="Materiales para descargar" width="140px"></a>
 
+Versão em português:
+
+<a href="https://github.com/CellProfiler/tutorials/raw/master/Translocation/Archive_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
+
 ## 3D segmentation of cell monolayer
 
 
@@ -79,6 +83,10 @@ En español:
 
 <a href="https://github.com/CellProfiler/tutorials/raw/master/3d_monolayer/Archive_ES.zip" target="_blank"><img src="assets/img/download-button-es.png" alt="Materiales para descargar" width="140px"></a>
 
+Versão em português:
+
+<a href="https://github.com/CellProfiler/tutorials/raw/master/3d_monolayer/Archive_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
+
 ## Pixel-based Classification
 
 <img class="imggif" src="assets/img/ilastik.gif" alt="example segmentation" align="right" width="150">
@@ -86,6 +94,10 @@ En español:
 A tutorial describing how to use ilastik in combination with CellProfiler to segment cells imaged only in phase contrast without any added fluorescence. <br> 
 
 <a href="https://youtu.be/89XPqczqhvU?feature=shared"> <img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://github.com/CellProfiler/tutorials/raw/master/PixelBasedClassification/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+
+Versão em português:
+
+<a href="https://github.com/CellProfiler/tutorials/raw/master/PixelBasedClassification/Archive_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
 <br><br>
 
 ## Quality Control
@@ -127,6 +139,10 @@ These modules are crucial for any CellProfiler pipeline because they define how 
 A tutorial that describes building a pipeline to segment the nuclei boundaries in noise 3d images using the ReduceNoise and IdentifyPrimaryObjects modules.<br> 
 
 <a href="https://github.com/CellProfiler/tutorials/raw/master/3DNoiseNuclei/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+
+Versão em português:
+
+<a href="https://github.com/CellProfiler/tutorials/raw/master/3DNoiseNuclei/Archive_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
 <br><br>
 
 ## 3D FISH in C. elegans segmentation
@@ -138,6 +154,10 @@ A tutorial that describes building a pipeline to segment the nuclei boundaries i
 A tutorial that describes building a pipeline to segment spots (FISH staining) on C. elegans worms in noise 3d images using background subtraction and Watershed module.<br> 
 
 <a href="https://github.com/CellProfiler/tutorials/raw/master/3DFISHinCelegans/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+
+Versão em português:
+
+<a href="https://github.com/CellProfiler/tutorials/raw/master/3DFISHinCelegans/Archive_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
 <br><br>
 
 ## UnmixColors Tutorial
@@ -149,6 +169,10 @@ A tutorial that describes building a pipeline to segment spots (FISH staining) o
 A tutorial that describes how to use the UnmixColors module.<br> 
 
 <a href="https://www.youtube.com/watch?v=FKwWPDdp-MY"><img src="assets/img/video-badge.png" alt="video link" width="140px"> </a> <a href="https://github.com/CellProfiler/tutorials/raw/master/UnmixTutorial/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+
+Versão em português:
+
+<a href="https://github.com/CellProfiler/tutorials/raw/master/UnmixTutorial/Archive_PT.zip" target="_blank"><img src="assets/img/download-button-pt.png" alt="Materiais para baixar" width="140px"></a>
 <br><br>
 
 -----
