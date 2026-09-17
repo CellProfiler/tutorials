@@ -108,7 +108,12 @@ Versão em português:
 
 A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform quality control on large scale screens. <br> 
 
-<a href="https://drive.google.com/drive/folders/1RyBjf34HDeOsCG6lviNiSty0Ud_UtGIZ?usp=drive_link" target="_blank"> <img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+Dataset:
+<a href="https://drive.google.com/file/d/18YB8RhfFNKZmYFBd2I0mujJNkcxxEuIZ/view?usp=drive_link" target="_blank"> <img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+
+Directions:
+<a href="https://github.com/CellProfiler/tutorials/raw/master/QualityControl/Archive_nondata.zip" target="_blank"> <img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+
 <br><br>
 
 ## Input Modules
