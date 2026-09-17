@@ -108,16 +108,8 @@ Versão em português:
 
 A tutorial to show how to use CellProfiler plus CellProfiler Analyst to perform quality control on large scale screens. <br> 
 
-<a href="https://github.com/CellProfiler/tutorials/raw/master/QualityControl" target="_blank"> <img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
+<a href="https://drive.google.com/drive/folders/1RyBjf34HDeOsCG6lviNiSty0Ud_UtGIZ?usp=drive_link" target="_blank"> <img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 <br><br>
-
-## Annotation
-
-<img class="imggif" src="assets/img/annotation.gif" alt="example segmentation" align="right" width="150">
-
-A tutorial to outlines a method for annotating image data using CellProfiler together with another open source software, GIMP. This method is best for annotating or labeling objects to define their boundaries, exactly, as opposed to annotating an image with bounding boxes or centroids. <br> 
-
-<a href="https://carpenter-singh-lab.broadinstitute.org/blog/annotating-images-with-cellprofiler-and-gimp"><img src="assets/img/blog-badge.png" alt="blog link" width=140px> </a><a href="https://github.com/CellProfiler/tutorials/raw/master/Annotation/Archive.zip" target="_blank"><img src="assets/img/download-button.png" alt="Download button" width="140px"> </a> 
 
 ## Input Modules
 
