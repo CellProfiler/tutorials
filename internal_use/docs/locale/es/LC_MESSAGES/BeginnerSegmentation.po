@@ -231,7 +231,7 @@ msgstr ""
 "de un pipeline. Los complementos están disponibles en Github "
 "(https://github.com/CellProfiler/CellProfiler-plugins). Para más "
 "información, consulte la documentación de los complementos de CellProfiler "
-"(plugins.cellprofiler.org). Para citar el campo:"
+"(plugins.cellprofiler.org). Para citar de ese mismo sitio:"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:57
 msgid ""
