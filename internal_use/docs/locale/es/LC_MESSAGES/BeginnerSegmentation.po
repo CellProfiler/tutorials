@@ -880,7 +880,7 @@ msgstr ""
 msgid ""
 "Drag `bonus_2_ilastik.cppipe` into the pipeline panel to load the pipeline."
 msgstr ""
-"Arrastre `bonus_2_ilastik.cppipe` al panel pipeline para cargar pipeline."
+"Arrastra `bonus_2_ilastik.cppipe` al panel pipeline para cargar la pipeline."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:249
 msgid ""
