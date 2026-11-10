@@ -194,7 +194,7 @@ msgid ""
 "[Cellpose](https://www.cellpose.org/), but the same strategy works for many "
 "tools which use this format)."
 msgstr ""
-"Cargando máscaras creadas por otras herramientas de segmentación (en este "
+"Cargar máscaras creadas por otras herramientas de segmentación (en este "
 "caso, [Cellpose](https://www.cellpose.org/), pero la misma estrategia "
 "funciona para muchas herramientas que usan este formato)."
 
