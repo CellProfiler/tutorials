@@ -509,7 +509,7 @@ msgid ""
 "`bonus_1_import_masks.cppipe` into the pipeline panel."
 msgstr ""
 "Abre una copia limpia de CellProfiler (o ejecuta File -> New Project) y "
-"arrastra `bonus_1_import_masks.cppipe` al panel de flujo de trabajo."
+"arrastra `bonus_1_import_masks.cppipe` al panel de pipeline."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:152
 msgid ""
