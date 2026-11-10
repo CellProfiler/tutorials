@@ -977,7 +977,7 @@ msgid ""
 "OverlayOutlines and/or the WorkspaceViewer"
 msgstr ""
 "Evalúe su predicción en Runilastik en algunos conjuntos de imágenes "
-"utilizando OverlayOutlines y/o WorkspaceViewer"
+"utilizando `OverlayOutlines` y/o `WorkspaceViewer`"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:259
 msgid "How well does it perform?"
