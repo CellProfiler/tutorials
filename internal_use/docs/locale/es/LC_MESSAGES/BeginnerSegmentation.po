@@ -722,8 +722,9 @@ msgstr ""
 "para ejecutar ilastik y, posteriormente, CellProfiler en "
 "[tutorials.cellprofiler.org](https://tutorials.cellprofiler.org/) (busca "
 "\"Clasificación basada en píxeles\"). Fiji cuenta con algunos plugins "
-"populares para la clasificación de píxeles, como Weka Trainable Segmentation"
-" y Labkit, y sin duda deberías usarlos si te funcionan mejor."
+"populares para la clasificación de píxeles, como **Weka Trainable "
+"Segmentation** y **Labkit**, y sin duda deberías usarlos si así lo "
+"prefieres!"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:201
 msgid "ilastik's Batch Processing mode"
