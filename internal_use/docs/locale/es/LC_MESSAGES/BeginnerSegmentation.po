@@ -289,7 +289,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:74
 msgid "GitHub's \"Download Raw Files\" button"
-msgstr "Botón \"Descargar archivos sin formato\" de GitHub"
+msgstr "Botón \"Descargar archivos crudos\" de GitHub"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:79
 msgid ""
