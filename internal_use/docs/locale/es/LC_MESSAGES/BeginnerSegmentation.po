@@ -1044,7 +1044,7 @@ msgid ""
 "single-pixel) annotations. Did things get better or worse?"
 msgstr ""
 "Elije una imagen que creas que necesita ayuda y agrega anotaciones (una "
-"cantidad muy pequeña de anoteciones de un solo píxel!). ¿Las cosas mejoraron"
+"cantidad muy pequeña de anotaciones de un solo píxel!). ¿Las cosas mejoraron"
 " o empeoraron?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:288
