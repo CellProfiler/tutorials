@@ -570,7 +570,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:154
 msgid "View Workspace Button"
-msgstr "Botón Ver espacio de trabajo"
+msgstr "Botón *View Workspace*"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:155
 msgid ""
