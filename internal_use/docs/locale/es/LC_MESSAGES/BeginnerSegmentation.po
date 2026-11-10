@@ -932,7 +932,7 @@ msgstr "Pausa"
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:323
 msgid "Unchecked"
-msgstr "Desenfrenado"
+msgstr "Deshabilitado"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:253
 msgid ""
