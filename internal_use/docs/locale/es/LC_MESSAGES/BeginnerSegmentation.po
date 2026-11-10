@@ -1663,7 +1663,7 @@ msgid ""
 "pipeline, as these modules have been properly set up in the starting "
 "pipeline (`segmentation_start.cppipe`).*"
 msgstr ""
-"*Le sugerimos que omita este paso por ahora, no afectará al resto de "
+"*Le sugerimos que omita este paso por ahora, no afectará al resto del "
 "pipeline, ya que estos módulos se han configurado correctamente en el "
 "pipeline inicial (`segmentation_start.cppipe`).*"
 
