@@ -632,7 +632,7 @@ msgstr ""
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:174
 msgid "Bonus-to-the-Bonus - add the provided nuclear segmentations as well"
 msgstr ""
-"Para créditos extra: agrega tembién las segmentaciones nucleares "
+"Para créditos extra: agrega también las segmentaciones nucleares "
 "proporcionadas."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:176
@@ -640,7 +640,7 @@ msgid ""
 "Drag and drop the `cellpose_masks_nuclei` folder in the Images module to add"
 " the nuclear masks to the image list."
 msgstr ""
-"Arrastra y suelta la carpeta `cellpose_masks_nuclei` en el módulo Images "
+"Arrastra y suelta la carpeta `cellpose_masks_nuclei` en el módulo `Images` "
 "para agregar las máscaras nucleares a la lista de imágenes."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:177
