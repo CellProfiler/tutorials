@@ -981,7 +981,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:259
 msgid "How well does it perform?"
-msgstr "¿Cómo funciona pocillo?"
+msgstr "¿Qué tan bien funciona?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:260
 msgid "Does it perform worse on images it wasn't trained on?"
