@@ -870,10 +870,10 @@ msgid ""
 "internet connection (unless you downloaded it in preparation as we suggest "
 "above). You only need to do this step once, however!"
 msgstr ""
-"Si usa Docker, la primera vez que ejecute el módulo Runilastik, deberá "
+"Si usas Docker, la primera vez que ejecute el módulo Runilastik, deberá "
 "descargar un archivo de aproximadamente 5 GB, lo cual puede ser lento "
-"dependiendo de su conexión a internet (a menos que lo haya descargado como "
-"preparación, como sugerimos anteriormente). Sin embargo, ¡solo necesita "
+"dependiendo de tu conexión a internet (a menos que lo haya descargado como "
+"preparación, como sugerimos anteriormente). Sin embargo, ¡solo necesitas "
 "realizar este paso una vez!"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:248
