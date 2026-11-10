@@ -609,7 +609,7 @@ msgstr "Haz ingeniería reversa de cómo funcionó esto"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:170
 msgid "Open the NamesAndTypes module."
-msgstr "Abre el módulo NamesAndTypes."
+msgstr "Abre el módulo `NamesAndTypes`."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:171
 msgid ""
