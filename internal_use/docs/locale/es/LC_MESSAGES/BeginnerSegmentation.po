@@ -1351,7 +1351,7 @@ msgid ""
 "Read the [CellProfiler-plugins "
 "paper](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
 msgstr ""
-"Lea el [documento sobre los complementos de "
+"Lee el [documento sobre los complementos de "
 "CellProfiler](https://pubmed.ncbi.nlm.nih.gov/37690102/)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:365
@@ -1359,7 +1359,7 @@ msgid ""
 "Read the [CellProfiler-plugins "
 "documentation](https://plugins.cellprofiler.org/)."
 msgstr ""
-"Lea la [documentación de complementos de CellProfiler] "
+"Lee la [documentación de complementos de CellProfiler] "
 "(https://plugins.cellprofiler.org/)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:366
