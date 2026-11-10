@@ -102,8 +102,8 @@ msgid ""
 "Download the pipelines/materials for this tutorial. [Click here for "
 "download](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip)."
 msgstr ""
-"Descarga las canalizaciones y los materiales para este tutorial. [Haz clic "
-"aquí para "
+"Descarga los pipelines y los materiales para este tutorial. [Haz clic aquí "
+"para "
 "descargar](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/bonus_materials_EN.zip)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:20
@@ -129,7 +129,7 @@ msgstr ""
 "(Opcional, pero recomendado) Clona (es decir, descarga el repositorio "
 "completo) de complementos de Cellprofiler. En tu terminal, escribe `git "
 "clone https://github.com/CellProfiler/CellProfiler-plugins.git`. Como "
-"alternativa, descarga solo el complemento Runilastik y el complemento "
+"alternativa, descarga solo el complemento RunIlastik y el complemento "
 "RunCellpose seleccionando el botón \"Descargar archivo sin procesar\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:29
@@ -138,7 +138,7 @@ msgstr "Busque en Docker Desktop el contenedor deseado"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:32
 msgid "Background information"
-msgstr "Información de fondo"
+msgstr "Información de contexto"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:34
 msgid "General background information"
