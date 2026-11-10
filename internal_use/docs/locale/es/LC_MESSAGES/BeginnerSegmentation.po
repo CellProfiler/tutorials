@@ -617,9 +617,9 @@ msgid ""
 "there any setting you notice about it that is different than for the other "
 "images?"
 msgstr ""
-"Desplázate hacia abajo en NamesAndTypes para encontrar la entrada que agrega"
-" las máscaras. ¿Observas alguna configuración que sea diferente a la de las "
-"otras imágenes?"
+"Desplázate hacia abajo en `NamesAndTypes` para encontrar la entrada que "
+"agrega las máscaras. ¿Observas alguna configuración que sea diferente a la "
+"de las otras imágenes?"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:172
 msgid ""
