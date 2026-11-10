@@ -95,7 +95,7 @@ msgstr ""
 "Descarga las imágenes de ejemplo del Tutorial de Segmentación para "
 "Principiantes. [Haz clic aquí para "
 "descargar](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip)."
-" (Elimina o ignora las canalizaciones; solo usaremos las imágenes)."
+" (Elimina o ignora los pipelines; solo usaremos las imágenes)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:18
 msgid ""
