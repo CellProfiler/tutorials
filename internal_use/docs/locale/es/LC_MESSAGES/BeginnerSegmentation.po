@@ -547,7 +547,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid "Start Test Mode Button"
-msgstr "Botón de inicio del modo de prueba"
+msgstr "Botón de Iniciar Modo de Prueba"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:153
 msgid "Eye Icon"
