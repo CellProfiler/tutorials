@@ -284,8 +284,8 @@ msgstr ""
 "plugins](https://plugins.cellprofiler.org/using_plugins.html#installing-"
 "plugins-without-dependencies), en el paso 2 se sugiere descargar todos los "
 "plugins de CellProfiler. Esto es recomendable, pero puedes descargar plugins"
-" individuales desde GitHub con el botón del sitio web a continuación: "
-"pocillo o usando el botón \"Descargar archivos RAW\" de GitHub."
+" individuales desde GitHub con el botón del sitio web a continuación o "
+"usando el botón \"Descargar archivos RAW\" de GitHub."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:74
 msgid "GitHub's \"Download Raw Files\" button"
