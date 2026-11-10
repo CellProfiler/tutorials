@@ -1022,8 +1022,8 @@ msgid ""
 "this, you will need ilastik downloaded on your computer.)"
 msgstr ""
 "Con base en sus evaluaciones anteriores, ¿podría identificar algunos "
-"aspectos donde una capacitación adicional podría ayudar a solucionar algunos"
-" problemas del modelo ilastik? (Para ello, necesitará tener ilastik "
+"aspectos donde entrenamiento adicional podría ayudar a solucionar algunos "
+"problemas del modelo ilastik? (Para ello, necesitará tener ilastik "
 "descargado en su computadora)."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:283
