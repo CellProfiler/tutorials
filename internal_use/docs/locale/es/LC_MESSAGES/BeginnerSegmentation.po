@@ -585,7 +585,7 @@ msgstr ""
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:155
 msgid "Next Image Set button"
-msgstr "Botón Siguiente conjunto de imágenes"
+msgstr "Botón *Next Image Set*"
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:157
 msgid "Question for you"
