@@ -904,8 +904,8 @@ msgid ""
 "local installation of ilastik. Otherwise, change \"Runilatik in a "
 "container\" to \"Docker\"."
 msgstr ""
-"Si tiene ilastik instalado en su equipo, puede configurar la ruta a su "
-"instalación local. De lo contrario, cambie \"Runilatik en un contenedor\" a "
+"Si tienes ilastik instalado en tu equipo, puedes configurar la ruta a su "
+"instalación local. De lo contrario, cambia \"Runilatik en un contenedor\" a "
 "\"Docker\"."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:252
