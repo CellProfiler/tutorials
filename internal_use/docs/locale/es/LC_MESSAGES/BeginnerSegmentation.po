@@ -578,9 +578,9 @@ msgid ""
 "width=\"120\" alt=\"Next Image Set button\"/> and repeat a couple of times "
 "to examine the segmentations on more images."
 msgstr ""
-"Presione el botón Siguiente conjunto de imágenes<img "
+"Presiona el botón *Next Image Set*<img "
 "src=\"./TutorialImages/NextImageSet.png\" width=\"120\" alt=\"Next Image Set"
-" button\"/> y repita un par de veces para examinar las segmentaciones en más"
+" button\"/> y repite un par de veces para examinar las segmentaciones en más"
 " imágenes."
 
 #: ../../source/BeginnerSegmentation/BeginnerSegmentationPlugins.md:155
