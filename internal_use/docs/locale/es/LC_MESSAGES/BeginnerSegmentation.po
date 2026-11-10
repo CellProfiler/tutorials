@@ -1119,7 +1119,7 @@ msgid ""
 msgstr ""
 "Opcional, pero muy recomendable: una vez abierto Docker Desktop, usa la "
 "función de búsqueda para buscar \"Cellpose\" y encontrar un modelo "
-"\"cellprofiler/runcellpose_with_pretrained\" y obténlo (si aún no lo has "
+"\"cellprofiler/runcellpose_with_pretrained\" y descárgalo (si aún no lo has "
 "hecho). Si por alguna razón esto no funciona, continúa, pero te ahorrará "
 "tiempo más adelante."
 
